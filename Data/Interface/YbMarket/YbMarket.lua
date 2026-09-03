@@ -403,7 +403,7 @@ function YbMarket_Update(curPage , totalPage)
 				local strHead = Auction:GetPetPortraitByIndex(i - 1 , 0)
 				local nEra = Auction:GetPetEraCount(i - 1 , 0)
 				if nEra == 1 then
-					pName = "–∂i th— 2"..pName
+					pName = "–∂i th— 2 "..pName
 				end
 				_YbMarket_InsertPetList(i, pName, pSeller, pYB , strHead)
 			end

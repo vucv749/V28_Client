@@ -110,11 +110,11 @@ function City_Port_Selected()
 	
 	City_Port_ClearInfo();
 	--Ãû³Æ
-	g_CityPortCtl.name:SetText("Lãnh ð¸a:"..City:GetPortInfo(idx, "Name"));
+	g_CityPortCtl.name:SetText("Lãnh ð¸a: "..City:GetPortInfo(idx, "Name"));
 	--ÉÌÈ¦
-	g_CityPortCtl.com:SetText("Tß½ng Ñng Thß½ng Âu:"..City:GetPortInfo(idx, "ComName"));
+	g_CityPortCtl.com:SetText("Khu buôn bán: "..City:GetPortInfo(idx, "ComName"));
 	--ÌØ²ú
-	g_CityPortCtl.product:SetText("Có th¬ có ðßþc ð£c sän:");
+	g_CityPortCtl.product:SetText("Ð£c sän: ");
 	--ÌØ²ú1
 	local szItemName = City:GetPortInfo(idx, "Product1");
 	if("" ~= szItemName) then
@@ -139,7 +139,7 @@ function City_Port_CreateCity()
 	local valid = tonumber(City:GetPortInfo(idx, "Valid"));
 	if(valid < 0) then
 		if(valid == -1) then
-			PushDebugMessage("Giá Kh¯i lãnh ð¸a ðã b¸ m£t khác bang hµi chiªm lînh.");
+			PushDebugMessage("Vùng lãnh ð¸a này ðã b¸ các bang phái khác chiªm lînh.");
 		end
 		return;
 	end

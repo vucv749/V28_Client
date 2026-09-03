@@ -189,7 +189,7 @@ function DWQianghua_Update(itemIndex)
 			return
 		elseif ret == -3 then
 			-- ×°±¸ÉÏµÄµñÎÆÒÑ¾­Ç¿»¯Âú¼¶, ²»ÄÜÔÙÇ¿»¯
-			PushDebugMessage("Hoa vån trên trang b¸ các hÕ không th¬ cß¶ng hóa næa.")
+			PushDebugMessage("Ğiêu vån trên trang b¸ các hÕ không th¬ cß¶ng hóa næa.")
 			return
 		end
 
@@ -366,7 +366,7 @@ function DWQianghua_OK_Clicked(okFlag)
 		PushDebugMessage("#{ZBDW_091105_12}")
 		return
 	elseif ret == 3 then
-		PushDebugMessage("Hoa vån trên trang b¸ các hÕ không th¬ cß¶ng hóa næa.")
+		PushDebugMessage("Ğiêu vån trên trang b¸ các hÕ không th¬ cß¶ng hóa næa.")
 		return
 	elseif ret == 44 then
 		PushDebugMessage("#{GMGameInterface_Script_PlayerMySelf_Info_Money_Not_Enough}")

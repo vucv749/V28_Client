@@ -3,10 +3,10 @@
 -- ´ËÌõ¼þºÍPlayerZhengyouPT.luaÀï¶¨ÒåÒ»ÖÂ£¬ÒªÍ¬Ê±¸ü¸Ä, ×¢ÒâÃÅÅÉÓÐÇø±ð
 local g_Conditions = {
 	MenPai = {{"Không gi¾i hÕn", 11}, {"Thiªu Lâm", 0}, {"Minh Giáo", 1}, {"Cái Bang", 2}, {"Võ Ðang", 3}, {"Nga Mi", 4}, {"Tinh Túc", 5}, {"Thiên Long", 6}, {"Thiên S½n", 7}, {"Tiêu dao", 8}, {"MÕn Ðà S½n Trang", 10}, {"Tñ do", 9}},
-	Level = {"Không gi¾i hÕn", "Dß¾i c¤p 10", "C¤p 10 ðªn 20", "C¤p 20 ðªn 30", "C¤p 30 ðªn 40", "C¤p 40 ðªn 50", "C¤p 50 ðªn 60", "C¤p 60 ðªn 70", "C¤p 70 ðªn 80", "C¤p 80 ðªn 90", "C¤p 90 ðªn 100", "Trên c¤p 100"},
+	Level = {"Không gi¾i hÕn", "Dß¾i Lv10", "Lv10 ðªn 20", "Lv20 ðªn 30", "Lv30 ðªn 40", "Lv40 ðªn 50", "Lv50 ðªn 60", "Lv60 ðªn 70", "Lv70 ðªn 80", "Lv80 ðªn 90", "Lv90 ðªn 100", "Trên Lv100"},
 	Sexy = {"Không gi¾i hÕn", "Nam", "Næ"},
 	Banghui = {"Không gi¾i hÕn", "Có bang phái", "Không bang phái"},
-	ADType	= {"Không gi¾i hÕn", "Trai tài gái s¡c", "Kéo bè kéo cánh", "Bái sß T¥m Ð°", "Kªt nghîa kim lan"},   -- ???????,???????? {"Không gi¾i hÕn", "#{ZYPT_081103_008}", "#{ZYPT_081103_009}", "#{ZYPT_081103_010}", "#{ZYPT_081103_011}",},
+	ADType	= {"Không gi¾i hÕn", "Nam Thanh Næ Tú", "Bang Hµi", "Sß Ð°", "Kªt Nghîa"},   -- ´Ë´¦ÓÃ×Öµä²»ÐÐ£¬ÁÐ±í¿òºÃÏñ²»Ö§³Ö {"È«²¿", "#{ZYPT_081103_008}", "#{ZYPT_081103_009}", "#{ZYPT_081103_010}", "#{ZYPT_081103_011}",},
 	HotLevel = {"Không gi¾i hÕn", "0-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "71-80"},
 }
 

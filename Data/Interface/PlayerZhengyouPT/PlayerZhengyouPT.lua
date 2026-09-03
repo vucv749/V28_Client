@@ -5,17 +5,17 @@
 -- ÆµµÀÀàÐÍºÍÐÔ±ð¶¨Òå
 local g_Genders = { "Næ", "Nam" };
 local g_Channels = {"#{ZYPT_081103_008}", "#{ZYPT_081103_009}", "#{ZYPT_081103_010}", "#{ZYPT_081103_011}",}; --{"Trai tài gái s¡c", "Kéo bè kéo cánh", "Bái sß T¥m Ð°", "Kªt nghîa kim lan"};
-local g_TypesDesc = {"Trai tài gái s¡c", "Kéo bè kéo cánh", "Bái sß T¥m Ð°", "Kªt nghîa kim lan"};   --????????
-local g_MenPaiName = {"Thiªu Lâm", "Minh Giáo", "Cái Bang", "Võ Ðang", "Nga Mi", "Tinh Túc", "Thiên Long", "Thiên S½n", "Tiêu dao", "Tñ do", "MÕn Ðà S½n Trang"};
-local g_MarryDesc = {"V¸ hôn", "Ðã kªt hôn"};
+local g_TypesDesc = {"Nam Thanh Næ Tú", "Bang Hµi", "Sß Ð°", "Kªt Nghîa"};   --·¢ÓÊ¼þÊ±ÎÞ·¨×ªÒå
+local g_MenPaiName = {"Thiªu Lâm", "Minh Giáo", "Cái Bang", "Võ Ðang", "Nga Mi", "Tinh Túc", "Thiên Long", "Thiên S½n", "Tiêu Dao", "Tñ do", "Mµ Dung"};
+local g_MarryDesc = {"Chßa kªt hôn", "Ðã kªt hôn"};
 --local g_ZhengyouMudi = { {"ÈÎÒâ","°ïÅÉÊ ÈË","Ñ° Ò°ïÅÉ",}, {"ÈÎÒâ","°ÝÊ¦","Ê Í½",},};
 
 -- ´ËÌõ¼þºÍ ÷ÓÑÒªÇóÀï¶¨ÒåÒ»ÖÂ£¬ÒªÍ¬Ê±¸ü¸Ä,¼ÇµÃÏÂ±ê¼Ó1
 local g_Conditions = {
-	MenPai = {"Không gi¾i hÕn", "Thiªu Lâm", "Minh Giáo", "Cái Bang", "Võ Ðang", "Nga Mi", "Tinh Túc", "Thiên Long", "Thiên S½n", "Tiêu dao", "MÕn Ðà S½n Trang"},
-	Level = {"Không gi¾i hÕn", "Dß¾i c¤p 10", "C¤p 10 ðªn 20", "C¤p 20 ðªn 30", "C¤p 30 ðªn 40", "C¤p 40 ðªn 50", "C¤p 50 ðªn 60", "C¤p 60 ðªn 70", "C¤p 70 ðªn 80", "C¤p 80 ðªn 90", "C¤p 90 ðªn 100", "Trên c¤p 100"},
+	MenPai = {"Không gi¾i hÕn", "Thiªu Lâm", "Minh Giáo", "Cái Bang", "Võ Ðang", "Nga Mi", "Tinh Túc", "Thiên Long", "Thiên S½n", "Tiêu Dao", "Mµ Dung"},
+	Level = {"Không gi¾i hÕn", "Dß¾i Lv10", "Lv10 ðªn 20", "Lv20 ðªn 30", "Lv30 ðªn 40", "Lv40 ðªn 50", "Lv50 ðªn 60", "Lv60 ðªn 70", "Lv70 ðªn 80", "Lv80 ðªn 90", "Lv90 ðªn 100", "Trên Lv100"},
 	Sexy = {"Không gi¾i hÕn", "Nam", "Næ"},
-	Mudi = { {"Không gi¾i hÕn","Bang phái Thu Nhân","Tìm kiªm bang phái",}, {"Không gi¾i hÕn","Bái sß","Thu ð° ð®",},},
+	Mudi = { {"Tùy","Bang phái chiêu mµ","Tìm bang phái",}, {"Tùy","Bái Sß","Nh§n Ð® TØ",},},
 };
 
 -- ÉÔµÈµã»÷µÄÌáÊ¾
@@ -163,13 +163,13 @@ function  PlayerZhengyouPT_GetZhengyouMudiDesc(iAdtype, iMudi)
        iMudi = iMudi - 4;
     else
        PlayerZhengyouPT_Text4:Hide();
-       return "Chinh Hæu giao tª";
+       return "Trßng hæu giao tª";
     end
 	local sDesc = g_Conditions.Mudi[iIdx][iMudi + 1];
 	if ( nil ~= sDesc ) then
 	    return sDesc;
 	else
-	    return "Chinh Hæu giao tª";
+	    return "Trßng hæu giao tª";
 	end
 end
 
@@ -231,7 +231,7 @@ function PlayerZhengyouPT_NotifyPlayerDetailInfo(sResult, sMyInfo, sType)
 	if ( "ok" ~= sResult ) then
 		-- Ã»ÓÐ ý³£·µ»ØÏ¸½ÚÐÅÏ¢ÔòÐèÇå¿ ÏÔÊ¾
 		PlayerZhengyouPT_CleanDetailInfo();
-		PushDebugMessage("Thñc xin l²i, Vô ThØ ngß¶i ch½i tin tÑc");    -- ????,???????
+		PushDebugMessage("R¤t tiªc, không có thông tin cüa ngß¶i ch½i này");    -- µ÷ÊÔÐÅÏ¢£¬Ó¦¸Ã²»»áÖ´ÐÐµ½
 		return;
 	end
 
@@ -262,7 +262,7 @@ function PlayerZhengyouPT_NotifyPlayerDetailInfo(sResult, sMyInfo, sType)
 	g_Ctrls.TxtSexyNeed:SetText( "#{ZYPT_081103_035}" .. PlayerZhengyouPT_GetSexyNeedDesc(iSexyNeed) );
 	g_Ctrls.TxtLevelNeed:SetText( "#{ZYPT_081103_036}" .. PlayerZhengyouPT_GetLevelNeedDesc(iLevelNeed) );
 	g_Ctrls.TxtMenpaiNeed:SetText( "#{ZYPT_081103_037}" .. PlayerZhengyouPT_GetMenpaiNeedDesc(iMenpaiNeed) );
-	g_Ctrls.TxtZhengyouMudi:SetText( "Møc ðích:" .. PlayerZhengyouPT_GetZhengyouMudiDesc(sType, iZhengyouMudi) );
+	g_Ctrls.TxtZhengyouMudi:SetText( "Møc ðích: " .. PlayerZhengyouPT_GetZhengyouMudiDesc(sType, iZhengyouMudi) );
 
 	g_Ctrls.TxtRenqi1:SetText( tostring(iRenqi1) );
 	g_Ctrls.TxtRenqi2:SetText( tostring(iRenqi2) );
@@ -423,9 +423,9 @@ function PlayerZhengyouPT_UpdateFriendList(iTotal, iTotalOfCurPage)
 		-- ¸ù¾ÝÈËÆø¼Ó±ê¼Ç
 		local strRenqi;
 		if (iRenqi >= 80) then
-			strRenqi = tostring(iRenqi) .. "" .. "#cff0000(Mãn)";
+			strRenqi = tostring(iRenqi) .. "" .. "#cff0000(Ð¥y)";
 		elseif ( iRenqi >= 60 ) then
-			strRenqi = tostring(iRenqi) .. "" .. "#cff6633(Nhi®t)";
+			strRenqi = tostring(iRenqi) .. "" .. "#cff6633(Hot)";
 		else
 			strRenqi = tostring(iRenqi);
 		end
@@ -601,7 +601,7 @@ end
 function OnPlayerZhengyouPT_FabuClicked()
 	local level = Player:GetData("LEVEL");
 	if level < LEVEL_LIMIT then
-		PushDebugMessage("Thñc xin l²i, phäi c¤p b§c ðÕt t¾i" .. LEVEL_LIMIT .. "C¤p m¾i có th¬ tuyên b¯" .. PlayerZhengyouPT_GetTypeName(g_curChannel) .. "Tin tÑc.");
+		PushDebugMessage("R¤t tiªc, c¥n ðÕt ðªn c¤p " .. LEVEL_LIMIT .. " c¤p m¾i ðßþc công b¯ " .. PlayerZhengyouPT_GetTypeName(g_curChannel) .. "Thông tin");
 		return;
 	end
 	-- Ñ¡ÔñÁË¾ßÌåÀàÐÍÔòÖ±½Ó²éÑ¯ÊÇ·ñÂú×ã·¢²¼Ìõ¼þ£¬·ñÔò´ò¿ªÀàÐÍÑ¡Ôñ½çÃæ
@@ -655,7 +655,7 @@ end
 function PlayerZhengyouPT_OnQueryResponse(sOptType, sRet, eType, iReserve)
 	local iType = tonumber(eType);
 	if ( nil == iType ) then
-	    PushDebugMessage("Chinh Hæu thao tác quay tr· v« sai l¥m tin tÑc");
+	    PushDebugMessage("Thao tác tìm bÕn phän h°i thông tin sai");
 	    return;
 	end
 
@@ -700,7 +700,7 @@ function PlayerZhengyouPT_OnQueryResponse(sOptType, sRet, eType, iReserve)
 	-- ²é¿´
 	elseif ("view_vote" == sOptType) then
 		if ( "noinfo" == sRet ) then
-		  PushDebugMessage("Thñc xin l²i, Nhçm Yêu ð¥u phiªu Ðích tin tÑc B¤t t°n tÕi.");		-- ?????????
+		  PushDebugMessage("Xin l²i, thông tin các hÕ bö phiªu không t°n tÕi.");		-- Ó¦¸Ã²»»áÖ´ÐÐµ½ÕâÀï
 		end
 
 	-- Í¶Æ±
@@ -716,7 +716,7 @@ function PlayerZhengyouPT_OnQueryResponse(sOptType, sRet, eType, iReserve)
         PlayerZhengyouPT_SetCurrentTab(iType); 		-- ??????????,?????,????????????
       end
 
-		  local sVoteOkTip = string.format("Nhçm ðã thành công ð¥u phiªu C¤p%s", FindFriendDataPool:GetDetailInfo("NAME") );
+		  local sVoteOkTip = string.format("Các hÕ ðã bö phiêu cho %s thành công", FindFriendDataPool:GetDetailInfo("NAME") );
 		  PushDebugMessage( sVoteOkTip );
     end
 
@@ -725,7 +725,7 @@ function PlayerZhengyouPT_OnQueryResponse(sOptType, sRet, eType, iReserve)
 	  if( "ok" == sRet ) then
 	  	-- ³·Ïúºó£¬ÇÐ»»µ½·¢²¼ÀàÐÍ¶ÔÓ¦µÄÆµµÀ
     	PlayerZhengyouPT_SetCurrentTab(iType);
-	    PushDebugMessage("Nhçm thành công huÖ bö Li­u" .. PlayerZhengyouPT_GetTypeName(iType) .. "#{ZYPT_081103_107}");
+	    PushDebugMessage("Các hÕ giäi khóa thành công" .. PlayerZhengyouPT_GetTypeName(iType) .. "#{ZYPT_081103_107}");
 	  end
 
 	-- ¸ü¸Ä ÷ÓÑÒªÇó
@@ -733,7 +733,7 @@ function PlayerZhengyouPT_OnQueryResponse(sOptType, sRet, eType, iReserve)
 		if( "ok" == sRet ) then
 			-- ¸ü¸Ä ÷ÓÑÒªÇóºó£¬ÇÐ»»µ½·¢²¼ÀàÐÍ¶ÔÓ¦µÄÆµµÀ
     	PlayerZhengyouPT_SetCurrentTab(iType);
-	    PushDebugMessage("SØa chæa tin tÑc thành công");
+	    PushDebugMessage("SØa ð±i thông tin thành công");
 	  end
 	end
 
@@ -759,7 +759,7 @@ function PlayerZhengyouPT_SetCurrentTab(iTab)
 
 	-- ÆµµÀÀàÐÍÎª1¡¢2¡¢3¡¢4Ê±ÏÔÊ¾¡°µÈ¼¶¡±£¬0¡¢5¡¢6Ê±ÏÔÊ¾¡°ÀàÐÍ¡±¡£
 	if ( iTab > 0 and iTab < 5 ) then
-		sText = "C¤p b§c";
+		sText = "C¤p";
 	end
 
 	g_Ctrls.CtrlList:SetProperty("ColumnsSizable", "True");
@@ -787,7 +787,7 @@ end
 function PlayerZhengyouPT_IsRealType(eType)
   local iType = tonumber(eType);
 	if ( nil == iType ) then
-	  PushDebugMessage("Chinh Hæu thao tác quay tr· v« sai l¥m tin tÑc");
+	  PushDebugMessage("Thao tác tìm bÕn phän h°i thông tin sai");
 	end
 
 	-- ÆµµÀÀàÐÍÎª1¡¢2¡¢3¡¢4ÎªºÏ·¨£¬0¡ª¡ª¡°È«²¿¡±¡¢5¡ª¡ª¡°²éÑ¯½á¹û¡±¡¢6¡ª¡ª¡°×îÍúÈËÆø¡±²»ÊôÓÚ¾ßÌåµÄÆµµÀÀàÐÍ
@@ -872,14 +872,14 @@ function PlayerZhengyouPT_Toupiao(iSel)
 
 	local nSel = PlayerZhengyouPT_List:GetSelectItem();
 	if ( nSel < 0 ) then
-	PushDebugMessage("Thïnh Tiên Thung bên trái lña ch÷n mµt cái tin tÑc tuyên b¯ Nhân.");
+	PushDebugMessage("Mong hãy t× bên trái ch÷n ra mµt ngß¶i công b¯ thông tin");
 	return;
 	end
 
 	local szName = FindFriendDataPool:GetDetailInfo("NAME");
 	local player = Player:GetName();
 	if(szName == player) then
-		PushDebugMessage("Không th¬ C¤p chính mình ð¥u phiªu.");
+		PushDebugMessage("Không th¬ bö phiªu cho mình.");
 		return;
 	end
 
@@ -924,7 +924,7 @@ function PlayerZhengyouPT_OnSearchPlayerResponse(sRet, eType)
       PlayerZhengyouPT_UpdateBtnStatus();
       PlayerZhengyouPT_UpdateSearchTip();
    elseif( "noinfo" == sRet ) then
-      PushDebugMessage("Không có tìm ðßþc phù hþp ði«u ki®n Ðích ngß¶i ch½i.");
+      PushDebugMessage("Không tìm ðßþc ngß¶i ch½i phù hþp ði«u ki®n.");
    end
 end
 
@@ -946,7 +946,7 @@ function PlayerZhengyouPT_View_OnClick()
 
   local nSel = PlayerZhengyouPT_List:GetSelectItem();
   if ( nSel < 0 ) then
-  	PushDebugMessage("Thïnh Tiên Thung bên trái lña ch÷n mµt cái tin tÑc tuyên b¯ Nhân.");
+  	PushDebugMessage("Mong hãy t× bên trái ch÷n ra mµt ngß¶i công b¯ thông tin");
 		return;
   end
 
@@ -991,7 +991,7 @@ function PlayerZhengyouPT_Jieshi_OnClick()
 
 	local nSel = PlayerZhengyouPT_List:GetSelectItem();
 	if ( nSel < 0 ) then
-	PushDebugMessage("Thïnh Tiên Thung bên trái lña ch÷n mµt cái tin tÑc tuyên b¯ Nhân.");
+	PushDebugMessage("Mong hãy t× bên trái ch÷n ra mµt ngß¶i công b¯ thông tin");
 	return;      --?????????,????
 	end
 
@@ -1023,7 +1023,7 @@ function PlayerZhengyouPT_Jieshi_OnClick()
 	while index < friendnumber  do
 		local name =  DataPool:GetFriend( currentList, tonumber( index ), "NAME" );
 		if (name == owner) then
-		    PushDebugMessage("Cai ngß¶i ch½i ðã TÕi Nhçm Ðích s± ðen Trung, không th¬ kªt các\\u0020hÕ.");
+		    PushDebugMessage("Ngß¶i ch½i này có tên trong s± ðen cüa các hÕ, không th¬ kªt bÕn.");
 			return;
 		end
 		index = index + 1;
@@ -1066,7 +1066,7 @@ function PlayerZhengyouPT_Jieshi_OnClick()
 	local sType = g_TypesDesc[iAdType];
 	if ( nil == sType ) then sType = ""; end
 
-	DataPool:ZhengYouOpenMail( owner,"Ngß¶i khöe, ta xem t¾i r°i Nhçm tuyên b¯ Ðích" .. sType .. "Chinh Hæu tin tÑc, mu¯n cùng Nhçm kªt các\\u0020hÕ!" );
+	DataPool:ZhengYouOpenMail( owner,"Xin chào, tÕi hÕ th¤y các hÕ tuyên b¯ " .. sType .. "tin kªt bÕn nên mu¯n kªt giao!" );
 
 end
 
@@ -1119,7 +1119,7 @@ function OnPlayerZhengyouPT_GotoClicked()
 	if(nPage~=nil and tonumber(nPage)~=nil) then
 		if (g_curChannel == 6) then															-- ????
 			if (tonumber(nPage)>g_totalVotePageCount or tonumber(nPage) < 1) then
-				PushDebugMessage("Thïnh ðßa vào chính xác Ðích Di®p S±.")
+				PushDebugMessage("Xin nh§p s¯ trang chính xác.")
 			else
 				g_curPageIndex = tonumber(nPage);
 				PlayerZhengyouPT_UpdateBtnStatus();
@@ -1127,7 +1127,7 @@ function OnPlayerZhengyouPT_GotoClicked()
 			end
 		else																										-- ????
 			if (tonumber(nPage)>g_totalPageCount or tonumber(nPage) < 1) then
-				PushDebugMessage("Thïnh ðßa vào chính xác Ðích Di®p S±.")
+				PushDebugMessage("Xin nh§p s¯ trang chính xác.")
 			else
 				g_curPageIndex = tonumber(nPage);
 				PlayerZhengyouPT_UpdateBtnStatus();
@@ -1194,7 +1194,7 @@ function PlayerZhengyouPT_LiuYan_OnClick()
 	end
 	local nSel = PlayerZhengyouPT_List:GetSelectItem();
 	if ( nSel < 0 ) then
-	PushDebugMessage("Thïnh Tiên Thung bên trái lña ch÷n mµt cái tin tÑc tuyên b¯ Nhân.");
+	PushDebugMessage("Mong hãy t× bên trái ch÷n ra mµt ngß¶i công b¯ thông tin");
 	return;
 	end
 	

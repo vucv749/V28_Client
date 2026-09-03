@@ -1,5 +1,5 @@
 
-local ExchangeSafe_BoxName = {"Th— nh§t C·ch", "–Æ nh∏ C·ch", "–Æ tam C·ch", "–Æ t— C·ch", "Th— nÂm C·ch", "Th— s·u C·ch", "Th— b‰y C·ch", "Th— t·m C·ch", "Th— chÌn C·ch", "–Æ thßp C·ch", "–Æ thßp nh§t C·ch", };
+local ExchangeSafe_BoxName = {"‘ th— 1", "‘ th— 2", "‘ th— 3", "‘ th— 4", "‘ th— 5", "‘ th— 6", "‘ th— 7", "‘ th— 8", "‘ th— 9", "‘ th— 10", "‘ th— 11", };
 local ExchangeSafe_Box_Maxnum = 100;            --????100?
 local ExchangeSafe_Box_NowNum = 0;
 

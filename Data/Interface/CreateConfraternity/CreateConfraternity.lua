@@ -19,7 +19,7 @@ function CreateConfraternity_OnEvent(event)
 		objCared = tonumber(arg0);
 		this:CareObject(objCared, 1, "GuildCreate");
 		CreateConfraternity_InputConfraternityName:SetText("");
-		CreateConfraternity_InputTenet:SetText("Mµt cái m¾i phát Ðích bang hµi thª lñc.");
+		CreateConfraternity_InputTenet:SetText("Huynh ð® mµt nhà, cùng nhau phát tri¬n!");
 		CreateConfraternity_InputTenet:SetProperty("CaratIndex", 1024);
 		CreateConfraternity_InputConfraternityName:SetProperty("DefaultEditBox", "True");
 		if( -1 == Player:GetData("GUILD")) then

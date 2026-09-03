@@ -235,7 +235,7 @@ function MissionTrack_UpdateHaveGetMission(nSelectMissionID)
 							end
 							if(Mission_Variable >0) then
 								if(Mission_Variable == 1) then
-									strOKFail = "Hoàn thành";
+									strOKFail = "Xong";
 									nFinished = 1
 								elseif(Mission_Variable == 2) then
 									strOKFail = "Thành công";
@@ -335,7 +335,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			local strTemp = "";
 			local nIndex = DataPool:GetPlayerMission_Display(nMissionIndex,7)--czf modify,2009.08.26
 			if nIndex == 1018870 then
-				strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#W", strFinishSceneName, strFinishNPC);
+				strTemp = string.format("   #WÐªn #G%s#W tìm #R%s#W", strFinishSceneName, strFinishNPC);
 			elseif nIndex == 210273 then
 				strTemp = "#{XSRW_100313_01}"
 			elseif nIndex == 210257 then
@@ -357,7 +357,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			elseif MissionTrack_CheckScriptId_CanAutoRun(nIndex) >= 1 then
 				strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFONGAIM%d, %d, %d, %s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			else
-				strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFOAIM%d, %d, %d, %s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
+				strTemp = string.format("   #WÐªn #G%s#W tìm #R%s#{_INFOAIM%d,%d,%d,%s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			end
 			strTarget = strTemp;
 		--end
@@ -400,7 +400,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 		--ÈÎÎñÐèÒªÉ±µÄnpc
 		local nDemandKillNum,Kill_Random_Type = DataPool:GetPlayerMissionDemandKill_Num(nMissionIndex);
 		if( nDemandKillNum > 0 ) then
-			strAppend = "#WDÎ giªt chªt:";
+			strAppend = "   #WÐã di®t: ";
 			for i=1, nDemandKillNum do
 				--    ÐèÒªµÄNPC£¬ÐèÒªNPC ID£¬ÐèÒª¶àÉÙ¸ö
 				local nNPCName, nNum = DataPool:GetPlayerMissionDemand_NPC(i-1,Kill_Random_Type,nMissionIndex);
@@ -423,11 +423,11 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 		local nDemandNum,Item_Random_Type= DataPool:GetPlayerMissionDemand_Num(nMissionIndex);
 		if( nDemandNum > 0 ) then
 			if(Item_Random_Type == -100) then
-				strAppend = "#WDÎ ð® trình:";
+				strAppend = "   #WÐã giao: ";
 				nNewIndex = nNewIndex + 1;
 				Item_Random_Type = 0
 			else
-				strAppend = "#WDÎ nh§n ðßþc:";
+				strAppend = "   #WÐã ðÕt ðßþc:";
 				nNewIndex = nNewIndex + 1;
 			end
 		end
@@ -475,7 +475,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			if nNum == 0 then
 				strAppend = strAppend.."   " .. strCustom..strDot;
 			else
-				strAppend = strAppend.."   " .. strCustom .. ":".. Mission_Variable .. "/" .. nNum..strDot;
+				strAppend = strAppend.."   " .. strCustom .. " : ".. Mission_Variable .. "/" .. nNum..strDot;
 
 			end
 		end
@@ -493,7 +493,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			if nNeedNum == 0 then
 				strAppend = strAppend..strCustom..strDot;
 			else
-				strAppend = strAppend..strCustom .. ":".. nCompleteNum .. "/" .. nNeedNum..strDot;
+				strAppend = strAppend..strCustom .. " : ".. nCompleteNum .. "/" .. nNeedNum..strDot;
 			end
 		end
 
@@ -516,12 +516,12 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 					--strTemp = string.format("   #WÈ¥#G%s#W Ò#R%s#{_INFOAIM%d,%d,%d,%s}#W", strSceneName, strNPCName, nPosX, nPosY, nTargetScene, strNPCName);
 					local nIndex = DataPool:GetPlayerMission_Display(nMissionIndex,7)--czf modify,2009.08.26
 					if nIndex == 1018870 then
-						strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#W", strSceneName, strNPCName);
+						strTemp = string.format("   #WÐªn #G%s#W tìm #R%s#W", strSceneName, strNPCName);
 					else
-						strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFOAIM%d, %d, %d, %s}", strSceneName, strNPCName, nPosX, nPosY, nTargetScene, strNPCName);
+						strTemp = string.format("   #WÐªn #G%s#W tìm #R%s#{_INFOAIM%d,%d,%d,%s}", strSceneName, strNPCName, nPosX, nPosY, nTargetScene, strNPCName);
 					end
 				else
-					strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#W", strSceneName, strNPCName);
+					strTemp = string.format("   #WÐªn #G%s#W tìm #R%s#W", strSceneName, strNPCName);
 				end
 				strTarget = strTarget .. strTemp .. "#r";
 			end
@@ -536,9 +536,9 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 					if(strMonsterName ~= "") then
 						local strTemp = "";
 						if(nSceneId ~= -1) then
-							 strTemp = string.format("#WKHÑ#G%s#WSát#R%s#{_INFOAIM%d, %d, %d, %s}#W", tostring(strSceneName),tostring(strMonsterName), tonumber(nXpos), tonumber(nYpos), tonumber(nSceneId), tostring(strMonsterName));
+							 strTemp = string.format("   #WÐªn #G%s#W di®t #R%s #{_INFOAIM%d,%d,%d,%s}#W", tostring(strSceneName),tostring(strMonsterName), tonumber(nXpos), tonumber(nYpos), tonumber(nSceneId), tostring(strMonsterName));
 						else
-							 strTemp = string.format("#WKHÑ#G%s#WSát#R%s#W", tostring(strSceneName),tostring(strMonsterName));
+							 strTemp = string.format("   #WÐªn #G%s#W di®t #R%s#W", tostring(strSceneName),tostring(strMonsterName));
 						end
 						strTarget = strTarget .. strTemp;
 						strTarget = strTarget .. "#r";
@@ -556,9 +556,9 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 					if (strMonsterName ~= "") then
 						local strTemp = "";
 						if(nSceneID ~= -1) then
-							 strTemp = string.format("#WKHÑ#G%s#WSát#R%s#{_INFOAIM%d, %d, %d, %s}#W", strSceneName, strMonsterName, xPos, yPos, nSceneID, strMonsterName);
+							 strTemp = string.format("   #WÐªn #G%s#W di®t #R%s #{_INFOAIM%d,%d,%d,%s}#W", strSceneName, strMonsterName, xPos, yPos, nSceneID, strMonsterName);
 						else
-							 strTemp = string.format("#WKHÑ#G%s#WSát#R%s#W", strSceneName, strMonsterName);
+							 strTemp = string.format("   #WÐªn #G%s#W di®t #R%s#W", strSceneName, strMonsterName);
 						end
 						strTarget = strTarget .. strTemp;
 						strTarget = strTarget .. "#r";
@@ -573,9 +573,9 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			if (strObjName ~= "") then
 				local strTemp = "";
 				if(nTargetScene ~= -1) then
-					strTemp = string.format("#WÐÁo%sTräo#R%s#{_INFOAIM%d, %d, %d, %s}#W#r",strTargetScene, strTargetNPC, xPos, yPos, nTargetScene, strTargetNPC);
+					strTemp = string.format("   #WÐªn %s tìm #R%s#{_INFOAIM%d,%d,%d,%s}#W#r",strTargetScene, strTargetNPC, xPos, yPos, nTargetScene, strTargetNPC);
 				else
-					strTemp = string.format("#WÐÁo%sTräo#R%s#W",strTargetScene, strTargetNPC);
+					strTemp = string.format("   #WÐªn %s tìm #R%s#W",strTargetScene, strTargetNPC);
 				end
 				strTarget = strTarget .. strTemp;
 			end
@@ -1069,15 +1069,15 @@ function MissionTrack_GetXunBaoLeFanTianTarget( nMissionIndex )
 	{
 		-- Ë ÖÝ	ÂëÍ·£¨238£¬81£©¡¢ÎÄÃí£¨90£¬81£©¡¢Å·Ò±×Ó£¨266£¬138£©
 		[1] = {
-			[1] = {SceneID = 1, PosX = 238, PosZ = 81,	SceneName = "Tô Châu",	SubName = "Bªn tàu"},
-			[2] = {SceneID = 1, PosX = 90,	PosZ = 81,	SceneName = "Tô Châu",	SubName = "Vån miªu"},
+			[1] = {SceneID = 1, PosX = 238, PosZ = 81,	SceneName = "Tô Châu",	SubName = "Bªn Cäng"},
+			[2] = {SceneID = 1, PosX = 90,	PosZ = 81,	SceneName = "Tô Châu",	SubName = "Miªu Tñ"},
 			[3] = {SceneID = 1, PosX = 266, PosZ = 138,	SceneName = "Tô Châu",	SubName = "Âu Dã TØ"},
 		},
 		-- ÂåÑô	ÎäÆ÷µê£¨209£¬154£©¡¢ÔÂÀÏ£¨48£¬62£©¡¢ïÚ¾Ö£¨84£¬118£©
 		[2] = {
-			[1] = {SceneID = 0, PosX = 209, PosZ = 154,	SceneName = "LÕc Dß½ng",	SubName = "Vû khí ðiªm"},
+			[1] = {SceneID = 0, PosX = 209, PosZ = 154,	SceneName = "LÕc Dß½ng",	SubName = "Ti®m Vû Khí"},
 			[2] = {SceneID = 0, PosX = 48,	PosZ = 62,	SceneName = "LÕc Dß½ng",	SubName = "Nguy®t Lão"},
-			[3] = {SceneID = 0, PosX = 84, 	PosZ = 118,	SceneName = "LÕc Dß½ng",	SubName = "Tiêu cøc"},
+			[3] = {SceneID = 0, PosX = 84, 	PosZ = 118,	SceneName = "LÕc Dß½ng",	SubName = "Tiêu Cøc"},
 		},
 		-- ´óÀí	Íû²ÔÌ¨£¨240,56£©¡¢Îå»ªÌ³£¨160,169£©¡¢ÔÆÆ®Æ®£¨264,128£©
 		[3] = {

@@ -189,9 +189,9 @@ function Synthesize_OnLoad()
 	for i=1,200 do
 		SynthesizePucker[i] = 1;
 	end;
-	Ability_Limit[0] = "Ðúc khuôn"
-	Ability_Limit[1] = "May m£c"
-	Ability_Limit[2] = "Công ngh®"
+	Ability_Limit[0] = "Ðúc"
+	Ability_Limit[1] = "May Vá"
+	Ability_Limit[2] = "Công Ngh®"
 
 	ShowBindWin = 1
 
@@ -255,11 +255,11 @@ function Synthesize_OnEvent(event)
 		return;
 	elseif ( event == "UNIT_VIGOR" and tostring(arg0) == "player" and this:IsVisible()) then
 		strName = Player : GetData("VIGOR");
-		Synthesize_CurrentlyEnergy1 : SetText("Trß¾c m£t sÑc s¯ng:"..strName)
+		Synthesize_CurrentlyEnergy1 : SetText("HoÕt lñc: "..strName)
 		return;
 	elseif ( event == "UNIT_ENERGY" and tostring(arg0) == "player" and this:IsVisible()) then
 		strName = Player : GetData("ENERGY");
-		Synthesize_CurrentlyEnergy2 : SetText("Trß¾c m£t tinh lñc:"..strName)
+		Synthesize_CurrentlyEnergy2 : SetText("Tinh lñc: "..strName)
 		return;
 	elseif ( event == "UNIT_ABILITYEXP" and this:IsVisible()) then
 		strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
@@ -272,7 +272,7 @@ function Synthesize_OnEvent(event)
 		end
 
 		strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
-		Synthesize_SkilledGrade:SetText("KÛ nång thu¥n thøc Ðµ:"..strName.."/"..max_exp);
+		Synthesize_SkilledGrade:SetText("Thành thÕo: "..strName.."/"..max_exp);
 		return;
 	elseif ( event == "CHANGE_MAKE_COUNT" ) then
 		Synthesize_MadeAmount : SetText( tonumber(arg0) );
@@ -316,19 +316,19 @@ function Synthesize_UpdateItem()
 
 		if(nMaxAmount > 0) then
 			if(nLevel >0) then
-				szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..") [" .. nMaxAmount .. "]";
+				szPrescrName = szPrescrName .. "(C¤p "..nLevel..") [" .. nMaxAmount .. "]";
 			else
 				szPrescrName = szPrescrName .. "    [" .. nMaxAmount .. "]";
 			end
 		elseif(nMaxAmount < 0) then
 			if(nLevel >0) then
-				szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..") [N/A]";
+				szPrescrName = szPrescrName .. "(C¤p "..nLevel..") [Chßa rõ]";
 			else
 				szPrescrName = szPrescrName .. "    [N/A]";
 			end
 		else
 			if(nLevel >0) then
-				szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..")";
+				szPrescrName = szPrescrName .. "(C¤p "..nLevel..")";
 			else
 				szPrescrName = szPrescrName ;
 			end
@@ -352,7 +352,7 @@ function Synthesize_Update()
 
 	strName = Player : GetAbilityInfo(Prescr_Ability,"level");
 	local level = tonumber(strName);
-	Synthesize_Level:SetText("KÛ nång c¤p b§c:"..strName);
+	Synthesize_Level:SetText("C¤p: "..strName);
 
 	local max_exp;
 	if level > 11 or level < 1 then
@@ -362,13 +362,13 @@ function Synthesize_Update()
 	end
 
 	strName = Player : GetAbilityInfo(Prescr_Ability,"skillexp");
-	Synthesize_SkilledGrade:SetText("KÛ nång thu¥n thøc Ðµ:"..strName.."/"..max_exp);
+	Synthesize_SkilledGrade:SetText("Thành thÕo: "..strName.."/"..max_exp);
 
 	strName = Player : GetData("VIGOR");
-	Synthesize_CurrentlyEnergy1 : SetText("Trß¾c m£t sÑc s¯ng:"..strName)
+	Synthesize_CurrentlyEnergy1 : SetText("HoÕt lñc: "..strName)
 
 	strName = Player : GetData("ENERGY");
-	Synthesize_CurrentlyEnergy2 : SetText("Trß¾c m£t tinh lñc:"..strName)
+	Synthesize_CurrentlyEnergy2 : SetText("Tinh lñc: "..strName)
 
 	Synthesize_MadeAmount : SetText( tonumber(cur_count));
 
@@ -406,19 +406,19 @@ function Synthesize_Update()
 
 					if(nMaxAmount > 0) then
 						if(nLevel >0) then
-							szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..") [" .. nMaxAmount .. "]";
+							szPrescrName = szPrescrName .. "(C¤p "..nLevel..") [" .. nMaxAmount .. "]";
 						else
 							szPrescrName = szPrescrName .. "    [" .. nMaxAmount .. "]";
 						end
 					elseif(nMaxAmount < 0) then
 						if(nLevel >0) then
-							szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..") [N/A]";
+							szPrescrName = szPrescrName .. "(C¤p "..nLevel..") [Chßa rõ]";
 						else
 							szPrescrName = szPrescrName .. "    [N/A]";
 						end
 					else
 						if(nLevel >0) then
-							szPrescrName = szPrescrName .. "(c¤p b§c"..nLevel..")";
+							szPrescrName = szPrescrName .. "(C¤p "..nLevel..")";
 						else
 							szPrescrName = szPrescrName ;--8
 						end
@@ -644,17 +644,17 @@ function Synthesize_ListBox_Selected()
 	Synthesize_SpecialMaterialIcon_Frame : Show();
 	Synthesize_SpecialMaterial_Text : Show();
 	if  Prescr_Ability == 46 then
-		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00Tinh Thiªt#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
+		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00M¶i ðßa vào phía bên phäi v§t li®u chª tÕo #cFFFF00Tinh Thiªt#cE6BA00. LoÕi v§t li®u ð£c bi®t này có th¬ tång thêm ph¦m ch¤t cüa thiªt b¸ ")
 		Synthesize_SpecialMaterial : SetToolTip("Tinh Thiªt")
 		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N1" );  --?????????
 	elseif Prescr_Ability == 47 then
-		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00Miên B¯#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
+		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00 m¶i ðßa vào phía bên phäi v§t li®u chª tÕo #cFFFF00Miên B¯ #cE6BA00. LoÕi v§t li®u ð£c bi®t này có th¬ tång thêm ph¦m ch¤t cüa thiªt b¸ ")
 		Synthesize_SpecialMaterial : SetToolTip("Miên B¯")
 		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N2" ); --?????????
 		--  ûÌåÏÔÊ¾ÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
 		Synthesize_ShowEquipMakeNewLuckyInfo(resultid)
 	elseif Prescr_Ability == 48 then
-		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00Bí Ngân#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
+		Synthesize_SpecialMaterial_WarningText : SetText("#cE6BA00Xin hãy ð£t nguyên li®u chª tÕo vào bên phäi#cFFFF00Bí Ngân#cE6BA00, loÕi nguyên li®u ð£c thù này có th¬ nâng cao ph¦m ch¤t trang b¸")
 		Synthesize_SpecialMaterial : SetToolTip("Bí Ngân")
 		Synthesize_SpecialMaterial:SetProperty( "DragAcceptName", "N3" ); --?????????
 		--  ûÌåÏÔÊ¾ÊÖ¹¤×°±¸±£ÐÇÐÅÏ¢
@@ -678,20 +678,20 @@ function Synthesize_ListBox_Selected()
 	local Consume_Attr = LifeAbility : GetPrescr_Consume_ContriAttr(nSelIndex);
 	local strName = ""
 	if Consume_Vigor >= 0 then
-		strName = strName .. "#rtrø cµt sÑc s¯ng tiêu hao:".. tostring(Consume_Vigor);
+		strName = strName .. "#rT¯n hoÕt lñc c½ bän: ".. tostring(Consume_Vigor);
 	end
 
 	if Consume_Energy >= 0 then
-		strName = strName .. "#rtiêu hao tinh lñc:".. tostring(Consume_Energy);
+		strName = strName .. "#rT¯n tinh lñc".. tostring(Consume_Energy);
 	end
 
 	if Consume_Attr >= 0 then
-		strName = strName .. "#rtiêu hao môn phái c¯ng hiªn Ðµ:".. tostring(Consume_Attr);
+		strName = strName .. "#rT¯n c¯ng hiªn môn phái:".. tostring(Consume_Attr);
 	end
 
 	if resultnum == -1 or resultid == -1 then
-		Synthesize_Item : SetToolTip(tip_name.."#rloÕi hình:"..tip_type..strName);
-		Synthesize_Amount:SetToolTip(tip_name.."#rloÕi hình:"..tip_type..strName);
+		Synthesize_Item : SetToolTip(tip_name.."#rLoÕi hình"..tip_type..strName);
+		Synthesize_Amount:SetToolTip(tip_name.."#rLoÕi hình"..tip_type..strName);
 	end
 
 	local Material_number = LifeAbility : GetPrescr_Material_Number(nSelIndex);
@@ -836,7 +836,7 @@ function Synthesize_Do_Clicked()
 		local Item_Medindex = PlayerPackage : GetItemSubTableIndex(Synthesize_Special_Item,3)
 		if Item_Medindex == 0 then
 			local Item_ID = PlayerPackage : GetItemTableIndex(Synthesize_Special_Item);
-			PushDebugMessage("#{_ITEM".. Item_ID .."}không th¬ dùng Vu hþp thành.")
+			PushDebugMessage("#{_ITEM".. Item_ID .."} không th¬ dùng ð¬ ghép.")
 			return;
 		end
 	end
@@ -899,7 +899,7 @@ function Synthesize_Do_Clicked()
 	end
 
 	if nMake_Count > nMaxAmount then
-		PushDebugMessage("Tài li®u không ðü!")
+		PushDebugMessage("Nguyên li®u không ðü")
 		return;
 	end
 
@@ -912,7 +912,7 @@ function Synthesize_Do_All_Clicked()
 		local Item_Medindex = PlayerPackage : GetItemSubTableIndex(Synthesize_Special_Item,3)
 		if Item_Medindex == 0 then
 			local Item_ID = PlayerPackage : GetItemTableIndex(Synthesize_Special_Item);
-			PushDebugMessage("#{_ITEM".. Item_ID .."}không th¬ dùng Vu hþp thành.")
+			PushDebugMessage("#{_ITEM".. Item_ID .."} không th¬ dùng ð¬ ghép.")
 			return
 		end
 	end
@@ -1016,7 +1016,7 @@ function Update_Synthesize_Item(Item_index)
 					local Item_ID = PlayerPackage : GetItemTableIndex(index)
 					local szName = LifeAbility:GetPrescr_Material(Item_ID)
 
-					PushDebugMessage("#B"..szName.."#WcHï có th¬ dùng cho#B"..Ability_Limit[Item_Type].."#W.")
+					PushDebugMessage("#B"..szName.."#W chï có th¬ dùng v¾i #B"..Ability_Limit[Item_Type].."#W.")
 					return
 			end
 

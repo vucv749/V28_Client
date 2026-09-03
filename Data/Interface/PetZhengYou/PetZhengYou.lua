@@ -19,11 +19,11 @@ end
 
 
 function PetZhengYou_OnLoad()
-	PET_AITYPE[0] = "#gFF0FA0nhát gan";
-	PET_AITYPE[1] = "#gFF0FA0c¦n th§n";
-	PET_AITYPE[2] = "#gFF0FA0trung thành";
-	PET_AITYPE[3] = "#gFF0FA0khôn khéo";
-	PET_AITYPE[4] = "#gFF0FA0dûng mãnh";
+	PET_AITYPE[0] = "#gFF0FA0Nhát gan";
+	PET_AITYPE[1] = "#gFF0FA0C¦n th§n";
+	PET_AITYPE[2] = "#gFF0FA0Trung thành";
+	PET_AITYPE[3] = "#gFF0FA0Nhanh nh©n";
+	PET_AITYPE[4] = "#gFF0FA0Dûng mãnh";
 	
 	 g_PetZhengYou_Frame_UnifiedPosition=PetZhengYou_Frame:GetProperty("UnifiedPosition");
 	 
@@ -42,16 +42,16 @@ function PetZhengYou_OnEvent(event)
 		elseif("noprevpage" == arg0) then
 			showPrevPage = false;
 			PetZhengYou_PageUp:Disable();
-			PushDebugMessage("Ðã Th¸ thÑ nh¤t Di®p Li­u");
+			PushDebugMessage("Ðã là trang ð¥u tiên r°i");
 		elseif("notifypetlistnone" == arg0) then
 			if listflag == -1 then
 				showPrevPage = false;
 				PetZhengYou_PageUp:Disable();
-				PushDebugMessage("Ðã Th¸ thÑ nh¤t Di®p Li­u");
+				PushDebugMessage("Ðã là trang ð¥u tiên r°i");
 			elseif listflag == 1 then
 				showNextPage = false;
 				PetZhengYou_PageDown:Disable();
-				PushDebugMessage("Ðã Th¸ cu¯i cùng mµt t¶ Li­u");
+				PushDebugMessage("Ðã là trang cu¯i cùng r°i");
 			else
 				PetZhengYou_ShowWindow(-2);
 			end
@@ -91,10 +91,10 @@ function PetZhengYou_ShowWindow(who)
 	end
 	if( num <= 0) then
 		if who == -1 then
-			PushDebugMessage("Phøc vø Khí Thßþng không có Trân Thú Chinh Hæu Ðích s¯ li®u");
+			PushDebugMessage("Trong máy chü không có dæ li®u cüa Trân Thú Chinh Hæu");
 			showPrevPage = false;
 		elseif who == 1 then
-			PushDebugMessage("Phøc vø Khí Thßþng không có Trân Thú Chinh Hæu Ðích s¯ li®u");
+			PushDebugMessage("Trong máy chü không có dæ li®u cüa Trân Thú Chinh Hæu");
 			showNextPage = false;
 		else
 			PetZhengYou_DisableAllWindow();
@@ -154,27 +154,27 @@ function PetZhengYou_Update( idx )
 	local petSex  = PetInviteFriend:GetPetINFO(idx, "SEX");
 	local petAI   = PetInviteFriend:GetPetINFO(idx, "AITYPE");
 	local petTypeName = PetInviteFriend:GetPetINFO(idx, "TYPENAME");
-	petTypeName = FlashTextHeader .. petTypeName .. "Cøc cßng";
+	petTypeName = FlashTextHeader .. petTypeName .. "Bäo Bäo";
 	if( petSex == 0 ) then
-		petSex = "Thß";
+		petSex = "Cái";
 	else
-		petSex = "Hùng";
+		petSex = "Ðñc";
 	end
-	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
+	local strTbl = {"Thß¶ng ","¿u ","Ki®t ","Trác ","Tuy®t "};
 
 	if(petGrow >= 0) then
 		petGrow = petGrow + 1;	--c???0?????
 		if(strTbl[petGrow]) then
 			petGrow = strTbl[petGrow];
 		else
-			petGrow = "Không biªt";
+			petGrow = "Chßa rõ";
 		end
 	else
-		petGrow = "Không biªt";
+		petGrow = "Chßa rõ";
 	end
 
 	if(petAI>4 or petAI <0) then
-		petAI = "Sai l¥m Ðích";
+		petAI = "Sai sót ";
 	else
 		petAI =	PET_AITYPE[petAI];
 	end
@@ -360,13 +360,13 @@ function PetZhengYou_ConvertNumToMenPai( MenPaiId )
 		strMenPai = "Thiên S½n";
 
 	elseif(8 == MenPaiId) then
-		strMenPai = "Tiêu dao";
+		strMenPai = "Tiêu Dao";
 
 	elseif(9 == MenPaiId) then
 		strMenPai = "Tñ do";
 
 	elseif(10== MenPaiId) then
-		strMenPai = "MÕn Ðà S½n Trang";
+		strMenPai = "Mµ Dung";
 
 	end
 
@@ -466,11 +466,11 @@ function PetZhengYou_SendMail( idx )
 		local owner = PetInviteFriend:GetHumanINFO(idx, "NAME");
 		local player = Player:GetName();
 		if(owner == player) then
-			PushDebugMessage("Không th¬ Hoà chính mình Ðích Trân Thú kªt các\\u0020hÕ");
+			PushDebugMessage("Không th¬ tñ kªt thân Trân Thú");
 			return;
 		end
 			--¸ø¸Ã äÊÞÖ÷ÈË·¢ËÍÓÊ¼þ¸æËßËûËýÄãµÄ äÊÞÏëºÍËûËýµÄ äÊÞ½áÊ¶
-		DataPool:OpenMail( owner,"Ta nghî kªt các\\u0020hÕ cüa ngß½i cøc cßng" );
+		DataPool:OpenMail( owner,"Ta mu¯n kªt thân v¾i Bäo Bäo cüa bÕn" );
 	end
 
 	if( idx == 3 ) then

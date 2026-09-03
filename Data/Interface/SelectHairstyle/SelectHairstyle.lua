@@ -288,15 +288,15 @@ function SelectHairstyle_ShowDetail()
 		SelectHairstyle_Accept:SetText("#{GXHDZ_141121_10}")
 		
 		if reqMenPai == -1 then
-			SelectHairstyle_WarningText:SetText("C¥n"..name.." : "..ItemCount.."#rc¥n ti«n tài: #{_EXCHG"..CostMoney.."}#r#{GXHDZ_141121_83}")
+			SelectHairstyle_WarningText:SetText(" C¥n "..name.." : "..ItemCount.."#r C¥n tiêu hao: #{_EXCHG"..CostMoney.."}#r#{GXHDZ_141121_83}")
 		elseif  player_menpai ==  reqMenPai then
 			local menpainame = SelectHairstyle_GetMenpaiString(reqMenPai)
 			local scriptglobal = ScriptGlobal_Format("#{HWMP_200619_11}",menpainame)
-			SelectHairstyle_WarningText:SetText("C¥n"..name.." : "..ItemCount.."#rc¥n ti«n tài: #{_EXCHG"..CostMoney.."}#r"..scriptglobal.."#r#{GXHDZ_141121_83}")			
+			SelectHairstyle_WarningText:SetText(" C¥n "..name.." : "..ItemCount.."#r C¥n tiêu hao: #{_EXCHG"..CostMoney.."}#r"..scriptglobal.."#r#{GXHDZ_141121_83}")			
 		else
 			local menpainame = SelectHairstyle_GetMenpaiString(reqMenPai)
 			local scriptglobal = ScriptGlobal_Format("#{HWMP_200619_10}",menpainame)
-			SelectHairstyle_WarningText:SetText("C¥n"..name.." : "..ItemCount.."#rc¥n ti«n tài: #{_EXCHG"..CostMoney.."}#r"..scriptglobal.."#r#{GXHDZ_141121_83}")			
+			SelectHairstyle_WarningText:SetText(" C¥n "..name.." : "..ItemCount.."#r C¥n tiêu hao: #{_EXCHG"..CostMoney.."}#r"..scriptglobal.."#r#{GXHDZ_141121_83}")			
 		end		
 	end
 

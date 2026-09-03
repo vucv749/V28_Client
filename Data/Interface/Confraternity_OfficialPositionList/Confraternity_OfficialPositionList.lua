@@ -7,15 +7,15 @@ local g_OfficialCtls = nil		--??????????
 local g_ListIdx2IDTbl = nil		--List?????????ID????
 
 local g_positionInfo = {
-	"Ðãi phê chu¦n",
-	"Bang Chúng  ",
-	"Tinh Anh  ",
-	"Thß½ng Nhân  ",
-	"Ho¢ng Hóa SÑ ",
+	"Ðþi phê chu¦n",
+	"Bang Chúng ",
+	"Tinh Anh ",
+	"Thß½ng Nhân ",
+	"Hoang Hoa SÑ ",
 	"Công Vø SÑ ",
 	"Nµi Vø SÑ ",
-	"Phó Bang Chü ",
-	"Bang Chü  ",
+	"Bang Phó ",
+	"Bang Chü ",
 };
 
 local g_menpaiInfo = {
@@ -27,7 +27,7 @@ local g_menpaiInfo = {
 	"Tinh Túc",
 	"Thiên Long",
 	"Thiên S½n",
-	"Tiêu dao",
+	"Tiêu Dao",
 	"Tñ do",
 	"MÕn Ðà S½n Trang",
 }
@@ -142,32 +142,32 @@ function Confraternity_OfficialPositionList_Flush(selected)
 
 	--ÃÅÅÉ
 	str = Guild:GetAnyGuildMembersInfo(selectedID, "MenPai")
-	g_OfficialCtls.info_menpai.txt:SetText("Môn phái:")
+	g_OfficialCtls.info_menpai.txt:SetText("Phái: ")
 	g_OfficialCtls.info_menpai.msg:SetText(g_menpaiInfo[str+1])
 
 	--µÈ¼¶
 	str = Guild:GetAnyGuildMembersInfo(selectedID, "Level")
-	g_OfficialCtls.info_level.txt:SetText("C¤p b§c:")
+	g_OfficialCtls.info_level.txt:SetText("C¤p: ")
 	g_OfficialCtls.info_level.msg:SetText(str)
 
 	--¹±Ï×¶È
 	szMsg = Guild:GetAnyGuildMembersInfo(selectedID, "CurCon").."/"..Guild:GetAnyGuildMembersInfo(selectedID, "MaxCon")
-	g_OfficialCtls.info_gongxiandu.txt:SetText("C¯ng hiªn Ðµ:")
+	g_OfficialCtls.info_gongxiandu.txt:SetText("Ðµ c¯ng hiªn: ")
 	g_OfficialCtls.info_gongxiandu.msg:SetText(szMsg)
 
 	--±¾ÖÜ¹±Ï×¶È
 	szMsg = Guild:GetAnyGuildMembersInfo(selectedID, "ContriPerWeek")
-	g_OfficialCtls.info_benzhougongxiandu.txt:SetText("B±n Chu c¯ng hiªn Ðµ:")
+	g_OfficialCtls.info_benzhougongxiandu.txt:SetText("CH tu¥n này:")
 	g_OfficialCtls.info_benzhougongxiandu.msg:SetText(szMsg)
 
 	--Èë°ïÊ±¼ä
 	szMsg = Guild:GetAnyGuildMembersInfo(selectedID, "JoinTime");
-	g_OfficialCtls.info_rubangdate.txt:SetText("Nh§p Bang th¶i gian:")
+	g_OfficialCtls.info_rubangdate.txt:SetText("Vào bang: ")
 	g_OfficialCtls.info_rubangdate.msg:SetText(szMsg)
 
 	--ÀëÏßÊ±¼ä
 	szMsg = Guild:GetAnyGuildMembersInfo(selectedID, "LogOutTime")
-	g_OfficialCtls.info_lixiandate.txt:SetText("Li Tuyªn th¶i gian:")
+	g_OfficialCtls.info_lixiandate.txt:SetText("R¶i mÕng: ")
 	g_OfficialCtls.info_lixiandate.msg:SetText(szMsg)
 end
 
@@ -214,7 +214,7 @@ end
 --ÏÔÊ¾Êý¾Ý
 function Confraternity_OfficialPositionList_Update()
 	--title
-	Confraternity_OfficialPositionList_DragTitle:SetText("#gFF0FA0Quan Viên Li®t Bi¬u")
+	Confraternity_OfficialPositionList_DragTitle:SetText("#gFF0FA0Danh sánh thành viên")
 
 	--Ë¢ÐÂÏÔÊ¾"¹ÙÔ±ÁÐ±í"List
 	Confraternity_OfficialPositionList_ShowList()

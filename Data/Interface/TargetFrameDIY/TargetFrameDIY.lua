@@ -183,7 +183,7 @@ function TargetFrameDIY_Update_Level()
 	local txtColor="#cFFFFFF";
 	local level =  Target:GetData( "LEVEL" ) - Player:GetData( "LEVEL" );
 	
-	AxTrace( 0,0, "C b Sai Vi"..tostring( level ) );
+	AxTrace( 0,0, "C ch阯h l甤h"..tostring( level ) );
 --根据阮枚5月27葼策划文档修改
 --	if( level > 12 ) then
 --		txtColor = "#R";

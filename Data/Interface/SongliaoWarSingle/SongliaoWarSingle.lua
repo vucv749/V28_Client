@@ -151,7 +151,7 @@ function SongliaoWarSingle_Goto()
 		PushDebugMessage(tooltip)
 		AutoRunToTarget(105.34, 194.68)		
 	elseif nTick < SongliaoWarSingle_Battle_ThreeTimeEnd then
-		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","Huy«n Võ")
+		local tooltip = ScriptGlobal_Format("#{XSLDZ_180521_309}","Huy«n Vû")
 		PushDebugMessage(tooltip)
 		AutoRunToTarget(193.83, 106.62)			
 	elseif nTick < SongliaoWarSingle_Battle_FourTimeEnd then
@@ -192,7 +192,7 @@ function SongliaoWarSingle_Battle_Fresh()
 
 	local chiyouzhanqi = ScriptGlobal_Format("#{XSLDZ_180521_249}", "T¯ng Quân")
 	if myCamp == 157 then
-		chiyouzhanqi = ScriptGlobal_Format("#{XSLDZ_180521_249}", "Liêu Quân")
+		chiyouzhanqi = ScriptGlobal_Format("#{XSLDZ_180521_249}", "Quân Liêu")
 	end
 	SongliaoWarSingle_Text2:SetText(chiyouzhanqi)
 

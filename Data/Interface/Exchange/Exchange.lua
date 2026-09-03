@@ -259,19 +259,19 @@ function Exchange_UpdateFrame()
 	local bIsSelfLocked = Exchange:IsLocked("self");
 	if( bIsSelfLocked == true ) then
 		Exchange_Checkbox_Locked:SetCheck(1);
-		Exchange_Locked_Button:SetText("Hüy bö b¸ khóa");
+		Exchange_Locked_Button:SetText("Hüy khóa");
 	elseif ( bIsSelfLocked == false) then
 		Exchange_Checkbox_Locked:SetCheck(0);
-		Exchange_Locked_Button:SetText("B¸ khóa giao d¸ch");
+		Exchange_Locked_Button:SetText("Khóa");
 	end
 	
 	--¶Ô·½µÄ
 	if( bIsOtherLocked == true ) then
 		Exchange_Checkbox_other_Locked:SetCheck(1);
-		Exchange_Other_Locked_Button:SetText("Ðã b¸ khóa");
+		Exchange_Other_Locked_Button:SetText("Ðã khóa");
 	elseif ( bIsOtherLocked == false) then
 		Exchange_Checkbox_other_Locked:SetCheck(0);
-		Exchange_Other_Locked_Button:SetText("Chßa b¸ khóa");
+		Exchange_Other_Locked_Button:SetText("Chßa khóa");
 	end
 	
 	--=======================
@@ -405,7 +405,7 @@ function Exchange_Self_PetList_RClick()
 end
 
 function ExchangeValidate_TimeReach1()
-    PushDebugMessage("Giao d¸ch Siêu Th¶i, Thïnh mµt l¥n næa giao d¸ch.");
+    PushDebugMessage("Giao d¸ch quá hÕn, xin tiªp tøc thØ giao d¸ch lÕi.");
     Exchange_Cancel();
     ExchangeValidate_StopWatch1:SetProperty("Timer", "-1");
 end

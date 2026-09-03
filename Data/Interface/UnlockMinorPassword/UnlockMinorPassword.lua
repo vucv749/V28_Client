@@ -123,7 +123,7 @@ function UnLockMinorPassword_OK()
 	local iLen = string.len(strPassword);
 	if(iLen < 4) then
 	
-		ShowSystemTipInfo("M§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
+		ShowSystemTipInfo("M§t mã không ðßþc ít h½n 4 ký tñ!");
 		return;
 	end;
 	

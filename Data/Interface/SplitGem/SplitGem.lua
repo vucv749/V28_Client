@@ -231,7 +231,7 @@ function SplitGem_Update(UI_index,Item_index)
 	    end
 	    
 	    if result == 0 then
-	       PushDebugMessage("N½i này phäi ð¬ vào Bäo ThÕch Trích Tr× Phù.")
+	       PushDebugMessage("C¥n có Bäo ThÕch Trích Tr× Phù.")
 	       return
 	    end			
 			
@@ -264,17 +264,17 @@ end
 function SplitGem_Buttons_Clicked()
 	
 	if GEM_SELECTED == -1 then
-		PushDebugMessage("Thïnh lña ch÷n Yêu bö ði Ðích bäo thÕch.")
+		PushDebugMessage("Ch÷n bäo thÕch c¥n tháo.")
 		return
 	end
 	
 	if CHARM_QUALITY == -1 then
-		PushDebugMessage("Không có Bäo ThÕch Trích Tr× Phù Tß¾ng không th¬ bö ði bäo thÕch.")
+		PushDebugMessage("Không có Bäo ThÕch Trích Tr× Phù, không th¬ tháo bäo thÕch.")
 		return
 	end
 	
 	if EQUIP_QUALITY == -1 then
-		PushDebugMessage("Thïnh ð¬ ð£t Yêu bö ði bäo thÕch Ðích trang b¸.")
+		PushDebugMessage("Ð£t trang b¸ c¥n tháo bäo thÕch vào.")
 		return
 	end
 	
@@ -323,7 +323,7 @@ function SplitGem_Buttons_Clicked()
   end
   
   if result == 0 then
-     PushDebugMessage("Cao C¤p Bäo ThÕch Trích Tr× Phù ð¯i Ñng c¤p b§c không phù hþp")
+     PushDebugMessage("Cao C¤p Bäo ThÕch Trích Tr× Phù c¤p ð¯i ¤n không phù hþp")
      return
   end
   

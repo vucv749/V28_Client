@@ -666,7 +666,7 @@ function PetSoul_FengHunLu_Update(bOpen)
 		
 		if 0 == bFinish then
 			-- Ç°Íù
-			g_contorlEventButton[i] : SetText( "Ði trß¾c" )
+			g_contorlEventButton[i] : SetText( "Ðªn " )
 		elseif 0 == bEventRewardFlag then
 			-- ÁìÈ¡
 			g_contorlEventButton[i] : SetText( "#{XYSHFC_20211229_106}" )

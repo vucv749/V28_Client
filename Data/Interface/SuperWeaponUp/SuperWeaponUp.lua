@@ -130,7 +130,7 @@ function SuperWeaponUp_Buttons_Clicked()
 		end
 
 	else
-		PushDebugMessage( "Thïnh ð¬ vào c¥n tái tÕo Ðích th¥n khí!" )
+		PushDebugMessage( "Hãy ð£t th¥n khí c¥n tái tÕo!" )
 	end
 end
 
@@ -152,13 +152,13 @@ function SuperWeaponUp_Update( pos_packet )
 	local MenpaiID = Player : GetData( "MEMPAI" )
 	local ItemID = PlayerPackage : GetItemTableIndex( BagIndex )
 	if ItemID <= 0 then
-		PushDebugMessage("Này v§t ph¦m không phäi Khä ð±i Ðích th¥n khí!")
+		PushDebugMessage("V§t ph¦m này không phäi là th¥n khí có th¬ ð±i!")
 		return
 	end
 
 	g_NewId, g_NeedMoney = ShenqiUpgrade : GetShenqiUpgradeInfo( ItemID, MenpaiID )
 	if g_NewId == -1 then
-		PushDebugMessage("Thïnh ð¬ vào có th¬ ð±i Ðích th¥n khí!")
+		PushDebugMessage("Hãy ð£t th¥n khí có th¬ ð±i!")
 		return
 	end
 

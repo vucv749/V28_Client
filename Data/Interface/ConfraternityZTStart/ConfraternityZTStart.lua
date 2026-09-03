@@ -46,7 +46,7 @@ end
 function ConfraternityZTStart_Accept_BtnClick()
 	local guid = ConfraternityZTStart_Input:GetText();
 	if(tonumber(guid)==nil)then
-		PushDebugMessage("Bang hµi idkhông th¬ Vi Không!");
+		PushDebugMessage("id bang hµi không th¬ bö tr¯ng!");
 		return;
 	end
 	City:SendAddGuildBattleMsg(tonumber(guid));

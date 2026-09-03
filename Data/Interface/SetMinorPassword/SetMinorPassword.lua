@@ -49,14 +49,14 @@ function SetMinorPassword_OK()
 	-- Èç¹ûÃÜÂë²»Ò»ÖÂ
 	if(strPassword1 ~= strPassword2) then
 	
-		ShowSystemTipInfo("M§t mã ðßa vào không ð°ng nh¤t Trí!");
+		ShowSystemTipInfo("M§t mã không th¯ng nh¤t!");
 		return;
 	end;
 	
 	local iLen = string.len(strPassword1);
 	if(iLen < 4) then
 	
-		ShowSystemTipInfo("M§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
+		ShowSystemTipInfo("M§t mã không ðßþc ít h½n 4 ký tñ!");
 		return;
 	end;
 	

@@ -174,7 +174,7 @@ function Relation_Update()
 			RELATION_NPC_PROGRESS1[i]:Show();
 			RELATION_NPC_PROGRESS1[i]:SetProgress( nRelationPoint,999 );
 		elseif nRelationPoint<=1999  then
-			RELATION_NPC_CURRENT[i]:SetText( "Quân tØ Chi Giao(" .. tostring(nRelationPoint) .. "/1999)" );
+			RELATION_NPC_CURRENT[i]:SetText( "B¢ng hæu (" .. tostring(nRelationPoint) .. "/1999)" );
 			RELATION_NPC_PROGRESS2[i]:Show();
 			RELATION_NPC_PROGRESS2[i]:SetProgress( (nRelationPoint - 999 ) , 1000 );
 		elseif nRelationPoint<=3999  then
@@ -182,7 +182,7 @@ function Relation_Update()
 			RELATION_NPC_PROGRESS3[i]:Show();
 			RELATION_NPC_PROGRESS3[i]:SetProgress( (nRelationPoint - 1999 ) , 2000 );
 		elseif nRelationPoint<=6499  then
-			RELATION_NPC_CURRENT[i]:SetText( "Anh em kªt nghîa(" .. tostring(nRelationPoint) .. "/6499)" );
+			RELATION_NPC_CURRENT[i]:SetText( "Kªt bái (" .. tostring(nRelationPoint) .. "/6499)" );
 			RELATION_NPC_PROGRESS3[i]:Show();
 			RELATION_NPC_PROGRESS3[i]:SetProgress( (nRelationPoint - 3999 ) , 2500 );
 		elseif nRelationPoint<=9999  then

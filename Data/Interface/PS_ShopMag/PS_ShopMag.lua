@@ -169,9 +169,9 @@ function PS_ShopMag_OnEvent(event)
 		local nOnSale = PlayerShop:IsSelectOnSale("item");
 	 	
 	 	if nOnSale == 0  then
-	 		PS_ShopMag_DownStall:SetText("Thßþng Giá");
+	 		PS_ShopMag_DownStall:SetText("Bày bán");
 	 	else
-	 		PS_ShopMag_DownStall:SetText("HÕ Giá");
+	 		PS_ShopMag_DownStall:SetText("Ngßng bán");
 	 	end
 
 	elseif( event == "OBJECT_CARED_EVENT" )  then
@@ -229,9 +229,9 @@ function PS_ShopMag_PetList_Selected()
 	local nOnSale = PlayerShop:IsSelectOnSale("pet",g_PetIndex[nIndex]);
 
  	if nOnSale == 0  then
- 		PS_ShopMag_DownStall:SetText("Thßþng Giá");
+ 		PS_ShopMag_DownStall:SetText("Bày bán");
  	else
- 		PS_ShopMag_DownStall:SetText("HÕ Giá");
+ 		PS_ShopMag_DownStall:SetText("Ngßng bán");
  	end
  	
  	--Í¨ÖªC£«£«
@@ -264,11 +264,11 @@ function PS_ShopMag_UpdateFrame()
 	
 	--µêÖ÷  --¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:GetShopInfo("self","ownername");
-	PS_ShopMag_Shopkeeper_Name:SetChatString("#YðIªm chü: #{_INFOUSR".. szName .. "}");
+	PS_ShopMag_Shopkeeper_Name:SetChatString("#GChü ti®m: #{_INFOUSR".. szName .. "}");
 	
 	--µêÖ÷ID
 	local szID = PlayerShop:GetShopInfo("self","ownerid");
-	PS_ShopMag_Shopkeeper_ID:SetText("Ðiªm chü ID:".. szID);
+	PS_ShopMag_Shopkeeper_ID:SetText("ID chü ti®m:  ".. szID);
 	
 	--µêÃû
 	local szShopName = PlayerShop:GetShopInfo("self","shopname");
@@ -289,7 +289,7 @@ function PS_ShopMag_UpdateFrame()
 	
 	--ÉÌÒµÖ¸Êý
 	local szCommercialFactor = PlayerShop:GetCommercialFactor();
-	PS_ShopMag_CommerceExponential:SetText("Buôn bán luÛ th×a:" .. szCommercialFactor);
+	PS_ShopMag_CommerceExponential:SetText("Ði¬m thß½ng nghi®p: " .. szCommercialFactor);
 	
 	--À©½¨ºÍËõ¼õ
 	PS_ShopMag_Curtail:Enable();
@@ -337,9 +337,9 @@ function PS_ShopMag_UpdateFrame()
 	--µêÆÌID
 	local shopIndex = PlayerShop:GetShopInfo("self","shopindex")
 	if (tonumber(shopIndex) <= 0) then
-		PS_ShopMag_DPID:SetText("CØa hàng ID:")
+		PS_ShopMag_DPID:SetText("ID cØa ti®m:")
 	else
-		PS_ShopMag_DPID:SetText("CØa hàng ID:" .. shopIndex)
+		PS_ShopMag_DPID:SetText("ID cØa ti®m:" .. shopIndex)
 	end
 
 	--ÌáÊ¾ â¸ö¹ñÌ¨µ±Ç°µÄ×´Ì¬ÊÇOpen»¹ÊÇClose
@@ -349,11 +349,11 @@ function PS_ShopMag_UpdateFrame()
 	if (g_bCurStallOpen == 2)  then 
 		PS_ShopMag_Open:SetText("Ðóng cØa");
 		PS_ShopMag_DownStall:Enable();
-		PS_ShopMag_Stall_State:SetText("Trß¾c m£t qu¥y trÕng thái: #GkHai trß½ng");
+		PS_ShopMag_Stall_State:SetText("TrÕng thái qu¥y hàng: #GKhai trß½ng");
 	else
 		PS_ShopMag_Open:SetText("Khai trß½ng");
 		PS_ShopMag_DownStall:Disable();
-		PS_ShopMag_Stall_State:SetText("Trß¾c m£t qu¥y trÕng thái: #RðÓng cØa");
+		PS_ShopMag_Stall_State:SetText("TrÕng thái qu¥y hàng: #RÐóng cØa");
 	end
 	
 	-- ÏÔÊ¾ÏÖÔÚµÄÑ¡ÖÐµÄÎïÆ·»ò ßÊÇ äÊÞµÄ¼Û¸ñ
@@ -431,7 +431,7 @@ function PS_ShopMag_ShowHide_Windows()
 	
 		
 	if( g_SaleOuting == 1) then --??????
-		PS_ShopMag_DisposeOf:SetText("H°i C¤u");
+		PS_ShopMag_DisposeOf:SetText("Trä lÕi");
 		--ÖÃ»Ò²»ÄÜÊ¹ÓÃµÄ¹¦ÄÜ						
 		PS_ShopMag_SortAmend:Hide();		-- ????
 		PS_ShopMag_Open:Hide();         -- ??
@@ -451,7 +451,7 @@ function PS_ShopMag_ShowHide_Windows()
 			
 		--µêÃû
 		local szShopName = PlayerShop:GetShopInfo("self","shopname");
-		szShopName = szShopName .. "(Bàn Xu¤t Trung)"
+		szShopName = szShopName .. "(Ðang sang ti®m)"
 		PS_ShopMag_PageHeader:SetText("#gFF0FA0"..szShopName);
 		
 		--ÎïÆ·½«²»ÄÜÍÏ¶¯
@@ -467,7 +467,7 @@ function PS_ShopMag_ShowHide_Windows()
 		PS_ShopMag_Del : Disable();
 		PS_ShopMag_ViewLog : Disable();
 	else
-		PS_ShopMag_DisposeOf:SetText("Bàn Xu¤t");
+		PS_ShopMag_DisposeOf:SetText("Sang ti®m");
 		--»Ø¸´ÎïÆ·µÄÍÏ¶¯
 		for i=1 , 20   do
 			PS_BUTTON[i]:SetProperty("DraggingEnabled", "True");
@@ -520,11 +520,11 @@ function PS_ShopMag_UpdateItem()
 
 	-- ¸üÐÂ×ÓÀàÁÐ±í
 	PS_ShopMag_SelectSort:ResetList();
-	PS_ShopMag_SelectSort:ComboBoxAddItem("V§t ph¦m Ðiªm",0);
-	PS_ShopMag_SelectSort:ComboBoxAddItem("Bäo thÕch Ðiªm",1);
-	PS_ShopMag_SelectSort:ComboBoxAddItem("Vû khí ðiªm",2);
-	PS_ShopMag_SelectSort:ComboBoxAddItem("Hµ giáp Ðiªm",3);
-	PS_ShopMag_SelectSort:ComboBoxAddItem("Tài li®u Ðiªm",4);
+	PS_ShopMag_SelectSort:ComboBoxAddItem("Ti®m V§t Ph¦m",0);
+	PS_ShopMag_SelectSort:ComboBoxAddItem("Ti®m Bäo ThÕch",1);
+	PS_ShopMag_SelectSort:ComboBoxAddItem("Ti®m Vû Khí",2);
+	PS_ShopMag_SelectSort:ComboBoxAddItem("Ti®m Hµ Giáp",3);
+	PS_ShopMag_SelectSort:ComboBoxAddItem("Ti®m Nguyên Li®u",4);
 
 	--ÉÌµê×ÓÀà
 	local nShopSubType = PlayerShop:GetCurShopType("self");
@@ -557,7 +557,7 @@ function PS_ShopMag_UpdatePet()
 
 	-- ¸üÐÂ×ÓÀàÁÐ±í
 	PS_ShopMag_SelectSort:ResetList();
-	PS_ShopMag_SelectSort:ComboBoxAddItem("CØa hàng Trân Thú",0);
+	PS_ShopMag_SelectSort:ComboBoxAddItem("Ti®m Trân Thú",0);
 
 	--ÉÌµê×ÓÀà
 	local nShopSubType = PlayerShop:GetCurShopType("self");
@@ -594,7 +594,7 @@ function PS_ShopMag_Retake_Click()
 		local nIndex = PS_ShopMag_PetList:GetFirstSelectItem();
 		
 		if(nIndex == -1)  then
-			PushDebugMessage("Thïnh Tiên lña ch÷n mµt cái Trân Thú.")
+			PushDebugMessage("Hãy ch÷n 1 Trân Thú.")
 			return;
 		end
 		
@@ -608,7 +608,7 @@ end
 function PS_ShopMag_UpDownStall_Click()
 
 	if( g_CurStallObj == STALL_ITEM )     then
-		if(PS_ShopMag_DownStall:GetText() == "Thßþng Giá")  then
+		if(PS_ShopMag_DownStall:GetText() == "Bày bán")  then
 			PlayerShop:InputMoney("ps_upitem");
 		else
 			PlayerShop:DownSale("item");
@@ -623,7 +623,7 @@ function PS_ShopMag_UpDownStall_Click()
 			return;
 		end
 		
-		if(PS_ShopMag_DownStall:GetText() == "Thßþng Giá")  then
+		if(PS_ShopMag_DownStall:GetText() == "Bày bán")  then
 			PlayerShop:InputMoney("ps_uppet");
 		else
 			PlayerShop:DownSale("pet");
@@ -869,19 +869,19 @@ end
 function PS_ShopMag_SortAmend_Click()
 	local szName, nIndex = PS_ShopMag_SelectSort:GetCurrentSelect();
 	if(nIndex == -1)then
-		PushDebugMessage("Nhçm lña ch÷n Li­u mµt cái không có hi®u quä Tr¸, Thïnh mµt l¥n næa lña ch÷n");
+		PushDebugMessage("Các hÕ lña ch÷n vô hi®u, xin tiªp tøc thØ lÕi");
 		return;
 	end
 	if( g_CurStallObj == STALL_ITEM )     then
 		local nShopSubType = PlayerShop:GetCurShopType("self");		
 		if(nIndex+1 == nShopSubType)then
-			PushDebugMessage("Thïnh lña ch÷n mµt cái khác nhau Ðích cØa hàng loÕi hình Tái sØa chæa!");
+			PushDebugMessage("Xin ch÷n 1 loÕi hình thß½ng ti®m khác r°i sØa chæa!");
 			return;
 		end
 		g_lastIndex = nIndex;
 		PlayerShop:ModifySubType("ps_type", nIndex+1);
 	else
-		PushDebugMessage("Thïnh lña ch÷n mµt cái khác nhau Ðích cØa hàng loÕi hình Tái sØa chæa!");
+		PushDebugMessage("Xin ch÷n 1 loÕi hình thß½ng ti®m khác r°i sØa chæa!");
 		return;		
 	end	
 end

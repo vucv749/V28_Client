@@ -115,20 +115,20 @@ local ValentineRoseTopList_Exchange_Chiqingyu_Text = {}
 
 local g_ValentineRoseTopList_Qingrenjie_Bonus =
 {
-	[1] = {neednum = 1314, itemid = 39920078, count = 1, name = "Trân Thú Lung: Th¤t Xäo Li Miêu"},
-	[2] = {neednum = 521, itemid = 39920062, count = 1, name = "TrÑng Trân Thú: Thông Thiên Nhân Ngçu"},
-	[3] = {neednum = 300, itemid = 39920063, count = 1, name = "S½n Tra Bång Ðß¶ng H° Lô"},
-	[4] = {neednum = 300, itemid = 39920064, count = 1, name = "ÐÕi Phong Xa"},
+	[1] = {neednum = 1314, itemid = 39920078, count = 1, name = "L°ng Trân Thú: Th¤t Xäo Ly Miêu"},
+	[2] = {neednum = 521, itemid = 39920062, count = 1, name = "TrÑng Trân Thú: Th¤t Xäo Ly Miêu"},
+	[3] = {neednum = 300, itemid = 39920063, count = 1, name = "MÑt S½n Trà"},
+	[4] = {neednum = 300, itemid = 39920064, count = 1, name = "Chong Chóng L¾n"},
 	[5] = {neednum = 120, itemid = 39920065, count = 1, name = "MÕn Thiên Hoa Vû"},
-	[6] = {neednum = 120, itemid = 39920083, count = 1, name = "Mãn Thiên Hoa Vû-Tâm Tß½ng ?N"},
+	[6] = {neednum = 120, itemid = 39920083, count = 1, name = "MÕn Thiên Hoa Vû?-Tâm Tß½ng „n"},
 }
 
 local g_ValentineRoseTopList_Chiqingyu_Bonus =
 {
-	[1] = {neednum = 1, itemid = 39920070, itemid2 = 39920074, count = 1, name = "Khí vû b¤t phàm", namewoman = "Nhß hoa nhß ng÷c"},
-	[2] = {neednum = 3, itemid = 39920071, itemid2 = 39920075, count = 1, name = "Phong lßu phóng khoáng", namewoman = "Qu¯c s¡c thiên hß½ng"},
-	[3] = {neednum = 10, itemid = 39920072, itemid2 = 39920076, count = 1, name = "Ng÷c thø lâm phong", namewoman = "Khuynh Qu¯c Khuynh Thành"},
-	[4] = {neednum = 16, itemid = 39920073, itemid2 = 39920077, count = 1, name = "Long Chß½ng Phøng Tß", namewoman = "Tuy®t thª giai nhân"},
+	[1] = {neednum = 1, itemid = 39920070, itemid2 = 39920074, count = 1, name = "Khí Vû B¤t Phàm", namewoman = "Nhß Hoa Tñ Ng÷c"},
+	[2] = {neednum = 3, itemid = 39920071, itemid2 = 39920075, count = 1, name = "Phong Lßu Thích Thäng", namewoman = "Qu¯c S¡c Thiên Hß½ng"},
+	[3] = {neednum = 10, itemid = 39920072, itemid2 = 39920076, count = 1, name = "Ng÷c Thø Lâm Phong", namewoman = "Khuynh Qu¯c Khuynh Thành"},
+	[4] = {neednum = 16, itemid = 39920073, itemid2 = 39920077, count = 1, name = "Long Chß½ng Phøng Tß", namewoman = "Tuy®t Thª Giai Nhân"},
 }
 
 --===============================================

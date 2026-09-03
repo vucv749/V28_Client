@@ -418,7 +418,7 @@ function ShenQiRepair_Update(pos0, pos1)
 			-- 15¼¶ÉñÆ÷²»ÐèÒªÐÞÀí by lishilong 2016-8-23
 			if 10300422 == ItemID or 10302448 == ItemID or 10304426 == ItemID
 				or 10305444 == ItemID or 10306042 == ItemID or 10307042 == ItemID or 10308042 == ItemID then
-				PushDebugMessage("ThØ th¥n khí không c¥n sØa chæa")
+				PushDebugMessage("Th¥n Khí này không c¥n sØa chæa")
 				return
 			end
 

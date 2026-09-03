@@ -155,7 +155,7 @@ function PetSavvy_OK_Clicked()
 	-- ÅĞ¶¨Íæ¼ÒÊÇ·ñ·ÅÈë²ÎÓëºÏ³ÉµÄ äÊŞ£¬Èç¹ûÃ»ÓĞ·ÅÈëNPC½«»áµ¯³ö¶Ô»°²¢·µ»Ø£º
 	if assisPet.idx == -1 then
 		-- Çë·ÅÈëÄúÒª²ÎÓëºÏ³ÉµÄ äÊŞ¡£
-		ShowSystemTipInfo( "Thïnh ğ¬ vào Nhçm Yêu tham dñ hşp thành Ğích Trân Thú." )
+		ShowSystemTipInfo( "Nh§p Trân Thú mu¯n ghép." )
 		return
 	end
 
@@ -233,7 +233,7 @@ function PetSavvy_Clear()
 	PetSavvy_RemoveMainPet()
 	PetSavvy_RemoveAssisPet()
 
-	PetSavvy_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
+	PetSavvy_Text2 : SetText( "#cFF0000Tï l® thành công" )
 	PetSavvy_NeedMoney : SetProperty( "MoneyNumber", tostring( 0 ) )
 
 	PetSavvy_OK : Disable()
@@ -258,7 +258,7 @@ function PetSavvy_Check()
 	local assisCarryLevel = Pet : GetTakeLevel( assisPet.idx )
 	if assisCarryLevel < mainCarryLevel then
 		-- ÄúµÄ²ÎÓëºÏ³ÉµÄ äÊŞĞ¯´øµÈ¼¶Îªa£¬±ØĞëÒª ÒĞ¯´øµÈ¼¶´óÓÚµÈÓÚbµÄ²ÅÄÜ²ÎÓëºÏ³É¡££¨aÎª²ÎÓëºÏ³É äÊŞµÄĞ¯´øµÈ¼¶¡¢bÎªĞèÒªÌáÉıµÄ äÊŞµÄĞ¯´øµÈ¼¶£©
-		ShowSystemTipInfo( "Nhçm Ğích tham dñ hşp thành Ğích Trân Thú mang theo c¤p b§c Vi" .. assisCarryLevel .. ", nh¤t ğ¸nh phäi Träo mang theo c¤p b§c l¾n h½n tß½ng ğß½ng" .. mainCarryLevel .. "Ğích m¾i có th¬ tham dñ hşp thành." )
+		ShowSystemTipInfo( "C¤p trân thú ghép mang theo là " .. assisCarryLevel .. ", c¥n tìm c¤p mang theo l¾n h½n ho£c b¢ng " .. mainCarryLevel .. " m¾i có th¬ ghép." )
 		return 0
 	end
 
@@ -267,7 +267,7 @@ function PetSavvy_Check()
 	local con = Pet : GetBasic( assisPet.idx )
 	if con < savvy then
 		-- ²ÎÓëºÏ³ÉµÄ äÊŞµÄ¸ù¹Ç±ØĞë´óÓÚµÈÓÚa£¨aÎªĞèÒªÌáÉıµÄ äÊŞµÄÎòĞÔµÈ¼¶£©
-		ShowSystemTipInfo( "Tham dñ hşp thành Ğích Trân Thú Ğích Cån C¯t phäi l¾n h½n tß½ng ğß½ng" .. savvy .. "." )
+		ShowSystemTipInfo( "Trân Thú dùng ghép phäi có Cån C¯t b¢ng ho£c trên " .. savvy .. "." )
 		return 0
 	end
 
@@ -277,7 +277,7 @@ end
 -- ¼ÆËã³É¹¦ÂÊ
 function PetSavvy_CalcSuccOdds()
 	if mainPet.idx == -1 then
-		PetSavvy_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
+		PetSavvy_Text2 : SetText( "#cFF0000Tï l® thành công" )
 		PetSavvy_OK : Disable()
 		return
 	end
@@ -296,7 +296,7 @@ function PetSavvy_CalcSuccOdds()
 	}
 
 	local savvy = Pet : GetSavvy( mainPet.idx )
-	local str = "#cFF0000xác xu¤t thành công:"
+	local str = "#cFF0000Tï l® thành công: "
 	local odds = succOdds[savvy]
 	if not odds then
 		str = "Không th¬ tång"
@@ -425,7 +425,7 @@ function PetSavvy_UpdateSelected()
 			mainPet.guid.high = -1
 			mainPet.guid.low = -1
 			PetSavvy_Pet1_Text : SetText( "" )
-			PetSavvy_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
+			PetSavvy_Text2 : SetText( "#cFF0000Tï l® thành công" )
 			PetSavvy_OK : Disable()
 		-- ·ñÔòÅĞ¶Ï äÊŞµÄÎ»ÖÃÊÇ·ñ·¢Éú±ä»¯
 		elseif newIdx ~= mainPet.idx then

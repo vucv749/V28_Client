@@ -68,7 +68,7 @@ function MainMenuBar_3_Clicked(nIndex)
 	if DataPool:IsCanDoAction() then
 		MAIN_3_BUTTONS[nIndex]:DoAction();
 	else
-		PushDebugMessage("Nhî không th¬ làm nhß v§y.")
+		PushDebugMessage("Các hÕ không ğßşc làm nhß v§y.")
 		return;
 	end
 end

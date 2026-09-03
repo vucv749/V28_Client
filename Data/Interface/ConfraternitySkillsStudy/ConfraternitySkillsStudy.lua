@@ -117,16 +117,16 @@ function Guild_Ability_SetCtl()
 										--1.¼¼ÄÜÃèÊöÏà¹Ø
 										icon		= ConfraternitySkillsStudy_Icon,
 										name 		=	{txt = "", 							ctl = ConfraternitySkillsStudy_SkillName},
-										level		=	{txt = "C¤p:", 		ctl = ConfraternitySkillsStudy_SkillLevel},
-										aexp		=	{txt = "Thành thÕo:", 	ctl = ConfraternitySkillsStudy_skilledDegree},
-										hlevel	=	{txt = "C¤p:", ctl = ConfraternitySkillsStudy_PlayerLevel},
+										level		=	{txt = "C¤p: ", 		ctl = ConfraternitySkillsStudy_SkillLevel},
+										aexp		=	{txt = "Thành thÕo: ", 	ctl = ConfraternitySkillsStudy_skilledDegree},
+										hlevel	=	{txt = "C¤p: ", ctl = ConfraternitySkillsStudy_PlayerLevel},
 										--2.¼¼ÄÜËµÃ÷
 										desc		=	{txt = "  ",						ctl = ConfraternitySkillsStudy_Explain_Desc},
 										--3.¾­Ñé¡¢°ï¹±¡¢½ðÇ®
-										curexp	=	{txt = "EXP có:", 		ctl = ConfraternitySkillsStudy_CurrentlyExp_Character_Text},
-										demexp	=	{txt = "EXP c¥n:", 		ctl = ConfraternitySkillsStudy_DemandExp_Character_Text},
-										curcon	=	{txt = "Trß¾c m£t Bang C¯ng:", 		ctl = ConfraternitySkillsStudy_CurrentlyContribute_Character_Text},
-										demcon	=	{txt = "CH Bang c¥n:",			ctl = ConfraternitySkillsStudy_DemandContribute_Character_Text},
+										curexp	=	{txt = "EXP có: ", 		ctl = ConfraternitySkillsStudy_CurrentlyExp_Character_Text},
+										demexp	=	{txt = "EXP c¥n: ", 		ctl = ConfraternitySkillsStudy_DemandExp_Character_Text},
+										curcon	=	{txt = "C¯ng hiªn: ", 		ctl = ConfraternitySkillsStudy_CurrentlyContribute_Character_Text},
+										demcon	=	{txt = "CH Bang c¥n: ",			ctl = ConfraternitySkillsStudy_DemandContribute_Character_Text},
 										curmon	=	ConfraternitySkillsStudy_Currently_Money,
 										curmonjz = ConfraternitySkillsStudy_Currently_Jiaozi,
 										--demmon	=	ConfraternitySkillsStudy_Demand_Money,

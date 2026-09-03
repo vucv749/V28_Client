@@ -155,7 +155,7 @@ function GemCarve_Update( pos_ui, pos_packet )
 		--±ØĞëÊÇ±¦Ê¯....
 		local Item_Class = PlayerPackage : GetItemSubTableIndex(pos_packet,0)
 		if Item_Class ~= 5 then
-			PushDebugMessage("Chï có bäo thÕch tài khä B¸ tÕo hình")
+			PushDebugMessage("Chï có Bäo ThÕch m¾i có th¬ ğiêu trác")
 			return
 		end
 
@@ -181,14 +181,14 @@ function GemCarve_Update( pos_ui, pos_packet )
 		ProductID, g_NeedItemID, g_NeedMoney = GemCarve:GetGemCarveInfo( GemItemID )
 		if -1 == ProductID then
 			g_RightGem = 0
-			GemCarve_State : SetText("ThØ bäo thÕch không th¬ B¸ tÕo hình.")
+			GemCarve_State : SetText("Bäo ThÕch này không th¬ ğiêu trác")
 			return
 		else
 			g_RightGem = 1
 		end
 
 		--ÉèÖÃ²úÆ·ActionButton....
-		GemCarve_State : SetText("TÕo hình H§u Ğích kªt quä:")
+		GemCarve_State : SetText("Thành ph¦m: ")
 		GemCarve_ProductItem:Show()
 		local ProductAction = GemCarve:UpdateProductAction( ProductID )
 		if ProductAction and ProductAction:GetID() ~= 0 then
@@ -198,7 +198,7 @@ function GemCarve_Update( pos_ui, pos_packet )
 		end
 
 		--ÉèÖÃËùĞèÎïÆ·Tooltips....
-		GemCarve_NeedItem : SetToolTip("C¥n ğ¬ vào#{_ITEM"..g_NeedItemID.."}")
+		GemCarve_NeedItem : SetToolTip("C¥n ğ£t vào #{_ITEM"..g_NeedItemID.."}")
 
 		--ÉèÖÃËùĞèÇ®Êı....
 		GemCarve_Money : SetProperty("MoneyNumber", tostring(g_NeedMoney));
@@ -215,13 +215,13 @@ function GemCarve_Update( pos_ui, pos_packet )
 		end
 
 		if -1 == g_GemItemPos or g_RightGem == 0 then
-			PushDebugMessage("Thïnh Tiên ğ¬ vào c¥n tÕo hình Ğích bäo thÕch")
+			PushDebugMessage("Xin hãy bö Bäo ThÕch c¥n ğiêu trác vào")
 			return
 		end
 
 		--²»ÊÇĞèÇóµÄÎïÆ·....
 		if PlayerPackage:GetItemTableIndex( pos_packet ) ~= g_NeedItemID then
-			PushDebugMessage("N½i này chï có th¬ ğ¬ vào#{_ITEM"..g_NeedItemID.."}")
+			PushDebugMessage("— ğây chï có th¬ ğ£t vào #{_ITEM"..g_NeedItemID.."}")
 			return
 		end
 
@@ -342,7 +342,7 @@ function GemCarve_RefreshItem()
 			GemCarve_GemItem:SetActionItem(theAction:GetID());
 			
 			if -1 ~= ProductID then
-				GemCarve_State : SetText("TÕo hình H§u Ğích kªt quä:")
+				GemCarve_State : SetText("Thành ph¦m: ")
 				GemCarve_ProductItem:Show()
 				local ProductAction = GemCarve:UpdateProductAction( ProductID )
 				if ProductAction and ProductAction:GetID() ~= 0 then
@@ -353,7 +353,7 @@ function GemCarve_RefreshItem()
 			end
 			
 			--ÉèÖÃËùĞèÎïÆ·Tooltips....
-			GemCarve_NeedItem : SetToolTip("C¥n ğ¬ vào#{_ITEM"..g_NeedItemID.."}")
+			GemCarve_NeedItem : SetToolTip("C¥n ğ£t vào #{_ITEM"..g_NeedItemID.."}")
 
 			--ÉèÖÃËùĞèÇ®Êı....
 			GemCarve_Money : SetProperty("MoneyNumber", tostring(g_NeedMoney));

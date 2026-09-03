@@ -189,7 +189,7 @@ function EquipBind_Update(UI_index,Item_index)
 		if theAction:GetID() ~= 0 then
 				if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900013 and
 					 PlayerPackage : GetItemTableIndex( i_index ) ~= 30900014 then
-					PushDebugMessage("N½i này phäi ð¬ vào kh¡c minh Phù.")
+					PushDebugMessage("C¥n ð£t Kh¡c Danh Phù vào")
 					return
 				end
 				if Bind_Item1 ~= -1 and PlayerPackage : GetItemTableIndex( Bind_Item1 ) == 10124391 and 
@@ -226,11 +226,11 @@ function EquipBind_Buttons_Clicked()
 	--AxTrace(0,5,"Bind_Item1="..Bind_Item1.." Bind_Item2="..Bind_Item2)
 	
 	if Bind_Item1 == -1 then 
-		PushDebugMessage("Thïnh ð¬ vào Yêu kh¡c minh Ðích trang b¸.")
+		PushDebugMessage("Hãy ð£t trang b¸ c¥n kh¡c vào!")
 		return
 	end
 	if Bind_Item2 == -1 then
-		PushDebugMessage("C¥n ð£t Kh¡c Danh Phù vào")
+		PushDebugMessage("Hãy ð£t Kh¡c Danh Phù vào.")
 		return
 	end
 	if PlayerPackage : GetItemTableIndex( Bind_Item1 ) == 10124391 and 

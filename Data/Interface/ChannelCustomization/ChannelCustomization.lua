@@ -94,27 +94,27 @@ function ChatTabAction( act , strCfg , strName , pos)
 	--AxTrace(0, 0, "ChannelCustomization " .. act .. " " .. strCfg .. " " .. strName);	
 	-- ÉèÖÃ´°ÌåÃû³Æ
 	if ( g_Action == "create" ) then
-		ChannelCustomization_PageHeader_Text:SetText("#gFF0FA0Tñ ð¸nh nghîa");
-		ChannelCustomization_Text1:SetText("Tñ ð¸nh nghîa tên");
-		ChannelCustomization_Cancel:SetText("Sáng tÕo");
-		ChannelCustomization_Destory:SetText("Hüy bö");
+		ChannelCustomization_PageHeader_Text:SetText("#gFF0FA0Tñ ch÷n");
+		ChannelCustomization_Text1:SetText("Tên tñ ch÷n");
+		ChannelCustomization_Cancel:SetText("TÕo");
+		ChannelCustomization_Destory:SetText("Hüy");
 		ChannelCustomization_EditName:Show();
 		ChannelCustomization_EditName:SetProperty("DefaultEditBox", "True");
 		ChannelCustomization_Accept:Hide();
 		ChannelCustomization_TxtName:Hide();
 		ChannelCustomization_EditName:SetText(strName);
 	elseif ( g_Action == "config" ) then
-		ChannelCustomization_PageHeader_Text:SetText("#gFF0FA0kênh ph¯i trí");
-		ChannelCustomization_Text1:SetText("Kênh tên");
-		ChannelCustomization_Accept:SetText("Xác nh§n");
-		ChannelCustomization_Cancel:SetText("Hüy bö");
-		ChannelCustomization_Destory:SetText("Xóa bö");
+		ChannelCustomization_PageHeader_Text:SetText("#gFF0FA0Thiªt l§p kênh");
+		ChannelCustomization_Text1:SetText("Tên kênh");
+		ChannelCustomization_Accept:SetText("Ð°ng ý");
+		ChannelCustomization_Cancel:SetText("Hüy");
+		ChannelCustomization_Destory:SetText("Xóa");
 		ChannelCustomization_EditName:Hide();
 		ChannelCustomization_TxtName:Show();
 		ChannelCustomization_Accept:Show();
 		ChannelCustomization_TxtName:SetText(strName);
 		
-		if(strName == "Chính mình") then
+		if(strName == "Bän thân") then
 			ChannelCustomization_Destory:Hide();
 		else
 			ChannelCustomization_Destory:Show();
@@ -283,7 +283,7 @@ function ChannelCustomization_Accept_Clicked()
 				_id = -1;
 			end
 			if(_id < 0)then
-				PushDebugMessage("Thïnh Nhçm Tuy¬n Häo mµt cái thành th¸ Tái xác ð¸nh sØ døng Ð°ng Thành kênh!")
+				PushDebugMessage("Xin ch÷n thành th¸ kênh tán gçu")
 				this : Hide()
 				return;
 			end
@@ -327,7 +327,7 @@ function ChannelCustomization_Cancel_Clicked()
 				_id = -1;
 			end
 			if(_id < 0)then
-				PushDebugMessage("Thïnh Nhçm Tuy¬n Häo mµt cái thành th¸ Tái xác ð¸nh sØ døng Ð°ng Thành kênh!")
+				PushDebugMessage("Xin ch÷n thành th¸ kênh tán gçu")
 				this : Hide()
 				return;
 			end

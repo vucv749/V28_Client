@@ -428,7 +428,7 @@ function PlayerFrame_SelectMyselfAsTarget()
 	
 end
 function PlayerFrame_ShowTooltip( type )
-	local strTooltip = "Huyªt:"..tostring( PlayerHP ) .. "/" .. tostring( PlayerMaxHP).."#r".."Khí:"..tostring( PlayerMP ) .. "/" .. tostring( PlayerMaxMP).."#r".."Nµ:"..tostring( PlayerRage ) .. "/" .. tostring( 1000);
+	local strTooltip = "Sinh lñc:"..tostring( PlayerHP ) .. "/" .. tostring( PlayerMaxHP).."#r".."Khí: "..tostring( PlayerMP ) .. "/" .. tostring( PlayerMaxMP).."#r".."Nµ: "..tostring( PlayerRage ) .. "/" .. tostring( 1000);
 	if( type == 1 )	then
 		PlayerFrame_HP:SetToolTip( strTooltip );
 	elseif( type == 2 ) then

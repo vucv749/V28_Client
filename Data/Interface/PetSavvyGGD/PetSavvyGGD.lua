@@ -118,7 +118,7 @@ function PetSavvyGGD_OK_Clicked()
 	end
 	
 	if bExist <= 0 then
-		local msg = "Nâng ngµ tính ðªn"..nSavvyNeed.."C¥n"..msgTemp.."C¤p cån c¯t ðan.";
+		local msg = "Nâng ngµ tính ðªn "..nSavvyNeed.." C¥n "..msgTemp.." c¤p Cån C¯t Ðan. ";
 		PetSavvyGGD_GGD : SetText( msg );
 		-- SetNotifyTip( msg );
 		-- return;
@@ -247,7 +247,7 @@ function PetSavvyGGD_SelectPet( petIdx )
 	local bExist = IsItemExist( nItemIdGenGuDan );
 	
 	if bExist <= 0 then
-		local msg = "Nâng ngµ tính ðªn"..nSavvyNeed.."C¥n"..msgTemp.."C¤p cån c¯t ðan.";
+		local msg = "Nâng ngµ tính ðªn "..nSavvyNeed.." C¥n "..msgTemp.." c¤p Cån C¯t Ðan. ";
 		PetSavvyGGD_GGD : SetText( msg );		
 		return;
 	end
@@ -408,7 +408,7 @@ function PetSavvyGGD_Clear()
 	PetSavvyGGD_RemoveMainPet()
 	PetSavvyGGD_GGD : SetText( "" );
 	PetSavvyGGD_Pet : SetText( "" );
-	PetSavvyGGD_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
+	PetSavvyGGD_Text2 : SetText( "#cFF0000Tï l® thành công" )
 	PetSavvyGGD_NeedMoney : SetProperty( "MoneyNumber", tostring( 0 ) )
 
 	PetSavvyGGD_OK : Disable()
@@ -421,7 +421,7 @@ end
 -- ¼ÆËã³É¹¦ÂÊ
 function PetSavvyGGD_CalcSuccOdds()
 	if mainPet.idx == -1 then
-		PetSavvyGGD_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
+		PetSavvyGGD_Text2 : SetText( "#cFF0000Tï l® thành công" )
 		PetSavvyGGD_OK : Disable()
 		PetSavvyGGD_Quick:Disable()
 		PetSavvyGGD_Quick:SetText( "#{ZSKJT_130507_1}" )
@@ -497,7 +497,7 @@ function PetSavvyGGD_UpdateSelected()
 			mainPet.guid.high = -1
 			mainPet.guid.low = -1
 			PetSavvyGGD_Pet : SetText( "" )
-			PetSavvyGGD_Text2 : SetText( "#cFF0000xác xu¤t thành công" )
+			PetSavvyGGD_Text2 : SetText( "#cFF0000Tï l® thành công" )
 			PetSavvyGGD_OK : Disable()
 			PetSavvyGGD_Quick:Disable()
 			PetSavvyGGD_Quick:SetText( "#{ZSKJT_130507_1}" )

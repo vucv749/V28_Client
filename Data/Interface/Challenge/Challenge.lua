@@ -165,7 +165,7 @@ function Challenge_GetChallengeInfo()
 			strMenPai = "Thiên S½n";
 
 		elseif(8 == menpai) then
-			strMenPai = "Tiêu dao";
+			strMenPai = "Tiêu Dao";
 
 		elseif(10 == menpai) then
 			strMenPai = "MÕn Ðà";

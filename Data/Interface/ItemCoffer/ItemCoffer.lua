@@ -111,8 +111,8 @@ function ItemCoffer_OnLoad()
 	
 	PACKAGE_TAB_TEXT = {
 		[0] = "пуo cЬ",
-		"TЮi li╝u",
-		"TrБn ThЗ",
+		"Ng.li╝u",
+		"ThЗ",
 	};
 	
 	-- ╠ё╢Ф╫ГцФ╣дд╛хооЮ╤тн╩жц

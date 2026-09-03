@@ -6,7 +6,7 @@ local MAX_OBJ_DISTANCE = 3.0;
 local g_serverrequest  = 1100
 local g_clientNpcId = -1
 local g_serverNpcId = -1
-local g_DefaultTxt = "Thïnh s¡p sØa sØ døng Ðích ðÕo cø Ðà Du® Ðáo phía trß¾c Ðích ðÕo cø Khuông Trung.";
+local g_DefaultTxt = "Ðßa ðÕo cø c¥n dùng vào ô ðÕo cø.";
 
 --*************************************************
 --
@@ -87,7 +87,7 @@ function PetPropagateCheck_UICommand(arg0)
 			return
 		end
 		--local szTip = format( "#cfff263¸Ã äÊÞÉÏ´Î·±Ö³µÄµÈ¼¶ÊÇ#G"..nLevel.."¼¶#cfff263" )
-		PetPropagateCheck_Text1:SetText("#cfff263Cai Trân Thú l¥n trß¾c sinh sôi n¦y n· Ðích c¤p b§c Th¸#G"..nLevel.."C¤p#cfff263");
+		PetPropagateCheck_Text1:SetText("#cfff263C¤p sinh sän l¥n trß¾c cüa Trân Thú này là#G"..nLevel.." c¤p#cfff263");
 		PetPropagateCheck_Text1:Show();
 	end
 end
@@ -157,8 +157,8 @@ end
 --*************************************************
 function PetPropagateCheck_Do()
 	if (g_selectIdx == nil or g_selectIdx == -1 or g_serverNpcId == -1) then
-		PushDebugMessage("Thïnh lña ch÷n Nhî Yêu tu¥n tra Ðích Trân Thú!")
-		PetPropagateCheck_Text1:SetText("Thïnh lña ch÷n Nhî Yêu tu¥n tra Ðích Trân Thú!")
+		PushDebugMessage("Hãy ch÷n Trân Thú các hÕ mu¯n tìm!")
+		PetPropagateCheck_Text1:SetText("Hãy ch÷n Trân Thú các hÕ mu¯n tìm!")
 		return
 	end
 

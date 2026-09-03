@@ -336,7 +336,7 @@ function HuaShanLunJian_TopList_UpdateSelf(mDW1,mDW2,mDW3,mWinCnt,mTotalCnt)
 	local mRank,mName,mLevel,nMenPai = XBW:GetSelfInfo()
 	if g_myMatchId ~= -1 and g_myMatchId == g_nCurSel_MatchID then
 		if mRank < 0 or mRank >= 200 then
-			g_nMyInfo[0]:SetText("V¸ Thßþng Bäng")
+			g_nMyInfo[0]:SetText("Chßa vào BXH")
 			g_nMyInfo[0]:Show()
 			g_nMyInfo[7]:Hide()
 		else
@@ -392,7 +392,7 @@ function HuaShanLunJian_TopList_UpdateSelf(mDW1,mDW2,mDW3,mWinCnt,mTotalCnt)
 			end
 		end
 	else
-		g_nMyInfo[2]:SetText("Vô")
+		g_nMyInfo[2]:SetText("Không")
 	end
 	g_nMyInfo[5]:SetText(mWinCnt)
 	if mTotalCnt ~= 0 then

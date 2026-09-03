@@ -161,7 +161,7 @@ function City_Shop_Act_Set(i)
 			g_MembersCtl[i].money:SetProperty("MoneyNumber", tostring(money));
 			g_MembersCtl[i].money:Show();
 
-			g_MembersCtl[i].txt:SetText("Thß½ng Phiªu ti«n tài");
+			g_MembersCtl[i].txt:SetText("Ti«n thß½ng phiªu");
 			g_MembersCtl[i].txt:Show();
 		else
 			--ÉèÖÃ½ðÇ®
@@ -170,7 +170,7 @@ function City_Shop_Act_Set(i)
 			g_MembersCtl[i].money:Show();
 			--ÉèÖÃ°ï¹±
 			local contribute = City:GetCityShopInfo((g_CurPage-1)*12+(tonumber(i)), "contribute");
-			g_MembersCtl[i].txt:SetText("Bang C¯ng:"..tostring(contribute));
+			g_MembersCtl[i].txt:SetText("C¯ng hiªn:  "..tostring(contribute));
 			g_MembersCtl[i].txt:Show();
 		end
 		else

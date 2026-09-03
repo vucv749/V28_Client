@@ -19,17 +19,17 @@ end
 
 function EquipChange_OnLoad()
 
-	List_String[1]  = "Có th¬ biªn ğ±i ngoÕi hình Nh¤t"
-	List_String[2]  = "Có th¬ biªn ğ±i ngoÕi hình Nh¸"
-	List_String[3]  = "Có th¬ biªn ğ±i ngoÕi hình Tam"
-	List_String[4]  = "Có th¬ biªn ğ±i ngoÕi hình TÑ"
-	List_String[5]  = "Có th¬ biªn ğ±i ngoÕi hình Ngû"
+	List_String[1]  = "NgoÕi hình 1"
+	List_String[2]  = "NgoÕi hình 2"
+	List_String[3]  = "NgoÕi hình 3"
+	List_String[4]  = "NgoÕi hình 4"
+	List_String[5]  = "NgoÕi hình 5"
 
-	List_String[6]  = "Có th¬ biªn ğ±i ngoÕi hình Løc"
-	List_String[7]  = "Có th¬ biªn ğ±i ngoÕi hình Th¤t"
-	List_String[8]  = "Có th¬ biªn ğ±i ngoÕi hình Bát"
-	List_String[9]  = "Có th¬ biªn ğ±i ngoÕi hình CØu"
-	List_String[10] = "Có th¬ biªn ğ±i ngoÕi hình Th§p"
+	List_String[6]  = "NgoÕi hình 6"
+	List_String[7]  = "NgoÕi hình 7"
+	List_String[8]  = "NgoÕi hình 8"
+	List_String[9]  = "NgoÕi hình 9"
+	List_String[10] = "NgoÕi hình 10"
 	
 end
 
@@ -136,7 +136,7 @@ function EquipChange_Update(UI_index,Item_index)
 				Original_Visual_ID = LifeAbility : Get_Equip_VisualID(i_index);
 
 				if Original_Visual_ID < 10000 then
-					PushDebugMessage("Cái này trang b¸ không th¬ thay ğ±i ngoÕi hình.")
+					PushDebugMessage("Trang b¸ này không th¬ ğ±i ngoÕi hình")
 					EquipChange_Resume_Gem(23)
 					return
 
@@ -167,7 +167,7 @@ function EquipChange_Update(UI_index,Item_index)
 		if theAction:GetID() ~= 0 then
 		
 				if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900004 then
-					PushDebugMessage("Chï có th¬ ğ¬ vào biªn hình Phù.")
+					PushDebugMessage("Chï có th¬ ğ£t Biªn Hình Phù vào.")
 					return
 				end
 
@@ -205,17 +205,17 @@ function EquipChange_Buttons_Clicked()
 	local nSelIndex = EquipChange_EquiptShapeList:GetFirstSelectItem();
 	
 	if Change_Item1 == -1 then
-		PushDebugMessage("Thïnh ğ¬ vào Yêu thay ğ±i ngoÕi hình Ğích trang b¸.")
+		PushDebugMessage("Hãy ğ£t trang b¸ c¥n ğ±i ngoÕi hình vào!")
 		return
 	end
 	
 	if Change_Item2 == -1 then
-		PushDebugMessage("Thïnh ğ¬ vào biªn hình Phù.")
+		PushDebugMessage("Xin ğ£t vào phù biªn hình")
 		return
 	end
 	
 	if nSelIndex== -1 then
-		PushDebugMessage("Thïnh lña ch÷n mµt loÕi ngoÕi hình.")
+		PushDebugMessage("Hãy ch÷n ngoÕi hình!")
 		return
 	end
 	

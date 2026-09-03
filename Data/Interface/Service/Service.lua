@@ -23,9 +23,9 @@ end
 
 function Service_OnLoad()
 	EQUIP_BUTTONS = Service_Item
-	Prompt_Text[1] = "Nhî có th¬ TÕi ğúc Ğài sØa chæa b«n r½i ch§m lÕi Ğích vû khí. Yêu sØa chæa Ğích vû khí Ğích nhu c¥u c¤p b§c ít nh¤t Yêu>=C¤p 40. C¤p 40 dß¾i vû khí Thïnh Träo Thø Hoá thß½ng nhân trñc tiªp sØa chæa. #r sØa chæa vû khí c¥n cüa ngß½i ğúc kÛ nång c¤p b§c*12không nhö Vu vû khí Ğích nhu c¥u c¤p b§c. #r sØa chæa m¾i có th¬ th¤t bÕi, luy kª th¤t bÕi 3ThÑ vû khí báo höng. Cüa ngß½i ğúc kÛ nång c¤p b§c càng cao, th¤t bÕi Ğích có th¬ Tính càng nhö. #r Thïnh Bä Yêu sØa chæa Ğích vû khí Ğà Ğµng khi ğªn Di®n Ğích v§t ph¦m Lan Trung, Ği¬m Kích'sØa chæa'. #r m²i l¥n sØa chæa tiêu hao sÑc s¯ng =vû khí c¤p b§c +4. #r vû khí c¤p b§c =vû khí nhu c¥u c¤p b§c/10+1H§u Thü Chïnh."
-	Prompt_Text[2] = "Nhî có th¬ TÕi may Ğài sØa chæa b«n r½i ch§m lÕi Ğích Phòng Cø. Yêu sØa chæa Ğích Phòng Cø Ğích nhu c¥u c¤p b§c ít nh¤t Yêu>=C¤p 40. C¤p 40 dß¾i Phòng Cø Thïnh Träo Thø Hoá thß½ng nhân trñc tiªp sØa chæa. #r sØa chæa Phòng Cø c¥n cüa ngß½i may kÛ nång c¤p b§c*12không nhö Vu Phòng Cø Ğích nhu c¥u c¤p b§c. #r sØa chæa m¾i có th¬ th¤t bÕi, luy kª th¤t bÕi 3ThÑ Phòng Cø báo höng. Cüa ngß½i may kÛ nång c¤p b§c càng cao, th¤t bÕi Ğích có th¬ Tính càng nhö. #r Thïnh Bä Yêu sØa chæa Ğích Phòng Cø Ğà Ğµng khi ğªn Di®n Ğích v§t ph¦m Lan Trung, Ği¬m Kích'sØa chæa'. #r m²i l¥n sØa chæa tiêu hao sÑc s¯ng =Phòng Cø c¤p b§c +4. #r Phòng Cø c¤p b§c =Phòng Cø nhu c¥u c¤p b§c/10+1H§u Thü Chïnh."
-	Prompt_Text[3] = "Nhî có th¬ TÕi công ngh® Ğài sØa chæa b«n r½i ch§m lÕi Ğích v§t ph¦m trang sÑc. Yêu sØa chæa Ğích v§t ph¦m trang sÑc Ğích nhu c¥u c¤p b§c ít nh¤t Yêu>=C¤p 40. C¤p 40 dß¾i v§t ph¦m trang sÑc Thïnh Träo Thø Hoá thß½ng nhân trñc tiªp sØa chæa. #r sØa chæa v§t ph¦m trang sÑc yêu c¥u cüa ngß½i công ngh® kÛ nång c¤p b§c*12không nhö Vu v§t ph¦m trang sÑc Ğích nhu c¥u c¤p b§c. #r sØa chæa m¾i có th¬ th¤t bÕi, luy kª th¤t bÕi 3ThÑ v§t ph¦m trang sÑc báo höng. Cüa ngß½i công ngh® kÛ nång c¤p b§c càng cao, th¤t bÕi Ğích có th¬ Tính càng nhö. #r Thïnh Bä Yêu sØa chæa Ğích v§t ph¦m trang sÑc Ğà Ğµng khi ğªn Di®n Ğích v§t ph¦m Lan Trung, Ği¬m Kích'sØa chæa'. #r m²i l¥n sØa chæa tiêu hao sÑc s¯ng =v§t ph¦m trang sÑc c¤p b§c +4. #r v§t ph¦m trang sÑc c¤p b§c =v§t ph¦m trang sÑc nhu c¥u c¤p b§c/10+1H§u Thü Chïnh."
+	Prompt_Text[1] = "  Có th¬ sØa vû khí trên Lv40 ğµ b«n th¤p tÕi B® Ğúc. Vû khí dß¾i Lv40 có th¬ sØa tÕi ti®m.#rSØa vû khí c¥n c¤p kÛ nång ğúc x12 không nhö h½n c¤p yêu c¥u cüa vû khí.#rSØa có th¬ th¤t bÕi, th¤t bÕi 3 l¥n vû khí s¨ höng. C¤p kÛ nång ğúc càng cao, khä nång th¤t bÕi càng nhö.#rĞ£t vû khí c¥n sØa vào ô dß¾i, ch÷n SØa.#rM²i l¥n sØa tiêu hao hoÕt lñc = c¤p vû khí +4.#rC¤p vû khí = C¤p yêu c¥u cüa vû khí /10 + 1 l¤y chÇn."
+	Prompt_Text[2] = "  Có th¬ sØa phòng cø trên Lv40 ğµ b«n th¤p tÕi Bàn May Vá. Phòng cø dß¾i Lv40 có th¬ sØa tÕi ti®m.#rSØa phòng cø c¥n c¤p kÛ nång may vá x12 không nhö h½n c¤p yêu c¥u cüa phòng cø.#rSØa có th¬ th¤t bÕi, th¤t bÕi 3 l¥n phòng cø s¨ höng. C¤p kÛ nång may vá càng cao, khä nång th¤t bÕi càng nhö.#rĞ£t phòng cø c¥n sØa vào ô dß¾i, ch÷n SØa.#rM²i l¥n sØa tiêu hao hoÕt lñc = c¤p phòng cø +4.#rC¤p phòng cø = C¤p yêu c¥u cüa phòng cø /10 + 1 l¤y chÇn."
+	Prompt_Text[3] = "  Có th¬ sØa trang sÑc trên Lv40 ğµ b«n th¤p tÕi Bàn Thü Công. Trang sÑc dß¾i Lv40 có th¬ sØa tÕi ti®m.#rSØa trang sÑc c¥n c¤p kÛ nång công ngh® x12 không nhö h½n c¤p yêu c¥u cüa trang sÑc.#rSØa có th¬ th¤t bÕi, th¤t bÕi 3 l¥n trang sÑc s¨ höng. C¤p kÛ nång công ngh® càng cao, khä nång th¤t bÕi càng nhö.#rĞ£t trang sÑc c¥n sØa vào ô dß¾i, ch÷n SØa.#rM²i l¥n sØa tiêu hao hoÕt lñc = c¤p trang sÑc +4.#rC¤p trang sÑc = C¤p yêu c¥u cüa trang sÑc /10 + 1 l¤y chÇn."
 end
 
 function Service_OnEvent(event)
@@ -132,7 +132,7 @@ function Service_Buttons_Clicked()
 			Set_XSCRIPT_ParamCount(2);
 		Send_XSCRIPT();
 	else
-		PushDebugMessage("Thïnh Bä Yêu sØa chæa Ğích trang b¸ Ğà Ğµng Ğáo v§t ph¦m Khuông Trung.")
+		PushDebugMessage("Kéo trang b¸ c¥n sØa vào ô v§t ph¦m.")
 	end
 	
 end

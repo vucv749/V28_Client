@@ -20,8 +20,8 @@ local g_CurStatus = 0
 
 local g_imgStatus = {}
 
-local g_FriendBlank = "      "		--3?????,?????????,????????,
-local g_RemarkBlank = ""		--2?????
+local g_FriendBlank = "   "		--3个空格缩进
+local g_RemarkBlank = "  "		--2个空格缩进
 
 local g_Current_Clicked = -1
 

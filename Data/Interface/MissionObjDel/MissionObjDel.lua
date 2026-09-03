@@ -35,7 +35,7 @@ function MissionObjDel_OnEvent( event )
 		g_objCared	= DataPool : GetNPCIDByServerID( xx )
 		AxTrace( 0, 1, "xx="..xx .. " objCared="..g_objCared )
 		if g_objCared == -1 then
-				PushDebugMessage( "Servertruy®n t¾i Ðích s¯ li®u có v¤n ð«." )
+				PushDebugMessage( "Dæ li®u server b¸ l²i" )
 				return
 		end
 
@@ -102,7 +102,7 @@ function MissionObjDel_OnDestroy()
 			Set_XSCRIPT_ParamCount( 1 )
 		Send_XSCRIPT()
 	else
-		PushDebugMessage( "Thïnh Bä Yêu tiêu hüy Ðích nhi®m vø v§t ph¦m Ðà Ðµng Ðáo v§t ph¦m Khuông Trung" )
+		PushDebugMessage( "Kéo v§t ph¦m nhi®m vø c¥n hüy vào ô v§t ph¦m" )
 	end
 end
 
@@ -114,7 +114,7 @@ end
 --ÇåÀíÎïÆ·
 function MissionObjDel_Clear()
 	g_btnItem : SetActionItem( -1 );
-	g_txtItem : SetText( "C¥n tiêu hüy Ðích nhi®m vø v§t ph¦m" )
+	g_txtItem : SetText( "V§t ph¦m nhi®m vø mu¯n hüy" )
 	LifeAbility : Lock_Packet_Item( g_posItem, 0 )
 	g_posItem	= -1
 end
@@ -135,7 +135,7 @@ function MissionObjDel_Update( pos_taskitem )
 		end
 
 		if bExclude ~= 1 and LifeAbility : GetItem_Class( pos ) ~= 4 then
-			PushDebugMessage( "Chï có th¬ tiêu hüy nhi®m vø v§t ph¦m" )
+			PushDebugMessage( "Chï ðßþc hüy v§t ph¦m nhi®m vø" )
 			return
 		end
 

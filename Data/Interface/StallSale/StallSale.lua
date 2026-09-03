@@ -87,7 +87,7 @@ function StallSale_StallInfo(event)
 	--ÌîÐ´Ì¯Î»Ãû×Ö
 	StallSale_Name:SetText(StallSale:GetStallName());
 	--ÌîÐ´Ãû×Ö
-	StallSale_Master_Text:SetText("Than Chü:" .. Player:GetName());
+	StallSale_Master_Text:SetText("Chü sÕp: " .. Player:GetName());
 	--ÌîÐ´×Ô¼ºµÄGUID
 	StallSale_ID_Text:SetText( "ID:" .. StallSale:GetGuid());
 	--Çå³ý¼Û¸ñ
@@ -202,10 +202,10 @@ function StallSale_OnStallSaleOpen()
 		StallSale_Check_Pet:Show()
 		StallSale_Default_Page:Show();
 		StallSale_SetPage_Text:Show();
-		StallSale_TargetPrice_Yuanbao:SetText("#cff99000 #WnGuyên bäo")
+		StallSale_TargetPrice_Yuanbao:SetText("#cff99000 #WKNB")
 
 	else
-		PushDebugMessage("Bài Than loÕi hình sai l¥m");
+		PushDebugMessage("LoÕi bày bán b¸ l²i");
 	end
 
 	this:Show();
@@ -261,7 +261,7 @@ function StallSale_ViewSelectAndPrice()
 		StallSale_SetTargetPrice(1, nMoney)
 		
 	else
-		PushDebugMessage("Bài Than loÕi hình sai l¥m");
+		PushDebugMessage("LoÕi bày bán b¸ l²i");
 	end
 	
 end
@@ -506,7 +506,7 @@ function StallSale_PetList_RClick()
 
 	g_nSelectPet = StallSale_PetList:GetFirstSelectItem();
 	if(g_nSelectPet == -1)then
-		PushDebugMessage("Thïnh lña ch÷n Nh¤t Chích Trân Thú H§u Ði¬m Kích xem xét")
+		PushDebugMessage("Hãy ch÷n mµt con Trân Thú sau ðó nh¤n ki¬m tra")
 		return;
 	end
 
@@ -525,10 +525,10 @@ function StallSale_SetTabColor()
 
 	if( PAGE_ITEM == g_CurrentPage ) then
 		StallSale_Check_Item:SetText(selColor .. "V§t ph¦m");
-		StallSale_Check_Pet:SetText(noselColor .. "Trân Thú");
+		StallSale_Check_Pet:SetText(noselColor .. "Thú");
 	else
 		StallSale_Check_Item:SetText(noselColor .. "V§t ph¦m");
-		StallSale_Check_Pet:SetText(selColor .. "Trân Thú");
+		StallSale_Check_Pet:SetText(selColor .. "Thú");
 	end
 
 end
@@ -585,9 +585,9 @@ function StallSale_SetTargetPrice(nCoinType, nMoney)
 			end
 			strMoney = string.format("#Y%d#W%s#cff9900%s", nMoneyBegin, strMid, strEnd);
 		end
-		StallSale_TargetPrice_Yuanbao:SetText("#Y"..strMoney.."#WnGuyên bäo");
+		StallSale_TargetPrice_Yuanbao:SetText("#Y"..strMoney.." #WKNB");
 	else
-		PushDebugMessage("Bài Than loÕi hình sai l¥m");
+		PushDebugMessage("LoÕi bày bán b¸ l²i");
 	end
 end
 

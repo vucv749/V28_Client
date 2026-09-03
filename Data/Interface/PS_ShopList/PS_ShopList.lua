@@ -68,7 +68,7 @@ function PS_ShopList_UpdateFrame()
 	
 	--ÉÌÒµÖ¸Êý
 	local szTemp = PlayerShop:GetCommercialFactor();
-	PS_ShopList_Commerce:SetText("Buôn bán luÛ th×a;" .. szTemp);
+	PS_ShopList_Commerce:SetText("Ði¬m thß½ng nghi®p; " .. szTemp);
 	
 	PS_ShopList_ShopList:RemoveAllItem();
 	
@@ -102,7 +102,7 @@ function PS_ShopList_Search_UpdateFrame()
 		PS_ShopList_Check_Item:SetCheck(0);
 		PS_ShopList_RecycleShopList:Hide();
 		PS_ShopList_ShopList:Show();
-		PS_ShopList_Button_Accept:SetProperty("Text", "Mua s¡m");
+		PS_ShopList_Button_Accept:SetProperty("Text", "Mua ");
 		ListCtr = PS_ShopList_ShopList;
 		PS_ShopList_Find:Show();
 		PS_ShopList_Button_Remove:Show();
@@ -112,7 +112,7 @@ function PS_ShopList_Search_UpdateFrame()
 		PS_ShopList_Check_Item:SetCheck(1);
 		PS_ShopList_RecycleShopList:Show();
 		PS_ShopList_ShopList:Hide();
-		PS_ShopList_Button_Accept:SetProperty("Text", "Bán ra");
+		PS_ShopList_Button_Accept:SetProperty("Text", "Bán");
 		ListCtr = PS_ShopList_RecycleShopList;
 		PS_ShopList_Find:Hide();
 		PS_ShopList_Button_Manage:Show();
@@ -122,7 +122,7 @@ function PS_ShopList_Search_UpdateFrame()
 
 	
 
-	PS_ShopList_DragTitle:SetText("#gFF0FA0thß½ng hµi cØa hàng");
+	PS_ShopList_DragTitle:SetText("#gFF0FA0Ti®m Thß½ng Hµi");
 
 	local szType = PlayerShop:GetShopListType();
 	if(szType == "panchu" and OpenType==0)  then
@@ -131,8 +131,8 @@ function PS_ShopList_Search_UpdateFrame()
 		PS_ShopList_Check_Item2:Hide();
 		PS_ShopList_Button_Remove:Hide();
 		PS_ShopList_Button_Manage:Hide();
-		PS_ShopList_Button_Accept:SetText("Xem xét");
-		PS_ShopList_DragTitle:SetText("#gFF0FA0chu¦n b¸ Bàn Xu¤t Ðích cØa hàng");
+		PS_ShopList_Button_Accept:SetText("Xem");
+		PS_ShopList_DragTitle:SetText("#gFF0FA0Chu¦n b¸ khai trß½ng");
 
 	end
 
@@ -148,7 +148,7 @@ function PS_ShopList_Search_UpdateFrame()
 
 	--ÉÌÒµÖ¸Êý
 	local szTemp = PlayerShop:GetCommercialFactor();
-	PS_ShopList_Commerce:SetText("Buôn bán luÛ th×a:" .. szTemp);
+	PS_ShopList_Commerce:SetText("Ði¬m thß½ng nghi®p: " .. szTemp);
 	ListCtr:RemoveAllItem();
 	
 	local nNum = PlayerShop:GetShopNum("search");
@@ -253,7 +253,7 @@ function PS_ShopListAccept_Clicked(szType)
 			end
 		end
 	else 
-		PushDebugMessage("Thïnh lña ch÷n mµt cái cØa hàng");
+		PushDebugMessage("M¶i ch÷n cØa hàng");
 		return;
 	end
 	
@@ -318,23 +318,23 @@ function UpdateShopInfo()
 	--¸üÐÂÐÅÏ¢
 	-- ¿ªµêÊ±¼ä
 	local szSince = PlayerShop:EnumShopInfo("since",g_nShopIndex[g_Selectindex]);
-	PS_ShopList_Since:SetText("Sáng tÕo th¶i gian:".. szSince);
+	PS_ShopList_Since:SetText("Th¶i gian tÕo: ".. szSince);
 	
 	-- µêÖ÷Ãû×Ö --¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:EnumShopInfo("ownername",g_nShopIndex[g_Selectindex]);
-	PS_ShopList_ShopOwner:SetChatString("#YðIªm chü: #{_INFOUSR".. szName .. "}");
+	PS_ShopList_ShopOwner:SetChatString("#GChü ti®m: #{_INFOUSR".. szName .. "}");
 	
 	-- µêÆÌID
 	local shopIndex = PlayerShop:EnumShopInfo("shopindex", g_nShopIndex[g_Selectindex])
 	if (tonumber(shopIndex) <= 0) then
-		PS_ShopList_DPID:SetText("#Yc¼a hàng ID:")
+		PS_ShopList_DPID:SetText("#GID ti®m:")
 	else
-		PS_ShopList_DPID:SetText("#Yc¼a hàng ID:" .. shopIndex)
+		PS_ShopList_DPID:SetText("#GID ti®m:" .. shopIndex)
 	end
 
 	-- µêÖ÷ID
 	local szID = PlayerShop:EnumShopInfo("ownerid",g_nShopIndex[g_Selectindex]);
-	PS_ShopList_ShopOwnerID:SetText("Ðiªm chü ID:".. szID);
+	PS_ShopList_ShopOwnerID:SetText("ID chü ti®m: ".. szID);
 	
 	-- ½éÉÜ
 	local szInfo = "";
@@ -352,7 +352,7 @@ function UpdateShopInfo()
 	end
 	local szShopName,OpenNum,SaleNum,szType,nIsFavor = PlayerShop:EnumShop(g_nShopIndex[g_Selectindex]);
 	if(nIsFavor == 1)   then
-		PS_ShopList_Button_Remove:SetText("KhÑ xoá tên Ðiªm");
+		PS_ShopList_Button_Remove:SetText("Bö tên ti®m");
 	else
 		PS_ShopList_Button_Remove:SetText("#{INTERFACE_XML_353}");
 	end

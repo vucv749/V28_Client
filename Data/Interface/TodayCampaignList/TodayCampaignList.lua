@@ -94,7 +94,7 @@ function TodayCampaignList_Init(nSelectID)
 		local strDesc = EnumCampaign(tonumber(campaign_today),i,"desc");
 		local ends = EnumCampaign(tonumber(campaign_today),i,"addtiondesc");
 		if(ends and ends~="")then
-			strDesc = strDesc..","..ends;
+			strDesc = strDesc..", "..ends;
 		end
 		AxTrace( 5,3, strDesc );
 
@@ -220,13 +220,13 @@ function TodayCampaignList_TrackButtonState()
 	
 	if (nCampaignID ~= nil and DataPool:IsCampaignCanTrack(nCampaignID) > 0) then
 		if (DataPool:IsCampaignTrackOpen(nCampaignID) > 0) then
-			TodayCampaignList_Cancel:SetText("Hüy bö truy tung");
+			TodayCampaignList_Cancel:SetText("Hüy theo dõi");
 		else
-			TodayCampaignList_Cancel:SetText("B¡t ð¥u truy tung");
+			TodayCampaignList_Cancel:SetText("Theo dõi");
 		end
 		TodayCampaignList_Cancel:Enable();
 	else
-		TodayCampaignList_Cancel:SetText("Không th¬ truy tung");
+		TodayCampaignList_Cancel:SetText("Không th¬ theo");
 		TodayCampaignList_Cancel:Disable();
 	end
 end

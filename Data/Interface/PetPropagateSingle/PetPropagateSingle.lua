@@ -117,12 +117,12 @@ function PetPropagateSingle_OK_Clicked()
 	local nName1 = PetPropagateSingle_PetName1 : GetText()
 	local nName2 = PetPropagateSingle_PetName2 : GetText()
 	if (firstPet.guid.high == -1 or firstPet.guid.low == -1	or secondPet.guid.high == -1 or secondPet.guid.low == -1) then
-		PushDebugMessage("Thïnh lña ch÷n Trân Thú!")
+		PushDebugMessage("Hãy ch÷n Trân Thú!")
 		return
 	end
 
 	if (nName1 == nil or nName1 == "" or nName2 == nil or nName2 == "") then
-		PushDebugMessage("Thïnh lña ch÷n Trân Thú!")
+		PushDebugMessage("Hãy ch÷n Trân Thú!")
 		return
 	end
 

@@ -104,8 +104,8 @@ function Packet_OnLoad()
 		
 	PACKAGE_TAB_TEXT = {
 		[0] = "ÐÕo cø",
-		"Tài li®u",
-		"Nhi®m vø",
+		"Ng.li®u",
+		"Nhi®m Vø",
 	};
 	
 	PACKAGE_TAB = {
@@ -183,7 +183,7 @@ function Packet_OnEvent( event )
 	elseif ( event == "RESET_EXT_BAG" ) then
 		Packet_ResetExtBag();
 	elseif (event == "UPDATE_YUANBAO" and this:IsVisible()) then
-		Packet_YuanBao2:SetText("Nguyên bäo:"..tostring(Player:GetData("YUANBAO")));
+		Packet_YuanBao2:SetText("KNB: "..tostring(Player:GetData("YUANBAO")));
 	elseif (event == "UPDATE_BIND_YUANBAO" and this:IsVisible()) then
 		Packet_BangdingYuanbao:SetText("#{BDYB_090714_01}"..tostring(Player:GetData("BIND_YUANBAO")));
 	elseif (event == "MONEYJZ_CHANGE" and this:IsVisible()) then
@@ -439,7 +439,7 @@ function Packet_OnUpdateShow()
 	else
 		nMaxLine = nMaxLine + 1;
 	end
-	AxTrace( 8,0,"Ðã có Bao Cách S±"..tostring( CurrNum ).."C¥n bi¬u hi®n Ðích Hành S±"..tostring( nMaxLine ) );
+	AxTrace( 8,0,"Lßþng ô Túi hi®n có:"..tostring( CurrNum ).."  S¯ v§t ph¦m ðßþc hi¬n th¸:"..tostring( nMaxLine ) );
 	--Èç¹û³¬¹ýµ±Ç°ÏÔÊ¾µÄ×î´ó·¶Î§ÁË£¬¾Í¸üÐÂ°üµÄÐÐÊý
 	Packet_UpdateBagLine( nMaxLine );
 	local nMaxDisplayNumber = nMaxLine * PACKAGE_NUM_PER_LINE;
@@ -479,7 +479,7 @@ function Packet_OnUpdateShow()
   end
 	Packet_Money:SetProperty("MoneyNumber", tostring(Player:GetData("MONEY")));
 	--YuanBao
-	Packet_YuanBao2:SetText("Nguyên bäo:"..tostring(Player:GetData("YUANBAO")));
+	Packet_YuanBao2:SetText("KNB: "..tostring(Player:GetData("YUANBAO")));
 	--BindYuanBao
 	Packet_BangdingYuanbao:SetText("#{BDYB_090714_01}"..tostring(Player:GetData("BIND_YUANBAO")));
 	--Money_JZ

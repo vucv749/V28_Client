@@ -13,7 +13,7 @@ end
 
 
 function NewMsgBallHistory_OnLoad()
-	NewMsgBallHistory_MsgList:AddColumn( "Th¶i gian", 0, 0.3 );
+	NewMsgBallHistory_MsgList:AddColumn( "Th.gian", 0, 0.3 );
 	NewMsgBallHistory_MsgList:AddColumn( "Tiêu ð«", 1, 0.7 );
 
 	NewMsgBallHistory_MsgList:SetProperty( "ColumnsSizable", "False" );

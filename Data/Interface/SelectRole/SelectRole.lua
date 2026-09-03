@@ -278,23 +278,23 @@ function SelectRole_DelRole()
 	,strImgName
 	= GameProduceLogin:GetRoleInfo(g_iCurSelRole-1);
 	if( iLevel == 0 ) then --??????
-		strInfo="Không có lña ch÷n vai di­n";
+		strInfo="Chßa ch÷n nhân v§t";
 			GameProduceLogin:ShowMessageBox( strInfo, "OK", "6" );
 		return;
 	end
 	if( iLevel >= 1 ) then --????10?
 		if( iDelTime >= 11 ) then--????????,??????
-			strInfo="Xóa bö xin ðã ð® trình"..tostring( 14 - iDelTime ).."Thiên Li­u, Thïnh TÕi xóa bö vai di­n 3ngày sau, 14Thiên trong vòng ðång ký trò ch½i, Ðáo LÕc Dß½ng(268, 46) tìm ðßþc Quan Hán Th÷ ho£c là ðªn l¾n Lý(80, 136) tìm ðßþc Chu Thß½ng xác nh§n.";
+			strInfo="Yêu c¥u xóa nhân v§t ðã gØi ðßþc "..tostring( 14 - iDelTime ).."ngày r°i, sau 3 ngày khi hüy bö nhân v§t, trong vòng 14 ngày ðång nh§p trò ch½i, hãy ðªn thành LÕc Dß½ng (268, 46) tìm Quan Hán Th÷ ho£c ho£c ÐÕi Lý (80, 136) tìm Châu Xß½ng xác nh§n.";
 			GameProduceLogin:ShowMessageBox( strInfo, "OK", "6" );
 		elseif( iDelTime > 0 ) then		--???????,??????
-			strInfo="Thïnh ðång ký trò ch½i, Ðáo LÕc Dß½ng(268, 46) tìm ðßþc Quan Hán Th÷ ho£c là ðªn l¾n Lý(80, 136) tìm ðßþc Chu Thß½ng xác nh§n, có th¬ vînh cØu xóa bö. Nhî phäi không có bang hµi, kªt hôn, Khai Ðiªm, kªt bái, th¥y trò quan h® m¾i có th¬ xóa bö.";
+			strInfo="Xin ðång nh§p vào trò ch½i, ðªn LÕc Dß½ng (268,46) tìm Quan Hán Th÷ ho£c ÐÕi Lý (80,136) tìm Châu Xß½ng xác nh§n, có th¬ xóa bö. Các hÕ c¥n phäi không có bang hµi, kªt hôn, m· ti®m, kªt bái, sß ð° các loÕi quan h® này m¾i có th¬ xóa bö. ";
 			GameProduceLogin:ShowMessageBox( strInfo, "OK", "5" );
 		else --??????,???????
-			strInfo = "Nhî xác ð¸nh phäi"..tostring( iLevel ).."C¤p Ðích vai di­n#c00ff00"..strName.."#cffffffxóa bö Ma?";
+			strInfo = "Xác nh§n xóa nhân v§t c¤p "..tostring( iLevel ).." c¤p nhân v§t #c00ff00"..strName.."#cffffff?";
 			GameProduceLogin:ShowMessageBox( strInfo, "YesNo", "4" );
 		end
 	else --??????,????
-		strInfo = "Nhî xác ð¸nh phäi"..tostring( iLevel ).."C¤p Ðích vai di­n#c00ff00"..strName.."#cffffffxóa bö Ma?";
+		strInfo = "Xác nh§n xóa nhân v§t c¤p "..tostring( iLevel ).." c¤p nhân v§t #c00ff00"..strName.."#cffffff?";
 		GameProduceLogin:ShowMessageBox( strInfo, "YesNo", "7" );
 	end
 
@@ -323,7 +323,7 @@ function SelectRole_RefreshRoleInfo()
 
 	g_iCurRoleCount = GameProduceLogin:GetRoleCount();
 	-- µÃµ½ÈËÎïµÄ¸öÊý
-	AxTrace( 0,0, "Nh§n ðßþc vai di­n Cá S±"..tostring(g_iCurRoleCount));
+	AxTrace( 0,0, "S¯ nhân v§t ðÕt ðßþc"..tostring(g_iCurRoleCount));
 
 	if(0 == g_iCurRoleCount) then
 
@@ -332,7 +332,7 @@ function SelectRole_RefreshRoleInfo()
 
 	for index =0 , g_iCurRoleCount-1 do
 
-	 		AxTrace( 0,0, "Bi¬u hi®n vai di­n"..tostring(index));
+	 		AxTrace( 0,0, "Hi¬n th¸ nhân v§t"..tostring(index));
 			SelectRole_GetRoleInfo(index);
 	end
 
@@ -404,11 +404,11 @@ end
 --
 function SelectRole_SelectRole1()
 
-	AxTrace( 0,0, "Tuy¬n 1");
+	AxTrace( 0,0, " Ch÷n 1");
 	g_iCurSelRole = 1;
 	if(g_iCurRoleCount < g_iCurSelRole) then
 
-		AxTrace( 0,0, "V¸ lña ch÷n Nh¤t");
+		AxTrace( 0,0, " Chßa ch÷n");
 		SelectRole_TargetInfo_Name_Text:SetText("");
 		SelectRole_TargetInfo_Menpai_Text:SetText("");
 		SelectRole_TargetInfo_Level_Text:SetText("");
@@ -425,7 +425,7 @@ end
 --
 function SelectRole_SelectRole2()
 
-	AxTrace( 0,0, "Tuy¬n 2");
+	AxTrace( 0,0, " Ch÷n 2");
 	g_iCurSelRole = 2;
 	if(g_iCurRoleCount < g_iCurSelRole) then
 
@@ -446,7 +446,7 @@ end
 --
 function SelectRole_SelectRole3()
 
-	AxTrace( 0,0, "Tuy¬n 3");
+	AxTrace( 0,0, " Ch÷n 3");
 	g_iCurSelRole = 3;
 	if(g_iCurRoleCount < g_iCurSelRole) then
 
@@ -512,7 +512,7 @@ function SelectRole_ShowSelRoleInfo(index)
 		strName = "Thiên S½n";
 
 	elseif(8 == Family) then
-		strName = "Tiêu dao";
+		strName = "Tiêu Dao";
 
 	elseif(9 == Family) then
 		strName = "Tñ do";
@@ -522,16 +522,16 @@ function SelectRole_ShowSelRoleInfo(index)
 	elseif(11 == Family) then--MPTODO menpai11
 		strName = "Ác Nhân C¯c";
 	end
-	g_MenPai_Text[index]:SetText("#c00ff00môn phái: #cffffff"..strName);
+	g_MenPai_Text[index]:SetText("#c00ff00Phái: #cffffff"..strName);
 
 	-- ÏÔÊ¾µÈ¼¶
-	g_Level_Text[index]:SetText("#c00ff00c¤p b§c: #cffffff"..tostring(g_iLevel[index]));
+	g_Level_Text[index]:SetText("#c00ff00C¤p:#cffffff"..tostring(g_iLevel[index]));
 
 	if(tonumber(g_iDelTime[index])>0)then
 		if(g_iDelTime[index]>=11)then
-			g_Delete_Text[index]:SetText("#c00ff00"..(3-(14-g_iDelTime[index])).."Ngày sau Khä xóa bö vai di­n");
+			g_Delete_Text[index]:SetText("#c00ff00"..(3-(14-g_iDelTime[index])).." ngày sau s¨ xóa");
 		else
-			g_Delete_Text[index]:SetText("#c00ff00Dî Khä xóa bö vai di­n");
+			g_Delete_Text[index]:SetText("#c00ff00N.v§t có th¬ xóa");
 		end
 
 		g_Delete_Text[index]:Show();
@@ -550,7 +550,7 @@ end
 
 function SelectRole_SelRole_MouseEnter(index)
 
-	SelectRole_Info:SetText("Lña ch÷n trß¾c m£t ðång ký vai di­n");
+	SelectRole_Info:SetText("Ch÷n nhân v§t");
 end
 
 function SelectRole_MouseLeave()
@@ -560,22 +560,22 @@ end
 
 function SelectRole_Play_MouseEnter()
 
-	SelectRole_Info:SetText("Tiªn vào trò ch½i");
+	SelectRole_Info:SetText("Vào trò ch½i");
 end
 
 function SelectRole_Create_MouseEnter()
 
-	SelectRole_Info:SetText("Sáng tÕo mµt cái Tân vai di­n");
+	SelectRole_Info:SetText("TÕo nhân v§t");
 end
 
 function SelectRole_Delete_MouseEnter()
 
-	SelectRole_Info:SetText("Xóa bö mµt cái ðã có vai di­n");
+	SelectRole_Info:SetText("Xóa nhân v§t");
 end
 
 function SelectRole_Last_MouseEnter()
 
-	SelectRole_Info:SetText("Phän h°i Ðáo tài khoän ðång ký m£t biên");	--??  to  ??
+	SelectRole_Info:SetText("V« giao di®n ðång nh§p");	--ÕÊºÅ  to  ÕËºÅ
 end;
 
 

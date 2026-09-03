@@ -145,23 +145,23 @@ function PS_Transfer_UpdateFrame()
 	
 	--µêÖ÷	--¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:GetShopInfo("other","ownername");
-	PS_Transfer_Master:SetChatString("#YðIªm chü: #{_INFOUSR".. szName .. "}");
+	PS_Transfer_Master:SetChatString("#GChü ti®m: #{_INFOUSR".. szName .. "}");
 
 	--µêÆÌID
 	local shopIndex = PlayerShop:GetShopInfo("other", "shopindex")
 	if (tonumber(shopIndex) <= 0) then
-		PS_Transfer_DPID_Text:SetText("CØa hàng ID:")
+		PS_Transfer_DPID_Text:SetText("ID cØa ti®m:")
 	else
-		PS_Transfer_DPID_Text:SetText("CØa hàng ID:" .. shopIndex)
+		PS_Transfer_DPID_Text:SetText("ID cØa ti®m:" .. shopIndex)
 	end
 
 	--µêÖ÷ID
 	local szID = PlayerShop:GetShopInfo("other","ownerid");
-	PS_Transfer_ID:SetText("Ðiªm chü ID:".. szID);
+	PS_Transfer_ID:SetText("ID chü ti®m:  ".. szID);
 	
 	--µêÃû
 	local szShopName = PlayerShop:GetShopInfo("other","shopname");
-	PS_Transfer_Name_Text:SetText("CØa hàng Danh:" .. szShopName);
+	PS_Transfer_Name_Text:SetText("Tên ti®m: " .. szShopName);
 	PS_Transfer_PageHeader_Name:SetText("#gFF0FA0" ..szShopName);
 	
 	--µ±Ç°±¾½ð

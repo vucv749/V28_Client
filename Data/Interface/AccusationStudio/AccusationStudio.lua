@@ -118,7 +118,7 @@ function AccusationStudio_GetMenPai( menpai )
 		strName = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strName = "Tiêu dao";
+		strName = "Tiêu Dao";
 
 	elseif(9 == menpai) then
 		strName = "Tñ do";

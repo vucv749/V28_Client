@@ -100,18 +100,18 @@ function PS_Search_UpdateFrame(nPage)
 	PS_Search_SetTabColor(nPage);
 	PS_Search_List:ClearListBox();
 	if(nPage == PAGE_ITEM)    then					--???
-		PS_Search_List:AddItem("V§t ph¦m Ðiªm",0)
-		PS_Search_List:AddItem("Bäo thÕch Ðiªm",1)
-		PS_Search_List:AddItem("Vû khí ðiªm",2)
-		PS_Search_List:AddItem("Hµ giáp Ðiªm",3)
-		PS_Search_List:AddItem("Tài li®u Ðiªm",4)
+		PS_Search_List:AddItem("Ti®m V§t Ph¦m",0)
+		PS_Search_List:AddItem("Ti®m Bäo ThÕch",1)
+		PS_Search_List:AddItem("Ti®m Vû Khí",2)
+		PS_Search_List:AddItem("Ti®m Hµ Giáp",3)
+		PS_Search_List:AddItem("Ti®m Nguyên Li®u",4)
 		
-		PS_Search_All:SetText("Toàn bµ v§t ph¦m LoÕi");
+		PS_Search_All:SetText("Toàn bµ v§t ph¦m");
 
 	elseif(nPage == PAGE_PET) then 					--???
-		PS_Search_List:AddItem("CØa hàng Trân Thú",0)
+		PS_Search_List:AddItem("Ti®m Trân Thú",0)
 
-		PS_Search_All:SetText("Toàn bµ Trân Thú LoÕi");
+		PS_Search_All:SetText("Toàn bµ Trân Thú");
 		
 	end
 end
@@ -149,10 +149,10 @@ function PS_Search_SetTabColor(nPage)
 
 	if( nPage == PAGE_ITEM )		then
 		PS_Search_Check_Item:SetText(selColor.. "V§t ph¦m");
-		PS_Search_Check_Pet:SetText(noselColor.. "Trân Thú");
+		PS_Search_Check_Pet:SetText(noselColor.. "Thú");
 	elseif( nPage == PAGE_PET )	then
 		PS_Search_Check_Item:SetText(noselColor.. "V§t ph¦m");
-		PS_Search_Check_Pet:SetText(selColor.. "Trân Thú");
+		PS_Search_Check_Pet:SetText(selColor.. "Thú");
 	end
 
 end

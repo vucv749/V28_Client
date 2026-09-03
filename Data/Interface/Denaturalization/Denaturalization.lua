@@ -111,10 +111,10 @@ function Denaturalization_SetStateTooltip()
 	local iThunderResistOther	= Player:GetData( "RESISTOTHERLIGHT" );
 	local iPoisonResistOther= Player:GetData( "RESISTOTHERPOISON" );
 	
-	Denaturalization_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther) );
-	Denaturalization_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) );
-	Denaturalization_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther) );
-	Denaturalization_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther) );
+	Denaturalization_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rKháng Bång:"..tostring(iIceDefine).."#rGiäm kháng Bång: "..tostring(iIceResistOther) );
+	Denaturalization_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rKháng Höa: "..tostring(iFireDefine).."#rGiäm kháng Höa: "..tostring(iFireResistOther) );
+	Denaturalization_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rKháng Huy«n:"..tostring(iThunderDefine).."#rGiäm kháng Huy«n: "..tostring(iThunderResistOther) );
+	Denaturalization_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rKháng Ðµc:"..tostring(iPoisonDefine).."#rGiäm kháng Ðµc: "..tostring(iPoisonResistOther) );
 		
 end
 
@@ -140,7 +140,7 @@ function Denaturalization_OnShow()
 	Denaturalization_SetStateTooltip();
 
 	local nNumber = Player:GetData( "LEVEL" );
-	Denaturalization_Level : SetText(nNumber.."C¤p")
+	Denaturalization_Level : SetText(nNumber.." c¤p")
 end
 
 ----------------------------------------------------------------------------------
@@ -193,7 +193,7 @@ function DoDenaturalization()
 	
 	
 	if(isCan == 5)then
-		PushDebugMessage("B¢ng hæu thiªu sót v§t ph¦m Chuy¬n Tính Ðan, ho£c là Chuy¬n Tính Ðan cüa b¢ng hæu ðã khóa.")
+		PushDebugMessage("BÕn thiªu Chuy¬n Gi¾i Ðan, ho£c là Chuy¬n Gi¾i Ðan cüa bÕn ðã khóa.")
 		return;
 	end
 	if(isCan == 1)then

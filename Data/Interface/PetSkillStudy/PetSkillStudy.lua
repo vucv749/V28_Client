@@ -16,7 +16,7 @@ local g_selidx_htjz = -1; --????
 
 local g_stduySkill = false;			-- ????????
 local MAX_OBJ_DISTANCE = 3.0;
-local g_DefaultTxt = "Thïnh s¡p sØa sØ døng Ðích ðÕo cø Ðà Du® Ðáo phía trß¾c Ðích ðÕo cø Khuông Trung.";
+local g_DefaultTxt = "Ðßa ðÕo cø c¥n dùng vào ô ðÕo cø.";
 local g_tlvcostmoney = {};
 local g_tbabaymoney = {};
 local g_petSkillStudyMoreMoney = 990000
@@ -200,14 +200,14 @@ function PetSkillStudy_ShowReset()  --??????
 			PETSKILLSTUDY_ACCBTN[i][3] = -1;
 	end
 	
-	PetSkillStudy_SkillType_Text:SetText("#gFF0FA0Trân Thú Ti¬n Ði¬m");
+	PetSkillStudy_SkillType_Text:SetText("#gFF0FA0T¦y ði¬m Trân Thú");
 	PetSkillStudy_SkillType_Text:Show();
-	PetSkillStudy_Accept:SetText("Xác nh§n");
+	PetSkillStudy_Accept:SetText("Ð°ng ý");
 	PetSkillStudy_Accept:Enable();
 
 	PetSkillStudy_Money:SetProperty("MoneyNumber", "");
 	PetSkillStudy_Money:Hide()
-	PetSkillStudy_Static3:SetText("Không c¥n tiêu hao ti«n tài")
+	PetSkillStudy_Static3:SetText("Không c¥n tiêu hao ti«n")
 	--PetSkillStudy_Money:Show();
 	--PetSkillStudy_Static3:SetText("ÐèÒª½ðÇ®");
 	PetSkillStudy_MultiIMEEditBox:Hide();
@@ -236,7 +236,7 @@ function PetSkillStudy_ShowZhuanxingdan() --?????
 	
 	PetSkillStudy_SkillType_Text:SetText("#gFF0FA0Hoàn Ð°ng Ðan");
 	PetSkillStudy_SkillType_Text:Show();
-	PetSkillStudy_Accept:SetText("Xác nh§n");
+	PetSkillStudy_Accept:SetText("Ð°ng ý");
 	PetSkillStudy_Accept:Enable();
 
 	PetSkillStudy_Money:SetProperty("MoneyNumber", "");
@@ -326,22 +326,22 @@ function PetSkillStudy_Show()
 		--PetSkillStudy_SetButtonAccName();
 		
 	elseif(3 == g_uitype) then --????
-		PetSkillStudy_SkillType_Text:SetText("#gFF0FA0kéo dài s¯ng lâu");
+		PetSkillStudy_SkillType_Text:SetText("#gFF0FA0Kéo dài tu±i th÷");
 		PetSkillStudy_SkillType_Text:Show();
-		PetSkillStudy_Accept:SetText("Xác nh§n");
+		PetSkillStudy_Accept:SetText("Ð°ng ý");
 		PetSkillStudy_Accept:Enable();
 		
 		PetSkillStudy_Money:Hide();
-		PetSkillStudy_Static3:SetText("Không c¥n tiêu hao ti«n tài");
+		PetSkillStudy_Static3:SetText("Không c¥n phäi tiêu hao ngân lßþng");
 		PetSkillStudy_MultiIMEEditBox:Hide();
 		PetSkillStudy_Text1:SetText(g_DefaultTxt);
 		PetSkillStudy_Text1:Show();
 		PetSkillStudy_SetButtonAccName();
 		
 	elseif(4 == g_uitype) then --????
-		PetSkillStudy_SkillType_Text:SetText("#gFF0FA0thu¥n dßÞng Phí");
+		PetSkillStudy_SkillType_Text:SetText("#gFF0FA0Phí thu¥n dßÞng");
 		PetSkillStudy_SkillType_Text:Show();
-		PetSkillStudy_Accept:SetText("Thu¥n dßÞng");
+		PetSkillStudy_Accept:SetText("Thu¥n DßÞng Trân Thú");
 		PetSkillStudy_Accept:Disable();
 		PetSkillStudy_Money:SetProperty("MoneyNumber", "");
 		PetSkillStudy_Money:Show();
@@ -354,28 +354,28 @@ function PetSkillStudy_Show()
 --		end
 
 	elseif(6 == g_uitype) then --???????
-		PetSkillStudy_SkillType_Text:SetText("#gFF0FA0l¾n d¥n tu¥n tra");
+		PetSkillStudy_SkillType_Text:SetText("#gFF0FA0Xem trß·ng thành");
 		PetSkillStudy_SkillType_Text:Show();
-		PetSkillStudy_Accept:SetText("Tu¥n tra");
+		PetSkillStudy_Accept:SetText("Tìm");
 		PetSkillStudy_Accept:Disable();
 
 		PetSkillStudy_Money:SetProperty("MoneyNumber", "0");
 		PetSkillStudy_Money:Show();
 		PetSkillStudy_Static3:SetText("#{INTERFACE_XML_789}");
 		PetSkillStudy_MultiIMEEditBox:Hide();
-		PetSkillStudy_Text1:SetText("Tu¥n tra Trân Thú Ðích l¾n d¥n Su¤t"); -- zchw
+		PetSkillStudy_Text1:SetText("Xem trß·ng thành Trân Thú"); -- zchw
 		PetSkillStudy_Text1:Show();
 		PetSkillStudy_Skill1:Hide();	--[tx47256]
 		
 	elseif(7 == g_uitype) then --??????
-		PetSkillStudy_SkillType_Text:SetText("#gFF0FA0Trân Thú danh hi®u lînh");
+		PetSkillStudy_SkillType_Text:SetText("#gFF0FA0 Lînh nh§n danh hi®u Trân Thú");
 		PetSkillStudy_SkillType_Text:Show();
-		PetSkillStudy_Accept:SetText("Xác nh§n");
+		PetSkillStudy_Accept:SetText("Ð°ng ý");
 		PetSkillStudy_Accept:Enable();
 		PetSkillStudy_Money:Hide();
-		PetSkillStudy_Static3:SetText("Không c¥n tiêu hao ti«n tài");
+		PetSkillStudy_Static3:SetText("Không c¥n phäi tiêu hao ngân lßþng");
 		PetSkillStudy_MultiIMEEditBox:Hide();
-		PetSkillStudy_Text1:SetText("Thïnh lña ch÷n c¥n lînh danh hi®u Ðích Trân Thú.");
+		PetSkillStudy_Text1:SetText("Ch÷n Trân Thú mu¯n nh§n danh hi®u");
 		PetSkillStudy_Text1:Show();
 		PetSkillStudy_Skill1:Hide();	--[tx47256]			
 	end
@@ -505,7 +505,7 @@ function PetSkillStudy_Selected(selidx)
 	end
 	
 	if( 6 == g_uitype and g_selidx ~= selidx) then
-		PetSkillStudy_Text1:SetText("Tu¥n tra Trân Thú l¾n d¥n Su¤t!");
+		PetSkillStudy_Text1:SetText("Xem trß·ng thành Trân Thú!");
 		PetSkillStudy_Accept:Enable();
 		PetSkillStudy_Money:SetProperty("MoneyNumber", "100");
 		PetSkillStudy_Money:Show();
@@ -668,7 +668,7 @@ end
 function PetSkillStudy_PetReset( PetIndex, ItemPos ) --????
 	
 	if (-1 == PetIndex ) then
-		PushDebugMessage("Thïnh lña ch÷n Trân Thú.");
+		PushDebugMessage("Ch÷n Trân Thú");
 		return;
 	end
 	if(-1 == ItemPos ) then
@@ -693,11 +693,11 @@ end
 function PetSkillStudy_Zhuanxingdan( PetIndex, ItemPos ) --????
 	
 	if (-1 == PetIndex ) then
-		PushDebugMessage("Thïnh lña ch÷n Trân Thú.");
+		PushDebugMessage("Ch÷n Trân Thú");
 		return;
 	end
 	if(-1 == ItemPos ) then
-		PushDebugMessage("C¥n Chuy¬n Tính Ðan.");
+		PushDebugMessage("C¥n Chuy¬n Tính Ðan");
 		return;
 	end
 		
@@ -738,7 +738,7 @@ function PetSkillStudy_Do()
 	
 	if CurUIType == UITYPE_LIANSHOUDAN then
 		if (-1 == slidx) then
-			PushDebugMessage("Thïnh lña ch÷n Trân Thú.");
+			PushDebugMessage("Ch÷n Trân Thú");
 			return;
 		end
 		if(-1 == g_selidx_lsd) then
@@ -752,11 +752,11 @@ function PetSkillStudy_Do()
 
 	if CurUIType == UITYPE_ZHUANXINGDAN then
 		if (-1 == slidx) then
-			PushDebugMessage("Thïnh lña ch÷n Trân Thú.");
+			PushDebugMessage("Ch÷n Trân Thú");
 			return;
 		end
 		if(-1 == saidx) then
-			PushDebugMessage("C¥n Chuy¬n Tính Ðan.");
+			PushDebugMessage("C¥n Chuy¬n Tính Ðan");
 			return;
 		end
 		PetSkillStudy_Zhuanxingdan( slidx, PETSKILLSTUDY_ACCBTN[saidx][3] )
@@ -779,17 +779,17 @@ function PetSkillStudy_Do()
 	if(2 == g_uitype) then
 		--»¹Í¯
 		if (-1 == slidx) then
-			PushDebugMessage("Thïnh lña ch÷n Trân Thú.");
+			PushDebugMessage("Ch÷n Trân Thú");
 			return;
 		end
 		if(-1 == g_selidx_htjz) then
-			PushDebugMessage("C¥n Hoàn Ð°ng quy¬n trøc.");
+			PushDebugMessage("C¥n Hoàn Ð°ng Quy¬n.");
 			return;
 		end
 	elseif(3 == g_uitype) then
 		--ÑÓ³¤ÊÙÃü
 		if (-1 == slidx) then
-			PushDebugMessage("Thïnh lña ch÷n Trân Thú.");
+			PushDebugMessage("Ch÷n Trân Thú");
 			return;
 		end
 		if(-1 == g_selidx_ynd) then								-- ?????????saidx,?????????,??????????????g_selidx_ynd
@@ -799,7 +799,7 @@ function PetSkillStudy_Do()
 	elseif(4 == g_uitype) then
 		--Ñ±Ñø
 		if (-1 == slidx) then
-			PushDebugMessage("Thïnh lña ch÷n Trân Thú.");
+			PushDebugMessage("Ch÷n Trân Thú");
 			return;
 		end
 	else
@@ -862,7 +862,7 @@ function PetSkillStudy_Do()
 			Set_XSCRIPT_ParamCount(2);
 			Send_XSCRIPT();
 		else
-			PushDebugMessage("Ti«n tài không ðü, không th¬ thu¥n dßÞng");
+			PushDebugMessage("Không ðü ngân lßþng hu¤n luy®n");
 			return;
 		end
 	elseif(6 == g_uitype and -1 ~= slidx) then
@@ -981,7 +981,7 @@ function PetSkillStudy_CareEventHandle(careId, op, distance)
 end
 
 function PetSkillStudy_ShowPetGrow(nGrowLevel)
-	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
+	local strTbl = {"Thß¶ng ","¿u ","Ki®t ","Trác ","Tuy®t "};
 	if(nGrowLevel >= 1 and nGrowLevel <= table.getn(strTbl)) then
 		if(strTbl[nGrowLevel]) then
 			g_selidx = g_seledidx;
@@ -990,7 +990,7 @@ function PetSkillStudy_ShowPetGrow(nGrowLevel)
 			Pet:SetPetLocation(g_selidx,13);
 			PetSkillStudy_PetModel:SetFakeObject( "My_PetStudySkill" );
 			
-			PetSkillStudy_Text1:SetText("Giá Chích Trân Thú Ðích l¾n d¥n#R"..strTbl[nGrowLevel]..".");
+			PetSkillStudy_Text1:SetText("Trß·ng thành cüa Trân Thú #R"..strTbl[nGrowLevel]..".");
 			PetSkillStudy_Accept:Disable();
 		end
 	end
@@ -1050,19 +1050,19 @@ function PetSkillStudy_ConfirmPetSkillStudy()
 	end
 
 	if (-1 == slidx) then
-		PushDebugMessage("Thïnh lña ch÷n Trân Thú.")
+		PushDebugMessage("Ch÷n Trân Thú")
 		return
 	end
 
 	if(-1 == saidx) then
-		PushDebugMessage("C¥n kÛ nång Thß.")
+		PushDebugMessage("C¥n Bí Kíp.")
 		return
 	end
 
 	local pM = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")   --???? Vega
 	local nM = tonumber(PetSkillStudy_Money:GetProperty("MoneyNumber"))
 	if pM < nM then
-		PushDebugMessage("Ti«n tài không ðü, không th¬ H÷c T§p kÛ nång")
+		PushDebugMessage("Không ðü ngân lßþng h÷c kÛ nång")
 		return
 	end
 

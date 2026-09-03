@@ -31,7 +31,7 @@ function ConfraternityFirstMan_OnEvent(event)
 			local guildIdx = Guild:GetShowMembersIdx(i);
 			if POSITION_FIRSTMAN == Guild:GetMembersInfo(guildIdx, "Position") then
 				szMsg = Guild:GetMembersInfo(guildIdx, "Name");
-				ConfraternityFirstMan_PositionList:AddItem("Phó Bang Chü   "..szMsg, listidx);
+				ConfraternityFirstMan_PositionList:AddItem(" Bang Phó   "..szMsg, listidx);
 				--g_MembersCtl.list:SetItemTooltip(listidx,strTips);
 				g_ListToMember[listidx] = guildIdx;
 				--g_ListToMember[listidx] = i;

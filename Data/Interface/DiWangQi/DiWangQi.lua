@@ -102,7 +102,7 @@ function DiWangQi_OnEvent(event)
 			objCared = -1
 			objCared = DataPool : GetNPCIDByServerID(xx);
 			if tonumber(objCared)==nil or  tonumber(objCared)== -1 then
-				PushDebugMessage("ServerM²i ? Banh ? ?? Toä Bän ? Liên ? ? ChuÏ Phác? ?");
+				PushDebugMessage("Dæ li®u ðßþc gØi t× server có v¤n ð«.");
 				return
 			end
 			this:Show()

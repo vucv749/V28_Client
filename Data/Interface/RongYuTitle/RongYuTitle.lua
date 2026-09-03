@@ -237,12 +237,12 @@ function RongYuTitle_RefreshOneTitleInfo(titleIndex, idx)
 			titleItem.Button:Show()
 			titleItem.Already:Show()
 			titleItem.Button:Disable()
-			titleItem.Button:SetText("Dî lînh")
+			titleItem.Button:SetText("Ðã nh§n ")
 		else
 			titleItem.Button:Show()
 			titleItem.Already:Hide()
 			titleItem.Button:Enable()
-			titleItem.Button:SetText("Lînh")
+			titleItem.Button:SetText("Nh§n ")
 		end
 	end
 end

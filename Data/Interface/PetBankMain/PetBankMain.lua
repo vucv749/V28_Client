@@ -22,9 +22,9 @@ function PetBankMain_OnLoad()
 
 	PETBANK_AITYPE[0] = "Nhát gan";
 	PETBANK_AITYPE[1] = "C¦n th§n";
-	PETBANK_AITYPE[2] = "Trung thñc";
-	PETBANK_AITYPE[3] = "Nhanh nh©n";
-	PETBANK_AITYPE[4] = "Dûng mãnh";
+	PETBANK_AITYPE[2] = "Trung Thành";
+	PETBANK_AITYPE[3] = "Nhanh trí";
+	PETBANK_AITYPE[4] = "Dûng Mãnh";
 
 end
 
@@ -261,7 +261,7 @@ end
 --´ÓÊÞÀ¸µ½ÒøÐÐ²Ù×÷ ´ÓÒøÐÐµ½±³°ü²Ù×÷
 function PetBankMain_Refuse_Click()
 	if PETBANK_CURRENT_SELECT < 0 or PETBANK_CURRENT_SELECT >= PETBANK_MAX_COUNT then
-		PushDebugMessage("Thïnh Tiên lña ch÷n Nh¤t Chích Trân Thú")
+		PushDebugMessage("Vui lòng ch÷n mµt Trân Thú trß¾c")
 		return
 	end
 	

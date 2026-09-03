@@ -65,29 +65,29 @@ end
 --ID×ªÃÅÅÉ
 --===============================================
 function HuaShanGRMatchMulti_Id2MenPai(nMenpaiId)
-	local szMenpai = "Có v¤n ð« môn phái"
+	local szMenpai = "Môn phái có v¤n ð«"
 	if nMenpaiId == 0  then
-		szMenpai = "Phái Thiªu Lâm"
+		szMenpai = "Thiªu Lâm"
 	elseif nMenpaiId == 1  then
 		szMenpai = "Minh Giáo"
 	elseif nMenpaiId == 2  then
 		szMenpai = "Cái Bang"
 	elseif nMenpaiId == 3  then
-		szMenpai = "Phái Võ Ðang"
+		szMenpai = "Võ Ðang"
 	elseif nMenpaiId == 4  then
-		szMenpai = "Nga My"
+		szMenpai = "Nga Mi"
 	elseif nMenpaiId == 5  then
 		szMenpai = "Tinh Túc"
 	elseif nMenpaiId == 6  then
-		szMenpai = "Thiên Long phái"
+		szMenpai = "Thiên Long"
 	elseif nMenpaiId == 7  then
 		szMenpai = "Thiên S½n"
 	elseif nMenpaiId == 8  then
-		szMenpai = "Phái Tiêu Dao"
+		szMenpai = "Tiêu Dao"
 	elseif nMenpaiId == 9 then 
 		szMenpai = "Tñ do"
 	elseif nMenpaiId == 10 then 
-		szMenpai = "MÕn Ðà S½n Trang"
+		szMenpai = "Mµ Dung Thª Gia"
 	end	
 	return szMenpai	
 end

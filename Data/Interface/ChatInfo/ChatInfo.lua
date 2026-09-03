@@ -26,18 +26,18 @@ function ChatInfo_Update()
 	--AxTrace( 0,0,"char ID" );
 	ChatInfo_ID:SetText( "ID:"..tostring( DataPool:GetFriend( "chat", "ID_TEXT" ) ) );
 	--AxTrace( 0,0,"char NAME" );
-	ChatInfo_Name:SetText( "Tính danh:"..DataPool:GetFriend( "chat", "NAME"  ) );
+	ChatInfo_Name:SetText( "Tên: "..DataPool:GetFriend( "chat", "NAME"  ) );
 	--AxTrace( 0,0,"char LEVEL" );
-	ChatInfo_Level:SetText( "C¤p B§c:"..tostring( DataPool:GetFriend( "chat", "LEVEL" ) ) );
+	ChatInfo_Level:SetText( "C¤p: "..tostring( DataPool:GetFriend( "chat", "LEVEL" ) ) );
 	--AxTrace( 0,0,"char MENPAI_TEXT" );
-	ChatInfo_MenPai:SetText( "Môn phái:"..DataPool:GetFriend( "chat", "MENPAI_TEXT" ) );
+	ChatInfo_MenPai:SetText( "Phái: "..DataPool:GetFriend( "chat", "MENPAI_TEXT" ) );
 	--AxTrace( 0,0,"char GUID_NAME" );
-	ChatInfo_Confraternity:SetText( "Bang hµi tên:"..DataPool:GetFriend( "chat", "GUID_NAME" ) );
+	ChatInfo_Confraternity:SetText( "Bang: "..DataPool:GetFriend( "chat", "GUID_NAME" ) );
 	ChatInfo_GuildLeague:SetText( "#{TM_20080311_30}"..DataPool:GetFriend( "chat", "GUILD_LEAGUE_NAME" ) );
 	--AxTrace( 0,0,"char MOOD" );
-	ChatInfo_Explain:SetText( "Tâm tình:"..DataPool:GetFriend( "chat", "MOOD" ) );
+	ChatInfo_Explain:SetText( "T.TrÕng: "..DataPool:GetFriend( "chat", "MOOD" ) );
 	--AxTrace( 0,0,"char TITLE" );
-	ChatInfo_Agname:SetText( "Danh hi®u:"..DataPool:GetFriend( "chat", "TITLE" ) );
+	ChatInfo_Agname:SetText( "D.Hi®u: "..DataPool:GetFriend( "chat", "TITLE" ) );
 end
 
 function ChatInfo_Show()

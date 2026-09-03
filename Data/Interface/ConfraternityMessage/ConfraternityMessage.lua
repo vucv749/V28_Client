@@ -111,7 +111,7 @@ function ConfraternityMessage_OK_Clicked()
 	if currentChoose == 1 then										-- 1:???;2:????;3:???
 		-- ÄúµÄ½ğÇ®²»×ã£¬ÇëÈ·ÈÏ
 		if (Player : GetData( "MONEY" ) + Player : GetData( "MONEY_JZ" ) )< moneyCosts then
-			PushDebugMessage( "Cüa ngß½i ti«n tài tña h° không ğü ğ¬ ti«n trä A." )
+			PushDebugMessage( "Ngân lßşng không ğü." )
 		else
 			-- Í¬ÒâÖ§¸¶
 			Guild : ModifyGuildLeaveWord( 1 )

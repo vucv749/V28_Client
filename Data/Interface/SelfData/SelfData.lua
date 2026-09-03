@@ -56,56 +56,56 @@ end
 function SelfData_OnLoad()
 	--ÉúÐ¤
 	SelfData_YearAnimal:ComboBoxAddItem("-",0);
-	SelfData_YearAnimal:ComboBoxAddItem("ThØ",1); 
-	SelfData_YearAnimal:ComboBoxAddItem("Ngßu",2); 
-	SelfData_YearAnimal:ComboBoxAddItem("H±",3); 
-	SelfData_YearAnimal:ComboBoxAddItem("Th¯",4); 
+	SelfData_YearAnimal:ComboBoxAddItem("Tý",1); 
+	SelfData_YearAnimal:ComboBoxAddItem("SØu",2); 
+	SelfData_YearAnimal:ComboBoxAddItem("D¥n",3); 
+	SelfData_YearAnimal:ComboBoxAddItem("M©o",4); 
 	SelfData_YearAnimal:ComboBoxAddItem("Thìn",5); 
-	SelfData_YearAnimal:ComboBoxAddItem("Xà",6); 
-	SelfData_YearAnimal:ComboBoxAddItem("Mã",7); 
-	SelfData_YearAnimal:ComboBoxAddItem("Dß½ng",8); 
-	SelfData_YearAnimal:ComboBoxAddItem("H¥u",9);
-	SelfData_YearAnimal:ComboBoxAddItem("Kê",10);
-	SelfData_YearAnimal:ComboBoxAddItem("C¦u",11);
-	SelfData_YearAnimal:ComboBoxAddItem("Trß",12);
+	SelfData_YearAnimal:ComboBoxAddItem("TÜ",6); 
+	SelfData_YearAnimal:ComboBoxAddItem("Ng÷",7); 
+	SelfData_YearAnimal:ComboBoxAddItem("Mùi",8); 
+	SelfData_YearAnimal:ComboBoxAddItem("Thân",9);
+	SelfData_YearAnimal:ComboBoxAddItem("D§u",10);
+	SelfData_YearAnimal:ComboBoxAddItem("Tu¤t",11);
+	SelfData_YearAnimal:ComboBoxAddItem("Hþi",12);
 	
 	--Ê¡·Ý
 	SelfData_Province:ComboBoxAddItem("-",		 0);
-	SelfData_Province:ComboBoxAddItem("B¡c Kinh",  1); 
-	SelfData_Province:ComboBoxAddItem("Thiên Tân",  2); 
-	SelfData_Province:ComboBoxAddItem("Thßþng Häi",  3); 
-	SelfData_Province:ComboBoxAddItem("Trùng Khánh",  4); 
-	SelfData_Province:ComboBoxAddItem("Hà B¡c",  5); 
-	SelfData_Province:ComboBoxAddItem("Liêu Ninh",  6); 
-	SelfData_Province:ComboBoxAddItem("S½n Ðông",  7); 
-	SelfData_Province:ComboBoxAddItem("H¡c Long Giang",8); 
-	SelfData_Province:ComboBoxAddItem("S½n Tây",  9); 
-	SelfData_Province:ComboBoxAddItem("Cát Lâm",  10);
-	SelfData_Province:ComboBoxAddItem("Thi¬m Tây",  11);
-	SelfData_Province:ComboBoxAddItem("Hà Nam",  12);
+	SelfData_Province:ComboBoxAddItem("A",  1); 
+	SelfData_Province:ComboBoxAddItem("A",  2); 
+	SelfData_Province:ComboBoxAddItem("A",  3); 
+	SelfData_Province:ComboBoxAddItem("A",  4); 
+	SelfData_Province:ComboBoxAddItem("A",  5); 
+	SelfData_Province:ComboBoxAddItem("A",  6); 
+	SelfData_Province:ComboBoxAddItem("A",  7); 
+	SelfData_Province:ComboBoxAddItem("A",8); 
+	SelfData_Province:ComboBoxAddItem("A",  9); 
+	SelfData_Province:ComboBoxAddItem("A",  10);
+	SelfData_Province:ComboBoxAddItem("A",  11);
+	SelfData_Province:ComboBoxAddItem("A",  12);
 	SelfData_Province:ComboBoxAddItem("An Huy",  13);
-	SelfData_Province:ComboBoxAddItem("Giang Tô",  14);
-	SelfData_Province:ComboBoxAddItem("H° B¡c",  15);
-	SelfData_Province:ComboBoxAddItem("Chiªt Giang",  16);
-	SelfData_Province:ComboBoxAddItem("H° Nam",  17);
-	SelfData_Province:ComboBoxAddItem("Giang Tây",  18);
-	SelfData_Province:ComboBoxAddItem("Phúc Kiªn",  19);
-	SelfData_Province:ComboBoxAddItem("Ðài Loan",  20);
-	SelfData_Province:ComboBoxAddItem("Nµi Mông C±",21);
-	SelfData_Province:ComboBoxAddItem("Cam Túc",  22);
-	SelfData_Province:ComboBoxAddItem("Ninh HÕ",  23);
-	SelfData_Province:ComboBoxAddItem("TÑ Xuyên",  24);
-	SelfData_Province:ComboBoxAddItem("Quý Châu",  25);
-	SelfData_Province:ComboBoxAddItem("Vân Nam",  26);
-	SelfData_Province:ComboBoxAddItem("Quäng Tây",  27);
-	SelfData_Province:ComboBoxAddItem("Quäng Ðông",  28);
-	SelfData_Province:ComboBoxAddItem("Häi Nam",  29);
-	SelfData_Province:ComboBoxAddItem("Tân Cß½ng",  30);
-	SelfData_Province:ComboBoxAddItem("Thanh Häi",  31);
-	SelfData_Province:ComboBoxAddItem("Tây TÕng",  32);
+	SelfData_Province:ComboBoxAddItem("A",  14);
+	SelfData_Province:ComboBoxAddItem("A",  15);
+	SelfData_Province:ComboBoxAddItem("A",  16);
+	SelfData_Province:ComboBoxAddItem("A",  17);
+	SelfData_Province:ComboBoxAddItem("A",  18);
+	SelfData_Province:ComboBoxAddItem("A",  19);
+	SelfData_Province:ComboBoxAddItem("A",  20);
+	SelfData_Province:ComboBoxAddItem("A",21);
+	SelfData_Province:ComboBoxAddItem("A",  22);
+	SelfData_Province:ComboBoxAddItem("A",  23);
+	SelfData_Province:ComboBoxAddItem("A",  24);
+	SelfData_Province:ComboBoxAddItem("A",  25);
+	SelfData_Province:ComboBoxAddItem("A",  26);
+	SelfData_Province:ComboBoxAddItem("A",  27);
+	SelfData_Province:ComboBoxAddItem("A",  28);
+	SelfData_Province:ComboBoxAddItem("A",  29);
+	SelfData_Province:ComboBoxAddItem("A",  30);
+	SelfData_Province:ComboBoxAddItem("A",  31);
+	SelfData_Province:ComboBoxAddItem("A",  32);
 	SelfData_Province:ComboBoxAddItem("Macao",  33);
-	SelfData_Province:ComboBoxAddItem("H°ng Kông",  34);
-	SelfData_Province:ComboBoxAddItem("M£t khác",  35);
+	SelfData_Province:ComboBoxAddItem("A",  34);
+	SelfData_Province:ComboBoxAddItem("Khác",  35);
 	
 	 --°ÄÃÅ  Ïã¸Û ºÍÆäËû
 	                                          
@@ -124,18 +124,18 @@ function SelfData_OnLoad()
 
 	--ÐÇ×ù
 	SelfData_Constellation:ComboBoxAddItem("-",0); 
-	SelfData_Constellation:ComboBoxAddItem("Ma HÕt ToÕ",1);
-	SelfData_Constellation:ComboBoxAddItem("Chòm Thüy Bình",2); 
-	SelfData_Constellation:ComboBoxAddItem("Chòm Song Ngß",3); 
-	SelfData_Constellation:ComboBoxAddItem("Chòm BÕch Dß½ng",4); 
-	SelfData_Constellation:ComboBoxAddItem("Chòm Kim Ngßu",5); 
-	SelfData_Constellation:ComboBoxAddItem("Chòm song nam",6); 
-	SelfData_Constellation:ComboBoxAddItem("Chòm cñ giäi",7); 
-	SelfData_Constellation:ComboBoxAddItem("Chòm Sß TØ",8); 
-	SelfData_Constellation:ComboBoxAddItem("XØ næ ToÕ",9); 
-	SelfData_Constellation:ComboBoxAddItem("Chòm Thiên Bình",10);
-	SelfData_Constellation:ComboBoxAddItem("Chòm sao bò cÕp",11);
-	SelfData_Constellation:ComboBoxAddItem("XÕ thü ToÕ",12);
+	SelfData_Constellation:ComboBoxAddItem("Ma Kªt",1);
+	SelfData_Constellation:ComboBoxAddItem("Bäo Bình",2); 
+	SelfData_Constellation:ComboBoxAddItem("Song Ngß",3); 
+	SelfData_Constellation:ComboBoxAddItem("BÕch Dß½ng",4); 
+	SelfData_Constellation:ComboBoxAddItem("Kim Ngßu",5); 
+	SelfData_Constellation:ComboBoxAddItem("Song TØ",6); 
+	SelfData_Constellation:ComboBoxAddItem("Cñ Giäi",7); 
+	SelfData_Constellation:ComboBoxAddItem("Sß TØ",8); 
+	SelfData_Constellation:ComboBoxAddItem("XØ Næ",9); 
+	SelfData_Constellation:ComboBoxAddItem("Thiên Bình",10);
+	SelfData_Constellation:ComboBoxAddItem("B÷ CÕp",11);
+	SelfData_Constellation:ComboBoxAddItem("Nhân Mã",12);
 	
 	CTRL[1] = SelfData_Age;
 	CTRL[2] = SelfData_Sex;
@@ -150,10 +150,10 @@ function SelfData_OnLoad()
 	CTRL[11] = SelfData_MessageBoard;
 	
 	SELFDATA_TAB_TEXT = {
-		[0] = "Trang b¸",
-		"Tß li®u",
-		"Trân Thú",
-		"M£t khác",
+		[0] = "T.B¸",
+		"T.Tin",
+		"Thú",
+		"Khác",
 	};
 	
 	-- ±£´æ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ

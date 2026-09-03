@@ -208,10 +208,10 @@ function TeamMessageBox_Show_Message(strInviter, strDesName, strInvZoneWorldID, 
 			strMenPai = "Thiên S½n";
 
 		elseif(8 == menpai) then
-			strMenPai = "Tiêu dao";
+			strMenPai = "Tiêu Dao";
 
 		elseif(10== menpai) then
-			strMenPai = "MÕn Ðà S½n Trang";
+			strMenPai = "Mµ Dung";
 
 	else
 		strMenPai = "Tñ do";
@@ -240,6 +240,6 @@ function TeamMessageBox_Show_Message(strInviter, strDesName, strInvZoneWorldID, 
         strDesName = strDesName .. "@" .. DataPool:GetServerName( desZoneWorldID )
     end
 	local strShowInfo ="";
-	strShowInfo ="#R" ..strInviter.. "#cfff263m¶i#R" .. strDesName .. "#G["..strDesLevel.."C¤p"..strMenPai.."]#cfff263gia nh§p ðµi ngû, ð°ng ý Ma?";
+	strShowInfo ="#R" ..strInviter.. "#cfff263M¶i#R " .. strDesName .. "#G["..strDesLevel.." c¤p"..strMenPai.."]#cfff263 Các hÕ ð°ng ý gia nh§p ðµi không?";
 	g_ShowText[indexMess]:SetText(strShowInfo);
 end

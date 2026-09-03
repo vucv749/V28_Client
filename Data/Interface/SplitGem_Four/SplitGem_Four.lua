@@ -220,7 +220,7 @@ function SplitGem_Four_Update(UI_index,Item_index)
 	    end
 	    
 	    if result == 0 then
-	       PushDebugMessage("N½i này phäi ð¬ vào Bäo ThÕch Trích Tr× Phù.")
+	       PushDebugMessage("C¥n có Bäo ThÕch Trích Tr× Phù.")
 	       return
 	    end			
 			

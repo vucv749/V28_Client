@@ -8,9 +8,9 @@ local g_FriendType = 1;
 -- ´ËÌõ¼þºÍPlayerZhengyouPT.luaÀï¶¨ÒåÒ»ÖÂ£¬ÒªÍ¬Ê±¸ü¸Ä
 local g_Conditions = {
 	MenPai = {"Không gi¾i hÕn", "Thiªu Lâm", "Minh Giáo", "Cái Bang", "Võ Ðang", "Nga Mi", "Tinh Túc", "Thiên Long", "Thiên S½n", "Tiêu dao", "MÕn Ðà S½n Trang"},
-	Level = {"Không gi¾i hÕn", "Dß¾i c¤p 10", "C¤p 10 ðªn 20", "C¤p 20 ðªn 30", "C¤p 30 ðªn 40", "C¤p 40 ðªn 50", "C¤p 50 ðªn 60", "C¤p 60 ðªn 70", "C¤p 70 ðªn 80", "C¤p 80 ðªn 90", "C¤p 90 ðªn 100", "Trên c¤p 100"},
+	Level = {"Không gi¾i hÕn", "Dß¾i Lv10", "Lv10 ðªn 20", "Lv20 ðªn 30", "Lv30 ðªn 40", "Lv40 ðªn 50", "Lv50 ðªn 60", "Lv60 ðªn 70", "Lv70 ðªn 80", "Lv80 ðªn 90", "Lv90 ðªn 100", "Trên Lv100"},
 	Sexy = {"Không gi¾i hÕn", "Nam", "Næ"},
-	Mudi = { {"Không gi¾i hÕn","Bang phái Thu Nhân","Tìm kiªm bang phái",}, {"Không gi¾i hÕn","Bái sß","Thu ð° ð®",}, },
+	Mudi = { {"Không gi¾i hÕn","Bang phái chiêu mµ","Tìm bang phái",}, {"Không gi¾i hÕn","Bái Sß","Nh§n Ð® TØ",}, },
 }
 
 local g_Ctrls = {};

@@ -160,7 +160,7 @@ function Guild_Valid_City_Info_Update()
 	else
 		color = city_num_color_3;
 	end
-	g_GuildListCtl.info:SetText("Trß¾c m£t phøc vø Khí Khä xin Ðích bang phái thành th¸ s¯ lßþng:"..color..tostring(num).."#cfff263 t±ng s¯: 108");
+	g_GuildListCtl.info:SetText("S¯ lßþng thành th¸ còn lÕi: "..color..tostring(num).."#cfff263  T±ng s¯: 108");
 end
 
 function Guild_List_Update()
@@ -192,11 +192,11 @@ function Guild_List_Update()
 		local szHasCity = "";
 		local yes = Guild:IsGuildKeptOneWeed(i);
 		if(tonumber(yes) == 0) then
-			szNewGuild = "#G(Tân)#W"
+			szNewGuild = "#G (M¾i) #W"
 		end
 		local szInfo = Guild:GetGuildInfo(i, "CityName");
 		if not (nil == szInfo or 0 == string.len(szInfo)) then
-			szHasCity = "#c0066FF? Thành?#W"
+			szHasCity = "#c0066FF[Thành]#W"
 		end
 		
 		--Îå¼¶³ÇÊÐÃûÏÔÊ¾Îª»ÆÉ«--add by xindefeng
@@ -233,28 +233,28 @@ function Guild_List_Detail_Change( idx )
 	
 	local szInfo = Guild:GetGuildInfo(idx, "Name");
 	local szId	 = Guild:GetGuildInfo(idx, "ID");
-	g_GuildListCtl.name:SetText("Tên:"..szInfo.."("..tostring(szId)..")");
+	g_GuildListCtl.name:SetText("Tên: "..szInfo.."("..tostring(szId)..")");
 	
 	local leagueName = Guild:GetGuildInfo(idx, "LeagueName");
 	g_GuildListCtl.guildleague:SetText("#{TM_20080331_03}"..leagueName);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "Level");
-	g_GuildListCtl.level:SetText("C¤p b§c:"..szInfo);
+	g_GuildListCtl.level:SetText("C¤p: "..szInfo);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "FoundTime");
-	g_GuildListCtl.foundtime:SetText("Thành l§p th¶i gian:"..szInfo);
+	g_GuildListCtl.foundtime:SetText("Thành l§p: "..szInfo);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "ChiefName");
-	g_GuildListCtl.leader:SetText("Bang chü:"..szInfo);
+	g_GuildListCtl.leader:SetText("Bang chü: "..szInfo);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "Count");
-	g_GuildListCtl.count:SetText("Nhân s¯:"..szInfo);
+	g_GuildListCtl.count:SetText("Ngß¶i: "..szInfo);
 	
 	local szInfo = Guild:GetGuildInfo(idx, "CityName");
 	if(nil == szInfo or 0 == string.len(szInfo)) then
-	g_GuildListCtl.city:SetText("Thành th¸:".."Không có thành th¸");
+	g_GuildListCtl.city:SetText("Thành: ".."Không có thành");
 	else
-		g_GuildListCtl.city:SetText("Thành th¸:"..szInfo);
+		g_GuildListCtl.city:SetText("Thành: "..szInfo);
 	end
 	
 	--local szInfo = Guild:GetGuildInfo(idx, "Name");
@@ -284,7 +284,7 @@ function Guild_List_Join()
 		Guild:JoinGuild(selidx);
 	else
 		local szGuildName = Guild:GetMyGuildInfo("Name");
-		PushDebugMessage("Nhî ðã Th¸"..szGuildName.."Thành viên Li­u, Thïnh Tiên r¶i ði bang hµi Tái tiªn hành xin.");
+		PushDebugMessage("Ðã là "..szGuildName.."thành viên, r¶i bang trß¾c r°i m¾i xin lÕi.");
 		return;
 	end
 		

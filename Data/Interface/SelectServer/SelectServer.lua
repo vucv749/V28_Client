@@ -12,7 +12,7 @@ local CriticalSpeed3 =1000
 
 local CriticalSpeed =200;
 local CurPage = 0
-local NetSpeed ={"#e010101internet t¯c ðµ: #c4CFA4Ct¯t bøng","#e010101internet t¯c ðµ: #cff0000b§n rµn","#e010101internet t¯c ðµ: Không biªt", "#e010101internet t¯c ðµ: #cff0000œng Ð±" }
+local NetSpeed ={"#e010101T¯c ðµ: #c4CFA4CT¯t","#e010101T¯c ðµ: #c4CFA4CB§n rµn","#e010101T¯c ðµ: Chßa biªt", "#e010101T¯c ðµ mÕng: #cff0000T¡c ngh¨n" }
 local PageSize = 24
 
 -- ÇøÓò°´Å¥µÄ¸öÊý
@@ -393,11 +393,11 @@ function LoginSelectServer_OnLoad()
 	LoginSelectServer_GetServerInfo();
 
 	local strNormalColor = "#cFFF263";
-	SelectServer_Help_Text1:SetText(	strNormalColor.."#e010101#cff0000màu ðö tö vë: Ch§t ních#cffffff" );
-	SelectServer_Help_Text2:SetText(	strNormalColor.."#e010101#cECE58DTiên S¡c tö vë: T¯t bøng#cffffff" );
-	SelectServer_Help_Text3:SetText(	strNormalColor.."#e010101#c959595màu xám tö vë: Giæ gìn#cffffff" );
-	SelectServer_Help_Text4:SetText(	strNormalColor.."#e010101#cff8a00màu cam tö vë: B§n rµn#cffffff" );
-	SelectServer_Help_Text5:SetText(	strNormalColor.."#e010101#c4CFA4Cmàu xanh biªc tö vë: Th§t t¯t#cffffff" );
+	SelectServer_Help_Text1:SetText(	strNormalColor.."#e010101#cff0000Ðö: Ð¥y#cffffff" );
+	SelectServer_Help_Text2:SetText(	strNormalColor.."#e010101#cECE58DNhÕt: T¯t#cffffff" );
+	SelectServer_Help_Text3:SetText(	strNormalColor.."#e010101#c959595Xám: Bäo trì#cffffff" );
+	SelectServer_Help_Text4:SetText(	strNormalColor.."#e010101#cff8a00Cam: S¡p ð¥y#cffffff" );
+	SelectServer_Help_Text5:SetText(	strNormalColor.."#e010101#c4CFA4CLøc: R¤t t¯t#cffffff" );
 
 
 	-- ´ò¿ª½çÃæ
@@ -624,16 +624,16 @@ function LoginSelectServer_OnEvent(event)
 				if g_iCurSelAreaName ~= "" then
 					SelectServer_Server_Lastarea:SetText(g_iCurSelAreaName);
 				else
-					SelectServer_Server_Lastarea:SetText("Vô");
+					SelectServer_Server_Lastarea:SetText("Không");
 				end
 				SelectServer_Server_Lastarea:Enable();
 			else
-				SelectServer_Server_Last:SetText("Vô");
+				SelectServer_Server_Last:SetText("Không");
 				SelectServer_Server_Last:SetCheck(0);
 				SelectServer_Server_Last:Disable();
 			end
 		else
-			SelectServer_Server_Last:SetText("Vô");
+			SelectServer_Server_Last:SetText("Không");
 			SelectServer_Server_Last:SetCheck(0);
 			SelectServer_Server_Last:Disable();
 		end
@@ -824,7 +824,7 @@ function LoginSelectServer_GetServerInfo()
 				local _i = string.find(tmpAreaName,"-");
 				local bIsOriServer = 0;
 				if(_i~=nil and _i<string.len(tmpAreaName)) then
-					if(string.sub(tmpAreaName,1,_i-1)=="Công Tr¡c" or string.sub(tmpAreaName,1,_i-1)=="Võng Thông")then
+					if(string.sub(tmpAreaName,1,_i-1)=="Công tr¡c" or string.sub(tmpAreaName,1,_i-1)=="Võng Thông")then
 						tmpAreaName = string.sub(tmpAreaName,_i+1);
 						bIsOriServer = 1;
 					end
@@ -1076,7 +1076,7 @@ function Commendable_ShowServerInfo(index)
 	local tmpAreaName = GameProduceLogin:GetServerAreaName(g_CommendableLoginServerAreaIndex[index]);
 	local _i = string.find(tmpAreaName,"-");
 	if(_i~=nil and _i<string.len(tmpAreaName)) then
-		if(string.sub(tmpAreaName,1,_i-1)=="Công Tr¡c" or string.sub(tmpAreaName,1,_i-1)=="Võng Thông")then
+		if(string.sub(tmpAreaName,1,_i-1)=="Công tr¡c" or string.sub(tmpAreaName,1,_i-1)=="Võng Thông")then
 			tmpAreaName = string.sub(tmpAreaName,_i+1);
 		end
 	end
@@ -1086,19 +1086,19 @@ function Commendable_ShowServerInfo(index)
 
 	if(0 == g_CommendableLoginServerStatus[index]) then
 
-		strLoginServerStatus = "#e010101#cff0000ch§t ních#cffffff";
+		strLoginServerStatus = "#e010101#cff0000Ð¥y#cffffff";
 	elseif(1 == g_CommendableLoginServerStatus[index]) then
 
-		strLoginServerStatus = "#e010101#cff8a00b§n rµn#cffffff";
+		strLoginServerStatus = "#e010101#cff8a00S¡p ð¥y#cffffff";
 	elseif(2 == g_CommendableLoginServerStatus[index]) then
 
-		strLoginServerStatus = "#e010101#cECE58Dt¯t bøng#cffffff";
+		strLoginServerStatus = "#e010101#cECE58DT¯t#cffffff";
 	elseif(3 == g_CommendableLoginServerStatus[index]) then
 
-		strLoginServerStatus = "#e010101#c4CFA4Cth§t t¯t#cffffff";
+		strLoginServerStatus = "#e010101#c4CFA4CR¤t t¯t#cffffff";
 	else
 
-		strLoginServerStatus = "#e010101#c959595giæ gìn#cffffff";
+		strLoginServerStatus = "#e010101#c959595Bäo trì#cffffff";
 	end
 
 	-- ÉèÖÃÐÅÏ¢
@@ -1122,26 +1122,26 @@ function SelectServer_SelectLoginServer(index,flash)
 
 		if(0 == g_SearchServerStatus[index+1]) then
 
-			strSearchServerStatus = "#e010101#cff0000ch§t ních#cffffff";
+			strSearchServerStatus = "#e010101#cff0000Ð¥y#cffffff";
 		elseif(1 == g_SearchServerStatus[index+1]) then
 
-			strSearchServerStatus = "#e010101#c9E5705b§n rµn#cffffff";
+			strSearchServerStatus = "#e010101#c9E5705S¡p ð¥y#cffffff";
 		elseif(2 == g_SearchServerStatus[index+1]) then
 
-			strSearchServerStatus = "#e010101#cECE58Dt¯t bøng#cffffff";
+			strSearchServerStatus = "#e010101#cECE58DT¯t#cffffff";
 		elseif(3 == g_SearchServerStatus[index+1]) then
 
-			strSearchServerStatus = "#e010101#c4CFA4Cth§t t¯t#cffffff";
+			strSearchServerStatus = "#e010101#c4CFA4CR¤t t¯t#cffffff";
 		else
 
-			strSearchServerStatus = "#e010101#c959595giæ gìn#cffffff";
+			strSearchServerStatus = "#e010101#c959595Bäo trì#cffffff";
 		end
 
 		g_iCurSelAreaType = 0;
 		local tmpAreaName = GameProduceLogin:GetServerAreaName(g_iCurSelArea);
 		local _i = string.find(tmpAreaName,"-");
 		if(_i~=nil and _i<string.len(tmpAreaName)) then
-			if(string.sub(tmpAreaName,1,_i-1)=="Công Tr¡c" or string.sub(tmpAreaName,1,_i-1)=="Võng Thông")then
+			if(string.sub(tmpAreaName,1,_i-1)=="Công tr¡c" or string.sub(tmpAreaName,1,_i-1)=="Võng Thông")then
 				tmpAreaName = string.sub(tmpAreaName,_i+1);
 				g_iCurSelAreaType = 1;
 			end
@@ -1195,19 +1195,19 @@ function SelectServer_SelectLoginServer(index,flash)
 
 	if(0 == g_LoginServerStatus[index+1]) then
 
-		strLoginServerStatus = "#e010101#cff0000ch§t ních#cffffff";
+		strLoginServerStatus = "#e010101#cff0000Ð¥y#cffffff";
 	elseif(1 == g_LoginServerStatus[index+1]) then
 
-		strLoginServerStatus = "#e010101#c9E5705b§n rµn#cffffff";
+		strLoginServerStatus = "#e010101#c9E5705S¡p ð¥y#cffffff";
 	elseif(2 == g_LoginServerStatus[index+1]) then
 
-		strLoginServerStatus = "#e010101#cECE58Dt¯t bøng#cffffff";
+		strLoginServerStatus = "#e010101#cECE58DT¯t#cffffff";
 	elseif(3 == g_LoginServerStatus[index+1]) then
 
-		strLoginServerStatus = "#e010101#c4CFA4Cth§t t¯t#cffffff";
+		strLoginServerStatus = "#e010101#c4CFA4CR¤t t¯t#cffffff";
 	else
 
-		strLoginServerStatus = "#e010101#c959595giæ gìn#cffffff";
+		strLoginServerStatus = "#e010101#c959595Bäo trì#cffffff";
 	end
 
 	-- ÉèÖÃÐÅÏ¢
@@ -1274,7 +1274,7 @@ function SelectServer_GetAndShowLoginServer(index)
 	local strName = g_LoginServerName[index+1];
 
 	if(g_LoginServerIsNew[index+1]==1)then
-		strName = strName.."(Tân)";
+		strName = strName.."(M¾i)";
 	end;
 
 	if(0 == g_LoginServerStatus[index+1]) then
@@ -1320,9 +1320,9 @@ end
 --
 function SelectServer_ShowServerInfo(ServerName, ServerStatus)
 
-	SelectServer_Text1:SetText("#e010101Nhçm lña ch÷n Ðích phøc vø Khí Th¸: #cFFFF00"..ServerName);
+	SelectServer_Text1:SetText("#e010101Máy chü: #cFFFF00"..ServerName);
 
-	SelectServer_Text3:SetText("#e010101trÕng thái:"..ServerStatus);
+	SelectServer_Text3:SetText("#e010101TrÕng thái: "..ServerStatus);
 
 end
 
@@ -1366,7 +1366,7 @@ end
 --
 function Commendable_LoginServer_MouseEnter(index)
 
-	SelectServer_Info:SetText(g_CommendableLoginServerName[index]..tostring("Phøc vø Khí"));
+	SelectServer_Info:SetText(g_CommendableLoginServerName[index]..tostring(" Máy chü"));
 end
 
 ---------------------------------------------------------------------------------------------------------------
@@ -1375,9 +1375,9 @@ end
 --
 function SelectServer_LoginServer_MouseEnter(index)
 	if (g_bSearch == 1 ) then
-		SelectServer_Info:SetText(g_SearchServerName[index+1]..tostring("Phøc vø Khí"));
+		SelectServer_Info:SetText(g_SearchServerName[index+1]..tostring(" Máy chü"));
 	else
-		SelectServer_Info:SetText(g_LoginServerName[index+1]..tostring("Phøc vø Khí"));
+		SelectServer_Info:SetText(g_LoginServerName[index+1]..tostring(" Máy chü"));
 	end
 end
 
@@ -1387,7 +1387,7 @@ end
 --
 function SelectServer_LastServer_MouseEnter()
 	if(g_LastServerName~="") then
-		SelectServer_Info:SetText(g_LastServerName..tostring("Phøc vø Khí"));
+		SelectServer_Info:SetText(g_LastServerName..tostring(" Máy chü"));
 	else
 		SelectServer_Info:SetText("");
 	end
@@ -1450,7 +1450,7 @@ end;
 
 function SelectServer_Accept_MouseEnter()
 
-	SelectServer_Info:SetText("Ði¬m Kích tiªn vào S· lña ch÷n phøc vø Khí ð± bµ m£t biên");
+	SelectServer_Info:SetText("Nh¤p vào giao di®n ch÷n máy chü ðång nh§p");
 end;
 
 function SelectServer_MouseLeave()
@@ -1461,13 +1461,13 @@ end;
 
 function SelectServer_Automatic_MouseEnter()
 
-	SelectServer_Info:SetText("Trþ giúp Nhî lña ch÷n t¯t nh¤t Ðích phøc vø Khí");
+	SelectServer_Info:SetText("Giúp các hÕ ch÷n máy chü t¯t nh¤t");
 end;
 
 
 function SelectServer_Cancel_MouseEnter()
 
-	SelectServer_Info:SetText("R¶i khöi Thiên Long Bát Bµ");
+	SelectServer_Info:SetText("Thoát");
 end;
 
 function HideTestAreaBn()
@@ -1659,7 +1659,7 @@ function ShowServerSelectSub1()
 	--ShowRecommendAreaBn();
 	g_iCurSelLoginServer =-1;
 	g_iCurSelAreaName = "";
-	SelectServer_Server_Lastarea:SetText("Vô");
+	SelectServer_Server_Lastarea:SetText("Không");
 	SelectServer_Server_Lastarea:SetCheck(0);
 	GameProduceLogin:SetCurrentServerPage(1);
 	SelectServer_Frame2_Sub1:StartFade(0,1,0.3);
@@ -1688,19 +1688,19 @@ function SelectServer_CurSelectArea_MouseEnter()
 end
 
 function SelectServer_Payment_MouseEnter()
-	SelectServer_Info:SetText("Vi Nhçm Ðích tài khoän Sung Tr¸");
+	SelectServer_Info:SetText("NÕp vào tài khoän cüa các hÕ");
 end
 
 function SelectServer_RequisitionID_MouseEnter()
-	SelectServer_Info:SetText("Xin mµt cái nþ m¾i Hào");
+	SelectServer_Info:SetText("Ðång ký tài khoän m¾i");
 end
 
 function SelectServer_ReturnAreaSelect_MouseEnter()
-	SelectServer_Info:SetText("Phän h°i ÐÕi Âu lña ch÷n m£t biên");
+	SelectServer_Info:SetText("Tr· v« giao di®n ch÷n khu");
 end
 
 function SelectServer_shangyibu_MouseEnter()
-	SelectServer_Info:SetText("Phän h°i hoÕt ðµng nh§t trình m£t biên");
+	SelectServer_Info:SetText("Tr· v« giao di®n l¸ch trình hoÕt ðµng");
 end
 
 --Ñ¡ÔñÍÆ¼ö´óÇø
@@ -1743,16 +1743,16 @@ function SelectServer_Search_OK()
 	SelectServer_Frame2_Sub2:Show();
 	SelectServer_shangyibu:Hide();
 	SelectServer_fanhuidaqu:Show();
-	SelectServer_Server_Lastarea:SetText("Vô");
+	SelectServer_Server_Lastarea:SetText("Không");
 	SelectServer_Server_Lastarea:SetCheck(1);
 	GameProduceLogin:SetCurrentServerPage(2);
 	SelectServer_Frame2_Sub2:StartFade(0,1,0.3);
 	g_bSearch = 1;
 
 	if ( serverCount == 0) then
-		SelectServer_Server_AreaNameShow:SetText("Không tìm ðßþc Tßþng xÑng ðôi kªt quä");
+		SelectServer_Server_AreaNameShow:SetText("Chßa tìm ðßþc kªt quä tß½ng Ñng");
 	else
-		SelectServer_Server_AreaNameShow:SetText("Tìm tòi kªt quä");
+		SelectServer_Server_AreaNameShow:SetText("Kªt quä");
 	end
 
 	--Òþ²ØËùÓÐ·þÎñÆ÷°´Å¥
@@ -1792,7 +1792,7 @@ function SelectServer_Search_OK()
 
 		local strName = g_SearchServerName[i];
 		if(g_SearchServerIsNew[i]==1)then
-			strName = strName.."(Tân)";
+			strName = strName.."(M¾i)";
 		end;
 
 		if(0 == g_SearchServerStatus[i]) then

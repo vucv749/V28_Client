@@ -13,7 +13,7 @@ local g_selidx		= -1
 local g_ItemID		= -1
 local g_Contrl		= false
 local MAX_OBJ_DISTANCE = 3.0
-local g_DefaultTxt = "Thïnh s¡p sØa sØ døng Ğích ğÕo cø Ğà Du® Ğáo phía trß¾c Ğích ğÕo cø Khuông Trung."
+local g_DefaultTxt = "Ğßa ğÕo cø c¥n dùng vào ô ğÕo cø."
 local g_Model1IsEnabel = 0
 local g_Model2IsEnabel = 0
 --³¬¼¶ äÊŞ»¹Í¯ÌìÊé

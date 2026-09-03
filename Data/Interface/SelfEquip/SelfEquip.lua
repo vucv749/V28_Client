@@ -235,10 +235,10 @@ function SelfEquip_OnLoad()
     g_PropertyTable[11] = SelfEquip_Perporty6_Plus;
 
 	SELFEQUIP_TAB_TEXT = {
-		[0] = "Trang b¸",
-		"Tß li®u",
-		"Trân Thú",
-		"M£t khác",
+		[0] = "T.B¸",
+		"T.Tin",
+		"Thú",
+		"Khác",
 	};
 
 	g_AutoClick_FunList[1] = SelfEquip_Add1_Click
@@ -812,7 +812,7 @@ function Equip_OnUpdateShow()
 
 	-- µÃµ½µÈ¼¶
 	nNumber = Player:GetData( "LEVEL" );
-	local LevelText = tostring( nNumber ).." C¤p";
+	local LevelText = tostring( nNumber ).."  c¤p";
 	LevelText = "#cC8B88E"..LevelText;
 	SelfEquip_Level:SetText( LevelText );
 
@@ -1004,13 +1004,13 @@ function Equip_OnUpdateShow()
 		strName = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strName = "Tiêu dao";
+		strName = "Tiêu Dao";
 
 	elseif(9 == menpai) then
 		strName = "Tñ do";
 
 	elseif(10== menpai) then
-		strName = "MÕn Ðà S½n Trang";
+		strName = "Mµ Dung";
 	end
 	
 	local secttype = DataPool:GetSectType()
@@ -1807,10 +1807,10 @@ function SelfEquip_SetStateTooltip()
 	local iThunderResistLimit = Player:GetData("SUBRESISTLIMITLIGHT")
 	local iPoisonResistLimit = Player:GetData("SUBRESISTLIMITPOISON")
 	
-	SelfEquip_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther).."#{JKXX_091228_1}"..tostring(iIceResistLimit) );
-	SelfEquip_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther).."#{JKXX_091228_2}"..tostring(iFireResistLimit) );
-	SelfEquip_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther).."#{JKXX_091228_3}"..tostring(iThunderResistLimit) );
-	SelfEquip_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther).."#{JKXX_091228_4}"..tostring(iPoisonResistLimit) );
+	SelfEquip_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rKháng Bång:"..tostring(iIceDefine).."#rGiäm kháng Bång: "..tostring(iIceResistOther).."#{JKXX_091228_1}"..tostring(iIceResistLimit) );
+	SelfEquip_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rKháng Höa: "..tostring(iFireDefine).."#rGiäm kháng Höa: "..tostring(iFireResistOther).."#{JKXX_091228_2}"..tostring(iFireResistLimit) );
+	SelfEquip_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rKháng Huy«n:"..tostring(iThunderDefine).."#rGiäm kháng Huy«n: "..tostring(iThunderResistOther).."#{JKXX_091228_3}"..tostring(iThunderResistLimit) );
+	SelfEquip_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rKháng Ðµc:"..tostring(iPoisonDefine).."#rGiäm kháng Ðµc: "..tostring(iPoisonResistOther).."#{JKXX_091228_4}"..tostring(iPoisonResistLimit) );
 
 end
 

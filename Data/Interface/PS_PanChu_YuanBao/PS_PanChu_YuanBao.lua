@@ -145,14 +145,14 @@ function PS_PanChu_YuanBao_Accept_Clicked()
 				PS_PanChu_YuanBao_Silver:SetText("")
 				PS_PanChu_YuanBao_CopperCoin:SetText("")
 				PS_PanChu_YuanBao_Gold:SetProperty("DefaultEditBox", "True")
-				PushDebugMessage("Giá sang ti®m Thß½ng ğiªm không ğßşc th¤p h½n 1 ğ°ng")
+				PushDebugMessage("Giá sang ti®m không ğßşc ít h½n 1 ğ°ng, hãy nh§p lÕi")
 				return
 			elseif (tonumber(nMoney) > 100000000) then
 				PS_PanChu_YuanBao_Gold:SetText("")
 				PS_PanChu_YuanBao_Silver:SetText("")
 				PS_PanChu_YuanBao_CopperCoin:SetText("")
 				PS_PanChu_YuanBao_Gold:SetProperty("DefaultEditBox", "True")
-				PushDebugMessage("Bàn Xu¤t cØa hàng giá cä không th¬ vßşt qua 10000Kim, Thïnh mµt l¥n næa ğßa vào")
+				PushDebugMessage("Giá cä thß½ng ğiªm bày bán không ğßşc quá 10000 vàng, xin hãy nh§p lÕi.")
 				return
 			end
 			--È·ÈÏÅÌ³ö
@@ -166,12 +166,12 @@ function PS_PanChu_YuanBao_Accept_Clicked()
 		if (tonumber(szYuanbao) < 1) then
 			PS_PanChu_YuanBao_InputYuanBao:SetText("")
 			PS_PanChu_YuanBao_InputYuanBao:SetProperty("DefaultEditBox", "True")		
-			PushDebugMessage("Giá sang ti®m Thß½ng ğiªm không ğßşc th¤p h½n 1 Kim Nguyên Bäo")
+			PushDebugMessage("Giá sang ti®m không ğßşc ít h½n 1 Kim Nguyên Bäo, hãy nh§p lÕi")
 			return
 		elseif (tonumber(szYuanbao) > 100000) then
 			PS_PanChu_YuanBao_InputYuanBao:SetText("")
 			PS_PanChu_YuanBao_InputYuanBao:SetProperty("DefaultEditBox", "True")		
-			PushDebugMessage("Bàn Xu¤t cØa hàng giá cä không th¬ vßşt qua 100000nguyên bäo, Thïnh mµt l¥n næa ğßa vào")
+			PushDebugMessage("Giá sang ti®m không ğßşc quá 100000 Kim Nguyên Bäo, hãy nh§p lÕi")
 			return
 		end
 		--È·ÈÏÅÌ³ö

@@ -24,14 +24,14 @@ local g_PetSoul_ZhuanHua_Qual_Dest={
 		[2] ="BÕch Câu H°n Ng÷c",
 		[3] ="Linh Thi«n H°n Ng÷c",
 		[4] ="Thß½ng Lang H°n Ng÷c",
-		[5] ="Phi Dß½ng H°n Ng÷c",
+		[5] ="Phi Linh H°n Ng÷c",
 	},
 	-- »ÄÊÞ
 	[1] = {
 		[1] ="C¦m Lân H°n Ng÷c",
 		[2] ="Huy­n Ði®p H°n Ng÷c",
 		[3] ="Sß½ng HÕc H°n Ng÷c",
-		[4] ="Kim ô H°n Ng÷c",
+		[4] ="Kim Ô H°n Ng÷c",
 		[5] ="Lµc Thøc H°n Ng÷c",
 	},
 	-- ÉñÊÞ
@@ -40,7 +40,7 @@ local g_PetSoul_ZhuanHua_Qual_Dest={
 		[2] ="Huy«n Vû H°n Ng÷c",
 		[3] ="BÕch H± H°n Ng÷c",
 		[4] ="Chu Tß¾c H°n Ng÷c",
-		[5] ="CØu vî H°n Ng÷c",
+		[5] ="CØu Vî H°n Ng÷c",
 	},
 }
 

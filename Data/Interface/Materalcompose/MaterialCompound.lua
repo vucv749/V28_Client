@@ -15,13 +15,13 @@ local LaskPack = {}
 local curSuccRate = 0;
 local RuleTable = {
 	{
-		msgDiffTypeErr = "Phäi Vi cùng loÕi Ðích bäo thÕch lÕi v×a tiªn hành hþp thành.",
-		msgDiffGradeErr = "C¥n hþp thành Ðích bäo thÕch phäi c¤p b§c gi¯ng nhau lÕi v×a hþp thành.",
-		msgLackMoney = "Nhçm trên ngß¶i Ðích ti«n tài không ðü#{_EXCHG%d}.",
-		msgLackStuff = "M²i l¥n hþp thành ð¬ ð£t Ðích v§t ph¦m phäi l¾n h½n 2Cá.",
-		msgSlotEmpty = "Thïnh ð¬ vào Yêu hþp thành Ðích bäo thÕch.",         -- add  by zchw
+		msgDiffTypeErr = "Bäo thÕch cùng loÕi m¾i có th¬ ghép.",
+		msgDiffGradeErr = "Chï ðßþc ghép bäo thÕch ngang c¤p",
+		msgLackMoney = "Tài nguyên không ðü #{_EXCHG%d}. ",
+		msgLackStuff = "V§t ph¦m ghép m²i l¥n phäi l¾n h½n 2.",
+		msgSlotEmpty = "Hãy ð£t Bäo ThÕch c¥n ghép vào.",         -- add  by zchw
 		maxGrade = 9,
-		msgGradeLimited = "Hþp thành Ðích bäo thÕch cao nh¤t c¤p b§c Vi C¤p 9, Nhçm Ðích bäo thÕch không th¬ tiªp tøc hþp thành.",
+		msgGradeLimited = "Bäo thÕch cao nh¤t là Lv9, không th¬ ghép næa.",
 		[1] = { SpecialStuff = 30900015, MoneyCost = 5000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 		[2] = { SpecialStuff = 30900015, MoneyCost = 6000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 		[3] = { SpecialStuff = 30900015, MoneyCost = 7000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
@@ -32,13 +32,13 @@ local RuleTable = {
 		[8] = { SpecialStuff = 30900016, MoneyCost = 12000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 	},
 	{
-		msgDiffTypeErr = "Phäi sØ døng cùng loÕi tài li®u lÕi v×a hþp thành.",
-		msgDiffGradeErr = "Phäi c¤p b§c gi¯ng nhau Ðích tài li®u lÕi v×a hþp thành.",
-		msgLackMoney = "Nhçm trên ngß¶i Ðích ti«n tài không ðü#{_EXCHG%d}.",
-		msgLackStuff = "M²i l¥n hþp thành ð¬ ð£t Ðích v§t ph¦m phäi l¾n h½n 2Cá.",
-		msgSlotEmpty = "Thïnh ð¬ vào Yêu hþp thành Ðích tài li®u.",				-- add by zchw
+		msgDiffTypeErr = "Nguyên li®u cùng loÕi m¾i ðßþc ghép.",
+		msgDiffGradeErr = "Nguyên li®u cùng c¤p m¾i ðßþc ghép.",
+		msgLackMoney = "Tài nguyên không ðü #{_EXCHG%d}. ",
+		msgLackStuff = "V§t ph¦m ghép m²i l¥n phäi l¾n h½n 2.",
+		msgSlotEmpty = "Hãy ðßa nguyên li®u c¥n ghép vào.",				-- add by zchw
 		maxGrade = 5,	-- ???????,3????4?,?????5? mark by cuiyinjie maxGrade add 1
-		msgGradeLimited = "Cao nh¤t Khä ð¬ vào C¤p 3 tài li®u, Nhçm Ðích tài li®u không th¬ tiªp tøc hþp thành.", --???1?
+		msgGradeLimited = "T¯i ða ð£t vào nguyên li®u Lv3, nguyên li®u cüa các hÕ không th¬ tiªp tøc ghép.", --µÈ¼¶¼Ó1¼¶
 		[1] = { SpecialStuff = -1, MoneyCost = 500, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 		[2] = { SpecialStuff = -1, MoneyCost = 1000, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 		[3] = { SpecialStuff = -1, MoneyCost = 1500, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
@@ -49,13 +49,13 @@ local RuleTable = {
 --		[8] = { SpecialStuff = -1, MoneyCost = 4000, CountTable = { [3] = { SuccOdds = 50, SuccOddsWithSpecStuff = 0, }, [4] = { SuccOdds = 75, SuccOddsWithSpecStuff = 0, }, [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 	},
 	{
-		msgDiffTypeErr = "Phäi sØ døng Huy«n Thiên Hàn Ng÷c lÕi v×a hþp thành.",
-		msgDiffGradeErr = "Phäi cùng Xung Huy«n Thiên Hàn Ng÷c lÕi v×a hþp thành.",
-		msgLackMoney = "Nhçm trên ngß¶i Ðích ti«n tài không ðü#{_EXCHG%d}.",
-		msgLackStuff = "M²i l¥n hþp thành ð¬ ð£t Ðích v§t ph¦m phäi l¾n h½n 2Cá.",
-		msgSlotEmpty = "Thïnh ð¬ vào Yêu hþp thành Ðích Huy«n Thiên Hàn Ng÷c.",
+		msgDiffTypeErr = "C¥n phäi sØ døng Huy«n Thiên Hàn Ng÷c ð¬ ghép.",
+		msgDiffGradeErr = "C¥n phäi sØ døng cùng mµt loÕi Huy«n Thiên Hàn Ng÷c ð¬ ghép.",
+		msgLackMoney = "Tài nguyên không ðü #{_EXCHG%d}. ",
+		msgLackStuff = "V§t ph¦m ghép m²i l¥n phäi l¾n h½n 2.",
+		msgSlotEmpty = "Hãy ðßa Huy«n Thiên Hàn Ng÷c c¥n ghép vào.",
 		maxGrade = 2,
-		msgGradeLimited = "Phäi ð¬ vào cùng Xung Huy«n Thiên Hàn Ng÷c., Nhçm Ðích Huy«n Thiên Hàn Ng÷c không th¬ tiªp tøc hþp thành.",
+		msgGradeLimited = "C¥n ð£t vào cùng mµt loÕi Huy«n Thiên Hàn Ng÷c, Huy«n Thiên Hàn Ng÷c cüa bÕn không th¬ ghép.",
 		[1] = { SpecialStuff = -1, MoneyCost = 10000, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 --		[2] = { SpecialStuff = -1, MoneyCost = 1000, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
 --		[3] = { SpecialStuff = -1, MoneyCost = 1500, CountTable = { [5] = { SuccOdds = 100, SuccOddsWithSpecStuff = 0, }, }, },
@@ -127,10 +127,10 @@ function MaterialCompound_OnEvent( event )
 		if this : IsVisible() and Current ~= 2 then				-- ??????,???
 			MaterialCompound_Close()
 		end
-		Materalcompose_SuccessValue : SetText("#cFF0000xác xu¤t thành công");
+		Materalcompose_SuccessValue : SetText("#cFF0000Tï l® thành công");
 		Current = 2
-		Materalcompose_DragTitle : SetText("#gFF0FA0hþp thành tài li®u")
-		MaterialCompose_Info : SetText("Hþp thành tài li®u có th¬ Tß¾ng Miên B¯, Bí Ngân, Tinh Thiªt tiªn hành thång c¤p hþp thành. (#Gh?p thành tài li®u c¥n nåm#Y)")
+		Materalcompose_DragTitle : SetText("#gFF0FA0Ghép nguyên li®u")
+		MaterialCompose_Info : SetText("Có th¬ dùng Miên B¯, Bí Ngân, Tinh Thiªt ð¬ tång c¤p ghép. (#GC¥n 5 nguyên li®u ghép#Y)")
 		Materalcompose_Static1 : Hide()
 		Materalcompose_Special : Hide()
 		this : Show()
@@ -147,10 +147,10 @@ function MaterialCompound_OnEvent( event )
 		if this : IsVisible() and Current ~= 3 then				-- ??????,???
 			MaterialCompound_Close()
 		end
-		Materalcompose_SuccessValue : SetText("#cFF0000xác xu¤t thành công");
+		Materalcompose_SuccessValue : SetText("#cFF0000Tï l® thành công");
 		Current = 3
-		Materalcompose_DragTitle : SetText("#gFF0FA0Hàn Ng÷c hþp thành")
-		MaterialCompose_Info : SetText("Có th¬ Døng 5Cá Huy«n Thiên Hàn Ng÷c hþp thành 1Cá Hàn Ng÷c Tinh Tuý(#Gh?p thành tài li®u Huy«n Thiên Hàn Ng÷c c¥n nåm#Y)")
+		Materalcompose_DragTitle : SetText("#gFF0FA0Ghép Hàn Ng÷c")
+		MaterialCompose_Info : SetText("Có th¬ dùng 5 viên Huy«n Thiên Hàn Ng÷c ghép 1 Hàn Ng÷c Tinh Túy (#GC¥n 5 cái ð¬ ghép nguyên li®u Huy«n Thiên Hàn Ng÷c#Y)")
 		Materalcompose_Static1 : Hide()
 		Materalcompose_Special : Hide()
 		this : Show()
@@ -345,7 +345,7 @@ function MaterialCompound_OK_Clicked()
 --			LifeAbility : Do_Combine( ITEM_IN_SLOTS[1], ITEM_IN_SLOTS[2],
 --				ITEM_IN_SLOTS[3], ITEM_IN_SLOTS[4],
 --				ITEM_IN_SLOTS[5], ITEM_IN_SLOTS[6], 0, dialogStr )
-			PushDebugMessage( "Hþp thành bäo thÕch c¥n ð¬ vào bäo thÕch hþp thành Phù." )
+			PushDebugMessage( "Ghép bäo thÕch c¥n ð£t Bùa Ghép Bäo ThÕch." )
 			return
 		end
 	end
@@ -372,7 +372,7 @@ function MaterialCompound_Clear()
 	Current = 0
 	Type = -1
 	Grade = -1
-	Materalcompose_SuccessValue : SetText("#cFF0000xác xu¤t thành công")
+	Materalcompose_SuccessValue : SetText("#cFF0000Tï l® thành công")
 	Materalcompose_NeedMoney : SetProperty( "MoneyNumber", tostring( 0 ) )
 	Materalcompose_OK : Disable()
 
@@ -514,7 +514,7 @@ function MaterialCompound_Update( pos0, pos1 )
 	-- AxTrace( 0, 1, "MaterialCompound_ItemInterface( bagPos )=".. MaterialCompound_ItemInterface( bagPos ) )
 	--  Òµ½ bagPos µÄÎïÆ·ÀàÐÍ£¬À´ÅÐ¶ÏÊÇ·ñ·ûºÏµ±Ç°½çÃæ£¬·ñÔòÃ»ÓÐÈÎºÎÌáÊ¾
 	if MaterialCompound_ItemInterface( bagPos ) ~= Current then
-		PushDebugMessage( "Tài li®u loÕi hình không hþp" )
+		PushDebugMessage( "LoÕi nguyên li®u không phù hþp" )
 		return
 	end
 
@@ -574,7 +574,7 @@ function MaterialCompound_Update( pos0, pos1 )
 		else
 			-- ÅÐ¶Ï bagPos ÊÇ·ñÓ¦¸Ã´¦ÔÚ â¸ö¸ñ×Ó£¬¸ñ×Ó²»¶ÔÔòÖ±½Ó·µ»Ø
 			if slot ~= SPECIAL_MATERIAL_SLOT then
-				PushDebugMessage( "Thïnh ð¬ ð£t Vu ð£c thù tài li®u Lan" )
+				PushDebugMessage( "Hãy ð£t vào ô nguyên li®u ð£c thù." )
 				return
 			end
 		end
@@ -652,7 +652,7 @@ end
 -- ÖØÐÂ¼ÆËã³É¹¦ÂÊ
 function MaterialCompound_RecalcSuccOdds()
 	if not RuleTable[Current] or not RuleTable[Current][Grade] then
-		Materalcompose_SuccessValue : SetText("#cFF0000xác xu¤t thành công")
+		Materalcompose_SuccessValue : SetText("#cFF0000Tï l® thành công")
 		Materalcompose_OK : Disable()
 		return
 	end
@@ -667,11 +667,11 @@ function MaterialCompound_RecalcSuccOdds()
 	end
 
 	-- AxTrace( 0, 1, "materialCount=".. materialCount )
-	local str = "#cFF0000xác xu¤t thành công:"
+	local str = "#cFF0000Tï l® thành công: "
 
 	if not currentRule.CountTable[materialCount] then
 		curSuccRate = 0;
-		str = str .. "Không th¬ hþp thành"
+		str = str .. "Không th¬ ghép"
 		Materalcompose_OK : Disable()
 	elseif ITEM_IN_SLOTS[SPECIAL_MATERIAL_SLOT] ~= -1
 	 and currentRule.SpecialStuff == PlayerPackage : GetItemTableIndex( ITEM_IN_SLOTS[SPECIAL_MATERIAL_SLOT] )

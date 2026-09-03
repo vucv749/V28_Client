@@ -22,7 +22,7 @@ function MessageBox_Friend_OnEvent(event)
 			MessageBox_Friend_Text:Show();
 	    InvitePlayer.NAME = tostring( arg0 );
 	    InvitePlayer.GUID = tostring( arg1 );
-	    MessageBox_Friend_Text:SetText("Ngß¶i ch½i"..InvitePlayer.NAME.."Thïnh c¥u Nhçm Gia Tha(Tha) cho thöa ğáng Hæu");
+	    MessageBox_Friend_Text:SetText("Ngß¶i ch½i"..InvitePlayer.NAME.."Xin các hÕ ğßa h÷ vào danh sách häo hæu");
 			this:Show();
 	end
 		-- ÓÎÏ·´°¿Ú³ß´ç·¢ÉúÁË±ä»¯

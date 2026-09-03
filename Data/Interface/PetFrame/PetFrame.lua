@@ -143,8 +143,8 @@ function PetFrame_HP_Text_MouseLeave()
 end
 
 function PetFrame_Update_Tooltip( arg )
-	PetFrame_HP:SetToolTip("Huyªt:"..tostring( PET_HP ) .. "/" .. tostring( PET_MAXHP).."#r".."Kinh nghi®m:"..tostring( PET_EXP ).."/"..tostring( PET_MAXEXP ) );
-	PetFrame_Exp:SetToolTip("Huyªt:"..tostring( PET_HP ) .. "/" .. tostring( PET_MAXHP).."#r".."Kinh nghi®m:"..tostring( PET_EXP ).."/"..tostring( PET_MAXEXP ) );
+	PetFrame_HP:SetToolTip("Sinh lñc:"..tostring( PET_HP ) .. "/" .. tostring( PET_MAXHP).."#r".."EXP:"..tostring( PET_EXP ).."/"..tostring( PET_MAXEXP ) );
+	PetFrame_Exp:SetToolTip("Sinh lñc:"..tostring( PET_HP ) .. "/" .. tostring( PET_MAXHP).."#r".."EXP:"..tostring( PET_EXP ).."/"..tostring( PET_MAXEXP ) );
 	
 end
 

@@ -111,8 +111,8 @@ end
 function YuanbaoExchange_Update()
 	Exchange_Rate = Get_XParam_INT(1)/10
 
-	YuanbaoExchange_Text1 : SetText("#cff0000#bcòn th×a ðªm ðang · tu¥n tra Trung, Thïnh ch¶ mµt chút……")
-	YuanbaoExchange_Text3 : SetText("C¥n tiêu phí ðªm: 0")
+	YuanbaoExchange_Text1 : SetText("#cff0000#bÐang ki¬m tra s¯ dß...")
+	YuanbaoExchange_Text3 : SetText("T¯n: 0")
 
 end
 
@@ -122,8 +122,8 @@ function YuanbaoExchange_OK_Clicked()
 	--AxTrace(0,0,"YuanbaoExchange_OK_Clicked 1 "..tostring(str));
 
 	if str == nil or str == "" then
-		YuanbaoExchange_Text3 : SetText("C¥n tiêu phí ðªm: 0")
-		PushDebugMessage("Thïnh ðßa vào Yêu ð±i Ðích nguyên bäo mÑc")
+		YuanbaoExchange_Text3 : SetText("T¯n: 0")
+		PushDebugMessage("M¶i ði«n giá tr¸ KNB các hÕ c¥n ð±i")
 		return
 	end
 
@@ -133,7 +133,7 @@ function YuanbaoExchange_OK_Clicked()
 		return
 	end
 	if( tonumber(str) <= 0 ) then
-		PushDebugMessage("M²i l¥n ð±i Ðích nguyên bäo s¯ lßþng ít nh¤t Vi 1Ði¬m, Thïnh ðßa vào l¾n h½n tß½ng ðß½ng 1Ði¬m Ðích con s¯.")
+		PushDebugMessage("S¯ lßþng Kim Nguyên Bäo m²i l¥n ð±i ít nh¤t là 1 ði¬m, xin vui lòng nh§p con s¯ l¾n h½n ho£c b¢ng 1")
 		return
 	end
 

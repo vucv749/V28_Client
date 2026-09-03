@@ -28,10 +28,10 @@ function MessageBoxCommon_OnEvent(event)
 		g_ScriptStringOK = arg3;
 		g_ScriptStringCancel = arg4;
 		
-		MessageBoxCommon_OK_Button:SetText("Xác nh§n");
+		MessageBoxCommon_OK_Button:SetText("Ð°ng ý");
 		MessageBoxCommon_OK_Button:Show();
 		
-		MessageBoxCommon_Cancel_Button:SetText("Hüy bö");
+		MessageBoxCommon_Cancel_Button:SetText("Hüy");
 		MessageBoxCommon_Cancel_Button:Show();
 		
 		MessageBoxCommon_UpdateRect();

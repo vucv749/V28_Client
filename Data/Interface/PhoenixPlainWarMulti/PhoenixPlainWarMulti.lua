@@ -139,10 +139,10 @@ function PhoenixPlainWarMulti_GetData()
 						guildNamePrint = blink.."#G"..guildName1
 					end
 					if guildName2 ~= "" then
-						guildNamePrint = guildNamePrint..","..blink.."#G"..guildName2
+						guildNamePrint = guildNamePrint..", "..blink.."#G"..guildName2
 					end
 					if guildName3 ~= "" then
-						guildNamePrint = guildNamePrint..","..blink.."#G"..guildName3
+						guildNamePrint = guildNamePrint..", "..blink.."#G"..guildName3
 					end
 				end
 			--end

@@ -156,7 +156,7 @@ function MainMenuBar_4_Clicked(nIndex)
 	if DataPool:IsCanDoAction() then		
 		UPBAR_2_BUTTONS[nIndex]:DoAction()
 	else
-		PushDebugMessage("Nhî không th¬ làm nhß v§y.")
+		PushDebugMessage("Các hÕ không ðßþc làm nhß v§y.")
 		return
 	end
 end

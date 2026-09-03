@@ -97,12 +97,12 @@ function City_Road_Update()
 				g_MembersCtl.list:AddNewItem(detailInfo[2],0,i-1);
 				g_MembersCtl.list:AddNewItem(tostring(detailInfo[1]),1,i-1);
 				g_MembersCtl.list:AddNewItem(detailInfo[3],2,i-1);
-				g_MembersCtl.list:SetRowTooltip(i-1, "Dî H² Kiªn Thß½ng Tuyªn");
+				g_MembersCtl.list:SetRowTooltip(i-1, "Ðã thông thß½ng");
 			else
 				g_MembersCtl.list:AddNewItem(detailInfo[2],0,i-1,g_GrayColor);
 				g_MembersCtl.list:AddNewItem(tostring(detailInfo[1]),1,i-1,g_GrayColor);
 				g_MembersCtl.list:AddNewItem(detailInfo[3],2,i-1,g_GrayColor);
-				g_MembersCtl.list:SetRowTooltip(i-1, "V¸ H² Kiªn Thß½ng Tuyªn");
+				g_MembersCtl.list:SetRowTooltip(i-1, "Chßa thông thß½ng");
 			end
 		end
 	end

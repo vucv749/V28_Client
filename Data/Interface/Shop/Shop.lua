@@ -231,7 +231,7 @@ end
 function Shop_OnBtnClicked_OpenFitting()
 	
 	if IsIdleLogic() ~= 1 then
-		SetNotifyTip("Không th¬ vào Hành ThØ thao tác.");
+		SetNotifyTip("Không th¬ thao tác.");
 		return 0;
 	end
 	
@@ -243,7 +243,7 @@ function Shop_OnBtnClicked_OpenFitting()
 	--CloseShopFitting();
 	this:Show();	
 	MouseCmd_ShopFittingSet();
-	SetNotifyTip("Thïnh Ði¬m Kích Nhçm mu¯n thØ Xuyên Ðích trang phøc m¯t Ho£c cßÞi thØ Ðích t÷a kÜ.");
+	SetNotifyTip("Xin ch÷n th¶i trang ho£c thú cßÞi mà các hÕ mu¯n thØ.");
 end
 
 --===============================================
@@ -391,15 +391,15 @@ function Shop_UpdatePage(thePage)
 			end
 			local	nPrice	= NpcShop:EnumItemPrice( idx )
 			if( nUnit == CU_GOODBAD ) then
-				GOOD_BAD[i]:SetText("Thi®n ác Tr¸:" .. tostring(nPrice) .. " Ði¬m")
+				GOOD_BAD[i]:SetText("Ði¬m PK: " .. tostring(nPrice) .. " Ði¬m")
 			elseif( nUnit == CU_MORALPOINT ) then
-				GOOD_BAD[i]:SetText("Sß ÐÑc Ði¬m:" .. tostring(nPrice) .. " Ði¬m")
+				GOOD_BAD[i]:SetText("Ði¬m sß ðÑc: " .. tostring(nPrice) .. " Ði¬m")
 			elseif( nUnit == CU_YUANBAO ) then
-				GOOD_BAD[i]:SetText("Nguyên bäo:" .. tostring(nPrice))
+				GOOD_BAD[i]:SetText("KNB: " .. tostring(nPrice))
 			elseif( nUnit == CU_ZENGDIAN ) then
-				GOOD_BAD[i]:SetText("T£ng Ði¬m:" .. tostring(nPrice))
+				GOOD_BAD[i]:SetText("Ði¬m t£ng: " .. tostring(nPrice))
 			elseif( nUnit == CU_MENPAI_POINT ) then
-				GOOD_BAD[i]:SetText("Môn phái c¯ng hiªn Ðµ:" .. tostring(nPrice))
+				GOOD_BAD[i]:SetText("CH môn phái: " .. tostring(nPrice))
 			elseif( nUnit == CU_MONEYJZ ) then
 				GOODS_PRICE[i]:SetProperty("GoldIcon", "set:Button6 image:Lace_JiaoziJin")
 				GOODS_PRICE[i]:SetProperty("SilverIcon", "set:Button6 image:Lace_JiaoziYin")
@@ -575,7 +575,7 @@ function Booth_RepairAll_MouseEnter()
 	
 	szMoney = szMoney .. tostring(nCopper) .. "#-16" --zchw
 	
-	Shop_AllRepair:SetToolTip("Toàn bµ sØa chæa#rphí døng:" .. szMoney);
+	Shop_AllRepair:SetToolTip("SØa hªt c¥n:#r" .. szMoney);
 
 end
 

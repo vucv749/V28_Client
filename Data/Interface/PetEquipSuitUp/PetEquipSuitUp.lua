@@ -87,7 +87,7 @@ function PetEquipSuitUp_Buttons_Clicked()
 	--ÅÐ¶Ï½ðÇ®ÊÇ²»ÊÇ¹»
 	local selfMoney = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")
 	if (selfMoney < g_ProductNeedMoney) then
-		PushDebugMessage( "Cûng không ðü Ðích ti«n tài, không th¬ vào Hành Trân Thú trang b¸ thång c¤p!" )
+		PushDebugMessage( "Không ðü ti«n, không th¬ tiªn hành thång c¤p Trang B¸ Trân Thú!" )
 		return
 	end
 
@@ -268,7 +268,7 @@ function PetEquipSuitUp_Update( pos_packet )
 		for i=1,nMaterialKind do
 			nMaterial[i].id,nMaterial[i].num,nMaterial[i].name = PetEquipSuitUp:GetPetEquipUpMaterial(g_PetEquipItemID, 0, i) --debug
 			if (-1 ~= nMaterial[i].id) then
-				szTipInfo = szTipInfo..nMaterial[i].name.."#G"..nMaterial[i].num.."Cá;"
+				szTipInfo = szTipInfo..nMaterial[i].name.."#G"..nMaterial[i].num..";"
 			end
 		end
 

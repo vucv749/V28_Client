@@ -55,9 +55,9 @@ function TargetPet_OnLoad()
 
 	PET_AITYPE[0] = "Nhát gan";
 	PET_AITYPE[1] = "C¦n th§n";
-	PET_AITYPE[2] = "Trung thñc";
-	PET_AITYPE[3] = "Nhanh nh©n";
-	PET_AITYPE[4] = "Dûng mãnh";
+	PET_AITYPE[2] = "Trung Thành";
+	PET_AITYPE[3] = "Nhanh trí";
+	PET_AITYPE[4] = "Dûng Mãnh";
 end
 
 function TargetPet_OnEvent(event)
@@ -223,7 +223,7 @@ function TargetPet_Update()
  	
 	local strAI,strIcon;
 	if(strName>4 or strName <0) then
-		strAI = "Sai l¥m Ðích";
+		strAI = "Sai sót ";
 	else
 		strAI =	PET_AITYPE[strName];
 	end
@@ -231,22 +231,22 @@ function TargetPet_Update()
  	strName,strName2 = TargetPet:GetName();
 	local nEra, strTypeName = TargetPet:GetPetTypeName(nIndex);
  	if( 1 == nEra ) then
- 	    strName2 = "Ð¶i thÑ 2"..strTypeName
+ 	    strName2 = "Ð¶i thÑ 2 "..strTypeName
  	end
 	TargetPet_PetName : SetText( strName2 );
 	TargetPet_PageHeader : SetText( "#gFF0FA0"..strName2 );
 	TargetPet_Type : SetText("#gFF8E92"..strAI)
 
 	strName,strName2,sex = TargetPet : GetID();
-	TargetPet_TargetPetID : SetText( "Trân Thú ID:"..strName2 );
+	TargetPet_TargetPetID : SetText( "ID thú:"..strName2 );
 	AxTrace(0,0,"GetID="..strName .. strName2);
 	
 	strName = TargetPet : GetConsort();
 	
 	if (strName == "00000000") then
-		TargetPet_ConsortID : SetText( "Thßþng Vô ph¯i ngçu" );
+		TargetPet_ConsortID : SetText( "Chßa có bÕn ð¶i" );
 	else
-		TargetPet_ConsortID : SetText( "Ph¯i ngçu ID:".. strName );
+		TargetPet_ConsortID : SetText( "ID bÕn ð¶i:".. strName );
 	end
 	
 	if TargetPet : GetGoodsProtect_Pet() == 1 then
@@ -256,9 +256,9 @@ function TargetPet_Update()
 	end
 		
 	if(sex == 1) then 
-		strName = "Gi¯ng ðñc";
+		strName = "Ðñc";
 	else
-		strName = "Gi¯ng cái";
+		strName = "Cái";
 	end
 
 	local nGeneration  = TargetPet : GetGeneration()
@@ -352,16 +352,16 @@ function TargetPet_Update()
 	end
 	------------------------------------------------------------------------------------------------------------------
 	strName = TargetPet : GetNaturalLife();
-	TargetPet_Life : SetText( "S¯ng lâu:"..strName );
+	TargetPet_Life : SetText( "Th÷: "..strName );
 
 	strName = TargetPet : GetLevel();
-	TargetPet_Level : SetText( "C¤p b§c:"..strName.."C¤p" );
+	TargetPet_Level : SetText( "C¤p: "..strName.." c¤p" );
 	
 	strName = TargetPet : GetHappy();
-	TargetPet_Happy : SetText( "Khoái LÕc:"..strName );
+	TargetPet_Happy : SetText( "Hoan hï:"..strName );
 	
 	strName = TargetPet : GetBasic();
-	TargetPet_GenGu : SetText( "Cån C¯t:"..strName );
+	TargetPet_GenGu : SetText( "Cån c¯t:"..strName );
 	
 	strName = TargetPet : GetLixing(nIndex);
 	TargetPet_Lingxing : SetText("#{RXZS_XML_28}"..strName)
@@ -406,7 +406,7 @@ function TargetPet_Update()
 	
 	strName = TargetPet : GetHP(nIndex);
 	strName2 = TargetPet:	GetMaxHP(nIndex);
-	TargetPet_Blood : SetText( "Huyªt:"..strName .." / ".. strName2);
+	TargetPet_Blood : SetText( "Sinh lñc:"..strName .." / ".. strName2);
 
 	strName = TargetPet : GetStr();
 	TargetPet_Str : SetText( strName );
@@ -482,14 +482,14 @@ function TargetPet_Update()
 	else
 		strNeedLevelColor="#c00FF00";
 	end
-	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
+	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).." c¤p#W mang theo";
 
 	TargetPet_NeedLevel : SetText(strNeedLevel)
 
 	strName = TargetPet : GetGrowRate();
-	TargetPet_Growth : SetText("#GkHông biªt")
+	TargetPet_Growth : SetText("#GChßa biªt")
 	local nGrowLevel = TargetPet : GetPetGrowLevel(tonumber(strName));
-	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
+	local strTbl = {"Thß¶ng ","¿u ","Ki®t ","Trác ","Tuy®t "};
 	
 	if(nGrowLevel >= 0) then
 		nGrowLevel = nGrowLevel + 1;	--c???0?????
@@ -510,7 +510,7 @@ function TargetPet_Update()
 		end
 	end
 	if(food >= 100) then
-		strName = strName .. "Thäo";
+		strName = strName .. "Cö";
 		food = food - 100;
 		if food > 0 then
 			strName = strName .. ",";

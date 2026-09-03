@@ -47,11 +47,11 @@ function EquipEnchange_OnEvent(event)
 			EquipEnchange_SelfMoney:SetProperty("MoneyNumber", playerMoney);
 			EquipEnchange_SelfJiaozi:SetProperty("MoneyNumber", Player:GetData("MONEY_JZ")); --zchw
 			if tonumber(arg0) == 1003 then
-				EquipEnchange_Info4  : SetText("Tång lên trang b¸ c¤p b§c lúc sau có th¬ tång lên trø cµt thuµc tính")
-				EquipEnchange_Info : SetText("Thïnh Tß¾ng trang b¸ kéo vào ThØ Khuông")
-				EquipEnchange_Info2 : SetText("Tång lên c¤p b§c c¥n")
-				EquipEnchange_Title : SetText("#gFF0FA0tång lên trang b¸ c¤p b§c")
-				EquipEnchange_Object2 : SetToolTip("C¥n#{_ITEM30900008}")
+				EquipEnchange_Info4  : SetText("Tång c¤p trang b¸ giúp tång thuµc tính c½ bän")
+				EquipEnchange_Info : SetText("Ð£t trang b¸ vào ô này!")
+				EquipEnchange_Info2 : SetText("Tång c¤p c¥n")
+				EquipEnchange_Title : SetText("#gFF0FA0Tång c¤p")
+				EquipEnchange_Object2 : SetToolTip(" C¥n #{_ITEM30900008}")
 				Current = 3
 				if this:IsVisible() then
 					EquipEnchange_Close();
@@ -69,10 +69,10 @@ function EquipEnchange_OnEvent(event)
 				BeginCareObject_EquipEnchange(objCared)
 			elseif tonumber(arg0) == 1004 then
 				EquipEnchange_Info4  : SetText("")
-				EquipEnchange_Info : SetText("Thïnh ð¬ vào c¥n gia tång Khä sØa chæa s¯ l¥n Ðích trang b¸")
-				EquipEnchange_Info2 : SetText("C¥n ð£c thù tài li®u")
-				EquipEnchange_Title : SetText("#gFF0FA0gia tång Khä sØa chæa s¯ l¥n")
-				EquipEnchange_Object2 : SetToolTip("C¥n#{_ITEM30900007}")
+				EquipEnchange_Info : SetText("Ð£t trang b¸ c¥n tång s¯ l¥n sØa chæa vào!")
+				EquipEnchange_Info2 : SetText("C¥n nguyên li®u ð£c bi®t")
+				EquipEnchange_Title : SetText("#gFF0FA0Tång s¯ l¥n sØa chæa")
+				EquipEnchange_Object2 : SetToolTip(" C¥n #{_ITEM30900007}")
 				Current = 4
 				if this:IsVisible() then
 					EquipEnchange_Close();
@@ -214,9 +214,9 @@ function EquipEnchange_Update(UI_index,Item_index)
 				if Current == 2 then
 					local Equip_Level = LifeAbility : Get_Equip_Level(i_index);
 						if Equip_Level < 40 then
-							EquipEnchange_Object2 : SetToolTip("C¥n#{_ITEM30900005}.")
+							EquipEnchange_Object2 : SetToolTip(" C¥n #{_ITEM30900005}")
 						else
-							EquipEnchange_Object2 : SetToolTip("C¥n#{_ITEM30900006}.")
+							EquipEnchange_Object2 : SetToolTip(" C¥n #{_ITEM30900006}")
 						end
 				end
 		else
@@ -230,13 +230,13 @@ function EquipEnchange_Update(UI_index,Item_index)
 				if Current == 2 then--????
 					if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900005 and
 						 PlayerPackage : GetItemTableIndex( i_index ) ~= 30900006 then
-						PushDebugMessage("N½i này phäi ð¬ vào#{_ITEM30900005}ho£c là#{_ITEM30900006}.")
+						PushDebugMessage("Phäi ð£t #{_ITEM30900005} ho£c #{_ITEM30900006} vào. ")
 						return
 					end
 				end
 				if Current == 3 then--????
 					if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900008 then
-						PushDebugMessage("N½i này phäi ð¬ vào#{_ITEM30900008}.")
+						PushDebugMessage("Phäi ð£t #{_ITEM30900008} vào. ")
 						return
 					end
 				end
@@ -265,13 +265,13 @@ end
 
 function EquipEnchange_Buttons_Clicked()
 	if Enchange_Item1 == -1 then
-		PushDebugMessage("Thïnh ð¬ vào mµt cái trang b¸.")
+		PushDebugMessage("Hãy ð£t 1 trang b¸ vào!")
 		return
 	end
 	
 	if Current == 2 then--????
 		if Enchange_Item2 == -1 then
-			PushDebugMessage("Thïnh ð¬ vào#{_ITEM30900005}ho£c là#{_ITEM30900006}.")
+			PushDebugMessage("Hãy ð£t #{_ITEM30900005} ho£c #{_ITEM30900006} vào. ")
 			return
 		end
 			Clear_XSCRIPT();
@@ -283,7 +283,7 @@ function EquipEnchange_Buttons_Clicked()
 			Send_XSCRIPT();
 	elseif Current == 3 then--????
 		if Enchange_Item2 == -1 then
-			PushDebugMessage("Thïnh ð¬ vào#{_ITEM30900008}.")
+			PushDebugMessage("Hãy ð£t #{_ITEM30900008} vào. ")
 			return
 		end
 			Clear_XSCRIPT();
@@ -295,7 +295,7 @@ function EquipEnchange_Buttons_Clicked()
 			Send_XSCRIPT();
 	elseif Current == 4 then--????
 		if Enchange_Item2 == -1 then
-			PushDebugMessage("Thïnh ð¬ vào#{_ITEM30900007}.")
+			PushDebugMessage("Hãy ð£t #{_ITEM30900007} vào")
 			return
 		end
 			Clear_XSCRIPT();

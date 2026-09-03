@@ -126,7 +126,7 @@ function YbMarketUpItem_Update(itemIdx)
 	if theAction:GetID() ~= 0 then
 		
 		if PlayerPackage:IsLock( itemIdx ) == 1 then
-			PushDebugMessage("V§t ph¦m Dî Gia Toä")	--?????
+			PushDebugMessage("V§t ph¦m ðã b¸ khóa")	--µÀ¾ßÒÑÉÏËø
 			return
 		end
 			

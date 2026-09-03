@@ -9,7 +9,7 @@ local g_TeamOutLineStr = {}
 
 local g_imgStatus = {}
 
-local g_FriendBlank = "     "		--3?????
+local g_FriendBlank = "   "		--3¸ö¿Õ¸ñËõ½ø
 local g_RemarkBlank = "  "		--2?????
 
 local g_Current_Clicked = -1

@@ -55,7 +55,7 @@ function AutoSearch_OnLoad()
 
 	--´°¿Ú¼ÓÔØÊ±¶¯Ì¬µÄ²åÈëÁĞ....Ö±½ÓÔÚxmlÀïÅäÖÃÁĞµÄ»°ÎŞ·¨ÒıÓÃ×Öµä....
 	AutoSearch_List:AddColumn( "Tên", 0, 0.6 );
-	AutoSearch_List:AddColumn( "Bän tóm t¡t", 1, 0.4 );
+	AutoSearch_List:AddColumn( "S½ lßşc", 1, 0.4 );
 
 	--*****************************************
 	--CEGUIÓĞÒ»´¦Ğ´µÄ²»ºÏÀíµÄµØ·½(Bug?)....µ¼ÖÂ¶àÁĞÁĞ±íÉèÖÃÊôĞÔÊ±»á³öÏÖÒ»Ğ©´íÎó....
@@ -210,10 +210,10 @@ function UpdateTabButton()
 		AutoSearch_Tab3:Show();
 		AutoSearch_Tab4:Show();
 		AutoSearch_Tab5:Hide();
-		AutoSearch_Tab1:SetText("Toàn");
+		AutoSearch_Tab1:SetText("T¤t cä");
 		AutoSearch_Tab2:SetText("Công");
-		AutoSearch_Tab3:SetText("Ğiªm");
-		AutoSearch_Tab4:SetText("Nh§m");
+		AutoSearch_Tab3:SetText("Ti®m");
+		AutoSearch_Tab4:SetText("Nhi®m");
 
 	--ÃÅÅÉ
 	elseif g_CurSceneType == 1 then
@@ -223,7 +223,7 @@ function UpdateTabButton()
 		AutoSearch_Tab3:Hide();
 		AutoSearch_Tab4:Hide();
 		AutoSearch_Tab5:Hide();
-		AutoSearch_Tab1:SetText("Toàn");
+		AutoSearch_Tab1:SetText("T¤t cä");
 		AutoSearch_Tab2:SetText("Công");
 
 	--³èÎï
@@ -234,7 +234,7 @@ function UpdateTabButton()
 		AutoSearch_Tab3:Show();
 		AutoSearch_Tab4:Show();
 		AutoSearch_Tab5:Hide();
-		AutoSearch_Tab1:SetText("Toàn");
+		AutoSearch_Tab1:SetText("T¤t cä");
 		AutoSearch_Tab2:SetText("Nhân");
 		AutoSearch_Tab3:SetText("Thú");
 		AutoSearch_Tab4:SetText("Mãnh");
@@ -247,7 +247,7 @@ function UpdateTabButton()
 		AutoSearch_Tab3:Show();
 		AutoSearch_Tab4:Hide();
 		AutoSearch_Tab5:Hide();
-		AutoSearch_Tab1:SetText("Toàn");
+		AutoSearch_Tab1:SetText("T¤t cä");
 		AutoSearch_Tab2:SetText("Quái");
 		AutoSearch_Tab3:SetText("Nhân");
 

@@ -136,7 +136,7 @@ function MissionReply_Frame_Update()
 	end
 	
 	if ( nBonusNum>=1 ) then
-		MissionReply_Desc:AddTextElement("C v ph");
+		MissionReply_Desc:AddTextElement("V ph c");
 		for i=1, nBonusNum do
 			-- 需要的类型，需要物品ID，需要多少个
 			local nItemID, nNum = DataPool:GetMissionDemand_Item(i-1);

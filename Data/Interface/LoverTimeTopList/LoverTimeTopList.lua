@@ -261,7 +261,7 @@ end
 function LoverTimeTopList_Rank_ShowTopList()
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_LoverTimeTopList_CurPage < 1 or g_LoverTimeTopList_CurPage > 3 then
-		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ğÑng hàng thÑ Bäng")
+		PushDebugMessage("Thë hi®n tÕi không phäi là bäng xªp hÕng")
 		return
 	end
 	
@@ -402,7 +402,7 @@ end
 function LoverTimeTopList_Page_Click(index)
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if index <= 0 or index > g_LoverTimeTopList_MaxPage then
-		PushDebugMessage("Di®p Thiêm sai l¥m, Thïnh mµt l¥n næa lña ch÷n")
+		PushDebugMessage("L²i thë, vui lòng ch÷n lÕi")
 		return
 	end
 		
@@ -429,7 +429,7 @@ end
 function LoverTimeTopList_RankClick_Refresh()
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_LoverTimeTopList_CurPage < 1 or g_LoverTimeTopList_CurPage > 3 then
-		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ğÑng hàng thÑ Bäng")
+		PushDebugMessage("Thë hi®n tÕi không phäi là bäng xªp hÕng")
 		return 0
 	end
 	--ÅĞ¶ÏÀäÈ´Ê±¼ä
@@ -458,7 +458,7 @@ function LoverTimeTopList_Prize_Present()
 
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_LoverTimeTopList_CurPage < 1 or g_LoverTimeTopList_CurPage > 3 then
-		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ğÑng hàng thÑ Bäng")
+		PushDebugMessage("Thë hi®n tÕi không phäi là bäng xªp hÕng")
 		return
 	end	
 	
@@ -500,7 +500,7 @@ function LoverTimeTopList_Prize_Receive()
 
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_LoverTimeTopList_CurPage < 1 or g_LoverTimeTopList_CurPage > 3 then
-		PushDebugMessage("Trß¾c m£t Di®p Thiêm không phäi ğÑng hàng thÑ Bäng")
+		PushDebugMessage("Thë hi®n tÕi không phäi là bäng xªp hÕng")
 		return
 	end	
 	

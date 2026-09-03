@@ -49,7 +49,7 @@ function Guild_Position_Confirm()
 	local selidx = ConfraternityPosition_PositionList:GetFirstSelectItem();
 	-- add by zchw 
 	local szMsg = Guild:GetMyGuildInfo("Appoint", selidx);
-	if szMsg == "ThﬂΩng Nh‚n" then
+	if szMsg == " ThﬂΩng Nh‚n" then
 		local Num = Guild:GetMemberBak();
 		local szLvl = Guild:GetMembersInfo(Num, "Level");	
 		if szLvl < 40 then

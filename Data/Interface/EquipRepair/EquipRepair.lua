@@ -270,7 +270,7 @@ function EquipRepair_Clear()
 			end
 		else
 			EQUIP_BUTTONS : SetActionItem(-1);
-			EquipRepair_Explain1:SetText("Thïnh ð¬ vào Yêu sØa chæa Ðích trang b¸:")
+			EquipRepair_Explain1:SetText("Hãy ð£t trang b¸ c¥n sØa vào!")
 			if EQUIP_QUALITY ~= -1 then
 				LifeAbility : Lock_Packet_Item(EQUIP_QUALITY,0);
 				EquipRepair_DemandMoney : SetProperty("MoneyNumber", 0);
@@ -354,7 +354,7 @@ function EquipRepair_Update(pos0)
 			return;
 		else
 			EQUIP_BUTTONS:SetActionItem(-1);
-			EquipRepair_Explain1:SetText("Thïnh ð¬ vào Yêu sØa chæa Ðích trang b¸:")
+			EquipRepair_Explain1:SetText("Hãy ð£t trang b¸ c¥n sØa vào!")
 			LifeAbility : Lock_Packet_Item(EQUIP_QUALITY,0);
 			EQUIP_QUALITY = -1;
 			return;
@@ -370,7 +370,7 @@ function EquipRepair_Buttons_Clicked()
 		local nEquipID = PlayerPackage : GetItemTableIndex(EQUIP_QUALITY)
 		if g_CommonRepair == 0 then
 			if nEquipID < EQUIP_SHENQI_BEGIN or nEquipID > EQUIP_SHENQI_END then
-				SetNotifyTip("N½i này chï có th¬ sØa chæa th¥n khí")
+				SetNotifyTip("N½i này chï có th¬ tu sØa th¥n khí")
 				EquipRepair_Clear();
 				return 0
 			end
@@ -385,7 +385,7 @@ function EquipRepair_Buttons_Clicked()
 			EquipRepair_Clear();
 		else
 			if nEquipID >= EQUIP_SHENQI_BEGIN and nEquipID <= EQUIP_SHENQI_END then
-				SetNotifyTip("N½i này không th¬ sØa chæa th¥n khí")
+				SetNotifyTip("— ðây không th¬ sØa Th¥n Khí")
 				EquipRepair_Clear();
 				return 0
 			end
@@ -400,7 +400,7 @@ function EquipRepair_Buttons_Clicked()
 			EquipRepair_Clear();
 		end
 	else
-		PushDebugMessage("Thïnh Bä Yêu sØa chæa Ðích trang b¸ Ðà Ðµng Ðáo v§t ph¦m Khuông Trung.")
+		PushDebugMessage("Kéo trang b¸ c¥n sØa vào ô v§t ph¦m.")
 	end
 
 end
@@ -457,7 +457,7 @@ function Resume_Equip()
 			if g_CommonRepair == 0 then
 				EquipRepair_ShenQiInfo:SetText("#{INTERFACE_XML_1002}")
 			else
-				EquipRepair_Explain1:SetText("Thïnh ð¬ vào Yêu sØa chæa Ðích trang b¸:")
+				EquipRepair_Explain1:SetText("Hãy ð£t trang b¸ c¥n sØa vào!")
 			end
 			EQUIP_QUALITY	= -1;
 		end

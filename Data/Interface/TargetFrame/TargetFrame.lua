@@ -8,9 +8,9 @@ local strMenPaiName =
 	"Tinh Túc",
 	"Thiên Long",
 	"Thiên S½n",
-	"Tiêu dao",
+	"Tiêu Dao",
 	"Tân thü",
-	"MÕn Ðà S½n Trang",
+	"Mµ Dung",
 	"ÐÕi T¯ng",
 	"ÐÕi T¯ng",
 	"ÐÕi T¯ng",
@@ -18,21 +18,21 @@ local strMenPaiName =
 	"ÐÕi Liêu",
 	"ÐÕi Lý",
 	"Tây HÕ",
-	"Phiên bang",
+	"Phiên Bang",
 	"Mãng Cái",
-	"Di dân",
-	"Lang nhân",
+	"Di Dân",
+	"Lang Nhân",
 	"BÕch Miêu",
 	"H¡c Miêu",
 	"Tu La",
-	"Vi®t Næ",
-	"Vi®t Nam",
+	"VÕn Næ",
+	"VÕn Nam",
 	"NgÕc Th¥n",
 	"Dã thú",
-	"Løc lâm",
+	"Løc Lâm",
 	"Yêu ma",
-	"Thùng",
-	"Bäo Tß½ng",
+	"Rß½ng",
+	"Rß½ng",
 };
 
 local g_NowWDBossHp = 1
@@ -295,7 +295,7 @@ function TargetFrame_Update_Level()
 	local txtColor="#cFFFFFF";
 	local level =  Target:GetData( "LEVEL" ) - Player:GetData( "LEVEL" );
 
-	AxTrace( 0,0, "C¤p b§c Sai Vi"..tostring( level ) );
+	AxTrace( 0,0, "C¤p chênh l®ch"..tostring( level ) );
 --¸ù¾ÝÈîÃ¶5ÔÂ27È ²ß»®ÎÄµµÐÞ¸Ä
 --	if( level > 12 ) then
 --		txtColor = "#R";

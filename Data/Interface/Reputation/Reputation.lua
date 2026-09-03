@@ -38,30 +38,30 @@ function Reputation_OnLoad()
 							"Tinh Túc",
 							"Thiên Long",
 							"Thiên S½n",
-							"Tiêu dao",
-							"ÐÕi T¯ng Tri«u Ðình",
-							"ÐÕi T¯ng Ðoan vß½ng phü",
-							"ÐÕi T¯ng dân gian",
-							"ÐÕi Liêu tri«u ðình",
+							"Tiêu Dao",
+							"Tri«u Ðình ÐÕi T¯ng",
+							"ÐÕiT¯ng Ðoan Vß½ng Phü",
+							"Dân Gian ÐÕi T¯ng",
+							"Liêu tri«u",
 							"ÐÕi Liêu dân gian",
 							"ÐÕi Lý",
 							"Tây HÕ",
-							"Phiên bang",
+							"Phiên Bang",
 							"Mãng Cái",
-							"Di dân",
-							"Lßu ðày Giä",
+							"Di Dân",
+							"Kë Lßu Vong",
 							"BÕch Miêu",
 							"H¡c Miêu",
 							"Tu La",
-							"S½n Vi®t Næ tª ti",
-							"S½n Vi®t Nam hµ pháp",
+							"S½n VÕn Næ Tª Tß",
+							"S½n Vi®n Nam Hµ Pháp",
 							"NgÕc Ngß Bang",
 							"Dã thú",
-							"Løc lâm",
+							"Løc Lâm",
 							"Yêu ma",
-							"Thùng",
-							"Thi ð¤u th¬ thao Trß¶ng Bäo Tß½ng",
-							"MÕn Ðà S½n Trang",
+							"Rß½ng",
+							"Rß½ng Ð¤u Trß¶ng",
+							"Mµ Dung",
 							};
 
 	Reputation_Progress1[ 1 ] = Reputation_Value_Menpai1_Value_Pic1;
@@ -214,11 +214,11 @@ function Reputation_Update( nIndex, nTragetID )
 	if( nReputation < -550000 ) then
 		nCurrentNumber = -550000 - nReputation ;
 		nCurrentMaxNumber = 450000;
-		strTypeMax = "Th¯ng h§n";
+		strTypeMax = "Cåm thù";
 	elseif( nReputation < -320000 ) then
 		nCurrentNumber = -320000 - nReputation ;
 		nCurrentMaxNumber = 230000;
-		strTypeMax = "Cåm h§n";
+		strTypeMax = "Ghét bö";
 	elseif( nReputation < -160000 ) then
 		nCurrentNumber = -160000 - nReputation ;
 		nCurrentMaxNumber = 160000;
@@ -226,7 +226,7 @@ function Reputation_Update( nIndex, nTragetID )
 	elseif( nReputation < -60000 ) then
 		nCurrentNumber = -60000 - nReputation ;
 		nCurrentMaxNumber = 100000;
-		strTypeMax = "Ð¸ch ý";
+		strTypeMax = "Ch¯ng ð¯i";
 		nType = 2;
 	elseif( nReputation < 0 ) then
 		nCurrentNumber = -nReputation;
@@ -241,12 +241,12 @@ function Reputation_Update( nIndex, nTragetID )
 	elseif( nReputation < 160000 ) then
 		nCurrentNumber = nReputation - 60000;
 		nCurrentMaxNumber = 100000;
-		strTypeMax = "Häo ý";
+		strTypeMax = "Thi®n chí";
 		nType = 2;
 	elseif( nReputation < 320000 ) then
 		nCurrentNumber = nReputation - 160000;
 		nCurrentMaxNumber = 160000;
-		strTypeMax = "Thân m§t";
+		strTypeMax = "Thân thi®n";
 		nType = 2;
 	elseif( nReputation < 550000 ) then
 		nCurrentNumber = nReputation - 320000;
@@ -256,7 +256,7 @@ function Reputation_Update( nIndex, nTragetID )
 	elseif( nReputation < 1000000 ) then
 		nCurrentNumber = nReputation - 550000;
 		nCurrentMaxNumber = 450000;
-		strTypeMax = "Tin c§y";
+		strTypeMax = "Tín nhi®m";
 		nType = 3;
 	else
 		nCurrentNumber = 0;
@@ -269,7 +269,7 @@ function Reputation_Update( nIndex, nTragetID )
 	Reputation_Progress1[ nIndex ]:Hide();
 	Reputation_Progress2[ nIndex ]:Hide();
 	Reputation_Progress3[ nIndex ]:Hide();
-	Reputation_CurLevel[ nIndex ]:SetText( "Trß¾c m£t danh v÷ng:".. strTypeMax );
+	Reputation_CurLevel[ nIndex ]:SetText( "Danh v÷ng: ".. strTypeMax );
 	Reputation_Text[ nIndex ]:SetText( tostring( nCurrentNumber ).."/"..tostring( nCurrentMaxNumber ) );
 	Reputation_Name[ nIndex ]:SetText( Reputation_TextName[ nTragetID ] );
 

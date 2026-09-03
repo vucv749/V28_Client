@@ -225,19 +225,19 @@ end
 function PetStudyNewSkill_Do()
 	
 	if (-1 == g_selidx) then
-		PushDebugMessage("Thïnh lña ch÷n Trân Thú.");
+		PushDebugMessage("Ch÷n Trân Thú");
 		return;
 	end
 	
 	if(-1 == g_pidx) then		
-		PushDebugMessage("C¥n kÛ nång Thß.");
+		PushDebugMessage("C¥n Bí Kíp.");
 		return;
 	end
 
 	local pM = Player:GetData("MONEY") + Player:GetData("MONEY_JZ");	--???? Vega
 	local nM = tonumber(PetStudyNewSkill_Money:GetProperty("MoneyNumber"));
 	if( pM < nM) then
-		PushDebugMessage("Ti«n tài không ðü, không th¬ H÷c T§p kÛ nång");
+		PushDebugMessage("Không ðü ngân lßþng h÷c kÛ nång");
 		return;
 	end
 	
@@ -254,19 +254,19 @@ end
 function PetStudyNewSkill_ConfirmPetStudyNewSkill()
 	
 	if (-1 == g_selidx) then
-		PushDebugMessage("Thïnh lña ch÷n Trân Thú.")
+		PushDebugMessage("Ch÷n Trân Thú")
 		return
 	end
 	
 	if(-1 == g_pidx) then
-		PushDebugMessage("C¥n kÛ nång Thß.")
+		PushDebugMessage("C¥n Bí Kíp.")
 		return
 	end
 	
 	local pM = Player:GetData("MONEY") + Player:GetData("MONEY_JZ")   --???? Vega
 	local nM = tonumber(PetStudyNewSkill_Money:GetProperty("MoneyNumber"))
 	if pM < nM then
-		PushDebugMessage("Ti«n tài không ðü, không th¬ H÷c T§p kÛ nång")
+		PushDebugMessage("Không ðü ngân lßþng h÷c kÛ nång")
 		return
 	end
 

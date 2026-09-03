@@ -163,7 +163,7 @@ function InitTomorrowOtherCampaign()
 			AxTrace(0, 0, "EnumCampaign(): Icon = "..icon);
 			if(icon~=-1)then
 				special_campaign_btn[i+1]:SetImage(icon);
-				local str = "Th.Gian:";
+				local str = "Th.gian: ";
 				local strTime = "";
 				local strEnd = EnumCampaign(tonumber(campaign_tomorrowOther),i,"endtime");
 				if(strEnd ~= -1) then
@@ -178,10 +178,10 @@ function InitTomorrowOtherCampaign()
 					str = str..strTime;
 				end
 				if(strHuodong and  strHuodong ~="")then
-					str = str.."#rhoÕt ðµng:"..strHuodong;
+					str = str.."#rHoÕt ðµng: "..strHuodong;
 				end
 				if(strDesc and  strDesc ~="")then
-					str = str.."#rtß½ng quan:"..strDesc;
+					str = str.."#rLiên quan:"..strDesc;
 				end
 				if(strAddDesc and  strAddDesc ~="")then
 					str = str.."#r     "..strAddDesc;
@@ -210,7 +210,7 @@ function InitCurOtherCampain()
 			local icon = EnumCampaign(tonumber(campaign_other),i,"icon");
 			if(icon~=-1)then
 				special_campaign_btn[i+1]:SetImage(icon);
-				local str = "Th.Gian:";
+				local str = "Th.gian: ";
 				local strTime = "";
 				local strEnd = EnumCampaign(tonumber(campaign_other),i,"endtime");
 				if(strEnd ~= -1) then
@@ -225,10 +225,10 @@ function InitCurOtherCampain()
 					str = str..strTime;
 				end
 				if(strHuodong and  strHuodong ~="")then
-					str = str.."#rhoÕt ðµng:"..strHuodong;
+					str = str.."#rHoÕt ðµng: "..strHuodong;
 				end
 				if(strDesc and  strDesc ~="")then
-					str = str.."#rtß½ng quan:"..strDesc;
+					str = str.."#rLiên quan:"..strDesc;
 				end
 				if(strAddDesc and  strAddDesc ~="")then
 					str = str.."#r     "..strAddDesc;

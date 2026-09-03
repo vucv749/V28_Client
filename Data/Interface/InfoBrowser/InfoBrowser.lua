@@ -90,8 +90,8 @@ function InfoBrowser_Update()
 	local time	  = DataPool:GetMail( nCurrentMail,"TIME" );
 
 	
-	InfoBrowser_From:SetText( "Tên:"..sender.."#b#c0000FF#effffff(ngß¶i ch½i)" );
-	InfoBrowser_Time:SetText( "Th.Gian:"..time );
+	InfoBrowser_From:SetText( "Tên: "..sender.."#b#c0000FF#effffff(Ngß¶i ch½i)" );
+	InfoBrowser_Time:SetText( "Th.gian: "..time );
 	InfoBrowser_Context:SetText( context );
 	local strFaceImage = DataPool:GetMail( nCurrentMail,"PORTRAIT" );
 	AxTrace( 0,0,"InfoBrowser_Update head image = "..tostring(strFaceImage) );
@@ -132,7 +132,7 @@ end
 function InfoBrowser_Show()
 	this:Show();
 	Variable:SetVariable( "IsInfoBrowerShow","True", 1 );
-	InfoBrowser_Frame_Title:SetText( "#gFF0FA0thß tín xem" );
+	InfoBrowser_Frame_Title:SetText( "#gFF0FA0Xem thß" );
 	InfoBrowser_Frame_System:Hide();
 	InfoBrowser_Frame_Player:Show();
 	InfoBrowser_Respondence:Show();
@@ -144,7 +144,7 @@ function SystemInfo_Show()
 	this:Show();
 	Variable:SetVariable( "IsInfoBrowerShow","True", 1 );
 	InfoBrowser_Frame_Player:Hide();
-	InfoBrowser_Frame_Title:SetText( "#gFF0FA0h® th¯ng tin tÑc" );
+	InfoBrowser_Frame_Title:SetText( "#gFF0FA0Tin h® th¯ng" );
 	InfoBrowser_Frame_System:Show();
 	InfoBrowser_AddFriend:Hide();
 	InfoBrowser_Respondence:Hide();
@@ -193,8 +193,8 @@ function SystemInfo_Update()
 		local time	  = DataPool:GetMail( nCurrentMail,"TIME" );
 	
 		
-		SystemInfo_From:SetText( "#b#cFF0000#effffffh® th¯ng bßu ki®n" );
-		SystemInfo_Time:SetText( "Th.Gian:"..time );
+		SystemInfo_From:SetText( "#b#cFF0000#effffffThß h® th¯ng" );
+		SystemInfo_Time:SetText( "Th.gian: "..time );
 		SystemInfo_Context:SetText( context );
 		InfoBrowser_Report:Hide();
 end

@@ -135,20 +135,20 @@ function Quest_OnEvent(event)
 		end
 
 	elseif (event == "TOGLE_SKILLSTUDY") then
-		AxTrace(0,0,"T· Khai H˜c Tßp m£t biÍn, Ûng cÿa Ho‡ NPC–Ìch Øi tho’i KhuÙng");
+		AxTrace(0,0,"M∑ giao diÆn H˜c, Ûng khung Øi tho’i væi NPC");
 		Quest_Close();
 
 		--»°œ˚πÿ–ƒ
 		StopCareObject_Quest(objCared);
 
 	elseif (event == "TOGLE_BANK") then
-		AxTrace(0,0,"T· Khai ng‚n h‡ng m£t biÍn, Ûng cÿa Ho‡ NPC–Ìch Øi tho’i KhuÙng");
+		AxTrace(0,0,"M∑ giao diÆn Ti´n Trang, Ûng khung Øi tho’i væi NPC");
 		Quest_Close();
 
 		--»°œ˚πÿ–ƒ
 		StopCareObject_Quest(objCared);
 	elseif (event == "TOGLE_BIGBANK") then
-		AxTrace(0,0,"T· Khai ng‚n h‡ng m£t biÍn, Ûng cÿa Ho‡ NPC–Ìch Øi tho’i KhuÙng");
+		AxTrace(0,0,"M∑ giao diÆn Ti´n Trang, Ûng khung Øi tho’i væi NPC");
 		Quest_Close();
 
 		--»°œ˚πÿ–ƒ
@@ -265,15 +265,15 @@ function Quest_EventListUpdate()
 				strState = 8
 			end
 			if( tonumber( strScriptId ) == 808007 ) then
-				if( strTemp == "Ta nghÓ l‚m th∂i Gi‰i To‰" ) then
+				if( strTemp == "Ta muØn m∑ khÛa ngay" ) then
 					nTitleType = 1
-				elseif( strTemp == "Ta nghÓ Thi´n C· Gi‰i To‰" ) then
+				elseif( strTemp == "Ta muØn m∑ khÛa Ωn lÎ" ) then
 					nTitleType = 1
-				elseif( strTemp == "KhÛa to‡n bµ" ) then
+				elseif( strTemp == "KhÛa t§t c‰" ) then
 					nTitleType = 2
 				elseif( strTemp == "KhÛa Ωn lÎ" ) then
 					nTitleType = 2
-				elseif( strTemp == "X·c nhßn" ) then
+				elseif( strTemp == "–∞ng ˝" ) then
 					nTitleType = 2
 				end
 			end
@@ -316,12 +316,12 @@ function Quest_EventListUpdate()
 	g_nQuestState = QUEST_STATE_EVENTLIST;
 	Quest_Frame_Debug:SetText("#gFF0FA0"..Target:GetDialogNpcName());--get npc?name
 	if( nTitleType == 1 ) then
-		Quest_Frame_Debug:SetText("#gFF0FA0Gi‰i To‰" );
+		Quest_Frame_Debug:SetText("#gFF0FA0M∑ khÛa" );
 	elseif( nTitleType == 2 ) then
-		Quest_Frame_Debug:SetText("#gFF0FA0Gia To‰" );
+		Quest_Frame_Debug:SetText("#gFF0FA0Kho·" );
 	end
 	AxTrace( 8,0,"title="..Target:GetDialogNpcName() );
-	Quest_Button_Continue:SetText("Ti™p t¯c");--??
+	Quest_Button_Continue:SetText("Ti™p");--ºÃ–¯
 	Quest_Button_Continue:Disable();
 	Quest_Button_Accept:Disable();
 	Quest_Button_Accept:SetProperty( "Flash", "0" );
@@ -360,20 +360,20 @@ function Quest_QuestInfoUpdate()
 
 		if(strType == "money" and nNum > 0) then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Ycè ∏nh thﬂ∑ng cho: #W")
+				QuestGreeting_Desc:AddTextElement("#GThﬂ∑ng: #W")
 				nRadio_Necessary = 0;
 			end
 
 			QuestGreeting_Desc:AddMoneyElement(nNum);
 		elseif(strType == "moneyjz" and nNum > 0) then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Ycè ∏nh thﬂ∑ng cho: #W")
+				QuestGreeting_Desc:AddTextElement("#GThﬂ∑ng: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddJiaoZiElement(nNum);
 		elseif(strType == "item") then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Ycè ∏nh thﬂ∑ng cho: #W")
+				QuestGreeting_Desc:AddTextElement("#GThﬂ∑ng: #W")
 				nRadio_Necessary = 0;
 			end
 --			QuestGreeting_Desc:AddItemElement(nItemID, nNum, 0);
@@ -386,14 +386,14 @@ function Quest_QuestInfoUpdate()
 			end
 		elseif(strType == "itemrand") then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Ycè ∏nh thﬂ∑ng cho: #W")
+				QuestGreeting_Desc:AddTextElement("#GThﬂ∑ng: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddItemElement(-1, nNum, 0);
 		elseif(strType == "itemradio") then
 			if (nRadio == 1) then
 				nRadio = 0;
-				QuestGreeting_Desc:AddTextElement("#YhO‡n th‡nh nhiÆm v¯ Hßu Kh‰ Tuy¨n mµt c·i l‡m ph•n thﬂ∑ng: #W");
+				QuestGreeting_Desc:AddTextElement("#YHo‡n th‡nh nhiÆm v¯ ch˜n thﬂ∑ng: #W");
 			end
 --			QuestGreeting_Desc:AddItemElement(nItemID, nNum, 0);
 			nItemID = LifeAbility : GetQuestUI_Reward(i-1);
@@ -415,8 +415,8 @@ function Quest_QuestInfoUpdate()
 	Quest_Button_Continue:Disable();
 	Quest_Button_Accept:SetProperty( "Flash", "1" );
 	Quest_Button_Accept:Enable();
-	Quest_Button_Continue:SetText("Ti™p t¯c");--??
-	Quest_Button_Refuse:SetText("H¸y bˆ");--??
+	Quest_Button_Continue:SetText("Ti™p");--ºÃ–¯
+	Quest_Button_Refuse:SetText("H¸y");--»°œ˚
 end
 
 --=========================================================
@@ -431,7 +431,7 @@ function Quest_MissionContinueUpdate(bDone)
 	end
 
 	if( nBonusNum>1 ) then
-		QuestGreeting_Desc:AddTextElement("#Yc?n vßt ph¶m: #W");
+		QuestGreeting_Desc:AddTextElement("#YC•n: #W");
 	end
 
 	for i=1, nBonusNum do
@@ -464,8 +464,8 @@ function Quest_MissionContinueUpdate(bDone)
 
 	Quest_Button_Accept:Disable();
 	Quest_Button_Accept:SetProperty( "Flash", "0" );
-	Quest_Button_Refuse:SetText("H¸y bˆ");--??
-	Quest_Button_Continue:SetText("Ti™p t¯c");--??
+	Quest_Button_Refuse:SetText("H¸y");--»°œ˚
+	Quest_Button_Continue:SetText("Ti™p");--ºÃ–¯
 
 end
 
@@ -482,8 +482,8 @@ function Quest_MissionRewardUpdate()
 	Quest_Button_Continue:Enable();
 	Quest_Button_Accept:Disable();
 	Quest_Button_Accept:SetProperty( "Flash", "0" );
-	Quest_Button_Refuse:SetText("H¸y bˆ");--??
-	Quest_Button_Continue:SetText("Ho‡n th‡nh");--??
+	Quest_Button_Refuse:SetText("H¸y");--»°œ˚
+	Quest_Button_Continue:SetText("Xong");--ÕÍ≥…
 
 	local nTextNum, nBonusNum = DataPool:GetMissionContinue_Num();
 
@@ -505,19 +505,19 @@ function Quest_MissionRewardUpdate()
 
 		if(strType == "money"  and nNum > 0) then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Ycè ∏nh thﬂ∑ng cho: #W")
+				QuestGreeting_Desc:AddTextElement("#GThﬂ∑ng: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddMoneyElement(nNum);
 		elseif(strType == "moneyjz" and nNum > 0) then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Ycè ∏nh thﬂ∑ng cho: #W")
+				QuestGreeting_Desc:AddTextElement("#GThﬂ∑ng: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddJiaoZiElement(nNum);
 		elseif(strType == "item") then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Ycè ∏nh thﬂ∑ng cho: #W")
+				QuestGreeting_Desc:AddTextElement("#GThﬂ∑ng: #W")
 				nRadio_Necessary = 0;
 			end
 --			QuestGreeting_Desc:AddItemElement(nItemID, nNum, 0);
@@ -530,7 +530,7 @@ function Quest_MissionRewardUpdate()
 			end
 		elseif(strType == "itemrand") then
 			if(nRadio_Necessary == 1) then
-				QuestGreeting_Desc:AddTextElement("#Ycè ∏nh thﬂ∑ng cho: #W")
+				QuestGreeting_Desc:AddTextElement("#GThﬂ∑ng: #W")
 				nRadio_Necessary = 0;
 			end
 			QuestGreeting_Desc:AddItemElement(-1, nNum, 0);
@@ -539,9 +539,9 @@ function Quest_MissionRewardUpdate()
 			if (nRadio == 1) then
 				nRadio = 0;
 				if nRadio_Necessary == 1 then
-					QuestGreeting_Desc:AddTextElement("#YNHÓ cÛ th¨ Thung dﬂæi thﬂ∑ng cho tr˙ng tuy¨n Tr’ch h’ng nh§t: #W");
+					QuestGreeting_Desc:AddTextElement("#YCh˜n 1 ph•n thﬂ∑ng: #W");
 				else
-					QuestGreeting_Desc:AddTextElement("#Yc“n cÛ th¨ Thung dﬂæi thﬂ∑ng cho tr˙ng tuy¨n Tr’ch h’ng nh§t: #W");
+					QuestGreeting_Desc:AddTextElement("#YCh˜n 1 ph•n thﬂ∑ng: #W");
 				end
 
 			end
@@ -627,7 +627,7 @@ function MissionContinue_Clicked()
 				--»°œ˚πÿ–ƒ
 				StopCareObject_Quest(objCared);
 			else
-				PushDebugMessage("ThÔnh lÒa ch˜n thﬂ∑ng cho vßt ph¶m!");
+				PushDebugMessage("Ch˜n 1 ph•n thﬂ∑ng");
 			end
 		else
 				QuestFrameMissionComplete(g_nRewardItemID);

@@ -14,12 +14,12 @@ function Interior_PreLoad()
 end
 
 function Interior_OnLoad()
-	g_NeedVal[0] = "Công nghi®p Tr¸:"
-	g_NeedVal[1] = "Nông nghi®p Tr¸:"
-	g_NeedVal[2] = "Buôn bán Tr¸:"
-	g_NeedVal[3] = "Qu¯c phòng Tr¸:"
-	g_NeedVal[4] = "Khoa h÷c kÛ thu§t Tr¸:"
-	g_NeedVal[5] = "Khuªch trß½ng Tr¸:"
+	g_NeedVal[0] = "Công nghi®p: "
+	g_NeedVal[1] = "Nông nghi®p: "
+	g_NeedVal[2] = "Thß½ng nghi®p: "
+	g_NeedVal[3] = "Phòng thü: "
+	g_NeedVal[4] = "Khoa kÛ:"
+	g_NeedVal[5] = "M· rµng:"
 end
   
 function Interior_OnEvent(event)
@@ -44,29 +44,29 @@ function City_Manage_SetCtl()
 	g_MembersCtl = {
 									--Left
 									guildname = 		{txt = "",							ctl = Interior_Text1},
-									mainbuilding = 	{txt = "C¤p b§c:",				ctl = Interior_Text2},
+									mainbuilding = 	{txt = "C¤p: ",				ctl = Interior_Text2},
 									
-									guildmoney = 		{txt = "Bang hµi tài chính:",		ctl = Interior_Text3},
+									guildmoney = 		{txt = "QuÛ bang: ",		ctl = Interior_Text3},
 									degree = {
-																	{txt = "Công nghi®p Tr¸:",			ctl = Interior_Text4},
-																	{txt = "Nông nghi®p Tr¸:",			ctl = Interior_Text5},
-																	{txt = "Buôn bán Tr¸:",			ctl = Interior_Text6},
-																	{txt = "Qu¯c phòng Tr¸:",			ctl = Interior_Text7},
-																	{txt = "Khoa h÷c kÛ thu§t Tr¸:",			ctl = Interior_Text8},
-																	{txt = "Khuªch trß½ng Tr¸:",			ctl = Interior_Text9},
+																	{txt = "Công nghi®p: ",			ctl = Interior_Text4},
+																	{txt = "Nông nghi®p: ",			ctl = Interior_Text5},
+																	{txt = "Thß½ng nghi®p: ",			ctl = Interior_Text6},
+																	{txt = "Phòng thü: ",			ctl = Interior_Text7},
+																	{txt = "Khoa kÛ:",			ctl = Interior_Text8},
+																	{txt = "M· rµng:",			ctl = Interior_Text9},
 													 },
 									
-									curbuilding = 	{txt = "Trß¾c m£t kiªn thiªt:",		ctl = Interior_Text10},
-									progress = 			{txt = "Kiªn thiªt tiªn ðµ:",		ctl = Interior_Text11},
+									curbuilding = 	{txt = "Xây dñng: ",		ctl = Interior_Text10},
+									progress = 			{txt = "Tiªn ðµ xây dñng: ",		ctl = Interior_Text11},
 									                
 									--Right         
 									buildinglist = 	Interior_Info,
 									                
 									--RightBottom   
-									needmsg = 			{txt = "Kiªn thiªt:",				ctl = Interior_Text12},
-									needmoney = 		{txt = "Tài chính:",				ctl = Interior_Text13},
+									needmsg = 			{txt = "Xây dñng: ",				ctl = Interior_Text12},
+									needmoney = 		{txt = "QuÛ: ",				ctl = Interior_Text13},
 									needval = 			{txt = "",							ctl = Interior_Text14},
-									needmission =  	{txt = "Nhi®m vø:",				ctl = Interior_Text15},
+									needmission =  	{txt = "Nhi®m vø: ",				ctl = Interior_Text15},
 								 };
 end
 
@@ -151,7 +151,7 @@ function City_Manage_Update()
 			if(bd[k+2] > 0) then
 				g_MembersCtl.buildinglist:AddNewItem(bDisplayLevel,1,listIdx);
 			else
-				g_MembersCtl.buildinglist:AddNewItem("V¸ Kiªn",1,listIdx);
+				g_MembersCtl.buildinglist:AddNewItem("Chßa xây",1,listIdx);
 				--AxTrace(0,0,"default not exist building:"..tostring(bdidx));
 			end
 			g_MembersCtl.buildinglist:SetRowUserData(listIdx, bdidx);
@@ -195,7 +195,7 @@ function City_Manage_SelectChanged()
 		if(bExist > 0) then
 		txt = txt..tostring(bName).."->"..tostring(bNextName);
 		else
-			txt = txt.."V¸ Kiªn->"..tostring(bNextName);
+			txt = txt.."Chßa xây->"..tostring(bNextName);
 		end
 	end
 	g_MembersCtl.needmsg.ctl:SetText(txt);
@@ -231,17 +231,17 @@ end
 
 function City_Manage_GetNeedTxt(nt)
 	if( tonumber(nt) == 0 ) then
-		return "Công nghi®p Tr¸";
+		return "Ði¬m Công Nghi®p ";
 	elseif( tonumber(nt) == 1 ) then
-		return "Nông nghi®p Tr¸";
+		return "Ði¬m Nông Nghi®p ";
 	elseif( tonumber(nt) == 2 ) then
-		return "Buôn bán Tr¸";
+		return "Ði¬m Thß½ng Nghi®p ";
 	elseif( tonumber(nt) == 3 ) then
-		return "Qu¯c phòng Tr¸";
+		return "Ði¬m Phòng Thü ";
 	elseif( tonumber(nt) == 4 ) then
-		return "Khoa h÷c kÛ thu§t Tr¸";
+		return "Ði¬m Khoa KÛ ";
 	elseif( tonumber(nt) == 5 ) then
-		return "Khuªch trß½ng Tr¸";
+		return "Ði¬m M· Rµng ";
 	else
 		return "";
 	end
@@ -267,7 +267,7 @@ end
 
 function City_Manage_DoBuilding(act)
 	if(tonumber(g_selIdx) < 0) then 
-		PushDebugMessage("Thïnh Tiên lña ch÷n mµt loÕi kiªn trúc."); 
+		PushDebugMessage("Ch÷n trß¾c 1 loÕi kiªn trúc"); 
 		return;
 	end
 

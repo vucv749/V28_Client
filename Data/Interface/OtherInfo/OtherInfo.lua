@@ -6,11 +6,11 @@ local  g_BOX;			--??
 
 --Ê¦µÂÏà¹ØToolTipÄÚÈÝ	--add by xindefeng
 local g_ShiDeTbl = {
-											[0] = {"Vô#r", "0#r", 0},
-											[1] = {"S½ C¤p sß phó#r", "2#r", 30},
-											[2] = {"Trung C¤p sß phó#r", "3#r", 35},
-											[3] = {"Cao c¤p sß phó#r", "5#r", 50},
-											[4] = {"Mµt thª h® Danh Sß#r", "8#r", 70}
+											[0] = {"Không#r", "0#r", 0},
+											[1] = {"Sß Phø S½ C¤p#r", "2#r", 30},
+											[2] = {"Sß Phø Trung C¤p#r", "3#r", 35},
+											[3] = {"Sß Phø Cao C¤p#r", "5#r", 50},
+											[4] = {"Nh¤t ÐÕi Danh Sß#r", "8#r", 70}
 										}
 
 -- ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -73,10 +73,10 @@ function OtherInfo_OnLoad()
 	g_BOX = OtherInfo_Packet2_Skill1; --??
 
 	OTHERINFO_TAB_TEXT = {
-		[0] = "Trang b¸",
-		"Tß li®u",
-		"Trân Thú",
-		"M£t khác",
+		[0] = "T.B¸",
+		"T.Tin",
+		"Thú",
+		"Khác",
 	};
 
 	-- ±£´æ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -166,7 +166,7 @@ function OtherInfo_OnEvent(event)
 
 	if( event == "UPDATE_DOUBLE_EXP") then
 		local str = SystemSetup:GetDoubleExp( "count" )
-		OtherInfo_6 : SetText(str.."Gi¶")
+		OtherInfo_6 : SetText(str.." gi¶")
 		local str1 = SystemSetup:GetDoubleExp( "juqing" )
 		OtherInfo_7 : SetText(str1 .. "")
 		return;
@@ -255,7 +255,7 @@ function OtherInfo_OnShow()
 	elseif masterLvl == 4 then
 		availRecruitNum = 8;
 	end
-	OtherInfo_9_Text:SetText("Thu ð° ð® s¯ lßþng:");
+	OtherInfo_9_Text:SetText("Ð° ð®: ");
 	OtherInfo_9:SetText(prenticeNum.."/"..availRecruitNum);
 --	str = Player : GetData("MORALPOINT");
 --	OtherInfo_3 : SetText(str)
@@ -264,7 +264,7 @@ function OtherInfo_OnShow()
 	OtherInfo_4 : SetText(str)
 
 	str = SystemSetup:GetDoubleExp( "count" )
-	OtherInfo_6 : SetText(str.."Gi¶")
+	OtherInfo_6 : SetText(str.." gi¶")
 	str = Guild:GetGuildContri();
 	OtherInfo_5 : SetText(str);
 
@@ -405,7 +405,7 @@ function SetOtherInfo_1_Tooltip()
 	local ShanEExp = ShanEValue * (g_ShiDeTbl[MasterLevel][3])	--????????????????
 	local TrueExp = ((TuDiSupplyExp < ShanEExp) and TuDiSupplyExp) or ShanEExp	--???????
 
-	local str =	"Sß phó c¤p b§c:"..g_ShiDeTbl[MasterLevel][1].."Ð® tØ s¯ lßþng:"..TuDiCount.."/"..g_ShiDeTbl[MasterLevel][2].."Khä ð±i kinh nghi®m:"..TrueExp
+	local str =	"C¤p sß phø: "..g_ShiDeTbl[MasterLevel][1].."S¯ lßþng ð® tØ:"..TuDiCount.."/"..g_ShiDeTbl[MasterLevel][2].."EXP có th¬ ð±i:"..TrueExp
 
 	OtherInfo_1:SetToolTip(str)
 end

@@ -111,7 +111,7 @@ function GuildLeagueInfo_DoChange()
 		GuildLeagueInfo_Desc:SetText(txt)
 				
 		if txt==nil or txt=="" then
-			PushDebugMessage("Nhçm không có bÕi Nh§p ð°ng minh tuyên ngôn")
+			PushDebugMessage("BÕn vçn chßa nh§p l¶i tuyên ngôn liên minh.")
 			return
 		end
 		
@@ -135,7 +135,7 @@ end
 function GuildLeagueInfo_Member_List_OnMouseRClick()	
 	local index=GuildLeagueInfo_Member_List:GetSelectItem()
 	if index==-1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n mµt cái ð°ng minh thành viên!")
+		PushDebugMessage("Hãy ch÷n ra mµt thành viên cüa Bang Hµi Ð°ng Minh!")
 		return
 	end
 	
@@ -145,7 +145,7 @@ end
 function GuildLeagueInfo_Fire()	
 	local index=GuildLeagueInfo_Member_List:GetSelectItem()
 	if index==-1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n mµt cái ð°ng minh thành viên!")
+		PushDebugMessage("Hãy ch÷n ra mµt thành viên cüa Bang Hµi Ð°ng Minh!")
 		return
 	end
 	

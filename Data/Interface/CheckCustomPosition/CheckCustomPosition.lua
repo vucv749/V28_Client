@@ -7,14 +7,14 @@ local g_CustomPosition = nil	--????????
 
 --±ê×¼°ï»áÖ°Î»Ãû³Æ
 local g_StdPositionName = {
-	"Bang Chü",			--9
-	"Phó Bang Chü",		--8
-	"Nµi Vø SÑ",		--7
-	"Công Vø SÑ",		--6
-	"Ho¢ng Hóa SÑ",		--5
-	"Thß½ng Nhân",			--4
-	"Tinh Anh",			--3
-	"Bang Chúng"			--2
+	" Bang Chü",			--9
+	" Bang Phó",		--8
+	" Nµi Vø SÑ",		--7
+	" Công Vø SÑ",		--6
+	" Hoang Hoa SÑ",		--5
+	" Thß½ng Nhân",			--4
+	" Tinh Anh",			--3
+	" Bang Chúng"			--2
 }
 
 
@@ -58,7 +58,7 @@ end
 function CheckCustomPosition_Update()
 	local szMsg = nil
 	
-	CheckCustomPosition_Title:SetText("#gFF0FA0Tñ ð¸nh nghîa chÑc v¸ tên")
+	CheckCustomPosition_Title:SetText("#gFF0FA0Tñ l§p chÑc v¸ ")
 	
 	--ÏÔÊ¾µ±Ç°"×Ô¶¨ÒåÖ°Î»Ãû³Æ"
 	for i=1,8 do

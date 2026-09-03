@@ -229,19 +229,19 @@ function HuaShanLunJian_OnEvent(event)
 
 		local nCurDuanWei1 = Player:Lua_GetXbwData( "CuruanWei1" )
 		if nCurDuanWei1 <= 0 or nCurDuanWei1 > 6 then
-			PushDebugMessage("ÐÕi ðÆng c¤p sai l¥m")
+			PushDebugMessage("L²i b§c l¾n")
 			return
 		end
 
 		local nCurDuanWei2 = Player:Lua_GetXbwData( "CuruanWei2" )
 		if nCurDuanWei2 <= 0 or nCurDuanWei2 > 4 then
-			PushDebugMessage("ÐoÕn ng¡n V¸ sai l¥m")
+			PushDebugMessage("L²i b§c nhö")
 			return
 		end
 
 		local nCurDuanWei3 = Player:Lua_GetXbwData( "CuruanWei3" )
 		if nCurDuanWei3 < 0 then
-			PushDebugMessage("Tinh S± sai l¥m")
+			PushDebugMessage("L²i s¯ sao")
 			return
 		end
 

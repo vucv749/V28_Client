@@ -65,7 +65,7 @@ function MessageBox_Other_OnEvent(event)
 	if ( event == "SHOW_TEAM_YES_NO" ) then
 
 		g_FrameInfo = TEAM_ASKJOIN;
-		MessageBox_Other_Text:SetText(arg0.."M¶i Nhî gia nh§p ðµi ngû");
+		MessageBox_Other_Text:SetText(arg0.." m¶i các hÕ vào ðµi");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -74,7 +74,7 @@ function MessageBox_Other_OnEvent(event)
 	elseif ( event == "TEAM_MEMBER_INVITE" ) then
 
 		g_FrameInfo = TEAM_MEMBERINVERT;
-		MessageBox_Other_Text:SetText(arg0.."M¶i" .. arg1 .. "Gia nh§p ðµi ngû, ð°ng ý Ma?");
+		MessageBox_Other_Text:SetText(arg0.."M¶i" .. arg1 .. "vào ðµi, ð°ng ý không?");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -83,7 +83,7 @@ function MessageBox_Other_OnEvent(event)
 	elseif ( event == "TEAM_APPLY" ) then
 
 		g_FrameInfo = TEAM_SOMEASK;
-		MessageBox_Other_Text:SetText(arg0.."Xin gia nh§p ðµi ngû, ð°ng ý Ma?");
+		MessageBox_Other_Text:SetText(arg0.." xin vào ðµi, ð°ng ý?");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -92,8 +92,8 @@ function MessageBox_Other_OnEvent(event)
 	elseif ( event == "TEAM_FOLLOW_INVITE" ) then
 
 		g_FrameInfo = TEAM_FOLLOW;
-		AxTrace( 0, 0, "Ðµi trß·ng m¶i tiªn vào t± ðµi ði theo hình thÑc" );
-		MessageBox_Other_Text:SetText(arg0.."Hy v÷ng Nhî ði theo ðµi ngû, ð°ng ý Ma?");
+		AxTrace( 0, 0, "Ðµi trß·ng m¶i vào chª ðµ ði theo ðµi" );
+		MessageBox_Other_Text:SetText(arg0.." mu¯n các hÕ theo ðµi, ð°ng ý không?");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -110,14 +110,14 @@ function MessageBox_Other_OnEvent(event)
 		g_FrameInfo = CALL_OF;
 		local szName = arg0;
 		
-		MessageBox_Other_Text:SetText(szName .. "LÕp Nhî, ð°ng ý B¤t?");
+		MessageBox_Other_Text:SetText(szName .. " dçn d¡t các hÕ, ð°ng ý không?");
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
 	elseif( event == "RECIVE_RIDE" ) then
 		g_FrameInfo = INVITE_RIDE;
 		local szName = arg0;
-		MessageBox_Other_Text:SetText(szName .. "M¶i Nhî Ð°ng KÜ");	
+		MessageBox_Other_Text:SetText(szName .. "M¶i cßÞi chung");	
 		this:Show();
 		MessageBox_Other_Show_single_Info( 0 );
 		g_InitiativeClose = 0;
@@ -246,15 +246,15 @@ end
 function MessageBox_Other_Show_single_Info(bShow)
 
 	if(1 == bShow) then
-		MessageBox_Other_OK_Button:SetText( "Xác nh§n" );
-		MessageBox_Other_Cancel_Button:SetText( "Hüy bö" );
+		MessageBox_Other_OK_Button:SetText( "Ð°ng ý" );
+		MessageBox_Other_Cancel_Button:SetText( "Hüy" );
 		MessageBox_Other_OK_Button:Hide();
 		MessageBox_Other_Info_Button:Show();
 		MessageBox_Other_Cancel_Button:Hide();
 		
 	elseif(0 == bShow) then
 		MessageBox_Other_OK_Button:SetText( "Ð°ng ý" );
-		MessageBox_Other_Cancel_Button:SetText( "Cñ tuy®t" );
+		MessageBox_Other_Cancel_Button:SetText( "T× ch¯i" );
 		MessageBox_Other_OK_Button:Show();
 		MessageBox_Other_Info_Button:Hide();
 		MessageBox_Other_Cancel_Button:Show();

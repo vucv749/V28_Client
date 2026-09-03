@@ -43,12 +43,12 @@ function PS_Input_OnEvent(event)
 			local nMoney3;
 			nBaseMoney,nMoney1,nMoney2,nMoney3 = PlayerShop:GetMoney("base","self");
 
-			PS_Input_DragTitle:SetText("#gFF0FA0Sung Nh§p ti«n v¯n");
+			PS_Input_DragTitle:SetText("#gFF0FA0NÕp");
 			PS_Input_Accept:SetText("NÕp");
 			PS_Input_Warning:SetText("V¯n nÕp t¯i thi¬u là 10#-02#rV¯n c½ bän hi®n tÕi:".. tostring(nMoney1) .."#-02" .. tostring(nMoney2) .. "#-03" .. tostring(nMoney3) .. "#-04");
 			PS_Input_CurrentlyPrincipal:SetProperty("MoneyNumber", tostring(nBaseMoney));
-			PS_Input_Text1:SetText("NÕp v¯n:");
-			PS_Input_Text2:SetText("Vàng:");
+			PS_Input_Text1:SetText("NÕp v¯n: ");
+			PS_Input_Text2:SetText("Vàng: ");
 			
 			PS_Input_Gold:SetProperty("DefaultEditBox", "True");
 			
@@ -59,7 +59,7 @@ function PS_Input_OnEvent(event)
 			this:CareObject(objCared, 1, "PS_Input");	
 
 			g_nSaveOrGetMoney = PS_IMMIT;
-			PS_Input_DragTitle:SetText("#gFF0FA0Sung Nh§p lþi nhu§n tài chính");
+			PS_Input_DragTitle:SetText("#gFF0FA0 nh§p vào ti«n lþi nhu§n");
 			PS_Input_Accept:SetText("NÕp");
 			PS_Input_CurrentlyPrincipal:SetProperty("MoneyNumber", tostring(PlayerShop:GetMoney("profit","self")));
 			
@@ -70,11 +70,11 @@ function PS_Input_OnEvent(event)
 			nBaseMoney,nMoney1,nMoney2,nMoney3 = PlayerShop:GetMoney("input_profit","self");
 			local szCom = PlayerShop:GetCommercialFactor()
 
-			local szInfo = "S¯ ti«n lþi nhu§n nh§p vào không ðßþc th¤p h½n s¯ vàng hi®n có: S¯ vàng hi®n có: 30" .. "#-02" .. "*Ði¬m thß½ng nghi®p*s¯ qu¥y hàng, ði¬m thß½ng nghi®p trß¾c ðó là".. szCom .. ", c¥n nÕp ít nh¤t".. tostring(nMoney1) .."#-02" .. tostring(nMoney2) .. "#-03" .. tostring(nMoney3) .. "#-04";
+			local szInfo = "S¯ ti«n lþi nhu§n nh§p vào không ðßþc th¤p h½n s¯ vàng hi®n có: s¯ vàng hi®n có: 30" .. "#-02" .. " x Ði¬m thß½ng nghi®p x s¯ qu¥y hàng, ði¬m thß½ng nghi®p hi®n tÕi là  ".. szCom .. ", c¥n nÕp ít nh¤t ".. tostring(nMoney1) .."#-02" .. tostring(nMoney2) .. "#-03" .. tostring(nMoney3) .. "#-04";
 			PS_Input_Warning:SetText(szInfo);
 			
 			PS_Input_Text1:SetText("Xin nh§p vào ti«n lþi nhu§n:");
-			PS_Input_Text2:SetText("QuÛ lþi nhu§n hi®n tÕi:");
+			PS_Input_Text2:SetText("QuÛ lþi nhu§n hi®n tÕi: ");
 
 			PS_Input_Gold:SetProperty("DefaultEditBox", "True");
 
@@ -85,13 +85,13 @@ function PS_Input_OnEvent(event)
 			this:CareObject(objCared, 1, "PS_Input");	
 
 			g_nSaveOrGetMoney = PS_DRAW;
-			PS_Input_DragTitle:SetText("#gFF0FA0lãnh lþi nhu§n tài chính");
+			PS_Input_DragTitle:SetText("#gFF0FA0Rút ti«n lþi nhu§n");
 			PS_Input_Accept:SetText("Lînh");
 
 			PS_Input_Warning:SetText("#{SHOPTIPS_090205_2}");--[tx44221]
 
-			PS_Input_Text1:SetText("Mu¯n rút ti«n lþi nhu§n:");
-			PS_Input_Text2:SetText("QuÛ lþi nhu§n hi®n tÕi:");
+			PS_Input_Text1:SetText("Mu¯n rút ti«n lþi nhu§n: ");
+			PS_Input_Text2:SetText("QuÛ lþi nhu§n hi®n tÕi: ");
 
 			PS_Input_Gold:SetProperty("DefaultEditBox", "True");
 			PS_Input_CurrentlyPrincipal:SetProperty("MoneyNumber", tostring(PlayerShop:GetMoney("profit","self")));

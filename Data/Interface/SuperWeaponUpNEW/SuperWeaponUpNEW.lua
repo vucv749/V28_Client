@@ -255,7 +255,7 @@ function SuperWeaponUpNEW_Update( pos_packet )
 	local MenpaiID = Player : GetData( "MEMPAI" )
 	local ItemID = PlayerPackage : GetItemTableIndex( BagIndex )
 	if ItemID <= 0 then
-		PushDebugMessage("Này v§t ph¦m không phäi Khä ð±i Ðích th¥n khí!")
+		PushDebugMessage("V§t ph¦m này không phäi là th¥n khí có th¬ ð±i!")
 		return
 	end
 

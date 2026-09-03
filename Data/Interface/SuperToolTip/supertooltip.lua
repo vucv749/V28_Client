@@ -24,7 +24,7 @@ function g_GetUnlockingStr ( nUnlockElapsedTime )
 	local strLeftTime = "";
 		
 	if( nLeftTime <= 0 ) then
-		strLeftTime = "Giäi Toä thành công! Thïnh mµt l¥n næa ðång ký Ho£c c¡t trß¶ng cänh chính thÑc Giäi Toä.";
+		strLeftTime = "Giäi khóa thành công! Xin ðång nh§p lÕi ho£c di chuy¬n sang vùng ð¤t khác m¾i có th¬ giäi khóa ðßþc";
 	else
 		nLeftTime = math.ceil( nLeftTime/3600 );
 		if( nLeftTime >= 24 ) then
@@ -32,10 +32,10 @@ function g_GetUnlockingStr ( nUnlockElapsedTime )
 			nLeftTime = math.mod(nLeftTime,24);
 		end
 		if( nLeftTime > 0 ) then 
-			strLeftTime = strLeftTime.." "..nLeftTime.." Gi¶";					
+			strLeftTime = strLeftTime.." "..nLeftTime.."  gi¶";					
 		end
 		
-		strLeftTime = strLeftTime.."H§u chính thÑc Giäi Toä";
+		strLeftTime = strLeftTime.." sau chính thÑc giäi khóa";
 	end
 	
 	return strLeftTime;
@@ -396,14 +396,14 @@ function SetupMoneyPart(type,nPrice)
 			
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
-			StaticPart_GB_Ctl:SetText("Thi®n ác Tr¸:" .. tostring(nPrice) .. " Ði¬m")
+			StaticPart_GB_Ctl:SetText("Ði¬m PK: " .. tostring(nPrice) .. " Ði¬m")
 
 
 	elseif(CU_MORALPOINT == nUnit)  then	--???
 
 			StaticPart_GB_Ctl:Show()
 			SuperTooltip_StaticPart_Money:Hide();
-			StaticPart_GB_Ctl:SetText("Sß ÐÑc Ði¬m:" .. tostring(nPrice) .. " Ði¬m")
+			StaticPart_GB_Ctl:SetText("Ði¬m sß ðÑc: " .. tostring(nPrice) .. " Ði¬m")
 
 	elseif(CU_BIND_YUANBAO == nUnit) then	--????
 
@@ -421,19 +421,19 @@ function SetupMoneyPart(type,nPrice)
 
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
-			StaticPart_GB_Ctl:SetText("Nguyên bäo:" .. tostring(nPrice))
+			StaticPart_GB_Ctl:SetText("KNB: " .. tostring(nPrice))
 
 	elseif(CU_ZENGDIAN == nUnit) then	--??
 
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
-			StaticPart_GB_Ctl:SetText("T£ng Ði¬m:" .. tostring(nPrice))
+			StaticPart_GB_Ctl:SetText("Ði¬m t£ng: " .. tostring(nPrice))
 
 	elseif(CU_MENPAI_POINT == nUnit) then	--?????
 
 			StaticPart_GB_Ctl:Show()
 			StaticPart_Money_Ctl:Hide();
-			StaticPart_GB_Ctl:SetText("Môn phái c¯ng hiªn Ðµ:" .. tostring(nPrice))
+			StaticPart_GB_Ctl:SetText("CH môn phái: " .. tostring(nPrice))
 
 	end	
 	

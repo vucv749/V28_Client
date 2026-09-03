@@ -19,10 +19,10 @@ end
 function GuildLeagueCreate_OnEvent( event )
 	if event == "GUILD_LEAGUE_CREATE" or 
 		(event == "UI_COMMAND" and tonumber(arg0)==1207) then
-		GuildLeagueCreate_InputName:SetText("Dài nh¤t 12Cá tñ phù")
+		GuildLeagueCreate_InputName:SetText("Dài nh¤t 12 kí tñ")
 		GuildLeagueCreate_InputName:SetProperty("DefaultEditBox", "True");
 		GuildLeagueCreate_InputName:SetSelected(0,-1)
-		GuildLeagueCreate_InputDesc:SetText("Mµt cái m¾i phát Ðích ð°ng minh thª lñc")
+		GuildLeagueCreate_InputDesc:SetText("Huynh ð® mµt nhà, cùng nhau phát tri¬n!")
 		this:Show()
 		g_clientNpcId = Get_XParam_INT(0);
 		g_clientNpcId = Target:GetServerId2ClientId(g_clientNpcId);
@@ -45,7 +45,7 @@ function GuildLeagueCreate_DoCreate()
 	end
 	
 	if desc==nil or desc=="" then
-		PushDebugMessage("Nhçm không có bÕi Nh§p ð°ng minh tuyên ngôn")
+		PushDebugMessage("BÕn vçn chßa nh§p l¶i tuyên ngôn liên minh.")
 		return
 	end
 	

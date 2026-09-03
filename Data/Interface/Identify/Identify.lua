@@ -40,9 +40,9 @@ function Identify_OnEvent(event)
 				Identify_Info2:SetText( "#{INTERFACE_XML_506}" );
 			elseif tonumber(arg0) == 112233 then
 				Current = 1;
-				Identify_Title:SetText( "#gFF0FA0mµt l¥n næa xem xét trang b¸ tß ch¤t" );
+				Identify_Title:SetText( "#gFF0FA0Giám ð¸nh lÕi tß ch¤t trang b¸" );
 				Identify_Info:SetText( "#{INTERFACE_XML_987}" );
-				Identify_Info2:SetText( "Thïnh Tß¾ng trang b¸ kéo vào ThØ Khuông" );
+				Identify_Info2:SetText( "Ð£t trang b¸ vào ô này!" );
 			else
 				return;
 			end
@@ -190,7 +190,7 @@ function Identify_Update(Item_index)
 			if Current == 1 then			
 				local haveIndentify = LifeAbility:IsIndentify(index)
 				if haveIndentify ~= 1 then
-					PushDebugMessage("Nhçm Ðích trang b¸ còn không có xem xét, Thïnh Tiên xem xét")
+					PushDebugMessage("Trang b¸ các hÕ chßa giám ð¸nh, hãy ch÷n giám ð¸nh trß¾c")
 					return
 				end
 			end
@@ -269,7 +269,7 @@ function Identify_Buttons_Clicked()
 			local index,BindState = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(Tb_idx));
 			local index2,BindState2 = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(jingangcuo_id));
 			if(index == -1 and index2 == -1)then
-				local str = "Khuyªt thiªu#{_ITEM"..Tb_idx.."}Ho£c#{_ITEM"..jingangcuo_id.."}, ho£c là chúng nó B¸ Gia Toä.";
+				local str = "Thiªu #{_Item"..Tb_idx.."} ho£c #{_ITEM"..jingangcuo_id.."}, ho£c ðã b¸ khóa.";
 				PushDebugMessage(str);
 				return
 			end
@@ -297,7 +297,7 @@ function Identify_Buttons_Clicked()
 		end
 
 	else
-		PushDebugMessage("Thïnh ð¬ vào Yêu xem xét tß ch¤t Ðích trang b¸.")
+		PushDebugMessage("Nh§p trang b¸ mu¯n giám ð¸nh tß ch¤t vào.")
 	end
 end
 

@@ -67,20 +67,20 @@ function City_Research_SetCtl()
 	g_MembersCtl =	{
 										--Left
 										guildname = 		{txt = "",							ctl = Research_Text1},
-										mainbuilding = 	{txt = "C¤p b§c:",				ctl = Research_Text2},
+										mainbuilding = 	{txt = "C¤p: ",				ctl = Research_Text2},
 										
-										guildmoney = 		{txt = "Bang hµi tài chính:",		ctl = Research_Text3},
+										guildmoney = 		{txt = "QuÛ bang: ",		ctl = Research_Text3},
 										degree = {
-																		{txt = "Công nghi®p Tr¸:",			ctl = Research_Text4},
-																		{txt = "Nông nghi®p Tr¸:",			ctl = Research_Text5},
-																		{txt = "Buôn bán Tr¸:",			ctl = Research_Text6},
-																		{txt = "Qu¯c phòng Tr¸:",			ctl = Research_Text7},
-																		{txt = "Khoa h÷c kÛ thu§t Tr¸:",			ctl = Research_Text8},
-																		{txt = "Khuªch trß½ng Tr¸:",			ctl = Research_Text9},
+																		{txt = "Ði¬m công nghi®p: ",			ctl = Research_Text4},
+																		{txt = "Ði¬m nông nghi®p: ",			ctl = Research_Text5},
+																		{txt = "Ði¬m thß½ng nghi®p: ",			ctl = Research_Text6},
+																		{txt = "Ði¬m phòng thü: ",			ctl = Research_Text7},
+																		{txt = "Ði¬m khoa kÛ: ",			ctl = Research_Text8},
+																		{txt = "Ði¬m m· rµng: ",			ctl = Research_Text9},
 														 },
 										
-										curitem = 			{txt = "Ph¯i phß½ng:",				ctl = Research_Text10},
-										progress = 			{txt = "Nghiên cÑu tiªn ðµ:",		ctl = Research_Text11},
+										curitem = 			{txt = "Công thÑc: ",				ctl = Research_Text10},
+										progress = 			{txt = "Tiªn ðµ: ",		ctl = Research_Text11},
 										
 										--Right
 										list = Research_List,
@@ -94,10 +94,10 @@ function City_Research_SetCtl()
 										down = Research_DownPage,
 										
 										--RightBottom   
-										needmsg = 			{txt = "Ph¯i phß½ng:",		ctl = Research_Text12},
-										needmoney = 		{txt = "Tài chính:",		ctl = Research_Text13},
+										needmsg = 			{txt = "Công thÑc: ",		ctl = Research_Text12},
+										needmoney = 		{txt = "QuÛ: ",		ctl = Research_Text13},
 										needval = 			{txt = "",					ctl = Research_Text14},
-										needmission =  	{txt = "Nhi®m vø:",		ctl = Research_Text15},
+										needmission =  	{txt = "Nhi®m vø: ",		ctl = Research_Text15},
 									};
 end
 
@@ -179,7 +179,7 @@ function City_Research_Update()
 	local listidx = 0;
 	while i < table.getn(bdList) do
 		if(0 > City_Research_Is_Hide_Idx(i)) then
-			txt = tostring(bdList[i+1]).."Nghiên cÑu";
+			txt = tostring(bdList[i+1]).." Nghiên cÑu ";
 			g_MembersCtl.list:AddItem(txt, listidx);
 			g_MembersCtl.list:SetItemUserData(listidx, i);
 			listidx = listidx + 1;
@@ -314,7 +314,7 @@ function City_Research_Act_Clicked(id)
 		txt = txt.." ";--..desc;
 		g_MembersCtl.needmsg.ctl:SetText(txt);
 	else
-		txt = txt.."#R(Dî hoàn thành)#n";--..desc;
+		txt = txt.."#R(Xong) #n ";--..desc;
 		g_MembersCtl.needmsg.ctl:SetText(txt);
 	end
 	--ÑÐ¾¿Ìõ¼þ
@@ -342,17 +342,17 @@ end
 
 function City_Research_GetNeedTxt(nt)
 	if( tonumber(nt) == 0 ) then
-		return "Công nghi®p Tr¸";
+		return "Ði¬m Công Nghi®p ";
 	elseif( tonumber(nt) == 1 ) then
-		return "Nông nghi®p Tr¸";
+		return "Ði¬m Nông Nghi®p ";
 	elseif( tonumber(nt) == 2 ) then
-		return "Buôn bán Tr¸";
+		return "Ði¬m Thß½ng Nghi®p ";
 	elseif( tonumber(nt) == 3 ) then
-		return "Qu¯c phòng Tr¸";
+		return "Ði¬m Phòng Thü ";
 	elseif( tonumber(nt) == 4 ) then
-		return "Khoa h÷c kÛ thu§t Tr¸";
+		return "Ði¬m Khoa KÛ ";
 	elseif( tonumber(nt) == 5 ) then
-		return "Khuªch trß½ng Tr¸";
+		return "Ði¬m M· Rµng ";
 	else
 		return "";
 	end

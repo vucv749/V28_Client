@@ -275,7 +275,7 @@ function Enchase_Update(UI_index,Item_index)
 						return
 					end
 					if not EquipGemTable[EquipPoint] then
-						PushDebugMessage("ThØ trang b¸ không th¬ ðßþc khäm.")
+						PushDebugMessage("Trang b¸ không th¬ khäm")
 						return
 					end
 				
@@ -288,7 +288,7 @@ function Enchase_Update(UI_index,Item_index)
 					end
 					
 					if passFlag == 0 then
-						PushDebugMessage("ThØ Xung bäo thÕch không th¬ ðßþc khäm tÕi ðây LoÕi trang b¸ Thßþng.")
+						PushDebugMessage("Bäo thÕch không th¬ khäm trang b¸ loÕi này!")
 						return
 					end
 					
@@ -326,12 +326,12 @@ function Enchase_Update(UI_index,Item_index)
 				local gem_type  = LifeAbility : Get_Gem_Level(i_index,2);
 				local EquipPoint = LifeAbility : Get_Equip_Point(GEM_QUALITY[1])
 				if(tonumber(EquipPoint)== INVALID_ID) then
-					PushDebugMessage("Thïnh Tiên ð¬ vào Yêu ðßþc khäm Ðích trang b¸!")
+					PushDebugMessage("Xin hãy ð£t trang b¸ c¥n khäm nÕm vào!")
 					Enchase_Resume_Gem(25)
 					return;
 				end
 				if not EquipGemTable[EquipPoint] then
-					PushDebugMessage("ThØ trang b¸ không th¬ ðßþc khäm.")
+					PushDebugMessage("Trang b¸ không th¬ khäm")
 					Enchase_Resume_Gem(25)
 					return
 				end
@@ -345,7 +345,7 @@ function Enchase_Update(UI_index,Item_index)
 				end
 					
 				if passFlag == 0 then
-					PushDebugMessage("ThØ Xung bäo thÕch không th¬ ðßþc khäm tÕi ðây LoÕi trang b¸ Thßþng.")
+					PushDebugMessage("Bäo thÕch không th¬ khäm trang b¸ loÕi này!")
 					return
 				end
 				
@@ -371,11 +371,11 @@ function Enchase_Update(UI_index,Item_index)
 				GEM_QUALITY[u_index] = i_index
 			elseif u_index == 3 then
 				if PlayerPackage : GetItemTableIndex( i_index ) == 30900009 then
-					Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 50%")
+					Enchase_Explain : SetText("#cFF0000Thành công: 50%")
 				elseif PlayerPackage : GetItemTableIndex( i_index ) == 30900010 then
-					Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 75%")
+					Enchase_Explain : SetText("#cFF0000Thành công: 75%")
 				else
-					PushDebugMessage("N½i này phäi ð¬ vào#{_ITEM30900009}ho£c là#{_ITEM30900010}.")
+					PushDebugMessage("Phäi ð£t #{_ITEM30900009} ho£c #{_ITEM30900010} vào.")
 					return
 				end
 				if GEM_QUALITY[u_index] ~= -1 then
@@ -386,7 +386,7 @@ function Enchase_Update(UI_index,Item_index)
 				GEM_QUALITY[u_index] = i_index
 			elseif u_index == 4 then
 				if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900011 then
-					PushDebugMessage("N½i này phäi ð¬ vào#{_ITEM30900011}.")
+					PushDebugMessage("Phäi ð£t #{_ITEM30900011} vào.")
 					return
 				end
 				if GEM_QUALITY[u_index] ~= -1 then
@@ -474,12 +474,12 @@ function Enchase_Buttons_Clicked()
 	
 	
 	if GEM_QUALITY[1] == -1 then
-		PushDebugMessage("Thïnh ð¬ vào Yêu ðßþc khäm bäo thÕch Ðích trang b¸.")
+		PushDebugMessage("Hãy ð£t trang b¸ c¥n khäm vào!")
 		return
 	end
 	
 	if GEM_QUALITY[2] == -1 then
-		PushDebugMessage("Thïnh ð¬ vào Yêu ðßþc khäm Ðích bäo thÕch.")
+		PushDebugMessage("Hãy ð£t bäo thÕch c¥n khäm vào!")
 		return
 	end
 	
@@ -488,7 +488,7 @@ function Enchase_Buttons_Clicked()
 	if GEM_QUALITY[3] ~= -1 then 
 		Item_3 = PlayerPackage : GetItemTableIndex( GEM_QUALITY[3] )
 	else
-		PushDebugMessage("Thïnh ð¬ vào bäo thÕch ðßþc khäm Phù.")
+		PushDebugMessage("B.ThÕch Khäm NÕm Phù")
 		return
 	end
 	
@@ -570,14 +570,14 @@ function Enchase_Resume_Gem(nIndex)
 end
 
 function Update_Rate()
-	Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 25%")
+	Enchase_Explain : SetText("#cFF0000Thành công: 25%")
 	SuccRate = 25;
 	if GEM_QUALITY[3] ~= -1 then
 		if PlayerPackage : GetItemTableIndex( GEM_QUALITY[3] ) == 30900009 then
-			Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 50%")
+			Enchase_Explain : SetText("#cFF0000Thành công: 50%")
 			SuccRate = 50;
 		elseif PlayerPackage : GetItemTableIndex( GEM_QUALITY[3] ) == 30900010 then
-			Enchase_Explain : SetText("#cFF0000xác xu¤t thành công: 100%")
+			Enchase_Explain : SetText("#cFF0000Thành công: 100%")
 			SuccRate = 100;
 		end
 	end

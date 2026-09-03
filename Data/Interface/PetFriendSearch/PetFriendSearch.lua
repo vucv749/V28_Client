@@ -14,9 +14,9 @@ end
 function PetFriendSearch_OnLoad()
 	PET_AITYPE[0] = "Nhát gan";
 	PET_AITYPE[1] = "C¦n th§n";
-	PET_AITYPE[2] = "Trung thñc";
-	PET_AITYPE[3] = "Nhanh nh©n";
-	PET_AITYPE[4] = "Dûng mãnh";
+	PET_AITYPE[2] = "Trung Thành";
+	PET_AITYPE[3] = "Nhanh trí";
+	PET_AITYPE[4] = "Dûng Mãnh";
 end
 
 function PetFriendSearch_OnEvent(event)
@@ -46,7 +46,7 @@ end
 function PetFriendSearch_ShowWindow()
 	local num = PetInviteFriend:GetInviteNum("search")
 	if( num <= 0 ) then
-		PushDebugMessage("Không có tìm ðßþc thích hþp Ðích Trân Thú s¯ li®u");
+		PushDebugMessage("Không tìm th¤y dæ li®u Trân Thú thích hþp");
 		return;
 	end
 	PetFriendSearch_Clear_All();
@@ -88,27 +88,27 @@ function PetFriendSearch_Update( idx )
 	local petSex  = PetInviteFriend:GetPetINFO(idx, "SEX");
 	local petAI   = PetInviteFriend:GetPetINFO(idx, "AITYPE");
 	local petTypeName = PetInviteFriend:GetPetINFO(idx, "TYPENAME");
-	petTypeName = FlashTextHeader .. petTypeName .. "Cøc cßng";
+	petTypeName = FlashTextHeader .. petTypeName .. "Bäo Bäo";
 	if( petSex == 0 ) then
-		petSex = "Thß";
+		petSex = "Cái";
 	else
-		petSex = "Hùng";
+		petSex = "Ðñc";
 	end
-	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
+	local strTbl = {"Thß¶ng ","¿u ","Ki®t ","Trác ","Tuy®t "};
 
 	if(petGrow >= 0) then
 		petGrow = petGrow + 1;	--c???0?????
 		if(strTbl[petGrow]) then
 			petGrow = strTbl[petGrow];
 		else
-			petGrow = "Không biªt";
+			petGrow = "Chßa rõ";
 		end
 	else
-		petGrow = "Không biªt";
+		petGrow = "Chßa rõ";
 	end
 
 	if(petAI>4 or petAI <0) then
-		petAI = "Sai l¥m Ðích";
+		petAI = "Sai sót ";
 	else
 		petAI =	PET_AITYPE[petAI];
 	end
@@ -294,13 +294,13 @@ function PetFriendSearch_ConvertNumToMenPai( MenPaiId )
 		strMenPai = "Thiên S½n";
 
 	elseif(8 == MenPaiId) then
-		strMenPai = "Tiêu dao";
+		strMenPai = "Tiêu Dao";
 
 	elseif(9 == MenPaiId) then
 		strMenPai = "Tñ do";
 
 	elseif(10== MenPaiId) then
-		strMenPai = "MÕn Ðà S½n Trang";
+		strMenPai = "Mµ Dung";
 
 	end
 
@@ -387,11 +387,11 @@ function PetFriendSearch_SendMail( idx )
 		local owner = PetInviteFriend:GetHumanINFO(idx, "NAME");
 		local player = Player:GetName();
 		if(owner == player) then
-			PushDebugMessage("Không th¬ Hoà chính mình Ðích Trân Thú kªt các\\u0020hÕ");
+			PushDebugMessage("Không th¬ tñ kªt thân Trân Thú");
 			return;
 		end
 			--¸ø¸Ã äÊÞÖ÷ÈË·¢ËÍÓÊ¼þ¸æËßËûËýÄãµÄ äÊÞÏëºÍËûËýµÄ äÊÞ½áÊ¶
-		DataPool:OpenMail( owner,"Ta nghî kªt các\\u0020hÕ cüa ngß½i cøc cßng" );
+		DataPool:OpenMail( owner,"Ta mu¯n kªt thân v¾i Bäo Bäo cüa bÕn" );
 	end
 
 	if( idx == 5 ) then

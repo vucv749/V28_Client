@@ -338,7 +338,7 @@ function ChatFrame_OnEvent(event)
 		ChatFrame_SetTabConfig( 1 );
 		ChatFrame_SetTabConfig( 2 );
 		ChatFrame_SetTabConfig( 3 );
-		channel_tab[3]:SetText("Ğ°ng Thành");
+		channel_tab[3]:SetText("Cùng Thành");
 		Talk:HandleHistoryAction("listChange", g_theCurrentChannel, g_theCurrentChannelName);
 		if 548 == GetSceneID() then
 			CHANNEL_DATA["zhanchang"] = CHANNEL_DATA_SONGLIAO
@@ -1076,7 +1076,7 @@ function ChatFrame_ChannelChanged(force)
 		g_theCurrentChannel = "near"
 		Talk:HandleHistoryAction("listChange", g_theCurrentChannel, "");
 	elseif(force == "open_zhanchang") then
-		Chat_City:SetText("Chiªn trß¶ng")
+		Chat_City:SetText("Chiªn Trß¶ng")
 		channel_tab[3]:SetCheck(1);
 		Chat_ChangeTabIndex(8)
 		g_theCurrentChannel = "zhanchang"
@@ -1132,7 +1132,7 @@ end
 
 function ChatFrame_CreateTab(pos)
 	if(channel_tab_total+1 > CHANNEL_TAB_MAX) then
-		PushDebugMessage("Không th¬ sáng tÕo nhi«u h½n kênh");
+		PushDebugMessage("Không ğßşc tÕo nhi«u kênh");
 	else
 		--channel_tab_total = channel_tab_total + 1;
 		Talk:CreateTab(pos);
@@ -1151,7 +1151,7 @@ function ChatFrame_CreateTabFinish(tabName,tabCfg, strFlg)
 	elseif(strFlg == "sucess") then
 		channel_tab_total = channel_tab_total + 1;
 		if(tabName == "") then
-			tabName = "Tñ Kiªn" .. tostring(channel_tab_total - 4);
+			tabName = "Tñ tÕo" .. tostring(channel_tab_total - 4);
 		end
 
 		
@@ -1176,7 +1176,7 @@ end
 
 function ChatFrame_ConfigTab(pos)
 	if(channel_seltab == 0 or channel_seltab == 1) then
-		PushDebugMessage("ThØ kênh không th¬ ph¯i trí");
+		PushDebugMessage("Kênh này không th¬ thiªt l§p");
 		--AxTrace(0, 0, "´ËÆµµÀ²»ÄÜÅäÖÃ");
 		return;
 	end
@@ -1240,7 +1240,7 @@ end
 -- É¾³ıÁÄÌìÒ³ÃæTab
 function Chat_DestoryTabIndex( nIndex )
 	if( nIndex <= 3 ) then
-		PushDebugMessage("ThØ kênh không th¬ xóa bö");
+		PushDebugMessage("Kênh này không ğßşc xóa");
 		return;
 	end
 	
@@ -1411,7 +1411,7 @@ function ChatFrame_LoadTabConfig(tabIdx, tabName, tabConfig)
 			elseif Lua_IsTSPhoenixScene(GetSceneID()) == 1 then
 				channel_tab[channel_seltab]:SetText("#{BLDPVP_221214_180}") -- ??
 			else 
-				channel_tab[channel_seltab]:SetText("Ğ°ng Thành");
+				channel_tab[channel_seltab]:SetText("Cùng Thành");
 			end
 		else
 			channel_tab[channel_seltab]:SetText(channel_config[channel_seltab][1]);

@@ -236,7 +236,7 @@ function LifeSkill_Buttons_Clicked(nIndex)
 --		LifeSkill_Next3 : Hide();
 	elseif ( popup == 1 ) then
 		LifeSkill_Next1 : Show();
-		LifeSkill_Next1 : SetText("Chª tác")
+		LifeSkill_Next1 : SetText("TÕo")
 --		LifeSkill_Next2 : Hide();
 --		LifeSkill_Next3 : Hide();
 	elseif popup == 3 then
@@ -266,7 +266,7 @@ function LifeSkill_Buttons_Clicked(nIndex)
 	end
  	local level = tonumber(strName2);
 	LifeSkill_Target_Skill_Name : SetText( strName );
-	LifeSkill_Target_Skill_Level : SetText("C¤p b§c:" .. strName2);
+	LifeSkill_Target_Skill_Level : SetText("C¤p: " .. strName2);
 	
 	strName = Player:GetAbilityInfo(lifeid,"explain");
 	LifeSkill_Target_Skill_Explain : SetText( strName );
@@ -347,7 +347,7 @@ function Life_Action_Page_Switch()
 		LifeSkill_ActionSkill : SetCheck(0);
 		LifeSkill_ShenFenSkill : SetCheck(0)
 		LifeSkill_LifeSkill : SetCheck(1);
-		PushDebugMessage("Nhî còn không có Bái nh§p môn Phái.");
+		PushDebugMessage("Chßa gia nh§p môn phái.");
 		return; 
 	end;
 	OpenSkillBook();

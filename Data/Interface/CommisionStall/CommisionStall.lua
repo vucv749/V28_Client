@@ -87,7 +87,7 @@ function CommisionStall_OnEvent(event)
 	end
 	if (event == "UPDATE_YUANBAO") then
 		if(g_Type == 2)then
-			CommisionStall_Cash_Yuanbao:SetText("Nguyên bäo:"..tostring(Player:GetData("YUANBAO")).." ");
+			CommisionStall_Cash_Yuanbao:SetText("KNB: "..tostring(Player:GetData("YUANBAO")).." ");
 		end
 	end
 	if (event == "OPEN_EXCHANGE_FRAME") then
@@ -111,11 +111,11 @@ function CommisionStall_InitDlg(type)
 	CommisionStall_ItemType3:Enable();
 	if(type == 1)then
 		--Ôª±¦ÉÌµê
-		CommisionStall_Name_Text:SetText("Thïnh lña ch÷n Nhçm Tß·ng mua Ðích nguyên bäo loÕi hình");
+		CommisionStall_Name_Text:SetText("Xin ch÷n s¯ Kim Nguyên Bäo các hÕ mu¯n mua");
 		CommisionStall_ItemType1:SetText("50Ði¬m");
 		CommisionStall_ItemType2:SetText("200Ði¬m");
 		CommisionStall_ItemType3:SetText("500Ði¬m");
-		CommisionStall_Cash:SetText("Có ðßþc ti«n tài");
+		CommisionStall_Cash:SetText("Vàng");
 		CommisionStall_TargetPrice_Yuanbao:Hide();
 		CommisionStall_TargetPrice_Money:Show();
 		CommisionStall_Cash_Yuanbao:Hide();
@@ -127,17 +127,17 @@ function CommisionStall_InitDlg(type)
 	else
 		
 		
-		CommisionStall_Name_Text:SetText("Thïnh lña ch÷n Nhçm Tß·ng mua Ðích Kim Phiªu loÕi hình");
-		CommisionStall_ItemType1:SetText("10Kim");
-		CommisionStall_ItemType2:SetText("50Kim");
-		CommisionStall_ItemType3:SetText("150Kim");
-		CommisionStall_Cash:SetText("Có ðßþc nguyên bäo");
+		CommisionStall_Name_Text:SetText("Xin ch÷n s¯ vàng các hÕ mu¯n mua");
+		CommisionStall_ItemType1:SetText("10 Vàng");
+		CommisionStall_ItemType2:SetText("50 Vàng");
+		CommisionStall_ItemType3:SetText("150 Vàng");
+		CommisionStall_Cash:SetText("KNB có");
 		CommisionStall_TargetPrice_Yuanbao:Show();
 		CommisionStall_TargetPrice_Money:Hide();
 		CommisionStall_Cash_Yuanbao:Show();
 		CommisionStall_Cash_Money:Hide();
 		Need_Money = 0;
-		CommisionStall_Cash_Yuanbao:SetText("Nguyên bäo:"..tostring(Player:GetData("YUANBAO")).." ");
+		CommisionStall_Cash_Yuanbao:SetText("KNB: "..tostring(Player:GetData("YUANBAO")).." ");
 		--CommisionStall_TargetPrice_Yuanbao:SetText("Ôª±¦:"..tostring(Player:GetData("YUANBAO")));
 		
 	end
@@ -161,7 +161,7 @@ function CommisionStall_Buy_Clicked()
 		return
 	end
 	if(g_CurSel<0 or g_CurSel>=20)then
-		PushDebugMessage("Thïnh lña ch÷n Yêu mua Ðích v§t ph¦m!")
+		PushDebugMessage("Xin ch÷n v§t ph¦m mu¯n mua!")
 		return
 	end
 
@@ -172,7 +172,7 @@ function CommisionStall_Buy_Clicked()
 		--Ôª±¦µê
 		strPrice = "#{_MONEY"..tostring(price).."}"
 	else
-		strPrice = tostring(price).."Ði¬m nguyên bäo"
+		strPrice = tostring(price).." KNB"
 	end
 	
 	--²»Ö±½Ó¹ºÂò....¶øÊÇ´ò¿ª¹ºÂòÈ·ÈÏ¿ò....
@@ -186,19 +186,19 @@ function CommisionStall_FinishBuy()
 		return
 	end
 	if(g_CurSel<0 or g_CurSel>=20)then
-		PushDebugMessage("Thïnh lña ch÷n Yêu mua Ðích v§t ph¦m!")
+		PushDebugMessage("Xin ch÷n v§t ph¦m mu¯n mua!")
 		return
 	end
 	local price = CommisionShop:EnumItem(tonumber(g_Type-1),tonumber(g_CurSel),"price");
 	if(g_Type == 1)then
 		--Ôª±¦µê
 		if(Player:GetData("MONEY") < tonumber(price))then
-			PushDebugMessage("Không ðü ngân lßþng.")
+			PushDebugMessage("Tài nguyên không ðü!")
 			return
 		end
 	else
 		if(Player:GetData("YUANBAO") <  tonumber(price))then
-			PushDebugMessage("Nguyên bäo không ðü!")
+			PushDebugMessage("Kim Nguyên Bäo không ðü!")
 			return
 		end
 	end
@@ -272,7 +272,7 @@ function CommisionStall_Item_Click(idx)
 	local price = CommisionShop:EnumItem(tonumber(g_Type-1),tonumber(g_CurSel),"price");
 	if(tonumber(g_Type) == 2)then
 		
-		CommisionStall_TargetPrice_Yuanbao:SetText("Nguyên bäo:"..price.." ");
+		CommisionStall_TargetPrice_Yuanbao:SetText("KNB: "..price.." ");
 	else
 		CommisionStall_TargetPrice_Money:SetProperty("MoneyNumber",tonumber(price));
 	end

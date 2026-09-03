@@ -60,7 +60,7 @@ function ChangeMinorPassword_SetPassword()
 	-- Èç¹ûÃÜÂë²»Ò»ÖÂ
 	if(strPassword1 ~= strPassword2) then
 	
-		ShowSystemTipInfo("M§t mã ðßa vào không ð°ng nh¤t Trí!")
+		ShowSystemTipInfo("M§t mã không th¯ng nh¤t!")
 		
 		ChangeMinorPassword_EditBox1:SetText("");
 		ChangeMinorPassword_EditBox2:SetText(""); 
@@ -73,7 +73,7 @@ function ChangeMinorPassword_SetPassword()
 	local iLenNew = string.len(strPassword1);
 	if(iLenOld < 4) then
 	
-		ShowSystemTipInfo("Cñu m§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
+		ShowSystemTipInfo("M§t mã cû không dß¾i 4 ký tñ!");
 		return;
 	end;
 	

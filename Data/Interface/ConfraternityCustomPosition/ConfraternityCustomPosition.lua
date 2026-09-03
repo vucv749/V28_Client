@@ -7,14 +7,14 @@ local g_NameCtls = nil	--????????
 
 --±ê×¼°ï»áÖ°Î»Ãû³Æ
 local g_StdPositionName = {
-	"Bang Chü",			--9
-	"Phó Bang Chü",		--8
-	"Nµi Vø SÑ",		--7
-	"Công Vø SÑ",		--6
-	"Ho¢ng Hóa SÑ",		--5
-	"Thß½ng Nhân",			--4
-	"Tinh Anh",			--3
-	"Bang Chúng"			--2
+	" Bang Chü",			--9
+	" Bang Phó",		--8
+	" Nµi Vø SÑ",		--7
+	" Công Vø SÑ",		--6
+	" Hoang Hoa SÑ",		--5
+	" Thß½ng Nhân",			--4
+	" Tinh Anh",			--3
+	" Bang Chúng"			--2
 }
 
 --Reset°´Å¥ÊÇ·ñÊ¹ÓÃ¹ý±êÖ¾
@@ -105,11 +105,11 @@ end
 function ConfraternityCustomPosition_Update()
 	local szMsg = nil
 	
-	ConfraternityCustomPosition_Title:SetText("#gFF0FA0Tñ ð¸nh nghîa chÑc v¸ tên")
+	ConfraternityCustomPosition_Title:SetText("#gFF0FA0Tñ l§p chÑc v¸ ")
 	
 	--ÏÔÊ¾µ±Ç°"×Ô¶¨ÒåÖ°Î»Ãû³Æ"
 	for i=1,8 do
-		g_NameCtls.ResetBtn[i]:SetText("Tr¸ li®u")		--??????
+		g_NameCtls.ResetBtn[i]:SetText("H°i Phøc")		--ÐÞ¸Ä°´Å¥Ãû×Ö
 		
 		szMsg = Guild:GetCurCustomPositionName(10-i)		
 		g_SaveForReset[i] = szMsg	--????,??????????		
@@ -182,7 +182,7 @@ function ConfraternityCustomPosition_Ok()
 		
 		--¸ø³öÎ¥·¨ÌáÊ¾
 		if (result == -1) then
-			PushDebugMessage("Nhçm ðßa vào Ðích'"..szNew.."'trái pháp lu§t, Thïnh chú ý Nhçm Ðích l¶i nói!")	
+			PushDebugMessage("Nh§p "..szNew.."PhÕm lu§t, vui lòng chú ý l¶i nói cüa bÕn!")	
 			bLegal = 0	--???????
 			
 			bIsChanged = bIsChanged - 1	--?????1
@@ -197,7 +197,7 @@ function ConfraternityCustomPosition_Ok()
 	--ÓÐ²»ºÏ·¨×Ö·û´®Ö±½Ó·µ»Ø
 	if(bLegal == 0) then
 		if(bTipFlag == 1)then	--????
-			PushDebugMessage("Nhçm Ðích ðßa vào giæa Hæu trái pháp lu§t tñ phù!")	--??:"Nhçm Ðích ðßa vào giæa Hæu Chuy¬n Nghîa tñ phù!"
+			PushDebugMessage("Nµi dung nh§p có ký tñ không hþp l®!")	--ÌáÊ¾£º"ÄúµÄÊäÈëµ±ÖÐÓÐ×ªÒå×Ö·û£¡"
 		end
 		return
 	end

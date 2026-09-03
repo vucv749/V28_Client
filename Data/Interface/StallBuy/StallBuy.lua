@@ -99,9 +99,9 @@ function StallBuy_OnEvent(event)
 		--Çå¿ ±ê¼Û
 		StallBuy_TargetPrice_Money:SetProperty("MoneyNumber","");
 		--Çå¿ Ôª±¦±ê¼Û
-		StallBuy_TargetPrice_Yuanbao:SetText("#cff99000 #WnGuyên bäo")
+		StallBuy_TargetPrice_Yuanbao:SetText("#cff99000 #WKNB")
 		-- ÌîÐ´Ì¯Ö÷µÄÃû×Ö
-		StallBuy_Master_Text:SetText("Than Chü:" .. StallBuy:GetStallerName());
+		StallBuy_Master_Text:SetText("Chü sÕp: " .. StallBuy:GetStallerName());
 		-- ÌîÐ´Ì¯Ö÷µÄGUID
 		StallBuy_ID_Text:SetText("ID:" .. StallBuy:GetGuid());
 		--´ò¿ªÐèÒªµÄÒ³Ãæ
@@ -136,7 +136,7 @@ function StallBuy_OnEvent(event)
 		if(nCoinType == 1) then
 			local nYuanbao = Player:GetData("YUANBAO");
 			if(nYuanbao ~= nil) then
-				StallBuy_Cash_Yuanbao:SetText("#Y"..nYuanbao.." Nguyên bäo")
+				StallBuy_Cash_Yuanbao:SetText("#Y"..nYuanbao.." KNB")
 			end
 		end
 
@@ -189,9 +189,9 @@ function StallBuy_OnStallBuyOpen()
 	StallBuy_TargetPrice_Money:SetProperty("MoneyNumber","");
 
 	--Çå¿ Ôª±¦±ê¼Û
-	StallBuy_TargetPrice_Yuanbao:SetText("#cff99000 #WnGuyên bäo")
+	StallBuy_TargetPrice_Yuanbao:SetText("#cff99000 #WKNB")
 	-- ÌîÐ´Ì¯Ö÷µÄÃû×Ö
-	StallBuy_Master_Text:SetText("Than Chü:" .. StallBuy:GetStallerName());
+	StallBuy_Master_Text:SetText("Chü sÕp: " .. StallBuy:GetStallerName());
 	-- ÌîÐ´Ì¯Ö÷µÄGUID
 	StallBuy_ID_Text:SetText("ID:" .. StallBuy:GetGuid());
 
@@ -222,7 +222,7 @@ function StallBuy_OnStallBuyOpen()
 		StallBuy_Pet:Show();
 		StallBuy_Cash:SetText("#{YBBT_81021_06}");
 	else
-		PushDebugMessage("Bài Than loÕi hình sai l¥m");
+		PushDebugMessage("LoÕi bày bán b¸ l²i");
 	end
 end
 
@@ -284,7 +284,7 @@ function StallBuy_SelectUpdate()
 		StallBuy_SetItemOrPetPrice(1, nMoney);
 		--StallBuy_TargetPrice_Yuanbao:SetText("#Y"..tostring(nMoney).." Ôª±¦");
 	else
-		PushDebugMessage("Bài Than loÕi hình sai l¥m");
+		PushDebugMessage("LoÕi bày bán b¸ l²i");
 	end
 end
 
@@ -310,12 +310,12 @@ function StallBuy_UpdateFrame()
 		StallBuy_Cash_Money:SetProperty("MoneyNumber",tostring(nMoney));
 	-- Ôª±¦°ÚÌ¯
 	elseif( nCoinType == 1 ) then
-		StallBuy_Cash_Yuanbao:SetText("#Y"..tostring(nYuanbao).." Nguyên bäo");
+		StallBuy_Cash_Yuanbao:SetText("#Y"..tostring(nYuanbao).." KNB");
 	else
-		PushDebugMessage("Bài Than loÕi hình sai l¥m");
+		PushDebugMessage("LoÕi bày bán b¸ l²i");
 	end
 
-	StallBuy_Name_Text:SetText("Qu¥y hàng Danh:" .. StallBuy:GetStallName());
+	StallBuy_Name_Text:SetText("Tên sÕp: " .. StallBuy:GetStallName());
 
 	if(g_CurrentPage == PAGE_ITEM)     then
 		StallBuy_UpdateItem();
@@ -346,19 +346,19 @@ function StallBuy_Buy_Clicked()
 			nPriceYuanbao = StallBuy:GetPrice("item", g_nCurSelectItem);
 			nItemName = StallBuy:GetItemName(g_nCurSelectItemID);
 			if( nItemName == nil or nPriceYuanbao == nil) then
-				PushDebugMessage("Thïnh lña ch÷n Nhçm c¥n Ðích v§t ph¦m");
+				PushDebugMessage("Hãy ch÷n v§t ph¦m");
 				return
 			end
 		else
 			local nMyPetName = "";
 			if(g_nCutSelectPet == -1)  then
-				PushDebugMessage("Thïnh lña ch÷n Nhçm c¥n Ðích Trân Thú");
+				PushDebugMessage("Hãy ch÷n Trân Thú ");
 				return;
 			end
 			nItemName, nMyPetName = StallBuy:EnumPet(g_nCutSelectPet);
 			nPriceYuanbao = StallBuy:GetPrice("pet",g_nPetID[g_nCutSelectPet]);
 			if( nItemName == nil or nPriceYuanbao == nil) then
-				PushDebugMessage("Thïnh lña ch÷n Nhçm c¥n Ðích Trân Thú");
+				PushDebugMessage("Hãy ch÷n Trân Thú ");
 				return
 			end
 		end
@@ -406,7 +406,7 @@ function StallBuy_OnBtnBuyOK()
 		elseif( nCoinType == 1 ) then  
 			MsgBox = ScriptGlobal_Format("#{BTDB_141021_01}",nItemName,strMoney,nPrePrice)
 		else
-			PushDebugMessage("Bài Than loÕi hình sai l¥m");
+			PushDebugMessage("LoÕi bày bán b¸ l²i");
 			return
 		end 
 		MessageBoxCommon("#{YBBT_081023_3}", MsgBox, "StallBuy", "OnBtnConfirmOK()", "OnBtnConfirmCancel()");
@@ -563,7 +563,7 @@ function StallBuy_PetList_Selected()
 		StallBuy_SetItemOrPetPrice(1, nMoney);
 		--StallBuy_TargetPrice_Yuanbao:SetText("#Y"..tostring(nMoney).." Ôª±¦");
 	else
-		PushDebugMessage("Bài Than loÕi hình sai l¥m");
+		PushDebugMessage("LoÕi bày bán b¸ l²i");
 	end
 end
 
@@ -574,7 +574,7 @@ function StallBuy_PetList_RClick()
 	g_nCutSelectPet = StallBuy_PetList:GetFirstSelectItem();
 
 	if(g_nCutSelectPet == -1)  then
-		PushDebugMessage("Thïnh lña ch÷n Nh¤t Chích Trân Thú H§u Ði¬m Kích xem xét")
+		PushDebugMessage("Hãy ch÷n mµt con Trân Thú sau ðó nh¤n ki¬m tra")
 		return;
 	end
 
@@ -594,18 +594,18 @@ function StallBuy_SetTabColor()
 
 	if( PAGE_ITEM == g_CurrentPage ) then
 		StallBuy_Item:SetText(selColor .. "V§t ph¦m");
-		StallBuy_Pet:SetText(noselColor .. "Trân Thú");
+		StallBuy_Pet:SetText(noselColor .. "Thú");
 
 		-- ¿´ÁíÒ»Ò³£¬Èç¹ûÃ»ÓÐ¶«Î÷£¬¾ÍÉèÖÃÎª»ÒÉ«
 		-- TabÉÏµÄ×ÖÌåÑ É«
 		local nObjNum = StallBuy:IsHaveObject("pet")
 		if nObjNum == 0    then
-			StallBuy_Pet:SetText(newColor .. "Trân Thú");
+			StallBuy_Pet:SetText(newColor .. "Thú");
 		end
 
 	else
 		StallBuy_Item:SetText(noselColor .. "V§t ph¦m");
-		StallBuy_Pet:SetText(selColor .. "Trân Thú");
+		StallBuy_Pet:SetText(selColor .. "Thú");
 
 		local nItemNum = StallBuy:IsHaveObject("item")
 		if nItemNum == 0    then
@@ -683,9 +683,9 @@ function StallBuy_SetItemOrPetPrice(nCoinType, nMoney)
 			end
 			strMoney = string.format("#Y%d#W%s#cff9900%s", nMoneyBegin, strMid, strEnd);
 		end
-		StallBuy_TargetPrice_Yuanbao:SetText("#Y"..strMoney.."#WnGuyên bäo");
+		StallBuy_TargetPrice_Yuanbao:SetText("#Y"..strMoney.." #WKNB");
 	else
-		PushDebugMessage("Bài Than loÕi hình sai l¥m");
+		PushDebugMessage("LoÕi bày bán b¸ l²i");
 	end
 end
 

@@ -84,7 +84,7 @@ function MiniMap_OnLoad()
 	AxTrace(12,12,"MiniMap_OnLoad is called begin");
 
 	Minimap_Max();
-	MiniMap_Yuanbao:SetToolTip("Nguyên bäo cØa hàng");
+	MiniMap_Yuanbao:SetToolTip("Ti®m KNB");
 	MiniMap_AutoSearch:SetToolTip("#{INTERFACE_XML_983}");
 	MiniMap_NetStatus_Flash:Play( false );
 
@@ -144,16 +144,16 @@ function MiniMap_OnEvent(event)
 	  local strNetState = ""
 		if tonumber(arg0) < 250 then
 			MiniMap_MiniMap_NetStatus : SetProperty("SetCurrentImage","NetState1")
-			strNetState = "Ði¬m Kích Khä xem xét hôm nay hoÕt ðµng Li®t Bi¬u#rinternet trÕng hu¯ng: Không rãnh".."("..tostring(arg0).."ms)"
+			strNetState = "„n vào có th¬ ki¬m tra thông tin sñ ki®n hoÕt ðµng trong hôm nay #rÐß¶ng truy«n: T¯t".."("..tostring(arg0).."ms)"
 		elseif tonumber(arg0) < 500 then
 			MiniMap_MiniMap_NetStatus : SetProperty("SetCurrentImage","NetState2")
-			strNetState = "Ði¬m Kích Khä xem xét hôm nay hoÕt ðµng Li®t Bi¬u#rinternet trÕng hu¯ng: Bình thß¶ng".."("..tostring(arg0).."ms)"
+			strNetState = "„n vào có th¬ ki¬m tra thông tin sñ ki®n hoÕt ðµng trong hôm nay #rÐß¶ng truy«n: Thß¶ng".."("..tostring(arg0).."ms)"
 		elseif tonumber(arg0) < 1000 then
 			MiniMap_MiniMap_NetStatus : SetProperty("SetCurrentImage","NetState3")
-			strNetState = "Ði¬m Kích Khä xem xét hôm nay hoÕt ðµng Li®t Bi¬u#rinternet trÕng hu¯ng: Ch§t chµi".."("..tostring(arg0).."ms)"
+			strNetState = "„n vào có th¬ ki¬m tra thông tin sñ ki®n hoÕt ðµng trong hôm nay #rÐß¶ng truy«n: B§n".."("..tostring(arg0).."ms)"
 		else
 			MiniMap_MiniMap_NetStatus : SetProperty("SetCurrentImage","NetState4")
-			strNetState = "Ði¬m Kích Khä xem xét hôm nay hoÕt ðµng Li®t Bi¬u#rinternet trÕng hu¯ng: Bª t¡c".."("..tostring(arg0).."ms)"
+			strNetState = "„n vào có th¬ ki¬m tra thông tin sñ ki®n hoÕt ðµng trong hôm nay #rÐß¶ng truy«n: Quá täi".."("..tostring(arg0).."ms)"
 		end
 
 		strNetDelayMessage = strNetState
@@ -193,7 +193,7 @@ function MiniMap_OnEvent(event)
 		local skyHour = math.floor(skyTime / 3600)
 		local skyMinute = math.floor(math.mod(skyTime, 3600) / 60)
 		local skySecond = math.mod(skyTime, 60)
-		local skyTimeString = "Trß¾c m£t th¶i gian:"
+		local skyTimeString = "Th¶i gian hi®n tÕi: "
 		if skyHour < 10 then
 			skyTimeString = skyTimeString .. "0"
 		end
@@ -505,18 +505,18 @@ function Minimap_UpdatePKMode()
 	local strPKMode = ""
 	if( tonumber( nPKMode ) == 0 ) then
 		--MiniMap_PK_Mode:SetToolTip( "ºÍÆ½" );
-		strPKMode = "Hòa bình\\nThØ hình thÑc HÕ chï có th¬ Phän Kích công kích chính mình Ðích ngß¶i ch½i, không th¬ chü ðµng công kích ngß¶i ch½i khác."
+		strPKMode = "Hòa Bình\nNgß¶i ch½i chï ðßþc công kích bän thân, không ðßþc chü ðµng công kích ngß¶i ch½i khác."
 	elseif( tonumber( nPKMode ) == 1 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_ALL" );
-		strPKMode = "Cá nhân h²n chiªn"
+		strPKMode = "H²n chiªn cá nhân"
 
 	elseif( tonumber( nPKMode ) == 2 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_MORAL" );
-		strPKMode = "Thi®n ác hình thÑc\\nThØ hình thÑc HÕ có th¬ công kích sát khí l¾n h½n 0Ðích ngß¶i ch½i."
+		strPKMode = "Thi®n Ác\nNgß¶i ch½i có th¬ công kích v¾i sát khí l¾n h½n 0."
 
 	elseif( tonumber( nPKMode ) == 3 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_TEAM" );
-		strPKMode = "T± ðµi h²n chiªn"
+		strPKMode = "H²n chiªn nhóm"
 
 	elseif( tonumber( nPKMode ) == 4 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_GUILD" );
@@ -536,9 +536,9 @@ function Minimap_UpdatePKMode()
 
 	    --strTime = "#r("..( tonumber(iTime) ).."ÃëºóÇÐ»»µ½ºÍÆ½»òÉÆ¶ñÄ£Ê½)"
 	    if( iMin > 0 ) then
-	        strTime = "#r"..(iMin).."Phút"..( tonumber(iSec) ).."Sao H§u c¡t Ðáo hòa bình Ho£c thi®n ác hình thÑc"
+	        strTime = "#r"..(iMin).." phút "..( tonumber(iSec) ).." giây sau s¨ chuy¬n v« hình thÑc Hòa bình ho£c Thi®n ác"
 	    else
-	        strTime = "#r"..( tonumber(iSec) ).."Sao H§u c¡t Ðáo hòa bình Ho£c thi®n ác hình thÑc"
+	        strTime = "#r"..( tonumber(iSec) ).." giây sau s¨ chuy¬n v« hình thÑc Hòa bình ho£c Thi®n ác"
 	    end
 
 	end
@@ -672,13 +672,13 @@ function MiniMap_PlayerAsk_Bn_Clicked()
 		strName = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strName = "Tiêu dao";
+		strName = "Tiêu Dao";
 
 	elseif(9 == menpai) then
 		strName = "Tñ do";
 
 	elseif(10== menpai) then
-		strName = "MÕn Ðà S½n Trang";
+		strName = "Mµ Dung";
 
 	end
 

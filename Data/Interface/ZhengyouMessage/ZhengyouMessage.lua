@@ -36,12 +36,12 @@ function ZhengyouMessage_OnEvent(event)
 				ZhengyouMessage_EditText:Show()
 				ZhengyouMessage_StaticText:Hide()
 			else
-				ZhengyouMessage_Ad:SetText("Ð±i")
+				ZhengyouMessage_Ad:SetText("Ð±i ")
 				ZhengyouMessage_EditText:Hide()
 				ZhengyouMessage_StaticText:Show()
 				local adtitle = FindFriendDataPool:GetPlayerBBSADTitle()
 				if adtitle == "" then 
-					adtitle = "Mong ðßþc m÷i ngß¶i üng hµ!" 
+					adtitle = " Mong ðßþc m÷i ngß¶i üng hµ!" 
 				end
 				ZhengyouMessage_StaticText:SetText("#c9CCF00"..adtitle)
 				ZhengyouMessage_EditText:SetText(adtitle)
@@ -58,7 +58,7 @@ function ZhengyouMessage_OnEvent(event)
 				local adtitle = FindFriendDataPool:GetPlayerBBSADTitle()
 				
 				if adtitle == "" then 
-					adtitle = "Mong ðßþc m÷i ngß¶i üng hµ!" 
+					adtitle = " Mong ðßþc m÷i ngß¶i üng hµ!" 
 				end
 				ZhengyouMessage_StaticText:SetText("#c9CCF00"..adtitle)
 		  end	

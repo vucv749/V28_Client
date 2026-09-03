@@ -261,12 +261,12 @@ function ActionSkill_Update_Cliecked(nIndex, Actiontype)
 	 	strName2= Player:GetXinfaInfo(nXinfaId,"level");
 	 	Current_Xinfa_Level = strName2;
 
-		ActionSkill_Name : SetText( strName .."\n" .. "Tâm pháp c¤p b§c:" .. strName2);
+		ActionSkill_Name : SetText( strName .."\n" .. "Tâm pháp: " .. strName2);
 		ActionSkill_Name : SetProperty("TextColours","tl:FFEFEFEF tr:FFEFEFEF bl:FFEFEFEF br:FFEFEFEF");
 		ActionSkill_Name : SetProperty("VertFormatting","VertCentred")
 		ActionSkill_XinfaTarget : Enable();
 --		XINFA_LEVEL[nIndex] : SetText(tostring(strName2));
-		AxTrace(0,1,"XINFA_LEVEL["..nIndex.."] c¤p b§c ="..strName2);
+		AxTrace(0,1,"XINFA_LEVEL["..nIndex.."] C¤p = "..strName2);
 --		AxTrace(0,1,"GET XINFA_LEVEL["..nIndex.."] µÈ¼¶="..XINFA_LEVEL[nIndex]:GetText());
 
 	 	strName = Player:GetXinfaInfo(nXinfaId,"explain");
@@ -430,7 +430,7 @@ function ActionSkill_Update_Cliecked(nIndex, Actiontype)
 		 	ActionSkill_ZhaoshiTarget : Disable();
 		end
 
-	 	ActionSkill_Name : SetText( strName .."\n" .. "TÑc gi§n kÛ nång");
+	 	ActionSkill_Name : SetText( strName .."\n" .. "KÛ nång Nµ");
 
 	 	strName = Player:GetSkillInfo(nNuqiId,"explain");
 	 	strName2 = Player:GetSkillInfo(nNuqiId,"skilldata");

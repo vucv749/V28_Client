@@ -62,8 +62,8 @@ function Relive_OnEvent(event)
 	if ( event == "RELIVE_SHOW" ) then
 		if Relive_IsSpecialSceneResID() == 1 then  
 			Relive_Text:SetText("#{XSLDZ_180521_125}")
-			Question_Text:SetText("#gFF0FA0s¯ng lÕi");
-			Relive_Release_Button:SetText("H°i Dinh")
+			Question_Text:SetText("#gFF0FA0H°i sinh");
+			Relive_Release_Button:SetText("V« doanh trÕi")
 			Relive_Release_Button:Show()
 			Relive_Release_Button:Enable()
 			Relive_Time_Text : SetProperty("Timer",tostring(arg2)); 
@@ -116,9 +116,9 @@ function Relive_OnEvent(event)
 		Question_Close:Disable();
 		Current_status = 0;
 		Relive_Fool_Button:SetText("Tân thü");
-		Relive_Release_Button:SetText("Xu¤t khiªu");
-		Relive_Relive_Button:SetText("S¯ng lÕi"); 
-		Question_Text:SetText("#gFF0FA0s¯ng lÕi");
+		Relive_Release_Button:SetText("Ð¸a Phü");
+		Relive_Relive_Button:SetText("H°i sinh"); 
+		Question_Text:SetText("#gFF0FA0H°i sinh");
 		this:Show();
 		g_Event = Event_Relive;
 
@@ -134,12 +134,12 @@ function Relive_OnEvent(event)
 		
 	elseif ( event == "OPEN_CALLOF_PLAYER" )  then
 		
-		Relive_Text:SetText(arg0 .. "LÕp Nhî quá khÑ, có ð°ng ý hay không A?");
+		Relive_Text:SetText(arg0 .. "Kéo các hÕ ði, có ð°ng ý không?");
 			
-		Relive_Release_Button:SetText("Xác nh§n");
-		Relive_Relive_Button:SetText("Hüy bö");
+		Relive_Release_Button:SetText("Ð°ng ý");
+		Relive_Relive_Button:SetText("Hüy");
 
-		Question_Text:SetText("#gFF0FA0LÕp Nhân");
+		Question_Text:SetText("#gFF0FA0Kéo ngß¶i");
 
 		Relive_Time_Text:SetProperty("Timer",tostring( arg3 ));
 		this:Show()

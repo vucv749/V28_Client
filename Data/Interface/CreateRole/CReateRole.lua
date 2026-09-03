@@ -211,7 +211,7 @@ end
 function CreateRole_BnClickCreateRole()
 
 	if g_iFaceIndexInPage < 0 then          --by chengy TT52805
-		GameProduceLogin:GameLoginShowSystemInfo("Thïnh lña ch÷n hình cái ð¥u!");
+		GameProduceLogin:GameLoginShowSystemInfo("Hãy ch÷n hình!");
 		return;
 	end
 	g_iCurSelFaceIndex = g_FacePageCount * g_iFaceCountInPage + g_iFaceIndexInPage;

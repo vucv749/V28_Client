@@ -10,9 +10,9 @@ local g_DummyGemLayed = 0
 local g_DummyNewGem = 1
 
 local RuleTable = {
-	msgLackMoney = "Nhçm trên ngß¶i Ðích ti«n tài không ðü#{_EXCHG%d}.",
+	msgLackMoney = "Tài nguyên không ðü #{_EXCHG%d}. ",
 	maxGrade = 9,
-	msgGradeLimited = "Hþp thành Ðích bäo thÕch cao nh¤t c¤p b§c Vi C¤p 9, Nhçm Ðích bäo thÕch không th¬ tiªp tøc hþp thành.",
+	msgGradeLimited = "Bäo thÕch cao nh¤t là Lv9, không th¬ ghép næa.",
 	[1] = { SpecialStuff = 30900015, MoneyCost = 5000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 	[2] = { SpecialStuff = 30900015, MoneyCost = 6000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },
 	[3] = { SpecialStuff = 30900015, MoneyCost = 7000, CountTable = { [3] = { SuccOdds = 25, SuccOddsWithSpecStuff = 50, }, [4] = { SuccOdds = 50, SuccOddsWithSpecStuff = 75, }, [5] = { SuccOdds = 75, SuccOddsWithSpecStuff = 100, }, }, },

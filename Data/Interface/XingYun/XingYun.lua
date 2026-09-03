@@ -239,7 +239,7 @@ function XingYun_Close()
 	end
   --ÊÇ·ñÑ¡ÔñÍêµÄÅĞ¶Ï
   if(count < 3) then
-    PushDebugMessage("Nhçm Ğích Tß·ng còn không có Tr×u Hoàn Ni!");
+    PushDebugMessage("Các hÕ vçn chßa rút lá thåm này!");
     Clear_XSCRIPT();--????????
 		Set_XSCRIPT_Function_Name("PlayerTip");
 		Set_XSCRIPT_ScriptID(808071);
@@ -249,7 +249,7 @@ function XingYun_Close()
 	  return
 	end
 	
-	PushDebugMessage("Chúc m×ng Nhçm! Nhçm hôm nay Ğích'may m¡n khoái hoÕt Tam'Tr×u Tß·ng hoÕt ğµng ğã hoàn thành, Thïnh Nhçm tùy th¶i tìm ta lînh thß·ng cho!");
+	PushDebugMessage("Chúc m×ng các hÕ! Hôm nay các hÕ ğã rút lá thåm ThØ Tài V§n May thành công, các hÕ có th¬ tùy lúc ğªn g£p tÕi hÕ ğ¬ lînh nh§n ph¥n thß·ng.");
 	Clear_XSCRIPT();--????????
 		Set_XSCRIPT_Function_Name("PlayerTip");
 		Set_XSCRIPT_ScriptID(808071);

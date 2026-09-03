@@ -90,7 +90,7 @@ function LogonList_OnEvent(event)
 	--
 	if ( event == "OPEN_ENTERING_SCENE_DLG" ) then
 
-		AxTrace( 0,0, "Tá Khai trß¶ng cänh lña ch÷n Li®t Bi¬u");
+		AxTrace( 0,0, "M· danh sách ch÷n cänh");
 		AddEnterSceneInfo(tonumber(arg0));
 		this:Show();
 		return;

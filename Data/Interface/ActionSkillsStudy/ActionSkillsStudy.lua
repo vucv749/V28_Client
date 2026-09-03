@@ -121,7 +121,7 @@ function ActionSkillsStudy_OnEvent(event)
 	elseif(event == "UNIT_EXP") then
 
 		local nExpNow = Player:GetData("EXP");
-		ActionSkillsStudy_CurrentlyExp_Character_Text:SetText("EXP có:" .. tostring(nExpNow));
+		ActionSkillsStudy_CurrentlyExp_Character_Text:SetText("EXP có: " .. tostring(nExpNow));
 
 	-- ÈËÎïÉý¼¶
 	elseif(event == "UNIT_LEVEL") then
@@ -201,7 +201,7 @@ function ActionSkillsStudy_UpdateFrame()
 
 	--Íæ¼ÒÒÑ¾­È¡µÃµÄ¾­Ñé
 	local nExpNow = Player:GetData("EXP");
-	ActionSkillsStudy_CurrentlyExp_Character_Text:SetText("EXP có:" .. tostring(nExpNow));
+	ActionSkillsStudy_CurrentlyExp_Character_Text:SetText("EXP có: " .. tostring(nExpNow));
 
 	--¸üÐÂµ±Ç°Ñ¡ÖÐµÄÐÄ·¨µÄ¼¼ÄÜ
 	ActionSkillsStudy_Xinfa_Clicked(g_CurSelect);
@@ -302,7 +302,7 @@ function ActionSkillsStudy_XinfaInfo_Update( nIndex )--XinfaID
 	--ActionSkillsStudy_Icon_Silver_Demand_Text:SetText(tostring(nSilverCoin));
 	--ActionSkillsStudy_Icon_CopperCoin_Demand_Text:SetText(tostring(nCopperCoin));
 
-	ActionSkillsStudy_DemandExp_Character_Text:SetText("EXP c¥n:" .. tostring(nExp));
+	ActionSkillsStudy_DemandExp_Character_Text:SetText("EXP c¥n: " .. tostring(nExp));
 
 end
 
@@ -358,7 +358,7 @@ function ActionSkillsStudy_Xinfa_Clicked(nIndex)
 	local strInfo = Player:GetXinfaInfo(nXinfaId,"explain");
 
 	ActionSkillsStudy_SkillName:SetText(strName);
-	ActionSkillsStudy_SkillLevel:SetText("Trß¾c m£t c¤p b§c:".. nLevel);
+	ActionSkillsStudy_SkillLevel:SetText("C¤p hi®n tÕi: ".. nLevel);
 	ActionSkillsStudy_SkillInfo:SetText(strInfo);
 
 	--¸üÐÂ¼¼ÄÜ

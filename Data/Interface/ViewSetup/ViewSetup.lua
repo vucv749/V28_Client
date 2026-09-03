@@ -86,7 +86,7 @@ function ViewSetup_OnLoad()
 		end
 	end
 
-	ViewSetup_Item15:ComboBoxAddItem("-trß¾c m£t-", 0);
+	ViewSetup_Item15:ComboBoxAddItem("Có", 0);
 	ViewSetup_Item15:ComboBoxAddItem("800X600", 1);
 	ViewSetup_Item15:ComboBoxAddItem("1024X768", 2);
 	ViewSetup_Item15:ComboBoxAddItem("1280X720", 3);
@@ -458,7 +458,7 @@ function ViewSetup_YingYong_Clicked()
 	if tabinfo and settingByIndex[ctrlName].ctrl then bNeedReset2 = tonumber(SystemSetup:View_GetData(tabinfo.str)) ~= (tonumber(tabinfo.ctrl:GetCheck())); end
 
 	if(bNeedReset2) then
-		PushDebugMessage("Vuông góc ð°ng bµ c¥n Trùng Khäi");
+		PushDebugMessage("Vertical sync c¥n kh·i ðµng lÕi");
 	end
 
 	for i, v in pairs(allSettings) do 

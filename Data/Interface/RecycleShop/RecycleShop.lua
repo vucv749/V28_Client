@@ -102,7 +102,7 @@ function RecycleShop_InitDLG(idx)
 		RecycleShop_GetItem:Show();
 		RecycleShop_ReSetAD:Show();
 		RecycleShop_CancelItem:Show();
-		RecycleShop_DragTitle:SetText("#gFF0FA0Ngã Yêu thu mua Ðích tài li®u");
+		RecycleShop_DragTitle:SetText("#gFF0FA0Ta c¥n thu mua nguyên li®u");
 	else
 		for i =1 ,TotalNum do
 			RecycleItems[i]:SetProperty("DragAcceptName", "X"..tostring(i-1));
@@ -120,23 +120,23 @@ function RecycleShop_UpdateDLG(idx)
 	HaveNum = 0;
 	--µêÆÌÃû
 	local shopName = PlayerShop:GetRecycleShopName(idx);
-	RecycleShop_Name_Text:SetText("CØa hàng Danh:".. shopName);
+	RecycleShop_Name_Text:SetText("Tên ti®m: ".. shopName);
 
 	--µêÆÌID
 	local shopIndex = PlayerShop:GetRecycleShopIndex(idx)
 	if (tonumber(shopIndex) <= 0) then
-		RecycleShop_DPID_Text:SetText("CØa hàng ID:")
+		RecycleShop_DPID_Text:SetText("ID cØa ti®m:")
 	else
-		RecycleShop_DPID_Text:SetText("CØa hàng ID:" .. shopIndex)
+		RecycleShop_DPID_Text:SetText("ID cØa ti®m:" .. shopIndex)
 	end
 
 	--µêÖ÷	--¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:GetRecycleShopOwnerName(idx);
-	RecycleShop_Master_Text:SetChatString("#YðIªm chü: #{_INFOUSR".. szName .."}");
+	RecycleShop_Master_Text:SetChatString("#GChü ti®m: #{_INFOUSR".. szName .."}");
 	
 	--µêÖ÷ID
 	local szID = PlayerShop:GetRecycleShopOwnerID(idx);
-	RecycleShop_ID_Text:SetText("Ðiªm chü ID:"..szID);
+	RecycleShop_ID_Text:SetText("ID chü ti®m: "..szID);
 	for i=1, RECYCLEITEM_NUM    do
 		RecycleItems[i]:SetProperty("DraggingEnabled","False");
 	end
@@ -170,7 +170,7 @@ function RecycleShop_UpdateDLG(idx)
 		end
 	end
 	if(Count>0)then
-		RecycleShop_Name_Text9:SetText("Ðã thành công thu mua"..Count.."T± tài li®u");
+		RecycleShop_Name_Text9:SetText("Ðã thu mua thành công"..Count.."LoÕi nguyên li®u");
 	end
 end
 
@@ -180,7 +180,7 @@ function RecycleShop_AddNewItem_Click()
 		return
 	end
 	if(HaveNum>=TotalNum)then
-		PushDebugMessage("Không th¬ Tân Tång, Khä thu mua không gian Dî Mãn.")
+		PushDebugMessage("Không th¬ thêm m¾i, có th¬ không gian thu mua ðã ð¥y.")
 		return
 	end
 	PlayerShop:OpenSelectRecycleItemDLG(Type);
@@ -197,7 +197,7 @@ function RecycleShop_GetItem_Click()
 	local needToGet =  PlayerShop:GetRecycleItem(g_nCurSelectItem-1,Type,"needtoget");
 	local needToRec =  PlayerShop:GetRecycleItem(g_nCurSelectItem-1,Type,"needtorecycle");
 	if(needToGet == 0)then
-		PushDebugMessage("Nhçm thu mua Ðích tài li®u còn không có thu mua hoàn thành!")
+		PushDebugMessage("Nguyên li®u mà các hÕ thu mua vçn chßa thu mua xong!")
 		return
 	end
 	PlayerShop:SendTakeRecItemMsg(Type,g_nCurSelectItem-1);
@@ -213,7 +213,7 @@ function RecycleShop_CancelItem_Click()
 	end
 	local needToGet =  PlayerShop:GetRecycleItem(g_nCurSelectItem-1,Type,"needtoget");
 	if(needToGet > 0)then
-		PushDebugMessage("ThØ tài li®u thu mua Trung, không th¬ hüy bö, Thïnh l¤y ra Dî thu mua bµ ph§n Tái tiªn hành thao tác.")
+		PushDebugMessage("Trong thu mua nguyên li®u, không th¬ hüy bö, xin hãy l¤y v« bµ ph§n ðã thu mua r°i hãy tiªn hành thao tác")
 		return
 	end
 	PlayerShop:CancelRecItem(Type,g_nCurSelectItem-1);

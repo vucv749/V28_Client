@@ -283,7 +283,7 @@ local function SetSekuaiNum(num1,num2,num3,num4,num5,num6)
 
     for i = 1, 6 do
         if (table_temp[i] >= intmax or table_temp[i] < intmin) then
-            PushDebugMessage("Truy®n t¾i Ðích s¯ li®u có v¤n ð«.")
+            PushDebugMessage("Dæ li®u truy«n ðªn có v¤n ð«.")
             return 0
         end
     end

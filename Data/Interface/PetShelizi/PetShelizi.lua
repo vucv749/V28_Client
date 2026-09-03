@@ -153,7 +153,7 @@ function PetShelizi_OnSelectPet( PetIndex )
 	local strName , strName2 = Pet:GetName(Index_Pet)
 
 	if petGen == 1 then
-		strName2 = "–∂i th— 2"..petDBName;
+		strName2 = "–∂i th— 2 "..petDBName;
 	end
 
 	Pet_DBName = strName2

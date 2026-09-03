@@ -151,7 +151,7 @@ function PetMedicineHC_UpdateGoods(nUIPos, nGoodsIndex)
 	
 	PetMedicineHC_NeedMoney:SetProperty("MoneyNumber", tostring(g_ConsumeMoney))--?????????
 	PetMedicineHC_OK:Enable()
-	PetMedicineHC_SuccessValue:SetText("#cFF0000xác xu¤t thành công 100%")
+	PetMedicineHC_SuccessValue:SetText("#cFF0000Tï l® thành công 100%")
 	g_NotifyBind = 1
 end
 
@@ -179,7 +179,7 @@ function PetMedicineHC_CancelGoods(nGoodsIndex)
 		if isfindempty == 1 then
 			g_ConsumeMoney = -1
 			PetMedicineHC_OK:Disable()
-			PetMedicineHC_SuccessValue:SetText("Không th¬ hþp thành")
+			PetMedicineHC_SuccessValue:SetText("Không th¬ ghép")
 		end
 		
 	end
@@ -230,7 +230,7 @@ function PetMedicineHC_OK_Clicked()
 	
 	--ÊÇ·ñ½ðÇ®×ã¹»
 	if Player:GetData("MONEY")+Player:GetData("MONEY_JZ") < g_ConsumeMoney then
-		PushDebugMessage("#{JNHC_81015_18}#{_EXCHG"..g_ConsumeMoney.."}.")
+		PushDebugMessage("#{JNHC_81015_18}#{_EXCHG"..g_ConsumeMoney.."}")
 		return
 	end
 	

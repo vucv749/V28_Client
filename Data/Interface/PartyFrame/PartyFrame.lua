@@ -405,8 +405,8 @@ function Show_Team_Member_Info_Func(index)
 		Show_Leader_Flag_Func();
 
 		-- ÉèÖÃtooltips
-		local bDead = "Sai";
-		local bDeadLink = "Sai";
+		local bDead = "Không";
+		local bDeadLink = "Không";
 
 		Portrait_ToolTips[index]:SetProperty("Image", "set:PlayerFrame_Icon image:Icon_xiaoyao");
 		Portrait_ToolTips[index]:SetProperty("Image", strIconIndex);
@@ -422,9 +422,9 @@ function Show_Team_Member_Info_Func(index)
 		--	Portrait_ToolTips[index]:SetProperty("Image", "set:TeamFrame5 image:Downline_Icon");
 		--end
 
-		AxTrace( 0,0, "Nh§n ðßþc Ðµi Hæu tin tÑc xong!" .. tostring(index));
+		AxTrace( 0,0, "Ðã nh§n xong tin tÑc bÕn cùng ðµi!" .. tostring(index));
 		if(0 ~= Dead) then
-			bDead = "Ðúng"
+			bDead = "Có"
 			--Portrait_ToolTips[tonumber(index)]:Disable();
 			Porttrait_Mask[index]:Show();
 		else
@@ -438,7 +438,7 @@ function Show_Team_Member_Info_Func(index)
 			UnLink_flag[tonumber(index)]:Hide();
 		else
 
-			bDeadLink = "Ðúng"
+			bDeadLink = "Có"
 			UnLink_flag[tonumber(index)]:Show();
 		end
 
@@ -488,21 +488,21 @@ function Show_Team_Member_Info_Func(index)
 			strMenPai = "Thiên S½n";
 
 		elseif(8 == Fammily) then
-			strMenPai = "Tiêu dao";
+			strMenPai = "Tiêu Dao";
 
 		elseif(9 == Fammily) then
 			strMenPai = "Tñ do";
 
 		elseif(10== Fammily) then
-			strMenPai = "MÕn Ðà S½n Trang";
+			strMenPai = "Mµ Dung";
 
 		end
 
 		local strInfo = tostring(MemberName)
 		      					.. "\n"
 										.. tostring(strMenPai).."  "
-										.. tostring(Level).. "C¤p"
-										.. "\\nch², n½i Ð¸a:"
+										.. tostring(Level).. " c¤p"
+										.. "\nÐang ·: "
 										.. ScenceName;
 
 
@@ -511,7 +511,7 @@ function Show_Team_Member_Info_Func(index)
 		if(-1 == HPValue) then
 
 			-- ¿ç³¡¾°µÄÇé¿ö¡£
-			PARTY_HP[index]:SetToolTip("Không biªt");
+			PARTY_HP[index]:SetToolTip("Chßa rõ");
 		else
 
 			PARTY_HP[index]:SetToolTip(tostring(HPValue).."/"..tostring(HPMax));

@@ -38,7 +38,7 @@ end
 function ChatSpeaker_Open()
 	local level = Player:GetData("LEVEL");
 	if level < LEVEL_LIMIT then
-		PushDebugMessage("C¤p cüa các hÕ chßa ðü c¤p 15, không th¬ sØ døng LÕt Bá.");
+		PushDebugMessage("C¤p cüa các hÕ chßa ðü Lv15, không th¬ sØ døng LÕt Bá.");
 		return;
 	end
 	ChatSpeaker_Edit:SetProperty("DefaultEditBox", "True");

@@ -336,7 +336,7 @@ function SongliaoWarOver_Frame_Draw(g_Final)
 
 		if g_Final == 0 then
 			ItemBar:Setm_newTextShow(6)
-			ItemBar:Setm_newText(6,"Chﬂa ph‚n th°ng b’i")
+			ItemBar:Setm_newText(6,"Chﬂa cÛ")
 		elseif g_Final == 1 then
 			ItemBar:Setm_newTextHide(6)
 		end
@@ -502,7 +502,7 @@ function SongliaoWarOver_Frame_Draw(g_Final)
 
 	if g_Final == 0 then
 		SongliaoWarOver_NoEnd:Show()
-		SongliaoWarOver_NoEnd:SetText("Chﬂa ph‚n th°ng b’i")
+		SongliaoWarOver_NoEnd:SetText("Chﬂa cÛ")
 		SongliaoWarOver_SelfButton5:Hide()
 		SongliaoWarOver_SelfButton6:Hide()
 	elseif g_Final == 1 then
@@ -658,7 +658,7 @@ function SongliaoWarOver_Frame_Draw(g_Final)
 
 	if ( g_select == 1 and myCamp == 156 ) or ( g_select == 0 and myCamp == 157 ) then
 	else
-		SongliaoWarOver_SelfRank:SetText("VÙ b‡i danh")
+		SongliaoWarOver_SelfRank:SetText("KhÙng cÛ")
 		SongliaoWarOver_SelfRankImage:Hide()
 	end
 

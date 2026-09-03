@@ -33,20 +33,20 @@ local g_ZhanJiangHu_AhieveIdData =
 {
 	--³õ°Ë
 	[1]  = 	{EventId=1,	NeedValue = 100,FuValue=1,HFStateBit=0,Pos={},Tips="#{CJYJ_201222_98}",Desc="#{CJYJ_201222_12}",ToolTips="#{CJYJ_201222_52}",},   --??100???
-	[2]  = 	{EventId=11,NeedValue = 1,	FuValue=1,HFStateBit=1,Pos={sceneId=2,x=274,z=95,npcName="Trß½ng D¸ch Qu¯c"},Tips="",Desc="#{CJYJ_201222_13}",ToolTips="#{CJYJ_201222_53}",},	 	--??1???
+	[2]  = 	{EventId=11,NeedValue = 1,	FuValue=1,HFStateBit=1,Pos={sceneId=2,x=274,z=95,npcName="Lßu Tr÷ng Phü"},Tips="",Desc="#{CJYJ_201222_13}",ToolTips="#{CJYJ_201222_53}",},	 	--²Î¼Ó1´ÎÆå¾Ö
 	[3]  = 	{EventId=13,NeedValue = 1,	FuValue=1,HFStateBit=2,Pos={sceneId=1,x=129,z=213,npcName="Tä Ð°ng"},Tips="",Desc="#{CJYJ_201222_14}",ToolTips="#{CJYJ_201222_54}",},		--??1?????	 
 	[4]  = 	{EventId=6,	NeedValue = 1,	FuValue=1,HFStateBit=3,Pos={sceneId=1,x=130,z=230,npcName="Li­u Nguy®t H°ng"},Tips="",Desc="#{CJYJ_201222_15}",ToolTips="#{CJYJ_201222_55}",},	 		--??1????????
 	[5]  = 	{EventId=2,	NeedValue = 5,	FuValue=1,HFStateBit=4,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_16}",ToolTips="#{CJYJ_201222_56}",},	 		--??5?????
 	--³õ¾Å
 	[6]  = 	{EventId=1,	NeedValue = 500,FuValue=1,HFStateBit=5,Pos={},Tips="#{CJYJ_201222_99}",Desc="#{CJYJ_201222_17}",ToolTips="#{CJYJ_201222_57}",},	 	--??500???
 	[7]  = 	{EventId=4,	NeedValue = 5,	FuValue=1,HFStateBit=6,Pos={sceneId=1,x=62,z=162,npcName="Ti«n Hoành Vû"},Tips="",Desc="#{CJYJ_201222_18}",ToolTips="#{CJYJ_201222_58}",},	 		--??5????
-	[8]  = 	{EventId=14,NeedValue = 1,	FuValue=1,HFStateBit=7,Pos={sceneId=260,x=150,z=152,npcName="Lí Dã"},Tips="",Desc="#{CJYJ_201222_19}",ToolTips="#{CJYJ_201222_59}",},		--??1????????
+	[8]  = 	{EventId=14,NeedValue = 1,	FuValue=1,HFStateBit=7,Pos={sceneId=260,x=150,z=152,npcName="Lý Dã"},Tips="",Desc="#{CJYJ_201222_19}",ToolTips="#{CJYJ_201222_59}",},		--Íê³É1´Î·ï»Ë¹Å³ÇÕù¶áÕ½
 	[9]  = 	{EventId=3,	NeedValue = 1,	FuValue=1,HFStateBit=8,Pos={sceneId=5,x=199,z=54,npcName="T« Sát Vân"},Tips="",Desc="#{CJYJ_201222_20}",ToolTips="#{CJYJ_201222_60}",},	 		--??1?????
 	[10] = 	{EventId=2,	NeedValue = 10,	FuValue=1,HFStateBit=9,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_21}",ToolTips="#{CJYJ_201222_61}",},		--??10?????
 	--³õÊ®
 	[11] = 	{EventId=1,	NeedValue = 1000,FuValue=1,HFStateBit=10,Pos={},Tips="#{CJYJ_201222_100}",Desc="#{CJYJ_201222_22}",ToolTips="#{CJYJ_201222_62}",},	--??1000???
-	[12] = 	{EventId=11,NeedValue = 2,	FuValue=1,HFStateBit=11,Pos={sceneId=2,x=274,z=95,npcName="Trß½ng D¸ch Qu¯c"},Tips="",Desc="#{CJYJ_201222_23}",ToolTips="#{CJYJ_201222_63}",},	 	--??2???
-	[13] =  {EventId=7,	NeedValue = 1,	FuValue=1,HFStateBit=12,Pos={sceneId=1,x=187,z=147,npcName="Vu Sänh Sänh"},Tips="",Desc="#{CJYJ_201222_24}",ToolTips="#{CJYJ_201222_64}",},	 		--??1???
+	[12] = 	{EventId=11,NeedValue = 2,	FuValue=1,HFStateBit=11,Pos={sceneId=2,x=274,z=95,npcName="Lßu Tr÷ng Phü"},Tips="",Desc="#{CJYJ_201222_23}",ToolTips="#{CJYJ_201222_63}",},	 	--²Î¼Ó2´ÎÆå¾Ö
+	[13] =  {EventId=7,	NeedValue = 1,	FuValue=1,HFStateBit=12,Pos={sceneId=1,x=187,z=147,npcName="Vu Thiên Thiên"},Tips="",Desc="#{CJYJ_201222_24}",ToolTips="#{CJYJ_201222_64}",},	 		--Íê³É1´Îõí¾Ï
 	[14] =  {EventId=6,	NeedValue = 2,	FuValue=1,HFStateBit=13,Pos={sceneId=1,x=130,z=230,npcName="Li­u Nguy®t H°ng"},Tips="",Desc="#{CJYJ_201222_25}",ToolTips="#{CJYJ_201222_65}",},			--??2????????
 	[15] =  {EventId=5,	NeedValue = 3,	FuValue=1,HFStateBit=14,Pos={sceneId=4,x=70,z=119,npcName="Lý Cß½ng"},Tips="",Desc="#{CJYJ_201222_26}",ToolTips="#{CJYJ_201222_66}",},			--??3???
 	--Ê®Ò»
@@ -57,7 +57,7 @@ local g_ZhanJiangHu_AhieveIdData =
 	[20] = 	{EventId=15,NeedValue = 1,	FuValue=1,HFStateBit=19,Pos={sceneId=0,x=194,z=180,npcName="Gia Cát Kh±ng Minh"},Tips="",Desc="#{CJYJ_201222_31}",ToolTips="#{CJYJ_201222_71}",},	 	--??1?????
 	--Ê®¶þ
 	[21] = 	{EventId=1,	NeedValue = 2000,FuValue=1,HFStateBit=20,Pos={},Tips="#{CJYJ_201222_102}",Desc="#{CJYJ_201222_32}",ToolTips="#{CJYJ_201222_72}",},   --??2000???
-	[22] = 	{EventId=11,NeedValue = 3,	FuValue=1,HFStateBit=21,Pos={sceneId=2,x=274,z=95,npcName="Trß½ng D¸ch Qu¯c"},Tips="",Desc="#{CJYJ_201222_33}",ToolTips="#{CJYJ_201222_73}",},    --??3???
+	[22] = 	{EventId=11,NeedValue = 3,	FuValue=1,HFStateBit=21,Pos={sceneId=2,x=274,z=95,npcName="Lßu Tr÷ng Phü"},Tips="",Desc="#{CJYJ_201222_33}",ToolTips="#{CJYJ_201222_73}",},    --Íê³É3´ÎÆå¾Ö
 	[23] = 	{EventId=8,	NeedValue = 1,	FuValue=1,HFStateBit=22,Pos={sceneId=1,x=193,z=138,npcName="Tô Kiªm Lînh"},Tips="",Desc="#{CJYJ_201222_34}",ToolTips="#{CJYJ_201222_74}",},   	--??1?????
 	[24] = 	{EventId=12,NeedValue = 4,	FuValue=1,HFStateBit=23,Pos={sceneId=246,x=193,z=224,npcName="Trình Thanh Sß½ng"},Tips="",Desc="#{CJYJ_201222_35}",ToolTips="#{CJYJ_201222_75}",},		--??4???
 	[25] = 	{EventId=2,	NeedValue = 15,	FuValue=1,HFStateBit=24,Pos={},Tips="#{CJYJ_201222_114}",Desc="#{CJYJ_201222_36}",ToolTips="#{CJYJ_201222_76}",},	 	--??15?????
@@ -66,11 +66,11 @@ local g_ZhanJiangHu_AhieveIdData =
 	[27] = 	{EventId=9,	NeedValue = 1,	FuValue=1,HFStateBit=26,Pos={sceneId=1,x=173,z=130,npcName="Tùy Báo Minh"},Tips="",Desc="#{CJYJ_201222_38}",ToolTips="#{CJYJ_201222_78}",},    	--??1?????
 	[28] =  {EventId=10,NeedValue = 1,	FuValue=1,HFStateBit=27,Pos={sceneId=1,x=186,z=182,npcName="Lß½ng ÐÕo Sî"},Tips="",Desc="#{CJYJ_201222_39}",ToolTips="#{CJYJ_201222_79}",},	 	--??1?????
 	[29] =  {EventId=6,	NeedValue = 4,	FuValue=1,HFStateBit=28,Pos={sceneId=1,x=130,z=230,npcName="Li­u Nguy®t H°ng"},Tips="",Desc="#{CJYJ_201222_40}",ToolTips="#{CJYJ_201222_80}",},	 		--??4????????
-	[30] = 	{EventId=14,NeedValue = 2,	FuValue=1,HFStateBit=29,Pos={sceneId=260,x=150,z=152,npcName="Lí Dã"},Tips="",Desc="#{CJYJ_201222_41}",ToolTips="#{CJYJ_201222_81}",},		--??2????????
+	[30] = 	{EventId=14,NeedValue = 2,	FuValue=1,HFStateBit=29,Pos={sceneId=260,x=150,z=152,npcName="Lý Dã"},Tips="",Desc="#{CJYJ_201222_41}",ToolTips="#{CJYJ_201222_81}",},		--Íê³É2´Î·ï»Ë¹Å³ÇÕù¶áÕ½
   --Ê®ËÄ	
 	[31] = 	{EventId=1,	NeedValue = 3000,FuValue=1,HFStateBit=30,Pos={},Tips="#{CJYJ_201222_104}",Desc="#{CJYJ_201222_42}",ToolTips="#{CJYJ_201222_82}",},   --??3000???
 	[32] = 	{EventId=4,	NeedValue = 15,	FuValue=1,HFStateBit=31,Pos={sceneId=1,x=62,z=162,npcName="Ti«n Hoành Vû"},Tips="",Desc="#{CJYJ_201222_43}",ToolTips="#{CJYJ_201222_83}",},    --??15????
-	[33] = 	{EventId=11,NeedValue = 4,	FuValue=1,HFStateBit=32,Pos={sceneId=2,x=274,z=95,npcName="Trß½ng D¸ch Qu¯c"},Tips="",Desc="#{CJYJ_201222_44}",ToolTips="#{CJYJ_201222_84}",},   	--??4???
+	[33] = 	{EventId=11,NeedValue = 4,	FuValue=1,HFStateBit=32,Pos={sceneId=2,x=274,z=95,npcName="Lßu Tr÷ng Phü"},Tips="",Desc="#{CJYJ_201222_44}",ToolTips="#{CJYJ_201222_84}",},   	--Íê³É4´ÎÆå¾Ö
 	[34] =  {EventId=5,	NeedValue = 6,	FuValue=1,HFStateBit=33,Pos={sceneId=4,x=70,z=119,npcName="Lý Cß½ng"},Tips="",Desc="#{CJYJ_201222_45}",ToolTips="#{CJYJ_201222_85}",},	 		--??6???
 	[35] = 	{EventId=15,NeedValue = 2,	FuValue=1,HFStateBit=34,Pos={sceneId=0,x=194,z=180,npcName="Gia Cát Kh±ng Minh"},Tips="",Desc="#{CJYJ_201222_46}",ToolTips="#{CJYJ_201222_86}",},		--??2?????
 	--Ê®Îå

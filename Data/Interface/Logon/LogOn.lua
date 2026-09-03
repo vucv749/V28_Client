@@ -10,9 +10,9 @@ local TailName ={
 		"@chinaren.com",
 		"@sogou.com",
 		"@17173.com",
-		"S¯ ði®n thoÕi di ðµng ðång ký",
-		"Ðßa vào m£t khác tài khoän h§u t¯",
-		"Vô h§u t¯ tài khoän ðång ký",
+		"Ðång nh§p SÐT",
+		"Nh§p h§u t¯ tài khoän khác",
+		"Không ðång nh§p h§u t¯",
 		}
 
 local g_bLogOnMode;
@@ -302,7 +302,7 @@ function LogOn_CheckWeGameAccount()
 end
 
 function LogOn_LogOnWeGame_MouseEnter()
-	LogOn_Info:SetText("Ði¬m Kích Ðång Nh§p trò ch½i");
+	LogOn_Info:SetText("Nh¤p vào trò ch½i");
 end
 
 ----------------------------------------------------------------------------------------------------------
@@ -400,27 +400,27 @@ end
 
 function LogOn_LogOnGame_MouseEnter()
 
-	LogOn_Info:SetText("Ði¬m Kích Ðång Nh§p trò ch½i");
+	LogOn_Info:SetText("Nh¤p vào trò ch½i");
 end;
 
 function LogOn_Payment_MouseEnter()
 
-	LogOn_Info:SetText("Vi Nhçm Ðích tài khoän Sung Tr¸");  --??  to  ??
+	LogOn_Info:SetText("NÕp vào tài khoän cüa các hÕ");  --ÕÊºÅ  to  ÕËºÅ
 end
 
 function LogOn_RequisitionID_MouseEnter()
 
-	LogOn_Info:SetText("Xin mµt cái nþ m¾i Hào");	--??  to  ??
+	LogOn_Info:SetText("Ðång ký tài khoän m¾i");	--ÕÊºÅ  to  ÕËºÅ
 end;
 
 function LogOn_Author_MouseEnter()
 
-	LogOn_Info:SetText("Xem xét trò ch½i khai phá ðoàn ðµi tin tÑc");
+	LogOn_Info:SetText("Xem tin nhóm phát hành");
 end;
 
 function LogOn_Last_MouseEnter()
 
-	LogOn_Info:SetText("Phän h°i phøc vø Khí lña ch÷n Li®t Bi¬u");
+	LogOn_Info:SetText("Tr· v« bäng ch÷n máy chü");
 end;
 
 function LogOn_LogonID_Active()

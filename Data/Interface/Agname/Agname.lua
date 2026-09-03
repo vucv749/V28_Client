@@ -584,7 +584,7 @@ end
 
 function Agname_HideTitle_Clicked()
 
-	Agname_Currently:SetText( "Trß¾c m£t danh hi®u:");
+	Agname_Currently:SetText( "Danh hi®u hi®n tÕi: ");
 	Player:SetNullAgname();
 end
 

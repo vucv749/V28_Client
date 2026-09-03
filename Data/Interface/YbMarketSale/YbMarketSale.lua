@@ -270,7 +270,7 @@ function YbMarketSale_Update()
 				YbMarketSale_ALLItem[i]:SetProperty("NormalImage", tostring(strHead) )
 				local nEra = Auction:GetPetEraCount(i - 1 , 1)
 				if nEra == 1 then
-					pName = "–∂i th— 2"..pName
+					pName = "–∂i th— 2 "..pName
 				end
 				YbMarketSale_ALLName[i]:SetText(tostring(pName))
 				YbMarketSale_ALLPrice[i]:SetText(tostring(price).."#{TLBC_090617_11}")

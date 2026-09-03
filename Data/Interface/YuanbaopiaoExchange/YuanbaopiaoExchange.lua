@@ -58,7 +58,7 @@ end
 function YuanbaopiaoExchange_Update()
 	YuanbaopiaoExchange_Moral_Value:SetProperty("DefaultEditBox", "True");
 	YuanbaopiaoExchange_Moral_Value:SetSelected( 0, -1 );
-	YuanbaopiaoExchange_Text1 : SetText("KNB còn:"..tostring(Player:GetData("YUANBAO")))
+	YuanbaopiaoExchange_Text1 : SetText("KNB còn: "..tostring(Player:GetData("YUANBAO")))
 end
 
 function YuanbaopiaoExchange_OK_Clicked()
@@ -75,14 +75,14 @@ function YuanbaopiaoExchange_OK_Clicked()
 	end
 	
 	if tonumber(str) < 0 or tonumber(str) > 50000 then
-		PushDebugMessage("M²i Trß½ng Nguyên Bäo Phiªu l¾n nh¤t m£t trán Vi 50000.");
+		PushDebugMessage("Tr¸ giá l¾n nh¤t cüa Phiªu KNB là 50000.");
 		YuanbaopiaoExchange_Moral_Value : SetTextOriginal("50000");
 		return
 	end
 	
 	local ret = Player:YuanBaoToTicket(tonumber(str));
 	if(-1 == ret) then
-		PushDebugMessage("S¯ ngân lßþng các hÕ nh§p vào sai.");
+		PushDebugMessage("S¯ KNB các hÕ nh§p vào không ðúng.");
 	else
 	--	YuanbaopiaoExchange_Close();
 		YuanbaopiaoExchange_Update()

@@ -4,28 +4,28 @@ local g_Icon = "";
 
 local Max_BtnNum = 10;
 local PetNames = {
-	"Trân Thú trß·ng thành",
+	"Trân Thú Trß·ng Thành",
 	"Trân Thú Bäo Bäo",
-	"Biªn d¸ c¤p 1",
-	"Biªn d¸ c¤p 2",
-	"Biªn d¸ c¤p 3",
-	"Biªn d¸ c¤p 4",
-	"Biªn d¸ c¤p 5",
-	"Biªn d¸ c¤p 6",
-	"Biªn d¸ c¤p 7",
-	"Biªn d¸ c¤p 8",
+	"Biªn d¸ Lv1",
+	"Biªn d¸ Lv2",
+	"Biªn d¸ Lv3",
+	"Biªn d¸ Lv4",
+	"Biªn d¸ Lv5",
+	"Biªn d¸ Lv6",
+	"Biªn d¸ Lv7",
+	"Biªn d¸ Lv8",
 };
 local PetNames_HH = {
-	"Biªn äo Trân Thú 1",
-	"Biªn äo Trân Thú 2",
-	"Biªn äo Trân Thú 3",
-	"Biªn äo Trân Thú 4",
-	"Biªn äo Trân Thú 5",
-	"Biªn äo Trân Thú 6",
-	"Biªn äo Trân Thú 7",
-	"Biªn äo Trân Thú 8",
-	"Biªn äo Trân Thú 9",
-	"Biªn äo Trân Thú 10",
+	"Äo Hóa Trân Thú 1",
+	"Äo Hóa Trân Thú 2",
+	"Äo Hóa Trân Thú 3",
+	"Äo Hóa Trân Thú 4",
+	"Äo Hóa Trân Thú 5",
+	"Äo Hóa Trân Thú 6",
+	"Äo Hóa Trân Thú 7",
+	"Äo Hóa Trân Thú 8",
+	"Äo Hóa Trân Thú 9",
+	"Äo Hóa Trân Thú 10",
 };
 
 -- ½çÃæµÄÄ¬ÈÏÏà¶ÔÎ»ÖÃ
@@ -134,7 +134,7 @@ function PetJian_Onshow()
 	else
 		strNeedLevelColor ="#c00FF00";
 	end
-	local strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
+	local strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).." c¤p#W mang theo";
 	PetJian_NeedLevel:SetText( strNeedLevel );
 	-----------------------------------------------------
 	--get AttackTrait (ÔÝÈ±)
@@ -156,7 +156,7 @@ function PetJian_Onshow()
 		end
 	end
 	if(food >= 100) then
-		strName = strName .. "Thäo";
+		strName = strName .. "Cö";
 		food = food - 100;
 		if food > 0 then
 			strName = strName .. ",";

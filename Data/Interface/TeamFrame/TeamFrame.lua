@@ -178,9 +178,9 @@ function Team_Frame_OnLoad()
 	Team_Downline_Icon5:Hide();
 	Team_Downline_Icon6:Hide();
 
-	Team_Exp_Mode:ComboBoxAddItem( "Chia ð«u phân ph¯i", 0 );
-	Team_Exp_Mode:ComboBoxAddItem( "Ð«u tñ phân ph¯i", 1 );
-	Team_Exp_Mode:ComboBoxAddItem( "Thu¥n Thú hình thÑc", 2 );
+	Team_Exp_Mode:ComboBoxAddItem( "Chia ð«u", 0 );
+	Team_Exp_Mode:ComboBoxAddItem( "Cá nhân", 1 );
+	Team_Exp_Mode:ComboBoxAddItem( "Thu¥n thú", 2 );
 
 end
 
@@ -281,7 +281,7 @@ function Team_Frame_OnEvent(event)
 		HideUIModelDisable();
 		-- µÃµ½´ò¿ªµÄ¶Ô»°¿òµÄÏÔÊ¾ÀàÐÍ.
 		local iShow = tonumber(arg0);
-		AxTrace( 0,0, "Ðµi ngû Tá Khai loÕi hình ==="..tostring(g_iTeamInfoType).."   "..tostring( iShow ));
+		AxTrace( 0,0, "LoÕi ðµi m·???"..tostring(g_iTeamInfoType).."   "..tostring( iShow ));
 		if(-1 == iShow) then
 
 			Team_Close();
@@ -888,7 +888,7 @@ function Team_Button_Frame4_Click()
 
 			if((-1 == g_iSel) or (0 == g_iSel))then
 
-				AxTrace( 0,0, "Nhâm m®nh ðµi trß·ng"..tostring(g_iSel));
+				AxTrace( 0,0, "Chuy¬n ÐT"..tostring(g_iSel));
 				-- Èç¹ûÔÚ½çÃæÉÏÃ»ÓÐÑ¡ÔñÒ»¸ö¶ÓÔ±¾Í·µ»Ø
 				-- »ò ßÑ¡ÖÐµÄÊÇ×Ô¼º(¶Ó³¤), Ò²·µ»Ø.
 
@@ -898,11 +898,11 @@ function Team_Button_Frame4_Click()
 
 			if( iTeamCount <= g_iSel) then
 
-				AxTrace( 0,0, "Nhâm m®nh ðµi trß·ng"..tostring(g_iSel).."  "..tostring(iTeamCount));
+				AxTrace( 0,0, "Chuy¬n ÐT"..tostring(g_iSel).."  "..tostring(iTeamCount));
 				return;
 			end;
 
-			AxTrace( 0,0, "Nhâm m®nh ðµi trß·ng"..tostring(g_iSel));
+			AxTrace( 0,0, "Chuy¬n ÐT"..tostring(g_iSel));
 			-- ÌáÉý¶Ó³¤.
 			-- Player:AppointLeader();
 			Player:AppointLeader(g_iRealSelTeamMemberIndex);
@@ -1114,11 +1114,11 @@ function TeamFrame_OpenTeamInfo()
 		Team_Button_Frame4:Enable();
 		Team_Button_Frame7:Enable();
 		Team_Button_Frame6:Enable();
-		Team_Button_Frame4:SetText("R¶i ði ðµi ngû");
-		Team_Button_Frame7:SetText("Gia cho thöa ðáng Hæu");
-		Team_Button_Frame6:SetText("M¶i các\\u0020hÕ t¯t");
+		Team_Button_Frame4:SetText("R¶i");
+		Team_Button_Frame7:SetText("Kªt bÕn");
+		Team_Button_Frame6:SetText("Thêm bÕn");
 		Team_Button_Frame7:SetToolTip("");--???????tooltips
-		Team_Name:SetText("#gFF0FA0ðµi ngû tin tÑc");
+		Team_Name:SetText("#gFF0FA0Nhóm");
 
 		--if (TeamFrame_CanOpenTeamBoard() == 1) then
 		--	Team_Button_Frame5:Show();
@@ -1200,8 +1200,8 @@ function TeamFrame_OpenCreateTeamSelf()
 		-- ÉèÖÃ°´Å¥ÎÄ×Ö
 		Team_Button_Frame6:Show();
 		Team_Button_Frame6:Enable();
-		Team_Button_Frame6:SetText("Tñ Kiªn ðµi ngû");
-		Team_Name:SetText("#gFF0FA0Tñ Kiªn ðµi ngû");
+		Team_Button_Frame6:SetText("TÕo ðµi");
+		Team_Name:SetText("#gFF0FA0TÕo nhóm");
 
 		--if (TeamFrame_CanOpenTeamBoard() == 1) then
 		--	Team_Button_Frame5:Show()
@@ -1278,15 +1278,15 @@ function TeamFrame_OpenApplyList()
 	Team_Button_Frame6:Disable();
 	Team_Button_Frame7:Disable();
 
-	Team_Button_Frame1:SetText("Ðµi ngû tin tÑc");
-	Team_Button_Frame2:SetText("Thßþng mµt t¶");
-	Team_Button_Frame3:SetText("Tiªp theo Di®p");
-	Team_Button_Frame4:SetText("Thanh Không Li®t Bi¬u");
-	Team_Button_Frame5:SetText("Ð°ng ý xin");
-	Team_Button_Frame6:SetText("Cñ tuy®t xin");
-	Team_Button_Frame7:SetText("CØ Báo");
-	Team_Button_Frame7:SetToolTip("Ði¬m Kích H§u Hµi Tß¾ng m¶i Giä tñ ðµng CØ Báo Tính ðem gia nh§p che ch¡n Li®t Bi¬u, che ch¡n H§u Tß¾ng không th¬ thu ðßþc ðªn t× Cai ngß¶i ch½i Ðích ðàm ðÕo tin tÑc Hoà t± ðµi m¶i.");
-	Team_Name:SetText("#gFF0FA0xin Li®t Bi¬u");
+	Team_Button_Frame1:SetText("Th.tin ðµi");
+	Team_Button_Frame2:SetText("Trß¾c");
+	Team_Button_Frame3:SetText("Sau");
+	Team_Button_Frame4:SetText("Xóa");
+	Team_Button_Frame5:SetText("Ð°ng ý");
+	Team_Button_Frame6:SetText("T× ch¯i");
+	Team_Button_Frame7:SetText("T¯ cáo");
+	Team_Button_Frame7:SetToolTip("Nh¤p ch÷n s¨ tñ ðµng khiªn ngß¶i m¶i tñ ðµng t¯ cáo và thêm vào danh sách ch£n, sau khi ch£n không th¬ nh§n ðßþc tin chát và m¶i t± ðµi.");
+	Team_Name:SetText("#gFF0FA0Xin vào");
 
 
 	-- µÃµ½ÉêÇëÈËµÄ¸öÊý.
@@ -1365,13 +1365,13 @@ function TeamFrame_OpenInvite()
 	Team_Button_Frame6:Enable();
 	Team_Button_Frame7:Enable();
 
-	Team_Button_Frame3:SetText("Thßþng mµt t¶");
-	Team_Button_Frame4:SetText("Tiªp theo Di®p");
-	Team_Button_Frame5:SetText("Ð°ng ý m¶i");
-	Team_Button_Frame6:SetText("Cñ tuy®t m¶i");
+	Team_Button_Frame3:SetText("Trß¾c");
+	Team_Button_Frame4:SetText("Sau");
+	Team_Button_Frame5:SetText("Ð°ng ý");
+	Team_Button_Frame6:SetText("T× ch¯i");
 	Team_Button_Frame7:SetText("CØ Báo");
 	Team_Button_Frame7:SetToolTip("Ði¬m Kích H§u Hµi Tß¾ng m¶i Giä tñ ðµng CØ Báo Tính ðem gia nh§p che ch¡n Li®t Bi¬u, che ch¡n H§u Tß¾ng không th¬ thu ðßþc ðªn t× Cai ngß¶i ch½i Ðích ðàm ðÕo tin tÑc Hoà t± ðµi m¶i.");
-	Team_Name:SetText("#gFF0FA0m¶i ð¯i thoÕi Khuông");
+	Team_Name:SetText("#gFF0FA0M¶i nhóm");
 
 	-- µÃµ½ÑûÇë¶ÓÎéµÄ¸öÊý.
 	g_iTeamCount_Invite   = DataPool:GetInviteTeamCount();
@@ -1467,15 +1467,15 @@ function TeamFrame_OpenLeaderTeamInfo()
 	Team_Button_Frame7:Enable();
 	Team_Button_Frame6:Enable();
 
-	Team_Button_Frame0:SetText("Xin Li®t Bi¬u");
-	Team_Button_Frame1:SetText("Giäi tán ðµi ngû");
-	Team_Button_Frame2:SetText("R¶i ði ðµi ngû");
-	Team_Button_Frame3:SetText("Thïnh r¶i khöi ð½n v¸ Ngû");
-	Team_Button_Frame4:SetText("Nhâm m®nh ðµi trß·ng");
-	Team_Button_Frame7:SetText("Gia cho thöa ðáng Hæu");
-	Team_Button_Frame6:SetText("M¶i các\\u0020hÕ t¯t");
+	Team_Button_Frame0:SetText("Xin vào");
+	Team_Button_Frame1:SetText("Giäi tán");
+	Team_Button_Frame2:SetText("R¶i");
+	Team_Button_Frame3:SetText("M¶i ra");
+	Team_Button_Frame4:SetText("Chuy¬n ÐT");
+	Team_Button_Frame7:SetText("Kªt bÕn");
+	Team_Button_Frame6:SetText("Thêm bÕn");
 	Team_Button_Frame7:SetToolTip("");--???????tooltips
-	Team_Name:SetText("#gFF0FA0ðµi ngû tin tÑc");
+	Team_Name:SetText("#gFF0FA0Nhóm");
 
 	--if(TeamFrame_CanOpenTeamBoard() == 1) then
 	--	Team_Button_Frame5:Show();
@@ -2224,13 +2224,13 @@ function ShowFamily(MemIndex, Family)
 		strName = "Thiên S½n";
 
 	elseif(8 == Family) then
-		strName = "Tiêu dao";
+		strName = "Tiêu Dao";
 
 	elseif(9 == Family) then
 		strName = "Tñ do";
 
 	elseif(10== Family) then
-		strName = "MÕn Ðà";
+		strName = "Mµ Dung";
 
 	end
 
@@ -2437,11 +2437,11 @@ function Team_Update_ExpMode( isTeam )
 	AxTrace( 0,0, "update expmode = "..tostring( expMode ).." Leader = "..tostring( isLeader ) );
 	if( tonumber( isLeader ) == 0 ) then --????
 		if( expMode == 1 ) then
-			Team_Exp_Mode_Text:SetText( "Ð«u tñ phân ph¯i" );
+			Team_Exp_Mode_Text:SetText( "Cá nhân" );
 		elseif( expMode == 0 ) then
-			Team_Exp_Mode_Text:SetText( "Chia ð«u phân ph¯i" );
+			Team_Exp_Mode_Text:SetText( "Chia ð«u" );
 		else
-			Team_Exp_Mode_Text:SetText( "Thu¥n Thú hình thÑc" );
+			Team_Exp_Mode_Text:SetText( "Thu¥n thú" );
 		end
 		Team_Exp_Mode_Text:Show();
 		Team_Exp_Mode:Hide();

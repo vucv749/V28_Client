@@ -35,22 +35,22 @@ function SceneMap_OnLoad()
 
 
 	g_DungeonsTable[1]={maplist={}}
-	g_DungeonsTable[1].maplist[1] = {sceneId = 166, name = "Bäo Tàng Ðµng T¥ng 1"}
-	g_DungeonsTable[1].maplist[2] = {sceneId = 169, name = "Bäo Tàng Ðµng T¥ng 2"}
-	g_DungeonsTable[1].maplist[3] = {sceneId = 191, name = "Bäo Tàng Ðµng T¥ng 3"}
-	g_DungeonsTable[1].maplist[4] = {sceneId = 192, name = "Bäo Tàng Ðµng T¥ng 4"}
-	g_DungeonsTable[1].maplist[5] = {sceneId = 193, name = "Bäo Tàng Ðµng T¥ng 5"}
+	g_DungeonsTable[1].maplist[1] = {sceneId = 166, name = "Tàng Bäo Ðµng T¥ng 1 "}
+	g_DungeonsTable[1].maplist[2] = {sceneId = 169, name = "Tàng Bäo Ðµng T¥ng 2 "}
+	g_DungeonsTable[1].maplist[3] = {sceneId = 191, name = "Tàng Bäo Ðµng T¥ng 3 "}
+	g_DungeonsTable[1].maplist[4] = {sceneId = 192, name = "Tàng Bäo Ðµng T¥ng 4 "}
+	g_DungeonsTable[1].maplist[5] = {sceneId = 193, name = "Tàng Bäo Ðµng t¥ng 5 "}
 
 	g_DungeonsTable[2]={maplist={}}
-	g_DungeonsTable[2].maplist[1] = {sceneId = 202, name = "Yên Vß½ng C± MÕc T¥ng 1"}
-	g_DungeonsTable[2].maplist[2] = {sceneId = 203, name = "Yên Vß½ng C± MÕc T¥ng 2"}
-	g_DungeonsTable[2].maplist[3] = {sceneId = 204, name = "Yên Vß½ng C± MÕc T¥ng 3"}
-	g_DungeonsTable[2].maplist[4] = {sceneId = 205, name = "Yên Vß½ng C± MÕc T¥ng 4"}
-	g_DungeonsTable[2].maplist[5] = {sceneId = 206, name = "Yên Vß½ng C± MÕc T¥ng 5"}
-	g_DungeonsTable[2].maplist[6] = {sceneId = 207, name = "Yên Vß½ng C± MÕc T¥ng 6"}
-	g_DungeonsTable[2].maplist[7] = {sceneId = 208, name = "Yên Vß½ng C± MÕc T¥ng 7"}
-	g_DungeonsTable[2].maplist[8] = {sceneId = 209, name = "Yên Vß½ng C± MÕc T¥ng 8"}
-	g_DungeonsTable[2].maplist[9] = {sceneId = 210, name = "Yên Vß½ng C± MÕc T¥ng 9"}
+	g_DungeonsTable[2].maplist[1] = {sceneId = 202, name = "Yªn Vß½ng C± Mµ T¥ng 1"}
+	g_DungeonsTable[2].maplist[2] = {sceneId = 203, name = "Yªn Vß½ng C± Mµ T¥ng 2"}
+	g_DungeonsTable[2].maplist[3] = {sceneId = 204, name = "Yªn Vß½ng C± Mµ T¥ng 3"}
+	g_DungeonsTable[2].maplist[4] = {sceneId = 205, name = "Yªn Vß½ng C± Mµ T¥ng 4"}
+	g_DungeonsTable[2].maplist[5] = {sceneId = 206, name = "Yªn Vß½ng C± Mµ T¥ng 5"}
+	g_DungeonsTable[2].maplist[6] = {sceneId = 207, name = "Yªn Vß½ng C± Mµ T¥ng 6"}
+	g_DungeonsTable[2].maplist[7] = {sceneId = 208, name = "Yªn Vß½ng C± Mµ T¥ng 7"}
+	g_DungeonsTable[2].maplist[8] = {sceneId = 209, name = "Yªn Vß½ng C± Mµ T¥ng 8"}
+	g_DungeonsTable[2].maplist[9] = {sceneId = 210, name = "Yªn Vß½ng C± Mµ T¥ng 9"}
 
 	g_DungeonsTable[3]={maplist={}}
 	g_DungeonsTable[3].maplist[1] = {sceneId = 262, name = "T¥n Hoàng Ð¸a Cung T¥ng 1"}
@@ -58,11 +58,11 @@ function SceneMap_OnLoad()
 	g_DungeonsTable[3].maplist[3] = {sceneId = 264, name = "T¥n Hoàng Ð¸a Cung T¥ng 3"}
 
 	g_DungeonsTable[4]={maplist={}}
-	g_DungeonsTable[4].maplist[1] = {sceneId = 295, name = "Thông Thiên Ðáp Ð¸a Cung"}
-	g_DungeonsTable[4].maplist[2] = {sceneId = 296, name = "Thông Thiên Ðáp 1T¢ng"}
-	g_DungeonsTable[4].maplist[3] = {sceneId = 297, name = "Thông Thiên Ðáp 2T¢ng"}
-	g_DungeonsTable[4].maplist[4] = {sceneId = 298, name = "Thông Thiên Ðáp 3T¢ng"}
-	g_DungeonsTable[4].maplist[5] = {sceneId = 299, name = "Thông Thiên Ðáp Ðáp Ðïnh"}
+	g_DungeonsTable[4].maplist[1] = {sceneId = 295, name = "Thông Thiên Tháp Ð¸a Cung"}
+	g_DungeonsTable[4].maplist[2] = {sceneId = 296, name = "Thông Thiên Tháp T¥ng 1"}
+	g_DungeonsTable[4].maplist[3] = {sceneId = 297, name = "Thông Thiên Tháp T¥ng 2"}
+	g_DungeonsTable[4].maplist[4] = {sceneId = 298, name = "Thông Thiên Tháp T¥ng 3"}
+	g_DungeonsTable[4].maplist[5] = {sceneId = 299, name = "Ðïnh Thông Thiên Tháp"}
 	
 	g_DungeonsTable[5]={maplist={}}
 	g_DungeonsTable[5].maplist[1] = {sceneId = 112, name = "Huy«n Vû Ðäo"}

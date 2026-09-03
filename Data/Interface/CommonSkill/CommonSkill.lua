@@ -369,7 +369,7 @@ function Common_Action_Page_Switch()
 		CommonSkill_LifeSkill : SetCheck(0);
 		CommonSkill_ShenFenSkill : SetCheck(0);
 		CommonSkill_CommonlySkill : SetCheck(1);
-		PushDebugMessage("Nhî còn không có Bái nh§p môn Phái.");
+		PushDebugMessage("Chßa gia nh§p môn phái.");
 		return; 
 	end;
 	OpenSkillBook();

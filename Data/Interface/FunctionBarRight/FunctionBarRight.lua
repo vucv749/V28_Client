@@ -83,7 +83,7 @@ function FunctionBarRight_Clicked(nIndex)
 		
 		RIGHTBAR_BUTTONS[nIndex]:DoAction();
 	else
-		PushDebugMessage("Nhî không th¬ làm nhß v§y.")
+		PushDebugMessage("Các hÕ không ðßþc làm nhß v§y.")
 		return;
 	end
 end

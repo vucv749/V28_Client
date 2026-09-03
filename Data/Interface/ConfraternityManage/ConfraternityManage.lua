@@ -11,15 +11,15 @@ local g_ShowMsgFlag = false;
 local g_AssChiefPos = 8;
 
 local g_positionInfo = {
-	"#GÐÃi phê chu¦n",
-	"Bang Chúng  ",
-	"Tinh Anh  ",
-	"Thß½ng Nhân  ",
-	"Ho¢ng Hóa SÑ ",
+	"#GÐþi phê duy®t ",
+	"Bang Chúng ",
+	"Tinh Anh ",
+	"Thß½ng Nhân ",
+	"Hoang Hoa SÑ ",
 	"Công Vø SÑ ",
 	"Nµi Vø SÑ ",
-	"Phó Bang Chü ",
-	"Bang Chü  ",
+	"Bang Phó ",
+	"Bang Chü ",
 };
 
 local g_menpaiInfo = {
@@ -31,7 +31,7 @@ local g_menpaiInfo = {
 	"Tinh Túc",
 	"Thiên Long",
 	"Thiên S½n",
-	"Tiêu dao",
+	"Tiêu Dao",
 	"Tñ do",
 	"MÕn Ðà S½n Trang",
 };
@@ -95,10 +95,10 @@ function ConfraternityManage_OnEvent(event)
 	elseif( event == "SHOW_GUILDWAR_ANIMI" ) then	--????“????”???? ???????????,????????????????,???????????
        local type = arg0;
 		if(arg0=="show") then
-                ConfraternityManage_7:SetText("#g0071BFbang hµi tuyên chiªn");
-                ConfraternityManage_7:SetToolTip("Cüa ngß½i bang hµi ðang · Bang Chiªn");
+                ConfraternityManage_7:SetText("#g0071BFTuyên chiªn");
+                ConfraternityManage_7:SetToolTip("Ðang Bang Chiªn");
         else
-                ConfraternityManage_7:SetText("Bang hµi tuyên chiªn");
+                ConfraternityManage_7:SetText("Tuyên chiªn");
                 ConfraternityManage_7:SetToolTip("");
         end
 	end
@@ -220,16 +220,16 @@ function Guild_Manage_BtnSet()
 		g_MembersCtl.btn[7]:Show();
 		g_MembersCtl.btn[8]:Show();		--add by xindefeng
 
-		g_MembersCtl.btn[1]:SetText("Nhâm m®nh");
+		g_MembersCtl.btn[1]:SetText("B± nhi®m");
 		g_MembersCtl.btn[2]:SetText("Trøc xu¤t");
 		g_MembersCtl.btn[3]:SetText("Nhß¶ng ngôi");
 		g_MembersCtl.btn[4]:SetText("Giäi tán");
-		g_MembersCtl.btn[5]:SetText("SØa chæa tôn chï");
-		g_MembersCtl.btn[6]:SetText("R¶i khöi");
+		g_MembersCtl.btn[5]:SetText("SØa");
+		g_MembersCtl.btn[6]:SetText("Thoát");
 	elseif(g_TabSel == GUILD_REQUIRES_INFO) then
 		if( Guild:GetMembersNum(5) == 0 ) then --?????????
 			if g_ShowMsgFlag == false then
-				PushDebugMessage("Bän bang trß¾c m£t không có dñ b¸ hµi viên");
+				PushDebugMessage("Bang ta chßa có hµi viên dñ b¸");
 			else
 				g_ShowMsgFlag = false;
 			end
@@ -251,9 +251,9 @@ function Guild_Manage_BtnSet()
 		g_MembersCtl.btn[7]:Hide();
 		g_MembersCtl.btn[8]:Hide();	--add by xindefeng
 
-		g_MembersCtl.btn[1]:SetText("Tiªp thu");
-		g_MembersCtl.btn[2]:SetText("Cñ tuy®t");
-		g_MembersCtl.btn[6]:SetText("R¶i khöi");
+		g_MembersCtl.btn[1]:SetText("Nh§n");
+		g_MembersCtl.btn[2]:SetText("T× ch¯i");
+		g_MembersCtl.btn[6]:SetText("Thoát");
 	end
 
 	--°´Å¥EnableºÍDisable¿ØÖÆ
@@ -280,11 +280,11 @@ function Guild_Manage_BtnSet()
 	end
 
 	if( Guild:GetMembersNum(5) == 0 ) then --?????????
-		ConfraternityManage_Tab2_Mask : SetToolTip("Bän bang trß¾c m£t không có dñ b¸ hµi viên");
+		ConfraternityManage_Tab2_Mask : SetToolTip("Bang ta chßa có hµi viên dñ b¸");
 		ConfraternityManage_Tab2_Mask : Enable();
 		ConfraternityManage_Tab2:Disable();
 	else
-		ConfraternityManage_Tab2 : SetToolTip("Hi®n Hæu dñ b¸ hµi viên xin gia nh§p bän bang");
+		ConfraternityManage_Tab2 : SetToolTip("Hi®n tÕi có hµi viên dñ b¸ mu¯n gia nh§p vào bang ta");
 		ConfraternityManage_Tab2_Mask : Disable();
 		ConfraternityManage_Tab2:Enable();
 		ConfraternityManage_Tab2 : FlashMe(1);
@@ -316,14 +316,14 @@ function Guild_Manage_Update()
 	--local szMsg = Guild:GetMyGuildInfo("Name");
 	--g_MembersCtl.header:SetText(szMsg .. "°ï»á»áÔ±¹ÜÀí");
 	--20060710°´²ß»®ÒªÇó£¬Ö»ÏÔÊ¾»áÔ±¹ÜÀí
-	g_MembersCtl.header:SetText("#gFF0FA0hµi viên quän lý");
+	g_MembersCtl.header:SetText("#gFF0FA0Quän lý hµi viên");
 
 	--×Ô¼º°ï»áµÄ×ÚÖ¼
 	szMsg = Guild:GetMyGuildInfo("Desc");
 	g_MembersCtl.desc:SetText(szMsg);
 
 	--ÈËÊý
-	g_MembersCtl.count:SetText("Hµi viên:"..Guild:GetMembersNum(3).."/"..Guild:GetMembersNum(1).."/"..Guild:GetMembersNum(2));
+	g_MembersCtl.count:SetText("Hµi viên: "..Guild:GetMembersNum(3).."/"..Guild:GetMembersNum(1).."/"..Guild:GetMembersNum(2));
 
 	--ÈËÔ±ÁÐ±í
 	g_ListToMember = {};
@@ -427,12 +427,12 @@ function Guild_Manage_SetMembersInfo( lidx )
 
 	--ÃÅÅÉ
 	szMsg = g_menpaiInfo[Guild:GetMembersInfo(g_ListToMember[lidx], "MenPai")+1];
-	g_MembersCtl.info[1].txt:SetText("Môn phái:");
+	g_MembersCtl.info[1].txt:SetText("Phái: ");
 	g_MembersCtl.info[1].msg:SetText(szMsg);
 
 	--µÈ¼¶
 	szMsg = Guild:GetMembersInfo(g_ListToMember[lidx], "Level");
-	g_MembersCtl.info[2].txt:SetText("C¤p b§c:");
+	g_MembersCtl.info[2].txt:SetText("C¤p: ");
 	g_MembersCtl.info[2].msg:SetText(szMsg);
 
 	if(g_TabSel == GUILD_MEMBERS_INFO) then
@@ -440,19 +440,19 @@ function Guild_Manage_SetMembersInfo( lidx )
 		--2006-12-7 19:44 TODO
 		szMsg = Guild:GetMembersInfo(g_ListToMember[lidx], "CurCon").."/"..Guild:GetMembersInfo(g_ListToMember[lidx], "MaxCon");
 		--szMsg = Guild:GetMembersInfo(g_ListToMember[lidx], "CurCon");
-		g_MembersCtl.info[3].txt:SetText("C¯ng hiªn Ðµ:");
+		g_MembersCtl.info[3].txt:SetText("Ðµ c¯ng hiªn: ");
 		g_MembersCtl.info[3].msg:SetText(szMsg);
 		--Èë°ïÊ±¼ä
 		szMsg = Guild:GetMembersInfo(g_ListToMember[lidx], "JoinTime");
-		g_MembersCtl.info[4].txt:SetText("Nh§p Bang th¶i gian:");
+		g_MembersCtl.info[4].txt:SetText("Vào bang: ");
 		g_MembersCtl.info[4].msg:SetText(szMsg);
 		--ÉÏÏßÊ±¼ä
 		szMsg = Guild:GetMembersInfo(g_ListToMember[lidx], "LogOutTime");
-		g_MembersCtl.info[5].txt:SetText("Login th¶i gian:");
+		g_MembersCtl.info[5].txt:SetText("Online: ");
 		g_MembersCtl.info[5].msg:SetText(szMsg);
 		--Ã¿ÖÜ¹±Ï×¶È
 		szMsg = Guild:GetMembersInfo(g_ListToMember[lidx], "ContriPerWeek");
-		g_MembersCtl.info[6].txt:SetText("B±n Chu c¯ng hiªn Ðµ:");
+		g_MembersCtl.info[6].txt:SetText("CH tu¥n này:");
 		g_MembersCtl.info[6].msg:SetText(szMsg);
 	end
 end
@@ -562,7 +562,7 @@ function Guild_Manage_ChangeDescBegin()
 	g_MembersCtl.edit:Show();
 
 	g_MembersCtl.desc:Hide();
-	g_MembersCtl.btn[5]:SetText("SØa chæa hoàn thành");
+	g_MembersCtl.btn[5]:SetText("Ðã sØa");
 end
 
 function Guild_Manage_ChangeDescFin()
@@ -574,7 +574,7 @@ function Guild_Manage_ChangeDescFin()
 	g_MembersCtl.desc:Show();
 
 	Guild:FixGuildInfo("Desc", szMsg);
-	g_MembersCtl.btn[5]:SetText("SØa chæa tôn chï");
+	g_MembersCtl.btn[5]:SetText("SØa");
 end
 
 function ConfraternityManage_Hidden()

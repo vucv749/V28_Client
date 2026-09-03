@@ -106,9 +106,9 @@ function Quiz_OnShown()
 				str = "Chính xác!#rM¶i tiªp tøc trä l¶i#r";
 			end
 			if(Variable:GetVariable("System_CodePage") == "1258") then
-				Quiz_Text : SetText(str .. "Ð«" .. "Câu" .. Question_Sequence .. Get_XParam_STR(0) .. "#rdß¾i ðây ðáp án Trung chï có 1Cá Th¸ chính xác Ðích, Thïnh lña ch÷n");
+				Quiz_Text : SetText(str .. ": " .. "Câu " .. Question_Sequence .. Get_XParam_STR(0) .. "#rChï có mµt ðáp án chính xác, nghî kÛ r°i ch÷n");
 			else
-				Quiz_Text : SetText(str .. "Câu" .. Question_Sequence .."Ð«: #r" .. Get_XParam_STR(0) .. "#rdß¾i ðây ðáp án Trung chï có 1Cá Th¸ chính xác Ðích, Thïnh lña ch÷n");
+				Quiz_Text : SetText(str .. "Câu " .. Question_Sequence .."Ð«: #r" .. Get_XParam_STR(0) .. "#rChï có mµt ðáp án chính xác, nghî kÛ r°i ch÷n");
 			end
 		
 			Quiz_StopWatch : SetProperty("Timer","30");
@@ -142,7 +142,7 @@ function Quiz_OnShown()
 	elseif UI_ID == 4 then
 
 			Quiz_Text : SetText( Get_XParam_STR(0) );
-			Quiz_Button_2 : SetText("TÕm bi®t")
+			Quiz_Button_2 : SetText("R¶i")
 			Quiz_Button_2 : Show();
 			Quiz_Button_1 : Hide();
 			Quiz_Button_3 : Hide();

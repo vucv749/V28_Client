@@ -98,9 +98,9 @@ function TargetEquip_OnLoad()
 	g_Ring2			= TargetEquip_Equip5;		-- ??2
 
 	TARGETEQUIP_TAB_TEXT = {
-		[0] = "Trang b¸",
-		"Tß li®u",
-		"Trân Thú",
+		[0] = "T.B¸",
+		"T.Tin",
+		"Thú",
 	};
 	
 	g_TargetEquip_Frame_UnifiedPosition=TargetEquip_Frame:GetProperty("UnifiedPosition");
@@ -266,7 +266,7 @@ function TargetEquip_OnUpdateShow()
 
 	-- µÃµ½µÈ¼¶
 	nNumber = CachedTarget:GetData("LEVEL", 1);
-	TargetEquip_Level:SetText("C¤p b§c:" .. tostring( nNumber ));
+	TargetEquip_Level:SetText("C¤p: " .. tostring( nNumber ));
 
 	-- µÃµ½ÅäÅ¼ÐÅÏ¢
 	local szConsort = SystemSetup:GetPrivateInfo("other","Consort");
@@ -307,13 +307,13 @@ function TargetEquip_OnUpdateShow()
 		strMenpai = "Thiên S½n";
 
 	elseif(8 == menpai) then
-		strMenpai = "Tiêu dao";
+		strMenpai = "Tiêu Dao";
 
 	elseif(9 == menpai) then
 		strMenpai = "Tñ do";
 
 	elseif(10== menpai) then
-		strMenpai = "MÕn Ðà S½n Trang";
+		strMenpai = "Mµ Dung";
 
 	elseif(11== menpai) then--MPTODO menpai11
 		strMenpai = "Ác Nhân C¯c";
@@ -466,9 +466,9 @@ function TargetEquip_ClearPlayerInfo()
 	TargetEquip_PageHeader:SetText("");
 	TargetEquip_Agname:SetText("");
 	TargetEquip_Confraternity:SetText("");
-	TargetEquip_Level:SetText("C¤p b§c:");
+	TargetEquip_Level:SetText("C¤p: ");
 	TargetEquip_Spouse:SetText("");
-	TargetEquip_MenPai:SetText("Môn phái:");
+	TargetEquip_MenPai:SetText("Phái: ");
 	TargetEquip_Message:SetText("");
 
 end

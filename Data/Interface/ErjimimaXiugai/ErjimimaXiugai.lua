@@ -75,7 +75,7 @@ function ErjimimaXiugai_OK_Click()
 	-- Èç¹ûÃÜÂë²»Ò»ÖÂ
 	if(strPassword1 ~= strPassword2) then
 	
-		ShowSystemTipInfo("M§t mã ðßa vào không ð°ng nh¤t Trí!")
+		ShowSystemTipInfo("M§t mã không th¯ng nh¤t!")
 		
 		ErjimimaXiugai_Before:SetText( "" );
 		ErjimimaXiugai_After:SetText( "" );
@@ -88,7 +88,7 @@ function ErjimimaXiugai_OK_Click()
 	local iLenNew = string.len(strPassword1);
 	if(iLenOld < 4) then
 	
-		ShowSystemTipInfo("Cñu m§t mã không th¬ Thi¬u Vu 4Cá tñ phù!");
+		ShowSystemTipInfo("M§t mã cû không dß¾i 4 ký tñ!");
 		return;
 	end;
 	

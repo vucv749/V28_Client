@@ -835,7 +835,7 @@ function MainMenuBar_Clicked(nIndex)
 	if isCanDo == true then
 		MAINMENUBAR_BUTTONS[nIndex]:DoAction();
 	else
-		PushDebugMessage("Nhî không th¬ làm nhß v§y.")
+		PushDebugMessage("Các hÕ không ðßþc làm nhß v§y.")
 		return;
 	end
 
@@ -1030,11 +1030,11 @@ function MainMenuBar_DoubleChatActionMessageSend(bEnable, talker)
 end
 
 function MainMenuBar_JoinItemElementFailure()
-	PushDebugMessage("Tång thêm v§t ph¦m tin tÑc th¤t bÕi.");
+	PushDebugMessage("Thêm tin v§t ph¦m th¤t bÕi.");
 end
 
 function MainMenuBar_ItemElementFull()
-	PushDebugMessage("Không th¬ tång thêm nhi«u h½n v§t ph¦m tin tÑc.");
+	PushDebugMessage("Không th¬ tång nhi«u tin v§t ph¦m.");
 end
 
 function MainMenuBar_HandleHistoryAction(op,arg0,arg1)

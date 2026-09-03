@@ -39,7 +39,7 @@ function FriendSearch_OnLoad()
 
 	FriendSearch_Confraternity:ComboBoxAddItem("Không gi¾i hÕn",-3 );
 	FriendSearch_Confraternity:ComboBoxAddItem("Không gi¾i hÕn",-2 );
-	FriendSearch_Confraternity:ComboBoxAddItem("Vô bang phái",-1 );
+	FriendSearch_Confraternity:ComboBoxAddItem("Không có bang",-1 );
 	FriendSearch_Confraternity:SetCurrentSelect( 0 );
 
 	FriendSearch_Sexy:ComboBoxAddItem("Không gi¾i hÕn",-1 );
@@ -47,7 +47,7 @@ function FriendSearch_OnLoad()
 	FriendSearch_Sexy:ComboBoxAddItem( "Nam", 1 );
 	FriendSearch_Sexy:SetCurrentSelect( 0 );
 
-	FriendSearch_Level:ComboBoxAddItem("Không gi¾i hÕn",-1 );
+	FriendSearch_Level:ComboBoxAddItem("Tùy",-1 );
 	FriendSearch_Level:ComboBoxAddItem( "1 - 10", 0 );
 	FriendSearch_Level:ComboBoxAddItem( "11 - 20", 1 );
 	FriendSearch_Level:ComboBoxAddItem( "21 - 30", 2 );
@@ -93,8 +93,8 @@ end
 function FrinedSearch_UpdataMenPai()
 
 	FriendSearch_MenPai:ResetList()
-	FriendSearch_MenPai:ComboBoxAddItem("Không gi¾i hÕn",-3 );
-	FriendSearch_MenPai:ComboBoxAddItem("Không gi¾i hÕn",-2 );
+	FriendSearch_MenPai:ComboBoxAddItem("T¤t cä",-3 );
+	FriendSearch_MenPai:ComboBoxAddItem("Tùy",-2 );
 	FriendSearch_MenPai:ComboBoxAddItem("Tñ do", -1 );
 	FriendSearch_MenPai:ComboBoxAddItem("Thiªu Lâm", 0 );
 	FriendSearch_MenPai:ComboBoxAddItem("Minh Giáo", 1 );
@@ -138,9 +138,9 @@ function FriendSearch_UpdateCurrentPage()
 		FriendSearch_Info:AddNewItem( namecolor..name, 0, i );
 		FriendSearch_Info:AddNewItem( namecolor..id, 1, i );
 		if( bOnline ) then
-			FriendSearch_Info:AddNewItem( namecolor.."TÕi Tuyªn", 2, i );
+			FriendSearch_Info:AddNewItem( namecolor.."Online", 2, i );
 		else
-			FriendSearch_Info:AddNewItem( namecolor.."Li Tuyªn", 2, i );
+			FriendSearch_Info:AddNewItem( namecolor.."Offline", 2, i );
 		end
 		FriendSearch_Info:AddNewItem( namecolor..tostring( nLevel ), 3, i );
 

@@ -64,7 +64,7 @@ function ViewSetup_Setup_ClickViewSetup(nIndex)
 		local bNeedReset2 = tonumber(SystemSetup:View_GetData(ViewSetup[15])) ~= setting[15];
 
 		if(bNeedReset1 or bNeedReset2) then
-			PushDebugMessage("Bµ ph§n thiªt trí c¥n Trùng Khäi");
+			PushDebugMessage("Kh·i ðµng lÕi trò ch½i");
 		end
 
 		for i=1, viewSetNum do
@@ -78,7 +78,7 @@ function ViewSetup_Setup_ClickViewSetup(nIndex)
 		local bNeedReset2 = tonumber(SystemSetup:View_GetData(ViewSetup[15])) ~= setting[15];
 
 		if(bNeedReset1 or bNeedReset2) then
-			PushDebugMessage("Bµ ph§n thiªt trí c¥n Trùng Khäi");
+			PushDebugMessage("Kh·i ðµng lÕi trò ch½i");
 		end
 	
 		for i=1, viewSetNum do

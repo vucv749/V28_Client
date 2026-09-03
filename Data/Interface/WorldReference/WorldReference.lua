@@ -24,7 +24,7 @@ end
 function WorldReference_OpenPKDesc()
     WorldReferenceGreeting_Desc:ClearAllElement()
     --WorldReference_PageHeader:SetText("#{INTERFACE_XML_39}")
-    WorldReference_PageHeader:SetText("V« PK")
+    WorldReference_PageHeader:SetText("DÕng PK")
     WorldReferenceGreeting_Desc:AddTextElement( "#{PK_HELP_001}")
     this:Show();
 end
@@ -109,7 +109,7 @@ function WorldReference_DispatchMainPage()
 
 	local NumVisiable = tonumber( WRGetVisiableContexCount() )
 
-	WorldReferenceGreeting_Desc:AddTextElement( "Nh¾ rõ M²i Ðáo mµt cái Tân Ðích C¤p B§c Tñu Tá Khai Ngã ðªn xem, ta s¨ nói cho Nhî r¤t nhi«u giang h° giæa chuy®n tình.")
+	WorldReferenceGreeting_Desc:AddTextElement( "  Nhi«u hoÕt ðµng thú v¸ và ð£c s¡c ðang ch¶ các hÕ tham gia!")
 
 	for i=0, NumVisiable-1 do
 	    local VisiableID = WRGetVisiableContexID( i )
@@ -133,7 +133,7 @@ function WorldReference_DispatchTable( TableID )
 	WRCollectVisiableContex( TableID )   --?????
 	local NumVisiable = tonumber( WRGetVisiableContexCount() )
 	if(NumVisiable>0 and TableID == 1)then
-		local strTemp = "Xem xét Khä tiªp nh§n chÑc vø Vø".."&"..TableID..","..(-1).."$0"
+		local strTemp = "Xem nhi®m vø có th¬ làm".."&"..TableID..","..(-1).."$0"
 	        WorldReferenceGreeting_Desc:AddOptionElement( strTemp );
 	end
 	for i=0, NumVisiable-1 do
@@ -148,7 +148,7 @@ function WorldReference_DispatchTable( TableID )
 
 	end
 
-    local strBack = "Quay ð¥u Di®p".."&0,0".."$0"
+    local strBack = "Trang ð¥u".."&0,0".."$0"
 	WorldReferenceGreeting_Desc:AddOptionElement( strBack );
 end
 
@@ -198,7 +198,7 @@ function WorldReference_DispatchBossTable()
 		end
 	end
 
-	local strBack = "Quay ð¥u Di®p".."&0,0".."$0"
+	local strBack = "Trang ð¥u".."&0,0".."$0"
 	WorldReferenceGreeting_Desc:AddOptionElement( strBack )
 
 end
@@ -229,9 +229,9 @@ function WorldReference_DispatchContexAccount(TableID, ContexID)
 		local strBack;
 		--VisiableID = WRGetVisiableContexID( 0 )
     if VisiableID ~= -1  and WRGetContexType( TableID, VisiableID ) > 1 then
-    	strBack = "Trên mµt".."&"..TableID..","..(-VisiableID).."$0"
+    	strBack = "Tr· v«".."&"..TableID..","..(-VisiableID).."$0"
     else
-    	strBack = "Quay ð¥u Di®p".."&0,0".."$0"
+    	strBack = "Trang ð¥u".."&0,0".."$0"
     end
 		WorldReferenceGreeting_Desc:AddOptionElement( strBack );
 end
@@ -282,9 +282,9 @@ function WorldReference_BOSSOptionClicked( Data2 )
 	--¼ÓÈë·µ»ØÉÏ²ãµÄÑ¡Ïî....
 	local strBack
 	if -1 == parentId then
-			strBack = "Trên mµt".."&0,"..(3).."$0"
+			strBack = "Tr· v«".."&0,"..(3).."$0"
 	else
-		strBack = "Trên mµt".."&3,"..-parentId.."$0"
+		strBack = "Tr· v«".."&3,"..-parentId.."$0"
 	end
 	WorldReferenceGreeting_Desc:AddOptionElement( strBack )
 
@@ -298,7 +298,7 @@ function WorldReference_DispatchServerTime( strDate )
 
     WorldReferenceGreeting_Desc:AddTextElement( strDate )
 
-    local strBack = "Quay ð¥u Di®p".."&0,"..(0).."$0"
+    local strBack = "Trang ð¥u".."&0,"..(0).."$0"
 	WorldReferenceGreeting_Desc:AddOptionElement( strBack );
 end
 
@@ -312,7 +312,7 @@ function WorldReference_DispatchContex( TableID, ContexIndex )
     local strContex = WRGetVisiableContex( TableID, ContexIndex )
     WorldReferenceGreeting_Desc:AddTextElement( strContex )
 
-    local strBack = "Trên mµt".."&0,"..TableID.."$0"
+    local strBack = "Tr· v«".."&0,"..TableID.."$0"
 	WorldReferenceGreeting_Desc:AddOptionElement( strBack );
 
 end

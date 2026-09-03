@@ -146,23 +146,23 @@ function PS_Shop_UpdateFrame()
 	
 	--µêÖ÷	--¸ÄÎª³¬Á´½Ó by wangdw 2008.05.27
 	local szName = PlayerShop:GetShopInfo("other","ownername");
-	PS_Shop_Master_Text:SetChatString("#YðIªm chü: #{_INFOUSR" .. szName .. "}");
+	PS_Shop_Master_Text:SetChatString("#GChü ti®m: #{_INFOUSR" .. szName .. "}");
 	--PS_Shop_Master_Text:SetText("#YµêÖ÷:#{_INFOUSR" .. szName .. "}");
 	--µêÖ÷ID
 	local szID = PlayerShop:GetShopInfo("other","ownerid");
-	PS_Shop_ID_Text:SetText("Ðiªm chü ID:" .. szID);
+	PS_Shop_ID_Text:SetText("ID chü ti®m: " .. szID);
 
 	--µêÆÌID
 	local shopIndex = PlayerShop:GetShopInfo("other", "shopindex")
 	if (tonumber(shopIndex) <= 0) then
-		PS_Shop_DPID_Text:SetText("CØa hàng ID:")
+		PS_Shop_DPID_Text:SetText("ID cØa ti®m:")
 	else
-		PS_Shop_DPID_Text:SetText("CØa hàng ID:" .. shopIndex)
+		PS_Shop_DPID_Text:SetText("ID cØa ti®m:" .. shopIndex)
 	end
 	
 	--µêÃû
 	local szShopName = PlayerShop:GetShopInfo("other","shopname");
-	PS_Shop_Name_Text:SetText("CØa hàng Danh:" .. szShopName);
+	PS_Shop_Name_Text:SetText("Tên ti®m: " .. szShopName);
 	PS_Shop_DragTitle:SetText("#gFF0FA0" ..szShopName);
 
 	--½çÃæ¿Ø¼þµÄÒ»Ð©¸üÐÂ
@@ -184,9 +184,9 @@ function PS_Shop_UpdateFrame()
 	g_bCurStallOpen = PlayerShop:IsOpenStall("other",actIndex);
 	
 	if (g_bCurStallOpen == 2)  then 
-		PS_Shop_State:SetText("#GkHai trß½ng");
+		PS_Shop_State:SetText("#GKhai trß½ng");
 	else
-		PS_Shop_State:SetText("#RðÓng cØa");
+		PS_Shop_State:SetText("#RÐóng cØa");
 	end
 
 	--ÄÜ¹»µã»÷µÄ1234567890
@@ -325,7 +325,7 @@ function PS_Shop_BuyClick()
 		local nIndex = PS_Shop_PetList:GetFirstSelectItem();
 		
 		if( nIndex == -1 )  then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n mµt cái Trân Thú.");
+			PushDebugMessage("Hãy ch÷n 1 Trân Thú.");
 			return;
 		end
 		

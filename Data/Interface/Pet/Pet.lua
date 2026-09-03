@@ -118,9 +118,9 @@ function Pet_OnLoad()
 	
 	PET_AITYPE[0] = "Nhát gan"
 	PET_AITYPE[1] = "C¦n th§n"
-	PET_AITYPE[2] = "Trung thñc"
-	PET_AITYPE[3] = "Nhanh nh©n"
-	PET_AITYPE[4] = "Dûng mãnh"
+	PET_AITYPE[2] = "Trung Thành"
+	PET_AITYPE[3] = "Nhanh trí"
+	PET_AITYPE[4] = "Dûng Mãnh"
 	
 	g_Pet_Head = PetEquip_1
 	g_Pet_Claw = PetEquip_2	
@@ -241,7 +241,7 @@ function Pet_OnEvent(event)
 	elseif event == "UPDATE_PET_EXTRANUM" or event == "UNIT_LEVEL" then
 		local nPetCount = Pet:GetPet_Count()
 		local nMaxPetCount = Pet_GetMyCurMaxPetCount()
-		Pet_List_Text:SetText("Trân Thú Li®t Bi¬u"..nPetCount.."/"..nMaxPetCount)
+		Pet_List_Text:SetText("Danh sách "..nPetCount.."/"..nMaxPetCount)
 	
 	-- Tooltips ¸üÐÂ zchw	
 	elseif event == "PET_EQUIP_ATTR_CHANGE" then
@@ -400,7 +400,7 @@ function Pet_Page_Clear()
 	
 	local nPetCount = Pet:GetPet_Count()
 	local nMaxPetCount = Pet_GetMyCurMaxPetCount()
-	Pet_List_Text:SetText("Trân Thú Li®t Bi¬u"..nPetCount.."/"..nMaxPetCount)
+	Pet_List_Text:SetText("Danh sách "..nPetCount.."/"..nMaxPetCount)
 	
 	Pet_PetSoul_Equip_Check:Disable()
 	Pet_PetSoul_Equip:SetActionItem(-1)
@@ -570,7 +570,7 @@ function Pet_Update()
 	else
 		strNeedLevelColor="#c00FF00"
 	end
-	strNeedLevel = strNeedLevelColor..tostring(nTakeLevel).."C¤p#W Mang theo"
+	strNeedLevel = strNeedLevelColor..tostring(nTakeLevel).." c¤p#W mang theo"
 	Pet_NeedLevel:SetText(strNeedLevel)
 	
 end
@@ -684,10 +684,10 @@ function Pet_SetStateTooltip()
 	local iThunderResistOther	= Pet:GetData("RESISTOTHERLIGHT")
 	local iPoisonResistOther= Pet:GetData("RESISTOTHERPOISON")
 	
-	Pet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther))
-	Pet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther))
-	Pet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther))
-	Pet_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther))
+	Pet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rKháng Bång:"..tostring(iIceDefine).."#rGiäm kháng Bång: "..tostring(iIceResistOther))
+	Pet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rKháng Höa: "..tostring(iFireDefine).."#rGiäm kháng Höa: "..tostring(iFireResistOther))
+	Pet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rKháng Huy«n:"..tostring(iThunderDefine).."#rGiäm kháng Huy«n: "..tostring(iThunderResistOther))
+	Pet_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rKháng Ðµc:"..tostring(iPoisonDefine).."#rGiäm kháng Ðµc: "..tostring(iPoisonResistOther))
 		
 end
 
@@ -742,7 +742,7 @@ function Pet_Show_PetInfo(nIndex)
  	local strName, strName2 = Pet:GetName(nIndex)
 	local nEra, strTypeName = Pet:GetPetTypeName(nIndex)
  	if 1 == nEra then
- 	    strName2 = "Ð¶i thÑ 2"..strTypeName
+ 	    strName2 = "Ð¶i thÑ 2 "..strTypeName
  	end
  	
 	Pet_PageHeader:SetText("#gFF0FA0"..strName2)
@@ -779,19 +779,19 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	local _, strGUID, iSex = Pet:GetID(nIndex)
-	Pet_PetID:SetText("Trân Thú ID:"..strGUID)
+	Pet_PetID:SetText("ID thú:"..strGUID)
 
 	local strLoverGUID = Pet:GetConsort(nIndex)
 	if strLoverGUID == "00000000" then
-		Pet_ConsortID:SetText("Ph¯i ngçu ID:")
+		Pet_ConsortID:SetText("ID bÕn ð¶i:")
 	else
-		Pet_ConsortID:SetText("Ph¯i ngçu ID:"..strLoverGUID)
+		Pet_ConsortID:SetText("ID bÕn ð¶i:"..strLoverGUID)
 	end
 		
 	if iSex == 1 then 
-		Pet_Sex:SetText("Gi¯ng ðñc")
+		Pet_Sex:SetText("Ðñc")
 	else
-		Pet_Sex:SetText("Gi¯ng cái")
+		Pet_Sex:SetText("Cái")
 	end
 	
 	local nGeneration  = Pet : GetGeneration(nIndex)
@@ -887,17 +887,17 @@ function Pet_Show_PetInfo(nIndex)
 		strNeedLevelColor = "#c00FF00"
 	end
 	
-	local strNeedLevel = strNeedLevelColor..tostring(nTakeLevel).."C¤p#W Mang theo"
+	local strNeedLevel = strNeedLevelColor..tostring(nTakeLevel).." c¤p#W mang theo"
 	Pet_NeedLevel:SetText(strNeedLevel)
 
 	local iLife = Pet:GetNaturalLife(nIndex)
-	Pet_Life:SetText("S¯ng lâu:"..tostring(iLife))
+	Pet_Life:SetText("Th÷: "..tostring(iLife))
 	
 	local iLevel = Pet:GetLevel(nIndex)
-	Pet_Level:SetText("C¤p b§c:"..tostring(iLevel))
+	Pet_Level:SetText("C¤p: "..tostring(iLevel))
 
 	local iHappy = Pet:GetHappy(nIndex)
-	Pet_Happy:SetText("Khoái LÕc:"..tostring(iHappy))
+	Pet_Happy:SetText("Hoan hï:"..tostring(iHappy))
 
 	local iLingXing = Pet:GetLixing(nIndex)
 	Pet_Lingxing:SetText("#{RXZS_XML_28}"..tostring(iLingXing))
@@ -956,11 +956,11 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	local iExp, iLevelUpExp = Pet:GetExp(nIndex)
-	Pet_Exp:SetText("Kinh nghi®m:"..tostring(iExp) .."/"..tostring(iLevelUpExp))
+	Pet_Exp:SetText("EXP:"..tostring(iExp) .."/"..tostring(iLevelUpExp))
 	
 	local iHP = Pet:GetHP(nIndex)
 	local iMaxHP = Pet:	GetMaxHP(nIndex);
-	Pet_Blood:SetText("Huyªt:"..tostring(iHP) .."/".. tostring(iMaxHP))
+	Pet_Blood:SetText("Sinh lñc:"..tostring(iHP) .."/".. tostring(iMaxHP))
 
 	local iStr = Pet:GetStr(nIndex)
 	Pet_Str:SetText(tostring(iStr) + PETATTR[1])
@@ -978,7 +978,7 @@ function Pet_Show_PetInfo(nIndex)
 	Pet_Dexterity:SetText(tostring(iDex) + PETATTR[3])
 	
 	local iGenGu = Pet:GetBasic(nIndex)
-	Pet_GenGu:SetText("Cån C¯t:"..tostring(iGenGu))
+	Pet_GenGu:SetText("Cån c¯t:"..tostring(iGenGu))
 	Pet_GenGu:SetToolTip("#{INTERFACE_XML_287}")
 
 	Pet_CriticalAttack:SetText(Pet:GetCriticalAttack(nIndex))
@@ -1019,9 +1019,9 @@ function Pet_Show_PetInfo(nIndex)
 
 	Pet_Growth1:SetText("#{ZS_CZL}")	
 	Pet_Growth:SetToolTip("#{INTERFACE_XML_986}")
-	Pet_Growth:SetText("#GkHông biªt")
+	Pet_Growth:SetText("#GChßa biªt")
 	local nGrowLevel = Pet:GetPetGrowLevel(nIndex, tonumber(iGrowRate))
-	local strTbl = {"S½ C¤p", "Xu¤t S¡c", "Ki®t Xu¤t", "Trác Vi®t", "Toàn MÛ"}
+	local strTbl = {"Thß¶ng ", "¿u ", "Ki®t ", "Trác ", "Tuy®t "}
 	
 	if nGrowLevel >= 0 then
 		nGrowLevel = nGrowLevel + 1
@@ -1095,7 +1095,7 @@ function Pet_Show_PetInfo(nIndex)
 	end
 	
 	if iFoodType >= 100 then
-		strFood = strFood.."Thäo"
+		strFood = strFood.."Cö"
 		iFoodType = iFoodType - 100
 		if iFoodType > 0 then
 			strFood = strFood .. ","
@@ -1313,7 +1313,7 @@ end
 
 function Pet_Free_Clicked()
 	if Pet:GetIsFighting(PETNUM) then
-		PushDebugMessage("Trân Thú ðang · xu¤t chiªn, không th¬ B¸ phóng sinh")
+		PushDebugMessage("Trân Thú ðang xu¤t chiªn, không th¬ thä.")
 		return
 	end
 
@@ -1407,7 +1407,7 @@ function Pet_Skill_Clicked(nSkillIndex)
 	end
 	
 	if Pet : GetSkillPassive(PETNUM,nSkillIndex-1) == 0 then
-		PushDebugMessage("Thïnh Tß¾ng Cai kÛ nång Ðà Du® Ðáo kÛ nång mau l© Lan sØ døng.")	
+		PushDebugMessage("Kéo kÛ nång này vào ô phím t¡t kÛ nång.")	
 	end
 
 end

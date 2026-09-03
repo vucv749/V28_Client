@@ -76,7 +76,7 @@ function Guild_Info_Update()
 	--local szMsg = Guild:GetMyGuildInfo("Name");
 	--ConfraternityInfo_DragTitle:SetText(szMsg.."°ï»áÏêÏ¸ÐÅÏ¢");
 	--2006-9-7 16:04°´²ß»®ÒªÇóÐÞ¸ÄÎª¹Ì¶¨Ò³Ã¼
-	ConfraternityInfo_DragTitle:SetText("#gFF0FA0bang hµi k¬ lÕi tin tÑc");
+	ConfraternityInfo_DragTitle:SetText("#gFF0FA0Thông tin bang");
 	
 	--2006-12-7 19:43 TODO:
   --szMsg = "¹±Ï×¶È:"..Guild:GetMyGuildDetailInfo("Con");
@@ -106,7 +106,7 @@ function Guild_Info_Update()
 
 	szMsg = Guild:GetMyGuildDetailInfo("CityName");
 	if(szMsg == "-1") then
-		szMsg = "Không có thành th¸";
+		szMsg = "Không có thành";
 	end
 	ConfraternityInfo_City:SetText(szMsg);
 
@@ -116,7 +116,7 @@ function Guild_Info_Update()
 	
 	szMsg = Guild:GetMyGuildDetailInfo("Scene");
 	if(szMsg == "-1") then
-		szMsg = "Không có ch², n½i";
+		szMsg = "Không rõ";
 	end
 	ConfraternityInfo_Locus:SetText(szMsg);
 	szMsg = Guild:GetMyGuildDetailInfo("Comm");
@@ -124,7 +124,7 @@ function Guild_Info_Update()
 	
 	szMsg = Guild:GetMyGuildDetailInfo("CurResearch");
 	if(szMsg == "")then
-		szMsg = "Vô trß¾c m£t nghiên cÑu";
+		szMsg = "Tr¯ng";
 	end;
 	ConfraternityInfo_Specialty:SetText(szMsg);
 	

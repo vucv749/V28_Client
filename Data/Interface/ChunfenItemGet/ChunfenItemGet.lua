@@ -28,8 +28,8 @@ function ChunfenItemGet_OnLoad()
 	g_ItemID =
 	{
 		[1] = {itemid = 30900045, count = 1, name = "Thiên Canh Cß¶ng Hóa Lµ"},
-		[2] = {itemid = 50313004, count = 1, name = "Ru-bi C¤p 3"},
-		[3] = {itemid = 38002221, count = 1, name = "Tinh thu¥n tinh thÕch C¤p 3 L­ HÕp"},
+		[2] = {itemid = 50313004, count = 1, name = "H°ng Bäo ThÕch Lv3"},
+		[3] = {itemid = 38002221, count = 1, name = "Hµp Quà Pha Lê Tinh Khiªt Lv3"},
 	}	
 	g_Frame_UnifiedPosition = ChunfenItemGet_Frame:GetProperty("UnifiedPosition")
 end

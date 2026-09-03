@@ -932,7 +932,7 @@ end
 		end
 		QuestLog_Desc:AddTextElement(" ");
 		if( DataPool:GetPlayerMission_Display(nSelIndex,5) <= 0 ) then
-			QuestLog_Desc:AddTextElement("#YTiªn ðµ: #W")
+			QuestLog_Desc:AddTextElement("#GTiªn ðµ: #W")
 		end
 
 	--´ó»°Î÷ÓÎµÚÒ»½×¶ÎÖ÷Ïß¾çÇé-ypl
@@ -1638,7 +1638,7 @@ function QuestLog_GetTarget_2017YXJCDM( nSelIndex )
 		{LanterID = 2, 	LanternDataID = "Tuyªt Nguy®t Ðång Lung", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
 		{LanterID = 3, 	LanternDataID = "Khúc Vi®n Phong Hà Ðång Lung", PosX = 171, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
 		{LanterID = 4, 	LanternDataID = "Ðèn L°ng Vân Thê Trúc Kính", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 5, 	LanternDataID = "Ðèn L°ng Mai ? Xuân Täo", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 5, 	LanternDataID = "Ðèn L°ng Mai ‘ Xuân Täo", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
 		{LanterID = 6, 	LanternDataID = "Ðèn L°ng Ng÷c Vû QuÏnh Lâu", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
 		{LanterID = 7, LanternDataID = "Ðèn L°ng Lßu Thüy Ðào Hoa", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
 		{LanterID = 8, LanternDataID = "Ðèn L°ng Tam Ðài Vân Thüy", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	
@@ -1676,7 +1676,7 @@ function QuestLog_GetTrack_2017YXJCDM( nSelIndex )
 		{LanterID = 2, 	LanternDataID = "Tuyªt Nguy®t Ðång Lung", PosX = 171, PosZ = 202, aiType = 3, sceneID = {0}, dir=3.14 },
 		{LanterID = 3, 	LanternDataID = "Khúc Vi®n Phong Hà Ðång Lung", PosX = 171, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
 		{LanterID = 4, 	LanternDataID = "Ðèn L°ng Vân Thê Trúc Kính", PosX = 175, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
-		{LanterID = 5, 	LanternDataID = "Ðèn L°ng Mai ? Xuân Täo", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
+		{LanterID = 5, 	LanternDataID = "Ðèn L°ng Mai ‘ Xuân Täo", PosX = 179, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
 		{LanterID = 6, 	LanternDataID = "Ðèn L°ng Ng÷c Vû QuÏnh Lâu", PosX = 183, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
 		{LanterID = 7, LanternDataID = "Ðèn L°ng Lßu Thüy Ðào Hoa", PosX = 187, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },
 		{LanterID = 8, LanternDataID = "Ðèn L°ng Tam Ðài Vân Thüy", PosX = 191, PosZ = 197, aiType = 3, sceneID = {0}, dir=0 },	

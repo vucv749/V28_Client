@@ -75,8 +75,8 @@ end
 -- UpdateFrame()
 --===============================================
 function InfoEdit_Update()
-	InfoEdit_History:SetText("L¸ch sØ tin tÑc") -- zchw
-	InfoEdit_Preview:SetText( "Dñ Lãm" );
+	InfoEdit_History:SetText("Tin cû") -- zchw
+	InfoEdit_Preview:SetText( "Xem" );
 	InfoEdit_PreviewInfo:Hide();
 	InfoEdit_EditInfo:Show();
 	InfoEdit_EditInfo:SetForce();
@@ -95,7 +95,7 @@ end
 
 function InfoEdit_ClosePreviewClick()
 	
-	InfoEdit_Preview:SetText( "Dñ Lãm" );
+	InfoEdit_Preview:SetText( "Xem" );
 	InfoEdit_PreviewInfo:Hide();
 	InfoEdit_EditInfo:Show();
 		
@@ -122,7 +122,7 @@ function InfoEdit_SendMail()
 	end
 	local szValue= InfoEdit_EditInfo:GetText();
 	if( szValue == "" ) then
-		PushDebugMessage("Không th¬ gæi ði Không bßu ki®n");
+		PushDebugMessage("Không ðßþc gØi thß tr¯ng");
 		return;
 	end
 	if( this:IsVisible() ) then

@@ -53,7 +53,7 @@ function BankLockFast_update()
 		BankLockFast_Lock:Disable();
 		BankLockFast_Get:Disable();
 		BankLockFast_Unlock:Enable();
-		statusmsg = "Trß¾c m£t tü s¡t trÕng thái: #Gb? khóa#W#r"
+		statusmsg = "TrÕng thái bäo hi¬m rß½ng: #GKhóa Ð¸nh#W#r"
 		finalmsg = statusmsg.."#{YHBXX_20071220_14}";
 	elseif(boxstatus == "freezed") then
 		BankLockFast_Save:Enable();
@@ -62,14 +62,14 @@ function BankLockFast_update()
 		BankLockFast_Unlock:Disable();
 		local leftday  = SafeBox("getleftday");
 		local lefthour = SafeBox("getlefthour");
-        statusmsg = string.format("Trß¾c m£t tü s¡t trÕng thái: #GGIäi Toä bäo hµ Ki#W(còn th×a#G%d#WThiên#G%d#Wgi¶)#r",leftday,lefthour);
+        statusmsg = string.format("TrÕng thái bäo hi¬m rß½ng: #GTrong th¶i gian Giäi khóa#W (còn #G%d#W ngày #G%d#W gi¶) #r",leftday,lefthour);
 		finalmsg = statusmsg.."#{YHBXX_20071220_15}";
 	elseif(boxstatus == "unfreezed") then
 		BankLockFast_Save:Enable();
 		BankLockFast_Lock:Enable();
 		BankLockFast_Get:Enable();
 		BankLockFast_Unlock:Disable();
-		statusmsg = "Trß¾c m£t tü s¡t trÕng thái: #GGIäi Toä#W#r"
+		statusmsg = "TrÕng thái bäo hi¬m rß½ng: #GGiäi Khóa#W#r"
 		finalmsg = statusmsg.."#{YHBXX_20071220_16}";
 	end
 	BankLockFast_WarningText:SetText(finalmsg);

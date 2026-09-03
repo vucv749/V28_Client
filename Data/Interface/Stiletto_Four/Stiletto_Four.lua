@@ -330,7 +330,7 @@ function Stiletto_Four_Update(pos1,pos0)
 			return;
 		end
 		Stiletto_Four_Money : SetProperty("MoneyNumber", tostring(Need_Money));
-		Stiletto_Four_State : SetText("Trß¾c m£t Ao Tào S±:"..Bore_Count.."; Có th¬ gia tång Ao Tào S±:"..tostring(4-Bore_Count))
+		Stiletto_Four_State : SetText("Ðã ðøc: "..Bore_Count.."; l² có th¬ ðøc:"..tostring(4-Bore_Count))
 		
 	elseif pos_ui == 2 then --?????????
 		
@@ -359,7 +359,7 @@ function Stiletto_Four_Update(pos1,pos0)
 	 				return
 	  		end
 			else
-				PushDebugMessage("Sai l¥m nghiêm tr÷ng, tiêu hao loÕi hình."..STILE_TYPE)
+				PushDebugMessage("Sai sót trong loÕi hình tiêu hao."..STILE_TYPE)
 	 			return
 			end
 	  
@@ -382,7 +382,7 @@ end
 
 function Stiletto_Four_Buttons_Clicked()
 	if MATERIAL_QUALITY == -1 then
-		PushDebugMessage("Thïnh ð¬ vào khoan tài li®u")
+		PushDebugMessage("Bö nguyên li®u ðøc l² vào")
 		return
 	end
 	if EQUIP_QUALITY ~= -1 then

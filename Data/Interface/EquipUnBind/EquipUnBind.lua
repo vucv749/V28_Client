@@ -144,7 +144,7 @@ function EquipUnBind_Update(UI_index,Item_index)
 	elseif u_index == 2 then
 		if theAction:GetID() ~= 0 then
 				if PlayerPackage : GetItemTableIndex( i_index ) ~= 30900049 then
-					PushDebugMessage("N½i này phäi ð¬ vào Tr× Minh Phù.")
+					PushDebugMessage("C¥n ð£t vào Tr× Minh Phù.")
 					return
 				end
 				if Bind_Item2 ~= -1 then
@@ -164,11 +164,11 @@ end
 
 function EquipUnBind_Buttons_Clicked()
 	if Bind_Item1 == -1 then 
-		PushDebugMessage("Thñc xin l²i, Thïnh Tiên ð¬ vào Nhî Tß·ng kh¡c minh Ðích trang b¸.")
+		PushDebugMessage("Hãy ð£t vào trang b¸ c¥n kh¡c.")
 		return
 	end
 	if Bind_Item2 == -1 then
-		PushDebugMessage("Trang b¸ Tr× Minh c¥n Tr× Minh Phù.")
+		PushDebugMessage("Xóa kh¡c trang b¸ c¥n có Tr× Minh Phù.")
 		return
 	end
 	Clear_XSCRIPT();

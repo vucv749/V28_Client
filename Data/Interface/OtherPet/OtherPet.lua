@@ -85,14 +85,14 @@ function OtherPet_OnLoad()
 
 	PET_AITYPE[0] = "Nhát gan";
 	PET_AITYPE[1] = "C¦n th§n";
-	PET_AITYPE[2] = "Trung thñc";
-	PET_AITYPE[3] = "Nhanh nh©n";
-	PET_AITYPE[4] = "Dûng mãnh";
+	PET_AITYPE[2] = "Trung Thành";
+	PET_AITYPE[3] = "Nhanh trí";
+	PET_AITYPE[4] = "Dûng Mãnh";
 
 	PET_TAB_TEXT = {
-		[0] = "Trang b¸",
-		"Tß li®u",
-		"Trân Thú",
+		[0] = "T.B¸",
+		"T.Tin",
+		"Thú",
 	};
 	--------------------------
 	--  äÊÞ×°±¸ÓëÈ«¾Ö±äÁ¿¹ØÁª zchw
@@ -245,7 +245,7 @@ function OtherPet_Page_Clear()
 	--ÉèÖÃ äÊÞÊýÁ¿ÐÅÏ¢--add by xindefeng
 	local nPetCount = Pet:Other_GetPet_Count();
 	local nMaxPetCount = GetOtherCurMaxPetCount();
-	OtherPet_List_Text:SetText("Trân Thú Li®t Bi¬u"..nPetCount.."/"..nMaxPetCount);
+	OtherPet_List_Text:SetText("Danh sách "..nPetCount.."/"..nMaxPetCount);
 	
 	OtherPet_ClearStateTooltip();
 end
@@ -307,7 +307,7 @@ function OtherPet_Update()
 	for	i=1, PET_MAX_NUMBER do
 		if Pet:Other_IsPresent(i-1) then
 			szPetName = Pet : Other_GetPetList_Appoint(i-1);
-			AxTrace(0,1,"Câu"..i.."Chích Khiªu"..szPetName);
+			AxTrace(0,1,"Câu "..i.."Tên g÷i"..szPetName);
 
 			OtherPet_List : AddItem(szPetName, i-1);
 
@@ -346,7 +346,7 @@ function OtherPet_Update()
 	else
 		strNeedLevelColor="#c00FF00";
 	end
-	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
+	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).." c¤p#W mang theo";
 	OtherPet_NeedLevel:SetText( strNeedLevel );
 		
 end
@@ -410,7 +410,7 @@ function OtherPet_Show_Appoint(nIndex)
 
 	local strAI;
 	if(strName>4 or strName <0) then
-		strAI = "Sai l¥m";
+		strAI = "Sai";
 	else
 		strAI =	PET_AITYPE[strName];
 	end
@@ -419,7 +419,7 @@ function OtherPet_Show_Appoint(nIndex)
  	strName,strName2 = Pet:Other_GetName(nIndex);
 	local nEra, strTypeName = Pet:Other_GetPetTypeName(nIndex);
  	if( 1 == nEra ) then
- 	    strName2 = "Ð¶i thÑ 2"..strTypeName
+ 	    strName2 = "Ð¶i thÑ 2 "..strTypeName
  	end
 
 
@@ -431,14 +431,14 @@ function OtherPet_Show_Appoint(nIndex)
 --	OtherPet_PageHeader : SetText( strAI .. strName2 );
 
 	strName,strName2,sex = Pet : Other_GetID(nIndex);
-	OtherPet_OtherPetID : SetText( "Trân Thú ID:"..strName2 );
+	OtherPet_OtherPetID : SetText( "ID thú:"..strName2 );
 	AxTrace(0,0,"GetID="..strName .. strName2);
 
 	strName = Pet : Other_GetConsort(nIndex);
 	if(strName == "00000000") then
 		strName = "";
 	end;
-	OtherPet_ConsortID : SetText( "Ph¯i ngçu ID:"..strName );
+	OtherPet_ConsortID : SetText( "ID bÕn ð¶i:"..strName );
 	
 	if Pet : Other_GetGoodsProtect_Pet(nIndex) == 1 then
 		OtherPet_Model_Protect_Text : SetText( "#{GDWPBH_090507_4}" );
@@ -447,9 +447,9 @@ function OtherPet_Show_Appoint(nIndex)
 	end
 
 	if(sex == 1) then
-		strName = "Gi¯ng ðñc";
+		strName = "Ðñc";
 	else
-		strName = "Gi¯ng cái";
+		strName = "Cái";
 	end
 
 	local nGeneration  = Pet : Other_GetGeneration(nIndex)
@@ -467,11 +467,11 @@ function OtherPet_Show_Appoint(nIndex)
 	else
 		strNeedLevelColor="#c00FF00";
 	end
-	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).."C¤p#W Mang theo";
+	strNeedLevel = strNeedLevelColor..tostring( nTakeLevel ).." c¤p#W mang theo";
 	OtherPet_NeedLevel:SetText( strNeedLevel );
 	strName = Pet : Other_GetNaturalLife(nIndex);
 --	strName2 = OtherPet:	GetMaxLife(nIndex);
-	OtherPet_Life : SetText( "S¯ng lâu:"..strName );
+	OtherPet_Life : SetText( "Th÷: "..strName );
 
 --	strName = Pet : Other_GetLoyalgGade(nIndex);
 --	OtherPet_LoyalgGade : SetText( strName );
@@ -480,13 +480,13 @@ function OtherPet_Show_Appoint(nIndex)
 --	OtherPet_GenGu : SetText( "¸ù¹Ç:"..strName );
 
 	strName = Pet : Other_GetLevel(nIndex);
-	OtherPet_Level : SetText( "C¤p b§c:"..strName );
+	OtherPet_Level : SetText( "C¤p: "..strName );
 
 --	strName = Pet : Other_GetType(nIndex);
 --	OtherPet_Type : SetText( "µÚ".. tostring(strName).."´ú" );
 
 	strName = Pet : Other_GetHappy(nIndex);
-	OtherPet_Happy : SetText( "Khoái LÕc:"..strName );
+	OtherPet_Happy : SetText( "Hoan hï:"..strName );
 
 	strName = Pet : Other_GetLixing(nIndex);
 	OtherPet_Lingxing : SetText("#{RXZS_XML_28}"..strName)
@@ -544,11 +544,11 @@ function OtherPet_Show_Appoint(nIndex)
 	end
 
 	strName,strName2 = Pet : Other_GetExp(nIndex);
-	OtherPet_Exp : SetText( "Kinh nghi®m:"..strName .."/"..strName2);
+	OtherPet_Exp : SetText( "EXP:"..strName .."/"..strName2);
 --yyËµ£¬²»¿ ¸ñ
 	strName = Pet : Other_GetHP(nIndex);
 	strName2 = Pet:	Other_GetMaxHP(nIndex);
-	OtherPet_Blood : SetText( "Huyªt:"..strName .."/".. strName2);
+	OtherPet_Blood : SetText( "Sinh lñc:"..strName .."/".. strName2);
 --	strName = Pet : Other_GetMP(nIndex);
 --	strName2 = Pet:	Other_GetMaxMP(nIndex);
 --	OtherPet_MP : SetText( strName .." / ".. strName2);
@@ -580,7 +580,7 @@ function OtherPet_Show_Appoint(nIndex)
 --	OtherPet_Stability : SetProperty("TextColours","tl:FFEFEFEF tr:FFEFEFEF bl:FFEFEFEF br:FFEFEFEF");
 
 	strName = Pet : Other_GetBasic(nIndex);
-	OtherPet_GenGu : SetText( "Cån C¯t:"..tonumber(strName) );
+	OtherPet_GenGu : SetText( "Cån c¯t:"..tonumber(strName) );
 
 	OtherPet_CriticalAttack : SetText( Pet:Other_GetCriticalAttack(nIndex)  );
 	OtherPet_CriticalDefence : SetText(Pet:Other_GetCriticalDefence(nIndex))
@@ -615,9 +615,9 @@ function OtherPet_Show_Appoint(nIndex)
 
 
 	strName = Pet : Other_GetGrowRate(nIndex);
-	OtherPet_Growth : SetText("#GkHông biªt")
+	OtherPet_Growth : SetText("#GChßa biªt")
 	local nGrowLevel = Pet : Other_GetPetGrowLevel(nIndex,tonumber(strName));
-	local strTbl = {"S½ C¤p","Xu¤t S¡c","Ki®t Xu¤t","Trác Vi®t","Toàn MÛ"};
+	local strTbl = {"Thß¶ng ","¿u ","Ki®t ","Trác ","Tuy®t "};
 
 	if(nGrowLevel >= 0) then
 		nGrowLevel = nGrowLevel + 1;	--c???0?????
@@ -667,7 +667,7 @@ function OtherPet_Show_Appoint(nIndex)
 		end
 	end
 	if(food >= 100) then
-		strName = strName .. "Thäo";
+		strName = strName .. "Cö";
 		food = food - 100;
 		if food > 0 then
 			strName = strName .. ",";
@@ -1049,10 +1049,10 @@ function OtherPet_SetStateTooltip( nIndex )
 	end
 
 
-	OtherPet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther) );
-	OtherPet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) );
-	OtherPet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther) );
-	OtherPet_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther) );
+	OtherPet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rKháng Bång:"..tostring(iIceDefine).."#rGiäm kháng Bång: "..tostring(iIceResistOther) );
+	OtherPet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rKháng Höa: "..tostring(iFireDefine).."#rGiäm kháng Höa: "..tostring(iFireResistOther) );
+	OtherPet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rKháng Huy«n:"..tostring(iThunderDefine).."#rGiäm kháng Huy«n: "..tostring(iThunderResistOther) );
+	OtherPet_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rKháng Ðµc:"..tostring(iPoisonDefine).."#rGiäm kháng Ðµc: "..tostring(iPoisonResistOther) );
 
 end
 
@@ -1074,10 +1074,10 @@ function OtherPet_ClearStateTooltip()
 	local iThunderResistOther	= 0;
 	local iPoisonResistOther	= 0;
 
-	OtherPet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rBång Kháng:"..tostring(iIceDefine).."#rGiäm Bång Kháng:"..tostring(iIceResistOther) );
-	OtherPet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rHoä Kháng:"..tostring(iFireDefine).."#rGiäm Hoä Kháng:"..tostring(iFireResistOther) );
-	OtherPet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rHuy«n Kháng:"..tostring(iThunderDefine).."#rGiäm Huy«n Kháng:"..tostring(iThunderResistOther) );
-	OtherPet_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rÐµc Kháng:"..tostring(iPoisonDefine).."#rGiäm Ðµc Kháng:"..tostring(iPoisonResistOther) );
+	OtherPet_IceFastness:SetToolTip("Bång công:"..tostring(iIceAttack).."#rKháng Bång:"..tostring(iIceDefine).."#rGiäm kháng Bång: "..tostring(iIceResistOther) );
+	OtherPet_FireFastness:SetToolTip("Höa công:"..tostring(iFireAttack).."#rKháng Höa: "..tostring(iFireDefine).."#rGiäm kháng Höa: "..tostring(iFireResistOther) );
+	OtherPet_ThunderFastness:SetToolTip("Huy«n công:"..tostring(iThunderAttack).."#rKháng Huy«n:"..tostring(iThunderDefine).."#rGiäm kháng Huy«n: "..tostring(iThunderResistOther) );
+	OtherPet_PoisonFastness:SetToolTip("Ðµc công:"..tostring(iPoisonAttack).."#rKháng Ðµc:"..tostring(iPoisonDefine).."#rGiäm kháng Ðµc: "..tostring(iPoisonResistOther) );
 
 end
 

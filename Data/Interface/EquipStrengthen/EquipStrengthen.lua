@@ -131,7 +131,7 @@ function EquipStrengthen_Update(Item_index)
 					EquipStrengthen_OK:Disable()
 					EquipStrengthen_Quick:Disable()
 				else
-					PushDebugMessage("ThØ trang b¸ không th¬ cß¶ng hóa.")
+					PushDebugMessage("Trang b¸ này không th¬ cß¶ng hóa.")
 					return
 				end
 			else				
@@ -160,7 +160,7 @@ function EquipStrengthen_Update(Item_index)
 				EquipStrengthen_Info2:Show();
 				EquipStrengthen_Info6:Show();
 				if(tonumber(StrongLevel) == 0)then
-					EquipStrengthen_Info6:SetText("Vô");
+					EquipStrengthen_Info6:SetText("Không");
 				else
 					EquipStrengthen_Info6:SetText(""..tonumber(StrongLevel));
 				end
@@ -176,7 +176,7 @@ function EquipStrengthen_Update(Item_index)
 				EquipStrengthen_Info7 : SetText("#G#{_ITEM30900005}")
 			else
 				Enchange_Item2 = 30900006;
-				EquipStrengthen_Info7 : SetText("#G#{_ITEM30900006}#WHo£c#G#{_ITEM30900045}")
+				EquipStrengthen_Info7 : SetText("#G#{_ITEM30900006}#W ho£c #G#{_ITEM30900045}")
 			end
 			
 			EquipStrengthen_Info9:Show();
@@ -192,7 +192,7 @@ local	EB_GETUP_BIND =2			-- ????
 local	EB_EQUIP_BIND =3			-- ????
 function EquipStrengthen_Buttons_Clicked()
 	if Enchange_Item1 == -1 then
-		PushDebugMessage("Thïnh ð¬ vào mµt cái trang b¸.")
+		PushDebugMessage("Hãy ð£t 1 trang b¸ vào!")
 		return
 	end
 	local StrongLevel = LifeAbility:Get_Equip_CurStrengthLevel(Enchange_Item1);
@@ -216,7 +216,7 @@ function EquipStrengthen_Buttons_Clicked()
 		local index1,BindState1 = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(QianghualuId));
 		--PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸21¡£")
 		if(index1 == -1)then
-			local str = "C¥n có #{_ITEM"..Enchange_Item2.."}Ho£c#{_ITEM"..QianghualuId.."}";
+			local str = " C¥n #{_ITEM"..Enchange_Item2.."} ho£c #{_ITEM"..QianghualuId.."}";
 		--PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸321¡£")
 			PushDebugMessage(str);
 			return
@@ -228,7 +228,7 @@ function EquipStrengthen_Buttons_Clicked()
 	end
 	
 	if(index == -1)then
-		local str =  "Khuyªt thiªu#{_ITEM"..Enchange_Item2.."}, ho£c là#{_ITEM"..Enchange_Item2.."}Dî Gia Toä.";
+		local str =  "Thiªu #{_Item"..Enchange_Item2.."}, ho£c #{_Item"..Enchange_Item2.."} ðã khóa.";
 		PushDebugMessage(str);
 		return
 	end

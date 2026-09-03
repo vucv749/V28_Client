@@ -197,13 +197,13 @@ function PetInviteFriend_ConvertNumToMenPai( MenPaiId )
 		strMenPai = "Thiên S½n";
 
 	elseif(8 == MenPaiId) then
-		strMenPai = "Tiêu dao";
+		strMenPai = "Tiêu Dao";
 
 	elseif(9 == MenPaiId) then
 		strMenPai = "Tñ do";
 
 	elseif(10== MenPaiId) then
-		strMenPai = "MÕn Ğà S½n Trang";
+		strMenPai = "Mµ Dung";
 
 	end
 
@@ -316,12 +316,12 @@ function PetInviteFriend_SendMail( idx )
 
 	if(strUser == strOHuman) then
 		--²»ÄÜ½áÊ¶×Ô¼ºµÄ äÊŞ
-		PushDebugMessage("Không th¬ Hoà chính mình Ğích Trân Thú kªt các\\u0020hÕ.");
+		PushDebugMessage("Không ğßşc kªt gioa v¾i Trân Thú bän thân.");
 	else
 		--Í¨Öª×Ô¼º
-		PushDebugMessage("Dî gæi ği cüa ngß½i kªt các\\u0020hÕ thïnh c¥u.");
+		PushDebugMessage("Ğã gØi yêu c¥u kªt giao.");
 		--·¢ËÍÓÊ¼ş
-		DataPool:SendMail(strOHuman, strUser .. "Tß·ng kªt các\\u0020hÕ cüa ngß½i"  .. strOPet .. "!" );
+		DataPool:SendMail(strOHuman, strUser .. "Mu¯n làm quen"  .. strOPet .. "!" );
 		--·¢ËÍ½áÊ¶Í³¼ÆĞÅÏ¢
 		PetInviteFriend : SendAuditMsg(g_serverNpcId);
 	end

@@ -199,7 +199,7 @@ function ContexMenu_OnEvent(event)
 				ContexMenu_TeamLeader:Show();
 			end
 			
-			AxTrace(0, 0, "Ðµi trß·ng thái ð½n menu enter:" ..tostring( arg4 ) );
+			AxTrace(0, 0, "Thñc Ð½n Ðµi Trß·ng menu enter: " ..tostring( arg4 ) );
 			currentSelectMember = tonumber( arg4 );
 
 			return;
@@ -263,10 +263,10 @@ function ContexMenu_OnEvent(event)
 				Myself_DisbondRide:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				Myself_DisbondRide:Enable();
-				Myself_DisbondRide:SetText("M¶i Ð°ng KÜ");
+				Myself_DisbondRide:SetText("M¶i cùng cßÞi");
 			else
 				Myself_DisbondRide:Enable();
-				Myself_DisbondRide:SetText("Hüy bö Ð°ng KÜ");
+				Myself_DisbondRide:SetText("Hüy cùng cßÞi");
 			end
 			
 			local Level = Player:GetData( "LEVEL" );
@@ -297,10 +297,10 @@ function ContexMenu_OnEvent(event)
 				Myself_InTeam_DisbondRide:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				Myself_InTeam_DisbondRide:Enable();
-				Myself_InTeam_DisbondRide:SetText("M¶i Ð°ng KÜ");
+				Myself_InTeam_DisbondRide:SetText("M¶i cùng cßÞi");
 			else
 				Myself_InTeam_DisbondRide:Enable();
-				Myself_InTeam_DisbondRide:SetText("Hüy bö Ð°ng KÜ");
+				Myself_InTeam_DisbondRide:SetText("Hüy cùng cßÞi");
 			end
 		
 			local Level = Player:GetData( "LEVEL" );
@@ -338,10 +338,10 @@ function ContexMenu_OnEvent(event)
 				ContexMenu_Model_Open_Other_Invite_Ride:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				ContexMenu_Model_Open_Other_Invite_Ride:Enable();
-				ContexMenu_Model_Open_Other_Invite_Ride:SetText("M¶i Ð°ng KÜ");
+				ContexMenu_Model_Open_Other_Invite_Ride:SetText("M¶i cùng cßÞi");
 			else
 				ContexMenu_Model_Open_Other_Invite_Ride:Enable();
-				ContexMenu_Model_Open_Other_Invite_Ride:SetText("Hüy bö Ð°ng KÜ");
+				ContexMenu_Model_Open_Other_Invite_Ride:SetText("Hüy cùng cßÞi");
 			end
 			
 			if Player : GetData( "GUILD" ) == -1 then
@@ -373,10 +373,10 @@ function ContexMenu_OnEvent(event)
 				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:Enable();
-				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:SetText("M¶i Ð°ng KÜ");
+				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:SetText("M¶i cùng cßÞi");
 			else
 				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:Enable();
-				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:SetText("Hüy bö Ð°ng KÜ");
+				ContexMenu_Model_Open_Other_Not_teammer_Invite_Ride:SetText("Hüy cùng cßÞi");
 			end
 			
 			if Player : GetData( "GUILD" ) == -1 then
@@ -407,10 +407,10 @@ function ContexMenu_OnEvent(event)
 				ContexMenu_Model_Open_Other_teammer_me_Ride:Disable();
 			elseif( tonumber( horse ) == 1 ) then
 				ContexMenu_Model_Open_Other_teammer_me_Ride:Enable();
-				ContexMenu_Model_Open_Other_teammer_me_Ride:SetText("M¶i Ð°ng KÜ");
+				ContexMenu_Model_Open_Other_teammer_me_Ride:SetText("M¶i cùng cßÞi");
 			else
 				ContexMenu_Model_Open_Other_teammer_me_Ride:Enable();
-				ContexMenu_Model_Open_Other_teammer_me_Ride:SetText("Hüy bö Ð°ng KÜ");
+				ContexMenu_Model_Open_Other_teammer_me_Ride:SetText("Hüy cùng cßÞi");
 			end
 			
 			if Player : GetData( "GUILD" ) == -1 then
@@ -549,9 +549,9 @@ function ContexMenu_OnEvent(event)
 				for i = 0 , 3 do
 					local strGroupName = DataPool:GetGroupingName(i)
 					if strGroupName ~= "" then
-						g_MoveToMenuItem[i + 1]:SetText("Di ðµng Ðáo"..strGroupName)
+						g_MoveToMenuItem[i + 1]:SetText("Di chuy¬n ðªn "..strGroupName)
 					else
-						g_MoveToMenuItem[i + 1]:SetText("Di ðµng Ðáo"..g_GroupingName[i + 1])
+						g_MoveToMenuItem[i + 1]:SetText("Di chuy¬n ðªn "..g_GroupingName[i + 1])
 					end
 				end
 				ContexMenu_FriendMenu:Show()
@@ -577,9 +577,9 @@ function ContexMenu_OnEvent(event)
 			for i = 0 , 3 do
 				local strGroupName = DataPool:GetGroupingName(i)
 				if strGroupName ~= "" then
-					g_MoveToMenuItem[i + 1]:SetText("Di ðµng Ðáo"..strGroupName)
+					g_MoveToMenuItem[i + 1]:SetText("Di chuy¬n ðªn "..strGroupName)
 				else
-					g_MoveToMenuItem[i + 1]:SetText("Di ðµng Ðáo"..g_GroupingName[i + 1])
+					g_MoveToMenuItem[i + 1]:SetText("Di chuy¬n ðªn "..g_GroupingName[i + 1])
 				end
 			end
 
@@ -1375,7 +1375,7 @@ function ContexMenu_ThrowList( nGroup )
 		local name = DataPool:GetFriend(tonumber(currentSelectChannal), tonumber(currentIndex), "NAME")
 		DataPool:AddFriend(nGroup, name, 1)		
 		if tonumber(nGroup) == 5 then
-		    PushDebugMessage("TÕm th¶i không th¬ gia nh§p s± ðen")
+		    PushDebugMessage("TÕm th¶i không th¬ cho vào s± ðen")
 		end
 	else
 		DataPool:ThrowToList( tonumber( currentSelectChannal ), tonumber( currentIndex ), tonumber( nGroup ) );

@@ -161,13 +161,13 @@ function Stiletto_Update(pos1,pos0)
 			end
 					
 			if Bore_Count1 > 2 then --add:lby 20080521 
-				PushDebugMessage("N½i này chï có th¬ Tá Ti«n 3Cá Kh±ng")
+				PushDebugMessage("— ðây chï có th¬ ðøc ðßþc 3 l²")
 				Stiletto_Clear()
 				return
 			end
 			
 			if Need_Item1 < -1 then
-				PushDebugMessage("V§t ¤y Ph¦m không th¬ gia tång Ao Tào")
+				PushDebugMessage("V§t ph¦m này không th¬ ðøc l²")
 				return
 			end
 			
@@ -197,7 +197,7 @@ function Stiletto_Update(pos1,pos0)
 			return;
 		end
 		Stiletto_Money : SetProperty("MoneyNumber", tostring(Need_Money));
-		Stiletto_State : SetText("Trß¾c m£t Ao Tào S±:"..Bore_Count.."; Có th¬ gia tång Ao Tào S±:"..tostring(3-Bore_Count))
+		Stiletto_State : SetText("Ðã ðøc: "..Bore_Count.."; l² có th¬ ðøc:"..tostring(3-Bore_Count))
 	elseif pos_ui == 2 then
 		
 		local Item_Class = PlayerPackage : GetItemSubTableIndex(pos_packet,0)
@@ -209,7 +209,7 @@ function Stiletto_Update(pos1,pos0)
 		
 		
 	  if itemindex == 20109101 or itemindex == 20310111 then  --add:lby 20080521????????,????????
-	 		PushDebugMessage("Cai v§t ph¦m không th¬ · ch² này sØ døng")
+	 		PushDebugMessage("V§t ph¦m này không th¬ sØ døng · ðây")
 	 		return
 	  end
 
@@ -244,18 +244,18 @@ end
 
 function Stiletto_Buttons_Clicked()
 	if MATERIAL_QUALITY == -1 then
-		PushDebugMessage("Thïnh ð¬ vào khoan tài li®u")
+		PushDebugMessage("Bö nguyên li®u ðøc l² vào")
 		return
 	end
 	if EQUIP_QUALITY ~= -1 then
 		if Need_Item == -2 then
-			PushDebugMessage("V§t ¤y Ph¦m không th¬ gia tång Ao Tào")
+			PushDebugMessage("V§t ph¦m này không th¬ ðøc l²")
 		elseif Need_Item == -3 then
-			PushDebugMessage("Ao Tào Dî ðÕt t¾i l¾n nh¤t s¯ lßþng")
+			PushDebugMessage("Ðã ðÕt s¯ l² t¯i ða")
 --		elseif DataPool:GetPlayerMission_ItemCountNow(Need_Item) < Need_Item_Count then
 --			PushDebugMessage("È±ÉÙ²ÄÁÏ")
 		elseif Player:GetData("MONEY") + Player:GetData("MONEY_JZ") < Need_Money then
-			PushDebugMessage("Không ðü ngân lßþng")
+			PushDebugMessage("Ngân lßþng không ðü")
 		else
 			
 			local Notify = 0			
@@ -280,7 +280,7 @@ function Stiletto_Buttons_Clicked()
 			Send_XSCRIPT();
 		end
 	else
-		PushDebugMessage("Thïnh ð¬ vào mµt cái trang b¸")
+		PushDebugMessage("Ð£t trang b¸ vào.")
 	end
 	
 end

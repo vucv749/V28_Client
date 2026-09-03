@@ -239,7 +239,7 @@ function GemMelting_UpdateGemItem( pos_ui, pos_packet )
 	g_NeedItemID2 = CurNeedItemID2
 	local needItem = "#{BSRL_90512_11}#{_ITEM"..CurNeedItemID.."}"
 	if(CurNeedItemID2 ~=-1 ) then
-		needItem = needItem.."Ho£c là#{_ITEM"..CurNeedItemID2.."}"
+		needItem = needItem.."Ho£c #{_ITEM"..CurNeedItemID2.."}"
 	end
 	GemMelting_NeedItem:SetToolTip(needItem)
 
@@ -268,7 +268,7 @@ function GemMelting_UpdateNeedItem( pos_ui, pos_packet )
 	if PlayerPackage:GetItemTableIndex( pos_packet ) ~= g_NeedItemID and PlayerPackage:GetItemTableIndex( pos_packet ) ~= g_NeedItemID2 then
 		local needItem = "#{JKBS_081021_010}#{_ITEM"..g_NeedItemID.."}"
 		if(g_NeedItemID2 ~=-1 ) then
-			needItem = needItem.."Ho£c là#{_ITEM"..g_NeedItemID2.."}"
+			needItem = needItem.."Ho£c #{_ITEM"..g_NeedItemID2.."}"
 		end
 		PushDebugMessage(needItem)
 		return

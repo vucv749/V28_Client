@@ -69,7 +69,7 @@ function ExpAssign_Update()
 	
 	--ÉÆ¶ñÖµ¶Ò»»
 	if gOpType == 1 then
-		ExpAssign_Info2:SetText("M²i l¥n l¾n nh¤t Nång ð±i Ðích thi®n ác Tr¸ Vi 5000Ði¬m.");
+		ExpAssign_Info2:SetText("Giá tr¸ thi®n ác t¯i ða m²i l¥n ð±i là 5000 ði¬m");
 		if gMasterLevel == 1 then
 			gBasePoint = 30; 		--1?????
 		elseif gMasterLevel == 2 then
@@ -103,12 +103,12 @@ function ExpAssign_Update()
 				end
 			end
 		end
-		str0	= "Nhçm hi®n tÕi có th¬ l¤y ra Ðích kinh nghi®m Vi"..tostring( gExp )..", Nhçm có ðßþc Ðích thi®n ác Tr¸ Vi"..tostring( gGBValue )
-		str1	= "C¥n thi®n ác Ði¬m: 0"
+		str0	= "EXP lßu giæ: "..tostring( gExp ).."#rÐi¬m PK: "..tostring( gGBValue )
+		str1	= "Thi®n ác c¥n: 0"
 
 	--°ïÅÉ¹±Ï×¶È¶Ò»»
 	elseif gOpType == 2 then
-		ExpAssign_Info2:SetText("M²i ngày Døng Bang C¯ng nhi«u nh¤t Khä lînh Ðích kinh nghi®m Vi 12M£c Ði¬m.");
+		ExpAssign_Info2:SetText("M²i ngày dùng ði¬m c¯ng hiªn bang hµi lînh nh§n EXP t¯i ða là 12 vÕn ði¬m EXP.");
 		if gMasterLevel == 1 then
 			gBasePoint = 250;		--1?????
 		elseif gMasterLevel == 2 then
@@ -124,8 +124,8 @@ function ExpAssign_Update()
 			gAssExp			= gExp
 			gAssGBValue	= math.ceil( gAssExp / gBasePoint )
 		end
-		str0	= "Nhçm hi®n tÕi có th¬ l¤y ra Ðích kinh nghi®m Vi"..tostring( gExp )..", Nhçm có ðßþc Ðích bang phái c¯ng hiªn Ðµ Vi"..tostring( gGPValue )
-		str1	= "C¥n bang phái c¯ng hiªn Ðµ: 0"
+		str0	= "EXP lßu giæ: "..tostring( gExp )..", c¯ng hiªn bang có: "..tostring( gGPValue )
+		str1	= "C¥n c¯ng hiªn bang: 0"
 
 	else
 		return
@@ -148,10 +148,10 @@ function ExpAssign_Button_Max_Click()
 	local	str
 	--ÉÆ¶ñÖµ¶Ò»»
 	if gOpType == 1 then
-		str	= "C¥n thi®n ác Ði¬m:"..tostring(gAssGBValue)
+		str	= "Thi®n ác c¥n: "..tostring(gAssGBValue)
 	--°ïÅÉ¹±Ï×¶È¶Ò»»
 	elseif gOpType == 2 then
-		str	= "C¥n bang phái c¯ng hiªn Ðµ:"..tostring(gAssGPValue)
+		str	= "C¥n c¯ng hiªn bang:"..tostring(gAssGPValue)
 	else
 		return
 	end
@@ -179,10 +179,10 @@ function ExpAssign_Value_Change()
 	end
 	--ÉÆ¶ñÖµ¶Ò»»
 	if gOpType == 1 then
-		str	= "C¥n thi®n ác Ði¬m:"..tostring( math.ceil( nCurExp / gBasePoint ) )
+		str	= "Thi®n ác c¥n: "..tostring( math.ceil( nCurExp / gBasePoint ) )
 	--°ïÅÉ¹±Ï×¶È¶Ò»»
 	elseif gOpType == 2 then
-		str	= "C¥n bang phái c¯ng hiªn Ðµ:"..tostring( math.ceil( nCurExp / gBasePoint ) )
+		str	= "C¥n c¯ng hiªn bang:"..tostring( math.ceil( nCurExp / gBasePoint ) )
 	else
 		return
 	end

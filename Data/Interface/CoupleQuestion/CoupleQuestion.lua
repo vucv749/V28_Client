@@ -48,7 +48,7 @@ function CoupleQuestion_OnShown()
 
 	CoupleQuestion_Total_StopWatch:SetProperty("Timer", "60");
 	CoupleQuestion_ok:Disable();
-	CoupleQuestion_StopWatch_Text:SetText("Thïnh lña ch÷n")
+	CoupleQuestion_StopWatch_Text:SetText("Xin lña ch÷n")
 	
 end
 
@@ -57,11 +57,11 @@ end
 function CoupleQuestion_ShowQuestion()
 	Question_Sequence = Get_XParam_INT(2)
 	
-	CoupleQuestion_Pageheader : SetText("#gFF0FA0vþ ch°ng v¤n ðáp");
-	CoupleQuestion_NPCName_Text: SetText("T±ng Ð« S±:"..tostring(Question_Max))
-	CoupleQuestion_Type_Text : SetText("Trß¾c m£t Ð« S±:"..tostring(Question_Sequence))
-	CoupleQuestion_Number_Text:SetText("Ån ý luÛ th×a:"..tostring(Get_XParam_INT(3)))
-	CoupleQuestion_Text2:SetText("Thßþng Ð« kªt quä:"..tostring(Get_XParam_STR(5)))
+	CoupleQuestion_Pageheader : SetText("#gFF0FA0Phu thê");
+	CoupleQuestion_NPCName_Text: SetText("T±ng s¯ câu höi:"..tostring(Question_Max))
+	CoupleQuestion_Type_Text : SetText("S¯ câu höi trß¾c:"..tostring(Question_Sequence))
+	CoupleQuestion_Number_Text:SetText("Chï s¯:"..tostring(Get_XParam_INT(3)))
+	CoupleQuestion_Text2:SetText("Kªt quä:"..tostring(Get_XParam_STR(5)))
 
 	CoupleQuestion_Text : SetText(Get_XParam_STR(1));
 
@@ -154,7 +154,7 @@ function CoupleQuestion_OK_Clicked()
 	for j=1,3 do
 		CoupleQuestion_Buttons[j]:Disable();
 	end
-	CoupleQuestion_StopWatch_Text:SetText("Xin ðþi Ðãi ð¯i phß½ng lña ch÷n")
+	CoupleQuestion_StopWatch_Text:SetText("Ðang ðþi ð¯i phß½ng lña ch÷n")
 end
 
 --modi:lby Ôö¼ÓÈ·¶¨°´Å¥¼ÆÊ±Æ÷

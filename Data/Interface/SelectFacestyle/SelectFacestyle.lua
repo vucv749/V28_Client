@@ -297,15 +297,15 @@ function SelectFacestyle_ShowDetail()
 	else
 		SelectFacestyle_Accept:SetText("#{GXHDZ_141121_10}")
 		if reqMenPai == -1 then
-			SelectFacestyle_WarningText:SetText("C¥n ðÕo cø: #G"..name.."#r#Wc?n ti«n tài: #Y#{_EXCHG"..CostMoney.."}#r".."#{GXHDZ_141121_05}")
+			SelectFacestyle_WarningText:SetText("C¥n ðÕo cø: #G"..name.."#r#W C¥n tiêu hao: #Y#{_EXCHG"..CostMoney.."}#r".."#{GXHDZ_141121_05}")
 		elseif player_menpai ==  reqMenPai then
 			local menpainame = SelectFacestyle_GetMenpaiString(reqMenPai)
 			local scriptglobal = ScriptGlobal_Format("#{HWMP_200619_04}", menpainame)
-			SelectFacestyle_WarningText : SetText("C¥n ðÕo cø: #G"..name.."#r#Wc?n ti«n tài: #Y#{_EXCHG"..CostMoney.."}".."#r"..scriptglobal.."#r".."#{GXHDZ_141121_05}")		
+			SelectFacestyle_WarningText : SetText("C¥n ðÕo cø: #G"..name.."#r#W C¥n tiêu hao: #Y#{_EXCHG"..CostMoney.."}".."#r"..scriptglobal.."#r".."#{GXHDZ_141121_05}")		
 		else 
 			local menpainame = SelectFacestyle_GetMenpaiString(reqMenPai)
 			local scriptglobal = ScriptGlobal_Format("#{HWMP_200619_03}", menpainame)
-			SelectFacestyle_WarningText:SetText("C¥n ðÕo cø: #G"..name.."#r#Wc?n ti«n tài: #Y#{_EXCHG"..CostMoney.."}".."#r"..scriptglobal.."#r".."#{GXHDZ_141121_05}")	
+			SelectFacestyle_WarningText:SetText("C¥n ðÕo cø: #G"..name.."#r#W C¥n tiêu hao: #Y#{_EXCHG"..CostMoney.."}".."#r"..scriptglobal.."#r".."#{GXHDZ_141121_05}")	
 		end
 	end
 

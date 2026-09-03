@@ -216,7 +216,7 @@ end
 function MysteryShop_OnBtnClicked_OpenFitting()
 	
 	if IsIdleLogic() ~= 1 then
-		SetNotifyTip("Không th¬ vào Hành ThØ thao tác.")
+		SetNotifyTip("Không th¬ thao tác.")
 		return
 	end
 	
@@ -227,7 +227,7 @@ function MysteryShop_OnBtnClicked_OpenFitting()
 	end
 
 	MouseCmd_ShopFittingSet()
-	SetNotifyTip("Thïnh Ði¬m Kích Nhçm mu¯n thØ Xuyên Ðích trang phøc m¯t Ho£c cßÞi thØ Ðích t÷a kÜ.")
+	SetNotifyTip("Xin ch÷n th¶i trang ho£c thú cßÞi mà các hÕ mu¯n thØ.")
 end
 
 --===============================================
@@ -352,7 +352,7 @@ function MysteryShop_UpdatePage(thePage)
 				GOODS_DESCS[i]:SetText(theAction:GetName())
 			end
 			local nPrice = NpcShop:EnumItemPrice(idx)
-			GOOD_BAD[i]:SetText("Nguyên bäo:"..tostring(nPrice))
+			GOOD_BAD[i]:SetText("KNB: "..tostring(nPrice))
 			i = i + 1
 		else
 			GOODS_BUTTONS[i]:SetActionItem(-1)
@@ -497,7 +497,7 @@ function MysteryShop_RepairAll_MouseEnter()
 	
 	szMoney = szMoney..tostring(nCopper).."#-16"
 	
-	MysteryShop_AllRepair:SetToolTip("Toàn bµ sØa chæa#rphí døng:"..szMoney)
+	MysteryShop_AllRepair:SetToolTip("SØa hªt c¥n:#r"..szMoney)
 
 end
 
