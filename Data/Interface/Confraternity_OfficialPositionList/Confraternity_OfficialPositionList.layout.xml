@@ -2,10 +2,10 @@
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="Confraternity_OfficialPositionList_Frame">
         <Property Name="UnifiedPosition" Value="{{0.0,213},{0.12,70}}" />
-        <Property Name="AbsoluteSize" Value="w:430 h:320" />        
+    <Property Name="AbsoluteSize" Value="w:444 h:320" />
         <Window Type="TLBB_DragTitle" Name="Confraternity_OfficialPositionList_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="Confraternity_OfficialPositionList_Frame" />
             <Property Name="Font" Value="YouYuan11.25" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -26,9 +26,9 @@
         </Window>
         <Window Type="DefaultWindow" Name="Confraternity_OfficialPositionList_Function_Frame">
             <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
-            <Property Name="UnifiedSize" Value="{{0.000000,418.000000},{0.000000,239.000000}" />
+      <Property Name="UnifiedSize" Value="{{0.000000,430.000000},{0.000000,239.000000}" />
             <Window Type="TLBB_ListBoxCommon" Name="Confraternity_OfficialPositionList_MemberList">
-                <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.003509,0.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0000000,0.000000},{0.000000,0.000000}" />
                 <Property Name="Size" Value="w:0.5 h:1.0" />
 				        <Event Name="ItemSelectionByRButton" Function="Confraternity_OfficialPositionList_PopMenu();" />
                 <Event Name="ItemSelectionChanged" Function="Confraternity_OfficialPositionList_Selected();" />
@@ -39,23 +39,23 @@
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info1_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5000000,10.000000},{0.000000,4.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5,-15.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.490000,10.000000},{0.000000,4.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.51,-15.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_773}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info2_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5000000,10.000000},{0.000000,22.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.4900000,10.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.11,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_449}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info2">
-                <Property Name="UnifiedPosition" Value="{{0.7,0.000000},{0.000000,22.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.7,-30.000000},{0.000000,22.000000}" />
                 <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_275}" />
@@ -63,15 +63,15 @@
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info3_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5000000,10.000000},{0.000000,40.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.4900000,10.000000},{0.000000,40.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.11,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_228}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info3">
-                <Property Name="UnifiedPosition" Value="{{0.7,0.000000},{0.000000,40.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.7,-30.000000},{0.000000,40.000000}" />
                 <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="999" />
@@ -79,64 +79,64 @@
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info4_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5000000,10.000000},{0.000000,58.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.4900000,10.000000},{0.000000,58.000000}" />
+        <Property Name="UnifiedSize" Value="{{0,76.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_297}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info4">
-                <Property Name="UnifiedPosition" Value="{{0.75,0.000000},{0.000000,58.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,30.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.759259,0.000000},{0.000000,58.000000}" />
+        <Property Name="UnifiedSize" Value="{{0,100.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="9999" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info7_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5000000,10.000000},{0.000000,76.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,15.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.4900000,10.000000},{0.000000,76.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.33,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_938}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info7">
-                <Property Name="UnifiedPosition" Value="{{0.75,10.000000},{0.000000,76.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,30.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.853147,0.000000},{0.000000,76.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info5_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5000000,10.000000},{0.000000,94.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.25,0.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.4900000,10.000000},{0.000000,94.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.33,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_577}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info5">
-                <Property Name="UnifiedPosition" Value="{{0.75,0.000000},{0.000000,94.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.853147,0.000000},{0.000000,94.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.14,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="06-12-30" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info6_Text">
-                <Property Name="UnifiedPosition" Value="{{0.5000000,10.000000},{0.000000,112.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.25,0.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.4900000,10.000000},{0.000000,112.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.33,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Confraternity_OfficialPositionList_Info6">
-                <Property Name="UnifiedPosition" Value="{{0.75,0.000000},{0.000000,112.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,18.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.853147,0.000000},{0.000000,112.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.14,0.000000},{0.000000,18.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />

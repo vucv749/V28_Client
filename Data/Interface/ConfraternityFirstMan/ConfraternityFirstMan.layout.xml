@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="ConfraternityFirstMan_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.0,210},{0.12,0}}" />
-        <Property Name="AbsoluteSize" Value="w:160 h:256" />
+    <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,256.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,210.000000},{0.120000,0.000000}}"/>
         <Window Type="TLBB_DragTitle" Name="ConfraternityFirstMan_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="ConfraternityFirstMan_Frame" />
             <Window Type="TLBB_SimpleText" Name="ConfraternityFirstMan_PageHeader">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -36,12 +36,12 @@
                 <Property Name="Size" Value="w:1.0 h:0.88" />
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="ConfraternityFirstMan_Blank">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="ConfraternityFirstMan_Accept">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{INTERFACE_XML_569}" />
                 <Event Name="Clicked" Function="Guild_FirstMan_Confirm();" />
             </Window>

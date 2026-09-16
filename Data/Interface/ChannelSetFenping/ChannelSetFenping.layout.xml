@@ -5,8 +5,8 @@
     <Property Name="UnifiedPosition" Value="{{0.0,151},{1.0,-360.0}}" />
     <Property Name="AlwaysOnTop" Value="true" />
     <Window Type="TLBB_DragTitle" Name="ChannelSetFenping_DragTitle">
-      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
       <Property Name="DragTarget" Value="ChannelSetFenping_Frame" />
       <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_PageHeader_Text">
         <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -150,7 +150,7 @@
         </Window>
         <Window Type="TLBB_SimpleText" Name="ChannelSetFenping_GuildLeagueInfo_Text">
           <Property Name="AbsolutePosition" Value="x:19.000000 y:80.000000" />
-          <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+          <Property Name="AbsoluteSize" Value="w:70.0 h:18.0" />
           <Property Name="TextColor" Value="FFFFF263" />
           <Property Name="Text" Value="#{TM_20080320_01}" />
           <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -237,8 +237,8 @@
         <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="ChannelSetFenping_Destory">
-        <Property Name="UnifiedPosition" Value="{{0.500000,-60.000000},{1.000000,-20.000000}" />
-        <Property Name="AbsoluteSize" Value="w:120.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,140.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-70.000000},{1.000000,-20.000000}}"/>
         <Property Name="Text" Value="#{LTFP_XML_2}" />
         <Event Name="Clicked" Function="ChannelSetFenping_Destory_Clicked();" />
       </Window>

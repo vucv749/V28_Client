@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="TLBB_HeroFrame01" Name="ChunJieQianDao_Frame">
-		<Property Name="UnifiedSize" Value="{{0.000000,732.000000},{0.000000,460.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.500000,-366.000000},{0.500000,-230.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,730.000000},{0.000000,460.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-365.000000},{0.500000,-230.000000}}"/>
 		<Window Type="TLBB_HeroTitle01" Name="ChunJieQianDao_DragTitle_BK">
 			<Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,30.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.500000,-140.000000},{0.000000,-2.000000}}"/>
@@ -16,7 +16,7 @@
 			<Property Name="DragTarget" Value="ChunJieQianDao_Frame"/>
 		</Window>
 		<Window Type="TLBB_ButtonNULL" Name="ChunJieQianDao_Close">
-			<Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,14.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,16.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{1.000000,-30.000000},{0.000000,9.000000}}"/>
 			<Property Name="PushedImage" Value="set:ZLHeroMeeting image:Close_Push"/>
 			<Property Name="NormalImage" Value="set:ZLHeroMeeting image:Close_Normal"/>
@@ -25,8 +25,8 @@
 			<Event Name="Clicked" Function="ChunJieQianDao_OnClose()"/>
 		</Window>
 		<Window Type="DefaultWindow" Name="ChunJieQianDao_Client">
-			<Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,426.000000}}"/>
-			<Property Name="UnifiedPosition" Value="{{0.000000,4.000000},{0.000000,30.000000}}"/>
+            <Property Name="UnifiedSize" Value="{{1.000000,-16.000000},{1.000000,-38.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,30.000000}}"/>
 			<Window Type="DefaultWindow" Name="ChunJieQianDao_PageBK">
 				<Property Name="UnifiedSize" Value="{{0.000000,170.000000},{0.000000,40.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}"/>
@@ -67,7 +67,7 @@
 				</Window>
 			</Window>
 			<Window Type="DefaultWindow" Name="ChunJieQianDao_Page1">
-				<Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,386.000000}}"/>
+                <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-40.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,40.000000}}"/>
 				<Window Type="TLBB_StaticImageNULL" Name="ChunJieQianDao_ClientBK_Page1">
 					<Property Name="UnifiedSize" Value="{{0.000000,724.000000},{0.000000,386.000000}}"/>
@@ -75,11 +75,11 @@
 					<Property Name="RiseOnClick" Value="False"/>
 					<Property Name="Image" Value="set:ChunJieQianDao image:ChunJieQianDao_BK2"/>
 					<Window Type="DefaultWindow" Name="ChunJieQianDao_InfoBK">
-						<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,50.000000}}"/>
-						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,-5.000000},{0.000000,50.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,-2.000000},{0.000000,2.000000}}"/>
 						<Window Type="TLBB_SimpleText" Name="ChunJieQianDao_Info">
-							<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-15.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
 							<Property Name="Text" Value="#{CJQD_20211130_03}"/>
 							<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
 						</Window>
@@ -89,7 +89,7 @@
 						<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,75.000000}}"/>
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item1_BK">
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{0.000000,28.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,35.000000},{0.000000,20.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -118,7 +118,7 @@
 						</Window>
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item2_BK">
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,123.000000},{0.000000,99.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,125.000000},{0.000000,23.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -147,7 +147,7 @@
 						</Window>
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item3_BK">
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,200.000000},{0.000000,35.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,216.000000},{0.000000,25.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -176,7 +176,7 @@
 						</Window>
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item4_BK">
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,277.000000},{0.000000,105.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,310.000000},{0.000000,27.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -206,7 +206,7 @@
 						</Window>
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item5_BK">
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,354.000000},{0.000000,35.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,400.000000},{0.000000,25.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -236,7 +236,7 @@
 						</Window>
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item6_BK">
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,451.000000},{0.000000,67.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,490.000000},{0.000000,25.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -266,7 +266,7 @@
 						</Window>
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item7_BK">
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,553.000000},{0.000000,31.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,605.000000},{0.000000,30.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -296,7 +296,7 @@
 						</Window>
 						<Window Type="TLBB_ActionButton" Name="ChunJieQianDao_Down_Item">
 							<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,468.000000},{0.500000,24.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,621.000000},{0.500000,-10.000000}}"/>
 							<Property Name="AlwaysOnTop" Value="True"/>
 							<Window Type="TLBB_Animate" Name="ChunJieQianDao_Down_ItemAnimate">
 								<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
@@ -318,7 +318,7 @@
 						</Window>
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item8_BK">
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,630.000000},{0.000000,91.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,147.000000},{0.000000,146.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -349,7 +349,7 @@
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item9_BK">
 							<Property Name="Visible" Value="False"/>
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,452.000000},{0.000000,180.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,242.000000},{0.000000,149.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -380,7 +380,7 @@
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item10_BK">
 							<Property Name="Visible" Value="False"/>
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,522.000000},{0.000000,180.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,336.000000},{0.000000,149.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -409,7 +409,7 @@
 						<Window Type="DefaultWindow" Name="ChunJieQianDao_Item11_BK">
 							<Property Name="Visible" Value="False"/>
 							<Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,80.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,592.000000},{0.000000,180.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,430.000000},{0.000000,147.000000}}"/>
 							<Property Name="MouseRButtonHollow" Value="True"/>
 							<Property Name="MouseMoveHollow" Value="True"/>
 							<Property Name="MouseLButtonHollow" Value="True"/>
@@ -438,25 +438,25 @@
 						</Window>
 					</Window>
 					<Window Type="DefaultWindow" Name="ChunJieQianDao_Down">
-						<Property Name="UnifiedSize" Value="{{0.000000,240.000000},{0.000000,30.000000}}"/>
-						<Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{1.000000,-40.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,70.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,310.000000}}"/>
 						<Property Name="RiseOnClick" Value="False"/>
 						<Window Type="TLBB_SimpleText" Name="ChunJieQianDao_TextNum">
-							<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.500000,-10.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,-40.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,30.000000}}"/>
 							<Property Name="Text" Value="#{CJQD_20211130_04}"/>
 							<Property Name="Tooltip" Value="#{CJQD_20211130_19}"/>
 							<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
 						</Window>
 						<Window Type="TLBB_StaticImageNULL" Name="ChunJieQianDao_TextNum_Icon_H">
 							<Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,29.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
 							<Property Name="Tooltip" Value="#{CJQD_20211130_19}"/>
 							<Property Name="Image" Value="set:ChunJieQianDao image:ChunJieQianDao_Repair_Icon_H"/>
 						</Window>
 						<Window Type="TLBB_StaticImageNULL" Name="ChunJieQianDao_TextNum_Icon_D">
 							<Property Name="UnifiedSize" Value="{{0.000000,31.000000},{0.000000,29.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+							<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,30.000000}}"/>
 							<Property Name="Tooltip" Value="#{CJQD_20211130_19}"/>
 							<Property Name="Image" Value="set:ChunJieQianDao image:ChunJieQianDao_Repair_Icon_D"/>
 						</Window>
@@ -472,14 +472,14 @@
 						<Event Name="Clicked" Function="ChunJieQianDao_OnClickPage1Btn1()"/>
 					</Window>
 					<Window Type="TLBB_SimpleText" Name="ChunJieQianDao_Get_Btn_Text">
-						<Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,20.000000}}"/>
-						<Property Name="UnifiedPosition" Value="{{0.500000,-100.000000},{1.000000,-25.000000}}"/>
+                        <Property Name="UnifiedSize" Value="{{1.000000,-525.000000},{1.000000,-365.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.000000,265.000000},{0.000000,360.000000}}"/>
 						<Property Name="Text" Value="#{CJQD_20211130_65}"/>
 						<Property Name="HorzFormatting" Value="WordWrapCentred"/>
 					</Window>
 					<Window Type="TLBB_StaticImageNULL" Name="ChunJieQianDao_Get_Btn_Tips">
 						<Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-						<Property Name="UnifiedPosition" Value="{{1.000000,-320.000000},{0.000000,327.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-340.000000},{0.000000,330.000000}}"/>
 						<Property Name="MouseRButtonHollow" Value="True"/>
 						<Property Name="MouseMoveHollow" Value="True"/>
 						<Property Name="MouseLButtonHollow" Value="True"/>
@@ -498,11 +498,11 @@
 					<Property Name="RiseOnClick" Value="False"/>
 					<Property Name="Image" Value="set:ChunJieQianDao image:ChunJieQianDao_BK1"/>
 					<Window Type="DefaultWindow" Name="ChunJieQianDao_Page2_InfoBK">
-						<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{0.000000,75.000000}}"/>
+						<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,110.000000}}"/>
 						<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
 						<Window Type="TLBB_SimpleText" Name="ChunJieQianDao_Page2_Info">
-							<Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,0.000000}}"/>
-							<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,0.000000}}"/>
+                            <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-39.000000}}"/>
+                            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
 							<Property Name="Text" Value="#{CJQD_20211130_33}"/>
 							<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
 						</Window>
@@ -1036,8 +1036,8 @@
 						<Property Name="HorzFormatting" Value="WordWrapLeftAligned"/>
 					</Window>
 					<Window Type="TLBB_ButtonCommon" Name="ChunJieQianDao_Page2_Btn1">
-						<Property Name="UnifiedSize" Value="{{0.000000,72.000000},{0.000000,24.000000}}"/>
-						<Property Name="UnifiedPosition" Value="{{1.000000,-118.000000},{1.000000,-55.000000}}"/>
+						<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,25.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,175.000000},{1.000000,-55.000000}}"/>
 						<Property Name="Tooltip" Value="#{CJQD_20211130_51}"/>
 						<Property Name="NormalImage" Value="set:ChunJieQianDao image:ChunJieQianDao_Repair_Btn_N"/>
 						<Property Name="HoverImage" Value="set:ChunJieQianDao image:ChunJieQianDao_Repair_Btn_H"/>
@@ -1047,7 +1047,7 @@
 					</Window>
 					<Window Type="TLBB_StaticImageNULL" Name="ChunJieQianDao_Page2_Btn1_Tips">
 						<Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-						<Property Name="UnifiedPosition" Value="{{1.000000,-52.000000},{0.000000,327.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-135.000000},{0.000000,330.000000}}"/>
 						<Property Name="MouseRButtonHollow" Value="True"/>
 						<Property Name="MouseMoveHollow" Value="True"/>
 						<Property Name="MouseLButtonHollow" Value="True"/>
@@ -1056,8 +1056,8 @@
 						<Property Name="AlwaysOnTop" Value="True"/>
 					</Window>
 					<Window Type="TLBB_ButtonCommon" Name="ChunJieQianDao_Page2_Btn2">
-						<Property Name="UnifiedSize" Value="{{0.000000,97.000000},{0.000000,24.000000}}"/>
-						<Property Name="UnifiedPosition" Value="{{0.500000,-48.000000},{1.000000,-55.000000}}"/>
+						<Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,25.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{0.500000,250.000000},{1.000000,-55.000000}}"/>
 						<Property Name="Tooltip" Value="#{CJQD_20211130_52}"/>
 						<Property Name="NormalImage" Value="set:ChunJieQianDao image:ChunJieQianDao_Get_Btn_N"/>
 						<Property Name="HoverImage" Value="set:ChunJieQianDao image:ChunJieQianDao_Get_Btn_H"/>
@@ -1067,7 +1067,7 @@
 					</Window>
 					<Window Type="TLBB_StaticImageNULL" Name="ChunJieQianDao_Page2_Btn2_Tips">
 						<Property Name="UnifiedSize" Value="{{0.000000,10.000000},{0.000000,10.000000}}"/>
-						<Property Name="UnifiedPosition" Value="{{1.000000,-320.000000},{0.000000,327.000000}}"/>
+                        <Property Name="UnifiedPosition" Value="{{1.000000,-60.000000},{0.000000,330.000000}}"/>
 						<Property Name="MouseRButtonHollow" Value="True"/>
 						<Property Name="MouseMoveHollow" Value="True"/>
 						<Property Name="MouseLButtonHollow" Value="True"/>

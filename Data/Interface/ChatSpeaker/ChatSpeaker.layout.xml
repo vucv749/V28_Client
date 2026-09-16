@@ -2,10 +2,10 @@
 <GUILayout>
 	<Window Type="TLBB_MainFrame1" Name="ChatSpeaker_Frame">
 		<Property Name="UnifiedPosition" Value="{{0.3609375,0},{0.333333333,0}}" />
-		<Property Name="AbsoluteSize" Value="w:270 h:192" />
+    <Property Name="AbsoluteSize" Value="w:270.000000 h:202.000000" />
 		<Window Type="TLBB_DragTitle" Name="ChatSpeaker_Frame_Title">
-			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
 			<Property Name="DragTarget" Value="ChatSpeaker_Frame" />
 			<Property Name="Font" Value="YouYuan11.25" />
 			<Property Name="HorzFormatting" Value="HorzCentred" />
@@ -28,16 +28,16 @@
 			<Property Name="AbsolutePosition" Value="x:5.000000 y:36.000000" />
 			<Property Name="UnifiedSize" Value="{{1.000000,-11.000000},{1.000000,-55.000000}" />
 			<Window Type="TLBB_SimpleText" Name="ChatSpeaker_Text">
-				<Property Name="AbsolutePosition" Value="x:3.000000 y:3.000000" />
-				<Property Name="UnifiedSize" Value="{{0.90,255.000000},{0.000000,18.000000}" />
-				<Property Name="HorzFormatting" Value="LeftAligned" />
-				<Property Name="VertFormatting" Value="VertCentred" />
+        <Property Name="AbsolutePosition" Value="x:2.000000 y:3.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,37.000000}" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
 				<Property Name="TextColor" Value="FFFFF263" />
 				<Property Name="Text" Value="#{INTERFACE_XML_982}" />
 			</Window>
 			<Window Type="TLBB_MultiIMEEditBox" Name="ChatSpeaker_Edit">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,22.000000}" />
-				<Property Name="UnifiedSize" Value="{{1.0,0.000000},{1.0,-45.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,41.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,259.000000},{0.000000,83.000000}" />
 				<Property Name="MaxTextLength" Value="64" />
 				<Property Name="OnReturnEnable" Value="False" />
 				<Property Name="ActiveSelectionColour" Value="FF00FF00" />

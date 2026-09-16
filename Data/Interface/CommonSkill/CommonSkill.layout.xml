@@ -2,11 +2,11 @@
 <GUILayout>
   <Window Type="TLBB_MainFrame3" Name="CommonSkill_Frame">
     <Property Name="UnifiedPosition" Value="{{0.0,0},{0.12,0}}" />
-    <Property Name="AbsoluteSize" Value="w:256 h:360" />
+    <Property Name="AbsoluteSize" Value="w:325 h:360" />
     <Property Name="MouseHollow" Value="True" />
     <Window Type="TLBB_DragTitle" Name="CommonSkill_DragTitle">
-      <Property Name="AbsolutePosition" Value="x:108.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,6.000000}}"/>
       <Property Name="DragTarget" Value="CommonSkill_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
       <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -30,8 +30,8 @@
       <Property Name="AbsolutePosition" Value="x:10.000000 y:37.000000" />
       <Property Name="UnifiedSize" Value="{{1.000000,-15.000000},{1.000000,-66.000000}" />
       <Window Type="TLBB_Frame_Lace2" Name="CommonSkill_Bk">
-        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,1.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.0,207.000000},{0.000000,159.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,260.000000},{0.000000,159.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,1.000000}}"/>
         <Property Name="RiseOnClick" Value="False" />
       </Window>
       <!--skills-->
@@ -174,21 +174,21 @@
         <Property Name="DisabledImage" Value="set:Button6 image:PageDown_Btn_Disabled" />
       </Window>
       <Window Type="TLBB_ActionButton" Name="CommonSkill_Target_Skill">
-        <Property Name="Position" Value="x:0.1 y:0.57" />
-        <Property Name="AbsoluteSize" Value="w:34.0 h:34.0" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.570000,0.000000}}"/>
         <Event Name="Clicked" Function="CommonSkill_Button_Clicked();" />
       </Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="CommonSkill_Target_Skill_Name">
-        <Property Name="Position" Value="x:0.3 y:0.57" />
-        <Property Name="UnifiedSize" Value="{{0.4,0.000000},{0.000000,36.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.560000,15.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.570000,0.000000}}"/>
         <Property Name="HorzFormatting" Value="LeftAligned" />
         <Property Name="VertFormatting" Value="VertCentred" />
         <Property Name="TextColor" Value="FFFFF263" />
         <Property Name="Text" Value="#{INTERFACE_XML_115}" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="CommonSkill_Use">
-        <Property Name="Position" Value="x:0.72 y:0.6" />
-        <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.200000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.780000,0.000000},{0.600000,0.000000}}"/>
         <Property Name="Text" Value="#{INTERFACE_XML_643}" />
         <Event Name="Clicked" Function="CommonSkill_Button_Clicked();" />
       </Window>
@@ -212,12 +212,12 @@
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_ButtonPageDown" Name="CommonSkill_CommonlySkill">
         <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
-        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="AbsoluteSize" Value="w:70.000000 h:24.000000" />
         <Property Name="CheckMode" Value="1" />
         <Property Name="Text" Value="#{INTERFACE_XML_494}" />
       </Window>
       <Window Type="TLBB_ButtonPageDown" Name="CommonSkill_ActionSkill">
-        <Property Name="AbsolutePosition" Value="x:44.0 y:0.0" />
+        <Property Name="AbsolutePosition" Value="x:70 y:0.0" />
         <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
         <Property Name="CheckMode" Value="1" />
         <Property Name="Text" Value="#{INTERFACE_XML_448}" />
@@ -231,15 +231,15 @@
         <Event Name="Clicked" Function="CommonSkill_ShenFen_Page_Switch();" />
       </Window>
       <Window Type="TLBB_ButtonPageDown" Name="CommonSkill_LifeSkill">
-        <Property Name="AbsolutePosition" Value="x:132.0 y:0.0" />
-        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="AbsolutePosition" Value="x:112 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:70.000000 h:24.000000" />
         <Property Name="CheckMode" Value="1" />
         <Property Name="Text" Value="#{INTERFACE_XML_635}" />
         <Event Name="Clicked" Function="Common_Life_Page_Switch();" />
       </Window>
       <Window Type="TLBB_ButtonPageDown" Name="CommonSkill_AutoAttack">
-        <Property Name="AbsolutePosition" Value="x:176.0 y:0.0" />
-        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="AbsolutePosition" Value="x:182.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:80.000000 h:24.000000" />
         <Property Name="CheckMode" Value="1" />
         <Property Name="Text" Value="#{ZDZD_200724_08}" />
         <Event Name="Clicked" Function="CommonSkill_AutoAttack_Page_Switch()" />
