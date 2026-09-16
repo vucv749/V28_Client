@@ -2,10 +2,10 @@
 <GUILayout>
   <Window Type="TLBB_MainFrame3" Name="ActionSkill_Frame">
     <Property Name="UnifiedPosition" Value="{{0.0,0},{0.12,0}}" />
-    <Property Name="AbsoluteSize" Value="w:325.000000 h:365.000000" />
+    <Property Name="AbsoluteSize" Value="w:325.000000 h:395.000000" />
     <Window Type="TLBB_DragTitle" Name="ActionSkill_Frame1_Title">
-      <Property Name="AbsolutePosition" Value="x:108.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-133.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,108.000000},{0.000000,6.000000}}"/>
       <Property Name="Text" Value="#{INTERFACE_XML_47}" />
       <Property Name="DragTarget" Value="ActionSkill_Frame" />
       <Property Name="Font" Value="YouYuan11.25" />
@@ -89,7 +89,7 @@
         <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.0,110.000000}" />
         <Property Name="UnifiedSize" Value="{{0.000000,229.000000},{0.000000,42.000000}" />
         <Property Name="RiseOnClick" Value="False" />
-        <!-- 招式actionbuttons-->
+        <!-- 招弝actionbuttons-->
         <Window Type="TLBB_ActionButton" Name="ActionSkill_Zhaoshi1">
           <Property Name="AbsolutePosition" Value="x:4.0 y:4.0" />
           <Property Name="AbsoluteSize" Value="w:34.0 h:34.0" />
@@ -122,19 +122,19 @@
         </Window>
       </Window>
       <Window Type="DefaultWindow" Name="ActionSkill_Target_BK">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-153.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-183.000000}" />
         <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,50.000000}" />
         <Window Type="TLBB_ActionButton" Name="ActionSkill_XinfaTarget">
-          <Property Name="Position" Value="x:0.080645 y:0.180000" />
-          <Property Name="AbsoluteSize" Value="w:34.0 h:34.0" />
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.180000,2.000000}}"/>
         </Window>
         <Window Type="TLBB_ActionButton" Name="ActionSkill_ZhaoshiTarget">
-          <Property Name="Position" Value="x:0.080645 y:0.180000" />
-          <Property Name="AbsoluteSize" Value="w:34.0 h:34.0" />
+          <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.180000,0.000000}}"/>
         </Window>
         <Window Type="TLBB_SimpleMulitiTextFrame" Name="ActionSkill_Name">
-          <Property Name="Position" Value="x:0.251613 y:0.180000" />
-          <Property Name="UnifiedSize" Value="{{0.400000,7.599999},{0.000000,36.000000}" />
+          <Property Name="UnifiedSize" Value="{{0.400000,50.000000},{0.000000,40.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.150000,0.000000},{0.180000,0.000000}}"/>
           <Property Name="HorzFormatting" Value="LeftAligned" />
           <Property Name="VertFormatting" Value="VertCentred" />
           <Property Name="TextColor" Value="FFFFF263" />
@@ -148,8 +148,8 @@
         </Window>
       </Window>
       <Window Type="TLBB_Frame_Lace4" Name="ActionSkill_Explain_Bk">
-        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-100.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,100.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,130.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-130.000000}}"/>
         <Window Type="TLBB_StaticText" Name="ActionSkill_Explain">
           <Property Name="UnifiedPosition" Value="{{0.000000,7.000000},{0.000000,4.000000}" />
           <Property Name="UnifiedSize" Value="{{1.000000,-14.000000},{1.000000,-8.000000}" />
@@ -167,13 +167,13 @@
       <Property Name="RiseOnClick" Value="False" />
       <Window Type="TLBB_ButtonPageDown" Name="ActionSkill_CommonlySkill">
         <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
-        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="AbsoluteSize" Value="w:70.000000 h:24.000000" />
         <Property Name="CheckMode" Value="1" />
         <Event Name="Clicked" Function="Action_Common_Page_Switch();" />
         <Property Name="Text" Value="#{INTERFACE_XML_494}" />
       </Window>
       <Window Type="TLBB_ButtonPageDown" Name="ActionSkill_ActionSkill">
-        <Property Name="AbsolutePosition" Value="x:44 y:0.0" />
+        <Property Name="AbsolutePosition" Value="x:70 y:0.0" />
         <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
         <Property Name="CheckMode" Value="1" />
         <Property Name="Text" Value="#{INTERFACE_XML_448}" />
@@ -186,15 +186,15 @@
         <Event Name="Clicked" Function="ActionSkill_ShenFen_Page_Switch();" />
       </Window>
       <Window Type="TLBB_ButtonPageDown" Name="ActionSkill_LifeSkill">
-        <Property Name="AbsolutePosition" Value="x:132.0 y:0.0" />
-        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="AbsolutePosition" Value="x:112 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:70.000000 h:24.000000" />
         <Property Name="CheckMode" Value="1" />
         <Property Name="Text" Value="#{INTERFACE_XML_635}" />
         <Event Name="Clicked" Function="Action_Life_Page_Switch();" />
       </Window>
       <Window Type="TLBB_ButtonPageDown" Name="ActionSkill_AutoAttack">
-        <Property Name="AbsolutePosition" Value="x:176.0 y:0.0" />
-        <Property Name="AbsoluteSize" Value="w:42.000000 h:24.000000" />
+        <Property Name="AbsolutePosition" Value="x:182.0 y:0.0" />
+        <Property Name="AbsoluteSize" Value="w:80.000000 h:24.000000" />
         <Property Name="CheckMode" Value="1" />
         <Property Name="Text" Value="#{ZDZD_200724_08}" />
         <Event Name="Clicked" Function="ActionSkill_AutoAttack_Page_Switch()" />

@@ -87,13 +87,13 @@ function HuoDongRiCheng_OnLoad()
 		special_campaign_Actionbtn[i]:SetProperty("Empty","0");
 	end
 
-	week_days[1] = "Ngày";
-	week_days[2] = "Mµt";
-	week_days[3] = "Nh¸";
-	week_days[4] = "Tam";
-	week_days[5] = "TÑ";
-	week_days[6] = "Ngû";
-	week_days[7] = "Løc";
+	week_days[1] = "Chü nh§t";
+	week_days[2] = "ThÑ 2";
+	week_days[3] = "ThÑ 3";
+	week_days[4] = "ThÑ 4";
+	week_days[5] = "ThÑ 5";
+	week_days[6] = "ThÑ 6";
+	week_days[7] = "ThÑ 7";
 
 	g_CurCampaignCtl = 	{
 					{lableTime = HuoDongRiCheng_Text7, txtTime = HuoDongRiCheng_Text7_1,lableName = HuoDongRiCheng_Text8, txtName = HuoDongRiCheng_Text8_1,lableDesc = HuoDongRiCheng_Text9, txtDesc = HuoDongRiCheng_Text9_1},
@@ -320,31 +320,33 @@ function HuoDongRiCheng_SetConsts()
 	tmpyear =  math.mod(tmpyear,100);
 	local si = math.floor(tmpyear /10) +1;
 	local yi = math.mod(tmpyear,10)+1;
-	HuoDongRiCheng_Text2:SetText("#cFFF263".."Nh¸ Linh"..numToCh[si]..numToCh[yi].."Nåm");
+	HuoDongRiCheng_Text2:SetText("#cFFF263".."Nåm ".."20"..numToCh[si]..numToCh[yi]);
 
-	si =  math.floor(tmpMon /10) ;
-	yi = math.mod(tmpMon,10)
-	local tmpstr = "";
-	if(si>0)then
-		tmpstr = tmpstr .."Th§p";
-	end
-	if(yi>0)then
-		tmpstr = tmpstr .. numToCh[yi+1];
-	end
-	si =  math.floor(tmpDay /10);
-	yi = math.mod(tmpDay,10)
-	local tmpstr1 = "";
-	if(si>1)then
-		tmpstr1 = tmpstr1 .. numToCh[si+1].."Th§p";
-	elseif(si>0)then
+	--si =  math.floor(tmpMon /10) ;
+	--yi = math.mod(tmpMon,10)
+	--local tmpstr = "";
+	--if(si>0)then
+	--	tmpstr = tmpstr .."Ê®";
+	--end
+	--if(yi>0)then
+	--	tmpstr = tmpstr .. numToCh[yi+1];
+	--end
+	--si =  math.floor(tmpDay /10);
+	--yi = math.mod(tmpDay,10)
+	--local tmpstr1 = "";
+	--if(si>1)then
+	--	tmpstr1 = tmpstr1 .. numToCh[si+1].."Ê®";
+	--elseif(si>0)then
 
-		tmpstr1 = tmpstr1 .. "Th§p";
-	end
-	if(yi>0)then
-		tmpstr1 = tmpstr1 .. numToCh[yi+1];
-	end
-	HuoDongRiCheng_Text3:SetText("#cFFF263"..tmpstr.."Nguy®t"..tmpstr1.."Ngày");
-	HuoDongRiCheng_Text4:SetText("#cFFF263".."Cu¯i tu¥n"..CurWeekDay);
+	--	tmpstr1 = tmpstr1 .. "Ê®";
+	--end
+	--if(yi>0)then
+	--	tmpstr1 = tmpstr1 .. numToCh[yi+1];
+	--end
+	--HuoDongRiCheng_Text3:SetText("#cFFF263"..tmpstr.."ÔÂ"..tmpstr1.."ÈÕ");
+	--Ô½ÄÏ°æ±¾²»×öÊ±¼ä×ª»»
+	HuoDongRiCheng_Text3:SetText("#cFFF263".."Tháng "..tmpMon.." Ngày "..tmpDay);
+	HuoDongRiCheng_Text1:SetText("#cFFF263"..CurWeekDay);
 end
 
 local maxShow = 3;
@@ -456,9 +458,9 @@ function SetNormalImage(flag)
 	end
 end
 
-function HuoDongRiCheng_PlayLoadingVideo()
-	local bRet = Lua_CgPreloadCurVideo()
-	if bRet > 0 then
-		Lua_CgPlayVideo()
-	end
-end
+-- function HuoDongRiCheng_PlayLoadingVideo()
+-- 	local bRet = Lua_CgPreloadCurVideo()
+-- 	if bRet > 0 then
+-- 		Lua_CgPlayVideo()
+-- 	end
+-- end
