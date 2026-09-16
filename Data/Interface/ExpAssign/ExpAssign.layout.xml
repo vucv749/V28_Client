@@ -2,10 +2,10 @@
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="ExpAssign_Frame">
         <Property Name="UnifiedPosition" Value="{{0.5,-160},{0.5,-100}}" />
-        <Property Name="AbsoluteSize" Value="w:256 h:240" />
+    <Property Name="AbsoluteSize" Value="w:286 h:300" />
         <Window Type="TLBB_DragTitle" Name="ExpAssign_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="ExpAssign_Frame" />
             <Property Name="Text" Value="#{INTERFACE_XML_46}" />
             <Property Name="Font" Value="YouYuan11.25" />
@@ -28,30 +28,30 @@
             <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="ExpAssign_Cur_Info">
                 <Property Name="Position" Value="x:0.02 y:0.02" />
-                <Property Name="UnifiedSize" Value="{{0.960,0.000000},{0.000000,80.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.960,0.000000},{0.000000,134.000000}" />
                 <Property Name="Text" Value="1111" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="VertFormatting" Value="TopAligned" />
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="ExpAssign_Info">
-                <Property Name="Position" Value="x:0.02 y:0.486" />
-                <Property Name="UnifiedSize" Value="{{0.960,235.000000},{0.000000,20.000000}" />
+        <Property Name="Position" Value="x:0.02 y:0.60" />
+        <Property Name="UnifiedSize" Value="{{0.00,235.000000},{0.000000,20.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_528}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="ExpAssign_Info2">
-                <Property Name="Position" Value="x:0.045 y:0.323" />
-                <Property Name="UnifiedSize" Value="{{0.960,235.000000},{0.000000,20.000000}" />
+        <Property Name="Position" Value="x:0.045 y:0.300" />
+        <Property Name="UnifiedSize" Value="{{0.000,248.000000},{0.000000,60.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_EditBoxNormal" Name="ExpAssign_Moral_Value">
-                <Property Name="Position" Value="x:0.024 y:0.64" />
+        <Property Name="Position" Value="x:0.024 y:0.718367" />
                 <Property Name="UnifiedSize" Value="{{0.73,0.000000},{0.000000,20.000000}" />
                 <Property Name="MaxTextLength" Value="32" />
                 <Property Name="ValidationString" Value="[0-9]*" />
@@ -59,7 +59,7 @@
                 <Property Name="Text" Value="#{INTERFACE_XML_578}" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="ExpAssign_Button_Max">
-                <Property Name="Position" Value="x:0.76 y:0.64" />
+        <Property Name="Position" Value="x:0.76 y:0.718367" />
                 <Property Name="UnifiedSize" Value="{{0.2,0.000000},{0.000000,20.000000}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_903}" />
                 <Event Name="Clicked" Function="ExpAssign_Button_Max_Click();" />

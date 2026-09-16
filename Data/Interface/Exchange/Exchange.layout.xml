@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="Exchange_Frame">
-        <Property Name="UnifiedSize" Value="{{0,320},{0.0,405}}" />
+    <Property Name="UnifiedSize" Value="{{0,494},{0.0,405}}" />
         <Property Name="UnifiedXPosition" Value="{0.0,0}" />
         <Property Name="UnifiedYPosition" Value="{0.12,0}" />
         <Event Name="Hidden" Function="Exchange_Cancel();" />
         <Window Type="TLBB_DragTitle" Name="Exchange_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="Exchange_Frame" />
             <Window Type="TLBB_SimpleText" Name="Exchange_PageHeader_Name">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -108,36 +108,36 @@
                 <Property Name="Empty" Value="False" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Other_Exchange_Item_Text1">
-                <Property Name="UnifiedPosition" Value="{{0.12,0.000000},{0.000000,44.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.000000,44.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Other_Exchange_Item_Text2">
-                <Property Name="UnifiedPosition" Value="{{0.12,0.000000},{0.000000,78.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.000000,78.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Other_Exchange_Item_Text3">
-                <Property Name="UnifiedPosition" Value="{{0.12,0.000000},{0.000000,112.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.000000,112.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Other_Exchange_Item_Text4">
-                <Property Name="UnifiedPosition" Value="{{0.12,0.000000},{0.000000,146.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.000000,146.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Other_Exchange_Item_Text5">
-                <Property Name="UnifiedPosition" Value="{{0.12,0.000000},{0.000000,180.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.0,36.000000},{0.000000,180.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
@@ -178,44 +178,44 @@
                 <Event Name="Clicked" Function="Self_Exchange_Item5:DoAction();" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Self_Exchange_Item_Text1">
-                <Property Name="UnifiedPosition" Value="{{0.62,0.000000},{0.000000,44.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5,36.000000},{0.000000,44.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_899}" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Self_Exchange_Item_Text2">
-                <Property Name="UnifiedPosition" Value="{{0.62,0.000000},{0.000000,78.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5,36.000000},{0.000000,78.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Self_Exchange_Item_Text3">
-                <Property Name="UnifiedPosition" Value="{{0.62,0.000000},{0.000000,112.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5,36.000000},{0.000000,112.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Self_Exchange_Item_Text4">
-                <Property Name="UnifiedPosition" Value="{{0.62,0.000000},{0.000000,146.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5,36.000000},{0.000000,146.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Self_Exchange_Item_Text5">
-                <Property Name="UnifiedPosition" Value="{{0.62,0.000000},{0.000000,180.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.000000,34.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.5,36.000000},{0.000000,180.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,203.000000},{0.000000,34.000000}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Exchange_Other_Pet">
                 <Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.0,214.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.0,34.000000},{0.0,80.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.0,80.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_854}" />
                 <Property Name="HorzFormatting" Value="WordWrapCentred" />
@@ -223,13 +223,13 @@
                 <Property Name="Font" Value="YouYuan11.25" />
             </Window>
             <Window Type="TLBB_ListBoxCommon" Name="Exchange_Other_PetList">
-                <Property Name="UnifiedPosition" Value="{{0.12,0.000000},{0.0,214.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.0,60.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.12,-7.599998},{0.0,214.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.394,0.000000},{0.0,60.000000}" />
                 <Event Name="MouseRClick" Function="Exchange_Other_PetList_RClick();" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="Exchange_Self_Pet">
                 <Property Name="UnifiedPosition" Value="{{0.5,0.000000},{0.0,214.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.0,34.000000},{0.0,80.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,50.000000},{0.0,80.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_854}" />
                 <Property Name="HorzFormatting" Value="WordWrapCentred" />
@@ -237,13 +237,13 @@
                 <Property Name="Font" Value="YouYuan11.25" />
             </Window>
             <Window Type="TLBB_ListBoxCommon" Name="Exchange_Self_PetList">
-                <Property Name="UnifiedPosition" Value="{{0.62,0.000000},{0.0,214.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.0,60.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.62,-7.600006},{0.0,214.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.394,0.000000},{0.0,60.000000}" />
                 <Event Name="MouseRClick" Function="Exchange_Self_PetList_RClick();" />
             </Window>
             <Window Type="TLBB_ButtonCommon2" Name="Trade_DeletePet_Button">
-                <Property Name="UnifiedPosition" Value="{{0.62,0.000000},{0.0,274.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.38,0.000000},{0.0,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.62,-7.600006},{0.0,274.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.394,0.000000},{0.0,20.000000}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_585}" />
                 <Event Name="Clicked" Function="Trade_DeletePet_Button_Clicked();" />
             </Window>
@@ -270,8 +270,8 @@
                 <Event Name="Clicked" Function="Exchange_Lock_Button_Clicked();" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Exchange_PetCheck" >
-                <Property Name="Position" Value="x:0.120915 y:0.782857" />
-                <Property Name="UnifiedSize" Value="{{0.000000,116.000000},{0.000000,20.000000}" />
+        <Property Name="Position" Value="x:0.104167 y:0.782857" />
+        <Property Name="UnifiedSize" Value="{{0.000000,190.000000},{0.000000,20.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_1039}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
