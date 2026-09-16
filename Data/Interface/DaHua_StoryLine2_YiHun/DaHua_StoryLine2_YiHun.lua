@@ -179,7 +179,7 @@ end
 
 function DaHua_StoryLine2_YiHun_ChooseClick(nIdx)
 	if g_IsAnimate == 1 then
-		--PushDebugMessage("²»µ½Ñ¡ÔñÊ±¼ä")
+		--PushDebugMessage("Chßa ğªn gi¶ lña ch÷n")
 		return
 	end
 	g_MySel = nIdx
@@ -194,7 +194,7 @@ end
 
 function DaHua_StoryLine2_YiHun_StartClick()
 	if g_IsAnimate >= 1 then
-		--PushDebugMessage("cdÖĞµÈ×Öµä")
+		--PushDebugMessage("cd - t× ği¬n hÕng trung")
 		return
 	end
 --	g_SelectBackCtrl[1]:Hide()

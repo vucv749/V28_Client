@@ -264,7 +264,7 @@ end
 function YanMenMeng_XiuXi_Other(mIdx)
 	--PushDebugMessage("test YanMenMeng_XiuXi_Other")
 	if mIdx < 1 or mIdx > g_YanMenMeng_XiuXiMax then
-		--PushDebugMessage("test å‚æ•°éæ³•")
+		--PushDebugMessage("test tham s¯ không hşp l®")
 		return 
 	end
 	g_YanMenMeng_XiuXiIdx = mIdx

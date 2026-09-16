@@ -162,11 +162,11 @@ function Synthesize_Shenfen_OnEvent(event)
 		return;
 	-- elseif ( event == "UNIT_VIGOR" and tostring(arg0) == "player" and this:IsVisible()) then
 	-- 	strName = Player : GetData("VIGOR");
-	-- 	Synthesize_Shenfen_CurrentlyEnergy2 : SetText("µ±Ç°»îÁ¦£º"..strName)
+	-- 	Synthesize_Shenfen_CurrentlyEnergy2 : SetText("Th¬ lñc hi®n tÕi:"..strName)
 	-- 	return;
 	-- elseif ( event == "UNIT_ENERGY" and tostring(arg0) == "player" and this:IsVisible()) then
 	-- 	strName = Player : GetData("ENERGY");
-	-- 	Synthesize_Shenfen_CurrentlyEnergy2 : SetText("µ±Ç°¾«Á¦£º"..strName)
+	-- 	Synthesize_Shenfen_CurrentlyEnergy2 : SetText("Tinh lñc hi®n tÕi:"..strName)
 	-- 	return;
 	elseif ( event == "UINT_IBPOWER" and tostring(arg0) == "player" and this:IsVisible()) then
 		strName = Player : GetData("IBPOWER");
@@ -420,10 +420,10 @@ function Synthesize_Shenfen_Update()
 	Synthesize_Shenfen_SkilledGrade:SetText("KÛ nång thu¥n thøc Ðµ:"..strName.."/"..max_exp);
 
 	-- strName = Player : GetData("VIGOR");
-	-- Synthesize_Shenfen_CurrentlyEnergy2 : SetText("µ±Ç°»îÁ¦£º"..strName)
+	-- Synthesize_Shenfen_CurrentlyEnergy2 : SetText("Th¬ lñc hi®n tÕi:"..strName)
 
 	-- strName = Player : GetData("ENERGY");
-	-- Synthesize_Shenfen_CurrentlyEnergy2 : SetText("µ±Ç°¾«Á¦£º"..strName)
+	-- Synthesize_Shenfen_CurrentlyEnergy2 : SetText("Tinh lñc hi®n tÕi:"..strName)
 	Synthesize_Shenfen_CurrentlyEnergy2 : SetText("")
 
 	strName = Player : GetData("IBPOWER");

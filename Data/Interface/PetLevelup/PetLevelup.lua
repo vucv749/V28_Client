@@ -171,7 +171,7 @@ function PetLevelup_Selected(selectindex)
 	end
 	
 --	if PlayerPackage:IsPetLock(selectindex) == 1 then
---		PushDebugMessage(" äÊŞÒÑ¼ÓËø")
+--		PushDebugMessage("Thú quı ğã khóa")
 --		return
 --	end
 	-- äÊŞÒÑ±»ÆäËü½çÃæÑ¡ÖĞ

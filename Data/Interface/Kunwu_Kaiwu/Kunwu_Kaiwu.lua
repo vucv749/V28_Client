@@ -109,13 +109,13 @@ function Kunwu_Kaiwu_SelectPet(selidx)
 
 	local iSavvy = Pet:GetSavvy(selidx)
 	if iSavvy < 5 then
-	--	PushDebugMessage("ÎòÐÔÐ¡ÓÚ5")
+	--	PushDebugMessage("Ngµ tính nhö h½n 5")
 	--	return
 	end
 	
 	local iLingXing = Pet:GetLixing(selidx)
 	if iLingXing < 3 then
-	--	PushDebugMessage("ÁéÐÔÐ¡ÓÚ3")
+	--	PushDebugMessage("Linh tính nhö h½n 3")
 	--	return
 	end
 	

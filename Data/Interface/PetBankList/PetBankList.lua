@@ -255,7 +255,7 @@ function PetBankList_Choose_Click()
 			CloseWindow("Pet", true);
 		end
 		--if(1~=IsWindowShow("PetBankMain")) then
-		 --  PushDebugMessage(" äÊŞÒøĞĞ½çÃæÒÑ¾­¹Ø± ÇëÏÈ´ò¿ª£¡") --Pet_Locked   äÊŞÒÑ¼ÓËø	
+		 --  PushDebugMessage("Giao di®n Ngân Hàng Thú Quı ğã ğóng, vui lòng m· lÕi trß¾c!") --Pet_Locked   äÊŞÒÑ¼ÓËø	
 		  -- return ;
 		--end
 		Pet:SavePetIntoBank_PetBank(g_nSelect_Index,2,PETBANK_LIST_CURRENT_SELECT); --??:????,2,????

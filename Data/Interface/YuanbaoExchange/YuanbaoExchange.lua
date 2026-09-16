@@ -67,7 +67,7 @@ function YuanbaoExchange_OnEvent(event)
 			if( math.mod(nPLow, 10) > 0 ) then
 				strPoint = strPoint.."."..math.mod(nPLow,10);
 			end
-			YuanbaoExchange_Text1 : SetText("Nhçm trß¾c m¡t tài khoän còn th×a ðªm:"..strPoint*10 );
+			YuanbaoExchange_Text1 : SetText("S¯ dß tài khoän hi®n tÕi:"..strPoint*10 );
 			--×¨ÊôµãÊý
 			local nExPoint = Get_XParam_UINT(1)/10;
 			if nExPoint > 0 then
@@ -123,17 +123,17 @@ function YuanbaoExchange_OK_Clicked()
 
 	if str == nil or str == "" then
 		YuanbaoExchange_Text3 : SetText("T¯n: 0")
-		PushDebugMessage("M¶i ði«n giá tr¸ KNB các hÕ c¥n ð±i")
+		PushDebugMessage("Vui lòng nh§p s¯ KNB c¥n ð±i")
 		return
 	end
 
 	if tonumber(str) > 20000 then
 		--PushDebugMessage("#{DHYB_180524_31}")
-		PushDebugMessage("M²i l¥n l¾n nh¤t Khä ð±i 20000ðªm.")
+		PushDebugMessage("M²i l¥n ð±i t¯i ða 20000 ði¬m.")
 		return
 	end
 	if( tonumber(str) <= 0 ) then
-		PushDebugMessage("S¯ lßþng Kim Nguyên Bäo m²i l¥n ð±i ít nh¤t là 1 ði¬m, xin vui lòng nh§p con s¯ l¾n h½n ho£c b¢ng 1")
+		PushDebugMessage("S¯ KNB ð±i t¯i thi¬u m²i l¥n là 1 ði¬m.")
 		return
 	end
 
@@ -213,7 +213,7 @@ function YuanbaoExchange_Count_Change()
 	end
 	str = tostring( strNumber );
 	YuanbaoExchange_Moral_Value:SetTextOriginal( str );
-	YuanbaoExchange_Text3 : SetText("C¥n tiêu phí ðªm:"..tostring( Exchange_Rate * strNumber*10 ) )
+	YuanbaoExchange_Text3 : SetText("C¥n tiêu phí ði¬m:"..tostring( Exchange_Rate * strNumber*10 ) )
 end
 
 function YuanbaoExchange_Max_Clicked()

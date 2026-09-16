@@ -117,7 +117,7 @@ function VotedPlayer_PlayerSelect(arg0)
 		local szName, nOnlineFlag = FindFriendDataPool:GetVoteInfoByPos(nIndex);
 		local player = Player:GetName();   
 		if(szName == player) then
-			--PushDebugMessage("¶Ô²»Æð£¬ âÊÇÄú×Ô¼ºÍ¶µÄÆ±¡£");
+			--PushDebugMessage("Xin l²i, ðây là phiªu bÕn tñ bö cho mình.");
 			return;
 		end
 		if (szName ~= nil) then
@@ -134,12 +134,12 @@ function VotedPlayer_OpenMenu()
 		nIndex = nIndex + (g_curr_Page-1) * MAX_INFO_PETPAGE;
 		local szName, nOnlineFlag = FindFriendDataPool:GetVoteInfoByPos(nIndex);
 		if (nOnlineFlag ~= 1) then
-			--PushDebugMessage("¶Ô²»Æð£¬Íæ¼Ò "..szName.." Ä¿Ç°²»ÔÚÏß£¡");
+			--PushDebugMessage("Xin l²i, ngß¶i ch½i "..szName.." Ä¿Ç°²»ÔÚÏß£¡");
 			return;
 		end
 		local player = Player:GetName();   
 		if(szName == player) then
-			--PushDebugMessage("¶Ô²»Æð£¬ âÊÇÄú×Ô¼ºÍ¶µÄÆ±¡£");
+			--PushDebugMessage("Xin l²i, ðây là phiªu bÕn tñ bö cho mình.");
 			return;
 		end	
 		FindFriendDataPool:ContexMenuForVoteInfo(nIndex);

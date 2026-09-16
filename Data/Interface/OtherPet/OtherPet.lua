@@ -477,7 +477,7 @@ function OtherPet_Show_Appoint(nIndex)
 --	OtherPet_LoyalgGade : SetText( strName );
 
 --	strName = Pet : Other_GetBasic(nIndex);
---	OtherPet_GenGu : SetText( "¸ù¹Ç:"..strName );
+--	OtherPet_GenGu : SetText( "Cån c¯t:"..strName );
 
 	strName = Pet : Other_GetLevel(nIndex);
 	OtherPet_Level : SetText( "C¤p: "..strName );

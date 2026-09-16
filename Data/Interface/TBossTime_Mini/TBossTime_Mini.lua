@@ -89,5 +89,5 @@ function TBossTime_Mini_Open()
     elseif g_TBossTime_Mini_TowerType == g_TBossTime_Mini_TowerType_FLAG_LT then
         PushEvent("KFRCBOSS_FLAGSHOW")
     end
-    --PushDebugMessage("ÎÒ´ò¿ªÁËMini="..g_TBossTime_Mini_TowerType)
+    --PushDebugMessage("Tôi ðã m· Mini="..g_TBossTime_Mini_TowerType)
 end

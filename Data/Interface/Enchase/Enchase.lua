@@ -293,7 +293,7 @@ function Enchase_Update(UI_index,Item_index)
 					end
 					
 					if gem_count == 3 then
---						PushDebugMessage("ÎÞ·¨ÏâÇ¶¸ü¶à±¦Ê¯")
+--						PushDebugMessage("Không th¬ khäm thêm ðá quý")
 						Enchase_DemandMoney : SetProperty("MoneyNumber",0)
 					else
 						Enchase_DemandMoney : SetProperty("MoneyNumber", Enchase_Cost[gem_level]*(gem_count+1));
@@ -356,7 +356,7 @@ function Enchase_Update(UI_index,Item_index)
 						return
 					end
 					if gem_count == 3 then
---						PushDebugMessage("ÎÞ·¨ÏâÇ¶¸ü¶à±¦Ê¯")
+--						PushDebugMessage("Không th¬ khäm thêm ðá quý")
 						Enchase_DemandMoney : SetProperty("MoneyNumber",0)
 					else
 						Enchase_DemandMoney : SetProperty("MoneyNumber", Enchase_Cost[gem_level]*(gem_count+1));

@@ -351,7 +351,7 @@ function ManTuo_Yure_Pre_Clicked()
 	local nNewPageIndex = g_nCurPageIndex - 1
 
 	if (nNewPageIndex <= 0 or nNewPageIndex > g_nMaxHuoDongStep) then
-		-- PushDebugMessage("·Ç·¨²ÎÊý")
+		-- PushDebugMessage("Tham s¯ không hþp l®")
 		return
 	end
 
@@ -367,7 +367,7 @@ function ManTuo_Yure_Next_Clicked()
 	local nNewPageIndex = g_nCurPageIndex + 1
 
 	if (nNewPageIndex <= 0 or nNewPageIndex > g_nMaxHuoDongStep) then
-		-- PushDebugMessage("·Ç·¨²ÎÊý")
+		-- PushDebugMessage("Tham s¯ không hþp l®")
 		return
 	end
 

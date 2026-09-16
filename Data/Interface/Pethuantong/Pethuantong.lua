@@ -357,7 +357,7 @@ function Pethuantong_Do()
 	end
 
 	if (-1 == g_ItemPos) then --??????????????add:lby2015
---		PushDebugMessage("ÐèÒª»¹Í¯¾íÖá¡£")
+--		PushDebugMessage("C¥n Cuµn Hoàn Ð°ng.")
 		PetHuantong_PetYuanbaoBuyTSAsk()
 		return 0
 	end

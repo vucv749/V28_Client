@@ -147,7 +147,7 @@ function PS_Shop_UpdateFrame()
 	--µêÖ÷	--¸ÄÎª³¬Á´½Ó by wangdw 2008.05.27
 	local szName = PlayerShop:GetShopInfo("other","ownername");
 	PS_Shop_Master_Text:SetChatString("#GChü ti®m: #{_INFOUSR" .. szName .. "}");
-	--PS_Shop_Master_Text:SetText("#YµêÖ÷:#{_INFOUSR" .. szName .. "}");
+	--PS_Shop_Master_Text:SetText("#YChü cØa hàng:#{_INFOUSR" .. szName .. "}");
 	--µêÖ÷ID
 	local szID = PlayerShop:GetShopInfo("other","ownerid");
 	PS_Shop_ID_Text:SetText("ID chü ti®m: " .. szID);

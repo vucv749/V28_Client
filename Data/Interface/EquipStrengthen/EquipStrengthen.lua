@@ -210,14 +210,14 @@ function EquipStrengthen_Buttons_Clicked()
 
 	local index,BindState = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(Enchange_Item2));
 
-	--PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸1¡£")
+	--PushDebugMessage("Vui lòng ð£t vào mµt trang b¸ 1.")
  --ÏÈ ÒÇ¿»¯¾«»ª
 	if index == -1 and Enchange_Item2 == 30900006 then
 		local index1,BindState1 = PlayerPackage:FindFirstBindedItemIdxByIDTable(tonumber(QianghualuId));
-		--PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸21¡£")
+		--PushDebugMessage("Vui lòng ð£t vào mµt trang b¸ 21.")
 		if(index1 == -1)then
 			local str = " C¥n #{_ITEM"..Enchange_Item2.."} ho£c #{_ITEM"..QianghualuId.."}";
-		--PushDebugMessage("Çë·ÅÈëÒ»¸ö×°±¸321¡£")
+		--PushDebugMessage("Vui lòng ð£t vào mµt trang b¸ 321.")
 			PushDebugMessage(str);
 			return
 		end

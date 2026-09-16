@@ -36,7 +36,7 @@ function SuperWeaponUp_OnEvent( event )
 		local targetId = Get_XParam_INT(0)
 		ObjCaredID = DataPool : GetNPCIDByServerID( targetId )
 		if ObjCaredID == -1 then
-			--PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£")
+			--PushDebugMessage("Dæ li®u t× server có v¤n ğ«.")
 			return
 		end
 		ObjCaredIDID = targetId
@@ -88,7 +88,7 @@ function SuperWeaponUp_Buttons_Clicked()
     --Deleted By ChangHua 2010-03-01 TT:66410
     --ÉñÆ÷±»¼ÓËøÊ±Ò²¿ÉÒÔ½øĞĞÉı¼¶²Ù×÷
 	--	if PlayerPackage : IsLock( g_ItemPos ) == 1 then
-	--		PushDebugMessage( "ÎïÆ·²»´æÔÚ»ò ßÒÑ¼ÓËø£¡" )
+	--		PushDebugMessage( "V§t ph¦m không t°n tÕi ho£c ğã b¸ khóa!" )
 	--		return
 	--	end
 

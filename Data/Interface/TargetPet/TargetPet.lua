@@ -402,7 +402,7 @@ function TargetPet_Update()
 	TargetPet_StabilityAptitude : SetText( strName );
 	
 --	strName = TargetPet : GetExp();
---	TargetPet_Exp : SetText( "¾­Ñé:"..strName );
+--	TargetPet_Exp : SetText( "Kinh nghi®m:"..strName );
 	
 	strName = TargetPet : GetHP(nIndex);
 	strName2 = TargetPet:	GetMaxHP(nIndex);

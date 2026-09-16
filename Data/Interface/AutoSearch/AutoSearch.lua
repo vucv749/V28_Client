@@ -136,7 +136,7 @@ function AutoSearch_Open()
 	else
 		--Ôö¼Ó×ø±êÊäÈë·½Ê½Ö®ºó£¬µ±Ç°³¡¾°Ã»ÓĞ¿ÉÑ°Â·Ä¿±ê£¬Ò²Òªµ¯³ö£¬ËùÒÔ×¢ÊÍÏÂÃæ â¾ä
 		--Èç¹ûÃ»ÓĞÈÎºÎ¿ÉÑ°Â·µÄÎ»ÖÃ£¬ÔòÏÔÊ¾"µ±Ç°µÄ³¡¾°Ã»ÓĞ¿ÉÑ°Â·µÄÄ¿±ê¡£"
-		--PushDebugMessage("µ±Ç°µÄ³¡¾°Ã»ÓĞ¿ÉÑ°Â·µÄÄ¿±ê¡£");
+		--PushDebugMessage("Khu vñc hi®n tÕi không có møc tiêu ğ¬ dçn ğß¶ng.");
 		this:Show();
 	end
 
@@ -288,7 +288,7 @@ function UpdateList( tabIndex )
 
 	if not g_TabListDataTablePtr then
 
-		----PushDebugMessage("±¾tabÒ³µÄÊı¾İ»¹Ã»ÓĞ£¬µÃÖØËã")
+		----PushDebugMessage("Dæ li®u tab này chßa có, c¥n tính lÕi")
 		g_TabListData[tabIndex] = {};
 		g_TabListDataTablePtr = g_TabListData[tabIndex];
 

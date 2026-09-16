@@ -101,7 +101,7 @@ function OptionalGiftBox_Two_Update()
 	g_OptionalGiftBox_Two_CurSelNum = 0
 	g_OptionalGiftBox_Two_CurSelState = {0,0}
 	
-	--PushDebugMessage("≥ı ºªØ"..g_OptionalGiftBox_Two_CurSelNum..g_OptionalGiftBox_Two_CurNeedNum)
+	--PushDebugMessage("Kh∑i t’o"..g_OptionalGiftBox_Two_CurSelNum..g_OptionalGiftBox_Two_CurNeedNum)
 	
 	g_OptionalGiftBox_Two_UI_DragTitle:SetText(tbl_boxTitle)
 	g_OptionalGiftBox_Two_UI_Info:SetText(tbl_boxTips1)

@@ -437,7 +437,7 @@ end
 
 function ViewSetup_UIScale_SliderChanged()
 --	local posText = string.format("%0.2f" , ViewSetup_UIScale_Control:GetPosition() + 0.8)
---	ViewSetup_UIScale_Text1:SetText("Ëõ·Å±ÈÀý"..posText)
+--	ViewSetup_UIScale_Text1:SetText("TÖ l® thu phóng"..posText)
 end
 
 function ViewSetup_ViewSetup_Clicked()

@@ -222,7 +222,7 @@ function ActionSkill_Update()
 		else
 			XINFA_BUTTONS[i]:SetActionItem(-1);
 			XINFA_INDEX[i] = -1;
---			XINFA_LEVEL[i] : SetText("Ã»ÓÐ");
+--			XINFA_LEVEL[i] : SetText("Không có");
 		end
 	end
 
@@ -287,7 +287,7 @@ function ActionSkill_Update_Cliecked(nIndex, Actiontype)
 			else
 				XINFA_BUTTONS[i]:SetActionItem(-1);
 				XINFA_INDEX[i] = -1;
---				XINFA_LEVEL[i] : SetText("Ã»ÓÐ");
+--				XINFA_LEVEL[i] : SetText("Không có");
 			end
 		end
 

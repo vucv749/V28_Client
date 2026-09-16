@@ -497,7 +497,7 @@ end
 	-- if g_nCurSel_MatchID > 0 and g_nCurSel_MatchID <= 2 then 
 		-- BWDH2018:GetRankAward(g_nCurSel_MatchID)
 	-- end
-	-- --PushDebugMessage("¹§Ï²ÔÆ¶ËÐ¡¸ç¸çµãµ½ÁËÎÒ")
+	-- --PushDebugMessage("Chúc m×ng, huynh ðài trên mây ðã ch÷n trúng tôi")
 -- end
 
 -- function HuaShanLunJian_TopList_OnItemClick()

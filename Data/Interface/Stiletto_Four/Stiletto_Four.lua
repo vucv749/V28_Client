@@ -157,7 +157,7 @@ function Stiletto_Four_OnEvent(event)
 			AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 			if objCared == -1 then
                     --È¥µô´ËĞĞ£¬ÒòÎª´ËÖÖĞÅÏ¢²»ÊÊºÏÏÔÊ¾ÔÚ¿Í»§¶Ë  
-					--PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+					--PushDebugMessage("Dæ li®u t× server có v¤n ğ«.");
 					return;
 			end
 			BeginCareObject_Stiletto_Four(objCared)

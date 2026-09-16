@@ -345,7 +345,7 @@ function XiaLv_Task4_OnChooseWordClick(index)
     elseif not g_GameData.myChoose[2][1] then
         fillIndex = 2
     else
-       -- PushDebugMessage("ÂúÁË")
+       -- PushDebugMessage("Ðã ð¥y")
         return 
     end
     g_GameData.myChoose[fillIndex][1] = g_GameData.chooseItemsData[myIndex][1]

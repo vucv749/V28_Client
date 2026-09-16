@@ -504,7 +504,7 @@ function Minimap_UpdatePKMode()
 
 	local strPKMode = ""
 	if( tonumber( nPKMode ) == 0 ) then
-		--MiniMap_PK_Mode:SetToolTip( "ºÍÆ½" );
+		--MiniMap_PK_Mode:SetToolTip( "Hòa bình" );
 		strPKMode = "Hòa Bình\nNgß¶i ch½i chï ðßþc công kích bän thân, không ðßþc chü ðµng công kích ngß¶i ch½i khác."
 	elseif( tonumber( nPKMode ) == 1 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_ALL" );
@@ -1059,7 +1059,7 @@ function MiniMap_FenxianClicked()
 	--DataPool:OpenFenxianDlg()
 	--MiniMap_FenxianFlashUpdata(false)
 	
-	-- PushDebugMessage("¿ì½Ý´«ËÍ¹¦ÄÜÔÝÎ´¿ª·Å")
+	-- PushDebugMessage("ChÑc nång d¸ch chuy¬n nhanh hi®n chßa m·")
 	local curSceneID = GetSceneID();
 	if curSceneID > 2 then
 		PushDebugMessage( "VÕn nång truy«n t¯ng chï có th¬ TÕi Chü bên trong thành sØ døng!" )

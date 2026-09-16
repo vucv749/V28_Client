@@ -641,7 +641,7 @@ end
 
 --刷新宝石评分
 -- function GameTools5_Geminfo_ShuaXin_Clicked()
-	-- PushDebugMessage("功能还没写")
+	-- PushDebugMessage("Ch裞 n錸g ch遖 疬㧟 vi猼")
 -- end
 
 --读取装备信息

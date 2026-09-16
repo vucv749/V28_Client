@@ -77,7 +77,7 @@ function PlayerFrame_OnLoad()
 	PlayerFrame_Captain:Hide();
 	--PlayerFrame_ZhengShouZhenYouFlash:Hide();
 	--PlayerFrame_UpdateBtnFlash:Hide();
-	--Ó¦¸Ã²ß»®Ğ´µ½×ÖµäºÍxml²¼¾ÖÎÄ¼şÀï PlayerFrame_ZhenShouZhengYou:SetToolTip("´ò¿ª ÷ÓÑ½»»¥½çÃæ");
+	--Ó¦¸Ã²ß»®Ğ´µ½×ÖµäºÍxml²¼¾ÖÎÄ¼şÀï PlayerFrame_ZhenShouZhengYou:SetToolTip("M· giao di®n tß½ng tác Tìm bÕn");
 	--PlayerFrame_ZhenShouZhengYou:SetToolTip("#{ZYPT_081103_001}");
 	
 end

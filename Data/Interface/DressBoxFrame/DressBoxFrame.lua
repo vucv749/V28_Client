@@ -323,7 +323,7 @@ function DressBoxFrame_Clear()
 end
 
 function DressBoxFrame_DressUp_Click()
-    --PushDebugMessage("´©ÒÂ pushde")
+    --PushDebugMessage("Thay trang phøc pushde")
 	if(YIGUI_DRESS_ITEM_SELECT ~= -1) then		
 		if YIGUI_DRESS_ITEM_INDEX[YIGUI_DRESS_ITEM_SELECT] ~= -1 then
 			YiGui:EquipDressAskBind(YIGUI_DRESS_ITEM_INDEX[YIGUI_DRESS_ITEM_SELECT] - 1)

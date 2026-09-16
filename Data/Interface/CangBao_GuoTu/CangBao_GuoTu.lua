@@ -81,7 +81,7 @@ function CangBao_GuoTu_Open(nType)
 		CangBao_GuoTu_Close()
 	else
 		--´ò¿ª½çÃæ
-		--PushDebugMessage("¹ýÈ¥½çÃæshow")
+		--PushDebugMessage("Chuy¬n sang giao di®n hi¬n th¸")
 		--²¥·Å¶¯»­
 		CangBao_GuoTu_Eff:Show();
 		--µ¹¼ÆÊ±

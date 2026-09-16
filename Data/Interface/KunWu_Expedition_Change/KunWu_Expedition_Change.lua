@@ -103,7 +103,7 @@ function KunWu_Expedition_Change_Open()
 	local nPetCount = Pet:GetPet_Count()
 	--PushDebugMessage("nPetCount:"..tostring(nPetCount))
 	if nPetCount < 1 or nPetCount > PET_MAX_NUMBER then
-		--PushDebugMessage("Ã»ÓÐ³èÎï")
+		--PushDebugMessage("Không có thú cßng")
 
 		return
 	end

@@ -449,7 +449,7 @@ end
 --         actionBtn:DoAction();
 --     else
 --         if LuaIsFighting() == 1 then
---             PushDebugMessage(" ½¶·×´Ì¬ÖÐ£¬ÎÞ·¨½øÐÐ´Ë²Ù×÷¡£")
+--             PushDebugMessage("Ðang trong trÕng thái chiªn ð¤u, không th¬ thñc hi®n thao tác này.")
 --             return 
 --         end
 --         Clear_XSCRIPT()
@@ -470,7 +470,7 @@ end
 --         return 
 --     end
 --     if LuaIsFighting() == 1 then
--- 		PushDebugMessage(" ½¶·×´Ì¬ÖÐ£¬ÎÞ·¨½øÐÐ´Ë²Ù×÷¡£")
+-- 		PushDebugMessage("Ðang trong trÕng thái chiªn ð¤u, không th¬ thñc hi®n thao tác này.")
 --         return 
 --     end
 --     Clear_XSCRIPT()
@@ -524,7 +524,7 @@ function CJ_Backpack_OnUpdateShow()
 	--   local RageText = tostring( nNumber ).."/"..tostring( nMaxnumber );
 	--   RageText = "#cFAFFA4"..RageText;
 	-- 	SelfEquip_SP:SetText( RageText );	
-	-- 	SelfEquip_SP_Text:SetText("¹²Çé:")
+	-- 	SelfEquip_SP_Text:SetText("Ð°ng cäm:")
 	-- 	SelfEquip_SP_Text:SetToolTip("#{THJN_191001_01}")
 	-- end
 

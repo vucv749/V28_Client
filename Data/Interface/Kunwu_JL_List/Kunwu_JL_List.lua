@@ -118,7 +118,7 @@ function Kunwu_JL_List_Choose_Click()
 
 	local NeedCheckLock = 1
 	if NeedCheckLock == 1 and PlayerPackage:IsPetLock(g_nSelect_Index) == 1 then
-	--	PushDebugMessage(" äÊÞÒÑ¼ÓËø")
+	--	PushDebugMessage("Thú quý ðã khóa")
 	--	return
 	end
 

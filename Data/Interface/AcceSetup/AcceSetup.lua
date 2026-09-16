@@ -218,7 +218,7 @@ function AcceSetup_OnEvent(event)
 
 	if ( event == "TOGLE_INPUTSETUP" ) then
     if(arg0 == "show") then -- ????
-	    --PushDebugMessage("´ò¿ªÏûÏ¢");
+	    --PushDebugMessage("M· thông báo");
 		  this:Show();		
 		  AcceSetup_UpdateFrame();
 		else -- ????

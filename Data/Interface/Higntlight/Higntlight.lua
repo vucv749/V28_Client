@@ -483,7 +483,7 @@ function Higntlight_HideAllItem()
 end
 --Ìí¼ÓºÃÓÑ³É¹¦ Òş²ØÌí¼ÓºÃÓÑ°´Å¥
 function Higntlight_AddFriendOK(name)
-	--PushDebugMessage("¸ß¹âÊ±¿Ì ÏÔÊ¾Ê± Ìí¼ÓºÃÓÑ³É¹¦ ºÃÓÑÃû×Ö:"..name);
+	--PushDebugMessage("Khoänh kh¡c n±i b§t - Khi hi¬n th¸: ğã thêm bÕn thành công, tên bÕn bè:"..name);
 	--[[ if g_TreatmentIndex ~= 0 then --ÓĞÖÎÁÆmvp
 		if g_TotalMVPTable[g_TreatmentIndex].name == name then
 			Higntlight_AddFriend2:Hide()

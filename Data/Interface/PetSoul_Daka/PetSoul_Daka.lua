@@ -284,18 +284,18 @@ function PetSoul_Daka_OnResultUpdate()
 
 	local image = g_PetSoul_Daka_AnswerIcon.fail
 	if ret == 0 and succeed > 0 then
-		--PushDebugMessage("´ğÌâÆ Í¨")
+		--PushDebugMessage("Trä l¶i: Thß¶ng")
 		image = g_PetSoul_Daka_AnswerIcon.normal
 	elseif ret == 1 and succeed > 0 then
-		--PushDebugMessage("´ğÌâ×¿Ô½")
+		--PushDebugMessage("Trä l¶i: Xu¤t s¡c")
 		image = g_PetSoul_Daka_AnswerIcon.excellent
 	elseif ret == 2 and succeed > 0 then
-		--PushDebugMessage("´ğÌâÓÅĞã")
+		--PushDebugMessage("Trä l¶i: ¿u tú")
 		image = g_PetSoul_Daka_AnswerIcon.perfect
 	elseif ret == -1 then
-		--PushDebugMessage("¶ÓÓÑ´ğÌâ³¬Ê±")
+		--PushDebugMessage("Ğ°ng ğµi trä l¶i quá gi¶")
 	elseif ret == -2 then
-		--PushDebugMessage("×Ô¼º´ğÌâ³¬Ê±")
+		--PushDebugMessage("BÕn trä l¶i quá gi¶")
 		PushDebugMessage("#{BBYJ_220104_89}")
 	end
 
@@ -332,18 +332,18 @@ function PetSoul_Daka_OnResultCalculate()
 
 		local image = g_PetSoul_Daka_AnswerIcon.fail
 		if ret == 0 and succeed > 0 then
-			--PushDebugMessage("´ğÌâÆ Í¨")
+			--PushDebugMessage("Trä l¶i: Thß¶ng")
 			image = g_PetSoul_Daka_AnswerIcon.normal
 		elseif ret == 1 and succeed > 0 then
-			--PushDebugMessage("´ğÌâ×¿Ô½")
+			--PushDebugMessage("Trä l¶i: Xu¤t s¡c")
 			image = g_PetSoul_Daka_AnswerIcon.excellent
 		elseif ret == 2 and succeed > 0 then
-			--PushDebugMessage("´ğÌâÓÅĞã")
+			--PushDebugMessage("Trä l¶i: ¿u tú")
 			image = g_PetSoul_Daka_AnswerIcon.perfect
 		elseif ret == -1 then
-			--PushDebugMessage("¶ÓÓÑ´ğÌâ³¬Ê±")
+			--PushDebugMessage("Ğ°ng ğµi trä l¶i quá gi¶")
 		elseif ret == -2 then
-			--PushDebugMessage("×Ô¼º´ğÌâ³¬Ê±")
+			--PushDebugMessage("BÕn trä l¶i quá gi¶")
 			PushDebugMessage("#{BBYJ_220104_89}")
 		end
 		

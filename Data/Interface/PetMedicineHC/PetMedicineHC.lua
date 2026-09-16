@@ -197,7 +197,7 @@ function PetMedicineHC_Clear()
 	PetMedicineHC_SelfMoney:SetProperty("MoneyNumber", "")
 	PetMedicineHC_SelfJiaozi:SetProperty("MoneyNumber", "")
 	PetMedicineHC_NeedMoney:SetProperty("MoneyNumber", "")
-	--PetMedicineHC_SuccessValue:SetText("ÎÞ·¨ºÏ³É")
+	--PetMedicineHC_SuccessValue:SetText("Không th¬ hþp thành")
 end
 
 function PetMedicineHC_Close()

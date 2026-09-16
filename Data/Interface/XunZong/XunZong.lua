@@ -64,18 +64,18 @@ function XunZong_Show( arg_0, arg_1 )
 	XunZong_Name:SetText( "Tên: " );
 	XunZong_Level:SetText( "C¤p: " );
 	XunZong_MenPai:SetText( "Phái: ");
-		--XunZong_Confraternity:SetText( "°ï»áÃû³Æ:");
+		--XunZong_Confraternity:SetText( "Tên bang hµi:");
 	XunZong_Confraternity:SetText( "#RÐang tìm, xin hãy ðþi ..." );
 	XunZong_GuildLeague:SetText( "#{TM_20080311_30}");
-		--XunZong_Explain:SetText( "ÐÄÇé:" );
+		--XunZong_Explain:SetText( "Tâm trÕng:" );
 	XunZong_Explain:Hide();
-		--XunZong_Agname:SetText( "³ÆºÅ:" );
+		--XunZong_Agname:SetText( "Danh hi®u:" );
 	XunZong_Agname:Hide();
-		--XunZong_Locus:SetText( "Î»ÖÃ:" );
+		--XunZong_Locus:SetText( "V¸ trí:" );
 	XunZong_Locus:Hide();
-		--XunZong_fettle:SetText( "×´Ì¬:");
+		--XunZong_fettle:SetText( "TrÕng thái:");
 	XunZong_fettle:Hide();
-		--XunZong_TeamInfo:SetText( "¶ÓÎé:" );
+		--XunZong_TeamInfo:SetText( "T± ðµi:" );
 	XunZong_TeamInfo:Hide();
 	
 	this : Show();

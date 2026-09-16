@@ -680,7 +680,7 @@ function PlayerZhengyouPT_OnQueryResponse(sOptType, sRet, eType, iReserve)
 	-- 是否可以发布
 	elseif ( "check_fabu" == sOptType ) then
 	    if ( "ok" == sRet) then
-	      --PushDebugMessage("提示发布条件");
+	      --PushDebugMessage("Nh 餴玼 ki畁 疱ng");
 	    elseif ( "in24hours" == sRet ) then
 	      PushDebugMessage("#{ZYPT_081103_060}" .. PlayerZhengyouPT_GetTypeName(iType) .. "#{ZYPT_081103_061}");
 	    elseif ( "exist" == sRet ) then

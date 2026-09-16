@@ -150,7 +150,7 @@ function Frozen_WheelCJ_OnEvent(event)
 	elseif (event == "HIDE_ON_SCENE_TRANSED") then
 		this:Hide()
 	elseif (event == "UPDATE_YUANBAO") then
-		--Frozen_WheelCJ_Client2_Balance2:SetText("#LÓµÓÐÔª±¦"..Player:GetData("YUANBAO"))
+		--Frozen_WheelCJ_Client2_Balance2:SetText("#LS· hæu Nguyên Bäo"..Player:GetData("YUANBAO"))
 	end
 
 end
@@ -359,8 +359,8 @@ end
 --			idx = idx + 1
 --		end
 --	end		
---	Frozen_WheelCJ_Client2_Balance2:SetText("#LÓµÓÐÔª±¦"..Player:GetData("YUANBAO"))
---	Frozen_WheelCJ_Client2_Balance:SetText("#LÓµÓÐ´ú±Ò"..g_FrozenDHDaibi)
+--	Frozen_WheelCJ_Client2_Balance2:SetText("#LS· hæu Nguyên Bäo"..Player:GetData("YUANBAO"))
+--	Frozen_WheelCJ_Client2_Balance:SetText("#LS· hæu Xu"..g_FrozenDHDaibi)
 	--ÉÏÏÂÒ³
 --	if g_curShopPage == 1 then
 --		Frozen_WheelCJ_Client2_UpPage:Disable()

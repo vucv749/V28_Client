@@ -1556,7 +1556,7 @@ end
 
 -- Í¨ÖªÍÏ×§ @WAYLEE
 function NotifyDragDropDragged(cSourceName, nSourceIndex, cTargetType, nTargetIndex)
-	-- PushDebugMessage(" æÔª "..cSourceName.." "..nSourceIndex.." "..cTargetType.." "..nTargetIndex)
+	-- PushDebugMessage("Chân Nguyên "..cSourceName.." "..nSourceIndex.." "..cTargetType.." "..nTargetIndex)
 end
 function MainMenuBar_Button_PetFight_MouseEnter()
 	DataPool:SetPetFightList_Show1(1)

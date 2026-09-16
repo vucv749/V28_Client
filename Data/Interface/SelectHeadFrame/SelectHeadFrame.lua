@@ -150,7 +150,7 @@ function SelectHeadFrame_Update()
 	g_Style_Count = k-1
 
 	if(g_Style_Count <= 0) then
-		--SelectHeadFrame_Require:SetText("Ã»ÓÐ¿É¸ü¸ÄµÄÍ·Ïñ·ç¸ñ¡£");
+		--SelectHeadFrame_Require:SetText("Không có ki¬u änh ðÕi di®n nào ð¬ ð±i.");
 		SelectHeadFrame_PageUp : Disable();
 		SelectHeadFrame_PageDown : Disable();
 		SelectHeadFrame_Accept : Disable();

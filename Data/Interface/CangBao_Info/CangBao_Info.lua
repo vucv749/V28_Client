@@ -194,8 +194,8 @@ end
 function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlayer2Info,nItem3,nPlayer3,nPlayer3Info,nItem4,nPlayer4,nPlayer4Info,nItem5,nPlayer5,nPlayer5Info,nItem6,nPlayer6,nPlayer6Info,nTick)
 	g_CangBao_PlayerIdx = {}
 	
-	--PushDebugMessage("ÈËÃû "..nPlayer1.." "..nPlayer2.." "..nPlayer3.." "..nPlayer4.." "..nPlayer5.." "..nPlayer6)
-	--PushDebugMessage("¶ÔÓ¦ÐÅÏ¢"..nPlayer1Info.." "..nPlayer2Info.." "..nPlayer3Info.." "..nPlayer4Info.." "..nPlayer5Info.." "..nPlayer6Info)
+	--PushDebugMessage("Tên nhân v§t "..nPlayer1.." "..nPlayer2.." "..nPlayer3.." "..nPlayer4.." "..nPlayer5.." "..nPlayer6)
+	--PushDebugMessage("Thông tin tß½ng Ñng"..nPlayer1Info.." "..nPlayer2Info.." "..nPlayer3Info.." "..nPlayer4Info.." "..nPlayer5Info.." "..nPlayer6Info)
 	--Ê£ÓàÊ±¼ä
 	if nTick > 0 then
 		CangBao_Info_Time:SetProperty("Timer", tostring(nTick))
@@ -340,7 +340,7 @@ function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlaye
 						g_CangBao_ItemList[index]:SetActionItem(nShowActionA:GetID())
 					end
 				else
-					--PushDebugMessage("»¹Ã»Áì")
+					--PushDebugMessage("Chßa nh§n")
 					--ÏÔÊ¾Ï¸½Ú ×Ô¼ºµÄÎïÆ·
 					local nShowActionA = DataPool:CreateBindActionItemForShow(g_CangBao_PlayerIdx[index].nItemID, 1)
 					if nShowActionA:GetID() ~= 0 then
@@ -348,7 +348,7 @@ function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlaye
 					end
 					--±ðÈË»¹Ã»Áì½±  ·ÖÎª ÊÇÎÒµÄÄ¿±ê ÎÒÊÇ±ðÈËµÄÄ¿±ê ´óÏÐÈË
 					if g_CangBao_PlayerIdx[myIdx].nAskIdx == index then
-						--PushDebugMessage("ÊÇÎÒµÄÄ¿±ê")
+						--PushDebugMessage("Là møc tiêu cüa tôi")
 						--ÊÇÎÒµÄÄ¿±ê
 						--g_CangBao_TextList[index]:SetText(ScriptGlobal_Format("#{ZDBT_240703_162}", nCurName))
 						--°´Å¥´¦Àí
@@ -357,7 +357,7 @@ function CangBao_Info_Update(nItem1,nPlayer1,nPlayer1Info,nItem2,nPlayer2,nPlaye
 						g_CangBao_ChangeBtnList[index]:SetText("#{ZDBT_240703_164}")--???
 					else
 						--²»ÊÇÎÒµÄÄ¿±ê
-						--PushDebugMessage("²»ÊÇÎÒµÄÄ¿±ê ask="..g_CangBao_PlayerIdx[index].nAskIdx.." myIdx="..myIdx)
+						--PushDebugMessage("Không phäi møc tiêu cüa tôi ask="..g_CangBao_PlayerIdx[index].nAskIdx.." myIdx="..myIdx)
 						if g_CangBao_PlayerIdx[index].nAskIdx == myIdx then 
 							--µ«ÊÇÎÒÊÇËûµÄÄ¿±ê
 							g_CangBao_ExchangeTxtList[index]:Show();
@@ -464,7 +464,7 @@ function CangBao_Info_ExchangeClick(index)
 	--ÊÇ¸ö¶þ´ÎÈ·ÈÏ°´Å¥
 	local nCurName = g_CangBao_PlayerIdx[index].nPlayerName
 	local nCurItem = g_CangBao_PlayerIdx[index].nItemID
-	--PushDebugMessage("´«Èë±äÁ¿ "..g_CangBao_targetId.." "..nCurName.." "..nCurItem.." "..index)
+	--PushDebugMessage("Biªn truy«n vào "..g_CangBao_targetId.." "..nCurName.." "..nCurItem.." "..index)
 	PushEvent("CONFIRM_CANGBAOTU",g_CangBao_targetId,nCurName,nCurItem,index)
 
 	-- --²âÊÔ¸ø·þÎñÆ÷ÅÐ¶Ï
@@ -489,7 +489,7 @@ function CangBao_Info_AcceptClick(index)
 	--ÊÇ¸ö¶þ´ÎÈ·ÈÏ°´Å¥
 	local nCurName = g_CangBao_PlayerIdx[index].nPlayerName
 	local nCurItem = g_CangBao_PlayerIdx[index].nItemID
-	--PushDebugMessage("´«Èë±äÁ¿ "..g_CangBao_targetId.." "..nCurName.." "..nCurItem.." "..index)
+	--PushDebugMessage("Biªn truy«n vào "..g_CangBao_targetId.." "..nCurName.." "..nCurItem.." "..index)
 	PushEvent("CONFIRM_CANGBAOTU_ACCEPT",g_CangBao_targetId,nCurName,nCurItem,index)
 
 	

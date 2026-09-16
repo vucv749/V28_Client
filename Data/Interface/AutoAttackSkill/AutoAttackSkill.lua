@@ -861,7 +861,7 @@ end
 
 --================= ´¦Àí×Ô¶¯ ½¶·µÄ¸÷¸öÊ±¼ä =====================
 function AutoAttackSkill_AttackEvent(event)
-	--PushDebugMessage("AutoAttackSkill_AttackEvent ÎÒÒª´ò¿ªÁË"..event)
+	--PushDebugMessage("AutoAttackSkill_AttackEvent Chu¦n b¸ m·"..event)
 	if event == "config_update" then
 		--AutoAttackSkill_InitData()
 		initconfigdata()

@@ -145,7 +145,7 @@ function Higntlight_Link_ShowHYPERLINK(name,menpai,mvpType,mvpRate)
 end
 --Ìí¼ÓºÃÓÑ³É¹¦ Òş²ØÌí¼ÓºÃÓÑ°´Å¥
 function Higntlight_Link_AddFriendOK(name)
-	--PushDebugMessage("¸ß¹âÊ±¿Ì ÏÔÊ¾Ê± Ìí¼ÓºÃÓÑ³É¹¦ ºÃÓÑÃû×Ö:"..name);
+	--PushDebugMessage("Khoänh kh¡c n±i b§t - Khi hi¬n th¸: ğã thêm bÕn thành công, tên bÕn bè:"..name);
 	if g_MVPname == name then
 		Higntlight_Link_AddFriend:Hide()
 		return

@@ -125,22 +125,22 @@ function InputMoney_OnEvent(event)
 --		elseif (arg0 == "immitbase") then
 --			this:Show();
 --			g_nSaveOrGetMoney = PS_IMMITBASE;
---			InputMoney_Title:SetText("#gFF0FA0³äÈë±¾½ğ");
---			InputMoney_Accept_Button:SetText("È·¶¨");
+--			InputMoney_Title:SetText("#gFF0FA0NÕp ti«n g¯c");
+--			InputMoney_Accept_Button:SetText("Xác nh§n");
 --		
 --		--Íæ¼ÒÉÌµê³åÈë
 --		elseif (arg0 == "immit") then
 --			this:Show();
 --			g_nSaveOrGetMoney = PS_IMMIT;
---			InputMoney_Title:SetText("#gFF0FA0³äÈë");
---			InputMoney_Accept_Button:SetText("È·¶¨");
+--			InputMoney_Title:SetText("#gFF0FA0NÕp vào");
+--			InputMoney_Accept_Button:SetText("Xác nh§n");
 --		
 --		--Íæ¼ÒÉÌµêÈ¡³ö
 --		elseif (arg0 == "draw") then
 --			this:Show();
 --			g_nSaveOrGetMoney = PS_DRAW;
---			InputMoney_Title:SetText("#gFF0FA0Ö§È¡");
---			InputMoney_Accept_Button:SetText("È·¶¨");
+--			InputMoney_Title:SetText("#gFF0FA0Rút ra");
+--			InputMoney_Accept_Button:SetText("Xác nh§n");
 			
 		elseif (arg0 == "st_pet") then
 			this:Show();
@@ -157,8 +157,8 @@ function InputMoney_OnEvent(event)
 		elseif (arg0 == "transfershop") then
 			-- this:Show();
 			-- g_nSaveOrGetMoney = PS_TRANSFER;
-			-- InputMoney_Title:SetText("#gFF0FA0ÊäÈëÉÌµê¶¨¼Û");
-			-- InputMoney_Accept_Button:SetText("È·¶¨");
+			-- InputMoney_Title:SetText("#gFF0FA0Nh§p giá cØa hàng");
+			-- InputMoney_Accept_Button:SetText("Xác nh§n");
 			
 		end
 		
@@ -363,7 +363,7 @@ function InputMoneyAccept_Clicked()
 			-- 	InputMoney_Gold:SetText("");
 			-- 	InputMoney_Silver:SetText("");
 			-- 	InputMoney_CopperCoin:SetText("");
-			-- 	PushDebugMessage("ÅÌ³öÉÌµê¼Û¸ñ²»ÄÜ³¬¹ı10000½ğ£¬ÇëÖØĞÂÊäÈë");
+			-- 	PushDebugMessage("Giá bán ra cØa hàng không ğßşc vßşt quá 10000 lßşng, vui lòng nh§p lÕi");
 			-- 	return;
 			-- end
 			-- PlayerShop:Transfer("info", "sale", nMoney);

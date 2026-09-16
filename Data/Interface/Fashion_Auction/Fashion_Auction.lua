@@ -476,7 +476,7 @@ function Fashion_Auction_Follow(idx)
 	local bid_id = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, group_index, "BIDINDEX")
 	local bFollowed = DataPool:LuaFnGetFashionAuctionBiddingInfo(g_CurSection, group_index, "FOLLOW")
 
-	--PushDebugMessage("¹Ø×¢ - " .. tostring(bid_id))
+	--PushDebugMessage("Theo dõi - " .. tostring(bid_id))
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name("Follow")
 		Set_XSCRIPT_ScriptID(888818)

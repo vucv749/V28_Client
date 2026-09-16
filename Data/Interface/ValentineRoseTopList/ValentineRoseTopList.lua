@@ -301,7 +301,7 @@ end
 --ÏÔÊ¾Ê ËÍ»¨ÊıÁ¿
 function ValentineRoseTopList_Rank_ShowRoseNum()
 	if g_ValentineRoseTopList_CurPage < 1 or g_ValentineRoseTopList_CurPage > 3 then
-		--PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅĞĞ°ñ")
+		--PushDebugMessage("Thë hi®n tÕi không phäi bäng xªp hÕng")
 		return
 	end
 	
@@ -318,7 +318,7 @@ end
 function ValentineRoseTopList_Rank_ShowTopList()
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_ValentineRoseTopList_CurPage < 1 or g_ValentineRoseTopList_CurPage > 3 then
-		--PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅĞĞ°ñ")
+		--PushDebugMessage("Thë hi®n tÕi không phäi bäng xªp hÕng")
 		return
 	end
 	
@@ -382,7 +382,7 @@ end
 function ValentineRoseTopList_Rank_ShowBonusList()
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_ValentineRoseTopList_CurPage < 1 or g_ValentineRoseTopList_CurPage > 3 then
-		--PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅĞĞ°ñ")
+		--PushDebugMessage("Thë hi®n tÕi không phäi bäng xªp hÕng")
 		return
 	end
 	
@@ -486,7 +486,7 @@ end
 function ValentineRoseTopList_Page_Click(index)
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if index <= 0 or index > g_ValentineRoseTopList_MaxPage then
-		--PushDebugMessage("Ò³Ç©´íÎó£¬ÇëÖØĞÂÑ¡Ôñ")
+		--PushDebugMessage("Sai thë, vui lòng ch÷n lÕi")
 		return
 	end
 	
@@ -512,7 +512,7 @@ end
 function ValentineRoseTopList_RankClick_Refresh()
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_ValentineRoseTopList_CurPage < 1 or g_ValentineRoseTopList_CurPage > 3 then
-		--PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅĞĞ°ñ")
+		--PushDebugMessage("Thë hi®n tÕi không phäi bäng xªp hÕng")
 		return 0
 	end
 	--ÅĞ¶ÏÀäÈ´Ê±¼ä
@@ -559,7 +559,7 @@ end
 function ValentineRoseTopList_Prize_Present(pos)
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_ValentineRoseTopList_CurPage < 1 or g_ValentineRoseTopList_CurPage > 3 then
-		--PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅĞĞ°ñ")
+		--PushDebugMessage("Thë hi®n tÕi không phäi bäng xªp hÕng")
 		return
 	end	
 	
@@ -607,7 +607,7 @@ end
 function ValentineRoseTopList_Prize_Receive(pos)
 	--ÓĞĞ§ĞÔÅĞ¶Ï
 	if g_ValentineRoseTopList_CurPage < 1 or g_ValentineRoseTopList_CurPage > 3 then
-		--PushDebugMessage("µ±Ç°Ò³Ç©²»ÊÇÅÅĞĞ°ñ")
+		--PushDebugMessage("Thë hi®n tÕi không phäi bäng xªp hÕng")
 		return
 	end	
 	

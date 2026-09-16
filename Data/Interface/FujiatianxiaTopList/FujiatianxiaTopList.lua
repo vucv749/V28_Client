@@ -233,7 +233,7 @@ function FujiatianxiaTopList_NoRecord( index )
 	-- --Ãû´Î Ç°3Ãû
 	-- if index <= 2 then
 	-- 	g_TOP_Level[index+1]:SetText("0")
-	-- 	g_TOP_Name[index+1]:SetText("ĞéÎ»ÒÔ´ı")
+	-- 	g_TOP_Name[index+1]:SetText("V¸ trí còn tr¯ng")
 
 	-- 	--ÃÅÅÉÍ·Ïñ
 	-- 	g_TOP_PIC[index+1]:SetProperty("Image", g_MenPaiPic[9])

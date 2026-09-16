@@ -108,7 +108,7 @@ function ConfraternityJuanxian_OK_Clicked()
 	strNumber = tonumber(str)
 	strNumber = strNumber*10000 --????????×10000
 	
-	--PushDebugMessage("ÊäÈë£º"..strNumber.." ÓµÓÐ£º"..Player:GetData("MONEY"))
+	--PushDebugMessage("Nh§p:"..strNumber.." ÓµÓÐ£º"..Player:GetData("MONEY"))
 	if strNumber > Player:GetData("MONEY")+ Player:GetData("MONEY_JZ") then
 		PushDebugMessage("#{BPZJ_0801014_007}")
 		return

@@ -436,7 +436,7 @@ end
 
 --µã»÷Òø±ÒÉ¨µ´°´Å¥
 function SweepAll_OnSilverMoneyButtonClick()
-	--PushDebugMessage("Òø±ÒÉ¨µ´")
+	--PushDebugMessage("Quét Ngân T®")
 	local isInSecKill,fubenidx,BossIndex,DoubleExp ,MoneySweep, TeQuanSweep,CheckHuodongTime,Jinbidaibi,YinBiSweep,YinbiDaibi = GetSecKillData()
 
 	if isInSecKill > 0 and ( MoneySweep ~= 1 and TeQuanSweep ~= 1 and YinBiSweep ~= 1) then--??????

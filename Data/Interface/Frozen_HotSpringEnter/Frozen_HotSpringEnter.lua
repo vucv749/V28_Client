@@ -91,7 +91,7 @@ function Frozen_HotSpringEnter_Open()
 		-- Frozen_HotSpringEnter_Text:SetText("#{BXPWQ_240927_84}")
 	-- else
 		-- --¿¨¼¶·þ
-		-- Frozen_HotSpringEnter_Text:SetText("È±×Öµä")
+		-- Frozen_HotSpringEnter_Text:SetText("Thiªu t× ði¬n")
 	-- end
 	this:Show()		
 end

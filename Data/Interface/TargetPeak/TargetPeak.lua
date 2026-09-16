@@ -91,12 +91,12 @@ function TargetPeak_OnEvent(event)
 		-- end
 
 		-- if not CachedTarget:CanGetTargetEquip() then
-			-- PushDebugMessage("¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎŞ·¨²é¿´×ÊÁÏ¡£")				-- ¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎŞ·¨²é¿´×ÊÁÏ¡£
+			-- PushDebugMessage("Khoäng cách t¾i ngß¶i ch½i này quá xa, không th¬ xem thông tin.")				-- ¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎŞ·¨²é¿´×ÊÁÏ¡£
 			-- return
 		-- end
 		-- local objCared = CachedTarget:GetData("NPCID", 1)
 		-- if type(objCared) ~= "number" then
-			-- PushDebugMessage ("¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎŞ·¨²é¿´×ÊÁÏ¡£")			-- ¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎŞ·¨²é¿´×ÊÁÏ¡£
+			-- PushDebugMessage ("Khoäng cách t¾i ngß¶i ch½i này quá xa, không th¬ xem thông tin.")			-- ¾àÀë¸ÃÍæ¼ÒÌ«Ô¶£¬ÎŞ·¨²é¿´×ÊÁÏ¡£
 			-- return
 		-- end
 

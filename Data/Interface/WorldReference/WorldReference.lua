@@ -122,7 +122,7 @@ function WorldReference_DispatchMainPage()
 
 	end
 
---	WorldReference_Frame_Debug:SetText("½­ºþÖ¸ÄÏ")
+--	WorldReference_Frame_Debug:SetText("C¦m nang Giang H°")
 
 	this:Show();
 end

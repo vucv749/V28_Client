@@ -561,7 +561,7 @@ end
 --显示心情或称号
 function OB_Pad_ShowTitle_Click()
     if g_OB_Pad_Data.gameover == 1 then
-        --PushDebugMessage("本局比赛已结束")
+        --PushDebugMessage("Tr 黏u n鄖 疸 k猼 th鷆")
         return
     end
     
@@ -572,7 +572,7 @@ end
 --显示血条
 function OB_Pad_ShowHp_Click()
     if g_OB_Pad_Data.gameover == 1 then
-        --PushDebugMessage("本局比赛已结束")
+        --PushDebugMessage("Tr 黏u n鄖 疸 k猼 th鷆")
         return
     end
     

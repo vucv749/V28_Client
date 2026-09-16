@@ -171,7 +171,7 @@ function EquipRepair_OnEvent(event)
 	--		objCared = DataPool : GetNPCIDByServerID(EQUIP_NPC_ID);
 	--		AxTrace(0,1,"EQUIP_NPC_ID="..EQUIP_NPC_ID .. " objCared="..objCared)
 	--		if objCared == -1 then
-	--				PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+	--				PushDebugMessage("Dæ li®u t× server có v¤n ð«.");
 	--				return;
 	--		end
 	--		BeginCareObject_EquipRepair(objCared)

@@ -473,7 +473,7 @@ function OtherInfo_Page_DWJinJie()
 end
 
 function OtherInfo_GotoPaihang()
-	--PushDebugMessage("¹¦ÄÜÉĞÎ´¿ª·Å")
+	--PushDebugMessage("ChÑc nång chßa m·")
 	Helper:GotoPaihang()
 end
 

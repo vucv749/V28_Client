@@ -113,7 +113,7 @@ function OptionalGiftBox_Five_Update()
 	g_OptionalGiftBox_Five_CurSelNum = 0
 	g_OptionalGiftBox_Five_CurSelState = {0,0,0,0,0}
 	
-	--PushDebugMessage("≥ı ºªØ"..g_OptionalGiftBox_Five_CurSelNum..g_OptionalGiftBox_Five_CurNeedNum)
+	--PushDebugMessage("Kh∑i t’o"..g_OptionalGiftBox_Five_CurSelNum..g_OptionalGiftBox_Five_CurNeedNum)
 	
 	g_OptionalGiftBox_Five_UI_DragTitle:SetText(tbl_boxTitle)
 	g_OptionalGiftBox_Five_UI_Info:SetText(tbl_boxTips1)

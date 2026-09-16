@@ -254,7 +254,7 @@ function XiaRi_YanMen_Update(bOpen)
 	local nCurDay = tonumber(DataPool:GetServerDayTime());
 	if g_nHuoDongStep >= 5 or g_nHuoDongStep <= 0 then
 		-- XiaRi_YanMen_Text_OKbtn:SetProperty("Disabled", "True");
-		-- XiaRi_YanMen_Text_OKbtn:SetText("ÒÑÍê³É")
+		-- XiaRi_YanMen_Text_OKbtn:SetText("Ðã hoàn thành")
 
 		XiaRi_YanMen_Text_OKbtn : Hide()
 		XiaRi_YanMen_Text_SubmitText : Hide()
@@ -263,7 +263,7 @@ function XiaRi_YanMen_Update(bOpen)
 		
 	else
 		-- XiaRi_YanMen_Text_OKbtn:SetProperty("Disabled", "False");
-		-- XiaRi_YanMen_Text_OKbtn:SetText("ÖúÁ¦")
+		-- XiaRi_YanMen_Text_OKbtn:SetText("Trþ lñc")
 
 		XiaRi_YanMen_Text_OKbtn : Show()
 		XiaRi_YanMen_Text_SubmitText : Show()

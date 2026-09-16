@@ -28,7 +28,7 @@ function ChuanSongSystem_OnEvent(event)
 		-- local xx = Get_XParam_INT(0);
 		-- ObjCaredID = DataPool : GetNPCIDByServerID(xx);
 		-- if ObjCaredID == -1 then
-			-- PushDebugMessage("server´«¹ýÀ´µÄÊý¾ÝÓÐÎÊÌâ¡£");
+			-- PushDebugMessage("Dæ li®u t× server có v¤n ð«.");
 			-- return;
 		-- end
 		-- ObjCaredIDID = xx

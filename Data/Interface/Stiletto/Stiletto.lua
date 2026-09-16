@@ -45,7 +45,7 @@ function Stiletto_OnEvent(event)
 			AxTrace(0,1,"xx="..xx .. " objCared="..objCared)
 			if objCared == -1 then
                     --È¥µô´ËĞĞ£¬ÒòÎª´ËÖÖĞÅÏ¢²»ÊÊºÏÏÔÊ¾ÔÚ¿Í»§¶Ë
-					--PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+					--PushDebugMessage("Dæ li®u t× server có v¤n ğ«.");
 					return;
 			end
 			BeginCareObject_Stiletto(objCared)
@@ -253,7 +253,7 @@ function Stiletto_Buttons_Clicked()
 		elseif Need_Item == -3 then
 			PushDebugMessage("Ğã ğÕt s¯ l² t¯i ğa")
 --		elseif DataPool:GetPlayerMission_ItemCountNow(Need_Item) < Need_Item_Count then
---			PushDebugMessage("È±ÉÙ²ÄÁÏ")
+--			PushDebugMessage("Thiªu nguyên li®u")
 		elseif Player:GetData("MONEY") + Player:GetData("MONEY_JZ") < Need_Money then
 			PushDebugMessage("Ngân lßşng không ğü")
 		else

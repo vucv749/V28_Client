@@ -140,7 +140,7 @@ function ShaXing_BossChoice_OnEvent(event)
 		end
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 89331106 ) then
 		--Ô¤¸æ½çÃæ
-		--PushDebugMessage("test Ô¤¸æ½çÃæIDx="..Get_XParam_INT(1))
+		--PushDebugMessage("test ID giao di®n thông báo trß¾c x="..Get_XParam_INT(1))
 		if Get_XParam_INT(0) > 0 then --???boss
 			ShaXing_BossChoice_JustShow(Get_XParam_INT(0),Get_XParam_INT(1),Get_XParam_INT(2),Get_XParam_INT(3),Get_XParam_INT(4),Get_XParam_INT(5),Get_XParam_INT(6))
 		end
@@ -345,7 +345,7 @@ function ShaXing_BossChoice_ShowAll(nBossMode,nIsReset,nIsEnable,nIsUseList,nBos
 		g_RandomChoiceList[6] = math.floor(math.mod(nRandomChoiceList,1000000)/100000) 
 	end
 	
-	--PushDebugMessage("test Ç°Èý¸öÑ¡Ïî A="..g_SXBossCheck[1].." B="..g_SXBossCheck[2].." C="..g_SXBossCheck[3])
+	--PushDebugMessage("test 3 lña ch÷n ð¥u A="..g_SXBossCheck[1].." B="..g_SXBossCheck[2].." C="..g_SXBossCheck[3])
 	if nBossMode < g_ShaXing_ModeMaxNum then
 		--Ç°Èý¸öÄÑ¶È ¹Ê¾Ä£Ê½
 		ShaXing_BossChoice_Right1:Show();
@@ -983,7 +983,7 @@ function ShaXing_BossChoice_Point(nIsUseList,nBossChoiceList,nRandomChoiceList)
 	local nBaseBossPoint = g_SXBossBuffInfo[1].nPoint[bBossCheck1] + g_SXBossBuffInfo[2].nPoint[bBossCheck2] + g_SXBossBuffInfo[3].nPoint[bBossCheck3] +g_SXBossBuffInfo[4].nPoint[bBossCheck4]+g_SXBossBuffInfo[5].nPoint[bBossCheck5]+g_SXBossBuffInfo[6].nPoint[bBossCheck6]+g_SXBossBuffInfo[7].nPoint[bBossCheck7]	
 	local nBaseRandomPoint = g_SXRandomInfo[g_SXRandomIdxList[1]].nPoint[bRandomCheck1]+g_SXRandomInfo[g_SXRandomIdxList[2]].nPoint[bRandomCheck2]+g_SXRandomInfo[g_SXRandomIdxList[3]].nPoint[bRandomCheck3]+g_SXRandomInfo[g_SXRandomIdxList[4]].nPoint[bRandomCheck4]+g_SXRandomInfo[g_SXRandomIdxList[5]].nPoint[bRandomCheck5]+g_SXRandomInfo[g_SXRandomIdxList[6]].nPoint[bRandomCheck6]
 	local mTotalPoint = nCurBossPoint + nBaseBossPoint + nBaseRandomPoint
-	--PushDebugMessage("test »ý·Ö modeUp="..modeUp.." mTotalPoint"..mTotalPoint.." nCurBossPoint="..nCurBossPoint.." nBaseBossPoint="..nBaseBossPoint.." nBaseRandomPoint="..nBaseRandomPoint)
+	--PushDebugMessage("test ði¬m modeUp="..modeUp.." mTotalPoint"..mTotalPoint.." nCurBossPoint="..nCurBossPoint.." nBaseBossPoint="..nBaseBossPoint.." nBaseRandomPoint="..nBaseRandomPoint)
 	if bBossMode == 1 then
 		ShaXing_BossChoice_AllNum:SetText(ScriptGlobal_Format("#{XSX_220705_241}",tostring(mTotalPoint*modeUp)));
 		ShaXing_BossChoice_AllNumFrame:SetProperty( "Image", "set:ShaXing1 image:ShaXing_TextBk1" )
@@ -1033,7 +1033,7 @@ function ShaXing_BossChoice_Confirm()
 	--PushDebugMessage("test bBossMode="..bBossMode.." bBossCheck="..bBossCheck.." bRandomCheck="..bRandomCheck)
 	--bBossCheck = 2222222
 	--bRandomCheck = 110000
-	--PushDebugMessage("test ²âÊÔº¯Êý bBossMode="..bBossMode.." bBossCheck="..bBossCheck.." bRandomCheck="..bRandomCheck)
+	--PushDebugMessage("test hàm ki¬m thØ bBossMode="..bBossMode.." bBossCheck="..bBossCheck.." bRandomCheck="..bRandomCheck)
 	
 	Clear_XSCRIPT()
 		Set_XSCRIPT_Function_Name( "BossChoiceConfirm" )

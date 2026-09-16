@@ -138,7 +138,7 @@ function CommisionStall_InitDlg(type)
 		CommisionStall_Cash_Money:Hide();
 		Need_Money = 0;
 		CommisionStall_Cash_Yuanbao:SetText("KNB: "..tostring(Player:GetData("YUANBAO")).." ");
-		--CommisionStall_TargetPrice_Yuanbao:SetText("Ôª±¦:"..tostring(Player:GetData("YUANBAO")));
+		--CommisionStall_TargetPrice_Yuanbao:SetText("Nguyên bäo:"..tostring(Player:GetData("YUANBAO")));
 		
 	end
 	g_CurSel = -1;

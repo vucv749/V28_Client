@@ -196,7 +196,7 @@ function ERenGu_Yure_OnEvent(event)
 						--进入追凶阶段(即最起码完成了一个追凶任务)
 						ERenGu_Yure_UIPhase(3)	--???????
 						g_Client_Finished_ArtComponent[g_CurQuestPhrase-3]:Show()
-						-- PushDebugMessage("追凶阶段"..(g_CurQuestPhrase-3).."已完成")
+						-- PushDebugMessage("Giai 餺課 truy hung"..(g_CurQuestPhrase-3).."已完成")
 						ERenGu_Yure_Client3_GotoBtn:Disable()
 					end
 				else

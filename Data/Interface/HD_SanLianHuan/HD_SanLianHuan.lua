@@ -103,7 +103,7 @@ function HD_SanLianHuan_OnEvent(event)
 	if ( event == "UI_COMMAND" and tonumber(arg0) == 20130513) then
 			-- ObjCaredID = DataPool : GetNPCIDByServerID(Get_XParam_INT(3))
 			-- if ObjCaredID == -1 then
-				-- PushDebugMessage("server´«¹ıÀ´µÄÊı¾İÓĞÎÊÌâ¡£");
+				-- PushDebugMessage("Dæ li®u t× server có v¤n ğ«.");
 				-- return
 			-- end
 			-- this:CareObject(ObjCaredID, 1, "HD_SanLianHuan")

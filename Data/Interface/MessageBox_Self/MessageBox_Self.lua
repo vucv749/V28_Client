@@ -1100,7 +1100,7 @@ function MessageBox_Self_OnEvent(event)
 	end
 
 --	if event == "CARVE_CONFIRM" then
---		MessageBox_Self_Text:SetText( "×¢Òâ£¡#ÄúÒªµñ×ÁµÄ±¦Ê¯»òµñ×Á·ûÎªÒÑ°ó¶¨ÎïÆ·£¬µñ×ÁºóµÄ±¦Ê¯Ò²½«ÓëÄú°ó¶¨£¬È·ÈÏÒª¼ÌĞøµñ×ÁµÄ»°ÇëÔÙ´Îµã»÷µñ×Á°´Å¥¡£" );
+--		MessageBox_Self_Text:SetText( "Chú ı! #Viên ğá quı ho£c phù kh¡c bÕn mu¯n kh¡c là v§t ph¦m ğã khóa (bind), sau khi kh¡c, ğá quı cûng s¨ b¸ khóa theo bÕn. Nªu xác nh§n mu¯n tiªp tøc kh¡c, vui lòng nh¤n nút Kh¡c thêm l¥n næa." );
 --		CarveData[1] = tostring( arg0 )
 --		CarveData[2] = tonumber( arg1 )
 --		CarveData[3] = tonumber( arg2 )

@@ -38,7 +38,7 @@ function Higntlight_Process2_OnEvent(event)
 		local lost = tonumber(arg0);
 		local skillType = tonumber(arg1);
         local Tname = tostring(arg2);
-		--PushDebugMessage("½âÎö¼¼ÄÜ³¬Á´:"..Tname..skillType);
+		--PushDebugMessage("Phân tích liên kªt kÛ nång:"..Tname..skillType);
 		Higntlight_Process2_UpdateUI(Tname,skillType);
 		this:Show();
 	elseif (event == "ADJEST_UI_POS" ) then
