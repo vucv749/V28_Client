@@ -67,7 +67,7 @@ function YuanbaoExchange_OnEvent(event)
 			if( math.mod(nPLow, 10) > 0 ) then
 				strPoint = strPoint.."."..math.mod(nPLow,10);
 			end
-			YuanbaoExchange_Text1 : SetText("S¯ dß tài khoän hi®n tÕi:"..strPoint*10 );
+			YuanbaoExchange_Text1 : SetText("S¯ dß:"..strPoint*10 );
 			--×¨ÊôµãÊı
 			local nExPoint = Get_XParam_UINT(1)/10;
 			if nExPoint > 0 then

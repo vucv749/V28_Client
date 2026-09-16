@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="EquipStrengthen_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.5,-178}}" />
-        <Property Name="AbsoluteSize" Value="w:256 h:373" />
+    <Property Name="UnifiedSize" Value="{{0.000000,340.000000},{0.000000,373.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}"/>
         <Event Name="Hidden" Function="EquipStrengthen_OnHiden();" />
         <Window Type="TLBB_DragTitle" Name="EquipStrengthen_DragTitle">
             <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
@@ -42,20 +42,20 @@
 				 <Property Name="Text" Value="#{EquipStong_XML_1}" />
             </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="EquipStrengthen_Info6">
-            <Property Name="UnifiedPosition" Value="{{0.000000,137.000000},{0.000000,148.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,148.000000}}"/>
             <Property Name="Text" Value="55" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
           </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="EquipStrengthen_Info5">
-            <Property Name="UnifiedPosition" Value="{{0.000000,132.000000},{0.000000,72.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,72.000000}}"/>
             <Property Name="Text" Value="99.99%" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
           </Window>
           <Window Type="TLBB_SimpleMulitiTextFrame" Name="EquipStrengthen_Info7">
-            <Property Name="UnifiedPosition" Value="{{0.000000,105.000000},{0.000000,178.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.000000,125.000000},{0.000000,40.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,150.000000},{0.000000,60.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-155.000000},{0.000000,168.000000}}"/>
             <Property Name="Text" Value="" />
             <Property Name="HorzFormatting" Value="WordWrapCentred" />
           </Window>
@@ -68,16 +68,16 @@
                 <Property Name="Text" Value="#{EquipStong_XML_2}" />
             </Window>
           <Window Type="TLBB_SimpleText" Name="EquipStrengthen_Info9">
+        <Property Name="UnifiedSize" Value="{{0.550000,0.000000},{0.000000,20.000000}}"/>
             <Property Name="UnifiedPosition" Value="{{0.049383,0.000000},{0.204403,10.000000}}"/>
-            <Property Name="UnifiedSize" Value="{{0.35,0.000000},{0.000000,20.000000}" />
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
             <Property Name="RiseOnClick" Value="False" />
             <Property Name="TextColor" Value="FFFFF263" />
             <Property Name="Text" Value="#{INTERFACE_XML_989}" />
           </Window>
             <Window Type="TLBB_ActionButton" Name="EquipStrengthen_Object1">
-                <Property Name="Position" Value="x:0.654 y:0.318" />
-                <Property Name="AbsoluteSize" Value="w:36 h:36" />
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.754000,0.000000},{0.318000,0.000000}}"/>
                 <Property Name="Empty" Value="false" />
                 <Property Name="DragAcceptName" Value="I01" />
                 <Property Name="DraggingEnabled" Value="True" />
@@ -91,8 +91,8 @@
                 <Property Name="Text" Value="#{EquipStong_XML_3}" />
             </Window>
           <Window Type="TLBB_SimpleText" Name="EquipStrengthen_Info8">
-            <Property Name="Position" Value="x:0.049383 y:0.588050" />
-			<Property Name="UnifiedSize" Value="{{0.600000,-50.800003},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.700000,-50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.049383,0.000000},{0.588050,0.000000}}"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
             <Property Name="RiseOnClick" Value="False" />
             <Property Name="TextColor" Value="FFFFF263" />
@@ -141,8 +141,8 @@
                 </Window>
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="EquipStrengthen_Blank">
-                <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-160.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-180.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{1.000000,-20.000000}}"/>
             </Window>
           <Window Type="TLBB_ButtonCommon" Name="EquipStrengthen_Quick">
             <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
@@ -152,8 +152,8 @@
             <Event Name="Clicked" Function="EquipStrengthen_DoQuickQiangHuaByYB()" />
           </Window>
             <Window Type="TLBB_ButtonCommon" Name="EquipStrengthen_OK">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{INTERFACE_XML_557}" />
                 <Event Name="Clicked" Function="EquipStrengthen_Buttons_Clicked();" />
             </Window>

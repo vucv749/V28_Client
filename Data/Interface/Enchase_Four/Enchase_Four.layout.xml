@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame1" Name="Enchase_Four_Frame">
-		<Property Name="UnifiedPosition" Value="{{0.4,0},{0.15,0}}" />
-		<Property Name="AbsoluteSize" Value="w:256 h:362" />
+    <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,362.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.400000,0.000000},{0.150000,0.000000}}"/>
 		<Event Name="Shown" Function="Enchase_Four_OnShown();" />
 		<Event Name="Hidden" Function="Enchase_Four_OnHidden();" />
 		<Window Type="TLBB_DragTitle" Name="Enchase_Four_DragTitle">
-			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
 			<Property Name="DragTarget" Value="Enchase_Four_Frame" />
 			<Window Type="TLBB_SimpleText" Name="Enchase_Four_Title">
 				<Property Name="Position" Value="x:0.0 y:0.0" />
@@ -43,8 +43,8 @@
 				<Property Name="Text" Value="#{INTERFACE_XML_176}" />
 			</Window>
 			<Window Type="TLBB_SimpleText" Name="Enchase_Four_Explain1">
-				<Property Name="AbsolutePosition" Value="x:5.0 y:25.0" />
-				<Property Name="UnifiedSize" Value="{{0.85,0.000000},{0.000000,40.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,153.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,32.000000}}"/>
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
 				<Property Name="VertFormatting" Value="VertCentred" />
 				<Property Name="RiseOnClick" Value="False" />
@@ -52,15 +52,15 @@
 				<Property Name="Text" Value="#{INTERFACE_XML_JX_03}" />
 			</Window>
 			<Window Type="TLBB_ActionButton" Name="Enchase_Four_Item">
-				<Property Name="AbsolutePosition" Value="x:175.0 y:30.0" />
-				<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,30.000000}}"/>
 				<Property Name="DraggingEnabled" Value="True" />
 				<Property Name="DragAcceptName" Value="G25" />
 				<Event Name="RBClicked" Function="Enchase_Four_Resume_Gem(25);" />
 			</Window>
 			<Window Type="DefaultWindow" Name="Enchase_Four_Effect_Bk">
-				<Property Name="AbsolutePosition" Value="x:159.0 y:67.0" />
-				<Property Name="AbsoluteSize" Value="w:75.000000 h:18.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,75.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,209.000000},{0.000000,67.000000}}"/>
 				<Window Type="TLBB_StaticImageNULL" Name="Enchase_Four_Effect1">
 					<Property Name="AbsolutePosition" Value="x:0.0 y:1.0" />
 					<Property Name="AbsoluteSize" Value="w:16.000000 h:16.000000" />
@@ -96,8 +96,8 @@
 				<Property Name="Text" Value="#{INTERFACE_XML_509}" />
 			</Window>
 			<Window Type="TLBB_ActionButton" Name="Enchase_Four_Gem1">
-				<Property Name="AbsolutePosition" Value="x:175.0 y:92.0" />
-				<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,92.000000}}"/>
 				<Property Name="DraggingEnabled" Value="True" />
 				<Property Name="DragAcceptName" Value="G26" />
 				<Event Name="RBClicked" Function="Enchase_Four_Resume_Gem(26);" />
@@ -112,15 +112,15 @@
 				<Property Name="Text" Value="#{INTERFACE_XML_941}" />
 			</Window>
 			<Window Type="TLBB_ActionButton" Name="Enchase_Four_Gem2">
-				<Property Name="AbsolutePosition" Value="x:175.0 y:135.0" />
-				<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,135.000000}}"/>
 				<Property Name="DraggingEnabled" Value="True" />
 				<Property Name="DragAcceptName" Value="G27" />
 				<Event Name="RBClicked" Function="Enchase_Four_Resume_Gem(27);" />
 			</Window>
 			<Window Type="TLBB_SimpleText" Name="Enchase_Four_Explain3">
 				<Property Name="AbsolutePosition" Value="x:12.0 y:184.0" />
-				<Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}" />
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
 				<Property Name="VertFormatting" Value="VertCentred" />
 				<Property Name="RiseOnClick" Value="False" />
@@ -128,8 +128,8 @@
 				<Property Name="Text" Value="#{INTERFACE_XML_990}" />
 			</Window>
 			<Window Type="TLBB_ActionButton" Name="Enchase_Four_Gem3">
-				<Property Name="AbsolutePosition" Value="x:175.0 y:178.0" />
-				<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,225.000000},{0.000000,178.000000}}"/>
 				<Property Name="DraggingEnabled" Value="True" />
 				<Property Name="DragAcceptName" Value="G28" />
 				<Event Name="RBClicked" Function="Enchase_Four_Resume_Gem(28);" />
@@ -189,12 +189,12 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace5" Name="Enchase_Four_Blank">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-				<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="Enchase_Four_OK">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
 				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
 				<Event Name="Clicked" Function="Enchase_Four_Buttons_Clicked();" />
 			</Window>

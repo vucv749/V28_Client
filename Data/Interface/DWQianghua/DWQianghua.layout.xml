@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame1" Name="DWQianghua_Frame">
-		<Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,386.000000}}"/>
-		<Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-188.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-178.000000}}" />
+		<Property Name="AbsoluteSize" Value="w:256.000000 h:350.000000" />
 		<Event Name="Hidden" Function="DWQianghua_OnHiden();" />
 		<Window Type="TLBB_DragTitle" Name="DWQianghua_DragTitle">
-			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
 			<Property Name="DragTarget" Value="DWQianghua_Frame" />
 			<Window Type="TLBB_SimpleText" Name="DWQianghua_Title">
 				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
@@ -52,39 +52,39 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWQianghua_Info">
-				<Property Name="UnifiedSize" Value="{{0.000000,243.000000},{0.000000,84.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,20.000000}}"/>
+				<Property Name="RelativePosition" Value="x:0.000000 y:0.000000" />
+				<Property Name="AbsoluteSize" Value="w:243.000000 h:98.000000" />
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
 				<Property Name="RiseOnClick" Value="False" />
 				<Property Name="Text" Value="#{ZBDW_XML_22}" />
 				<Property Name="TextColor" Value="FFFFF263" />
 			</Window>
 			<Window Type="TLBB_SimpleText" Name="DWQianghua_Info2">
-				<Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,117.000000}}"/>
+				<Property Name="AbsolutePosition" Value="x:12.000000 y:96.000000" />
+				<Property Name="UnifiedSize" Value="{{0.695473,0.000000},{0.000000,40.000000}}" />
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
 				<Property Name="RiseOnClick" Value="False" />
 				<Property Name="Text" Value="#{ZBDW_XML_23}" />
 				<Property Name="TextColor" Value="FFFFF263" />
 			</Window>
 			<Window Type="TLBB_ActionButton" Name="DWQianghua_Object">
-				<Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,190.000000},{0.000000,117.000000}}"/>
+				<Property Name="AbsolutePosition" Value="x:190.000000 y:100.000000" />
+				<Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000" />
 				<Property Name="DragAcceptName" Value="G97" />
 				<Property Name="DraggingEnabled" Value="True" />
 				<Event Name="RBClicked" Function="DWQianghua_Resume_Equip();" />
 			</Window>
 			<Window Type="TLBB_SimpleMulitiTextFrame" Name="DWQianghua_Amount">
-				<Property Name="UnifiedSize" Value="{{0.000000,216.000000},{0.000000,20.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,160.000000}}"/>
+				<Property Name="AbsolutePosition" Value="x:12.000000 y:139.000000" />
+				<Property Name="AbsoluteSize" Value="w:216.000000 h:40.000000" />
 				<Property Name="HorzFormatting" Value="LeftAligned" />
 				<Property Name="RiseOnClick" Value="False" />
 				<Property Name="Text" Value="#{ZBDW_XML_24}" />
 				<Property Name="TextColor" Value="FFFFF263" />
 			</Window>
 			<Window Type="TLBB_EditBoxNormal" Name="DWQianghua_NumericalValue">
-				<Property Name="UnifiedSize" Value="{{0.000000,88.000000},{0.000000,20.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,107.000000},{0.000000,192.000000}}"/>
+				<Property Name="AbsolutePosition" Value="x:107.000000 y:182.000000" />
+				<Property Name="AbsoluteSize" Value="w:88.000000 h:20.000000" />
 				<Property Name="MaxTextLength" Value="6" />
 				<Property Name="Text" Value="" />
 				<Property Name="ValidationString" Value="[0-9]*" />
@@ -92,13 +92,13 @@
 				<Event Name="TextChanged" Function="DWQianghua_ToolNumChange();" />
 			</Window>
 			<Window Type="TLBB_ButtonAdd" Name="DWQianghua_Addition">
-				<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,197.000000},{0.000000,194.000000}}"/>
+				<Property Name="AbsolutePosition" Value="x:197.000000 y:184.000000" />
+				<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
 				<Event Name="Clicked" Function="DWQianghua_Addition_Click();" />
 			</Window>
 			<Window Type="TLBB_ButtonSub" Name="DWQianghua_Decrease">
-				<Property Name="UnifiedSize" Value="{{0.000000,14.000000},{0.000000,14.000000}}"/>
-				<Property Name="UnifiedPosition" Value="{{0.000000,212.000000},{0.000000,194.000000}}"/>
+				<Property Name="AbsolutePosition" Value="x:212.000000 y:184.000000" />
+				<Property Name="AbsoluteSize" Value="w:14.000000 h:14.000000" />
 				<Event Name="Clicked" Function="DWQianghua_Decrease_Click();" />
 			</Window>
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="DWQianghua_CLneed">
@@ -166,12 +166,12 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace5" Name="DWQianghua_Blank">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}" />
-				<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="DWQianghua_OK">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}}" />
-				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
 				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
 				<Event Name="Clicked" Function="DWQianghua_OK_Clicked();" />
 			</Window>

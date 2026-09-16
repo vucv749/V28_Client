@@ -6,8 +6,8 @@
 		<Event Name="Shown" Function="Enchase_OnShown();" />
 		<Event Name="Hidden" Function="Enchase_OnHidden();" />
 		<Window Type="TLBB_DragTitle" Name="Enchase_DragTitle">
-			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
 			<Property Name="DragTarget" Value="Enchase_Frame" />
 			<Window Type="TLBB_SimpleText" Name="Enchase_Title">
 				<Property Name="Position" Value="x:0.0 y:0.0" />
@@ -97,8 +97,8 @@
 				<Event Name="RBClicked" Function="Enchase_Resume_Gem(26);" />
 			</Window>
 			<Window Type="TLBB_SimpleText" Name="Enchase_Explain4">
-				<Property Name="AbsolutePosition" Value="x:12.0 y:141.0" />
-				<Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.600000,0.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,141.000000}}"/>
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
 				<Property Name="VertFormatting" Value="VertCentred" />
 				<Property Name="RiseOnClick" Value="False" />
@@ -114,7 +114,7 @@
 			</Window>
 			<Window Type="TLBB_SimpleText" Name="Enchase_Explain3">
 				<Property Name="AbsolutePosition" Value="x:12.0 y:184.0" />
-				<Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.000000,132.000000},{0.000000,20.000000}" />
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
 				<Property Name="VertFormatting" Value="VertCentred" />
 				<Property Name="RiseOnClick" Value="False" />
@@ -183,12 +183,12 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace5" Name="Enchase_Blank">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-				<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="Enchase_OK">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
 				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
 				<Event Name="Clicked" Function="Enchase_Buttons_Clicked();" />
 			</Window>

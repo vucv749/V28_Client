@@ -5,8 +5,8 @@
 		<Property Name="AbsoluteSize" Value="w:479.000000 h:362.000000" />
 		<Event Name="Hidden" Function="ErjimimaJiesuo_OnHide();" />
 		<Window Type="TLBB_DragTitle" Name="ErjimimaJiesuo_DragTitle">
-			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
 			<Property Name="DragTarget" Value="ErjimimaJiesuo_Frame" />
 			<Property Name="Font" Value="YouYuan11.25" />
 			<Property Name="HorzFormatting" Value="HorzCentred" />
@@ -35,8 +35,8 @@
 				<Property Name="VertFormatting" Value="TopAligned" />
 				<Property Name="TextColor" Value="FFFFF263" />
         <Window Type="TLBB_SimpleText" Name="ErjimimaJiesuo_Jiesuo_Text" >
-          <Property Name="AbsolutePosition" Value="x:18.000000 y:55.000000" />
-          <Property Name="AbsoluteSize" Value="w:94.000000 h:18.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,200.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,20.000000}}"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="MouseHollow" Value="False" />
           <Property Name="Text" Value="#{FDH_090302_1}" />
@@ -44,8 +44,8 @@
           <Property Name="VertFormatting" Value="VertCentred" />
         </Window>
         <Window Type="TLBB_EditBoxNormal" Name="ErjimimaJiesuo_Jiesuo">
-          <Property Name="AbsolutePosition" Value="x:120.000000 y:54.000000" />
-          <Property Name="AbsoluteSize" Value="w:115.000000 h:19.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,115.000000},{0.000000,19.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,20.000000},{0.000000,54.000000}}"/>
           <Property Name="ValidationString" Value="[0-9a-z]*" />
           <Property Name="MaxTextLength" Value="15" />
           <Property Name="MaskText" Value="True" />
@@ -53,11 +53,11 @@
           <Event Name="Activated" Function="ErjimimaJiesuo_Jiesuo_OnActive()" />
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="ErjimimaJiesuo_dis_Client" >
-          <Property Name="AbsolutePosition" Value="x:256.000000 y:2.000000" />
-          <Property Name="AbsoluteSize" Value="w:211.000000 h:119.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,310.000000},{0.000000,119.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-312.000000},{0.000000,2.000000}}"/>
           <Window Type="TLBB_SimpleText" Name="ErjimimaJiesuo_dis_Text" >
-            <Property Name="AbsolutePosition" Value="x:6.000000 y:4.000000" />
-            <Property Name="AbsoluteSize" Value="w:202.000000 h:114.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
             <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
             <Property Name="MouseHollow" Value="False" />
             <Property Name="Text" Value="#{FDH_090227_1}" />
@@ -106,14 +106,14 @@
         </Window>
       </Window>
 			<Window Type="TLBB_ButtonCommon" Name="ErjimimaJiesuo_OK">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
 				<Event Name="Clicked" Function="ErjimimaJiesuo_OK_Click();" />
 				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
 			</Window>
       <Window Type="TLBB_ButtonCommon" Name="ErjimimaJiesuo_Jiechu">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-465.000000},{1.000000,-20.000000}" />
-        <Property Name="AbsoluteSize" Value="w:62.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-465.000000},{1.000000,-20.000000}}"/>
         <Property Name="Text" Value="#{FDH_090112_24}" />
         <Event Name="Clicked" Function="ErjimimaJiesuo_Jiechu();" />
         <Property Name="Tooltip" Value="#{FDH_090303_1}" />

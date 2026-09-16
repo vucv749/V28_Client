@@ -2,7 +2,7 @@
 <GUILayout>
 	<Window Type="TLBB_MainFrame1" Name="Dress_Enchase_Frame">
 		<Property Name="UnifiedPosition" Value="{{0.4,0},{0.15,0}}" />
-		<Property Name="AbsoluteSize" Value="w:256 h:382" />
+    <Property Name="AbsoluteSize" Value="w:340 h:382" />
 		<Event Name="Shown" Function="Dress_Enchase_OnShown();" />
 		<Event Name="Hidden" Function="Dress_Enchase_OnHiden();" />
 		<Window Type="TLBB_DragTitle" Name="Dress_Enchase_DragTitle">
@@ -52,15 +52,15 @@
 				<Property Name="Text" Value="#{SZPR_XML_39}" />
 			</Window>
 			<Window Type="TLBB_ActionButton" Name="Dress_Enchase_Item">
-				<Property Name="AbsolutePosition" Value="x:175.0 y:70.0" />
-				<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,70.000000}}"/>
 				<Property Name="DraggingEnabled" Value="True" />
 				<Property Name="DragAcceptName" Value="D3" />
 				<Event Name="RBClicked" Function="Dress_Enchase_Resume_Gem(25);" />
 			</Window>
 			<Window Type="DefaultWindow" Name="Dress_Enchase_Effect_Bk">
-				<Property Name="AbsolutePosition" Value="x:167.0 y:107.0" />
-				<Property Name="AbsoluteSize" Value="w:50.000000 h:18.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,272.000000},{0.000000,107.000000}}"/>
 				<Window Type="TLBB_StaticImageNULL" Name="Dress_Enchase_Effect1">
 					<Property Name="AbsolutePosition" Value="x:0.0 y:1.0" />
 					<Property Name="AbsoluteSize" Value="w:16.000000 h:16.000000" />
@@ -90,15 +90,15 @@
 				<Property Name="Text" Value="#{SZPR_XML_40}" />
 			</Window>
 			<Window Type="TLBB_ActionButton" Name="Dress_Enchase_Gem1">
-				<Property Name="AbsolutePosition" Value="x:175.0 y:132.0" />
-				<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,132.000000}}"/>
 				<Property Name="DraggingEnabled" Value="True" />
 				<Property Name="DragAcceptName" Value="D5" />
 				<Event Name="RBClicked" Function="Dress_Enchase_Resume_Gem(26);" />
 			</Window>
 			<Window Type="TLBB_SimpleText" Name="Dress_Enchase_Explain4">
-				<Property Name="AbsolutePosition" Value="x:12.0 y:181.0" />
-				<Property Name="UnifiedSize" Value="{{0.65,0.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.650000,84.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,12.000000},{0.000000,181.000000}}"/>
 				<Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
 				<Property Name="VertFormatting" Value="VertCentred" />
 				<Property Name="RiseOnClick" Value="False" />
@@ -106,8 +106,8 @@
 				<Property Name="Text" Value="#{SZPR_XML_41}" />
 			</Window>
 			<Window Type="TLBB_ActionButton" Name="Dress_Enchase_Gem2">
-				<Property Name="AbsolutePosition" Value="x:175.0 y:175.0" />
-				<Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,280.000000},{0.000000,175.000000}}"/>
 				<Property Name="DraggingEnabled" Value="True" />
 				<Property Name="DragAcceptName" Value="D7" />
 				<Event Name="RBClicked" Function="Dress_Enchase_Resume_Gem(27);" />
@@ -168,18 +168,18 @@
 			</Window>
 			<Window Type="TLBB_Frame_Lace5" Name="Dress_Enchase_Blank">
 				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-				<Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}" />
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="Dress_Enchase_Preview">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-73.000000},{1.000000,-110.000000}" />
-				<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-170.000000},{1.000000,-110.000000}}"/>
 				<Property Name="Text" Value="#{SZPR_XML_42}" />
 				<Property Name="Tooltip" Value="#{SZPR_XML_44}" />
 				<Event Name="Clicked" Function="DressEnchase_Preview_Clicked();" />
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="Dress_Enchase_OK">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
 				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
 				<Event Name="Clicked" Function="Dress_Enchase_Buttons_Clicked();" />
 			</Window>

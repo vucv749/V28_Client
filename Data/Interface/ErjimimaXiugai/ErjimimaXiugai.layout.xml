@@ -5,8 +5,8 @@
 		<Property Name="AbsoluteSize" Value="w:479.000000 h:362.000000" />
 		<Event Name="Hidden" Function="ErjimimaXiugai_OnHide();" />
 		<Window Type="TLBB_DragTitle" Name="ErjimimaXiugai_DragTitle">
-			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
 			<Property Name="DragTarget" Value="ErjimimaXiugai_Frame" />
 			<Property Name="Font" Value="YouYuan11.25" />
 			<Property Name="HorzFormatting" Value="HorzCentred" />
@@ -35,8 +35,8 @@
 				<Property Name="VertFormatting" Value="TopAligned" />
 				<Property Name="TextColor" Value="FFFFF263" />
         <Window Type="TLBB_SimpleText" Name="ErjimimaXiugai_Before_Text" >
-          <Property Name="AbsolutePosition" Value="x:26.000000 y:16.000000" />
-          <Property Name="AbsoluteSize" Value="w:76.000000 h:18.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,8.000000}}"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="MouseHollow" Value="False" />
           <Property Name="Text" Value="#{FDH_090112_26}" />
@@ -44,8 +44,8 @@
           <Property Name="VertFormatting" Value="VertCentred" />
         </Window>
         <Window Type="TLBB_EditBoxNormal" Name="ErjimimaXiugai_Before">
-          <Property Name="AbsolutePosition" Value="x:109.000000 y:15.000000" />
-          <Property Name="AbsoluteSize" Value="w:115.000000 h:19.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,115.000000},{0.000000,19.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,15.000000}}"/>
           <Property Name="ValidationString" Value="[0-9a-z]*" />
           <Property Name="MaxTextLength" Value="15" />
           <Property Name="MaskText" Value="True" />
@@ -53,8 +53,8 @@
 		  <Event Name="Activated" Function="ErjimimaXiugai_Before_OnActive()" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="ErjimimaXiugai_After_Text" >
-          <Property Name="AbsolutePosition" Value="x:26.000000 y:53.000000" />
-          <Property Name="AbsoluteSize" Value="w:76.000000 h:18.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,36.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,45.000000}}"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="MouseHollow" Value="False" />
           <Property Name="Text" Value="#{FDH_090112_27}" />
@@ -62,8 +62,8 @@
           <Property Name="VertFormatting" Value="VertCentred" />
         </Window>
         <Window Type="TLBB_EditBoxNormal" Name="ErjimimaXiugai_After">
-          <Property Name="AbsolutePosition" Value="x:109.000000 y:52.000000" />
-          <Property Name="AbsoluteSize" Value="w:115.000000 h:19.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,115.000000},{0.000000,19.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,52.000000}}"/>
           <Property Name="ValidationString" Value="[0-9a-z]*" />
 		  <Property Name="MaxTextLength" Value="15" />
 		  <Property Name="MaskText" Value="True" />
@@ -71,8 +71,8 @@
 		  <Event Name="Activated" Function="ErjimimaXiugai_After_OnActive()" />
         </Window>
         <Window Type="TLBB_SimpleText" Name="ErjimimaXiugai_Queren_Text" >
-          <Property Name="AbsolutePosition" Value="x:26.000000 y:90.000000" />
-          <Property Name="AbsoluteSize" Value="w:76.000000 h:18.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,18.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,90.000000}}"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="MouseHollow" Value="False" />
           <Property Name="Text" Value="#{FDH_090112_28}" />
@@ -80,8 +80,8 @@
           <Property Name="VertFormatting" Value="VertCentred" />
         </Window>
         <Window Type="TLBB_EditBoxNormal" Name="ErjimimaXiugai_Queren">
-          <Property Name="AbsolutePosition" Value="x:109.000000 y:89.000000" />
-          <Property Name="AbsoluteSize" Value="w:115.000000 h:19.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,115.000000},{0.000000,19.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{0.000000,60.000000},{0.000000,89.000000}}"/>
           <Property Name="ValidationString" Value="[0-9a-z]*" />
 		  <Property Name="MaxTextLength" Value="15" />
 		  <Property Name="MaskText" Value="True" />
@@ -89,11 +89,11 @@
 		  <Event Name="Activated" Function="ErjimimaXiugai_Queren_OnActive()" />
         </Window>
         <Window Type="TLBB_Frame_Lace1" Name="ErjimimaXiugai_dis_Client" >
-          <Property Name="AbsolutePosition" Value="x:256.000000 y:2.000000" />
-          <Property Name="AbsoluteSize" Value="w:211.000000 h:122.000000" />
+          <Property Name="UnifiedSize" Value="{{0.000000,292.000000},{0.000000,122.000000}}"/>
+          <Property Name="UnifiedPosition" Value="{{1.000000,-292.000000},{0.000000,2.000000}}"/>
           <Window Type="TLBB_SimpleText" Name="ErjimimaXiugai_dis_Text" >
-            <Property Name="AbsolutePosition" Value="x:6.000000 y:4.000000" />
-            <Property Name="AbsoluteSize" Value="w:202.000000 h:116.000000" />
+            <Property Name="UnifiedSize" Value="{{1.000000,-10.000000},{1.000000,-10.000000}}"/>
+            <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,5.000000}}"/>
           <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
           <Property Name="MouseHollow" Value="False" />
           <Property Name="Text" Value="#{FDH_090227_3}" />
@@ -142,14 +142,14 @@
         </Window>
       </Window>
 			<Window Type="TLBB_ButtonCommon" Name="ErjimimaXiugai_OK">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-				<Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
 				<Event Name="Clicked" Function="ErjimimaXiugai_OK_Click();" />
 				<Property Name="Text" Value="#{INTERFACE_XML_557}" />
 			</Window>
       <Window Type="TLBB_ButtonCommon" Name="ErjimimaXiugai_Jiechu">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-465.000000},{1.000000,-20.000000}" />
-        <Property Name="AbsoluteSize" Value="w:62.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-465.000000},{1.000000,-20.000000}}"/>
         <Property Name="Text" Value="#{FDH_090112_24}" />
         <Event Name="Clicked" Function="ErjimimaXiugai_Jiechu();" />
         <Property Name="Tooltip" Value="#{FDH_090303_1}" />

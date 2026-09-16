@@ -5,8 +5,8 @@
         <Property Name="AbsoluteSize" Value="w:256 h:246" />
         <Event Name="Hidden" Function="EquipBind_OnHiden();" />
         <Window Type="TLBB_DragTitle" Name="EquipBind_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="EquipBind_Frame" />
             <Window Type="TLBB_SimpleText" Name="EquipBind_Title">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -107,12 +107,12 @@
                 </Window>
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="EquipBind_Blank">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="EquipBind_OK">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{INTERFACE_XML_557}" />
                 <Event Name="Clicked" Function="EquipBind_Buttons_Clicked();" />
             </Window>

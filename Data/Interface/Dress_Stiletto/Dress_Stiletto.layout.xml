@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="Dress_Stiletto_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.0,368},{0.12,0}}" />
-        <Property Name="AbsoluteSize" Value="w:256 h:260" />
+    <Property Name="UnifiedSize" Value="{{0.000000,360.000000},{0.000000,260.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,368.000000},{0.120000,0.000000}}"/>
         <Event Name="Shown" Function="Dress_Stiletto_OnShown();" />
         <Event Name="Hidden" Function="Dress_Stiletto_Close();" />
         <Window Type="TLBB_ButtonHelp" Name="Dress_Stiletto_Help">
@@ -16,8 +16,8 @@
             <Event Name="Clicked" Function="Dress_Stiletto_Close();" />
         </Window>
         <Window Type="TLBB_DragTitle" Name="Dress_Stiletto_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="Dress_Stiletto_Frame" />
             <Property Name="Font" Value="YouYuan11.25" />
             <Property Name="Text" Value="#{SZPR_XML_28}" />
