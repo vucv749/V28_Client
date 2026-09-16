@@ -5,8 +5,8 @@
     <Property Name="UnifiedPosition" Value="{{0.0,151},{1.0,-360.0}}" />
     <Property Name="AlwaysOnTop" Value="true" />
     <Window Type="TLBB_DragTitle" Name="ChannelCustomization_DragTitle">
-      <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
       <Property Name="DragTarget" Value="ChannelCustomization_Frame" />
       <Window Type="TLBB_SimpleText" Name="ChannelCustomization_PageHeader_Text">
         <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -50,7 +50,7 @@
         <Property Name="Text" Value="#{INTERFACE_XML_885}" />
       </Window>
       <!--
-配置页面选项时，使用StaticText
+酝置页面选项时，使用StaticText
 -->
       <Window Type="TLBB_SimpleMulitiTextFrame" Name="ChannelCustomization_TxtName">
         <Property Name="Position" Value="x:0.3 y:0.0" />
@@ -175,7 +175,7 @@
         </Window>
         <Window Type="TLBB_SimpleText" Name="ChannelCustomization_GuildLeagueInfo_Text">
           <Property Name="Position" Value="x:0.073930  y:0.584507" />
-          <Property Name="AbsoluteSize" Value="w:60.0 h:18.0" />
+          <Property Name="AbsoluteSize" Value="w:65.0 h:18.0" />
           <Property Name="TextColor" Value="FFFFF263" />
           <Property Name="Text" Value="#{TM_20080320_01}" />
           <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -251,11 +251,11 @@
       </Window>
       <Window Type="TLBB_Frame_Lace5" Name="ChannelCustomization_Blank">
         <Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{1.000000,-20.000000}" />
-        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-140.000000},{0.000000,20.000000}" />
       </Window>
       <Window Type="TLBB_ButtonCommon" Name="ChannelCustomization_Accept">
-        <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-        <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}" />
+        <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
         <Property Name="Text" Value="#{INTERFACE_XML_557}" />
         <Event Name="Clicked" Function="ChannelCustomization_Accept_Clicked();" />
       </Window>
