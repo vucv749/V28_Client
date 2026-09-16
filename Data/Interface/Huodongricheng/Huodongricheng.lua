@@ -24,7 +24,7 @@ local week_days = {};
 
 local g_CurCampaignCtl = {}
 
-local numToCh = {"Linh","Mµt","Nh¸","Tam","TÑ","Ngû","Løc","Bäy","Bát","CØu","Th§p"}
+local numToCh = {"0","1","2","3","4","5","6","7","8","9","10"}
 
 --µ±Ç°Ñ¡ÔñµÄ»î¶¯È ÆÚ
 local cur_select_date = 1;
