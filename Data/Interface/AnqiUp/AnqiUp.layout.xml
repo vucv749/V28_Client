@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="AnqiUp_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.5,-178}}" />
-        <Property Name="AbsoluteSize" Value="w:256 h:274" />
+    <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,274.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.500000,-178.000000}}"/>
         <Event Name="Hidden" Function="AnqiUp_OnHiden();" />
         <Window Type="TLBB_DragTitle" Name="AnqiUp_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="AnqiUp_Frame" />
             <Window Type="TLBB_SimpleText" Name="AnqiUp_Title">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -35,7 +35,7 @@
             <Property Name="RiseOnClick" Value="False" />
             <Window Type="TLBB_SimpleText" Name="AnqiUp_Info">
                 <Property Name="Position" Value="x:0.061728 y:0.077626" />
-                <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,36.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,40.000000}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Property Name="TextColor" Value="FFFFF263" />
@@ -50,8 +50,8 @@
                 <Event Name="RBClicked" Function="AnqiUp_Resume_Gem(81);" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="AnqiUp_Info2">
-                <Property Name="Position" Value="x:0.061728 y:0.378995" />
-                <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.600000,10.000000},{0.000000,40.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.000000,76.000000}}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Property Name="TextColor" Value="FFFFF263" />
@@ -108,12 +108,12 @@
                 </Window>
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="AnqiUp_Blank">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="AnqiUp_OK">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{AQSJ_XML_090709_08}" />
                 <Event Name="Clicked" Function="AnqiUp_Buttons_Clicked();" />
             </Window>
