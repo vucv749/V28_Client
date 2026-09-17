@@ -338,7 +338,7 @@ function ChatFrame_OnEvent(event)
 		ChatFrame_SetTabConfig( 1 );
 		ChatFrame_SetTabConfig( 2 );
 		ChatFrame_SetTabConfig( 3 );
-		channel_tab[3]:SetText("Cùng Thành");
+		channel_tab[3]:SetText("Thành");
 		Talk:HandleHistoryAction("listChange", g_theCurrentChannel, g_theCurrentChannelName);
 		if 548 == GetSceneID() then
 			CHANNEL_DATA["zhanchang"] = CHANNEL_DATA_SONGLIAO
@@ -1411,7 +1411,7 @@ function ChatFrame_LoadTabConfig(tabIdx, tabName, tabConfig)
 			elseif Lua_IsTSPhoenixScene(GetSceneID()) == 1 then
 				channel_tab[channel_seltab]:SetText("#{BLDPVP_221214_180}") -- ??
 			else 
-				channel_tab[channel_seltab]:SetText("Cùng Thành");
+				channel_tab[channel_seltab]:SetText("Thành");
 			end
 		else
 			channel_tab[channel_seltab]:SetText(channel_config[channel_seltab][1]);

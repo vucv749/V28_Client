@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="HuoyuezhiExchange_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.15,0}}" />
-        <Property Name="AbsoluteSize" Value="w:256 h:173" />
+    <Property Name="UnifiedSize" Value="{{0.000000,306.000000},{0.000000,203.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-153.000000},{0.150000,0.000000}}"/>
         <Window Type="TLBB_DragTitle" Name="HuoyuezhiExchange_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="HuoyuezhiExchange_Frame" />
             <Property Name="Text" Value="#{HYZ_XML_9}" />
             <Property Name="Font" Value="YouYuan11.25" />
@@ -24,35 +24,35 @@
             <Property Name="AbsolutePosition" Value="x:7.000000 y:36.000000" />
             <Property Name="UnifiedSize" Value="{{1.000000,-13.000000},{1.000000,-55.000000}" />
             <Window Type="TLBB_SimpleText" Name="HuoyuezhiExchange_Text2">
-                <Property Name="AbsolutePosition" Value="x:10.0 y:2.0" />
-                <Property Name="UnifiedSize" Value="{{1.0,-20.000000},{0.000000,40.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,70.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,2.000000}}"/>
                 <Property Name="Text" Value="#{HYZ_XML_10}" />
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_EditBoxNormal" Name="HuoyuezhiExchange_Moral_Value">
-                <Property Name="AbsolutePosition" Value="x:50.0 y:42.0" />
-                <Property Name="UnifiedSize" Value="{{1.0,-100.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,77.000000}}"/>
 				<Property Name="MaxTextLength" Value="4" />
                 <Property Name="ValidationString" Value="[0-9]*" />
               <Event Name="TextChanged" Function="HuoyuezhiExchange_Count_Change();" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="HuoyuezhiExchange_Text1">
-                <Property Name="AbsolutePosition" Value="x:10.0 y:75.0" />
-                <Property Name="UnifiedSize" Value="{{1.0,-20.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-20.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,10.000000},{0.000000,105.000000}}"/>
                 <Property Name="Text" Value="#{HYZ_XML_11}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="HuoyuezhiExchange_Blank">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="HuoyuezhiExchange_OK">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{HYZ_XML_12}"/>
                 <Event Name="Clicked" Function="HuoyuezhiExchange_OK_Clicked();" />
             </Window>

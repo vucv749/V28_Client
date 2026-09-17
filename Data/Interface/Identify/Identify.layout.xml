@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="Identify_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.5,-178}}" />
-        <Property Name="AbsoluteSize" Value="w:256 h:273" />
+    <Property Name="UnifiedSize" Value="{{0.000000,300.000000},{0.000000,273.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-150.000000},{0.500000,-178.000000}}"/>
         <Event Name="Hidden" Function="Identify_OnHiden();" />
         <Window Type="TLBB_DragTitle" Name="Identify_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="Identify_Frame" />
             <Window Type="TLBB_SimpleText" Name="Identify_Title">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -42,16 +42,16 @@
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_SimpleText" Name="Identify_Info2">
-                <Property Name="Position" Value="x:0.049383 y:0.353211" />
-                <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,36.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.600000,20.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.049383,0.000000},{0.353211,0.000000}}"/>
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="RiseOnClick" Value="False" />
                 <Property Name="Text" Value="#{INTERFACE_XML_506}" />
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
             <Window Type="TLBB_ActionButton" Name="Identify_Object">
-                <Property Name="Position" Value="x:0.699588 y:0.353211" />
-                <Property Name="AbsoluteSize" Value="w:36 h:36" />
+        <Property Name="UnifiedSize" Value="{{0.000000,36.000000},{0.000000,36.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.699588,20.000000},{0.353211,0.000000}}"/>
                 
                 <Property Name="DragAcceptName" Value="G20" />
                 <Property Name="DraggingEnabled" Value="True" />
@@ -112,11 +112,11 @@
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="Identify_Blank">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="Identify_OK">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{INTERFACE_XML_557}" />
                 <Event Name="Clicked" Function="Identify_Buttons_Clicked();" />
             </Window>
