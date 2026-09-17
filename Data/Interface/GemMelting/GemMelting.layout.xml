@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="GemMelting_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.0,368},{0.12,0}}" />
-        <Property Name="AbsoluteSize" Value="w:292 h:370" />
+    <Property Name="UnifiedSize" Value="{{0.000000,322.000000},{0.000000,370.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.000000,368.000000},{0.120000,0.000000}}"/>
         <Event Name="Hidden" Function="GemMelting_OnHide();" />
         <Window Type="TLBB_ButtonHelp" Name="GemMelting_Help">
             <Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,14.000000}" />
@@ -15,8 +15,8 @@
             <Event Name="Clicked" Function="GemMelting_Close();" />
         </Window>
         <Window Type="TLBB_DragTitle" Name="GemMelting_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="GemMelting_Frame" />
             <Property Name="Font" Value="YouYuan11.25" />
             <Property Name="Text" Value="#{JKBS_081021_001}" />
@@ -36,7 +36,7 @@
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
           <Window Type="TLBB_SimpleText" Name="GemMelting_Explain2">
-            <Property Name="UnifiedSize" Value="{{0.500000,-50.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.500000,-20.000000},{0.000000,18.000000}}"/>
             <Property Name="UnifiedPosition" Value="{{0.000000,16.000000},{0.000000,122.000000}}"/>
             <Property Name="HorzFormatting" Value="LeftAligned"/>
             <Property Name="VertFormatting" Value="VertCentred" />
@@ -45,8 +45,8 @@
             <Property Name="RiseOnClick" Value="False" />
           </Window>
           <Window Type="TLBB_SimpleText" Name="GemMelting_Explain4">
-            <Property Name="UnifiedSize" Value="{{0.500000,-50.000000},{0.000000,20.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.500000,34.000000},{0.000000,122.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.500000,-10.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,4.000000},{0.000000,122.000000}}"/>
             <Property Name="TextColor" Value="FFFFF263"/>
             <Property Name="Text" Value="#{BSDJ_170811_35}"/>
             <Property Name="RiseOnClick" Value="False"/>
@@ -54,7 +54,7 @@
           </Window>
           <Window Type="TLBB_ActionButton" Name="GemMelting_ProductItem">
             <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-            <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{0.000000,148.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{0.000000,148.000000}}"/>
             <Property Name="Empty" Value="false" />
             <Property Name="DraggingEnabled" Value="False" />
           </Window>
@@ -72,7 +72,7 @@
             <Property Name="Image" Value="set:MijiUI image:MijiUIarrow_hov"/>
           </Window>
             <Window Type="TLBB_SimpleText" Name="GemMelting_Explain3">
-              <Property Name="UnifiedSize" Value="{{0.000000,110.000000},{0.000000,18.000000}}"/>
+        <Property Name="UnifiedSize" Value="{{0.000000,160.000000},{0.000000,18.000000}}"/>
               <Property Name="UnifiedPosition" Value="{{0.000000,46.000000},{1.000000,-120.000000}}"/>
                 <Property Name="Text" Value="#{JKBS_081021_004}" />
                 <Property Name="TextColor" Value="FFFFF263" />
@@ -82,7 +82,7 @@
             </Window>
             <Window Type="TLBB_ActionButton" Name="GemMelting_NeedItem">
               <Property Name="UnifiedSize" Value="{{0.000000,34.000000},{0.000000,34.000000}}"/>
-              <Property Name="UnifiedPosition" Value="{{0.000000,204.000000},{1.000000,-128.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,234.000000},{1.000000,-128.000000}}"/>
                 <Property Name="Empty" Value="false" />
                 <Property Name="DragAcceptName" Value="G62" />
                 <Property Name="DraggingEnabled" Value="True" />
@@ -141,11 +141,11 @@
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="GemMelting_Blank">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-120.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-130.000000},{0.000000,20.000000}" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="GemMelting_Accept">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,70.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-130.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{JKBS_081021_005}" />
                 <Event Name="Clicked" Function="GemMelting_Buttons_Clicked();" />
             </Window>

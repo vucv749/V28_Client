@@ -4,8 +4,8 @@
         <Property Name="UnifiedPosition" Value="{{0.5,-200},{0.12,0}}" />
         <Property Name="AbsoluteSize" Value="w:540 h:344" />
         <Window Type="TLBB_DragTitle" Name="GuildLeagueApply_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="GuildLeagueApply" />
             <Window Type="TLBB_SimpleText" Name="GuildLeagueApply_PageHeader">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -39,8 +39,8 @@
                 <Property Name="ForceVertScrollbar" Value="True" />
                 <Property Name="SortSettingEnabled" Value="False" />
                 <Property Name="SelectionMode" Value="RowSingle" />
-                <Property Name="ColumnHeader" Value="text:ID width:0.4 id:0" />
-                <Property Name="ColumnHeader" Value="text:#{INTERFACE_XML_1022} width:0.6 id:1" />
+        <Property Name="ColumnHeader" Value="text:ID width:0.15 id:0" />
+        <Property Name="ColumnHeader" Value="text:#{INTERFACE_XML_1022} width:0.85 id:1" />
                 <Property Name="ColumnsSizable" Value="False" />
                 <Property Name="ColumnsAdjust" Value="True" />
                 <Property Name="ColumnsMovable" Value="False" />
@@ -132,35 +132,35 @@
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="GuildLeagueApply_Blank">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.5000000,0.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.602273,0.000000},{0.000000,20.000000}" />
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="GuildLeagueApply_PageUp">
-                <Property Name="UnifiedPosition" Value="{{0.25,-60.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.25,-33.000000},{1.000000,-20.000000}" />
                 <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
                 <Event Name="Clicked" Function="GuildLeagueApply_DoPageUp();" />
                 <Property Name="Text" Value="#{INTERFACE_XML_499}" />
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="GuildLeagueApply_PageDown">
-                <Property Name="UnifiedPosition" Value="{{0.25,0.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.25,27.000000},{1.000000,-20.000000}" />
                 <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
                 <Event Name="Clicked" Function="GuildLeagueApply_DoPageDown();" />
                 <Property Name="Text" Value="#{INTERFACE_XML_325}" />
             </Window>
           <Window Type="TLBB_ButtonCommon" Name="GuildLeagueApply_Agree">
-            <Property Name="UnifiedPosition" Value="{{0.85000000,-80.000000},{1.000000,-20.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.0,45.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.85000000,-86.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
             <Property Name="Text" Value="#{INTERFACE_XML_700}" />
             <Event Name="Clicked" Function="GuildLeagueApply_DoAnswer(1);" />
           </Window>
           <Window Type="TLBB_ButtonCommon" Name="GuildLeagueApply_Disagree">
-            <Property Name="UnifiedPosition" Value="{{0.85000000,-30.000000},{1.000000,-20.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.0,45.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.85000000,-26.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.0,60.000000},{0.000000,20.000000}" />
             <Property Name="Text" Value="#{TM_20080318_17}" />
             <Event Name="Clicked" Function="GuildLeagueApply_DoAnswer(0);" />
           </Window>
             <Window Type="TLBB_ButtonCommon" Name="GuildLeagueApply_Cancel">
-                <Property Name="UnifiedPosition" Value="{{0.85000000,20.000000},{1.000000,-20.000000}" />
+        <Property Name="UnifiedPosition" Value="{{0.85000000,34.000000},{1.000000,-20.000000}" />
                 <Property Name="UnifiedSize" Value="{{0.0,45.000000},{0.000000,20.000000}" />
                 <Property Name="Text" Value="#{INTERFACE_XML_542}" />
                 <Event Name="Clicked" Function="this:Hide();" />

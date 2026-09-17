@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <GUILayout>
 	<Window Type="TLBB_MainFrame1" Name="GameSetup_Frame">
-		<Property Name="UnifiedPosition" Value="{{0.500000,-160.000000},{0.500000,-185.000000}}"/>
-		<Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,370.000000}}"/>
+		<Property Name="UnifiedPosition" Value="{{0.5,-165},{0.5,-122}}" />
+		<Property Name="AbsoluteSize" Value="w:256 h:340" />
 		<Window Type="TLBB_DragTitle" Name="GameSetup_DragTitle">
 			<Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
 			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
@@ -30,8 +30,8 @@
 			<Event Name="Clicked" Function="this:Hide();" />
 		</Window>
 		<Window Type="DefaultWindow" Name="GameSetup_Frame_Client">
-			<Property Name="UnifiedSize" Value="{{0.000000,308.000000},{0.000000,315.000000}}"/>
-			<Property Name="UnifiedPosition" Value="{{0.000000,6.000000},{0.000000,36.000000}}"/>
+			<Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
+			<Property Name="AbsoluteSize" Value="w:244.000000 h:285.000000" />
 			<Property Name="RiseOnClick" Value="False" />
 			<Window Type="TLBB_ButtonCheck" Name="GameSetup_Item1">
 				<Property Name="UnifiedPosition" Value="{{0.015,0.000000},{0.000000,14.000000}" />
@@ -113,7 +113,7 @@
 			</Window>
 			<Window Type="TLBB_SimpleText" Name="GameSetup_TeamFollow_Text">
 				<Property Name="UnifiedPosition" Value="{{0.08,0.000000},{0.000000,167.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.4,0.000000},{0.000000,20.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,20.000000}" />
 				<Property Name="TextColor" Value="FFFFF263" />
 				<Property Name="Text" Value="#{ZDGS_90602_03}" />
 				<Property Name="HorzFormatting" Value="LeftAligned" />
@@ -268,7 +268,7 @@
 				<Event Name="MouseButtonUp" Function="GameSetup_CheckSetting_Clicked(31)"/>
 			</Window>
 			<Window Type="TLBB_SimpleText" Name="GameSetup_cooltime_Text">
-				<Property Name="UnifiedSize" Value="{{0.500000,-22.000000},{0.000000,20.000000}}"/>
+				<Property Name="UnifiedSize" Value="{{0.500000,-18.000000},{0.000000,20.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.080000,0.000000},{0.000000,193.000000}}"/>
 				<Property Name="Tooltip" Value="#{JNLQ_141103_01}"/>
 				<Property Name="TextColor" Value="FFFFF263"/>
@@ -289,8 +289,8 @@
 				<Property Name="RiseOnClick" Value="False"/>
 			</Window>
 			<Window Type="TLBB_Frame_Lace3" Name="GameSetup_Bk">
-				<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-70.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.500000,0.000000},{0.000000,44.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.5,-122.000000},{1.000000,-65.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,40.000000}" />
 				<Property Name="RiseOnClick" Value="False" />
 				<Window Type="TLBB_SimpleText" Name="GameSetup_Item8_Text">
 					<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,4.000000}" />
@@ -308,8 +308,8 @@
 				</Window>
 			</Window>
 			<Window Type="TLBB_Frame_Lace3" Name="GameSetup_TrackBk">
-				<Property Name="UnifiedPosition" Value="{{0.5,0.000000},{1.000000,-70.000000}" />
-				<Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,44.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.5,0.000000},{1.000000,-65.000000}" />
+				<Property Name="UnifiedSize" Value="{{0.5,0.000000},{0.000000,40.000000}" />
 				<Property Name="RiseOnClick" Value="False" />
 				<Window Type="TLBB_SimpleText" Name="GameSetup_TrackBk_Text">
 					<Property Name="UnifiedPosition" Value="{{0.0,0.000000},{0.000000,4.000000}" />
