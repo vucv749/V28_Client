@@ -1,13 +1,12 @@
 <?xml version="1.0" ?>
 <GUILayout>
   <Window Type="TLBB_MainFrameNULL" Name="MissionTrack_Frame">
-    <Property Name="UnifiedSize" Value="{{0,230},{0.0,158}}" />
-    <Property Name="UnifiedXPosition" Value="{1.0,-266}" />
-    <Property Name="UnifiedYPosition" Value="{0,312}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,158.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{1.000000,-316.000000},{0.000000,268.000000}}"/>
     <Property Name="AttachEnabled" Value="true" />
     <Window Type="TLBB_DragTitle" Name="MissionTrack_DragTitle">
-      <Property Name="AbsolutePosition" Value="x:80.000000 y:0.000000" />
-      <Property Name="AbsoluteSize" Value="w:100.000000 h:20.000000" />
+      <Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,20.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,0.000000}}"/>
       <Property Name="DragTarget" Value="MissionTrack_Frame" />
       <Window Type="TLBB_StaticImageNULL" Name="MissionTrack_Name">
 		      <Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000" />
@@ -17,8 +16,8 @@
 	    </Window>
     </Window>
     <Window Type="TLBB_ButtonNULL" Name="MissionTrack_Close">
-      <Property Name="AbsolutePosition" Value="x:196.000000 y:0.000000" />
-      <Property Name="AbsoluteSize" Value="w:16.000000 h:18.000000" />
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,246.000000},{0.000000,0.000000}}"/>
       <Property Name="NormalImage" Value="set:MissionAtrack image:MKClose_Normal" />
       <Property Name="HoverImage" Value="set:MissionAtrack image:MKClose_Hover" />
       <Property Name="PushedImage" Value="set:MissionAtrack image:MKClose_Pushed" />
@@ -26,8 +25,8 @@
       <Event Name="Clicked" Function="MissionTrack_CloseFunc();" />
     </Window>
       <Window Type="TLBB_ButtonNULL" Name="MissionTrack_UnLock">
-        <Property Name="AbsolutePosition" Value="x:180.000000 y:0.000000" />
-        <Property Name="AbsoluteSize" Value="w:16.000000 h:18.000000" />
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,0.000000}}"/>
         <Property Name="NormalImage" Value="set:MissionAtrack image:MKUnlock_Normal" />
         <Property Name="HoverImage" Value="set:MissionAtrack image:MKUnlock_Hover" />
         <Property Name="PushedImage" Value="set:MissionAtrack image:MKUnlock_Pushed" />
@@ -36,8 +35,8 @@
         <Property Name="Tooltip" Value="#{RWZZ_090601_05}" />
       </Window>
       <Window Type="TLBB_ButtonNULL" Name="MissionTrack_Lock">
-        <Property Name="AbsolutePosition" Value="x:180.000000 y:0.000000" />
-        <Property Name="AbsoluteSize" Value="w:16.000000 h:18.000000" />
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,18.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,0.000000}}"/>
         <Property Name="NormalImage" Value="set:MissionAtrack image:MKlock_Normal" />
         <Property Name="HoverImage" Value="set:MissionAtrack image:MKlock_Hover" />
         <Property Name="PushedImage" Value="set:MissionAtrack image:MKlock_Pushed" />
@@ -46,8 +45,8 @@
         <Property Name="Tooltip" Value="#{RWZZ_090601_04}" />
       </Window>
     <Window Type="DefaultWindow" Name="MissionTrack_CheckBox_Frame">
-      <Property Name="AbsolutePosition" Value="x:0.0 y:0.0" />
-      <Property Name="AbsoluteSize" Value="w:80.0 h:21.0" />
+      <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,21.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,0.000000}}"/>
       <Property Name="MouseLButtonHollow" Value="True" />
       <Property Name="MouseRButtonHollow" Value="True" />
       <Window Type="TLBB_ButtonCheckForChatPage" Name="MissionTrack_HaveGet">
@@ -74,8 +73,8 @@
       </Window>
     </Window>
     <Window Type="DefaultWindow" Name="MissionTrack__Frame">
-      <Property Name="AbsolutePosition" Value="x:0.000000 y:17.000000" />
-      <Property Name="AbsoluteSize" Value="w:212.000000 h:139.000000" />
+      <Property Name="UnifiedSize" Value="{{0.000000,262.000000},{0.000000,139.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,17.000000}}"/>
       <Property Name="MouseHollow" Value="False" />
       <Window Type="DefaultWindow" Name="MissionTrack__CheckBox_Frame">
       </Window>
@@ -97,8 +96,8 @@
       </Window>
      </Window>
     <Window Type="DefaultWindow" Name="MissionTrack_Function_Frame">
-      <Property Name="AbsolutePosition" Value="x:211.0 y:17.0" />
-      <Property Name="AbsoluteSize" Value="w:16.000000 h:127.000000" />
+      <Property Name="UnifiedSize" Value="{{0.000000,16.000000},{0.000000,127.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,261.000000},{0.000000,17.000000}}"/>
       <Event Name="MouseEnter" Function="MissionTrack_Func_MouseEnter();" />
       <Event Name="MouseLeave" Function="MissionTrack_Func_MouseLeave();" />
       <Window Type="TLBB_ButtonNULL" Name="MissionTrack_Height_Add">
