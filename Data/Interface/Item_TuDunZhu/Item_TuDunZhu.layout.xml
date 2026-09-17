@@ -5,8 +5,8 @@
 		<Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,200.000000}" />
 		<Property Name="AlwaysOnTop" Value="True" />
 		<Window Type="TLBB_DragTitle" Name="Item_TuDunZhu_DragTitle">
-			<Property Name="AbsolutePosition" Value="x:25.000000 y:12.000000" />
-			<Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
 			<Property Name="DragTarget" Value="Item_TuDunZhu_Frame" />
 			<Property Name="Font" Value="YouYuan11.25" />
 			<Property Name="HorzFormatting" Value="HorzCentred" />
@@ -43,18 +43,18 @@
         <Event Name="ReachedZero" Function="Item_TuDunZhu_TimeOut();" />
 			</Window>
 			<Window Type="TLBB_Frame_Lace5" Name="Item_TuDunZhu_Blank">
-				<Property Name="UnifiedPosition" Value="{{0.000000,61.000000},{1.000000,-20.000000}" />
-				<Property Name="UnifiedSize" Value="{{1.000000,-123.000000},{0.000000,20.000000}" />
+				<Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{1.000000,-20.000000}" />
+				<Property Name="UnifiedSize" Value="{{1.000000,-173.000000},{0.000000,20.000000}" />
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="Item_TuDunZhu_OK_Button">
 				<Property Name="UnifiedPosition" Value="{{0.000000,1.000000},{1.000000,-20.000000}" />
-				<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+				<Property Name="AbsoluteSize" Value="w:80.000000 h:20.000000" />
 				<Property Name="Text" Value="#{INTERFACE_XML_975}" />
 				<Event Name="Clicked" Function="Item_TuDunZhu_OK_Clicked();" />
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="Item_TuDunZhu_Cancel_Button">
-				<Property Name="UnifiedPosition" Value="{{1.000000,-62.000000},{1.000000,-20.000000}" />
-				<Property Name="AbsoluteSize" Value="w:60.000000 h:20.000000" />
+				<Property Name="UnifiedPosition" Value="{{1.000000,-94.000000},{1.000000,-20.000000}" />
+				<Property Name="AbsoluteSize" Value="w:94.000000 h:20.000000" />
 				<Property Name="Text" Value="#{INTERFACE_XML_976}" />
 				<Event Name="Clicked" Function="Item_TuDunZhu_Cancel_Clicked(1);" />
 			</Window>
