@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="MessageBox_Self_Frame">
-        <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-118.000000}" />
-        <Property Name="UnifiedSize" Value="{{0.000000,256.000000},{0.000000,192.000000}" />
+    <Property Name="UnifiedSize" Value="{{0.000000,320.000000},{0.000000,280.000000}}"/>
+    <Property Name="UnifiedPosition" Value="{{0.500000,-128.000000},{0.500000,-118.000000}}"/>
         <Property Name="AlwaysOnTop" Value="True" />
         <Event Name="Hidden" Function="MessageBox_Self_Cancel_Clicked(0);" />
         <Window Type="TLBB_DragTitle" Name="MessageBox_Self_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="MessageBox_Self_Frame" />
             <Property Name="Font" Value="YouYuan11.25" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -32,14 +32,14 @@
                 <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="RiseOnClick" Value="False" />
-                <Property Name="MaxWidth" Value="250" />
+        <Property Name="MaxWidth" Value="306" />
                 <Property Name="MinHeight" Value="25" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{INTERFACE_XML_681}" />
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="MessageBox_Self_Blank">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+                <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}" />
               <Window Type="DefaultWindow" Name="MessageBox_Self_CheckClient">
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
                 <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}" />
@@ -58,8 +58,8 @@
               </Window>
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="MessageBox_Self_OK_Button">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{INTERFACE_XML_557}" />
                 <Event Name="Clicked" Function="MessageBox_Self_OK_Clicked();" />
             </Window>

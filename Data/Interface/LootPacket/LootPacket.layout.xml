@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" ?>
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="LootPacket_Frame">
-        <Property Name="UnifiedSize" Value="{{0,175},{0.0,250}}" />
+    <Property Name="UnifiedSize" Value="{{0,255},{0.0,250}}" />
         <Property Name="UnifiedXPosition" Value="{1.0,-411}" />
         <Property Name="UnifiedYPosition" Value="{1.0,-360}" />
         <Event Name="Hidden" Function="LootPacket_Button_Close();" />
         <Window Type="TLBB_DragTitle" Name="LootPacket_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="LootPacket_Frame" />
             <Window Type="TLBB_SimpleText" Name="LootPacket_PageHeader">
                 <Property Name="Position" Value="x:0.0 y:0.0" />
@@ -39,56 +39,56 @@
                 <Event Name="Clicked" Function="LootPacket_Collect_Clicked();" />
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="LootPacket_Item1_bak">
-                <Property Name="AbsolutePosition" Value="x:7.0 y:25.0" />
+        <Property Name="AbsolutePosition" Value="x:1.000000 y:25.000000" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                 <Property Name="Image" Value="set:CommonItem image:ActionBK" />
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_ActionButton" Name="LootPacket_Item1">
-                <Property Name="AbsolutePosition" Value="x:7.0 y:25.0" />
+        <Property Name="AbsolutePosition" Value="x:1.000000 y:25.000000" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                 <Property Name="Empty" Value="false" />
                 <Event Name="Clicked" Function="LootPacket_Clicked(1);" />
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="LootPacket_Item2_bak">
-                <Property Name="AbsolutePosition" Value="x:7.0 y:60.0" />
+        <Property Name="AbsolutePosition" Value="x:1.000000 y:60.000000" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                 <Property Name="Image" Value="set:CommonItem image:ActionBK" />
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_ActionButton" Name="LootPacket_Item2">
-                <Property Name="AbsolutePosition" Value="x:7.0 y:60.0" />
+        <Property Name="AbsolutePosition" Value="x:1.000000 y:60.000000" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                 <Property Name="Empty" Value="false" />
                 <Event Name="Clicked" Function="LootPacket_Clicked(2);" />
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="LootPacket_Item3_bak">
-                <Property Name="AbsolutePosition" Value="x:7.0 y:95.0" />
+        <Property Name="AbsolutePosition" Value="x:1.000000 y:95.000000" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                 <Property Name="Image" Value="set:CommonItem image:ActionBK" />
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_ActionButton" Name="LootPacket_Item3">
-                <Property Name="AbsolutePosition" Value="x:7.0 y:95.0" />
+        <Property Name="AbsolutePosition" Value="x:1.000000 y:95.000000" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                 <Property Name="Empty" Value="false" />
                 <Event Name="Clicked" Function="LootPacket_Clicked(3);" />
             </Window>
             <Window Type="TLBB_StaticImageNULL" Name="LootPacket_Item4_bak">
-                <Property Name="AbsolutePosition" Value="x:7.0 y:130.0" />
+        <Property Name="AbsolutePosition" Value="x:1.000000 y:130.000000" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                 <Property Name="Image" Value="set:CommonItem image:ActionBK" />
                 <Property Name="RiseOnClick" Value="False" />
             </Window>
             <Window Type="TLBB_ActionButton" Name="LootPacket_Item4">
-                <Property Name="AbsolutePosition" Value="x:7.0 y:130.0" />
+        <Property Name="AbsolutePosition" Value="x:1.000000 y:130.000000s" />
                 <Property Name="AbsoluteSize" Value="w:34.000000 h:34.000000" />
                 <Property Name="Empty" Value="false" />
                 <Event Name="Clicked" Function="LootPacket_Clicked(4);" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="LootPacket_Item1_Text_bak">
-                <Property Name="AbsolutePosition" Value="x:43.0 y:25.0" />
-                <Property Name="AbsoluteSize" Value="w:110.000000 h:34.000000" />
+        <Property Name="AbsolutePosition" Value="x:39.000000 y:25.000000" />
+        <Property Name="AbsoluteSize" Value="w:195.000000 h:34.000000" />
                 <Window Type="TLBB_SimpleText" Name="LootPacket_Item1_Text">
                     <Property Name="Position" Value="x:0.0 y:0.0" />
                     <Property Name="Size" Value="w:1.0 h:1.0" />
@@ -100,8 +100,8 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="LootPacket_Item2_Text_bak">
-                <Property Name="AbsolutePosition" Value="x:43.0 y:60.0" />
-                <Property Name="AbsoluteSize" Value="w:110.000000 h:34.000000" />
+        <Property Name="AbsolutePosition" Value="x:39.000000 y:60.000000" />
+        <Property Name="AbsoluteSize" Value="w:195.000000 h:34.000000" />
                 <Window Type="TLBB_SimpleText" Name="LootPacket_Item2_Text">
                     <Property Name="Position" Value="x:0.0 y:0.0" />
                     <Property Name="Size" Value="w:1.0 h:1.0" />
@@ -112,8 +112,8 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="LootPacket_Item3_Text_bak">
-                <Property Name="AbsolutePosition" Value="x:43.0 y:95.0" />
-                <Property Name="AbsoluteSize" Value="w:110.000000 h:34.000000" />
+        <Property Name="AbsolutePosition" Value="x:39.000000 y:95.000000" />
+        <Property Name="AbsoluteSize" Value="w:195.000000 h:34.000000" />
                 <Window Type="TLBB_SimpleText" Name="LootPacket_Item3_Text">
                     <Property Name="Position" Value="x:0.0 y:0.0" />
                     <Property Name="Size" Value="w:1.0 h:1.0" />
@@ -124,8 +124,8 @@
                 </Window>
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="LootPacket_Item4_Text_bak">
-                <Property Name="AbsolutePosition" Value="x:43.0 y:130.0" />
-                <Property Name="AbsoluteSize" Value="w:110.000000 h:34.000000" />
+        <Property Name="AbsolutePosition" Value="x:39.000000 y:130.000000" />
+        <Property Name="AbsoluteSize" Value="w:195.000000 h:34.000000" />
                 <Window Type="TLBB_SimpleText" Name="LootPacket_Item4_Text">
                     <Property Name="Position" Value="x:0.0 y:0.0" />
                     <Property Name="Size" Value="w:1.0 h:1.0" />
@@ -147,8 +147,8 @@
                 <Event Name="Clicked" Function="LootPacket_Prev_Clicked();" />
             </Window>
             <Window Type="TLBB_SimpleMulitiTextFrame" Name="LootPacket_CurrentlyPage">
-                <Property Name="UnifiedPosition" Value="{{0.5000,-23.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.0,45.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.500000,-23.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="99/99" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />

@@ -2,10 +2,10 @@
 <GUILayout>
     <Window Type="TLBB_MainFrame1" Name="NewbieCardActivation_Frame">
         <Property Name="UnifiedPosition" Value="{{0.5,-128},{0.4,-64}}" />
-        <Property Name="AbsoluteSize" Value="w:256 h:128" />
+    <Property Name="AbsoluteSize" Value="w:256 h:148" />
         <Window Type="TLBB_DragTitle" Name="NewbieCardActivation_DragTitle">
-            <Property Name="AbsolutePosition" Value="x:25.000000 y:11.000000" />
-            <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,20.000000}" />
+      <Property Name="UnifiedSize" Value="{{1.000000,-50.000000},{0.000000,28.000000}}"/>
+      <Property Name="UnifiedPosition" Value="{{0.000000,25.000000},{0.000000,6.000000}}"/>
             <Property Name="DragTarget" Value="NewbieCardActivation_Frame" />
             <Property Name="Font" Value="YouYuan11.25" />
             <Property Name="HorzFormatting" Value="HorzCentred" />
@@ -28,27 +28,27 @@
             <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
             <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
             <Window Type="TLBB_SimpleText" Name="NewbieCardActivation_Text">
-                <Property Name="Position" Value="x:0.02 y:0.01" />
-                <Property Name="UnifiedSize" Value="{{0.96,0.000000},{0.000000,20.000000}" />
+        <Property Name="Position" Value="x:0.01 y:0.01" />
+        <Property Name="UnifiedSize" Value="{{0.98,0.000000},{0.000000,40.000000}" />
                 <Property Name="TextColor" Value="FFFFF263" />
                 <Property Name="Text" Value="#{TLWS_20200908_17}" />
                 <Property Name="HorzFormatting" Value="HorzCentred" />
                 <Property Name="VertFormatting" Value="VertCentred" />
             </Window>
             <Window Type="TLBB_EditBoxNormal" Name="NewbieCardActivation_Input">
-                <Property Name="Position" Value="x:0.2 y:0.32" />
+        <Property Name="Position" Value="x:0.2 y:0.473118" />
                 <Property Name="UnifiedSize" Value="{{0.6,0.000000},{0.000000,19.000000}" />
                 <Property Name="ValidationString" Value="[0-9a-zA-Z]*" />
                 <Property Name="MaxTextLength" Value="18" />
                 <Property Name="Text" Value="" />
             </Window>
             <Window Type="TLBB_Frame_Lace5" Name="NewbieCardActivation_Blank">
-                <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
-                <Property Name="UnifiedSize" Value="{{1.000000,-80.000000},{0.000000,20.000000}" />
+        <Property Name="UnifiedSize" Value="{{1.000000,-100.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}}"/>
             </Window>
             <Window Type="TLBB_ButtonCommon" Name="NewbieCardActivation_Accept">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{1.000000,-20.000000}" />
-                <Property Name="AbsoluteSize" Value="w:40.000000 h:20.000000" />
+        <Property Name="UnifiedSize" Value="{{0.000000,60.000000},{0.000000,20.000000}}"/>
+        <Property Name="UnifiedPosition" Value="{{1.000000,-100.000000},{1.000000,-20.000000}}"/>
                 <Property Name="Text" Value="#{TLWS_20200908_18}" />
                 <Event Name="Clicked" Function="NewUserCard_Open_Click();" />
             </Window>
