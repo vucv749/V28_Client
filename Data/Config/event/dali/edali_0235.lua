@@ -40,8 +40,8 @@ x210235_g_DemandItem={{id=20309003,num=1},{id=20309007,num=1}}		--??????
 --nhi®m vø vån bän miêu tä
 x210235_g_MissionName="Ngñ TÑ Tinh Phß·ng Hµ Thü"
 x210235_g_MissionInfo="#{event_dali_0048}"  --????
-x210235_g_MissionTarget="Tìm Nh¤t Ph¦m Ngân Nhî và Nh¤t Ph¦m Vu Ð¥u, sau ðó v« #GNgû Hoa Ðàn thành ÐÕi Lý#W tìm #RLý Công Bµ#W#{_INFOAIM160,128,2,Lý Công Bµ}, mµt trong TÑ ÐÕi Thi®n Nhân."		--????
-x210235_g_ContinueInfo="  Các hÕ ðã tìm ðßþc Nh¤t Ph¦m Ngân Nhî và Nh¤t Ph¦m Vu Ð¥u r°i sao?"		--??????npc??
+x210235_g_MissionTarget="Tìm Nh¤t Ph¦m Ngân Viên và Nh¤t Ph¦m Vu Ð¥u, sau ðó quay v« #GNgû Hoa Ðàn thành ÐÕi Lý#W tìm #RLý Công Bµ#W#{_INFOAIM160,128,2,Lý Công Bµ}, mµt trong TÑ ÐÕi Thi®n Nhân."		--????
+x210235_g_ContinueInfo="  Các hÕ ðã tìm ðßþc Nh¤t Ph¦m Ngân Viên và Nh¤t Ph¦m Vu Ð¥u chßa?"		--??????npc??
 x210235_g_MissionComplete="  Ngß¶i trë tu±i, làm t¯t l¡m."					--????npc????
 
 --nhi®m vø thß·ng cho

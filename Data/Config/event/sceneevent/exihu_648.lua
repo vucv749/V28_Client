@@ -33,7 +33,7 @@ x212100_g_exp=19262
 --x212100_g_ItemBonus={{id=10111008,num=1}}
 
 
-x212100_g_Custom	= { {id="Ðã giªt MÕch Hæu Nhân",num=1} }
+x212100_g_Custom	= { {id="Ðã ðánh bÕi MÕch Hæu Nhân",num=1} }
 x212100_g_IsMissionOkFail = 0
 
 x212100_g_RadioItemBonus={{id=10412063 ,num=1},{id=10413065,num=1},{id=10402065,num=1}}

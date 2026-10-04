@@ -81,7 +81,7 @@ x229001_g_StrList = {
 						"Lã Sß Tß½ng",
 						"Dß ÐÕo An",
 						"Mã LÕp",
-						"Sài Miêu Hoang Dã",
+						"Sài Miêu Dã Sinh",
 						"Thánh hoä ðàn",
 						"0",
 						"1",

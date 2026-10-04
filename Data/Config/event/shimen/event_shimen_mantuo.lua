@@ -81,7 +81,7 @@ x893259_g_StrList = {
 						"Nghiêm mø mø",
 						"Li­u Phù Phong",
 						"Quan S½n Nguy®t",
-						"Sài Miêu Hoang Dã",
+						"Sài Miêu Dã Sinh",
 						"Hoa Ði«n",
 						"0",
 						"1",

@@ -14,7 +14,7 @@ x890286_g_MissionTarget = "#{SQYD_230802_58}"
 --d¤u hi®u thành công Th¸ Ná Hào V¸ n½i này d¤u hi®u chính là 0Hào V¸
 x890286_g_IsMissionOkFail = 0
 -- nhi®m vø hoàn thành tình hu¯ng, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x890286_g_Custom = { { id = "Hoàn thành lña ch÷n Th¤t Tình Thông Pháp tÕi ch² Âu Dã H÷a", num = 1 } }
+x890286_g_Custom = { { id = "Ch÷n Th¤t Tình Thông Pháp tÕi ch² Âu Dã H÷a", num = 1 } }
 --2Cá Phá C¤p ThÕch
 x890286_g_ItemBonus={{id=20900001,num=2}}
 
