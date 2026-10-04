@@ -28,7 +28,7 @@ x212120_g_MissionName="Tß thông Liêu Qu¯c"
 x212120_g_MissionInfo="#{Mis_30_60_desc_001}"
 x212120_g_MissionTarget="    Mang m§t hàm cüa Mã Th×a Sänh ðßa cho Gia Lu§t MÕc Ca · NhÕn Nam #{_INFOAIM128,50,18,Gia Lu§t MÕc Ca}."
 x212120_g_MissionContinue="  Ta nghe nói quan viên cüa ÐÕi T¯ng r¤t tham lam, không biªt có th§t hay không?"
-x212120_g_MissionComplete="  Ðây là lá thß Mã Th×a Sänh ðßa cho ta ß? Mau mang cho ta xem., à... ... À thì ra là v§y, v§y là quá t¯t r°i. ÐÕi T¯ng có quan viên nhß thª dù có thêm bao nhiêu tß¾ng sî ÐÕi T¯ng dûng cäm chiªn ð¤u cûng không ðáng sþ. Haha ðúng là tr¶i giúp nß¾c ÐÕi Liêu ta! #R<Gia Lu§t MÕc Ca lµ ra vë ð¡c ý trên khuôn m£t.>"
+x212120_g_MissionComplete="  Ðây là lá thß Mã Th×a Sänh ðßa cho ta ß? Mau mang cho ta xem., à... ... À thì ra là v§y, v§y là quá t¯t r°i. ÐÕi T¯ng có quan viên nhß thª dù có thêm bao nhiêu tß¾ng sî ÐÕi T¯ng dûng cäm chiªn ð¤u cûng không ðáng sþ. Haha ðúng là tr¶i giúp nß¾c ÐÕi Liêu ta! #r<Gia Lu§t MÕc Ca lµ ra vë ð¡c ý trên khuôn m£t.>"
 
 x212120_g_MoneyJZBonus=6000
 x212120_g_exp=7000

@@ -17,7 +17,7 @@ x210265_g_MissionIdPre = 1414
 
 --nhi®m vø møc tiêu Npc
 x210265_g_Name	="Vân Phiêu Phiêu"
-x210265_g_Entrance_Name	="ÉêÇé"
+x210265_g_Entrance_Name	="Thân Tình"
 
 --nhi®m vø phân loÕi
 x210265_g_MissionKind = 13

@@ -6,7 +6,7 @@ x808097_g_ScriptId	= 808097
 x808097_g_Position_X=255.9010
 x808097_g_Position_Z=126.7257
 x808097_g_SceneID=2
-x808097_g_AccomplishNPC_Name="ÉêÇé"
+x808097_g_AccomplishNPC_Name="Thân Tình"
 
 --nhi®m vø Hào
 x808097_g_MissionId			= 1003

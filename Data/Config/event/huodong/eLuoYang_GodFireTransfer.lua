@@ -6,14 +6,14 @@ x808080_g_ScriptId	= 808080
 x808080_g_Position_X=228.3477
 x808080_g_Position_Z=175.7796
 x808080_g_SceneID=0
-x808080_g_AccomplishNPC_Name="?ÔÃ÷³Ï"
+x808080_g_AccomplishNPC_Name="Tri®u Minh Thành"
 
 --nhi®m vø Hào
 x808080_g_MissionId			= 1000
 --kª tiªp nhi®m vø Ðích ID
 x808080_g_MissionIdNext	= 1000
 --nhi®m vø møc tiêu Npc
-x808080_g_Name 					= "?ÔÃ÷³Ï"
+x808080_g_Name 					= "Tri®u Minh Thành"
 --nhi®m vø phân loÕi
 x808080_g_MissionKind			= 13
 --nhi®m vø c¤p b§c

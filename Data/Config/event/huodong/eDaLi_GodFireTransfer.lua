@@ -6,14 +6,14 @@ x808082_g_ScriptId	= 808082
 x808082_g_Position_X=54.9700
 x808082_g_Position_Z=192.5128
 x808082_g_SceneID=2
-x808082_g_AccomplishNPC_Name="ÍõÈôÓí"
+x808082_g_AccomplishNPC_Name="Vß½ng Nhßşc Vû"
 
 --nhi®m vø Hào
 x808082_g_MissionId			= 1000
 --kª tiªp nhi®m vø Ğích ID
 x808082_g_MissionIdNext	= 1000
 --nhi®m vø møc tiêu Npc
-x808082_g_Name 					= "ÍõÈôÓí"
+x808082_g_Name 					= "Vß½ng Nhßşc Vû"
 --nhi®m vø phân loÕi
 x808082_g_MissionKind			= 13
 --nhi®m vø c¤p b§c

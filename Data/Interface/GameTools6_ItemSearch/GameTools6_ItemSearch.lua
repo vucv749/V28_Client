@@ -169,9 +169,9 @@ function GameTools6_ItemSearch_OK_Clicked()
 								----------------------×ÔÊÊÓ¦¿ ¸ñ--------------------------							
 								-- str2 = string.format("#R%s    #Gµþ¼ÓÊýÁ¿:%s",J2,J4);
 								if CheckZhuangTai == 1 then
-									str2 = string.format("#R%S%s#Gmang theo c¤p b§c: %s", J2, spaces, J4)
+									str2 = string.format("#R%s%s#Gmang theo c¤p b§c: %s", J2, spaces, J4)
 								else
-									str2 = string.format("#R%S%s#Gch°ng s¯ lßþng: %s", J2, spaces, J4)
+									str2 = string.format("#R%s%s#Gch°ng s¯ lßþng: %s", J2, spaces, J4)
 								end
 								GameTools6_ItemSearch_List : AddItem(str2, int1);
 								

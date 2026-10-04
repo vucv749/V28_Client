@@ -38,7 +38,7 @@ x891274_g_AccomplishNPC =
 	[9] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_275}", name = "Vß½ng Thi«u", sceneid = 2, },
 	[10] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_276}", name = "Phøng Tri«u Dß½ng", sceneid = 2, },
 	[11] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_277}", name = "Mµc Uy¬n Thanh", sceneid = 2, },
-	[12] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_278}", name = "—¶æè", sceneid = 2, },
+	[12] = { sname = "#{XLRW_210725_264}", npcname = "#{XLRW_210725_278}", name = "PhÕm Hoa", sceneid = 2, },
 	[13] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_279}", name = "Trß½ng TrÕch Ðoan", sceneid = 1, },
 	[14] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_280}", name = "NguÜ Chân", sceneid = 1, },
 	[15] = { sname = "#{XLRW_210725_265}", npcname = "#{XLRW_210725_281}", name = "TÕ Thßþng", sceneid = 1, },

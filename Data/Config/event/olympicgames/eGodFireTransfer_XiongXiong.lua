@@ -15,7 +15,7 @@ x808099_g_MissionIdNext	= 1006
 --nhi®m vø møc tiêu ch², n½i trß¶ng cänh
 x808099_g_AcceptNPC_SceneID	=	2
 --nhi®m vø møc tiêu Npc
-x808099_g_Name 					= "ÉêÇé"
+x808099_g_Name 					= "Thân Tình"
 --nhi®m vø phân loÕi
 x808099_g_MissionKind			= 13
 --nhi®m vø c¤p b§c

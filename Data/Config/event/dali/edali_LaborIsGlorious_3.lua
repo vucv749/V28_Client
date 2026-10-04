@@ -40,8 +40,8 @@ x210249_g_StrList = {
 	"Kiªm Các#{_INFOAIM58, 189, 7, }",
 	"NhÕn Nam#{_INFOAIM168, 114, 18, }",
 	"Vô Lßþng S½n#{_INFOAIM249, 42, 6, }",
-	"Ì«ºþ#{_INFOAIM97,177,4,}",
-	"ÁÔÉ½#{_INFOAIM132,198,3,}",
+	"Thái H°#{_INFOAIM97,177,4,}",
+	"Tung S½n#{_INFOAIM132,198,3,}",
  }
 
 --kh¯ng chª k¸ch bän g¯c

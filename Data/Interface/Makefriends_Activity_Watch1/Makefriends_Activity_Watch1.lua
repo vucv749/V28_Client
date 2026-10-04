@@ -92,7 +92,7 @@ function Makefriends_Activity_Watch1_Updata(n,m)
 		Makefriends_Activity_Watch1_Info6:SetText(szProvince)
 		local szLuckWord = ScriptGlobal_Format("#{JYHD_230331_73}", szLuckWord)
 		Makefriends_Activity_Watch1_Info:SetText(szLuckWord)
-		Makefriends_Activity_Watch1_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+		Makefriends_Activity_Watch1_B1:SetText("Tång thêm các hÕ t¯t")
 		Makefriends_Activity_Watch1_B2:SetText("Bi¬u ðÕt tâm ý")
 
 		Makefriends_Activity_Watch1_FakeObject : SetFakeObject("");
@@ -117,7 +117,7 @@ function Makefriends_Activity_Watch1_Updata(n,m)
 			Makefriends_Activity_Watch1_Info5:SetText(szyearanimal)
 			szProvince = ScriptGlobal_Format("#{JYHD_230331_72}", "-")
 			Makefriends_Activity_Watch1_Info6:SetText(szProvince)
-			Makefriends_Activity_Watch1_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+			Makefriends_Activity_Watch1_B1:SetText("Tång thêm các hÕ t¯t")
 			Makefriends_Activity_Watch1_B2:SetText("Bi¬u ðÕt tâm ý")
 		end
 
@@ -131,7 +131,7 @@ function Makefriends_Activity_Watch1_Updata(n,m)
 		Makefriends_Activity_Watch1_Info5:SetText("-")
 		Makefriends_Activity_Watch1_Info6:SetText("-")
 		Makefriends_Activity_Watch1_Info:SetText("-")
-		Makefriends_Activity_Watch1_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+		Makefriends_Activity_Watch1_B1:SetText("Tång thêm các hÕ t¯t")
 		Makefriends_Activity_Watch1_B2:SetText("Bi¬u ðÕt tâm ý")
 		Makefriends_Activity_Watch1_FakeObject : SetFakeObject("");
 		

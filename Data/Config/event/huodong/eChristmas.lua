@@ -61,7 +61,7 @@ x808200_g_StrList						= {
 	"Tinh Túc Häi",	"Thiên Toàn TØ",	"Tinh Tú Häi#{_INFOAIM99, 142, 16, Thiên Toàn TØ}Thiên Toàn TØ",
 	"Thiên S½n",		"Ð£ng Bà",		"Thiên S½n#{_INFOAIM95, 148, 17, Ð£ng Bà}Ð£ng Bà",
 	"Võ Ðang S½n",	"Tiêu Thiên D§t",	"Núi Võ Ðang#{_INFOAIM100, 181, 12, Tiêu Thiên D§t}Tiêu Thiên D§t",
-	"Lång Ba Ðµng",	"Công Dã TØ Trß¶ng",	"Lång Ba Ðµng#{_INFOAIM44, 125, 14, Công Dã TØ Trß¶ng}Công Dã TØ Trß¶ng",
+	"Lång Ba Ðµng",	"Thiên ¿ng TØ",	"Lång Ba Ðµng#{_INFOAIM44, 125, 14, Công Dã TØ Trß¶ng}Công Dã TØ Trß¶ng",
 	"Thiên Long Tñ",	"Hµ Tñ Trß·ng Lão",		"Thiên Long Tñ#{_INFOAIM99, 142, 13, B±n Danh}B±n Danh",
 	"ÐÕi Lý",		"Ðoàn Chính Thu¥n",	"Ðoàn Chính Thu¥n#{_INFOAIM63, 36, 2, Ðoàn Chính Thu¥n}",
 	"LÕc Dß½ng",		"Trí Thanh ÐÕi Sß",	"Trí Thanh ÐÕi Sß#{_INFOAIM79, 52, 0, Trí Thanh ÐÕi Sß}",

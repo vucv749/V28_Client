@@ -21,7 +21,7 @@ x998313_g_MissionTarget="#{QYHY_230330_33}"
 --d¤u hi®u 0Hào V¸ Vi hoàn thành tình hu¯ng
 x998313_g_IsMissionOkFail=0
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x998313_g_Custom = {{id="Dî ký kªt các\\u0020hÕ thân",num=1}}
+x998313_g_Custom = {{id="Dî ký kªt các hÕ thân",num=1}}
 --x998313_g_ContinueInfo = ""
 --x998313_g_MissionComplete = ""
 --Giao TØ cùng v¾i kinh nghi®m thß·ng cho

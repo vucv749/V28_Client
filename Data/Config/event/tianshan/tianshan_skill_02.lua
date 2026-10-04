@@ -42,7 +42,7 @@ x228903_g_Param_teamid				=4	--4?:???????????
 --nhi®m vø vån bän miêu tä
 x228903_g_MissionName = "Li­u Ám Hoa Minh-L§p tÑc thø lý"
 x228903_g_MissionInfo = "#{TIANSHAN_SKILL_03}"													--????
-x228903_g_MissionTarget = "#GNHÕn Môn Quan#WÐích#RXung Thª Hành#W#{_INFOAIM263, 46, 18, Xung Thª Hành}Yêu Nhî TÕi NhÕn Môn Quan Thái Thú trong phü giªt chªt T¥n Bác Quang Hoà b¯n gã T¥n Gia TrÕi Lµ Bá."		--????
+x228903_g_MissionTarget = "#GNHÕn Môn Quan#WÐích#RXung Thª Hành#W#{_INFOAIM263, 46, 18, Chüng Thª Hoành}Yêu Nhî TÕi NhÕn Môn Quan Thái Thú trong phü giªt chªt T¥n Bác Quang Hoà b¯n gã T¥n Gia TrÕi Lµ Bá."		--????
 x228903_g_ContinueInfo = "#{TIANSHAN_SKILL_04}"								--??????npc??
 x228903_g_MissionComplete = "#{TIANSHAN_SKILL_05}"							--????npc????
 

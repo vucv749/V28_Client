@@ -30,7 +30,7 @@ x210223_g_IfMissionElite = 0
 x210223_g_MissionName="Lá thß gi¾i thi®u thÑ 7"
 x210223_g_MissionInfo="#{event_dali_0033}"
 x210223_g_MissionTarget="H°i#GTHành ÐÕi Lý Ngû Hoa Ðàn#Wtìm ðßþc#GTri®u Thiên Sß#W#{_INFOAIM160, 157, 2, Tri®u Thiên Sß}. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"
-x210223_g_MissionComplete="  Càng ngày nhi«u ngß¶i tr· thành các\\u0020hÕ hæu cüa các hÕ. H÷ ð«u ðánh giá r¤t cao v« các hÕ. Ta ðã thay m£t TÑ ÐÕi Thi®n Nhân, viªt thêm cho các hÕ #Ym?t lá thß gi¾i thi®u #W"
+x210223_g_MissionComplete="  Càng ngày nhi«u ngß¶i tr· thành các hÕ hæu cüa các hÕ. H÷ ð«u ðánh giá r¤t cao v« các hÕ. Ta ðã thay m£t TÑ ÐÕi Thi®n Nhân, viªt thêm cho các hÕ #Ym?t lá thß gi¾i thi®u #W"
 x210223_g_MoneyBonus=24
 x210223_g_SignPost = {x = 160, z = 156, tip = "Tri®u Thiên Sß"}
 x210223_g_ItemBonus={{id=40002108,num=1}}

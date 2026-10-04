@@ -25,7 +25,7 @@ x229010_g_IsMissionOkFail = 0		--????0?
 --nhi®m vø vån bän miêu tä
 x229010_g_MissionName="Nhi®m vø Sß Môn"
 x229010_g_MissionInfo=""  --????
-x229010_g_MissionTarget = "Không t°i. . . . . . Nhî vçn Vi b±n môn Ðích phát dß½ng quang ðÕi TÕi t§n tâm hªt sÑc Ðích T¯ Trß¾c công tác, Ngã Tái thêm vào cho ngß½i mµt cái nhi®m vø Ba, #G%S#WCß½ng cho ta dùng b° câu ðßa tin, Thuyªt b÷n h÷ c¥n h² trþ, ngß½i ði Träo mµt chút#G%s#WÐích#Y%s#W, THa(Tha) Hµi An Bài nhi®m vø cüa ngß½i Ðích. #r#{SMRW_090206_01}"
+x229010_g_MissionTarget = "Không t°i. . . . . . Nhî vçn Vi b±n môn Ðích phát dß½ng quang ðÕi TÕi t§n tâm hªt sÑc Ðích T¯ Trß¾c công tác, Ngã Tái thêm vào cho ngß½i mµt cái nhi®m vø Ba, #G%s#WCß½ng cho ta dùng b° câu ðßa tin, Thuyªt b÷n h÷ c¥n h² trþ, ngß½i ði Träo mµt chút#G%s#WÐích#Y%s#W, THa(Tha) Hµi An Bài nhi®m vø cüa ngß½i Ðích. #r#{SMRW_090206_01}"
 x229010_g_ContinueInfo="Làm ðßþc không t°i"		--??????npc??
 x229010_g_MissionComplete="Vi®c ta giao ðã hoàn thành chßa?"					--????npc????
 x229010_g_MissionRound=17
@@ -37,7 +37,7 @@ x229010_g_AccomplishCircumstance = 1
 x229010_g_StrForePart=4
 
 x229010_g_StrList = {
-						"Huy«n Tr×ng#{_INFOAIM61, 61, 9, Huy«n Tr×ng}",
+						"Huy«n Tr×ng#{_INFOAIM61, 61, 9, Huy«n Trình}",
 						"Tháp Lâm phø bän",
 						"B±n Tßþng#{_INFOAIM35, 86, 13, B±n Tßþng}",
 						"MÕnh Thanh Thanh#{_INFOAIM96, 73, 15, MÕnh Thanh Thanh}",

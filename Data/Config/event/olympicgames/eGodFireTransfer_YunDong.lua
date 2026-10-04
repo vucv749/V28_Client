@@ -6,14 +6,14 @@ x808098_g_ScriptId	= 808098
 x808098_g_Position_X=255.9010
 x808098_g_Position_Z=126.7257
 x808098_g_SceneID=2
-x808098_g_AccomplishNPC_Name="ÉêÇé"
+x808098_g_AccomplishNPC_Name="Thân Tình"
 
 --trß¾c m£t nhi®m vø Hào
 x808098_g_MissionId			= 1004
 --kª tiªp nhi®m vø Ðích ID
 x808098_g_MissionIdNext	= 1005
 --nhi®m vø møc tiêu Npc
-x808098_g_Name 					= "ÉêÇé"
+x808098_g_Name 					= "Thân Tình"
 --nhi®m vø phân loÕi
 x808098_g_MissionKind			= 13
 --nhi®m vø c¤p b§c

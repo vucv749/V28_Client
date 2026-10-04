@@ -875,7 +875,7 @@ function Refresh_All_RaidMember_Info()
 			strMenPai = "Tñ do";
 		end
 
-		local strInfo = tostring(MemberName) .. "\n" .. tostring(strMenPai) .. "  " .. tostring(Level).. "C¤p" .. "\\nch², n½i Ð¸a:" .. ScenceName;
+		local strInfo = tostring(MemberName) .. "\n" .. tostring(strMenPai) .. "  " .. tostring(Level).. "C¤p" .. "\nch², n½i Ð¸a:" .. ScenceName;
 		Portrait_ToolTips[index]:SetToolTip(strInfo);
 
 		if(-1 == HPValue) then

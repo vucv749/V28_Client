@@ -40,7 +40,7 @@ x600032_g_MilitaryScript = 600030
 x600032_g_StrForePart=5
 x600032_g_StrList = {[0] = "Tß Không",
 										 [1] = "Tß Mã",
-										 [2] = "Å·Ñô",
+										 [2] = "Âu Dß½ng",
 										 [3] = "Gia Cát",
 										 [4] = "?¥ÓÚ",
 										 [5] = "Giáp Nhân",

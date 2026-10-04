@@ -28,7 +28,7 @@ x200021_g_MissionName="Ðïnh thiên l§p ð¸a"
 x200021_g_MissionInfo="#{Mis_juqing_0021}"
 x200021_g_MissionTarget="#{Mis_juqing_Tar_0021}"	--????
 x200021_g_MissionComplete="$N, cüa ngß½i trþ giúp, Ki«u M² vô cùng cäm kích. Na Sáng S¾m Ngày Mai, chúng ta ngay tÕi LÕc Dß½ng Thành Ðông Môn g£p lÕi!"	--????npc????
-x200021_g_MissionContinue="  Các\\u0020hÕ ðã ðánh bÕi Bào Thiên Linh, KÏ Løc, Hß¾ng V÷ng Häi ba ngß¶i h÷ chßa?"
+x200021_g_MissionContinue="  Các hÕ ðã ðánh bÕi Bào Thiên Linh, KÏ Løc, Hß¾ng V÷ng Häi ba ngß¶i h÷ chßa?"
 
 x200021_g_MoneyJZBonus=8910
 x200021_g_exp=9600

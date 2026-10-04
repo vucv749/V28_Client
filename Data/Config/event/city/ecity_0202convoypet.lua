@@ -43,7 +43,7 @@ x600009_g_FamilyNameCount = 13												-- x600009_g_StrList ??????
 x600009_g_StrList = { [0] = "Châu", [1] = "Tri®u", [2] = "Dß½ng", [3] = "Hàn", [4] = "Lâm", [5] = "Quách", [6] = "MÕnh",
 			  [7] = "Thß¶ng", [8] = "Ngô", [9] = "Thôi", [10] = "Kim", [11] = "Tiªt", [12] = "Quan",
 			  [13] = "Yªn", [14] = "Ðình", [15] = "Lâm", [16] = "C¥m", [17] = "Sänh", [18] = "Toàn",
-			  [19] = "Xäo Xäo", [20] = "ÝºÝº", [21] = "Tß Tß", [22] = "„n Nhi", [23] = "Nguy®t Nhi",
+			  [19] = "Xäo Xäo", [20] = "Oanh Oanh", [21] = "Tß Tß", [22] = "„n Nhi", [23] = "Nguy®t Nhi",
 			  [24] = "Tuyªt Nhi", [25] = "Uy¬n Nhi",
 }
 

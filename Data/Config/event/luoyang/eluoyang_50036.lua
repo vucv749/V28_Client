@@ -25,9 +25,9 @@ x250036_g_MissionLimitTime = 60 * 60 * 1000; --??
 --ðã ngoài Th¸ ðµng thái**************************************************************
 
 --nhi®m vø vån bän miêu tä
-x250036_g_MissionName="Hôn l­·xe hoa ði dÕo";
+x250036_g_MissionName="Hôn l­-xe hoa ði dÕo";
 x250036_g_MissionInfo="Thïnh Träo LÕc Dß½ng[177, 94]Ðích Hï Lai LÕc an bài xe hoa ði dÕo.";
-x250036_g_MissionTarget="Thïnh Träo LÕc Dß½ng Ðích Hï Lai LÕc#{_INFOAIM177, 94, 0, Hï Lai LÕc}an bài xe hoa ði dÕo.";		--????
+x250036_g_MissionTarget="Thïnh Träo LÕc Dß½ng Ðích Hï Lai LÕc#{_INFOAIM177, 94, 0, HÖ Lai LÕc}an bài xe hoa ði dÕo.";		--????
 x250036_g_ContinueInfo1="Th§t xin l²i, ðã quá th¶i gian dñ ð¸nh cüa các hÕ, các hÕ chï có th¬ bö qua ... ...";
 x250036_g_ContinueInfo2="— ðây c¥n l§p kª hoÕch, cám ½n";
 x250036_g_MissionComplete="Hãy ð¬ chúng ta b¡t ð¥u";

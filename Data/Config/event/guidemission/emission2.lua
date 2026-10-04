@@ -24,7 +24,7 @@ x998790_g_IfMissionElite = 0
 x998790_g_MissionName = "#{QEYD_240402_24}"
 x998790_g_MissionTarget = "#{QEYD_240402_25}"
 x998790_g_IsMissionOkFail = 0
-x998790_g_Custom = {{ id = "Løc Nh§p giang h° Chí·m¯i h÷a Thiên", num = 1}}
+x998790_g_Custom = {{ id = "Løc Nh§p giang h° Chí-m¯i h÷a Thiên", num = 1}}
 x998790_g_ContinueInfo = "#{QEYD_240402_74}"
 x998790_g_MissionComplete = "#{QEYD_240402_153}"
 

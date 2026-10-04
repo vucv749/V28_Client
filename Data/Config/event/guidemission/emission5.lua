@@ -25,7 +25,7 @@ x998793_g_IfMissionElite = 0
 x998793_g_MissionName = "#{QEYD_240402_33}"
 x998793_g_MissionTarget = "#{QEYD_240402_34}"
 x998793_g_IsMissionOkFail = 0
-x998793_g_Custom = {{ id = "Løc Nh§p tiªn giai Ðiêu Vån·Thßþng Thiên", num = 1},{ id = "Løc Nh§p tiªn giai Ðiêu Vån·HÕ Thiên", num = 1}}
+x998793_g_Custom = {{ id = "Løc Nh§p tiªn giai Ðiêu Vån-Thßþng Thiên", num = 1},{ id = "Løc Nh§p tiªn giai Ðiêu Vån-HÕ Thiên", num = 1}}
 x998793_g_ContinueInfo = "#{QEYD_240402_126}"
 x998793_g_MissionComplete = "#{QEYD_240402_128}"
 

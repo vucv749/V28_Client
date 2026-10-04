@@ -53,9 +53,9 @@ x600034_g_StrList = {[0]="Lí",
 										 [13]="Khu m§t vi®n phó sØ",
 										 [14]="Ngñ sØ trung th×a",
 								  	 [15]="Ngñ sØ ğÕi phu",
-								  	 [16]="ÓÒÚÉÒé´ó·ò",
-								  	 [17]="»óÚÉÒé´ó·ò",
-								  	 [18]="ĞÊéÉáÈË",
+								  	 [16]="Hæu gián ngh¸ ğÕi phu",
+								  	 [17]="Tä gián ngh¸ ğÕi phu",
+								  	 [18]="Trung thß xá nhân",
 										 }
 
 

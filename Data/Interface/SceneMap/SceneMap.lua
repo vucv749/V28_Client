@@ -66,11 +66,11 @@ function SceneMap_OnLoad()
 	
 	g_DungeonsTable[5]={maplist={}}
 	g_DungeonsTable[5].maplist[1] = {sceneId = 112, name = "Huy«n Vû Ðäo"}
-	g_DungeonsTable[5].maplist[2] = {sceneId = 579, name = "Huy«n Võ Ðäo·Kính"}
+	g_DungeonsTable[5].maplist[2] = {sceneId = 579, name = "Huy«n Võ Ðäo-Kính"}
 
 	g_DungeonsTable[6]={maplist={}}
-	g_DungeonsTable[6].maplist[1] = {sceneId = 616, name = "Trß¶ng Xuân C¯c·Hoành Nhai"}
-	g_DungeonsTable[6].maplist[2] = {sceneId = 617, name = "Trß¶ng Xuân C¯c·Ô Y HÕng"}
+	g_DungeonsTable[6].maplist[1] = {sceneId = 616, name = "Trß¶ng Xuân C¯c-Hoành Nhai"}
+	g_DungeonsTable[6].maplist[2] = {sceneId = 617, name = "Trß¶ng Xuân C¯c-Ô Y HÕng"}
 
 	g_DungeonsTable[7]={maplist={}}
 	g_DungeonsTable[7].maplist[1] = {sceneId = 650, name = "T¥n Cung Bí Cänh T¥ng 1"}
