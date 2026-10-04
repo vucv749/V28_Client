@@ -318,7 +318,7 @@ end
 
 function Paipai_ChouJiang()
 	if( DataPool:GetPlayerMission_ItemCountNow(30504640) < 1) then
-		PushDebugMessage("Khuyªt thiªu S· Nhu Ðích v² v² cây búa");
+		PushDebugMessage("Thiªu Búa Phách Phách c¥n thiªt");
 		return;
 	end
 	if IsPaipaiBegin == 0 then

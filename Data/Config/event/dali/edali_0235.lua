@@ -40,9 +40,9 @@ x210235_g_DemandItem={{id=20309003,num=1},{id=20309007,num=1}}		--??????
 --nhi®m vø vån bän miêu tä
 x210235_g_MissionName="Ngñ TÑ Tinh Phß·ng Hµ Thü"
 x210235_g_MissionInfo="#{event_dali_0048}"  --????
-x210235_g_MissionTarget="Tìm ðßþc Nh¤t Ph¦m Ngân Nhî Hoà Nh¤t Ph¦m Vu Ð¥u, sau ðó H°i#GTHành ÐÕi Lý Ngû Hoa Ðàn#WTräo tÑ ðÕi hi«n nhân mµt trong Ðích#RLí Công Bµ#W#{_INFOAIM160, 128, 2, Lí Công Bµ}."		--????
-x210235_g_ContinueInfo="Nh¤t Ph¦m Ngân Nhî Hoà Nh¤t Ph¦m Vu Ð¥u Nhî ðã tìm ðßþc r°i?"		--??????npc??
-x210235_g_MissionComplete="Ngß¶i trë tu±i, T¯ Ðích không t°i."					--????npc????
+x210235_g_MissionTarget="Tìm Nh¤t Ph¦m Ngân Nhî và Nh¤t Ph¦m Vu Ð¥u, sau ðó v« #GNgû Hoa Ðàn thành ÐÕi Lý#W tìm #RLý Công Bµ#W#{_INFOAIM160,128,2,Lý Công Bµ}, mµt trong TÑ ÐÕi Thi®n Nhân."		--????
+x210235_g_ContinueInfo="  Các hÕ ðã tìm ðßþc Nh¤t Ph¦m Ngân Nhî và Nh¤t Ph¦m Vu Ð¥u r°i sao?"		--??????npc??
+x210235_g_MissionComplete="  Ngß¶i trë tu±i, làm t¯t l¡m."					--????npc????
 
 --nhi®m vø thß·ng cho
 x210235_g_ItemBonus={{id=10412047,num=1}}

@@ -27,7 +27,7 @@ x200024_g_MissionKind = 47
 x200024_g_MissionName="Huyªt Chiªn Tø Hi«n Trang"
 x200024_g_MissionInfo="#{Mis_juqing_0023}"
 x200024_g_MissionTarget="#{Mis_juqing_Tar_0023}"	--????
-x200024_g_MissionComplete="$N, hß¾ng v« phía cüa ngß½i m£t mûi, lão phu nh¤t ð¸nh Hµi chæa khöi này ti¬u nha ð¥u Ðích. Ðãn Tha sau khi thß½ng thª lành, nh¤t ð¸nh phäi nói ra Na H¡c Y Nhân Ðích lai l¸ch."	--????npc????
+x200024_g_MissionComplete="  $N, n¬ m£t các hÕ, lão phu nh¤t ð¸nh s¨ chæa khöi cho ti¬u nha ð¥u này. Nhßng sau khi khöi thß½ng, cô ¤y nh¤t ð¸nh phäi nói ra lai l¸ch cüa tên h¡c y nhân kia."	--????npc????
 
 x200024_g_MoneyJZBonus=69300
 x200024_g_exp=64000

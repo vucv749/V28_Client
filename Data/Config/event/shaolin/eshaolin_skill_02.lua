@@ -26,7 +26,7 @@ x212141_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212141_g_MissionName="Kh¯n Thú ¿u Tú"
 x212141_g_MissionInfo="#{Mis_shaolin_964}"
-x212141_g_MissionTarget="#GNHÕn Môn Quan#WÐích#RXung Thª Hành#W#{_INFOAIM263, 46, 18, Chüng Thª Hoành}Yêu Nhî TÕi NhÕn Môn Quan vòng vây Trung giªt chªt hai mß½i Danh T¥n Gia TrÕi BÕi Binh."
+x212141_g_MissionTarget="#GNhÕn Môn Quan#W-#RChüng Thª Hoành#W#{_INFOAIM263,46,18,Chüng Thª Hoành} yêu c¥u các hÕ giªt 20 tên BÕi Binh T¥n Gia TrÕi trong vòng vây NhÕn Môn Quan."
 x212141_g_MissionContinue="  Các hÕ ðã di®t hªt T¥n Gia TrÕi bÕi binh chßa?"
 x212141_g_MissionComplete="  Ngß½i ðã không làm b¨ m£t sß phø, $N quä nhiên danh b¤t hß truy«n!"
 

@@ -26,10 +26,10 @@ x231001_g_MissionKind = 1
 
 --nhi®m vø vån bän miêu tä
 x231001_g_MissionName="Trân Long KÏ Cuµc"
-x231001_g_MissionInfo="Giªt chªt bàn c¶ Thßþng t¤t cä Ðích 108Mai quân c¶, Tß¾ng Vß½ng Tích Tân Thung Trân Lung KÏ Cøc Ðích kh¯ng chª Trung giäi cÑu ði ra."  --????
+x231001_g_MissionInfo="Tiêu di®t toàn bµ 108 quân c¶ trên bàn c¶, giäi cÑu Vß½ng Tích Tân khöi sñ kh¯ng chª cüa Trân Long KÏ Cuµc."  --????
 x231001_g_MissionTarget="Giªt chªt 108Mai quân c¶."	--????
-x231001_g_ContinueInfo="Nhî ðã giªt chªt 108Mai quân c¶ Li­u Ma?"	--??????npc??
-x231001_g_MissionComplete="Cám ½n A, Ngã r¯t cøc chßa t×ng th¡ng bÕi Ðích ván c¶ Trung giäi thoát ði ra Li­u."	--????npc????
+x231001_g_ContinueInfo="Các hÕ ðã tiêu di®t 108 quân c¶ chßa?"	--??????npc??
+x231001_g_MissionComplete="Cäm ½n nhé, cu¯i cùng ta ðã thoát khöi ván c¶ không phân th¡ng bÕi r°i."	--????npc????
 
 --nhi®m vø thß·ng cho
 x231001_g_MoneyBonus=5000

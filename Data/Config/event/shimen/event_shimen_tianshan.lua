@@ -52,13 +52,13 @@ x229006_g_NpcIdIndicator={{key=2,npcIdIndex=5},{key=9,npcIdIndex=7}}
 
 --dùng ð¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ðích s¯ li®u
 x229006_g_FormatList = {
-								"Ðã lâu không có nhìn th¤y#R%N#WLi­u, r¤t là tß·ng ni®m A. Này#G%s#Wlà cüa ta mµt chút tâm ý, m¶i ngß½i b¡t nó T¯ng quá khÑ Ba. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi Linh ThÑu Cung tìm ðßþc#RÔ Lão ÐÕi#W#{_INFOAIM90, 120, 17, Ô Lão ÐÕi}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
-								"Cüa ta#G%I#Wnhß thª nào không th¤y Li­u? Nªu Nhî Nång giúp ta tìm tr· v«, ta s¨ không bÕc ðãi ngß½i Ðích. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi Linh ThÑu Cung tìm ðßþc#RÔ Lão ÐÕi#W#{_INFOAIM90, 120, 17, Ô Lão ÐÕi}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
-								"#G%N#Wlàm x¢ng làm b§y, ta có Tâm KhÑ giáo hu¤n mµt chút, ðáng tiªc không có th¶i gian, Nhî có th¬ thay Lao Ma? #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi Linh ThÑu Cung tìm ðßþc#RÔ Lão ÐÕi#W#{_INFOAIM90, 120, 17, Ô Lão ÐÕi}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
-								"M¶i ngß½i TÕi Thiên S½n tìm ðßþc#G%s#W, BÄ#Y%s#Wrót vào trong ðó. #r #GTi¬u nêu lên: #W#r Ðang các hÕ t¾i Ðáo c¥n rót vào Thánh Thüy Ðích Bång Hµ g¥n ðây Th¶i, Nhî có th¬ Án#GAlt+A#Wcó th¬ Tá Khai v§t ph¦m Lan, Ði¬m Kích#G'nhi®m vø'#WDi®p Di®n là có th¬ Tá Khai nhi®m vø v§t ph¦m Lan, Hæu Ki®n Ði¬m Kích#YThánh Thüy#W, là có th¬ hoàn thành rót vào Li­u. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
-								"M¶i ngß½i ði tìm Ðáo#R%s#W, THa Hµi mang ngß½i KhÑ khiêu chiªn#G%s#WÐích. #r #GTi¬u nêu lên: #W#r Cúc Kiªm tÖ tÖ ngay tÕi Linh ThÑu Cung#{_INFOAIM101, 44, 17, Cúc Kiªm}. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
-								"M¶i ngß½i giúp ta Träo Nh¤t Chích#G%P#WLai. #B#r #GTi¬u nêu lên: #W#r #GLinh ThÑu Cung Ðích Ô Lão ÐÕi#{_INFOAIM90, 120, 17, Ô Lão ÐÕi}có th¬ T¯ng ngß½i ði Huy«n Võ Ðäo, Nhi Huy«n Võ Ðäo Hæu mµt cái ðß¶ng nhö ði thông Thánh Thú S½n. Nhî có th¬ TÕi Huy«n Võ Ðäo ho£c là Thánh Thú S½n Thßþng b¡t giæ Ngã c¥n Ðích Trân Thú. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
-								"M¶i ngß½i TÕi Thiên S½n chung quanh nhìn xem, giúp ta Träo Lai 5Cá#G%s#W. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi màn hình Hæu Thßþng Giác Ðích Ti¬u trên bän ð° tìm ðßþc màu vàng Ðích chï th¸ Ði¬m. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
+								"Ðã lâu không g£p #R%n#W, ta r¤t nh¾. #G%s#W này là chút t¤m lòng cüa ta, nh¶ các hÕ mang ðªn giúp ta.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm #RÔ Lão ÐÕi#W#{_INFOAIM90,120,17,Ô Lão ÐÕi} · Linh Tñu Cung, nh¶ ngß¶i này ðßa các hÕ ðªn các thành l¾n.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
+								"#G%i#W cüa ta sao lÕi không th¤y ðâu næa? Nªu các hÕ có th¬ giúp ta tìm lÕi, ta s¨ không bÕc ðãi các hÕ ðâu.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm #RÔ Lão ÐÕi#W#{_INFOAIM90,120,17,Ô Lão ÐÕi} · Linh Tñu Cung, nh¶ ngß¶i này ðßa các hÕ ðªn các thành l¾n.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
+								"#G%n#W làm ði«u x¢ng b§y, ta mu¯n ði dÕy cho h¡n mµt bài h÷c, tiªc là không có th¶i gian, các hÕ có th¬ làm thay ta không?#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm #RÔ Lão ÐÕi#W#{_INFOAIM90,120,17,Ô Lão ÐÕi} · Linh Tñu Cung, nh¶ ngß¶i này ðßa các hÕ ðªn các thành l¾n.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
+								"Hãy tìm #G%s#W · Thiên S½n, ð± #Y%s#W vào trong ðó.#r  #GGþi ý:#W#r  Khi ðªn g¥n Bång Hµ c¥n ð± Thánh Thüy, các hÕ có th¬ nh¤n #GAlt+A#W ð¬ m· túi ð°, nh¤p vào trang #G'Nhi®m Vø'#W ð¬ m· ô v§t ph¦m nhi®m vø, nh¤p chuµt phäi vào #YThánh Thüy#W là có th¬ hoàn thành vi®c ð± Thánh Thüy.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
+								"Hãy ði tìm #R%s#W, ngß¶i ðó s¨ ðßa các hÕ ði khiêu chiªn #G%s#W.#r  #GGþi ý:#W#r  TÖ tÖ Cúc Kiªm ðang · Linh Tñu Cung#{_INFOAIM101,44,17,Cúc Kiªm}.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
+								"Hãy giúp ta b¡t mµt con #G%p#W.#B#r  #GGþi ý:#W#r  #GÔ Lão ÐÕi · Linh Tñu Cung#{_INFOAIM90,120,17,Ô Lão ÐÕi} có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
+								"Hãy ði xem xét kh¡p Thiên S½n, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
 								"Thïnh C¤p#R%s#Wðßa ði mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r ThÕch T¦u ngay tÕi Linh ThÑu Cung#{_INFOAIM123, 67, 17, ThÕch T¦u}. #r Lô Vû Ðình tÖ tÖ ngay tÕi Linh ThÑu Cung#{_INFOAIM45, 69, 17, Lô Vû Ðình}. #r Nh§m Phi H°ng tÖ tÖ ngay tÕi Linh ThÑu Cung#{_INFOAIM39, 71, 17, Nh§m Phi H°ng}. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
 								}
@@ -85,7 +85,7 @@ x229006_g_StrList = {
 						"ThÕch T¦u",
 						"Lß Vû Ðình",
 						"Tang Phi H°ng",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"0",
 						"1",
 						"2",

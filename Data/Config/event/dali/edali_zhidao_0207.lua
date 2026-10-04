@@ -42,7 +42,7 @@ x210207_g_Custom	= { {id="Ðã liên tøc ðáp ðúng 5 câu höi cüa Ti«n Long",num=1} }
 --nhi®m vø Danh
 x210207_g_MissionName="L¥n ð¥u höi ðáp"
 x210207_g_MissionInfo="#{event_dali_0010}"
-x210207_g_MissionTarget="Liên tøc trä l¶i#RTI«n Long#W#{_INFOAIM145, 139, 2, Ti«n Long}Ðích nåm v¤n ð«. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"
+x210207_g_MissionTarget="Trä l¶i ðúng liên tiªp nåm câu höi cüa #RTi«n Long#W#{_INFOAIM145,139,2,Ti«n Long}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân, s¨ giúp các hÕ tìm ðßþc NPC này)#l"
 x210207_g_MissionComplete="  Chúc m×ng các hÕ ðã qua äi! S¯ ti«n này ta t£ng cho các hÕ ð¬ hành t¦u giang h°."
 x210207_g_MoneyBonus=210
 x210207_g_SignPost = {x = 145, z = 138, tip = "Ti«n Long"}

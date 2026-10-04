@@ -35,7 +35,7 @@ x200032_g_MissionComplete="MÕt tß¾ng Tiªp Chï, nh¤t ð¸nh không phø hoàng ðª sñ p
 x200032_g_MoneyJZBonus=23760
 x200032_g_exp=26400
 
-x200032_g_Custom	= { {id="Ðã ðÕt ðßþc thánh chï hoàng ðª Li­u qu¯c",num=1} }
+x200032_g_Custom	= { {id="Ðã nh§n ðßþc thánh chï cüa Hoàng ðª Liêu Qu¯c",num=1} }
 
 
 --MisDescEnd

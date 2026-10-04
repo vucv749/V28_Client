@@ -28,6 +28,6 @@ x999152_g_MissionInfo="#{DHEJ_240521_198}"
 x999152_g_MissionTarget="#{DHEJ_240521_202}"
 x999152_g_MissionContinue="#{DHEJ_240521_200}"
 x999152_g_MissionComplete ="#{DHEJ_240521_201}"
-x999152_g_Custom	= { {id="Thành công giäi quyªt nhi®m vø Thß Thßþng Ðích v¤n ð«",num=1} }	
+x999152_g_Custom	= { {id="Giäi quyªt thành công v¤n ð« trong thß nhi®m vø",num=1} }	
 
 --MisDescEnd

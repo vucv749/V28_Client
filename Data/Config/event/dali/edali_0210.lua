@@ -29,8 +29,8 @@ x210210_g_IfMissionElite = 0
 --nhi®m vø Danh
 x210210_g_MissionName="Mµt l¥n làm ðÕi hi®p"
 x210210_g_MissionInfo_1="#{event_dali_0012}"
-x210210_g_MissionInfo_2="#W, cHÆng l¨ Nhî không nên ði giúp giúp h¡n Ma?"
-x210210_g_MissionTarget="TÕi#GTHành ÐÕi Lý Ngû Hoa Ðàn#Wtìm ðßþc tÑ ðÕi hi«n nhân mµt trong Ðích#RTôn Bát Gia#W#{_INFOAIM173, 146, 2, Tôn Bát Gia}. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"
+x210210_g_MissionInfo_2="#W, l¨ nào các hÕ không nên ði giúp h¡n sao?"
+x210210_g_MissionTarget="TÕi #GNgû Hoa Ðàn thành ÐÕi Lý#W tìm #RTôn Bát Gia#W#{_INFOAIM173,146,2,Tôn Bát Gia}, mµt trong TÑ ÐÕi Thi®n Nhân.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân ð¬ tìm ðªn NPC này)#l"
 x210210_g_MissionComplete="  Ái chà, các hÕ cû cüa ta à, ta biªt là các hÕ s¨ ðªn giúp ta"
 x210210_g_MoneyBonus=72
 x210210_g_SignPost = {x = 173, z = 147, tip = "Tôn Bát Gia"}

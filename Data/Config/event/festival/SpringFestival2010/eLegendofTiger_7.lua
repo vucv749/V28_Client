@@ -19,7 +19,7 @@ x050078_g_IfMissionElite = 0
 x050078_g_MissionName="#{SXGS_091105_43}"
 x050078_g_MissionTarget="#{SXGS_091105_45}"
 x050078_g_IsMissionOkFail = 0		
-x050078_g_Custom1 = {{id = "Dî sØ døng m£t nÕ Ðích chï dçn",num = 1}}
+x050078_g_Custom1 = {{id = "Ðã dùng chï dçn cüa m£t nÕ",num = 1}}
 x050078_g_Custom2 = {{id = "Ðã hoàn thành Truy tung cu¯i cùng",num = 1}}
 
 

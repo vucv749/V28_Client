@@ -29,7 +29,7 @@ x791061_g_MissionName			= "#{MTYR_220617_22}"
 x791061_g_MissionTarget			= "#{MTYR_220617_37}"	
 -- nhi®m vø tham s¯ 0Hào Ti«m quy t¡c chï có th¬ dùng làm d¤u hi®u nhi®m vø hay không hoàn thành, Hµi tñ ðµng änh hß·ng hµ khách Ðoan nhi®m vø Li®t Bi¬u hay không bi¬u hi®n Dî hoàn thành
 x791061_g_IsMissionOkFail		= 0
-x791061_g_Custom 				= {{ id = "Dî cÑu tr¸ phát b®nh Ðích dân chúng", num = 3}} 
+x791061_g_Custom 				= {{ id = "Ðã cÑu chæa bách tính phát b®nh", num = 3}} 
 x791061_g_ContinueInfo 			= ""
 -- hoàn thành nhi®m vø Ðích NPCð¯i thoÕi
 x791061_g_MissionComplete 		= "#{}"

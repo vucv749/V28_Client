@@ -31,7 +31,7 @@ x600013_g_MissionParam_AnswerIndex = 5					-- ??????????
 
 --nhi®m vø vån bän miêu tä
 x600013_g_MissionName = "Nhi®m vø kÛ thu§t"
-x600013_g_MissionInfo = "Hôm nay ta nghî Yêu %s Li­u, ði giúp Ngã Träo ðªn ðây ði!"			--????
+x600013_g_MissionInfo = "    Hôm nay ta mu¯n có %s, ði tìm v« giúp ta nhé!"			--????
 x600013_g_MissionTarget = "Trä l¶i th½ c± Ð¯i Câu Nh¤t Ð«. #r#{BHRW_091224_1}"	--????
 x600013_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
 x600013_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??

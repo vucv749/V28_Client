@@ -616,7 +616,7 @@ function Synthesize_Shenfen_ListBox_Selected()
 	Synthesize_Shenfen_SpecialMaterialIcon_Frame : Show();
 	Synthesize_Shenfen_SpecialMaterial_Text : Show();
 	if Prescr_Ability == 61 and haveSpecialMaterial == 1 then
-		Synthesize_Shenfen_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00thuµc tính tài li®u#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
+		Synthesize_Shenfen_SpecialMaterial_WarningText : SetText("#cE6BA00Hãy ð£t nguyên li®u chª tÕo #cFFFF00Nguyên Li®u Thuµc Tính#cE6BA00 vào ô bên phäi, loÕi nguyên li®u ð£c bi®t này có th¬ nâng cao ph¦m ch¤t trang b¸")
 		if NeedSpecial == 6 then 
 			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFJN_231225_73}")--??????:??
 		elseif NeedSpecial == 7 then 
@@ -631,7 +631,7 @@ function Synthesize_Shenfen_ListBox_Selected()
 		Synthesize_Shenfen_SpecialMaterial:SetProperty( "DragAcceptName", "N4" );
 		-- Synthesize_Shenfen_SpecialMaterial:SetProperty("BackImage", "")
 	elseif Prescr_Ability == 62 and haveSpecialMaterial == 1 then
-		Synthesize_Shenfen_SpecialMaterial_WarningText : SetText("#cE6BA00Thïnh bên phäi Biên ð¬ vào tÕo ra tài li®u#cFFFF00thuµc tính tài li®u#cE6BA00, loÕi này ð£c thù tài li®u có th¬ tång lên trang b¸ Ðích ph¦m ch¤t")
+		Synthesize_Shenfen_SpecialMaterial_WarningText : SetText("#cE6BA00Hãy ð£t nguyên li®u chª tÕo #cFFFF00Nguyên Li®u Thuµc Tính#cE6BA00 vào ô bên phäi, loÕi nguyên li®u ð£c bi®t này có th¬ nâng cao ph¦m ch¤t trang b¸")
 		if nSelIndex == 1358 then 
 			Synthesize_Shenfen_SpecialMaterial : SetToolTip("#{SFDJ_240117_108}")--?????
 			Synthesize_Shenfen_SpecialMaterial:SetProperty( "DragAcceptName", "N5" );

@@ -26,9 +26,9 @@ x212104_g_DemandItem={{id=40002112,num=1}}		--???1?
 --nhi®m vø vån bän miêu tä
 x212104_g_MissionName="Sñ th§t ðáng sþ"
 x212104_g_MissionInfo="#{Lua_Shilin_005}"
-x212104_g_MissionTarget="Bä#YA Chi Ðích Ph¯i SÑc#Wgiao cho#Gtrång tròn Thôn#WÐích thôn trß¶ng#RTr¸nh Huy«n#W#{_INFOAIM182, 163, 26, Tr¸nh Huy«n}."
+x212104_g_MissionTarget="  Giao #YTrang SÑc Cüa A Chi#W cho thôn trß·ng #RTr¸nh Huy«n#W#{_INFOAIM182,163,26,Tr¸nh Huy«n} cüa #GViên Nguy®t Thôn#W."
 x212104_g_ContinueInfo="  Ngß½i có chuy®n gì?"
-x212104_g_MissionComplete="Giá, Giá chÆng l¨ chính là Y¬n Sß Xã thü lînh Ðích Ph¯i SÑc?"
+x212104_g_MissionComplete="  Ðây... ðây chÆng l¨ là trang sÑc cüa thü lînh Y¬n Sß Xã?"
 
 --hàng hóa ID
 x212104_g_ItemID = 40002112

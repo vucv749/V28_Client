@@ -26,7 +26,7 @@ x600031_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600031_g_MissionName = "Nhi®m vø qu¯c phòng"
 x600031_g_MissionInfo = ""													--????
-x600031_g_MissionTarget = "SØ døng Tu¥n La Linh, b¡t khä nghi Ðích Nhân. #r#{BHRW_091224_1}"	--????
+x600031_g_MissionTarget = "    Dùng Tu¥n La L®nh b¡t giæ kë khä nghi.#r#{BHRW_091224_1}"	--????
 x600031_g_ContinueInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"						--??????npc??
 x600031_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."						--????npc????
 

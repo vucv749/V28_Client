@@ -6,14 +6,14 @@ x999118_g_ScriptId = 999118
 x999118_g_Position_X=156
 x999118_g_Position_Z=45
 x999118_g_SceneID=1320
-x999118_g_AccomplishNPC_Name="Tr¥m tß Ðích chí tôn Bäo"
+x999118_g_AccomplishNPC_Name="Chí Tôn Bäo Tr¥m Tß"
 
 --nhi®m vø Hào
 x999118_g_PreMissionId = 2306
 x999118_g_MissionId = 2307
 
 --tiªp nh§n chÑc vø Vø NPC Thüy Liêm Ðµng(XXX, YYY) chí tôn Bäo
-x999118_g_Name1	="Tr¥m tß Ðích chí tôn Bäo"
+x999118_g_Name1	="Chí Tôn Bäo Tr¥m Tß"
 x999118_g_SID1 =1320
 x999118_g_Pos_X1 = 156
 x999118_g_Pos_Z1 = 45

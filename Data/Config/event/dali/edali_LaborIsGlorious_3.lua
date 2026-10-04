@@ -34,7 +34,7 @@ x210249_g_StrForePart 				= 4
 
 --dùng ð¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ðích s¯ li®u
 --x210249_g_FormatList = {"#{WYHD_090410_33}%s#{WYHD_090410_34}",}
-x210249_g_FormatList = {"M¶i ngß½i ði trß¾c%sXØ gieo tr°ng Giá Khoä hy v÷ng Ðích m¥m móng, hoàn thành lúc sau ðªn l¾n Lý Tôn Bát Gia XØ lînh Lao Ðµng T¯i Quang Vinh hoÕt ðµng Ðích thß·ng cho. #r#GcHú ý: Này hoÕt ðµng m²i ngày Chích có th¬ tham gia mµt l¥n, h½n næa vÑt bö nhi®m vø hôm nay lÕi không th¬ Dî Tái tham gia Lao Ðµng T¯i Quang Vinh Ðích nhi®m vø Li­u.",}
+x210249_g_FormatList = {"M¶i các hÕ ðªn %s tr°ng HÕt Gi¯ng Hy V÷ng này, sau khi hoàn thành hãy ðªn ch² Tôn Bát Gia · ÐÕi Lý nh§n ph¥n thß·ng hoÕt ðµng Lao Ðµng Là Vinh Quang.#r#GChú ý: M²i ngày chï ðßþc tham gia hoÕt ðµng này mµt l¥n, nªu hüy nhi®m vø thì hôm nay s¨ không th¬ tham gia nhi®m vø Lao Ðµng Là Vinh Quang næa.",}
 
 x210249_g_StrList = {
 	"Kiªm Các#{_INFOAIM58, 189, 7, }",

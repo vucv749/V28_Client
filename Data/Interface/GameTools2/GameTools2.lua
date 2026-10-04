@@ -38,7 +38,7 @@ function GameTools2_BOSS(index)
 	local nEAI 		= GameTools2_BOSS3Edix:GetText() --??AI
 	local nScriptID = GameTools2_BOSS4Edix:GetText() --??
 	if nID == nil then 
-		PushDebugMessage("Thïnh ğßa vào chính xác Ğích quái v§t ID!")
+		PushDebugMessage("Hãy nh§p ğúng ID quái v§t!")
 	end
 	if nBAI == nil then
 		nBAI = 0
@@ -164,27 +164,27 @@ function GameTools2_GetMissionData(index)
 	end
 	
 	if  index == 1 and nNum == nil then
-		PushDebugMessage("Thïnh ği«n c¥n tu¥n tra Ğích lßşng biªn ğ±i ID.")
+		PushDebugMessage("Hãy nh§p ID biªn c¥n tra cÑu.")
 	end
 	if  index == 1 then
 		SetValue = 0
 	end
 	
 	if	index == 2 and SetValue == nil and nNum == nil then
-		PushDebugMessage("Ngß¶i thÑ nh¤t Hoà ngß¶i thÑ hai biên t§p Khuông nµi dung Vi Không, Thïnh ği«n ğ¥y ğü H§u m¾i có th¬ sØa chæa Nga!")
+		PushDebugMessage("Ô nh§p thÑ nh¤t và thÑ hai ğang tr¯ng, hãy ği«n ğ¥y ğü r°i m¾i sØa ğßşc!")
 		return
 	elseif index == 2 and SetValue == nil then
 		PushDebugMessage("Thïnh ğßa vào mu¯n sØa chæa giá tr¸, ngß¶i thÑ hai biên t§p Khuông nµi dung Vi Không!")
 		return
 	elseif index == 2 and nNum == nil then
-		PushDebugMessage("Thïnh ğßa vào Yêu sØa chæa Ğích lßşng biªn ğ±i ID, ngß¶i thÑ nh¤t biên t§p Khuông nµi dung Vi Không!")
+		PushDebugMessage("Hãy nh§p ID biªn c¥n sØa, ô nh§p thÑ nh¤t ğang tr¯ng!")
 		return
 	end
 	if TargetID == nil then
 		if index == 1 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ tu¥n tra møc tiêu ngß¶i ch½i Ğích GetMissionDataTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ tra cÑu giá tr¸ GetMissionData cüa ngß¶i ch½i møc tiêu!")
 		elseif index == 2 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ thiªt trí møc tiêu ngß¶i ch½i Ğích GetMissionDataTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ thiªt l§p giá tr¸ GetMissionData cüa ngß¶i ch½i møc tiêu!")
 		end
 		TargetID = 0
 	end
@@ -213,25 +213,25 @@ function GameTools2_GetMissionDataEx(index)
 	end
 	
 	if  index == 1 and nNum == nil then
-		PushDebugMessage("Thïnh ği«n c¥n tu¥n tra Ğích lßşng biªn ğ±i ID.")
+		PushDebugMessage("Hãy nh§p ID biªn c¥n tra cÑu.")
 		return
 	end
 	if  index == 2 and SetValue == nil and nNum == nil then
-		PushDebugMessage("Ngß¶i thÑ nh¤t Hoà ngß¶i thÑ hai biên t§p Khuông nµi dung Vi Không, Thïnh ği«n ğ¥y ğü H§u m¾i có th¬ sØa chæa Nga!")
+		PushDebugMessage("Ô nh§p thÑ nh¤t và thÑ hai ğang tr¯ng, hãy ği«n ğ¥y ğü r°i m¾i sØa ğßşc!")
 		return
 	elseif index == 2 and SetValue == nil then
 		PushDebugMessage("Thïnh ğßa vào mu¯n sØa chæa giá tr¸, ngß¶i thÑ hai biên t§p Khuông nµi dung Vi Không!")
 		return
 	elseif index == 2 and nNum == nil then
-		PushDebugMessage("Thïnh ğßa vào Yêu sØa chæa Ğích lßşng biªn ğ±i ID, ngß¶i thÑ nh¤t biên t§p Khuông nµi dung Vi Không!")
+		PushDebugMessage("Hãy nh§p ID biªn c¥n sØa, ô nh§p thÑ nh¤t ğang tr¯ng!")
 		return
 	end	
 
 	if TargetID == nil then
 		if index == 1 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ tu¥n tra møc tiêu ngß¶i ch½i Ğích GetMissionDataExTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ tra cÑu giá tr¸ GetMissionDataEx cüa ngß¶i ch½i møc tiêu!")
 		elseif index == 2 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ thiªt trí møc tiêu ngß¶i ch½i Ğích GetMissionDataExTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ thiªt l§p giá tr¸ GetMissionDataEx cüa ngß¶i ch½i møc tiêu!")
 		end
 		TargetID = 0
 	end
@@ -267,25 +267,25 @@ function GameTools2_GetMissionFlag(index)
 	end
 	
 	if  index == 1 and nNum == nil then
-		PushDebugMessage("Thïnh ği«n c¥n tu¥n tra Ğích lßşng biªn ğ±i ID.")
+		PushDebugMessage("Hãy nh§p ID biªn c¥n tra cÑu.")
 		return
 	end
 	if  index == 2 and SetValue == nil and nNum == nil then
-		PushDebugMessage("Ngß¶i thÑ nh¤t Hoà ngß¶i thÑ hai biên t§p Khuông nµi dung Vi Không, Thïnh ği«n ğ¥y ğü H§u m¾i có th¬ sØa chæa Nga!")
+		PushDebugMessage("Ô nh§p thÑ nh¤t và thÑ hai ğang tr¯ng, hãy ği«n ğ¥y ğü r°i m¾i sØa ğßşc!")
 		return
 	elseif index == 2 and SetValue == nil then
 		PushDebugMessage("Thïnh ğßa vào mu¯n sØa chæa giá tr¸, ngß¶i thÑ hai biên t§p Khuông nµi dung Vi Không!")
 		return
 	elseif index == 2 and nNum == nil then
-		PushDebugMessage("Thïnh ğßa vào Yêu sØa chæa Ğích lßşng biªn ğ±i ID, ngß¶i thÑ nh¤t biên t§p Khuông nµi dung Vi Không!")
+		PushDebugMessage("Hãy nh§p ID biªn c¥n sØa, ô nh§p thÑ nh¤t ğang tr¯ng!")
 		return
 	end	
 
 	if TargetID == nil then
 		if index == 1 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ tu¥n tra møc tiêu ngß¶i ch½i Ğích GetMissionFlagTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ tra cÑu giá tr¸ GetMissionFlag cüa ngß¶i ch½i møc tiêu!")
 		elseif index == 2 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ thiªt trí møc tiêu ngß¶i ch½i Ğích GetMissionFlagTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ thiªt l§p giá tr¸ GetMissionFlag cüa ngß¶i ch½i møc tiêu!")
 		end
 		TargetID = 0
 	end
@@ -314,24 +314,24 @@ function GameTools2_GetWorldGlobalData(index)
 		SetValue = 0
 	end
 	if  index == 1 and nNum == nil then
-		PushDebugMessage("Thïnh ği«n c¥n tu¥n tra Ğích lßşng biªn ğ±i ID.")
+		PushDebugMessage("Hãy nh§p ID biªn c¥n tra cÑu.")
 		return
 	end
 	if  index == 2 and SetValue == nil and nNum == nil then
-		PushDebugMessage("Ngß¶i thÑ nh¤t Hoà ngß¶i thÑ hai biên t§p Khuông nµi dung Vi Không, Thïnh ği«n ğ¥y ğü H§u m¾i có th¬ sØa chæa Nga!")
+		PushDebugMessage("Ô nh§p thÑ nh¤t và thÑ hai ğang tr¯ng, hãy ği«n ğ¥y ğü r°i m¾i sØa ğßşc!")
 		return
 	elseif index == 2 and SetValue == nil then
 		PushDebugMessage("Thïnh ğßa vào mu¯n sØa chæa giá tr¸, ngß¶i thÑ hai biên t§p Khuông nµi dung Vi Không!")
 		return
 	elseif index == 2 and nNum == nil then
-		PushDebugMessage("Thïnh ğßa vào Yêu sØa chæa Ğích lßşng biªn ğ±i ID, ngß¶i thÑ nh¤t biên t§p Khuông nµi dung Vi Không!")
+		PushDebugMessage("Hãy nh§p ID biªn c¥n sØa, ô nh§p thÑ nh¤t ğang tr¯ng!")
 		return
 	end	
 	if TargetID == nil then
 		if index == 1 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ tu¥n tra møc tiêu ngß¶i ch½i Ğích GetWorldGlobalDataTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ tra cÑu giá tr¸ GetWorldGlobalData cüa ngß¶i ch½i møc tiêu!")
 		elseif index == 2 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ thiªt trí møc tiêu ngß¶i ch½i Ğích GetWorldGlobalDataTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ thiªt l§p giá tr¸ GetWorldGlobalData cüa ngß¶i ch½i møc tiêu!")
 		end
 		TargetID = 0
 	end
@@ -556,9 +556,9 @@ function GameTools2_GetMissionFlagEx(index)
 	end
 	if TargetID == nil then
 		if index == 1 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ tu¥n tra møc tiêu ngß¶i ch½i Ğích GetMissionFlagExTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ tra cÑu giá tr¸ GetMissionFlagEx cüa ngß¶i ch½i møc tiêu!")
 		elseif index == 2 then 
-			PushDebugMessage("Thïnh Tiên lña ch÷n møc tiêu hình cái ğ¥u, m¾i có th¬ thiªt trí møc tiêu ngß¶i ch½i Ğích GetMissionFlagExTr¸!")
+			PushDebugMessage("Hãy ch÷n änh ğÕi di®n møc tiêu trß¾c m¾i có th¬ thiªt l§p giá tr¸ GetMissionFlagEx cüa ngß¶i ch½i møc tiêu!")
 		end
 		TargetID = 0
 	end
@@ -608,7 +608,7 @@ end
 function GameTools2_DisbandGuild()
 	local nGuildID = GameTools2_DisbandGuildEdix:GetText()
 	if nGuildID == nil or nGuildID == "" then
-		PushDebugMessage("Thïnh ğßa vào Yêu giäi tán Ğích bang hµi ID!")
+		PushDebugMessage("Hãy nh§p ID bang hµi c¥n giäi tán!")
 		return
 	end
 	Clear_XSCRIPT();

@@ -26,7 +26,7 @@ x600033_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600033_g_MissionName = "Chuy¬n giao tình báo"
 x600033_g_MissionInfo = ""													--????
-x600033_g_MissionTarget = "Giá Ph¥n m¤u ch¯t ðích tình Báo, c¥n Nhî hoä t¯c ðßa ðªn%n, k¸ch li®t k¸ch li®t. #r#{BHRW_091224_1}"	--????
+x600033_g_MissionTarget = "    Ph¥n tình báo then ch¯t này c¥n các hÕ kh¦n t¯c ðßa ðªn %n, höa t¯c, höa t¯c!#r#{BHRW_091224_1}"	--????
 x600033_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"				--??????npc??
 x600033_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."			--????npc????
 

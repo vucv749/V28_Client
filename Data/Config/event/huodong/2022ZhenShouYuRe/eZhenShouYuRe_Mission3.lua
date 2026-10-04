@@ -15,7 +15,7 @@ x893068_g_PreMissionId = 2053
 x893068_g_MissionName="#{ZSYR_211227_223}"
 x893068_g_MissionTarget="#{ZSYR_211227_225}"
 x893068_g_MissionComplete="#{ZSYR_211227_224}"
-x893068_g_Custom={ {id="Dî ði«u tra kÏ quái Ðích hoa cö",num=1} }
+x893068_g_Custom={ {id="Ðã ði«u tra hoa cö kÏ lÕ",num=1} }
 
 --hoàn thành nhi®m vø NPCthuµc tính
 x893068_g_Position_X=265

@@ -26,7 +26,7 @@ x600011_g_IsMissionOkFail = 0							-- ??????
 
 --nhi®m vø vån bän miêu tä
 x600011_g_MissionName = "Nhi®m vø phát tri¬n"
-x600011_g_MissionInfo = "Hôm nay ta nghî Yêu %s Li­u, ði giúp Ngã Träo ðªn ðây ði!"			--????
+x600011_g_MissionInfo = "    Hôm nay ta mu¯n có %s, ði tìm v« giúp ta nhé!"			--????
 x600011_g_MissionTarget = "Thung%nn½i ðó thu h°i%sCá%i. #r#{BHRW_091224_1}"	--????
 x600011_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
 x600011_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??

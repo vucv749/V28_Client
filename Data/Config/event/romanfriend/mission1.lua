@@ -20,7 +20,7 @@ x998312_g_MissionTarget="#{QYHY_230330_14}"
 --d¤u hi®u thành công Th¸ Ná Hào V¸ n½i này d¤u hi®u chính là 0Hào V¸
 x998312_g_IsMissionOkFail=0
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x998312_g_Custom = { {id="Dî bái phöng Li­u Nhß Hinh",num=1} }
+x998312_g_Custom = { {id="Ðã bái phöng Li­u Nhß Hinh",num=1} }
 --x998312_g_ContinueInfo = ""
 --x998312_g_MissionComplete = ""
 

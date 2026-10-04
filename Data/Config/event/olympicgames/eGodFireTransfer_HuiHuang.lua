@@ -26,7 +26,7 @@ x808101_g_IfMissionElite	= 0
 x808101_g_IsMissionOkFail	= 0		--??????0?
 
 --nhi®m vø vån bän miêu tä
-x808101_g_MissionName			= "Huy hoàng Ðích Thánh Hoä"
+x808101_g_MissionName			= "Thánh Höa Huy Hoàng"
 --nhi®m vø miêu tä
 x808101_g_MissionInfo			= "#{XSHCD_20080418_026}"
 --nhi®m vø møc tiêu
@@ -41,6 +41,6 @@ x808101_g_MaxRound	= 3
 x808101_g_ControlScript		= 001066
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x808101_g_Custom	= { {id="Ðã xem Hoä Cñ giao cho LÕc Dß½ng Ðích Yªn Thanh",num=1} }
+x808101_g_Custom	= { {id="Ðã giao ðu¯c cho Yªn Thanh · LÕc Dß½ng",num=1} }
 
 --MisDescEnd

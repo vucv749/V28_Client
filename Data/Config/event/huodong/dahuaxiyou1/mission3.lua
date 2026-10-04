@@ -6,7 +6,7 @@ x999117_g_ScriptId = 999117
 x999117_g_Position_X=156
 x999117_g_Position_Z=45
 x999117_g_SceneID=1320
-x999117_g_AccomplishNPC_Name="Tr¥m tß Ðích chí tôn Bäo"
+x999117_g_AccomplishNPC_Name="Chí Tôn Bäo Tr¥m Tß"
 
 --nhi®m vø Hào
 x999117_g_PreMissionId = 2305
@@ -31,7 +31,7 @@ x999117_g_IfMissionElite = 0
 x999117_g_MissionName="#{DHJDY_240521_81}"
 x999117_g_MissionTarget="#{DHJDY_240521_86}"
 x999117_g_IsMissionOkFail=0
-x999117_g_Custom = {{ id = "Tìm ðßþc tr¥m tß Ðích chí tôn Bäo", num = 1}}
+x999117_g_Custom = {{ id = "Tìm Chí Tôn Bäo ðang tr¥m tß", num = 1}}
 x999117_g_ContinueInfo = ""
 x999117_g_MissionComplete = "#{DHJDY_240521_85}"
 

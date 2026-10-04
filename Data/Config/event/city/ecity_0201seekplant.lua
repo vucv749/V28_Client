@@ -26,8 +26,8 @@ x600008_g_IsMissionOkFail = 0							-- ??????
 
 --nhi®m vø vån bän miêu tä
 x600008_g_MissionName = "Nhi®m vø phát tri¬n"
-x600008_g_MissionInfo = "Hôm nay ta nghî Yêu %s Li­u, ði giúp Ngã Träo ðªn ðây ði!"			--????
-x600008_g_MissionTarget = "Tìm kiªm%i, giao cho bang hµi thành th¸ Ðích Chu Thª Hæu (129, 99). #r#{BHRW_091224_1}"	--????
+x600008_g_MissionInfo = "    Hôm nay ta mu¯n có %s, ði tìm v« giúp ta nhé!"			--????
+x600008_g_MissionTarget = "    Tìm %i, giao cho Chu Thª Hæu ( 129, 99 ) · thành bang hµi.#r#{BHRW_091224_1}"	--????
 x600008_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
 x600008_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
 x600008_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."					--????npc????

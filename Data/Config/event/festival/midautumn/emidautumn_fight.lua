@@ -21,9 +21,9 @@ x050010_g_MissionLevel = 10000
 -- nhi®m vø vån bän miêu tä
 x050010_g_MissionName = "San b¢ng nh¤t ph¦m ðß¶ng"
 x050010_g_MissionInfo = "    T¯t, t¤m lòng t§n trung báo qu¯c th§t ðáng khâm phøc. Gi¶ dçn các hÕ ði thåm chiªn khu"			--????
-x050010_g_MissionTarget = "Ðánh chªt ðªn t× Nh¤t Ph¦m Ðß¶ng Ðích cao thü Ho£c ð¥u møc."						-- ????
+x050010_g_MissionTarget = "    Tiêu di®t cao thü ho£c ð¥u møc ðªn t× Nh¤t Ph¦m Ðß¶ng."						-- ????
 x050010_g_ContinueInfo = "Các hÕ trên ngß¶i tña h° cûng không có Linh Bài, Giao Tñ t× ðâu nói ðªn?"				--??????npc??
-x050010_g_MissionComplete = "R¤t t¯t r¤t t¯t, vì nß¾c hi®u lñc, Nãi Ngã B¯i ¿ng lâm vào Sñ."				--????npc???
+x050010_g_MissionComplete = "    R¤t t¯t, r¤t t¯t, vì nß¾c ra sÑc là vi®c b÷n ta nên làm."				--????npc???
 
 x050010_g_IsMissionOkFail = 0				-- 0?:????????(0???;1??)
 x050010_g_Param_sceneid = 1					-- 1?:??????????

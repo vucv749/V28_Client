@@ -48,7 +48,7 @@ x808010_g_StrList = {
 	"Vû TÕ Ca Ðài · Thái H° #{_INFOAIM160,252,4,}",
 	"Giang S½n Ða Ki«u · Tung S½n #{_INFOAIM275,85,3,}",
 	"Nh¤t V÷ng H± Bào · Tây H° #{_INFOAIM170,235,30,}",
-	"Bách Khä Tranh Lßu · Nhî Häi #{_INFOAIM260,270,24,}",
+	"Bách Khä Tranh Lßu · Nhî Häi#{_INFOAIM260,270,24,}",
 	"Phong Ki«u T¸ch Chiªu · NhÕn Nam #{_INFOAIM150,250,18,}",
 	"Phi Lßu Trñc HÕ · Long Tuy«n #{_INFOAIM270,280,31,}",
 	"Tñ Thüy Niên Hoa · Thß½ng S½n #{_INFOAIM258,73,25,}",

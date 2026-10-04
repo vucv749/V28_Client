@@ -29,7 +29,7 @@ x210205_g_IfMissionElite = 0
 --nhi®m vø Danh
 x210205_g_MissionName="Quen biªt b¢ng hæu m¾i"
 x210205_g_MissionInfo="#{event_dali_0008}"
-x210205_g_MissionTarget="TÕi#GTHành ÐÕi Lý Ngû Hoa Ðàn#Wtìm ðßþc tÑ ðÕi hi«n nhân mµt trong Ðích#RTi«n Long#W#{_INFOAIM145, 139, 2, Ti«n Long}. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"
+x210205_g_MissionTarget="Ðªn #GNgû Hoa Ðàn thành ÐÕi Lý#W tìm mµt trong TÑ ÐÕi Thi®n Nhân là #RTi«n Long#W#{_INFOAIM145,139,2,Ti«n Long}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân, s¨ giúp các hÕ tìm ðßþc NPC này)#l"
 x210205_g_MissionComplete="#{event_dali_0009}"
 x210205_g_MoneyBonus=1
 x210205_g_SignPost = {x = 145, z = 138, tip = "Ti«n Long"}

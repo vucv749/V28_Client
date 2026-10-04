@@ -29,7 +29,7 @@ x791102_g_MissionName						= "#{SBYR_230707_27}"
 x791102_g_MissionTarget						= "#{SBYR_230707_110}"	
 -- nhi®m vø tham s¯ 0Hào Ti«m quy t¡c chï có th¬ dùng làm d¤u hi®u nhi®m vø hay không hoàn thành, Hµi tñ ðµng änh hß·ng hµ khách Ðoan nhi®m vø Li®t Bi¬u hay không bi¬u hi®n Dî hoàn thành
 x791102_g_IsMissionOkFail					= 0
-x791102_g_Custom 							= {{ id = "Nh§n ðßþc Vß½ng Vû Ðích Thü Tín", num = 1}, {id="Tìm ðßþc ba gã ti¬u thß½ng", num=3} } 
+x791102_g_Custom 							= {{ id = "Nh§n ðßþc quà cüa Vß½ng Vû", num = 1}, {id="Tìm ðßþc ba gã ti¬u thß½ng", num=3} } 
 x791102_g_ContinueInfo 						= ""
 -- hoàn thành nhi®m vø Ðích NPCð¯i thoÕi
 x791102_g_MissionComplete 					= "#{}"

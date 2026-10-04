@@ -31,7 +31,7 @@ x600038_g_MissionInfo			= "Thành th¸ nµi chính-kiªn thiªt nhi®m vø"					--????
 x600038_g_MissionTarget		= "%f"										--????
 x600038_g_ContinueInfo		= "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"				--??????npc??
 x600038_g_SubmitInfo			= "    Sñ tình tiªn tri¬n nhß thª nào r°i?"				--???????npc??
-x600038_g_MissionComplete	= "R¤t t¯t r¤t t¯t, kiªn trúc Ðích tiªn ðµ Hñu nhanh h½n Li­u."		--????npc????
+x600038_g_MissionComplete	= "    R¤t t¯t, r¤t t¯t, tiªn ðµ xây dñng lÕi tång nhanh r°i."		--????npc????
 
 x600038_g_Parameter_Item_IDRandom = { { id = 4, num = 1 } }
 

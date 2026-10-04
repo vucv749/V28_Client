@@ -22,9 +22,9 @@ x050009_g_MissionLevel = 10000
 x050009_g_MissionName = "Nhi®m vø trung thu"
 x050009_g_MissionInfo = "    Nghe giang h° ð°n r¢ng, g¥n ðây có mµt s¯ cao thü nh¤t ph¦m ðß¶ng s¨ t¾i dñ l­ trung thu" ..
 				"T¤n công ÐÕi T¯ng ta, lúc ðó ðã b¸ tß¾ng quân Dß½ng Vån Quäng phong töa tÕi" ..
-				"Ðµi Hoàng, Nhî có b¢ng lòng hay không vì nß¾c Nhi Chiªn?"								-- ????
+				"Ðôn Hoàng, các hÕ có nguy®n chiªn ð¤u vì nß¾c không?"								-- ????
 
-x050009_g_MissionTarget = "Hi®n tÕi nhanh ði Ðµi Hoàng(252, 144) Dß½ng Vån Quäng tß¾ng quân n½i ðó hi®p trþ Tha ngån cän Nh¤t Ph¦m Ðß¶ng cao thü Ðích tiªn công."	-- ????
+x050009_g_MissionTarget = "    Bây gi¶ hãy mau ðªn ch² tß¾ng quân Dß½ng Vån Quäng · Ðôn Hoàng (252, 144) giúp ông ¤y ch¯ng lÕi cuµc t¤n công cüa cao thü Nh¤t Ph¦m Ðß¶ng."	-- ????
 
 x050009_g_ContinueInfo = "    "				-- ??????npc??
 x050009_g_MissionComplete = ""				-- ????npc???

@@ -23,11 +23,11 @@ x050102_g_MissionLevel = 10000
 
 -- nhi®m vø vån bän miêu tä
 x050102_g_MissionName = "Sào huy®t cüa phï"
-x050102_g_MissionInfo = "R¯t cøc tìm ðßþc ðÕo t£c Ðích ± Li­u, %s, phía dß¾i còn có càng thêm tr÷ng yªu Ðích nhi®m vø giao cho Nhî. KhÑ giªt chªt ðÕo t£c thü lînh Cát Vinh, vì nhà cüa chúng ta Viên!"	-- ????
-x050102_g_MissionTarget = "Tô Châu Ðích Ti«n H°ng Vû#{_INFOAIM62, 162, 1, Ti«n Hoành Vû}cho ngß½i giªt chªt ðÕo t£c thü lînh Cát Vinh. #r #{FQSH_090206_01}"									-- ????
-x050102_g_ContinueInfo = "ThØ KhÑ sào huy®t tiêu di®t thª t¤t khó khån th§t mÕnh, %s, Nhî chu¦n b¸ t¯t Li­u Ma?"			-- ??????npc??
-x050102_g_SubmitInfo = "Nhi®m vø làm ðßþc thª nào Li­u?"										-- ??????
-x050102_g_MissionComplete = "Cho ngß½i hoan hô, tôn kính Ðích%s, Cäm TÕ Nhî chính tay ðâm trùm th± phï, cho chúng ta mang ðªn Li­u hòa bình. Thïnh nh§n l¤y này ðó t£ng."	--????npc???
+x050102_g_MissionInfo = "    Cu¯i cùng cûng tìm ra sào huy®t cüa b÷n th± phï, %s, tiªp theo còn có nhi®m vø quan tr÷ng h½n giao cho các hÕ. Hãy ði giªt thü lînh th± phï Cát Vinh, vì quê hß½ng cüa chúng ta!"	-- ????
+x050102_g_MissionTarget = "    Ti«n Hoành Vû #{_INFOAIM62,162,1,Ti«n Hoành Vû} · Tô Châu bäo các hÕ giªt thü lînh th± phï Cát Vinh.#r    #{FQSH_090206_01}"									-- ????
+x050102_g_ContinueInfo = "    Chuyªn ti­u phï · sào huy®t l¥n này ¡t s¨ gian nan trùng trùng, %s, các hÕ ðã sÇn sàng chßa?"			-- ??????npc??
+x050102_g_SubmitInfo = "    Nhi®m vø làm ðªn ðâu r°i?"										-- ??????
+x050102_g_MissionComplete = "    Hoan hô các hÕ, %s ðáng kính, cäm ½n các hÕ ðã tñ tay giªt tên thü lînh th± phï, mang lÕi hòa bình cho chúng ta. Xin hãy nh§n nhæng món quà này."	--????npc???
 
 x050102_g_IsMissionOkFail = 0														-- 0 ?:????????(0???;1??;2??)
 x050102_g_DemandKill = { { id = 4130, num = 1 } }									-- 1 ?,????

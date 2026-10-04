@@ -27,7 +27,7 @@ x200015_g_MissionKind = 48
 x200015_g_MissionName="Chï Ði¬m Qu¥n Hào"
 x200015_g_MissionInfo="#{Mis_juqing_0014}"
 x200015_g_MissionTarget="#{Mis_juqing_Tar_0014}"	--????
-x200015_g_MissionComplete="$N, cüa ngß½i ân cÑu mÕng, ngày khác ±n thöa Báo Hoàn. Chính là, Ngã hi®n tÕi Thân Trung k¸ch ðµc...không biªt hay không còn có c½ hµi h°i báo ðÕi hi®p..."	--????npc????
+x200015_g_MissionComplete="  $N, ½n cÑu mÕng cüa các hÕ, ngày sau ta nh¤t ð¸nh s¨ báo ðáp. Chï là, gi¶ ta ðang trúng k¸ch ðµc... không biªt còn có c½ hµi báo ðáp ðÕi hi®p hay không..."	--????npc????
 x200015_g_MissionContinue="  Ngß½i ðã giúp Ðoàn công tØ ðánh lui các võ sî Tây HÕ sao?"
 
 x200015_g_MoneyJZBonus=23760

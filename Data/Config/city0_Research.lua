@@ -82,9 +82,9 @@ x805026_g_MissionInfo_2="#{city0_levelup_0001}"
 
 x805026_g_MissionTarget="C¤p bang hµi ÐÕi t±ng quän 5Cá Kim T®"
 
-x805026_g_MissionContinue="Nhî Hæu 5Cá Kim T® Li­u Ma?"
+x805026_g_MissionContinue="Các hÕ ðã có 5 Vàng chßa?"
 
-x805026_g_MissionComplete="Ân, làm ðßþc không t°i. Xem ra Nhî r¤t có Ti«n Ma."
+x805026_g_MissionComplete="  »m, làm t¯t l¡m. Xem ra các hÕ cûng giàu có ð¤y nhï."
 
 x805026_g_MoneyBonus=0
 

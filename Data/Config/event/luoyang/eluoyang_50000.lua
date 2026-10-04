@@ -16,9 +16,9 @@ x250000_g_rand = 0					--???1?
 --nhi®m vø vån bän miêu tä
 x250000_g_MissionName="Ta mu¯n bán trân thú"
 x250000_g_MissionInfo="Thïnh giúp ta vþ con Thß b¡t giæ Trân Thú."  --????
-x250000_g_MissionTarget="Hoàn thành Sa Châu Lãnh Ðích nhi®m vø."		--????
-x250000_g_ContinueInfo="Nhi®m vø làm xong Li­u Ma?"		--??????npc??
-x250000_g_MissionComplete="Th§t cám ½n Nhî Li­u!"					--????npc???
+x250000_g_MissionTarget="    Hoàn thành nhi®m vø cüa Sa Châu Lãnh."		--????
+x250000_g_ContinueInfo="Nhi®m vø làm xong chßa?"		--??????npc??
+x250000_g_MissionComplete="Th§t cäm ½n các hÕ!"					--????npc???
 
 --nhi®m vø thß·ng cho
 

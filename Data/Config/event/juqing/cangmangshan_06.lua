@@ -24,7 +24,7 @@ x200035_g_MissionKind = 52
 x200035_g_MissionName="TÑ Di®n S· Ca"
 x200035_g_MissionInfo="#{Mis_juqing_0030}"
 x200035_g_MissionTarget="#{Mis_juqing_Tar_0030}"	--????
-x200035_g_MissionComplete="R¶i ði? Không có khä nång! Ta s¨ không T¦u Ðích, Ngã Hoà nghîa huynh kªt nghîa kim lan là lúc, nhìn tr¶i minh ß¾c, có phúc cùng hß·ng, có nÕn cùng ch¸u, tÕi ðây nguy c½ th¶i ði¬m Khí h¡n cùng v¾i không ð¬ ý, Ngã Tiêu Phong Th¸ tuy®t ð¯i s¨ không T¯ Ðích."	--????npc????
+x200035_g_MissionComplete="  R¶i ði? Không th¬ nào! Ta s¨ không ði ðâu cä. Khi ta và nghîa huynh kªt nghîa kim lan ðã th« v¾i tr¶i cao, có phúc cùng hß·ng, có h÷a cùng ch¸u. Bö m£c huynh ¤y vào lúc nguy nan này, Tiêu Phong ta tuy®t ð¯i không làm."	--????npc????
 
 x200035_g_MoneyJZBonus=1980
 x200035_g_exp=1440

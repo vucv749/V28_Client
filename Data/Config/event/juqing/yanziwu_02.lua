@@ -27,7 +27,7 @@ x200012_g_MissionKind = 48
 x200012_g_MissionName="Ðµc chiªn song hùng"
 x200012_g_MissionInfo="#{Mis_juqing_0011}"
 x200012_g_MissionTarget="#{Mis_juqing_Tar_0011}"	--????
-x200012_g_MissionComplete="Th§t t¯t quá, này ngß¶i x¤u nh¤t ð¸nh Hµi Hách Bào Ðích, chúng ta an toàn Li­u."	--????npc????
+x200012_g_MissionComplete="  T¯t quá, ðám ngß¶i x¤u ðó ch¡c ch¡n s¨ b¸ d÷a chÕy m¤t, chúng ta an toàn r°i."	--????npc????
 x200012_g_MissionContinue="  Ngß½i ðã ðánh bÕi ðßþc Tß Mã Lâm và Ðào Bách Ðß½ng, ðã ðßþc Lôi Công Oanh và Ngû H± ÐoÕn Môn Ðao chßa?"
 
 x200012_g_MoneyJZBonus=8910

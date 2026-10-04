@@ -26,7 +26,7 @@ x600032_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600032_g_MissionName = "Truy b¡t kë phän bµi"
 x600032_g_MissionInfo = ""													--????
-x600032_g_MissionTarget = "Ngã Bang ð® tØ%s%1s, ðánh c¡p Li­u B±n Thành tr÷ng yªu Tình Báo, Nhî nhanh ði tìm ðßþc%2n, Tha Hµi hi®p trþ chúng ta Ðích hành ðµng Ðích. #r#{BHRW_091224_1}"	--????
+x600032_g_MissionTarget = "    Ð® tØ b±n bang %s%1s ðã ðánh c¡p ðßþc tình báo quan tr÷ng cüa thành này, các hÕ mau ði tìm %2n, ngß¶i ðó s¨ h² trþ hành ðµng cüa chúng ta.#r#{BHRW_091224_1}"	--????
 x600032_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
 x600032_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."						--????npc????
 

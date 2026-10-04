@@ -24,7 +24,7 @@ x890073_g_IfMissionElite = 0
 x890073_g_MissionName="#{BLCC_20221214_270}"
 x890073_g_MissionTarget="#{BLCC_20221214_98}"
 x890073_g_IsMissionOkFail=0
-x890073_g_Custom = {{id = "Khu Cän cu°ng nhi®t Ðích tµc nhân", num = 10}} --??
+x890073_g_Custom = {{id = "Xua ðu±i tµc nhân cu°ng nhi®t", num = 10}} --??
 x890073_g_ContinueInfo = ""
 x890073_g_MissionComplete = "#{BLCC_20221214_97}"
 

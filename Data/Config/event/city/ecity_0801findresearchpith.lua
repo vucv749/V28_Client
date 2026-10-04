@@ -31,7 +31,7 @@ x600041_g_MissionInfo			= "Thành th¸ nµi chính-nghiên cÑu nhi®m vø"									--??
 x600041_g_MissionTarget			= "%f"													--????
 x600041_g_ContinueInfo			= "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"							--??????npc??
 x600041_g_SubmitInfo			= "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
-x600041_g_MissionComplete		= "R¤t t¯t r¤t t¯t, nghiên cÑu tiªn ðµ Hñu nhanh h½n Li­u không ít."				--????npc????
+x600041_g_MissionComplete		= "    R¤t t¯t, r¤t t¯t, tiªn ðµ nghiên cÑu lÕi tång nhanh không ít."				--????npc????
 
 x600041_g_Parameter_Item_IDRandom = { { id = 4, num = 1 } }
 
@@ -40,7 +40,7 @@ x600041_g_StrForePart			= 2
 --dùng ð¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ðích s¯ li®u
 x600041_g_FormatList			= {
 	"",
-	"M§t Tín Viªt: Trình Ngô Hæu Quý Bang thü lînh, S· ðßa t¾i%2iDî thu ðßþc, C¤u Nh§p Chi ngân lßþng theo sau dâng. Ngô Ðang T¸nh H§u ðÕi giá t¾i l¤y. Hæu: %1nkh¤u ð¥u. #r#{BHRW_091224_1}",	--1 ????
+	"    M§t thß viªt: Kính gØi thü lînh quý bang, b¢ng hæu cüa ta. %2i quý bang gØi t¾i ðã nh§n ðßþc, ngân lßþng mua hàng s¨ dâng lên sau. Ta xin cung kính ch¶ ðÕi giá ðªn l¤y. B¢ng hæu %1n kính bút.#r#{BHRW_091224_1}",	--1 ????
 	"Tìm ðßþc%3nðoÕt lÕi%2i. #r#{BHRW_091224_1}",																				--2 ??????
 	"Tß¾ng%2iträ lÕi C¤p bang hµi ÐÕi t±ng quän. #r#{BHRW_091224_1}"																			--3 ??
 }

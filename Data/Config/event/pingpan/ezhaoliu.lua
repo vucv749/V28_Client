@@ -25,10 +25,10 @@ x311005_g_MissionRound = 1
 
 --nhi®m vø vån bän miêu tä
 x311005_g_MissionName="Bình ð¸nh phiªn loÕn"
-x311005_g_MissionInfo="Chúng ta ðã n¡m giæ Li­u Ngû Ðài S½n phän quân Ðích toàn bµ chi tiªt, ngß½i ði Hoà Tr¥n Vînh Nhân liên h®, giªt chªt toàn bµ phän quân, mµt cái b¤t lßu!"  --????
-x311005_g_MissionTarget="TÕi Lßu Ki®n Minh Ðích dß¾i sñ trþ giúp tiªn vào Các hÕ Quân Dinh Ð¸a, giªt chªt 1Danh phän quân thü lînh, 13Danh phän quân thü v®, 6Danh phän quân bäo v® cØa"	--????
+x311005_g_MissionInfo="Chúng ta ðã n¡m rõ toàn bµ nµi tình cüa phän quân Ngû Ðài S½n, các hÕ hãy liên lÕc v¾i Tr¥n Vînh Nhân, giªt sÕch phän quân, không ch×a mµt tên!"  --????
+x311005_g_MissionTarget="V¾i sñ giúp ðÞ cüa Lßu Ki®n Minh, tiªn vào doanh trÕi phän quân, giªt 1 Phän Quân Thü Lînh, 13 Phän Quân Thü V®, 6 Phän Quân Môn V®"	--????
 x311005_g_ContinueInfo="Nhî Yêu tiªp tøc c¯ g¡ng A!"	--??????npc??
-x311005_g_MissionComplete="Cám ½n A, Y¬m Môn r¯t cøc Cäm xu¤t môn Li­u"	--????npc????
+x311005_g_MissionComplete="Cäm ½n nhé, cu¯i cùng b÷n ta cûng dám ra khöi nhà r°i"	--????npc????
 
 
 --nhi®m vø thß·ng cho

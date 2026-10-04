@@ -73,7 +73,7 @@ end
 function GameTools6_ItemSearch_OK_Clicked()
 	local str1 = GameTools6_ItemSearch_Text2:GetText();
 	if str1 == "" then
-		PushDebugMessage("Tìm tòi nµi dung Vi Không. Thïnh ðßa vào ðÕo cø Ðích tên Ho£c IDm· ra Thï tìm tòi.")
+		PushDebugMessage("Nµi dung tìm kiªm tr¯ng. Hãy nh§p tên ho£c ID ðÕo cø ð¬ b¡t ð¥u tìm kiªm.")
 		return
 	end
 	GameTools6_ItemSearch_Act:SetActionItem(-1);
@@ -188,7 +188,7 @@ function GameTools6_ItemSearch_OK_Clicked()
 	end
 	-- ¼ì²éÊÇ·ñ³¬¹ý×î´óÊýÁ¿ÏÞÖÆ²¢ÌáÊ¾
     if int1 >= maxDisplayCount then
-        local warningMessage = "#RcÄnh cáo: S¯ li®u Lßþng quá l¾n, Thïnh Tä Canh k¬ lÕi Ðích tìm tòi m¤u ch¯t T×."
+        local warningMessage = "#RCänh báo: Dæ li®u quá l¾n, hãy nh§p t× khóa tìm kiªm chi tiªt h½n."
         GameTools6_ItemSearch_List:AddItem(warningMessage, 0)
     end
 end

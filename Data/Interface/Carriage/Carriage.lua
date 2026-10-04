@@ -425,7 +425,7 @@ function Carriage_Trade_Update()
 		Carriage_Background_Facia:SetProperty("Image", "set:Carriage4 image:Carriage4_LuoYang");
 		Carriage_Freight_Buy_1_2:Hide();
 		Carriage_Freight_Buy_1_1:Show();
-		Carriage_Freight_Buy_1_1:SetToolTip("Mu¯i, sän xu¤t t× LÕc Dß½ng #rNh¤p mua#rGiá: #{_EXCHG"..Get_XParam_INT(2).."}");
+		Carriage_Freight_Buy_1_1:SetToolTip("Mu¯i, sän xu¤t tÕi LÕc Dß½ng#rNh¤p ð¬ mua vào#rGiá hi®n tÕi: #{_EXCHG"..Get_XParam_INT(2).."}");
 		Carriage_Freight_Buy_1_Info : SetText("Mu¯i")
 		Carriage_Money_Buy_1:SetProperty("MoneyNumber", tostring(Get_XParam_INT(2)));
 		Carriage_Money_Buy_1:Show();
@@ -457,7 +457,7 @@ function Carriage_Trade_Update()
 		Carriage_Background_Facia:SetProperty("Image", "set:Carriage4 image:Carriage4_Dali");
 		Carriage_Freight_Buy_1_1:Hide();
 		Carriage_Freight_Buy_1_2:Show();
-		Carriage_Freight_Buy_1_2:SetToolTip("S¡t, sän xu¤t t× ÐÕi Lý #rNh¤p mua#rGiá: #{_EXCHG"..Get_XParam_INT(2).."}");
+		Carriage_Freight_Buy_1_2:SetToolTip("S¡t, sän xu¤t tÕi ÐÕi Lý#rNh¤p ð¬ mua vào#rGiá hi®n tÕi: #{_EXCHG"..Get_XParam_INT(2).."}");
 		Carriage_Freight_Buy_1_Info : SetText("S¡t")
 		Carriage_Money_Buy_1:SetProperty("MoneyNumber", tostring(Get_XParam_INT(2)));
 		Carriage_Money_Buy_1:Show();
@@ -490,7 +490,7 @@ function Carriage_Trade_Update()
 		Carriage_Background_Facia:SetProperty("Image", "set:Carriage4 image:Carriage4_Suzhou");
 		Carriage_Freight_Buy_2_2:Hide();
 		Carriage_Freight_Buy_2_3:Show();
-		Carriage_Freight_Buy_2_3:SetToolTip("GÕo, sän xu¤t t× Tô Châu #rNh¤p mua#rGiá: #{_EXCHG"..Get_XParam_INT(2).."}");
+		Carriage_Freight_Buy_2_3:SetToolTip("GÕo, sän xu¤t tÕi Tô Châu#rNh¤p ð¬ mua vào#rGiá hi®n tÕi: #{_EXCHG"..Get_XParam_INT(2).."}");
 		Carriage_Freight_Buy_2_Info : SetText("GÕo")
 		Carriage_Money_Buy_2:SetProperty("MoneyNumber", tostring(Get_XParam_INT(2)));
 		Carriage_Money_Buy_2:Show();
@@ -700,11 +700,11 @@ function Carriage_Trade_Update_Price(misIndex,nPrice_UpOrDown)
 				Price = DataPool:GetPlayerMission_Variable(misIndex,Price_Down)
 	
 				if nTransNPC == 1 then
-					Carriage_Freight_Buy_1_1:SetToolTip("Mu¯i, sän xu¤t t× LÕc Dß½ng #rNh¤p mua#rGiá: #{_EXCHG"..Price.."}");
+					Carriage_Freight_Buy_1_1:SetToolTip("Mu¯i, sän xu¤t tÕi LÕc Dß½ng#rNh¤p ð¬ mua vào#rGiá hi®n tÕi: #{_EXCHG"..Price.."}");
 				elseif nTransNPC == 2 then
-					Carriage_Freight_Buy_1_2:SetToolTip("S¡t, sän xu¤t t× ÐÕi Lý #rNh¤p mua#rGiá: #{_EXCHG"..Price.."}");
+					Carriage_Freight_Buy_1_2:SetToolTip("S¡t, sän xu¤t tÕi ÐÕi Lý#rNh¤p ð¬ mua vào#rGiá hi®n tÕi: #{_EXCHG"..Price.."}");
 				elseif nTransNPC == 3 then
-					Carriage_Freight_Buy_2_3:SetToolTip("GÕo, sän xu¤t t× Tô Châu #rNh¤p mua#rGiá: #{_EXCHG"..Price.."}");
+					Carriage_Freight_Buy_2_3:SetToolTip("GÕo, sän xu¤t tÕi Tô Châu#rNh¤p ð¬ mua vào#rGiá hi®n tÕi: #{_EXCHG"..Price.."}");
 				end
 				
 				if nTransNPC == 3 then
@@ -884,7 +884,7 @@ function Refresh_My_Freight()
 		Carriage_Freight5:Hide();
 	else
 		Carriage_Freight5:Show();
-		Carriage_Freight5:SetToolTip("Mu¯i, sän xu¤t t× LÕc Dß½ng #rNh¤p bán#rGiá: #{_EXCHG"..Sell_Price.."}");
+		Carriage_Freight5:SetToolTip("Mu¯i, sän xu¤t tÕi LÕc Dß½ng#rNh¤p ð¬ bán ra#rGiá hi®n tÕi: #{_EXCHG"..Sell_Price.."}");
 	end
 		
 	Cargo_Standard = 10
@@ -892,7 +892,7 @@ function Refresh_My_Freight()
 		Carriage_Freight6:Hide();
 	else
 		Carriage_Freight6:Show();
-		Carriage_Freight6:SetToolTip("S¡t, sän xu¤t t× ÐÕi Lý #rNh¤p bán#rGiá: #{_EXCHG"..Sell_Price.."}");
+		Carriage_Freight6:SetToolTip("S¡t, sän xu¤t tÕi ÐÕi Lý#rNh¤p ð¬ bán ra#rGiá hi®n tÕi: #{_EXCHG"..Sell_Price.."}");
 	end
 		
 	Cargo_Standard = 1
@@ -900,7 +900,7 @@ function Refresh_My_Freight()
 		Carriage_Freight7:Hide();
 	else
 		Carriage_Freight7:Show();
-		Carriage_Freight7:SetToolTip("GÕo, sän xu¤t t× Tô Châu #rNh¤p bán#rGiá: #{_EXCHG"..Sell_Price.."}");
+		Carriage_Freight7:SetToolTip("GÕo, sän xu¤t tÕi Tô Châu#rNh¤p ð¬ bán ra#rGiá hi®n tÕi: #{_EXCHG"..Sell_Price.."}");
 	end
 	
 	Carriage_Info1:SetText("Quan phiªu còn: ")

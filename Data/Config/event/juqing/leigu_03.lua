@@ -27,7 +27,7 @@ x200042_g_MissionKind = 53
 x200042_g_MissionName="Thua th¡ng thành bÕi ai biªt ðßþc"
 x200042_g_MissionInfo="#{Mis_juqing_0035}"
 x200042_g_MissionTarget="#{Mis_juqing_Tar_0035}"	--????
-x200042_g_MissionComplete="Không ng¶ Giá Ti¬u Hoà Thßþng cß nhiên giäi khai Trân Lung KÏ Cøc! Tô Tinh Hà vô cùng cäm kích. Ðinh Xuân Thu không th¬ thñc hi®n ðßþc, n½i này có cüa ngß½i mµt nØa công lao."	--????npc????
+x200042_g_MissionComplete="  Không ng¶ ti¬u hòa thßþng này lÕi phá giäi ðßþc Trân Lung KÏ Cøc! Tô Tinh Hà vô cùng cäm kích. Ðinh Xuân Thu không th¬ ð¡c thü, trong ðó có mµt nØa công lao cüa các hÕ."	--????npc????
 x200042_g_MissionContinue="  Th§t không ng¶, không ng¶... Bàn c¶ này lÕi ði thành thª này.."
 
 x200042_g_MoneyBonus=21600

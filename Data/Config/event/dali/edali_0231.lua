@@ -37,10 +37,10 @@ x210231_g_DemandKill ={{id=703,num=5}}		--???1?
 
 --nhi®m vø vån bän miêu tä
 x210231_g_MissionName="Ti¬u Mµc Nhân HÕng"
-x210231_g_MissionInfo="Thí chü, Giá Ti¬u Mµc Nhân HÕng tuy r¢ng Tï không ðßþc Thiªu Lâm Tñ Mµc Nhân HÕng, Ðãn bên trong Ðích quái v§t cûng là dûng mãnh d¸ thß¶ng. Thïnh thí chü tu luy®n Th¶i lßþng sÑc mà ði. #r thí chü chï c¥n giªt TØ 5Chích Mµc Ð¥u Nhân, Tñu hoàn thành Li­u l¥n này tu luy®n. Mµt l¥n không có ðánh Hoàn cûng không quan tr÷ng h½n, thí chü có th¬ l£p lÕi xu¤t nh§p Mµc Nhân HÕng, thÆng ðªn hoàn thành m¾i thôi." --????
-x210231_g_MissionTarget="Träo#RHOàng Mi Tång#W#{_INFOAIM275, 49, 2, Hoàng Mi Tång}tiªn vào Ti¬u Mµc Nhân HÕng, TÕi#GTi¬u Mµc Nhân HÕng#WTrung giªt chªt 5Chích#RMµc Ð¥u Nhân#W, sAu ðó tr· lÕi#RHoàng Mi Tång#W#{_INFOAIM275, 49, 2, Hoàng Mi Tång}n½i ðó. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"	--????
-x210231_g_ContinueInfo="Nhî ðã giªt chªt Li­u 5Cá Mµc Ð¥u Nhân Li­u Ma?"	--??????npc??
-x210231_g_MissionComplete="Thí chü Ðích tu luy®n phi thß¶ng thành công, mµt lát không th¤y, võ công tinh tiªn Li­u không ít A."	--????npc????
+x210231_g_MissionInfo="  Thí chü, Ti¬u Mµc Nhân HÕng này tuy không sánh ðßþc v¾i Mµc Nhân HÕng cüa Thiªu Lâm Tñ, nhßng quái v§t bên trong cûng vô cùng hung hãn. Mong thí chü tu luy®n lßþng sÑc mà làm.#r  Thí chü chï c¥n giªt 5 Ngß¶i G² là hoàn thành l¥n tu luy®n này. Mµt l¥n ðánh chßa xong cûng không sao, thí chü có th¬ ra vào Mµc Nhân HÕng nhi«u l¥n cho ðªn khi hoàn thành." --????
+x210231_g_MissionTarget="Tìm #RHoàng Mi Tång#W#{_INFOAIM275,49,2,Hoàng Mi Tång} ð¬ vào Ti¬u Mµc Nhân HÕng, giªt 5 #RNgß¶i G²#W trong #GTi¬u Mµc Nhân HÕng#W, sau ðó quay v« ch² #RHoàng Mi Tång#W#{_INFOAIM275,49,2,Hoàng Mi Tång}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân ð¬ tìm ðªn NPC này)#l"	--????
+x210231_g_ContinueInfo="Các hÕ ðã giªt ðü 5 Ngß¶i G² chßa?"	--??????npc??
+x210231_g_MissionComplete="  Thí chü tu luy®n r¤t thành công, m¾i không g£p mµt lát mà võ công ðã tinh tiªn không ít."	--????npc????
 x210231_g_SignPost = {x = 275, z = 50, tip = "Hoàng Mi Tång"}
 --nhi®m vø thß·ng cho
 x210231_g_MoneyBonus=200

@@ -29,7 +29,7 @@ x210225_g_IfMissionElite = 0
 --nhi®m vø Danh
 x210225_g_MissionName="Ðoàn Diên Khánh"
 x210225_g_MissionInfo="#{event_dali_0035}"
-x210225_g_MissionTarget="TÕi#GTHành ÐÕi Lý phía ðông nam Ðích Ng÷c Nh¸ HÕng#Wtìm ðßþc#RÐoàn Duyên Khánh#W#{_INFOAIM215, 284, 2, Ðoàn Diên Khánh}. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"
+x210225_g_MissionTarget="TÕi #GNg÷c Nhî HÕng phía ðông nam thành ÐÕi Lý#W tìm #RÐoàn Diên Khánh#W#{_INFOAIM215,284,2,Ðoàn Diên Khánh}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân ð¬ tìm ðªn NPC này)#l"
 x210225_g_MissionComplete="#{event_dali_0036}"
 x210225_g_MoneyBonus=72
 x210225_g_SignPost = {x = 215, z = 284, tip = "Ðoàn Diên Khánh"}

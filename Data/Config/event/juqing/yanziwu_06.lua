@@ -24,7 +24,7 @@ x200016_g_MissionKind = 48
 x200016_g_MissionName="Bi Tô Thanh Phong"
 x200016_g_MissionInfo="#{Mis_juqing_0015}"
 x200016_g_MissionTarget="#{Mis_juqing_Tar_0015}"	--????
-x200016_g_MissionComplete="A...cánh tay cüa ta nång ðµng Li­u. Ngã trúng ðµc ðã Giäi Li­u. $N, ÐoÕn công tØ, chúng ta nhanh ði Tô Châu tìm kiªm bi¬u ca Ba."	--????npc????
+x200016_g_MissionComplete="  A... cánh tay ta cØ ðµng ðßþc r°i. Ðµc trong ngß¶i ta ðã ðßþc giäi. $N, Ðoàn công tØ, chúng ta mau ðªn Tô Châu tìm bi¬u ca thôi."	--????npc????
 x200016_g_MissionContinue="  Mau t¾i giúp Ðoàn công tØ"
 
 x200016_g_MoneyJZBonus=29700

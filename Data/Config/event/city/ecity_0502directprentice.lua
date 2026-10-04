@@ -37,10 +37,10 @@ x600025_g_MissionRound = 55
 --nhi®m vø vån bän miêu tä
 x600025_g_MissionName = "Nhi®m vø khuªch trß½ng"
 x600025_g_MissionInfo = ""													--????
-x600025_g_MissionTarget = "Chï ði¬m · ðây Ðích t¤t cä bän bang ð® tØ. #r#{BHRW_091224_1}"	--????
+x600025_g_MissionTarget = "    Chï ði¬m cho t¤t cä ð® tØ b±n bang ðang có m£t.#r#{BHRW_091224_1}"	--????
 x600025_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
 x600025_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
-x600025_g_MissionComplete = "Không h± là bän bang Ðích vî ðÕi ð® tØ, ha ha ha."			--????npc????
+x600025_g_MissionComplete = "    Quä không h± là ð® tØ ßu tú cüa b±n bang, ha ha ha."			--????npc????
 
 x600025_g_Parameter_Kill_CountRandom = { { id = 300469, numNeeded = 2, numKilled = 5 } }
 

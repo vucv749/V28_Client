@@ -300,7 +300,7 @@ end
 --¶ÁÈ¡Êý¾Ý
 function GameTools7_DuQu_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n Ð§u thü tín TÑc Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n xem thông tin")
 		return
 	end
 	Clear_XSCRIPT()
@@ -314,7 +314,7 @@ end
 -- äÊÞID
 function GameTools7_PETID_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_PETIDEdix:GetText())
@@ -330,7 +330,7 @@ end
 --µÈ¼¶
 function GameTools7_Level_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_LevelEdix:GetText())
@@ -346,7 +346,7 @@ end
 --ÊÙÃü
 function GameTools7_life_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_lifeEdix:GetText())
@@ -362,7 +362,7 @@ end
 --¿ìÀÖ
 function GameTools7_happy_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_happyEdix:GetText())
@@ -378,7 +378,7 @@ end
 --ÎòÐÔ
 function GameTools7_WuXing_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_WuXingEdix:GetText())
@@ -394,7 +394,7 @@ end
 --ÊôÐÔ:Á¦ÁéÌå¶¨Éí
 function GameTools7_ShuXing_Clicked(nIndex)
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = -1
@@ -423,7 +423,7 @@ end
 --¸ù¹Ç
 function GameTools7_GenGu_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_GenGuEdix:GetText())
@@ -439,7 +439,7 @@ end
 --³É³¤ÂÊ
 function GameTools7_PetGrow_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_PetGrowEdix:GetText())
@@ -462,7 +462,7 @@ end
 --Ê£ÓàÇ±ÄÜ
 function GameTools7_RemainPoints_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_RemainPointsEdix:GetText())
@@ -478,7 +478,7 @@ end
 --ÊÇ·ñ²éÑ¯¹ý³É³¤ÂÊ
 function GameTools7_ChengZhangLv_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum1 = tonumber(GameTools7_ChengZhangLvButton:GetCheck())  -- 0 ?? 1
@@ -505,7 +505,7 @@ end
 --ÉèÖÃÎåÎ¬ÊôÐÔÖµ
 function GameTools7_ShuXingAttr_Clicked(nIndex)
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = -1
@@ -534,7 +534,7 @@ end
 --ÐÔ¸ñ
 function GameTools7_XingGe_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	Clear_XSCRIPT()
@@ -550,7 +550,7 @@ end
 --ÐÞ¸Ä äÊÞÃû×Ö
 function GameTools7_PetName_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local text = GameTools7_PetNameEdix:GetText()
@@ -568,7 +568,7 @@ end
 --ÅäÅ¼IDÐÞ¸Ä
 function  GameTools7_PeiOu_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local Hex_H = GameTools7_PetPeiOuEdix1:GetText()
@@ -589,7 +589,7 @@ end
 --ÉÏ´Î·±Ö³Ê±¼ä
 function GameTools7_LastProcreate_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_LastProcreateEdix:GetText())
@@ -606,7 +606,7 @@ end
 --µ±Ç°¾­ÑéÐÞ¸Ä
 function GameTools7_Exp_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_ExpEdix:GetText())
@@ -631,7 +631,7 @@ end
 --ÁéÐÔ
 function GameTools7_LingXing_Clicked()
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_ExpEdix:GetText())
@@ -648,7 +648,7 @@ end
 --ÈÚºÏ¶È
 function GameTools7_Si_Shu_Xing_Clicked(nIndex)
 	if g_nSelect_Index == -1 then
-		PushDebugMessage("Thïnh Tiên lña ch÷n c¥n thao tác Ðích cøc cßng")
+		PushDebugMessage("Hãy ch÷n trß¾c Trân Thú c¥n thao tác")
 		return -1
 	end
 	local nNum = tonumber(GameTools7_RongHeEdix:GetText())

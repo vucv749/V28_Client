@@ -27,7 +27,7 @@ x600003_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600003_g_MissionName = "Nhi®m vø công trình"
 x600003_g_MissionInfo = ""													--????
-x600003_g_MissionTarget = "Tìm kiªm%i, giao cho bang hµi thành th¸ Ðích Mã ¿ng Hùng (65, 55). #r#{BHRW_091224_1}"	--????
+x600003_g_MissionTarget = "    Tìm %i, giao cho Mã ºng Hùng ( 65, 55 ) · thành bang hµi.#r#{BHRW_091224_1}"	--????
 x600003_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
 x600003_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
 x600003_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."						--????npc????

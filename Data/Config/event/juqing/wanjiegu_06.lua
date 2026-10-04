@@ -27,8 +27,8 @@ x200006_g_MissionKind = 51
 x200006_g_MissionName="ÐÕi chiªn VÕn Kiªp C¯c"
 x200006_g_MissionInfo="#{Mis_juqing_0006}"
 x200006_g_MissionTarget="#{Mis_juqing_Tar_0006}"	--????
-x200006_g_MissionComplete="Làm Häo, Ðoàn Duyên Khánh không có Giá ba cánh chim tß½ng trþ, Tñu khó có th¬ TÕi VÕn Kiªp C¯c gây sóng gió Li­u."	--????npc????
-x200006_g_MissionContinue="Nhî ðã ðä bÕi Li­u Di®p Nh¸ Nß½ng, NhÕc Lão Tam Hoà Vân Trung HÕc Li­u Ma?"
+x200006_g_MissionComplete="  Làm t¯t l¡m, Ðoàn Diên Khánh không có ba cánh tay ð¡c lñc này trþ giúp thì khó mà gây sóng gió · VÕn Kiªp C¯c ðßþc næa."	--????npc????
+x200006_g_MissionContinue="  Các hÕ ðã ðánh bÕi Di®p Nh¸ Nß½ng, NhÕc Lão Tam và Vân Trung HÕc chßa?"
 
 x200006_g_MoneyJZBonus=1738
 x200006_g_exp=18000

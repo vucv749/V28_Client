@@ -13,7 +13,7 @@ x999119_g_PreMissionId = 2307
 x999119_g_MissionId = 2308
 
 --tiªp nh§n chÑc vø Vø NPC Thüy Liêm Ðµng(XXX, YYY) chí tôn Bäo
-x999119_g_Name1	="Tr¥m tß Ðích chí tôn Bäo"
+x999119_g_Name1	="Chí Tôn Bäo Tr¥m Tß"
 x999119_g_SID1 = 1320
 x999119_g_Pos_X1 = 156
 x999119_g_Pos_Z1 = 45

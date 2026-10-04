@@ -12,7 +12,7 @@ x200037_g_Name = "Tiêu Phong"
 x200037_g_MissionName="Kim Qua Ðãng Kh¤u Ngao Binh"
 x200037_g_MissionInfo="#{Mis_juqing_0031}"
 x200037_g_MissionTarget="#{Mis_juqing_Tar_0031}"	--????
-x200037_g_MissionComplete="$N, l¥n này phän quân quân tâm ðã tan rä Li­u, không nên g¤p gáp, chúng ta th§n tr÷ng, Bä phän loÕn hoàn toàn bình ±n."	--????npc????
+x200037_g_MissionComplete="    $N, l¥n này lòng quân cüa phän quân ðã tan rã r°i, ð×ng nóng vµi, chúng ta cÑ t×ng bß¾c væng ch¡c, d©p yên hoàn toàn cuµc phän loÕn."	--????npc????
 x200037_g_MissionContinue="  S· Vß½ng ðã b¸ di®t, Hoàng Thái Thúc cûng ðã r½i vào tay chúng ta"
 
 x200037_g_MoneyJZBonus=39600

@@ -31,8 +31,8 @@ x890171_g_IfMissionElite = 0
 x890171_g_MissionName="#{ZXJQ_221225_317}"
 x890171_g_MissionTarget="#{ZXJQ_221225_323}"
 x890171_g_IsMissionOkFail=0
-x890171_g_Custom1 = {{id = "Truy«n tin Ðáo Thøc S½n Trúc Häi Giang Hành Vân XØ", num = 1}}
-x890171_g_Custom2 = {{id = "Truy«n tin Ðáo Tây Lß½ng Phong Lâm Nguy­n Phong Miên XØ", num = 1}}
+x890171_g_Custom1 = {{id = "Ðßa thß ðªn ch² Giang Hành Vân · Thøc S½n Trúc Häi", num = 1}}
+x890171_g_Custom2 = {{id = "Ðßa thß ðªn ch² Nguy­n Phong Miên · Tây Lß½ng Phong Lâm", num = 1}}
 x890171_g_ContinueInfo = ""
 x890171_g_MissionComplete = ""
 

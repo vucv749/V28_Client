@@ -32,7 +32,7 @@ x600042_g_MissionInfo			= "Thành th¸ nµi chính-nghiên cÑu nhi®m vø"						--????
 x600042_g_MissionTarget		= "%f"											--????
 x600042_g_ContinueInfo		= "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
 x600042_g_SubmitInfo			= "    Sñ tình tiªn tri¬n nhß thª nào r°i?"					--???????npc??
-x600042_g_MissionComplete	= "R¤t t¯t r¤t t¯t, nghiên cÑu tiªn ðµ Hñu nhanh h½n Li­u không ít."		--????npc????
+x600042_g_MissionComplete	= "    R¤t t¯t, r¤t t¯t, tiªn ðµ nghiên cÑu lÕi tång nhanh không ít."		--????npc????
 
 x600042_g_Parameter_Item_IDRandom = { { id = 4, num = 1 } }
 
@@ -42,8 +42,8 @@ x600042_g_StrForePart			= 2
 x600042_g_FormatList			= {
 	"",
 	"Cån cÑ manh m¯i tìm ra Nµi QuÖ Tính vào tay%2i, T¯ng giao cho%1n. #r#{BHRW_091224_1}",			--1 ???????
-	"Tß¾ng vào tay Ðích%2i, T¯ng giao cho%1n. #r#{BHRW_091224_1}",						--2 ??NPC
-	"Nhi®m vø hoàn thành, có th¬ Ðáo bang hµi ÐÕi t±ng quän ch± lînh thß·ng cho Li­u. #r#{BHRW_091224_1}"		--3 ??
+	"    Ðem %2i ðã l¤y ðßþc giao cho %1n.#r#{BHRW_091224_1}",						--2 ??NPC
+	"    Nhi®m vø ðã hoàn thành, có th¬ ðªn ch² ÐÕi T±ng Quän bang hµi nh§n thß·ng.#r#{BHRW_091224_1}"		--3 ??
 }
 
 --thông døng thành th¸ nhi®m vø k¸ch bän g¯c

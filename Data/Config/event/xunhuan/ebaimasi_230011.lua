@@ -32,7 +32,7 @@ x230011_g_IsMissionOkFail = 0		--????0?
 x230011_g_MissionName="Tu hành BÕch Mã Tñ"
 x230011_g_MissionInfo="#{event_xunhuan_0001}"  --????
 x230011_g_MissionTarget="#{event_xunhuan_0002}"		--????
-x230011_g_ContinueInfo="A Di Ðà Ph§t. . . #rthiªu hi®p có không hoàn thành Li­u ThuÖ Lao nhi®m vø?"		--??????npc??
+x230011_g_ContinueInfo="A Di Ðà Ph§t...#rThiªu hi®p ðã hoàn thành nhi®m vø Thüy Lao chßa?"		--??????npc??
 x230011_g_MissionComplete="Thi®n tai thi®n tai, thiªu hi®p vì nß¾c vì dân, th¤y vi®c nghîa hång hái làm, ngày sau t¤t có mµt phen làm."					--????npc????
 
 --kh¯ng chª k¸ch bän g¯c

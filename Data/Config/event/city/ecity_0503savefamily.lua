@@ -38,7 +38,7 @@ x600026_g_MissionInfo = ""														--????
 x600026_g_MissionTarget = "%f"													--????
 x600026_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"							--??????npc??
 x600026_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"									--???????npc??
-x600026_g_MissionComplete = "R¤t t¯t, l¥n này hành ðµng giang h° biªt rõ, ð«u b¸ XÑng Ngã Bang ðÕi ðÑc ðÕi nghîa."	--????npc????
+x600026_g_MissionComplete = "    R¤t t¯t, l¥n hành ðµng này cä giang h° ð«u biªt, ai ai cûng khen bang ta ðÕi ðÑc ðÕi nghîa."	--????npc????
 
 x600026_g_StrForePart = 3
 

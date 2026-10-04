@@ -24,10 +24,10 @@ x050100_g_MissionLevel = 10000
 -- nhi®m vø vån bän miêu tä
 x050100_g_MissionName = "Di®t G÷n"
 x050100_g_MissionInfo = "    "				-- ????
-x050100_g_MissionTarget = "Tô Châu Ðích Ti«n H°ng Vû#{_INFOAIM62, 162, 1, Ti«n Hoành Vû}cho ngß½i TÕi 30Phút Nµi dçn Tính giªt chªt Dß Ðµc. #r #{FQSH_090206_01}"						-- ????
-x050100_g_ContinueInfo = "Biên cänh mµt tr§n chiªn quan h® tr÷ng ðÕi, nh¤t ð¸nh không th¬ ph¾t l¶. Nhî chu¦n b¸ t¯t ði trß¾c biên cänh Ti­u T£c Li­u Ma?"	-- ??????npc??
-x050100_g_SubmitInfo = "Nhi®m vø làm ðßþc thª nào Li­u?"										-- ??????
-x050100_g_MissionComplete = "Nhî T¯ th§t là t¯t cñc kÏ, chúng ta có th¬ thông qua Giá Kh¯i Linh Bài tìm ðßþc Giá Hoä ðÕo t£c Ðích doanh trÕi. KhÑ tiêu cøc Träo Hoa Kiªm Vû#{_INFOAIM251, 109, 1, Hoa Kiªm Vû}, Tha có th¬ nói cho Nhî Linh Bài Ðích lai l¸ch."	--????npc???
+x050100_g_MissionTarget = "    Ti«n Hoành Vû #{_INFOAIM62,162,1,Ti«n Hoành Vû} · Tô Châu bäo các hÕ trong vòng 30 phút dø ra và giªt Dß Ðµc.#r    #{FQSH_090206_01}"						-- ????
+x050100_g_ContinueInfo = "    Tr§n chiªn · biên cänh h® tr÷ng vô cùng, tuy®t ð¯i không ðßþc l½ là. Các hÕ ðã sÇn sàng ðªn biên cänh ti­u tr× gi£c cß¾p chßa?"	-- ??????npc??
+x050100_g_SubmitInfo = "    Nhi®m vø làm ðªn ðâu r°i?"										-- ??????
+x050100_g_MissionComplete = "    Các hÕ làm t¯t l¡m, chúng ta có th¬ dña vào t¤m l®nh bài này tìm ra sào huy®t cüa b÷n th± phï. Hãy ðªn tiêu cøc tìm Hoa Kiªm Vû #{_INFOAIM251,109,1,Hoa Kiªm Vû}, ông ¤y có th¬ cho các hÕ biªt lai l¸ch cüa l®nh bài."	--????npc???
 
 x050100_g_IsMissionOkFail = 0				-- 0 ?:????????(0???;1??;2??)
 x050100_g_DemandKill = { { id = 4060, num = 50 }, { id = 4070, num = 10 }, { id = 4080, num = 1 }, { id = 4090, num = 1 }, { id = 4100, num = 1 } }	-- 1 ~ 5 ?,????

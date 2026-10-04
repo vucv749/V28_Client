@@ -28,7 +28,7 @@ x998290_g_IsMissionOkFail			= 0
 --nhi®m vø c¥n giªt quái v§t(giªt quái nhi®m vø), idKiªn MonsterAttrExTable. Txt
 --x998290_g_DemandKill 					= {id=779, num=8}
 --Tñ ð¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ði¬n, phân bi®t ð¯i Ñng missionparamÐích Ð® 1V¸ H§u Diên
-x998290_g_Custom							= {{id="Hoàn thành Tô Ðào Ðích khäo nghi®m",num=1}}
+x998290_g_Custom							= {{id="Hoàn thành thØ thách cüa Tô Ðào",num=1}}
 
 --v§t ph¦m thß·ng cho(không c¥n lña ch÷n)
 --x998290_g_ItemBonus						= {{id=38002793, num=1},{id=38002794, num=1}}

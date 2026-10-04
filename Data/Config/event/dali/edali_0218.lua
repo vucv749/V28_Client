@@ -27,9 +27,9 @@ x210218_g_PetDataID = 3000
 
 --nhi®m vø vån bän miêu tä
 x210218_g_MissionName="Ta mu¯n 1 Phiêu Phiêu Th¯"
-x210218_g_MissionInfo="Ðßþc r°i, nhìn ngß½i Th¸ m¾i t¾i Ðích, Tñu cho ngß½i Nh¤t Chích Th¯ TØ Ba, Nhî t¯t t¯t bäo v® Tha."  --????
+x210218_g_MissionInfo="Thôi ðßþc, th¤y ngß½i là ngß¶i m¾i ðªn, ta cho ngß½i mµt con thö, ngß½i phäi yêu thß½ng nó th§t t¯t."  --????
 x210218_g_MissionTarget="Bäo ta mµt tiªng Phiêu Phiêu Thß."		--????
-x210218_g_ContinueInfo="Ðây là Ngã DßÞng Ðích Th¯ TØ Trung ðáng yêu nh¤t Ðích Nh¤t Chích, Nhî t¯t Häo chiªu c¯ Tha."		--??????npc??
+x210218_g_ContinueInfo="Ðây là con thö ðáng yêu nh¤t trong s¯ thö ta nuôi, ngß½i phäi chåm sóc nó th§t t¯t."		--??????npc??
 x210218_g_MissionComplete="TÕi ÐÕi Lý häo häo NgoÕn."					--????npc????
 
 

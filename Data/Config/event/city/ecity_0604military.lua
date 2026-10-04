@@ -26,7 +26,7 @@ x600034_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600034_g_MissionName = "Ám sát tham quan"
 x600034_g_MissionInfo = ""													--????
-x600034_g_MissionTarget = "Tham quan%s%sHi®n Tác%s, Tha Ñc hiªp dân chúng, tiªng oán than d§y ð¤t, Ngã ðã an bài Li­u%nhi¬u biªt t¾i r°i Tình Báo, ám sát Tha Ðích nhi®m vø Tñu giao cho Nhî Li­u. #r#{BHRW_091224_1}"	--????
+x600034_g_MissionTarget = "    Tham quan %s%s hi®n ðang làm %s, h¡n Ñc hiªp bách tính, khiªn dân chúng oán thán kh¡p n½i. Ta ðã s¡p xªp %n dò la ðßþc tình báo, nhi®m vø hành thích h¡n giao cho các hÕ.#r#{BHRW_091224_1}"	--????
 x600034_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
 x600034_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."						--????npc????
 x600034_g_MissionRound = 79

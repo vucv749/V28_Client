@@ -37,7 +37,7 @@ x600004_g_MissionRound = 38
 --nhi®m vø vån bän miêu tä
 x600004_g_MissionName = "Nhi®m vø công trình"
 x600004_g_MissionInfo = ""													--????
-x600004_g_MissionTarget = "Tiêu di®t t¤t cä Ðäo LoÕn Ðích Ti¬u T£c. #r#{BHRW_091224_1}"		--????
+x600004_g_MissionTarget = "    Tiêu di®t t¤t cä b÷n ti¬u t£c gây r¯i.#r#{BHRW_091224_1}"		--????
 x600004_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
 x600004_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
 x600004_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."						--????npc????

@@ -37,7 +37,7 @@ x999192_g_ParamCustom5 = 5--????5
 x999192_g_ParamCustom6 = 6--????6
 
 x999192_g_MissionTarget="#{DSJD_240520_92}"--????(?????????????)
-x999192_g_Custom = {{ id = "Tìm ðßþc con l×a Soái Soái Mao", num = 1},{ id = "Tìm ðßþc màu ðen mänh väi", num = 1},{ id = "Tìm ðßþc ðánh r½i Kim Linh", num = 1},{ id = "Tß¾ng con l×a Ðích Mao giao cho chí tôn Bäo", num = 1},{ id = "Tß¾ng màu ðen mänh väi giao cho chí tôn Bäo", num = 1},{ id = "Tß¾ng ðánh r½i Kim Linh giao cho chí tôn Bäo", num = 1}}--???????,????????,????missionparam??1???
+x999192_g_Custom = {{ id = "Tìm ðßþc con l×a Soái Soái Mao", num = 1},{ id = "Tìm ðßþc màu ðen mänh väi", num = 1},{ id = "Tìm ðßþc ðánh r½i Kim Linh", num = 1},{ id = "Giao lông cüa Mao Lß cho Chí Tôn Bäo", num = 1},{ id = "Tß¾ng màu ðen mänh väi giao cho chí tôn Bäo", num = 1},{ id = "Tß¾ng ðánh r½i Kim Linh giao cho chí tôn Bäo", num = 1}}--???????,????????,????missionparam??1???
 
 --Npc khoäng cách
 x999192_g_NpcDist = 5

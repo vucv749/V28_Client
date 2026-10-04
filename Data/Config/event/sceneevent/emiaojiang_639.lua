@@ -28,7 +28,7 @@ x212115_g_IsMissionOkFail = 0		--????0?
 --nhi®m vø vån bän miêu tä
 x212115_g_MissionName="Dûng cäm xông vào Hàn Ng÷c Tháp"
 x212115_g_MissionInfo="#{Mis_H_Miaojiang_1050003}"
-x212115_g_MissionTarget="Hµ t¯ng A Vû Ðích Linh H°n#{_INFOAIM182, 264, 29, A Vû}KhÑ Hàn Ng÷c Ðáp dß¾i chân, tìm ðßþc Hàn Ng÷c Ðáp Ðích Thü Hµ Giä A Hµi Nam#{_INFOAIM92, 266, 29, A Hµi Nam}."
+x212115_g_MissionTarget="  Hµ t¯ng linh h°n cüa A Vû#{_INFOAIM182,264,29,A Vû} ðªn chân Hàn Ng÷c Tháp, tìm ngß¶i canh giæ Hàn Ng÷c Tháp là A Hµi Nam#{_INFOAIM92,266,29,A Hµi Nam}."
 x212115_g_MissionComplete="  Không sao, ma lñc cüa Hàn Ng÷c Tháp vînh vi­n không nhß các ngß½i tß·ng. Hãy ði ði, lû phàm nhân. Các ngß½i không th¬ vào ðßþc Hàn Ng÷c Tháp. #r#r´, kë phàm nhân kia, vào b¢ng cách nào thª? Mau ra ngay"
 
 --thß·ng cho
@@ -36,7 +36,7 @@ x212115_g_MoneyBonus=16000
 x212115_g_Exp = 30000
 --x212115_g_ItemBonus={{id=10122010,num=1}}
 
-x212115_g_Custom	= { {id="Dî hµ t¯ng A Vû Ðích Linh H°n",num=1} }
+x212115_g_Custom	= { {id="Ðã hµ t¯ng linh h°n cüa A Vû",num=1} }
 
 x212115_g_RadioItemBonus={{id=10413081 ,num=1},{id=10411086,num=1},{id=10412078,num=1}}
 

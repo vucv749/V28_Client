@@ -27,7 +27,7 @@ x600018_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600018_g_MissionName = "Nhi®m vø thß½ng nghi®p"
 x600018_g_MissionInfo = ""			--????
-x600018_g_MissionTarget = "Tìm kiªm%i, giao cho bang hµi thành th¸ Ðích Møc D¸ch (46, 91). #r#{BHRW_091224_1}"	--????
+x600018_g_MissionTarget = "    Tìm %i, giao cho Møc D¸ch ( 46, 91 ) · thành bang hµi.#r#{BHRW_091224_1}"	--????
 x600018_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
 x600018_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
 x600018_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."					--????npc????

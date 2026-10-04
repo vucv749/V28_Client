@@ -6,9 +6,9 @@ local g_DummyGemLayed = 0
 local g_DummyNewGem = 1
 
 local RuleTable = {
-	msgLackMoney = "Nhçm trên ngß¶i Ðích ti«n tài không ðü#{_EXCHG%d}.",
+	msgLackMoney = "Ti«n mang theo trên ngß¶i các hÕ không ðü #{_EXCHG%d}.",
 	maxGrade = 9,
-	msgGradeLimited = "Hþp thành Ðích bäo thÕch cao nh¤t c¤p b§c Vi C¤p 9, Nhçm Ðích bäo thÕch không th¬ tiªp tøc hþp thành.",
+	msgGradeLimited = "Bäo ThÕch hþp thành cao nh¤t là c¤p 9, Bäo ThÕch cüa các hÕ không th¬ tiªp tøc hþp thành.",
 	[1] = { SpecialStuff = 30900015, MoneyCost = 5000 },
 	[2] = { SpecialStuff = 30900015, MoneyCost = 6000 },
 	[3] = { SpecialStuff = 30900015, MoneyCost = 7000 },
@@ -184,7 +184,7 @@ function GemMerge_OK_Clicked()
 	
 	--ÔÝÊ±Ö»¿ª·Å5¼¶±¦Ê¯Éý¼¶
 	if nGemLevel ~= 5 then
-		PushDebugMessage( "Chï có C¤p 5 bäo thÕch m· ra Li­u ThØ công nång" )
+		PushDebugMessage( "Chï Bäo ThÕch c¤p 5 m¾i m· chÑc nång này" )
 		return
 	end
 	if nGemCount < 4 then
@@ -483,7 +483,7 @@ function GemMerge_PutInComposeItem(bagPos)
 	local nComposeItemTableIndex = PlayerPackage:GetItemTableIndex(bagPos)
 	
 	if GemMerge_GetSpecialMaterial() == -1 then
-		PushDebugMessage("RuleTablech¯ng ðÞ hªt n±i Trì hþp thành trß¾c m£t c¤p b§c Ðích bäo thÕch")
+		PushDebugMessage("RuleTable không h² trþ hþp thành Bäo ThÕch · c¤p hi®n tÕi")
 		return	
 	elseif GemMerge_GetSpecialMaterial() ~= nComposeItemTableIndex then
 

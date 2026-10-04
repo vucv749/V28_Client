@@ -26,11 +26,11 @@ x600024_g_IsMissionOkFail = 0							-- ??????
 
 --nhi®m vø vån bän miêu tä
 x600024_g_MissionName = "Nhi®m vø khuªch trß½ng"
-x600024_g_MissionInfo = "Hôm nay ta nghî Yêu %s Li­u, ði giúp Ngã Träo ðªn ðây ði!"			--????
+x600024_g_MissionInfo = "    Hôm nay ta mu¯n có %s, ði tìm v« giúp ta nhé!"			--????
 x600024_g_MissionTarget = "Tß¾ng Kªt Giao Tín C¤p%n. #r#{BHRW_091224_1}"		--????
 x600024_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
 x600024_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
-x600024_g_MissionComplete = "Không t°i không t°i, cái này bän bang Ðích danh khí Hñu TÕi trên giang h° ð« cao Li­u không ít."		--????npc????
+x600024_g_MissionComplete = "    Không t®, không t®, l¥n này danh tiªng cüa b±n bang trên giang h° lÕi tång thêm không ít."		--????npc????
 
 x600024_g_StrForePart = 5
 x600024_g_NPCOffset = 30												-- Suppose to 30, ????? NPC ????

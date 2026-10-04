@@ -28,7 +28,7 @@ x231000_g_MissionKind = 1
 x231000_g_MissionName="Thüy lao"
 x231000_g_MissionInfo="ThuÖ Lao Trung Hæu 10phÕm nhân ð¥u møc nh¤t hung hãn, chï c¥n ðßa b÷n h÷ hªt thäy giªt chªt, có th¬ Tß¾ng t¤t cä phÕm nhân chª phøc."  --????
 x231000_g_MissionTarget="Giªt chªt 10phÕm nhân ð¥u møc"	--????
-x231000_g_ContinueInfo="Nhî ðã giªt chªt 10phÕm nhân ð¥u møc Li­u Ma?"	--??????npc??
+x231000_g_ContinueInfo="Các hÕ ðã giªt 10 tên PhÕm Nhân Ð¥u Møc chßa?"	--??????npc??
 x231000_g_MissionComplete="R¯t cuµc Thüy lao ðã ðßþc giæ væng, sau này chúng ta tuy®t ð¯i không ðßþc l½ là"	--????npc????
 
 --nhi®m vø thß·ng cho

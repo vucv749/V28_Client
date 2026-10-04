@@ -28,7 +28,7 @@ x401000_g_MissionName="Trân Long KÏ Cuµc"
 x401000_g_MissionInfo="Giªt chªt toàn bµ quái v§t, mµt cái b¤t lßu!"  --????
 x401000_g_MissionTarget="Giªt chªt toàn bµ quái v§t"	--????
 x401000_g_ContinueInfo="Nhî Yêu tiªp tøc c¯ g¡ng A!"	--??????npc??
-x401000_g_MissionComplete="Cám ½n A, Y¬m Môn r¯t cøc Cäm xu¤t môn Li­u"	--????npc????
+x401000_g_MissionComplete="Cäm ½n nhé, cu¯i cùng b÷n ta cûng dám ra khöi nhà r°i"	--????npc????
 
 
 --nhi®m vø thß·ng cho

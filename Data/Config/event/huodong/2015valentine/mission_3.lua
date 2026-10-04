@@ -10,6 +10,6 @@ x891042_g_MissionLevel = 30
 x891042_g_MissionName = "Tình Ð¸nh Tam Sinh"
 x891042_g_MissionTarget = "#{YDSS_15018_201}"
 x891042_g_MoneyJZBonus = 0
-x891042_g_Custom = { {id = "Phá giäi câu ð¯ ði«n Tam Sinh ThÕch Ðích tình yêu châm ngôn", num = 1} }
+x891042_g_Custom = { {id = "Giäi câu ð¯, ði«n châm ngôn tình yêu trên Tam Sinh ThÕch", num = 1} }
 
 --MisDescEnd

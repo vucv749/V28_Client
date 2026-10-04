@@ -35,7 +35,7 @@ x210215_g_IfMissionElite = 0
 x210215_g_MissionName="Thú quý lên c¤p r°i"
 x210215_g_MissionInfo="#{event_dali_0021}"  --????
 x210215_g_MissionTarget="#{event_dali_0022}"		--????
-x210215_g_ContinueInfo="Con thö nhö TØ lên t¾i C¤p 2 Li­u Ma?"		--??????npc??
+x210215_g_ContinueInfo="  Thö con ðã lên c¤p 2 chßa?"		--??????npc??
 x210215_g_MissionComplete="#{event_dali_0023}"					--????npc????
 x210215_g_SignPost = {x = 263, z = 129, tip = "Vân Phiêu Phiêu"}
 

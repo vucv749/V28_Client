@@ -29,7 +29,7 @@ x210220_g_IfMissionElite = 0
 --nhi®m vø Danh
 x210220_g_MissionName="Cách b¡t Trân Thú"
 x210220_g_MissionInfo="#{event_dali_0027}"
-x210220_g_MissionTarget="KhÑ#GTHành ÐÕi Lý Ðông Ðích Ðông ðß¶ng cái#WÐích#YTrùng Ði¬u Phß¶ng#Wtìm ðßþc Phß¶ng Chü#RVân Phiêu Phiêu#W#{_INFOAIM265, 129, 2, Vân Phiêu Phiêu}. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"
+x210220_g_MissionTarget="    Ðªn #YTrùng Ði¬u Phß¶ng#W · #Gph¯ Ðông thành ÐÕi Lý#W tìm phß¶ng chü #RVân Phiêu Phiêu#W#{_INFOAIM265,129,2,Vân Phiêu Phiêu}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân ð¬ tìm ðªn NPC này)#l"
 x210220_g_MissionComplete="#{event_dali_0028}"
 x210220_g_MoneyBonus=72
 x210220_g_SignPost = {x = 263, z = 129, tip = "Vân Phiêu Phiêu"}

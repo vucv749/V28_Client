@@ -33,7 +33,7 @@ x229022_g_MissionName="Nhi®m vø liên hoàn"
 x229022_g_MissionInfo=""  --????
 x229022_g_MissionTarget = "%f"
 x229022_g_ContinueInfo="Làm ðßþc không t°i"		--??????npc??
-x229022_g_MissionComplete="Ân, Ngã ðã biªt, Nhî làm ðßþc không t°i"					--????npc????
+x229022_g_MissionComplete="»m, ta biªt r°i, các hÕ làm t¯t l¡m"					--????npc????
 
 --dùng ð¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ðích s¯ li®u
 x229022_g_FormatList = {

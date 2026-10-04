@@ -36,7 +36,7 @@ x210221_g_IsMissionOkFail = 0		--????0?
 x210221_g_MissionName="B¡t ðßþc trân thú r°i"
 x210221_g_MissionInfo="#{event_dali_0029}"  --????
 x210221_g_MissionTarget="#{event_dali_0030}"		--????
-x210221_g_ContinueInfo="Nhî ðã b¡t ðßþc Ti¬u v¸ chªt Li­u?"		--??????npc??
+x210221_g_ContinueInfo="Các hÕ ðã b¡t ðßþc v¸t con r°i sao?"		--??????npc??
 x210221_g_MissionComplete="#{event_dali_0031}"					--????npc????
 x210221_g_SignPost = {x = 275, z = 50, tip = "Hoàng Mi Tång"}
 

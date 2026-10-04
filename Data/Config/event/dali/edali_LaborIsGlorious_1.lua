@@ -33,7 +33,7 @@ x210247_g_MissionTarget				= "%f"
 x210247_g_StrForePart 				= 4
 
 --x210247_g_FormatList 					= {"#{WYHD_090410_28}%s#{WYHD_090410_29}",}
-x210247_g_FormatList 					= {"ÐÕi Lý Ðích%s#Wm?i ngß½i Bang A Chu Träo Nh¤t Chích%sLai. #rTi¬u nêu lên: #rThành LÕc Dß½ng Ðích%s#Wcó th¬ T¯ng ngß½i ði Huy«n Võ Ðäo, Nhî có th¬ TÕi Huy«n Võ Ðäo Thßþng b¡t giæ Ngã c¥n Ðích Trân Thú. #r#Gchú ý: Này hoÕt ðµng m²i ngày Chích có th¬ tham gia mµt l¥n, h½n næa vÑt bö nhi®m vø hôm nay lÕi không th¬ Dî Tái tham gia Lao Ðµng T¯i Quang Vinh nhi®m vø Li­u.",}
+x210247_g_FormatList 					= {"%s#W · ÐÕi Lý nh¶ các hÕ giúp A Châu b¡t mµt con %s.#rGþi ý:#r%s#W · thành LÕc Dß½ng có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, các hÕ có th¬ b¡t Trân Thú ta c¥n trên Huy«n Vû Ðäo.#r#GChú ý: HoÕt ðµng này m²i ngày chï ðßþc tham gia mµt l¥n, nªu hüy nhi®m vø thì hôm nay s¨ không th¬ tham gia nhi®m vø Lao Ðµng Là Vinh Quang næa.",}
 x210247_g_StrList 						= {
  "#RTÔn Bát Gia#W#{_INFOAIM173, 146, 2, Tôn Bát Gia}",
  "#RVÂn Hàm Nhi#W#{_INFOAIM182, 155, 0, Vân Hàm Nhi}",

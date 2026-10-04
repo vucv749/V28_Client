@@ -24,7 +24,7 @@ x808098_g_IfMissionElite	= 0
 x808098_g_IsMissionOkFail	= 0		--??????0?
 
 --nhi®m vø vån bän miêu tä
-x808098_g_MissionName			= "V§n ðµng Ðích thª gi¾i"
+x808098_g_MissionName			= "Thª Gi¾i Th¬ Thao"
 --nhi®m vø miêu tä
 x808098_g_MissionInfo			= "#{XSHCD_20080418_017}"
 --nhi®m vø møc tiêu
@@ -39,6 +39,6 @@ x808098_g_MaxRound	= 3
 x808098_g_ControlScript		= 001066
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x808098_g_Custom	= { {id="Dî liên tøc trä l¶i Thân Tình Ðích 5Cá v¤n ð«",num=1} }
+x808098_g_Custom	= { {id="Ðã trä l¶i ðúng liên tiªp 5 câu höi cüa Thân Tình",num=1} }
 
 --MisDescEnd

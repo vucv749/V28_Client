@@ -28,7 +28,7 @@ x890291_g_IsMissionOkFail			= 0
 --nhi®m vø c¥n giªt quái v§t(giªt quái nhi®m vø), idKiªn MonsterAttrExTable. Txt
 --x890291_g_DemandKill 					= {id=779, num=8}
 --Tñ ð¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ði¬n, phân bi®t ð¯i Ñng missionparamÐích Ð® 1V¸ H§u Diên
-x890291_g_Custom							= {{id="Tìm kiªm NguÜ Trang Ðích ¤u long Tính Ð¯i Ki Khuyªn Gi¾i",num=1}}
+x890291_g_Custom							= {{id="Tìm „u Long ðang ngøy trang và khuyên rån nó",num=1}}
 
 --v§t ph¦m thß·ng cho(không c¥n lña ch÷n)
 --x890291_g_ItemBonus						= {{id=38002594, num=1}}

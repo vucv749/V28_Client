@@ -30,7 +30,7 @@ x200002_g_MissionKind = 51
 x200002_g_MissionName="G£p nhau tÕi VÕn Kiªp C¯c"
 x200002_g_MissionInfo="#{Mis_juqing_0005}"
 x200002_g_MissionTarget="#{Mis_juqing_Tar_0005}"	--????
-x200002_g_MissionComplete="$N, Nhî r¯t cøc ðªn ðây, chúng ta ch¶ ngß½i th§t lâu Li­u."	--????npc????
+x200002_g_MissionComplete="  $N, cu¯i cùng các hÕ cûng ðªn r°i, chúng ta ðþi các hÕ lâu l¡m r°i."	--????npc????
 
 x200002_g_MoneyJZBonus=11
 x200002_g_exp=1500

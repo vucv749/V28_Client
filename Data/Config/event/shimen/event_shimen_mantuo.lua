@@ -51,14 +51,14 @@ x893259_g_NpcIdIndicator={{key=2,npcIdIndex=5},{key=9,npcIdIndex=7}}
 
 --dùng ð¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ðích s¯ li®u
 x893259_g_FormatList = {
-								"Ðã lâu không có nhìn th¤y#R%N#WLi­u, r¤t là tß·ng ni®m A. Này#G%s#Wlà cüa ta mµt chút tâm ý, m¶i ngß½i b¡t nó T¯ng quá khÑ Ba. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi MÕn Ðà S½n Trang tìm ðßþc#RU Thäo#W#{_INFOAIM143, 159, 592, U Thäo}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"Cüa ta#G%I#Wnhß thª nào không th¤y Li­u? Nªu Nhî Nång giúp ta tìm tr· v«, ta s¨ không bÕc ðãi ngß½i Ðích. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi MÕn Ðà S½n Trang tìm ðßþc#RU Thäo#W#{_INFOAIM143, 159, 592, U Thäo}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"#G%N#Wlàm x¢ng làm b§y, ta có Tâm KhÑ giáo hu¤n mµt chút, ðáng tiªc không có th¶i gian, Nhî có th¬ thay Lao Ma? #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi MÕn Ðà S½n Trang tìm ðßþc#RU Thäo#W#{_INFOAIM143, 159, 592, U Thäo}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"M¶i ngß½i sØ døng#Y%s#W, T?i#G%s#WÐích#G%s#Wg¥n ðây tiªn hành gieo. #r #GTi¬u nêu lên: #W#r Ðang các hÕ t¾i Ðáo tiªn hành gieo Ðích ð¸a ði¬m g¥n ðây Th¶i, Nhî có th¬ Án#GAlt+A#Wcó th¬ Tá Khai v§t ph¦m Lan, Ði¬m Kích#G'nhi®m vø'#WDi®p Di®n là có th¬ Tá Khai nhi®m vø v§t ph¦m Lan, Hæu Ki®n Ði¬m Kích#YHoa Xung#W, là có th¬ hoàn thành gieo r¡c Li­u. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"M¶i ngß½i ði tìm Ðáo#R%s#W, THa Hµi mang ngß½i KhÑ b±n phái#G%s#WÐích ð¬ ð£t XØ. #r #GTi¬u nêu lên: #W#r Vß½ng Ði®p Quyên ngay tÕi MÕn Ðà S½n Trang#{_INFOAIM30, 197, 592, Vß½ng Ði®p Quyên}. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"M¶i ngß½i giúp ta Träo Nh¤t Chích#G%P#WLai. #B#r #GTi¬u nêu lên: #W#r #GMÕn Ðà S½n Trang Ðích U Thäo#{_INFOAIM143, 159, 592, U Thäo}#Wcó th¬ T¯ng ngß½i ði Huy«n Võ Ðäo, Nhi Huy«n Võ Ðäo Hæu mµt cái ðß¶ng nhö ði thông Thánh Thú S½n. Nhî có th¬ TÕi Huy«n Võ Ðäo ho£c là Thánh Thú S½n Thßþng b¡t giæ Ngã c¥n Ðích Trân Thú. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"M¶i ngß½i TÕi MÕn Ðà S½n Trang chung quanh nhìn xem, giúp ta Träo Lai 5Cá#G%s#W. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi màn hình Hæu Thßþng Giác Ðích Ti¬u trên bän ð° tìm ðßþc màu vàng Ðích chï th¸ Ði¬m. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"Thïnh C¤p#R%s#Wðßa ði mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r Nghiêm mø mø ngay tÕi MÕn Ðà S½n Trang#{_INFOAIM228, 196, 592, Nghiêm mø mø}. #r Li­u Phù Phong ngay tÕi MÕn Ðà S½n Trang#{_INFOAIM125, 195, 592, Li­u Phù Phong}. #r Quan S½n Nguy®t ngay tÕi MÕn Ðà S½n Trang#{_INFOAIM210, 158, 592, Quan S½n Nguy®t}. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Ðã lâu không g£p #R%n#W, ta nh¾ ngß¶i ¤y l¡m. #G%s#W này là chút t¤m lòng cüa ta, nh¶ các hÕ mang ðªn giúp ta nhé.#r  #GGþi ý:#W#r  Các hÕ có th¬ ðªn MÕn Ðà S½n Trang tìm #RU Thäo#W#{_INFOAIM143,159,592,U Thäo} ð¬ ðßþc ðßa ðªn các thành th¸ l¾n.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Sao #G%i#W cüa ta lÕi không th¤y ðâu næa? Nªu các hÕ giúp ta tìm lÕi ðßþc, ta nh¤t ð¸nh s¨ không bÕc ðãi các hÕ.#r  #GGþi ý:#W#r   Các hÕ có th¬ ðªn MÕn Ðà S½n Trang tìm #RU Thäo#W#{_INFOAIM143,159,592,U Thäo} ð¬ ðßþc ðßa ðªn các thành th¸ l¾n.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"#G%n#W làm ði«u x¢ng b§y, ta có lòng mu¯n ði dÕy cho h¡n mµt bài h÷c, tiªc là không có th¶i gian, các hÕ có th¬ làm thay ta không?#r  #GGþi ý:#W#r  Các hÕ có th¬ ðªn MÕn Ðà S½n Trang tìm #RU Thäo#W#{_INFOAIM143,159,592,U Thäo} ð¬ ðßþc ðßa ðªn các thành th¸ l¾n.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Hãy dùng #Y%s#W, ðªn #G%s#W gieo hÕt · g¥n #G%s#W.#r  #GGþi ý:#W#r  Khi ðªn g¥n ð¸a ði¬m gieo hÕt, các hÕ có th¬ nh¤n #GAlt+A#W ð¬ m· túi ð°, b¤m vào trang #G'Nhi®m vø'#W ð¬ m· ô v§t ph¦m nhi®m vø, nh¤p chuµt phäi vào #YHÕt Gi¯ng Hoa#W là có th¬ hoàn thành vi®c gieo hÕt.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Hãy ði tìm #R%s#W, ngß¶i ðó s¨ dçn các hÕ ðªn n½i ð£t #G%s#W cüa b±n phái.#r  #GGþi ý:#W#r  Vß½ng Ði®p Quyên ðang · MÕn Ðà S½n Trang#{_INFOAIM30,197,592,Vß½ng Ði®p Quyên}.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Hãy giúp ta b¡t mµt con #G%p#W v« ðây.#B#r  #GGþi ý:#W#r  #GU Thäo · MÕn Ðà S½n Trang#{_INFOAIM143,159,592,U Thäo}#W có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Hãy ði kh¡p MÕn Ðà S½n Trang xem thØ, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Hãy mang ðªn cho #R%s#W mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GGþi ý:#W#r  Nghiêm Ma Ma ðang · MÕn Ðà S½n Trang#{_INFOAIM228,196,592,Nghiêm mø mø}.#r  Li­u Phù Phong ðang · MÕn Ðà S½n Trang#{_INFOAIM125,195,592,Li­u Phù Phong}.#r  Quan S½n Nguy®t ðang · MÕn Ðà S½n Trang#{_INFOAIM210,158,592,Quan S½n Nguy®t}.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
 								}
 
@@ -81,7 +81,7 @@ x893259_g_StrList = {
 						"Nghiêm mø mø",
 						"Li­u Phù Phong",
 						"Quan S½n Nguy®t",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"Hoa Ði«n",
 						"0",
 						"1",

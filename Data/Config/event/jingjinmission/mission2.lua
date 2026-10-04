@@ -27,7 +27,7 @@ x998356_g_MissionUnComplete="#{WDJJ_230614_64}"--???????
 x998356_g_MissionTarget=""--????(?????????????)
 
 --Tñ ð¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ði¬n, phân bi®t ð¯i Ñng missionparamÐích Ð® 1V¸ H§u Diên
-x998356_g_Custom = {{id="Ðánh bÕi trß¶ng thi Nµi toàn bµ Ðích tham quan C§p nanh vu¯t",num=1}}
+x998356_g_Custom = {{id="Ðánh bÕi toàn bµ tham quan và tay sai trong C¯ng Vi®n",num=1}}
 --x998356_g_Custom	= {{id="nh§n ðßþc Yêu T£ng Dß Ti¬u Kh¤t Cái Ðích v§t ph¦m", num=1}, {id="ðßa t£ng Man Ð¥u C¤p Ti¬u Kh¤t Cái", num=1}, {id="ðßa t£ng Y Phøc C¤p Ti¬u Kh¤t Cái", num=1}, {id="ðßa t£ng S× Ð¥u C¤p Ti¬u Kh¤t Cái", num=1}}
 x998356_g_ParamIndex = 2--????0-????1-????2-????
 

@@ -29,15 +29,15 @@ x210239_g_IfMissionElite = 0
 x210239_g_MissionName="Danh Môn Chính Phái"
 --nhi®m vø miêu tä
 x210239_g_MissionInfo  = ""
-x210239_g_MissionInfo1 = "$N, Nhî r¯t cøc ðªn ðây. #r không t°i không t°i, Nhî hi®n tÕi Ðích cån c½ ðã ðánh cho tß½ng ðß½ng væng ch¡c, KhÑ Th§p ðÕi môn phái H÷c T§p cao thâm võ công ðã Th¸ thu§n lý thành chß½ng vi®c Li­u."
-x210239_g_MissionInfo2 = "Ð¯i, Nhî không có nghe Thác, chính là trong truy«n thuyªt Ðích Th§p ðÕi môn phái. Tinh Tú Phái Th¸ Tây Vñc hàng loÕt, Phái Thiên S½n Th¸ tây b¡c C½ Ba, Thiên Long Phái Th¸ Thiên Nam cây trø, Tiêu Dao Phái xu¤t quÖ nh§p th¥n, Phái Nga Mi M£c Ph§t Tri«u Tôn, Phái Võ Ðang ÐÕo C¯t Tiên Phong, Minh Giáo Th¸ thiên hÕ thÑ nh¤t ÐÕi Giáo, Cái Bang Th¸ thiên hÕ thÑ nh¤t ðÕi bang, Phái Thiªu Lâm lÕi thiên hÕ võ lâm Ðích ngôi sao sáng."
+x210239_g_MissionInfo1 = "    $N, cu¯i cùng các hÕ cûng ðªn r°i.#r    Không t®, không t®, n«n móng cüa các hÕ gi¶ ðã khá væng ch¡c, ðªn Th§p ÐÕi Môn Phái h÷c võ công cao thâm ðã là chuy®n thu§n lý thành chß½ng."
+x210239_g_MissionInfo2 = "    Ðúng v§y, các hÕ không nghe nh¥m ðâu, chính là Th§p ÐÕi Môn Phái trong truy«n thuyªt. Phái Tinh Túc là ðÕi tông phái · Tây Vñc, phái Thiên S½n là kÏ hoa · Tây B¡c, phái Thiên Long là trø cµt cüa phß½ng Nam, phái Tiêu Dao xu¤t quÖ nh§p th¥n, phái Nga Mi vÕn Ph§t tri«u tông, phái Võ Ðang ðÕo c¯t tiên phong, Minh Giáo là ðÕi giáo ð® nh¤t thiên hÕ, Cái Bang là ðÕi bang ð® nh¤t thiên hÕ, còn phái Thiªu Lâm càng là Thái S½n B¡c Ð¦u cüa võ lâm thiên hÕ."
 x210239_g_MissionInfo3 = "    Dù các hÕ bái nh§p môn phái nào, ð«u là bß¾c trên con ðß¶ng ðÕi ðÕo quang minh, m¤y lão già chúng ta cûng ðßþc th½m lây."
-x210239_g_MissionInfo4 = "Nhß v§y ði, ngß½i ði Träo Th§p ðÕi môn phái Ðích thu nh§n sØ døng Nhân tâm sñ, nghe b÷n h¡n nói mµt chút Các ðÕi môn phái Ðích ð£c s¡c, sau ðó lña ch÷n mµt cái môn phái gia nh§p. Ch¶ ngß½i tr· thành Li­u Th§p ðÕi môn phái ð® tØ, Nhî lÕi ðªn tìm ta, chúng ta s¨ cho Nhî Khai mµt cái Khánh Công Yªn Ðích."
+x210239_g_MissionInfo4 = "    Thª này ði, các hÕ hãy tìm ngß¶i thu nh§n ð® tØ cüa Th§p ÐÕi Môn Phái trò chuy®n, nghe h÷ gi¾i thi®u ð£c s¡c cüa t×ng môn phái, r°i ch÷n mµt môn phái ð¬ gia nh§p. Ðþi khi tr· thành ð® tØ cüa Th§p ÐÕi Môn Phái, các hÕ hãy quay lÕi tìm ta, b÷n ta s¨ m· ti®c m×ng công cho các hÕ."
 
 --nhi®m vø møc tiêu
 x210239_g_MissionTarget="#{MIS_dali_ZTS_001}"
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi
-x210239_g_ContinueInfo="Ðã tr· thành Th§p ðÕi môn phái ð® tØ Li­u Ma?"
+x210239_g_ContinueInfo="    Các hÕ ðã tr· thành ð® tØ cüa Th§p ÐÕi Môn Phái chßa?"
 --ð® trình Th¶i Npc trong l¶i nói
 x210239_g_MissionComplete="    Xem ra các hÕ ðã ch÷n con ðß¶ng ðúng, hãy hß¾ng thÆng t¾i tß½ng lai!"
 

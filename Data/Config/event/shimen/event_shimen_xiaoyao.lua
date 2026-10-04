@@ -52,14 +52,14 @@ x229005_g_NpcIdIndicator={{key=2,npcIdIndex=5},{key=9,npcIdIndex=7}}
 
 --dùng ð¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ðích s¯ li®u
 x229005_g_FormatList = {
-								"Ðã lâu không có nhìn th¤y#R%N#WLi­u, r¤t là tß·ng ni®m A. Này#G%s#Wlà cüa ta mµt chút tâm ý, m¶i ngß½i b¡t nó T¯ng quá khÑ Ba. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi Lång Ba Ðµng tìm ðßþc#RLí ‘i LuÛ#W#{_INFOAIM69, 142, 14, Lý Khôi L²i}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
-								"Cüa ta#G%I#Wnhß thª nào không th¤y Li­u? Nªu Nhî Nång giúp ta tìm tr· v«, ta s¨ không bÕc ðãi ngß½i Ðích. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi Lång Ba Ðµng tìm ðßþc#RLí ‘i LuÛ#W#{_INFOAIM69, 142, 14, Lý Khôi L²i}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
-								"#G%N#Wlàm x¢ng làm b§y, ta có Tâm KhÑ giáo hu¤n mµt chút, ðáng tiªc không có th¶i gian, Nhî có th¬ thay Lao Ma? #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi Lång Ba Ðµng tìm ðßþc#RLí ‘i LuÛ#W#{_INFOAIM69, 142, 14, Lý Khôi L²i}, Thïnh Tha ðem ngß½i T¯ng Vãng Các thành ph¯ l¾n. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
-								"M¶i ngß½i TÕi Tiêu Dao Phái#G%s#Wtìm ðßþc#G%s#W, T?i Tha g¥n ðây sØ døng#Y%s#WLai Ð§u Thü Tha Ðích trí nh¾. #r #GTi¬u nêu lên: #W#r Ðang các hÕ t¾i Ðáo c¥n Ð§u Thü trí nh¾ Ðích Thánh V§t g¥n ðây Th¶i, Nhî có th¬ Án#GAlt+A#Wcó th¬ Tá Khai v§t ph¦m Lan, Ði¬m Kích#G'nhi®m vø'#WDi®p Di®n là có th¬ Tá Khai nhi®m vø v§t ph¦m Lan, Hæu Ki®n Ði¬m Kích#YTh¶i Quang C½#W, là có th¬ hoàn thành Ð§u l¤y. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
-								"M¶i ngß½i ði tìm Ðáo%s, Tha Hµi mang ngß½i KhÑ khiêu chiªn%sÐích. #r #GTI¬u nêu lên: #W#r Phùng A Tam sß huynh ngay tÕi Lång Ba Ðµng#{_INFOAIM62, 68, 14, Phùng A Tam}. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
-								"M¶i ngß½i giúp ta Träo Nh¤t Chích#G%P#WLai. #B#r #GTi¬u nêu lên: #W#r #GLång Ba Ðµng Ðích Lí ‘i LuÛ#{_INFOAIM69, 142, 14, Lý Khôi L²i}có th¬ T¯ng ngß½i ði Huy«n Võ Ðäo, Nhi Huy«n Võ Ðäo Hæu mµt cái ðß¶ng nhö ði thông Thánh Thú S½n. Nhî có th¬ TÕi Huy«n Võ Ðäo ho£c là Thánh Thú S½n Thßþng b¡t giæ Ngã c¥n Ðích Trân Thú. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
-								"M¶i ngß½i TÕi Lång Ba Ðµng Lý chung quanh nhìn xem, giúp ta Träo Lai 5Cá#G%s#W. #r #GTi¬u nêu lên: #W#r Nhî có th¬ TÕi màn hình Hæu Thßþng Giác Ðích Ti¬u trên bän ð° tìm ðßþc màu vàng Ðích chï th¸ Ði¬m. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
-								"Thïnh C¤p#R%s#Wðßa ði mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r Mµc Nhân ‘i LuÛ ngay tÕi Lång Ba Ðµng#{_INFOAIM41, 71, 14, Mµc Nhân Khôi L²i}. #r ThÕch Nhân ‘i LuÛ ngay tÕi Lång Ba Ðµng#{_INFOAIM59, 71, 14, ThÕch Nhân Khôi L²i}. #r Ð°ng Nhân ‘i LuÛ ngay tÕi Lång Ba Ðµng#{_INFOAIM66, 65, 14, Ð°ng Nhân Khôi L²i}. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"Ðã lâu không g£p #R%n#W, ta r¤t nh¾. #G%s#W này là chút t¤m lòng cüa ta, nh¶ các hÕ mang ðªn giúp ta.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm #RLý Khôi L²i#W#{_INFOAIM69,142,14,Lý Khôi L²i} · Lång Ba Ðµng, nh¶ ngß¶i này ðßa các hÕ ðªn các thành l¾n.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"#G%i#W cüa ta sao lÕi không th¤y ðâu næa? Nªu các hÕ có th¬ giúp ta tìm lÕi, ta s¨ không bÕc ðãi các hÕ ðâu.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm #RLý Khôi L²i#W#{_INFOAIM69,142,14,Lý Khôi L²i} · Lång Ba Ðµng, nh¶ ngß¶i này ðßa các hÕ ðªn các thành l¾n.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"#G%n#W làm ði«u x¢ng b§y, ta mu¯n ði dÕy cho h¡n mµt bài h÷c, tiªc là không có th¶i gian, các hÕ có th¬ làm thay ta không?#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm #RLý Khôi L²i#W#{_INFOAIM69,142,14,Lý Khôi L²i} · Lång Ba Ðµng, nh¶ ngß¶i này ðßa các hÕ ðªn các thành l¾n.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"Hãy ðªn #G%s#W cüa phái Tiêu Dao tìm #G%s#W, dùng #Y%s#W · g¥n ðó ð¬ ð÷c ký Ñc cüa nó.#r  #GGþi ý:#W#r  Khi ðªn g¥n thánh v§t c¥n ð÷c ký Ñc, các hÕ có th¬ nh¤n #GAlt+A#W ð¬ m· túi ð°, nh¤p vào trang #G'Nhi®m Vø'#W ð¬ m· ô v§t ph¦m nhi®m vø, nh¤p chuµt phäi vào #YC² Máy Th¶i Gian#W là có th¬ hoàn thành vi®c ð÷c ký Ñc.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"Hãy ði tìm %s, ngß¶i ðó s¨ ðßa các hÕ ði khiêu chiªn %s.#r  #GGþi ý:#W#r  Sß huynh Phùng A Tam ðang · Lång Ba Ðµng#{_INFOAIM62,68,14,Phùng A Tam}.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"Hãy giúp ta b¡t mµt con #G%p#W.#B#r  #GGþi ý:#W#r  #GLý Khôi L²i · Lång Ba Ðµng#{_INFOAIM69,142,14,Lý Khôi L²i} có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"Hãy ði xem xét kh¡p trong Lång Ba Ðµng, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"Hãy ðªn ch² #R%s#W ðßa mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GGþi ý:#W#r  R¯i Mµc Nhân ðang · Lång Ba Ðµng#{_INFOAIM41,71,14,Mµc Nhân Khôi L²i}.#r  R¯i ThÕch Nhân ðang · Lång Ba Ðµng#{_INFOAIM59,71,14,ThÕch Nhân Khôi L²i}.#r  R¯i Ð°ng Nhân ðang · Lång Ba Ðµng#{_INFOAIM66,65,14,Ð°ng Nhân Khôi L²i}.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
 								}
 
@@ -82,7 +82,7 @@ x229005_g_StrList = {
 						"Mµc Nhân Khôi L²i",
 						"Ð°ng Nhân Khôi L²i",
 						"ThÕch Nhân Khôi L²i",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"Phøng Hoàng C¥m",
 						"LÕn Kha KÏ",
 						"Thánh Hi«n Thß",

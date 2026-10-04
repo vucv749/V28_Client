@@ -24,7 +24,7 @@ x809322_g_IsMissionOkFail = 0		--????0?
 --nhi®m vø vån bän miêu tä
 x809322_g_MissionName="Thiên Lý Lß½ng Câu"
 x809322_g_MissionInfo="#{LYGL_100107_11}"
-x809322_g_MissionTarget="Tß¾ng'#YBÁc LÕc Minh Bài#W'giao cho Ðµi Hæu Song Nhân t± ðµi tìm ðßþc#GLÕc Dß½ng#{_INFOAIM136, 180, 0, Ði«n Kiêu Minh}#RÐi«n Kiêu Minh#Wð±i l¤y t÷a kÜ thß·ng cho. #r#GTi¬u nêu lên: Tß¾ng Phi Bäng Ð¸nh Ðích'Bác LÕc Minh Bài'giao cho Ðµi Hæu, t± ðµi tiªn ðªn hoàn thành nhi®m vø."
+x809322_g_MissionTarget="  Giao '#YBá NhÕc Minh Bài#W' cho ð°ng ðµi, t± ðµi hai ngß¶i ðªn #GLÕc Dß½ng#{_INFOAIM136,180,0,Ði«n Kiêu Minh} #RÐi«n Kiêu Minh#W ð¬ ð±i thß·ng thú cßÞi.#r#GGþi ý: Giao 'Bá NhÕc Minh Bài' chßa khóa cho ð°ng ðµi, r°i t± ðµi cùng ði hoàn thành nhi®m vø."
 x809322_g_ContinueInfo="  Các hÕ tìm ta có vi®c gì?"
 x809322_g_MissionComplete="  Các hÕ tìm ta có vi®c gì?"
 

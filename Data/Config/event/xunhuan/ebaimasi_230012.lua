@@ -32,7 +32,7 @@ x230012_g_IsMissionOkFail = 0		--????0?
 x230012_g_MissionName="Tu hành BÕch Mã Tñ"
 x230012_g_MissionInfo="#{event_xunhuan_0003}"  --????
 x230012_g_MissionTarget="#{event_xunhuan_0004}"		--????
-x230012_g_ContinueInfo="A Di Ðà Ph§t. . . #rthiªu hi®p có không ðä thông Li­u Trân Lung KÏ Cøc?"		--??????npc??
+x230012_g_ContinueInfo="A Di Ðà Ph§t...#rThiªu hi®p ðã vßþt qua Trân Long KÏ Cuµc chßa?"		--??????npc??
 x230012_g_MissionComplete="Thi®n tai thi®n tai, thiªu hi®p thái ðµ làm ngß¶i hào säng, quan ái dân chúng, ngày sau t¤t có mµt phen làm."					--????npc????
 
 --kh¯ng chª k¸ch bän g¯c

@@ -1720,7 +1720,7 @@ function SelectServerQuest_Bn2Click()
 	elseif( 9 == g_iYesNoType ) then
 		GameProduceLogin:PassportButNotReg();
 	elseif( 10 == g_iYesNoType ) then
-		AxTrace( 0,0, "Hay không kích hoÕt_Ði¬m Kích Li­u NO");
+		AxTrace( 0,0, "Có kích hoÕt không_Ðã nh¤n NO");
 	elseif (55 == g_iYesNoType) then
 		Clear_XSCRIPT()
 			Set_XSCRIPT_Function_Name("Team_CallBack_InviteConfirm")

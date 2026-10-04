@@ -525,9 +525,9 @@ function ChatFrame_OnEvent(event)
 		if (g_CurSecretFlag == "1") then
 			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-63#GNHçm th§t là t¯t Hæu#W:"..tostring(arg1) );
 		elseif (g_CurSecretFlag == "2") then
-			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-60#cff0000Nhçm Ðích c×u nhân#W:"..tostring(arg1) );
+			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-60#cff0000Kë thù cüa các hÕ#W:"..tostring(arg1) );
 		elseif	(g_CurSecretFlag == "3") then
-			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-61#WNHçm Ðích tin tÑc#W:"..tostring(arg1) );
+			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-61#WTin nh¡n cüa các hÕ#W:"..tostring(arg1) );
 		else
 			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-62#cbe38ffgiang h° kÏ vån#W:"..tostring(arg1) );
 		end

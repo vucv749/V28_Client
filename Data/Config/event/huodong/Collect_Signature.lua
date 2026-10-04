@@ -24,7 +24,7 @@ x808038_g_IsMissionOkFail	= 0		--??????0?
 --nhi®m vø vån bän miêu tä
 x808038_g_MissionName			= "Thu th§p chæ ký"
 --nhi®m vø miêu tä
-x808038_g_MissionInfo			= "Thu th§p 10t¯t Hæu kí tên, Ðáo Cung Thái Vân XØ lînh thß·ng cho!"
+x808038_g_MissionInfo			= "Thu th§p 10 chæ ký häo hæu, ðªn ch² Cung Thái Vân nh§n thß·ng!"
 --nhi®m vø møc tiêu
 x808038_g_MissionTarget		= "#{SJQM_8825_20}"
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi

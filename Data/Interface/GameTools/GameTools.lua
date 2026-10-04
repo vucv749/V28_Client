@@ -212,7 +212,7 @@ end
 --ÇĞ»»ÃÅÅÉ
 function GameTools_menpai(index) 
     if MenPaiId == - 1 then
-	   PushDebugMessage("Thïnh lña ch÷n gia nh§p Ğích môn phái")
+	   PushDebugMessage("Hãy ch÷n môn phái mu¯n gia nh§p")
 	   TargetID = 0
 	end
 	if TargetID == nil then
@@ -233,7 +233,7 @@ end
 --¸øÍæ¼Ò·¢·ÅµÀ¾ß×°±¸ BYÑ©Îè[BUG-319] 2021-9-4 21:45:55 
 function GameTools_FaFang(index)
 	if TargetID == nil then
-		PushDebugMessage("Thïnh lña ch÷n cho vay trang b¸ Ğích ngß¶i ch½i, nªu cho vay C¤p ngß¶i ch½i, Thïnh Tiên lña ch÷n ğ¥u cüa h¡n Tßşng!")
+		PushDebugMessage("Hãy ch÷n ngß¶i ch½i nh§n trang b¸, nªu phát cho ngß¶i ch½i, hãy ch÷n änh ğÕi di®n cüa ngß¶i ğó trß¾c!")
 		TargetID = 0
 	end
 	--ÎïÆ·ID
@@ -666,10 +666,10 @@ function GameTools_SearchItems(searchText)
 	end
 
 	if resultCount == 0 then
-		GameTools_ItemList:AddItem("Không tìm ğßşc xÑng ğôi Ğích ğÕo cø", 0)
-		GameTools_SearchStatus:SetText("Không tìm ğßşc xÑng ğôi Ğích ğÕo cø")
+		GameTools_ItemList:AddItem("Không tìm th¤y ğÕo cø phù hşp", 0)
+		GameTools_SearchStatus:SetText("Không tìm th¤y ğÕo cø phù hşp")
 	else
-		GameTools_SearchStatus:SetText("Tìm ğßşc" .. resultCount .. "Cá xÑng ğôi Ğích ğÕo cø")
+		GameTools_SearchStatus:SetText("Tìm ğßşc" .. resultCount .. " ğÕo cø phù hşp")
 	end
 	return resultCount
 end
@@ -707,7 +707,7 @@ function GameTools_SendSelectedItem()
 	end
 	local itemCount = tonumber(countText)
 	if itemCount == nil or itemCount <= 0 then
-		PushDebugMessage("Thïnh ğßa vào hæu hi®u Ğích s¯ lßşng")
+		PushDebugMessage("Hãy nh§p s¯ lßşng hşp l®")
 		return
 	end
 	if TargetID == nil then
@@ -743,7 +743,7 @@ function GameTools_RecallLastItem()
 	end
 	local itemCount = tonumber(countText)
 	if itemCount == nil or itemCount <= 0 then
-		PushDebugMessage("Thïnh ğßa vào hæu hi®u Ğích s¯ lßşng")
+		PushDebugMessage("Hãy nh§p s¯ lßşng hşp l®")
 		return
 	end
 	if TargetID == nil then

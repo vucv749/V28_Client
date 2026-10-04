@@ -29,7 +29,7 @@ x210214_g_IfMissionElite = 0
 --nhi®m vø Danh
 x210214_g_MissionName="Trân Thú thÑ 1"
 x210214_g_MissionInfo="#{event_dali_0020}"
-x210214_g_MissionTarget="KhÑ#GTHành ÐÕi Lý phía ðông Ðông ðß¶ng cái#WÐích#YTrùng Ði¬u Phß¶ng#Wtìm ðßþc Phß¶ng Chü#RVân Phiêu Phiêu#W#{_INFOAIM265, 129, 2, Vân Phiêu Phiêu}. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"
+x210214_g_MissionTarget="Ðªn #YTrùng Ði¬u Phß¶ng#W · #Gph¯ Ðông thành ÐÕi Lý#W tìm phß¶ng chü #RVân Phiêu Phiêu#W#{_INFOAIM265,129,2,Vân Phiêu Phiêu}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân ð¬ tìm ðªn NPC này)#l"
 x210214_g_MissionComplete="  Ta không tùy ti®n v¾i ngß¶i bình thß¶ng kªt giao b¢ng hæu, nhßng Ngß½i là các hÕ cüa TÑ ÐÕi Thi®n Nhân. V§y ta s¨ nói cho ngß½i biªt mµt vài ði«u hay"
 x210214_g_MoneyBonus=72
 x210214_g_SignPost = {x = 263, z = 129, tip = "Vân Phiêu Phiêu"}

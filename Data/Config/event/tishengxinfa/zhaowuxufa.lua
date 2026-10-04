@@ -47,7 +47,7 @@ x890000_g_StrList = {
 						"Th¥n Næ Quy«n Pháp",
 						"Hü Thi Công",
 						"Nh¤t Dß½ng Chï Chï Pháp",
-						"Linh Tñu Công",
+						"Linh ThÑu Công",
 						"Bách Hoa Kinh",
 						"Tu® Phß½ng#{_INFOAIM96, 82, 9, Tu® Phß½ng}",
 						"Lâm Nham#{_INFOAIM98, 105, 11, Lâm Nham}",

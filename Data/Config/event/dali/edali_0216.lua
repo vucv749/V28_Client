@@ -29,7 +29,7 @@ x210216_g_IfMissionElite = 0
 --nhi®m vø Danh
 x210216_g_MissionName="Lá thß tiªn cØ thÑ 5"
 x210216_g_MissionInfo="#{event_dali_0024}"
-x210216_g_MissionTarget="H°i#GTHành ÐÕi Lý Ngû Hoa Ðàn#Wtìm ðßþc#GTri®u Thiên Sß#W#{_INFOAIM160, 157, 2, Tri®u Thiên Sß}. #b#G(Thïnh Døng Tä Ki®n Ði¬m Kích b®nh bÕch ð¾i phác h÷a Ðích t÷a ðµ, trþ giúp Nhçm tìm ðßþc Cai NPC)#l"
+x210216_g_MissionTarget="    V« #GNgû Hoa Ðàn thành ÐÕi Lý#W tìm #GTri®u Thiên Sß#W#{_INFOAIM160,157,2,Tri®u Thiên Sß}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân ð¬ tìm ðªn NPC này)#l"
 x210216_g_MissionComplete="  Các hÕ ngày càng gi¯ng mµt ðÕi hi®p r°i, ta nhìn mà lòng vui thay"
 x210216_g_MoneyBonus=24
 x210216_g_SignPost = {x = 160, z = 156, tip = "Tri®u Thiên Sß"}

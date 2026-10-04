@@ -24,7 +24,7 @@ x212100_g_MissionInfo="#{Mis_K_Xihu_1000042}"
 --nhi®m vø møc tiêu
 x212100_g_MissionTarget="#{MIS_TAR_ADD_010}"		
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi
-x212100_g_ContinueInfo="  Ngß½i ðã ðánh bÕi #RM?ch Hæu Nhân#W r°i?"
+x212100_g_ContinueInfo="  Các hÕ ðã giªt #WMÕch Hæu Nhân#W r°i sao?"
 --ð® trình Th¶i Npc trong l¶i nói
 x212100_g_MissionComplete="  Ða tÕ ngß½i, 1 thª gi¾i m¾i nhß phäng ph¤t trß¾c m£t ta"		
 
@@ -33,7 +33,7 @@ x212100_g_exp=19262
 --x212100_g_ItemBonus={{id=10111008,num=1}}
 
 
-x212100_g_Custom	= { {id="Ðã ðánh bÕi MÕch Hæu Nhân",num=1} }
+x212100_g_Custom	= { {id="Ðã giªt MÕch Hæu Nhân",num=1} }
 x212100_g_IsMissionOkFail = 0
 
 x212100_g_RadioItemBonus={{id=10412063 ,num=1},{id=10413065,num=1},{id=10402065,num=1}}

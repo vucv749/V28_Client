@@ -31,6 +31,6 @@ x892980_g_MissionComplete   = "#{YDQDJ_20211115_33}"
 
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x892980_g_Custom    = { {id="Trþ giúp Ti¬u H° Tiên Ðích b¢ng hæu Tính nh§n ðßþc tín v§t",num=1} }
+x892980_g_Custom    = { {id="Giúp ðÞ b¢ng hæu cüa Ti¬u H° Tiên và nh§n tín v§t",num=1} }
 
 --MisDescEnd

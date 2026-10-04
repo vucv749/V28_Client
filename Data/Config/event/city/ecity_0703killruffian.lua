@@ -35,10 +35,10 @@ x600039_g_MissionRound = 59
 --nhi®m vø vån bän miêu tä
 x600039_g_MissionName = "Xây dñng nhi®m vø"
 x600039_g_MissionInfo = ""													--????
-x600039_g_MissionTarget = "Tìm ðßþc ngß¶i giang h° XÑng%sÐích ð¥u lînh Hoà Tha mang ðªn Ðích T¥m H¤n Ti¬u B¯i Tính giªt chªt b÷n h÷. #r#{BHRW_091224_1}"	--????
+x600039_g_MissionTarget = "    Tìm thü lînh có bi®t danh giang h° là %s cùng ðám ti¬u b¯i gây sñ mà h¡n dçn theo, r°i tiêu di®t chúng.#r#{BHRW_091224_1}"	--????
 x600039_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
 x600039_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
-x600039_g_MissionComplete = "R¤t t¯t, r¤t t¯t, kiªn trúc Ðích tiªn ðµ Hñu nhanh h½n Li­u."			--????npc????
+x600039_g_MissionComplete = "    R¤t t¯t, r¤t t¯t, tiªn ðµ xây dñng lÕi tång nhanh r°i."			--????npc????
 
 x600039_g_Parameter_Kill_CountRandom = { { id = 300471, numNeeded = 5, numKilled = 4 } }
 

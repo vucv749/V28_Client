@@ -30,7 +30,7 @@ x600027_g_GemSerialNum				=3	--3 ?????
 --nhi®m vø vån bän miêu tä
 x600027_g_MissionName = "Nhi®m vø khuªch trß½ng"
 x600027_g_MissionInfo = ""			--????
-x600027_g_MissionTarget = "Träo%sCá%iträ lÕi Ðáo bän bang Ðích Ð°ng Phù Dung (148, 96)XØ. #r#{BHRW_091224_1}"	--????
+x600027_g_MissionTarget = "    Tìm %s %i giao lÕi cho Ðông Phù Dung ( 148, 96 ) cüa b±n bang.#r#{BHRW_091224_1}"	--????
 x600027_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
 x600027_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
 x600027_g_MissionComplete = "R¤t t¯t r¤t t¯t."							--????npc????

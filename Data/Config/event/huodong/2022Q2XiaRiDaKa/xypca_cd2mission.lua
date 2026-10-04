@@ -28,6 +28,6 @@ x893178_g_MissionTarget		= "#{XRDK_220428_408}"
 --hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x893178_g_Custom	= { {id="Ðã xem n· rµ Ðích ðóa hoa T¯ng Chí Niên ngày cß¾i XØ",num=1} }
+x893178_g_Custom	= { {id="Ðã ðßa ðóa hoa n· rµ ðªn ch² Niên Giai KÏ",num=1} }
 
 --MisDescEnd
