@@ -103,7 +103,7 @@ x229000_g_StrList = {
 						"Ngû Th¥n Ðµng phó bän",
 						"Thiªu Lâm",
 						"Thiên Long",
-						"?ëáÒ",
+						"Nga Mi",
 						"Cái Bang",
 						"Minh Giáo",
 						"Thiên S½n",
