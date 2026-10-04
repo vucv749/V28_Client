@@ -58,7 +58,7 @@ x229001_g_FormatList = {
 								"Hãy ði tìm #R%s#W, ngß¶i ðó s¨ ðßa các hÕ ði khiêu chiªn #G%s#W.#r  #GGþi ý:#W#r  Tä sÑ Phß½ng LÕp ðang · Quang Minh Ði®n#{_INFOAIM89,56,11,Phß½ng LÕp}.#{SMXL_090819_mingjiao}#r#{SMRW_090206_01}",
 								"Hãy giúp ta b¡t mµt con #G%p#W.#B#r  #GGþi ý:#W#r  #GPhß½ng Th¤t Ph§t · Quang Minh Ði®n#{_INFOAIM102,167,11,Phß½ng Th¤t Ph§t} có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{SMXL_090819_mingjiao}#r#{SMRW_090206_01}",
 								"Hãy ði xem xét kh¡p Quang Minh Ði®n, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{SMXL_090819_mingjiao}#r#{SMRW_090206_01}",
-								"Hãy ðªn ch² #R%s#W ðßa mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GGþi ý:#W#r  Hæu sÑ Læ Sß Tß½ng ðang · Quang Minh Ði®n#{_INFOAIM108,56,11,Lã Sß Tß½ng}.#r  Huynh ð® Dß ÐÕo An ðang · Quang Minh Ði®n#{_INFOAIM101,137,11,Dß ÐÕo An}.#r  Thánh næ Mã LÕp ðang · Quang Minh Ði®n#{_INFOAIM133,117,11,Mã LÕp}.#{SMXL_090819_mingjiao}#r#{SMRW_090206_01}",
+								"Hãy mang ðªn cho #R%s#W mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GGþi ý:#W#r  Hæu sÑ Læ Sß Tß½ng ðang · Quang Minh Ði®n#{_INFOAIM108,56,11,Lã Sß Tß½ng}.#r  Huynh ð® Dß ÐÕo An ðang · Quang Minh Ði®n#{_INFOAIM101,137,11,Dß ÐÕo An}.#r  Thánh næ Mã LÕp ðang · Quang Minh Ði®n#{_INFOAIM133,117,11,Mã LÕp}.#{SMXL_090819_mingjiao}#r#{SMRW_090206_01}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{SMXL_090819_mingjiao}#r#{SMRW_090206_01}",
 								}
 
@@ -81,7 +81,7 @@ x229001_g_StrList = {
 						"Lã Sß Tß½ng",
 						"Dß ÐÕo An",
 						"Mã LÕp",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"Thánh hoä ðàn",
 						"0",
 						"1",

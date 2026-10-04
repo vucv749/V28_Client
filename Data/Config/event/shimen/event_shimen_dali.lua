@@ -81,7 +81,7 @@ x229004_g_StrList = {
 						"Ngû Trung",
 						"Lâm Qu¯c Thanh",
 						"T× Qui Ði®p",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"Thü Thái Âm Phª Kinh Ð°ng Nhân",
 						"Ngß¶i ð°ng thü dß½ng minh ðÕi trß¶ng kinh",
 						"Túc Dß½ng Minh V¸ Kinh Ð°ng Nhân",

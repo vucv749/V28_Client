@@ -80,7 +80,7 @@ x229003_g_StrList = {
 						"Ðào hoa tiên",
 						"Ðào Di®p Tiên",
 						"Ðào Chi Tiên",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"Kim Ðïnh Phøng Hoàng",
 						"Linh Tuy«n Phøng Hoàng",
 						"Ph§t Quang Phøng Hoàng",

@@ -41,6 +41,6 @@ x808099_g_MaxRound	= 3
 x808099_g_ControlScript		= 001066
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x808099_g_Custom	= { {id="Ta ðã giao Ðu¯c cho Nhî Häi Ðao Nghiêu",num=1} }
+x808099_g_Custom	= { {id="Ðã giao ðu¯c cho Ðao Nghiêu · Nhî Häi",num=1} }
 
 --MisDescEnd

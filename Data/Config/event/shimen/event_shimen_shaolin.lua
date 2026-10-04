@@ -83,7 +83,7 @@ x229000_g_StrList = {
 						"Phan Thiên Canh",
 						"V® Thiên V÷ng",
 						"Phß½ng Thiên Lao",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"M£t ð¤t",
 						"Bän Tß¾ng",
 						"MÕnh Thanh Thanh",

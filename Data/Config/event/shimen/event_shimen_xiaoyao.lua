@@ -59,7 +59,7 @@ x229005_g_FormatList = {
 								"Hãy ði tìm %s, ngß¶i ðó s¨ ðßa các hÕ ði khiêu chiªn %s.#r  #GGþi ý:#W#r  Sß huynh Phùng A Tam ðang · Lång Ba Ðµng#{_INFOAIM62,68,14,Phùng A Tam}.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
 								"Hãy giúp ta b¡t mµt con #G%p#W.#B#r  #GGþi ý:#W#r  #GLý Khôi L²i · Lång Ba Ðµng#{_INFOAIM69,142,14,Lý Khôi L²i} có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
 								"Hãy ði xem xét kh¡p trong Lång Ba Ðµng, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
-								"Hãy ðªn ch² #R%s#W ðßa mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GGþi ý:#W#r  R¯i Mµc Nhân ðang · Lång Ba Ðµng#{_INFOAIM41,71,14,Mµc Nhân Khôi L²i}.#r  R¯i ThÕch Nhân ðang · Lång Ba Ðµng#{_INFOAIM59,71,14,ThÕch Nhân Khôi L²i}.#r  R¯i Ð°ng Nhân ðang · Lång Ba Ðµng#{_INFOAIM66,65,14,Ð°ng Nhân Khôi L²i}.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
+								"Hãy mang ðªn cho #R%s#W mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GGþi ý:#W#r  R¯i Mµc Nhân ðang · Lång Ba Ðµng#{_INFOAIM41,71,14,Mµc Nhân Khôi L²i}.#r  R¯i ThÕch Nhân ðang · Lång Ba Ðµng#{_INFOAIM59,71,14,ThÕch Nhân Khôi L²i}.#r  R¯i Ð°ng Nhân ðang · Lång Ba Ðµng#{_INFOAIM66,65,14,Ð°ng Nhân Khôi L²i}.#{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{SMXL_090819_xiaoyao}#r#{SMRW_090206_01}",
 								}
 
@@ -82,7 +82,7 @@ x229005_g_StrList = {
 						"Mµc Nhân Khôi L²i",
 						"Ð°ng Nhân Khôi L²i",
 						"ThÕch Nhân Khôi L²i",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"Phøng Hoàng C¥m",
 						"LÕn Kha KÏ",
 						"Thánh Hi«n Thß",

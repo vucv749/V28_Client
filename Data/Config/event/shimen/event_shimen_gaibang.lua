@@ -81,7 +81,7 @@ x229008_g_StrList = {
 						"Toàn Quán Thanh",
 						"Tr¥n Cô NhÕn",
 						"Ngô Trß¶ng Phong",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"Vò rßþu",
 						"0",
 						"1",

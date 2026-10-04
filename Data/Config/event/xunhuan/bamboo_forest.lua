@@ -24,7 +24,7 @@ x050101_g_MissionLevel = 10000
 -- nhi®m vø vån bän miêu tä
 x050101_g_MissionName = "Tr× hÕi"
 x050101_g_MissionInfo = "    "														-- ????
-x050101_g_MissionTarget = "    Hoa Kiªm Vû#{_INFOAIM251,108,1,Hoa Kiªm Vû} · Tô Châu mu¯n các hÕ giªt 80 con Dã Hùng và giªt G¤u Chúa Ðö.#r    #{FQSH_090206_01}"						-- ????
+x050101_g_MissionTarget = "    Hoa Kiªm Vû#{_INFOAIM251,108,1,Hoa Kiªm Vû} · Tô Châu bäo các hÕ giªt 80 con Dã Hùng và giªt H°ng Hùng Vß½ng.#r    #{FQSH_090206_01}"						-- ????
 x050101_g_ContinueInfo = "    Các ngß½i chu¦n b¸ xong thì hãy ðªn r×ng trúc tiêu di®t H°ng Hùng Vß½ng!"					-- ??????npc??
 x050101_g_SubmitInfo = "    Nhi®m vø làm ðªn ðâu r°i?"										-- ??????
 x050101_g_MissionComplete = "    Các ngß½i ðã giªt H°ng Hùng Vß½ng, v§y theo giao ß¾c ta cûng nên nói cho các ngß½i biªt lai l¸ch cüa t¤m l®nh bài này. Hãy mang lá thß này giao cho Ti«n Hoành Vû #{_INFOAIM62,162,1,Ti«n Hoành Vû}, tñ kh¡c ông ¤y s¨ hi¬u m÷i chuy®n."	--????npc???

@@ -80,7 +80,7 @@ x229007_g_StrList = {
 						"Tây Vñc Dßþc Lâu TØ",
 						"Khiªt Ðan Dßþc Lâu TØ",
 						"ÐÕi Lý Dßþc Lâu TØ",
-						"Sài Miêu Dã Sinh",
+						"Sài Miêu Hoang Dã",
 						"Nh§t Nguy®t Cung",
 						"Phß½ng trßþng ði®n",
 						"Ði®n Doanh Châu",
