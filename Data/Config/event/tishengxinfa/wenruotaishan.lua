@@ -59,7 +59,7 @@ x890004_g_StrList = {
 						"B±n Phàm#{_INFOAIM96, 88, 13, B±n Phàm}",
 						"Phù Mçn Nghi#{_INFOAIM95, 60, 17, Phù Mçn Nghi}",
 						"T¥n Quan#{_INFOAIM119, 152, 14, T¥n Quán}",
-						"Hoa Lu§t mß¶i bäy Quy¬n",                         --newmenpai
+						"Hoa Lu§t Th§p Th¤t Quy¬n",                         --newmenpai
 						"Vß½ng An Ca#{_INFOAIM129, 106, 592, Vß½ng An Ca}",
 					}
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi

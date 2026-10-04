@@ -10,7 +10,7 @@ local strMenPaiName =
 	"Thiên S½n",
 	"Tiêu Dao",
 	"Tân thü",
-	"Mµ Dung",
+	"MÕn Ðà S½n Trang",
 	"ÐÕi T¯ng",
 	"ÐÕi T¯ng",
 	"ÐÕi T¯ng",

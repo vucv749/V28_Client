@@ -27,7 +27,7 @@ x999411_g_MissionInfo="#{DHYR_240515_30}"
 x999411_g_MissionTarget="#{DHYR_240515_34}"
 x999411_g_MissionContinue="#{DHYR_240515_32}"
 x999411_g_MissionComplete ="#{DHYR_240515_33}"
-x999411_g_Custom = {id="Do Thám tin tÑc",num=1}
+x999411_g_Custom = {id="Dò Thám Tin TÑc",num=1}
 --nhi®m vø c¤p b§c
 x999411_g_MissionLevel = 30
 

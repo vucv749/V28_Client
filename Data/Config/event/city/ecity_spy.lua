@@ -23,7 +23,7 @@ x600045_g_IfMissionElite	= 0
 x600045_g_IsMissionOkFail	= 0		--??????0?
 
 --nhi®m vø vån bän miêu tä
-x600045_g_MissionName			= "Do Thám tin tÑc"
+x600045_g_MissionName			= "Dò Thám Tin TÑc"
 --nhi®m vø miêu tä
 x600045_g_MissionInfo			= "Nhi®m vø bang phái, dùng s± tình báo ð¬ do thám thông tin các bang phái khác!"
 --nhi®m vø møc tiêu

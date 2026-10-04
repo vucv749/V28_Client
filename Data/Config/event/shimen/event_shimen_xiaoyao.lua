@@ -83,7 +83,7 @@ x229005_g_StrList = {
 						"Ð°ng Nhân Khôi L²i",
 						"ThÕch Nhân Khôi L²i",
 						"Sài Miêu Hoang Dã",
-						"Phøng Hoàng C¥m",
+						"Phßþng Hoàng C¥m",
 						"LÕn Kha KÏ",
 						"Thánh Hi«n Thß",
 						"Tranh ð½n thanh",

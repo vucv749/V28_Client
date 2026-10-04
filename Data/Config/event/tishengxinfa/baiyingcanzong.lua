@@ -46,7 +46,7 @@ x890003_g_StrList = {
 						"QuÏ Hoa Bí C¤p",
 						"Ð¸a Ðß¶ng Công",
 						"LoÕn Hoàn Quyªt",
-						"Th¥n Hæu Kinh",
+						"Th¥n Hñu Kinh",
 						"Ngû Ðµc Công",
 						"ÐÕi Lý Binh Pháp",
 						"Ti¬u Vô Tß¾ng Công",
@@ -61,7 +61,7 @@ x890003_g_StrList = {
 						"Phù Mçn Nghi#{_INFOAIM95, 60, 17, Phù Mçn Nghi}",
 						"T¥n Quan#{_INFOAIM119, 152, 14, T¥n Quán}",
 						--newmenpai
-						"Tàn Phä Thông Khäo",
+						"Tàn Ph± Thông Khäo",
 						"Vß½ng An Ca#{_INFOAIM129, 106, 592, Vß½ng An Ca}", 
 						}
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi

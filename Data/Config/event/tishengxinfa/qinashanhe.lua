@@ -42,7 +42,7 @@ x890005_g_StrForePart=4
 x890005_g_StrList = {
 						"Thích Ca Kinh",
 						"Minh Tôn Thánh Höa Công",
-						"Hàng Long Th§p Bát Ðß¶ng HÕ Quy¬n",
+						"Hàng Long Th§p Bát Chß·ng HÕ Quy¬n",
 						"Nam Hoa Kinh",
 						"Äm Nhiên Bi®t Ly Chß·ng",
 						"Bính M®nh Tam ThÑc",

@@ -300,7 +300,7 @@ function PetFriendSearch_ConvertNumToMenPai( MenPaiId )
 		strMenPai = "Tñ do";
 
 	elseif(10== MenPaiId) then
-		strMenPai = "Mµ Dung";
+		strMenPai = "MÕn Ðà S½n Trang";
 
 	end
 

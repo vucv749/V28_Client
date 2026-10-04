@@ -87,7 +87,7 @@ function HuaShanGRMatchMulti_Id2MenPai(nMenpaiId)
 	elseif nMenpaiId == 9 then 
 		szMenpai = "Tñ do"
 	elseif nMenpaiId == 10 then 
-		szMenpai = "Mµ Dung Thª Gia"
+		szMenpai = "MÕn Ðà S½n Trang"
 	end	
 	return szMenpai	
 end

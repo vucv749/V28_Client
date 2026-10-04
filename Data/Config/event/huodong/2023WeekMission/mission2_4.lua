@@ -24,7 +24,7 @@ x890182_g_IfMissionElite = 0
 x890182_g_MissionName="#{BLCC_20221214_272}"
 x890182_g_MissionTarget="#{BLCC_20221214_115}"
 x890182_g_IsMissionOkFail=0
-x890182_g_Custom = {{id = "SØa chæa ThuÖ MÕc Dao Bính", num = 1}} --??
+x890182_g_Custom = {{id = "SØa Thüy MÕc Dao Bính", num = 1}} --??
 x890182_g_ContinueInfo = ""
 x890182_g_MissionComplete = "#{BLCC_20221214_114}"
 

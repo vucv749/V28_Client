@@ -494,7 +494,7 @@ function Show_Team_Member_Info_Func(index)
 			strMenPai = "Tñ do";
 
 		elseif(10== Fammily) then
-			strMenPai = "Mµ Dung";
+			strMenPai = "MÕn Ðà S½n Trang";
 
 		end
 

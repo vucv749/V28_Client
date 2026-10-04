@@ -211,7 +211,7 @@ function TeamMessageBox_Show_Message(strInviter, strDesName, strInvZoneWorldID, 
 			strMenPai = "Tiêu Dao";
 
 		elseif(10== menpai) then
-			strMenPai = "Mµ Dung";
+			strMenPai = "MÕn Ðà S½n Trang";
 
 	else
 		strMenPai = "Tñ do";

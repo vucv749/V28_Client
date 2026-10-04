@@ -678,7 +678,7 @@ function MiniMap_PlayerAsk_Bn_Clicked()
 		strName = "Tñ do";
 
 	elseif(10== menpai) then
-		strName = "Mµ Dung";
+		strName = "MÕn Ðà S½n Trang";
 
 	end
 
