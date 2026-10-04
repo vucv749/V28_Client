@@ -27,7 +27,7 @@ x212107_g_Custom	= { {id="Ðã ð¯t phân sói khô",num=1} }
 --nhi®m vø vån bän miêu tä
 x212107_g_MissionName="Ðu±i H¡c Phong"
 x212107_g_MissionInfo="#{Lua_liaoxi_001}"
-x212107_g_MissionTarget="  Di®t #RB?ch Lang Vß½ng #W#{_INFOAIM161,268,21,-1}, ðÕt ðßþc Can Lang Ph¥n. Dùng lØa ð¯t Can Lan Ph¥n, ðu±i hªt H¡c Phong, sau ðó quay lÕi #GQuäng Vinh Tr¤n#W tìm #RBá Nhan #W#{_INFOAIM164,199,21,Bá Nhan} báo cáo phát hi®n cüa mình."
+x212107_g_MissionTarget="  Tiêu di®t #RBÕch Lang Vß½ng#W#{_INFOAIM161,268,21,-1}, l¤y ðßþc Can Lang Ph¥n. Dùng Höa Chiªt TØ ð¯t Can Lang Ph¥n ð¬ xua ðu±i ðàn H¡c Phong, sau ðó quay v« #GQuäng Vinh Tr¤n#W báo cáo phát hi®n cüa các hÕ v¾i #RBá Nhan#W#{_INFOAIM164,199,21,Bá Nhan}."
 x212107_g_ContinueInfo="  Ngß½i ðã ðu±i H¡c Phong ði chßa?"
 x212107_g_MissionComplete="  Ngß¶i trë tu±i, ngß½i chính là cÑu tinh cüa chúng ta. Thay m£t t¤t cä tµc nhân ta, ta xin cäm tÕ sñ giúp ðÞ cüa các hÕ. Chúng ta s¨ mãi không quên"
 
