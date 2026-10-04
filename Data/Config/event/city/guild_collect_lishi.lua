@@ -24,7 +24,7 @@ x600047_g_MissionName			= "Chi Vi®n Tri«u Ðình: Nhi®m vø L¸ch ThÕch"
 --nhi®m vø miêu tä
 x600047_g_MissionInfo			= ""
 --nhi®m vø møc tiêu
-x600047_g_MissionTarget		= "    Thu th§p mµt s¯ #YL?ch ThÕch#W. Chúng có th¬ tìm · #GÐôn Hoàng Minh Sa S½n#W ho£c #GTung S½n C½ S½n Pha Nam#W. HÕn chót là trß¾c 20:00 gi¶ cùng ngày phäi hoàn thành và trä nhi®m vø."
+x600047_g_MissionTarget		= "    Thu th§p mµt s¯ #YL¸ch ThÕch#W. Chúng có th¬ tìm · #GÐôn Hoàng Minh Sa S½n#W ho£c #GTung S½n C½ S½n Pha Nam#W. HÕn chót là trß¾c 20:00 gi¶ cùng ngày phäi hoàn thành và trä nhi®m vø."
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi
 x600047_g_ContinueInfo		= ""
 --hoàn thành nhi®m vø Npc Thuyªt trong l¶i nói
