@@ -58,7 +58,7 @@ x229002_g_FormatList = {
 								"Hãy ði tìm #R%s#W, ngß¶i ðó s¨ ðßa các hÕ ði khiêu chiªn #G%s#W.#r  #GGþi ý:#W#r  Sß huynh Lâm Linh T¯ ðang · Võ Ðang S½n#{_INFOAIM58,73,12,Lâm Linh T¯}.#{SMXL_090819_wudang}#r#{SMRW_090206_01}",
 								"Hãy giúp ta b¡t mµt con #G%p#W.#B#r  #GGþi ý:#W#r  #GMÕc Thái Xung · Võ Ðang S½n#{_INFOAIM101,136,12,MÕc Thái Xung} có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{SMXL_090819_wudang}#r#{SMRW_090206_01}",
 								"Hãy ði xem xét kh¡p Võ Ðang S½n, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{SMXL_090819_wudang}#r#{SMRW_090206_01}",
-								"Thïnh C¤p#R%s#Wðßa ði mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r Thanh Minh Th¥n HÕc ngay tÕi Núi Võ Ðang#{_INFOAIM102, 108, 12, Thanh Minh Th¥n HÕc}. #r CØu Thiên Th¥n HÕc ngay tÕi Núi Võ Ðang#{_INFOAIM86, 84, 12, CØu Thiên Th¥n HÕc}. #r Vô Cñc Th¥n HÕc ngay tÕi Núi Võ Ðang#{_INFOAIM74, 85, 12, Vô Cñc Th¥n HÕc}. #{SMXL_090819_wudang}#r#{SMRW_090206_01}",
+								"Thïnh C¤p#R%s#Wðßa ði mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r Thanh Minh Th¥n HÕc ngay tÕi Núi Võ Ðang#{_INFOAIM102,108,12,Thanh Minh Th¥n HÕc}. #r CØu Thiên Th¥n HÕc ngay tÕi Núi Võ Ðang#{_INFOAIM86,84,12,CØu Thiên Th¥n HÕc}. #r Vô Cñc Th¥n HÕc ngay tÕi Núi Võ Ðang#{_INFOAIM74,85,12,Vô Cñc Th¥n HÕc}. #{SMXL_090819_wudang}#r#{SMRW_090206_01}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{SMXL_090819_wudang}#r#{SMRW_090206_01}",
 								}
 

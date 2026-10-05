@@ -30,7 +30,7 @@ x212117_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212117_g_MissionName="Kim Châm Ðµ Kiªp-V§n døng tñ nhiên"
 x212117_g_MissionInfo="#{emei_skill_mis_06}"
-x212117_g_MissionTarget="  Mang nµp #G5 vàng#W giao cho thành ÐÕi Lý Tu Vån Ðài#W cho #RVß½ng Thi«u #W#{_INFOAIM217,255,2, Vß½ng Thi«u}."
+x212117_g_MissionTarget="  Mang nµp #G5 vàng#W giao cho thành ÐÕi Lý Tu Vån Ðài#W cho #RVß½ng Thi«u #W#{_INFOAIM217,255,2,Vß½ng Thi«u}."
 x212117_g_MissionContinue="  Các hÕ quyªt ð¸nh h÷c Kim châm ðµ kiªp sao?"
 x212117_g_MissionComplete="#{emei_skill_mis_07}"
 

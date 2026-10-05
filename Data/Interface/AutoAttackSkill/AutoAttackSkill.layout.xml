@@ -677,21 +677,21 @@
 				<Window Type="TLBB_ButtonCheck" Name="AutoAttackSkill_AutoLevelUpBtn">
 					<Property Name="UnifiedSize" Value="{{0.000000,12.000000},{0.000000,13.000000}}"/>
 					<Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.500000,-6.000000}}"/>
-					<Property Name="Tooltip" Value="Lựa chọn Thử Tuyển Hạng Hậu, tự động chiến đấu Thời kinh nghiệm đầy Hội tự động thăng cấp."/>
+					<Property Name="Tooltip" Value="Khi chọn mục này, lúc tự động chiến đấu nếu đầy kinh nghiệm sẽ tự động nâng cấp."/>
 					<Event Name="MouseButtonUp" Function="AutoAttackSkill_AutoLevelUpBtn_Click()"/>
 				</Window>
 				<Window Type="TLBB_SimpleText" Name="AutoAttackSkill_AutoLevelUp">
 					<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,16.000000}}"/>
 					<Property Name="UnifiedPosition" Value="{{0.000000,15.000000},{0.500000,-8.000000}}"/>
 					<Property Name="TextColor" Value="FFFFF263"/>
-					<Property Name="Text" Value="#cfff263tự động thăng cấp"/>
-					<Property Name="Tooltip" Value="Lựa chọn Thử Tuyển Hạng Hậu, tự động chiến đấu Thời kinh nghiệm đầy Hội tự động thăng cấp."/>
+					<Property Name="Text" Value="#cfff263Tự động nâng cấp"/>
+					<Property Name="Tooltip" Value="Khi chọn mục này, lúc tự động chiến đấu nếu đầy kinh nghiệm sẽ tự động nâng cấp."/>
 				</Window>
 			</Window>
 			<Window Type="TLBB_ButtonExpCheck1" Name="AutoAttackSkill_Fight">
 				<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,40.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{1.000000,-105.000000},{1.000000,-40.000000}}"/>
-				<Property Name="Text" Value="Mở ra tự động chiến đấu"/>
+				<Property Name="Text" Value="Bật tự động đánh"/>
 				<Event Name="Clicked" Function="AutoAttackSkill_OnStartClick();"/>
 			</Window>
 		</Window>

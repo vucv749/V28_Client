@@ -23,7 +23,7 @@ x893310_g_IfMissionElite = 0
 --nhi®m vø Danh
 x893310_g_MissionName="Chiªn ð¤u vì sß môn"
 x893310_g_MissionInfo="#{event_mantuo_0001}"
-x893310_g_MissionTarget="TÕi MÕn Ðà S½n Trang tìm ðßþc Vß½ng An Ca#{_INFOAIM129, 106, 592, Vß½ng An Ca}."
+x893310_g_MissionTarget="TÕi MÕn Ðà S½n Trang tìm ðßþc Vß½ng An Ca#{_INFOAIM129,106,592,Vß½ng An Ca}."
 x893310_g_MissionComplete="  Các hÕ là ð°ng môn m¾i ðªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ðây có nhi«u vi®c c¥n các hÕ giúp ðÞ"
 x893310_g_MoneyJZBonus=800
 

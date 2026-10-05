@@ -37,9 +37,9 @@ x210249_g_StrForePart 				= 4
 x210249_g_FormatList = {"M¶i các hÕ ðªn %s tr°ng HÕt Gi¯ng Hy V÷ng này, sau khi hoàn thành hãy ðªn ch² Tôn Bát Gia · ÐÕi Lý nh§n ph¥n thß·ng hoÕt ðµng Lao Ðµng Là Vinh Quang.#r#GChú ý: M²i ngày chï ðßþc tham gia hoÕt ðµng này mµt l¥n, nªu hüy nhi®m vø thì hôm nay s¨ không th¬ tham gia nhi®m vø Lao Ðµng Là Vinh Quang næa.",}
 
 x210249_g_StrList = {
-	"Kiªm Các#{_INFOAIM58, 189, 7, }",
-	"NhÕn Nam#{_INFOAIM168, 114, 18, }",
-	"Vô Lßþng S½n#{_INFOAIM249, 42, 6, }",
+	"Kiªm Các#{_INFOAIM58,189,7,}",
+	"NhÕn Nam#{_INFOAIM168,114,18,}",
+	"Vô Lßþng S½n#{_INFOAIM249,42,6,}",
 	"Thái H°#{_INFOAIM97,177,4,}",
 	"Tung S½n#{_INFOAIM132,198,3,}",
  }

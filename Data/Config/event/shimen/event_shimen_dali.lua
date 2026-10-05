@@ -59,7 +59,7 @@ x229004_g_FormatList = {
 								"Hãy ði tìm #R%s#W, ngß¶i ðó s¨ ðßa các hÕ ði khiêu chiªn #G%s#W.#r  #GGþi ý:#W#r  ÐÕi sß Bän Tß¾ng ðang · Thiên Long Tñ#{_INFOAIM35,86,13,Bän Tß¾ng}.#{SMXL_090819_dali}#r#{SMRW_090206_01}",
 								"Hãy giúp ta b¡t mµt con #G%p#W.#B#r  #GGþi ý:#W#r  Phá Sân#{_INFOAIM99,120,13,Phá Sân} · Thiên Long Tñ có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{SMXL_090819_dali}#r#{SMRW_090206_01}",
 								"Hãy ði xem xét kh¡p Thiên Long Tñ, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{SMXL_090819_dali}#r#{SMRW_090206_01}",
-								"Thïnh C¤p#R%s#Wðßa ði mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r Ngû Trung ðÕi nhân ngay tÕi Thiên Long Tñ#{_INFOAIM94, 126, 13, Ngû Trung}. #r Lâm Qu¯c Thanh ðÕi nhân ngay tÕi Thiên Long Tñ#{_INFOAIM96, 126, 13, Lâm Qu¯c Thanh}. #r T« Quy Ði®p phu nhân ngay tÕi Thiên Long Tñ#{_INFOAIM154, 115, 13, T« Quy Ði®p}. #{SMXL_090819_dali}#r#{SMRW_090206_01}",
+								"Thïnh C¤p#R%s#Wðßa ði mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r Ngû Trung ðÕi nhân ngay tÕi Thiên Long Tñ#{_INFOAIM94,126,13,Ngû Trung}. #r Lâm Qu¯c Thanh ðÕi nhân ngay tÕi Thiên Long Tñ#{_INFOAIM96,126,13,Lâm Qu¯c Thanh}. #r T« Quy Ði®p phu nhân ngay tÕi Thiên Long Tñ#{_INFOAIM154,115,13,T« Quy Ði®p}. #{SMXL_090819_dali}#r#{SMRW_090206_01}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{SMXL_090819_dali}#r#{SMRW_090206_01}",
 							}
 

@@ -26,7 +26,7 @@ x212128_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212128_g_MissionName="Anh hùng không sþ vi­n chinh khó"
 x212128_g_MissionInfo="#{Mis_75_desc_001}"
-x212128_g_MissionTarget="TÕi Thành ÐÕi Lý tìm ðßþc Th¦m Quát#{_INFOAIM222, 103, 2, Th¦m Quát}."
+x212128_g_MissionTarget="TÕi Thành ÐÕi Lý tìm ðßþc Th¦m Quát#{_INFOAIM222,103,2,Th¦m Quát}."
 --x212128_g_MissionContinue=" sinh m®nh nªu có th¬ Trùng Lai mµt l¥n, ta s¨ nhß thª nào lña ch÷n Ni? Nªu chân th§t Hoà hß äo không th¬ nào nh§n, vì sao không nghe Thung tâm linh Ðích g÷i v« làm ra lña ch÷n Ni. "
 x212128_g_MissionComplete="  Ð÷c ðßþc hªt sách trên thiên hÕ, ði hªt 5 châu 4 b¬ là sñ theo ðu±i cüa ð¶i ta. T× xßa ðªn nay chï có ngß¶i tri thÑc m¾i tr· thành anh hùng."
 

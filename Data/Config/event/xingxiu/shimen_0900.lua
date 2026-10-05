@@ -23,7 +23,7 @@ x227900_g_IfMissionElite = 0
 --nhi®m vø Danh
 x227900_g_MissionName="Chiªn ð¤u vì sß môn"
 x227900_g_MissionInfo="#{event_xingxiu_0001}"
-x227900_g_MissionTarget="    — Tinh Túc Häi tìm ðªn Vß½ng NgÕn #{_INFOAIM96,92,16, Vß½ng NgÕn}."
+x227900_g_MissionTarget="    — Tinh Túc Häi tìm ðªn Vß½ng NgÕn #{_INFOAIM96,92,16,Vß½ng NgÕn}."
 x227900_g_MissionComplete="  Các hÕ là ð°ng môn m¾i ðªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ðây có nhi«u vi®c c¥n các hÕ giúp ðÞ"
 x227900_g_MoneyJZBonus=800
 

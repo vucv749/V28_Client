@@ -355,7 +355,7 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			elseif nIndex == 998317 then
 				strTemp = "#{FQZC_230331_292}"
 			elseif MissionTrack_CheckScriptId_CanAutoRun(nIndex) >= 1 then
-				strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFONGAIM%d, %d, %d, %s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
+				strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFONGAIM%d,%d,%d,%s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			else
 				strTemp = string.format("   #WÐªn #G%s#W tìm #R%s#{_INFOAIM%d,%d,%d,%s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			end

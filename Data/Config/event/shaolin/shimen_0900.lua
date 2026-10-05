@@ -23,7 +23,7 @@ x220900_g_IfMissionElite = 0
 --nhi®m vø Danh
 x220900_g_MissionName="Chiªn ð¤u vì sß môn"
 x220900_g_MissionInfo="#{event_shaolin_0001}"
-x220900_g_MissionTarget="    — Thiªu Lâm Tñ tìm Tu® Phß½ng #{_INFOAIM96,82,9, Tu® Phß½ng}."
+x220900_g_MissionTarget="    — Thiªu Lâm Tñ tìm Tu® Phß½ng #{_INFOAIM96,82,9,Tu® Phß½ng}."
 x220900_g_MissionComplete="  Các hÕ là ð°ng môn m¾i ðªn phäi không. Các hÕ làm tuy®t l¡m. Ta · ðây có nhi«u vi®c c¥n các hÕ giúp ðÞ"
 x220900_g_MoneyJZBonus=800
 

@@ -12,7 +12,7 @@
 				<Property Name="Size" Value="w:1.0 h:1.0"/>
 				<Property Name="Font" Value="YouYuan11.25"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
-				<Property Name="Text" Value="#gFF0FA0«Thiên Long Bát Bộ·Tuyết Vũ»quản lý công cụ·tạo ra"/>
+				<Property Name="Text" Value="#gFF0FA0Thiên Long Bát Bộ-Tuyết Vũ: Công cụ quản lý - Chế tạo"/>
 			</Window>
 		</Window>
 		<Window Type="TLBB_ButtonHelp" Name="GameTools4_Help">
@@ -38,7 +38,7 @@
 		<Window Type="TLBB_ButtonFenYe2" Name="GameTools4_FenYe2">
 			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,50.000000},{0.000000,322.000000}}"/>
-			<Property Name="Text" Value="Trị số"/>
+			<Property Name="Text" Value="Chỉ số"/>
 			<Property Name="Selected" Value="False"/>
 			<Property Name="CheckMode" Value="1"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_ChangeTabIndex(2);"/>
@@ -54,7 +54,7 @@
 		<Window Type="TLBB_ButtonFenYe2" Name="GameTools4_FenYe4">
 			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,322.000000}}"/>
-			<Property Name="Text" Value="Tạo ra"/>
+			<Property Name="Text" Value="Chế tạo"/>
 			<Property Name="Selected" Value="True"/>
 			<Property Name="CheckMode" Value="1"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_ChangeTabIndex(4);"/>
@@ -78,7 +78,7 @@
 		<Window Type="TLBB_ButtonFenYe2" Name="GameTools4_FenYe7">
 			<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,22.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,265.000000},{0.000000,322.000000}}"/>
-			<Property Name="Text" Value="Siêu Quản"/>
+			<Property Name="Text" Value="Siêu quản"/>
 			<Property Name="Selected" Value="False"/>
 			<Property Name="CheckMode" Value="1"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_ChangeTabIndex(7);"/>
@@ -102,7 +102,7 @@
 				<Property Name="UnifiedPosition" Value="{{0.000000,110.000000},{0.000000,0.000000}}"/>
 				<Property Name="Size" Value="w:1.0 h:1.0"/>
 				<Property Name="RiseOnClick" Value="False"/>
-				<Property Name="Text" Value="Cấp bậc"/>
+				<Property Name="Text" Value="Cấp"/>
 			</Window>
 			<Window Type="TLBB_EditBoxNormal" Name="GameTools4_XiuLainLevelEdix">
 				<Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,18.000000}}"/>
@@ -113,19 +113,19 @@
 			<Window Type="TLBB_ButtonCommon" Name="GameTools4_XiuLainSet">
 				<Property Name="UnifiedPosition" Value="{{0.000000,180.000000},{0.000000,3.000000}}"/>
 				<Property Name="AbsoluteSize" Value="w:35.000000 h:18.000000"/>
-				<Property Name="Text" Value="Thiết trí"/>
+				<Property Name="Text" Value="Thiết lập"/>
 				<Event Name="Clicked" Function="GameTools4_XiuLain_Fun(3);"/>
 			</Window>
 			<Window Type="TLBB_ButtonAdd" Name="GameTools4_Addition1">
 				<Property Name="UnifiedPosition" Value="{{0.000000,220.000000},{0.000000,3.000000}}"/>
 				<Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
-				<Property Name="Tooltip" Value="Toàn Mãn tu luyện"/>
+				<Property Name="Tooltip" Value="Tu luyện tối đa"/>
 				<Event Name="Clicked" Function="GameTools4_XiuLain_Fun(1);"/>
 			</Window>
 			<Window Type="TLBB_ButtonSub" Name="GameTools4_Decrease1">
 				<Property Name="UnifiedPosition" Value="{{0.000000,240.000000},{0.000000,3.000000}}"/>
 				<Property Name="UnifiedSize" Value="{{0.000000,18.000000},{0.000000,18.000000}}"/>
-				<Property Name="Tooltip" Value="Thanh Không tu luyện"/>
+				<Property Name="Tooltip" Value="Xóa tu luyện"/>
 				<Event Name="Clicked" Function="GameTools4_XiuLain_Fun(2);"/>
 			</Window>
 		</Window>
@@ -133,7 +133,7 @@
 		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools4_WuYi">
 			<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,64.000000}"/>
 			<Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,24.000000}"/>
-			<Property Name="Text" Value="Toàn Mãn/Thanh Không Võ Ý"/>
+			<Property Name="Text" Value="Đầy/Xóa Võ Ý"/>
 			
 			<Property Name="TextColor" Value="FFFFF263"/>
 			<Property Name="VertFormatting" Value="VertCentred"/>
@@ -157,7 +157,7 @@
 		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools4_JingMai">
 			<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,92.000000}"/>
 			<Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,24.000000}"/>
-			<Property Name="Text" Value="Thanh Không kinh mạch"/>
+			<Property Name="Text" Value="Xóa kinh mạch"/>
 			
 			<Property Name="TextColor" Value="FFFFF263"/>
 			<Property Name="VertFormatting" Value="VertCentred"/>
@@ -171,7 +171,7 @@
 		<Window Type="TLBB_SimpleMulitiTextFrame" Name="GameTools4_TianJi">
 			<Property Name="UnifiedPosition" Value="{{0.000000,8.000000},{0.000000,120.000000}"/>
 			<Property Name="UnifiedSize" Value="{{0.000000,280.000000},{0.000000,24.000000}"/>
-			<Property Name="Text" Value="Thanh Không chỉ định thiên cơ"/>
+			<Property Name="Text" Value="Xóa Thiên Cơ chỉ định"/>
 			
 			<Property Name="TextColor" Value="FFFFF263"/>
 			<Property Name="VertFormatting" Value="VertCentred"/>
@@ -192,60 +192,60 @@
 		<Window Type="TLBB_ButtonCommon2" Name="GameTools4_DaoJuQingKong">
 			<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,36.000000}}"/>
-			<Property Name="Tooltip" Value="Cẩn thận: Thanh Không đạo cụ Lan"/>
+			<Property Name="Tooltip" Value="Cẩn thận: Xóa ô đạo cụ"/>
 			<Property Name="AlwaysOnTop" Value="True"/>
-			<Property Name="Text" Value="Thanh Không đạo cụ Lan"/>
+			<Property Name="Text" Value="Xóa ô đạo cụ"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_QingKong(1);"/>
 		</Window>
 		<Window Type="TLBB_ButtonCommon2" Name="GameTools4_MDQingKong">
 			<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,36.000000}}"/>
-			<Property Name="Tooltip" Value="Cẩn thận: Thanh Không MD"/>
+			<Property Name="Tooltip" Value="Cẩn thận: Xóa MD"/>
 			<Property Name="AlwaysOnTop" Value="True"/>
-			<Property Name="Text" Value="Thanh Không toàn bộ MD"/>
+			<Property Name="Text" Value="Xóa toàn bộ MD"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_QingKong(4);"/>
 		</Window>
 		<!-- 第二行 y:64 -->
 		<Window Type="TLBB_ButtonCommon2" Name="GameTools4_CaiLiaoQingKong">
 			<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,64.000000}}"/>
-			<Property Name="Tooltip" Value="Cẩn thận: Thanh Không tài liệu Lan"/>
+			<Property Name="Tooltip" Value="Cẩn thận: Xóa ô nguyên liệu"/>
 			<Property Name="AlwaysOnTop" Value="True"/>
-			<Property Name="Text" Value="Thanh Không tài liệu Lan"/>
+			<Property Name="Text" Value="Xóa ô nguyên liệu"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_QingKong(2);"/>
 		</Window>
 		<Window Type="TLBB_ButtonCommon2" Name="GameTools4_MDEXQingKong">
 			<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,64.000000}}"/>
-			<Property Name="Tooltip" Value="Cẩn thận: Thanh Không MDEX"/>
+			<Property Name="Tooltip" Value="Cẩn thận: Xóa MDEX"/>
 			<Property Name="AlwaysOnTop" Value="True"/>
-			<Property Name="Text" Value="Thanh Không toàn bộ MDEX"/>
+			<Property Name="Text" Value="Xóa toàn bộ MDEX"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_QingKong(5);"/>
 		</Window>
 		<!-- 第三行 y:92 -->
 		<Window Type="TLBB_ButtonCommon2" Name="GameTools4_RenWuQingKong">
 			<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,92.000000}}"/>
-			<Property Name="Tooltip" Value="Cẩn thận: Thanh Không nhiệm vụ Lan"/>
+			<Property Name="Tooltip" Value="Cẩn thận: Xóa ô nhiệm vụ"/>
 			<Property Name="AlwaysOnTop" Value="True"/>
-			<Property Name="Text" Value="Thanh Không nhiệm vụ Lan"/>
+			<Property Name="Text" Value="Xóa ô nhiệm vụ"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_QingKong(3);"/>
 		</Window>
 		<Window Type="TLBB_ButtonCommon2" Name="GameTools4_FLAGQingKong">
 			<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,420.000000},{0.000000,92.000000}}"/>
-			<Property Name="Tooltip" Value="Cẩn thận: Thanh Không FLAG"/>
+			<Property Name="Tooltip" Value="Cẩn thận: Xóa FLAG"/>
 			<Property Name="AlwaysOnTop" Value="True"/>
-			<Property Name="Text" Value="Thanh Không toàn bộ FLAG"/>
+			<Property Name="Text" Value="Xóa toàn bộ FLAG"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_QingKong(6);"/>
 		</Window>
 		<!-- 第四行 y:120 -->
 		<Window Type="TLBB_ButtonCommon2" Name="GameTools4_BUFFQingKong">
 			<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,20.000000}}"/>
 			<Property Name="UnifiedPosition" Value="{{0.000000,320.000000},{0.000000,120.000000}}"/>
-			<Property Name="Tooltip" Value="Cẩn thận: Thanh Không trạng thái"/>
+			<Property Name="Tooltip" Value="Cẩn thận: Xóa trạng thái"/>
 			<Property Name="AlwaysOnTop" Value="True"/>
-			<Property Name="Text" Value="Thanh Không toàn bộ trạng thái"/>
+			<Property Name="Text" Value="Xóa toàn bộ trạng thái"/>
 			<Event Name="MouseLButtonDown" Function="GameTools4_QingKong(7);"/>
 		</Window>
 

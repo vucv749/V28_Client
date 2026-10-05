@@ -30,7 +30,7 @@ x212144_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212144_g_MissionName="Di®t ThØ Triêu Thñc"
 x212144_g_MissionInfo="#{Mis_shaolin_966}"
-x212144_g_MissionTarget="  Mang 5 vàng ðªn Tu Vån Ðài · thành ÐÕi Lý#W Giao cho #RVß½ng Thi«u #W#{_INFOAIM217,255,2, Vß½ng Thi«u}."
+x212144_g_MissionTarget="  Mang 5 vàng ðªn Tu Vån Ðài · thành ÐÕi Lý#W Giao cho #RVß½ng Thi«u #W#{_INFOAIM217,255,2,Vß½ng Thi«u}."
 x212144_g_MissionContinue="  Các hÕ quyªt ð¸nh mu¯n h÷c kÛ nång Di®t ThØ Triêu Thñc không?"
 x212144_g_MissionComplete="  Nhìn kî ðây, chiêu này s¨ truy«n cho ngß½i, sau này phäi sØ døng cho t¯t nhé."
 

@@ -28,7 +28,7 @@ x212131_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212131_g_MissionName="Hành giä vô song"
 x212131_g_MissionInfo="#{Mis_Hero_songxin_01}"
-x212131_g_MissionTarget="TÕi Thành ÐÕi Lý tìm ðßþc Th¦m Quát#{_INFOAIM222, 103, 2, Th¦m Quát}."
+x212131_g_MissionTarget="TÕi Thành ÐÕi Lý tìm ðßþc Th¦m Quát#{_INFOAIM222,103,2,Th¦m Quát}."
 x212131_g_MissionComplete="  Kiªn thÑc và kinh nghi®m cüa các hÕ ð«u ðã ðµc bá giang h°, cách danh hi®u anh hùng không còn bao xa."
 
 x212131_g_MoneyBonus=50000

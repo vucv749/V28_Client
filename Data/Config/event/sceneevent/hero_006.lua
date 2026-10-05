@@ -28,7 +28,7 @@ x212133_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212133_g_MissionName="Vô ð¸ch hi®p khách"
 x212133_g_MissionInfo="#{Mis_Hero_songxin_03}"
-x212133_g_MissionTarget="TÕi Thành Tô Châu tìm ðßþc Vß½ng An ThÕch#{_INFOAIM267, 116, 1, Vß½ng An ThÕch}."
+x212133_g_MissionTarget="TÕi Thành Tô Châu tìm ðßþc Vß½ng An ThÕch#{_INFOAIM267,116,1,Vß½ng An ThÕch}."
 x212133_g_MissionComplete="  Võ công và danh v÷ng cüa các hÕ ð«u ðã ðµc bá giang h°, cách danh hi®u anh hùng không còn bao xa."
 
 x212133_g_MoneyBonus=50000

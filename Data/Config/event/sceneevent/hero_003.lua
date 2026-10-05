@@ -26,7 +26,7 @@ x212130_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212130_g_MissionName="Thiên hÕ anh hùng ai ð¸ch thü"
 x212130_g_MissionInfo="#{Mis_75_desc_003}"
-x212130_g_MissionTarget="TÕi Thành Tô Châu tìm ðßþc Vß½ng An ThÕch#{_INFOAIM267, 116, 1, Vß½ng An ThÕch}."
+x212130_g_MissionTarget="TÕi Thành Tô Châu tìm ðßþc Vß½ng An ThÕch#{_INFOAIM267,116,1,Vß½ng An ThÕch}."
 --x212130_g_MissionContinue=" sinh m®nh nªu có th¬ Trùng Lai mµt l¥n, ta s¨ nhß thª nào lña ch÷n Ni? Nªu chân th§t Hoà hß äo không th¬ nào nh§n, vì sao không nghe Thung tâm linh Ðích g÷i v« làm ra lña ch÷n Ni. "
 x212130_g_MissionComplete="  Dân giàu nß¾c mÕnh, bách tính an cß lÕc nghi®p là tâm nguy®n cä ð¶i ta, so v¾i ði«u này thì sñ vinh hoa cüa bän thân có ðáng là gì chÑ!"
 

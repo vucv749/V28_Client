@@ -15,7 +15,7 @@
 			<Property Name="DragTarget" Value="QuickLogin_Frame"/>
 			<Window Type="TLBB_SimpleText" Name="QuickLogin_PageHeader">
 				<Property Name="UnifiedSize" Value="{{1.000000,0.000000},{1.000000,0.000000}}"/>
-				<Property Name="Text" Value="#cfff263《Thiên Long Bát Bộ 》 lịch sử tài khoản quản lý"/>
+				<Property Name="Text" Value="#cfff263Quản lý tài khoản đã lưu"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
 				<Property Name="Font" Value="YouYuan11.25"/>
 				<Property Name="TextColor" Value="FFFFF263"/>
@@ -187,34 +187,34 @@
 			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_previous">
 				<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,19.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,3.000000},{1.000000,-33.000000}}"/>
-				<Property Name="Text" Value="#cfff263Thượng một tờ"/>
+				<Property Name="Text" Value="#cfff263Trang trước"/>
 				<Event Name="Clicked" Function="QuickLogin_previousPage();"/>
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_next">
 				<Property Name="UnifiedSize" Value="{{0.000000,45.000000},{0.000000,19.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,48.000000},{1.000000,-33.000000}}"/>
-				<Property Name="Text" Value="#cfff263tiếp theo Diệp"/>
+				<Property Name="Text" Value="#cfff263Trang sau"/>
 				<Event Name="Clicked" Function="QuickLogin_nextPage();"/>
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Login">
 				<Property Name="UnifiedSize" Value="{{0.000000,90.000000},{0.000000,19.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,118.000000},{1.000000,-33.000000}}"/>
-				<Property Name="Text" Value="#GlỰa chọn"/>
-				<Property Name="Tooltip" Value="#YlỰa chọn Hảo tài khoản về sau Điểm Thử đăng ký"/>
+				<Property Name="Text" Value="#GChọn"/>
+				<Property Name="Tooltip" Value="#YChọn tài khoản xong, nhấn vào đây để đăng nhập"/>
 				<Event Name="Clicked" Function="QuickLogin_AccountLoginClick();"/>
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_Remove">
 				<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,258.000000},{1.000000,-33.000000}}"/>
-				<Property Name="Text" Value="#cFF0000xóa bỏ"/>
-				<Property Name="Tooltip" Value="#YxÓa bỏ Câu Tuyển tài khoản Đích bảo tồn bản ghi chép"/>
+				<Property Name="Text" Value="#cFF0000Xóa"/>
+				<Property Name="Tooltip" Value="#YXóa dữ liệu đã lưu của tài khoản được đánh dấu"/>
 				<Event Name="Clicked" Function="QuickLogin_RemoveSavedAccounts();"/>
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_modify">
 				<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,291.000000},{1.000000,-33.000000}}"/>
-				<Property Name="Text" Value="#cFF0000sửa chữa"/>
-				<Property Name="Tooltip" Value="#YsỬa chữa Câu Tuyển tài khoản tin tức"/>
+				<Property Name="Text" Value="#cFF0000Sửa"/>
+				<Property Name="Tooltip" Value="#YSửa thông tin tài khoản được đánh dấu"/>
 				<Event Name="Clicked" Function="QuickLogin_modifyAccounts();"/>
 			</Window>
 		</Window>	
@@ -230,7 +230,7 @@
 			<Window Type="TLBB_SimpleText" Name="QuickLogin_AccountMiMa">
 				<Property Name="UnifiedSize" Value="{{0.000000,100.000000},{0.000000,120.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,-25.000000},{0.000000,20.000000}}"/>
-				<Property Name="Text" Value="Mật mã:"/>
+				<Property Name="Text" Value="Mật khẩu:"/>
 				<Property Name="HorzFormatting" Value="HorzCentred"/>
 			</Window>
 			<Window Type="TLBB_EditBoxNormal" Name="QuickLogin_Edix1">
@@ -246,14 +246,14 @@
 			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_OK">
 				<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,5.000000},{0.000000,90.000000}}"/>
-				<Property Name="Text" Value="#cFF0000xác nhận"/>
+				<Property Name="Text" Value="#cFF0000Xác nhận"/>
 				<Event Name="Clicked" Function="QuickLogin_modifyOK(1);"/>
 				<Property Name="AlwaysOnTop" Value="True"/>
 			</Window>
 			<Window Type="TLBB_ButtonCommon" Name="QuickLogin_QuXiao">
 				<Property Name="UnifiedSize" Value="{{0.000000,33.000000},{0.000000,19.000000}}"/>
 				<Property Name="UnifiedPosition" Value="{{0.000000,40.000000},{0.000000,90.000000}}"/>
-				<Property Name="Text" Value="#cFF0000hủy bỏ"/>
+				<Property Name="Text" Value="#cFF0000Hủy"/>
 				<Event Name="Clicked" Function="QuickLogin_modifyOK(2);"/>
 				<Property Name="AlwaysOnTop" Value="True"/>
 			</Window>

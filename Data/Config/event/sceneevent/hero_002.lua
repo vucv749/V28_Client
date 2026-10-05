@@ -26,7 +26,7 @@ x212129_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212129_g_MissionName="C± lai anh hùng ð«u cô ðµc"
 x212129_g_MissionInfo="#{Mis_75_desc_002}"
-x212129_g_MissionTarget="TÕi Thành LÕc Dß½ng tìm ðßþc Tß Mã Quang#{_INFOAIM207, 212, 0, Tß Mã Quang}."
+x212129_g_MissionTarget="TÕi Thành LÕc Dß½ng tìm ðßþc Tß Mã Quang#{_INFOAIM207,212,0,Tß Mã Quang}."
 --x212129_g_MissionContinue=" sinh m®nh nªu có th¬ Trùng Lai mµt l¥n, ta s¨ nhß thª nào lña ch÷n Ni? Nªu chân th§t Hoà hß äo không th¬ nào nh§n, vì sao không nghe Thung tâm linh Ðích g÷i v« làm ra lña ch÷n Ni. "
 x212129_g_MissionComplete="  L¸ch sØ là 1 d°ng sông dài, Ba ðào c±n c±n, Bôn lßu b¤t tÑc. Nhæng v¸ anh hùng hào ki®t, oanh oanh li®t li®t ra ði và s¨ không bao gi¶ quay v«...."
 
