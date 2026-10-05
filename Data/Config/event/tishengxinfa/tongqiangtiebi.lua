@@ -55,7 +55,7 @@ x890002_g_StrList = {
 						"Lâm Nham#{_INFOAIM98,105,11,Lâm Nham}",
 						"H°ng Thông#{_INFOAIM92,77,10,H°ng Thông}",
 						"Trß½ng Trung Hành#{_INFOAIM78,95,12,Trß½ng Trung Hành}",
-						"MÕnh Long#{_INFOAIM96,86,15,Mãnh Long}",
+						"MÕnh Long#{_INFOAIM96,86,15,MÕnh Long}",
 						"Vß½ng NgÕn#{_INFOAIM96,92,16,Vß½ng NgÕn}",
 						"B±n Phàm#{_INFOAIM96,88,13,B±n Phàm}",
 						"Phù Mçn Nghi#{_INFOAIM95,60,17,Phù Mçn Nghi}",

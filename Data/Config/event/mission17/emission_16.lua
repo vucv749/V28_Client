@@ -25,7 +25,7 @@ x891095_g_Custom1 = {}
 x891095_g_Position_X=193
 x891095_g_Position_Z=144
 x891095_g_SceneID=1
-x891095_g_AccomplishNPC_Name="Xung Sß ÐÕo"
+x891095_g_AccomplishNPC_Name="Chüng Sß ÐÕo"
 --thß·ng cho
 x891095_g_MoneyJZBonus					=30000
 x891095_g_ExpBonus						=250000

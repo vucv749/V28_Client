@@ -54,7 +54,7 @@ local SelfPeak_Goto_EnterNPCInfo =
 {
     scn = 2,
     pos = { 219, 43 },
-    name = "Huy«n Trí pháp sß",
+    name = "Huy«n Trí Pháp Sß",
 } -- end SelfPeak_Goto_EnterNPCInfo
 
 local SelfPeak_Image_Icon =

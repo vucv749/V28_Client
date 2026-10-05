@@ -4,7 +4,7 @@ x998696_g_ScriptId  = 998696                --???
 x998696_g_KDZZID = 1001000259
 
 x998696_g_AcceptNpcName = "Kh¤u Chu¦n"
-x998696_g_TargetNpcName = "Xuân nãi nãi, bà nµi"
+x998696_g_TargetNpcName = "Xuân Nãi Nãi"
 --nhi®m vø Hào
 x998696_g_MissionId = 2301  
 

@@ -12,13 +12,13 @@ x998269_g_KDZZID = 1001000230
 x998269_g_KDZZSubID = 1
 
 --tiªp nh§n chÑc vø Vø Npc
-x998269_g_AcceptNPC_Name="D¸ch hi¬u nhau"--????npc??npc??
+x998269_g_AcceptNPC_Name="D¸ch Tß½ng Tri"--????npc??npc??
 
 --Giao nhi®m vø Npc
 x998269_g_Position_X=160--????NPC??
 x998269_g_Position_Z=112
 x998269_g_SceneID=0
-x998269_g_AccomplishNPC_Name="D¸ch hi¬u nhau"
+x998269_g_AccomplishNPC_Name="D¸ch Tß½ng Tri"
 
 --nhi®m vø s¯ li®u
 x998269_g_MissionKind = 3

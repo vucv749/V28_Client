@@ -6,14 +6,14 @@ x893090_g_ScriptId			= 893090
 x893090_g_Position_X		= 185
 x893090_g_Position_Z		= 160
 x893090_g_SceneID			= 0
-x893090_g_AccomplishNPC_Name= "Bi¬n mây"
+x893090_g_AccomplishNPC_Name= "Vân Häi"
 
 --Thßþng mµt cái nhi®m vø Ðích ID
 x893090_g_MissionIdPre		= -1
 --nhi®m vø Hào
 x893090_g_MissionId			= 2055
 --nhi®m vø møc tiêu Npc
-x893090_g_Name				= "Bi¬n mây"
+x893090_g_Name				= "Vân Häi"
 
 --nhi®m vø phân loÕi
 x893090_g_MissionKind		= 3

@@ -6,7 +6,7 @@ x891081_g_ScriptId = 891081
 x891081_g_Position_X=129  --??
 x891081_g_Position_Z=107 --??
 x891081_g_SceneID=1
-x891081_g_AccomplishNPC_Name="Th¦m dÕ vû"
+x891081_g_AccomplishNPC_Name="Th¦m DÕ Vû"
 
 --nhi®m vø Hào
 x891081_g_PreMissionId = 2000 --??

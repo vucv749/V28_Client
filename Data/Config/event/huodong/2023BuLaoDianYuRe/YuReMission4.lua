@@ -9,7 +9,7 @@ x890146_g_KDZZID = 1006000563
 x890146_g_KDZZSubID = 4
 
 --tiªp nh§n chÑc vø Vø Npc
-x890146_g_AcceptNPC_Name="Th¥n bí næ tØ"--????npc??npc??
+x890146_g_AcceptNPC_Name="Th¥n Bí Næ TØ"--????npc??npc??
 x890146_g_AcceptSceneID=1298
 
 --Giao nhi®m vø Npc

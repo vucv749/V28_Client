@@ -38,7 +38,7 @@ x210247_g_StrList 						= {
  "#RTôn Bát Gia#W#{_INFOAIM173,146,2,Tôn Bát Gia}",
  "#RVân Hàm Nhi#W#{_INFOAIM182,155,0,Vân Hàm Nhi}",
  ----------------------------------------------
- "Cán Hùng Trß·ng Thành (Huy«n Vû Ðäo#{_INFOAIM115,122,112,})",
+ "Hoán Hùng Trß·ng Thành (Huy«n Vû Ðäo#{_INFOAIM115,122,112,})",
  "Lang Trß·ng Thành (Huy«n Vû Ðäo#{_INFOAIM200,162,112,})",
  "Tùng ThØ Trß·ng Thành (Huy«n Vû Ðäo#{_INFOAIM175,128,112,})",
  "Anh Vû Trß·ng Thành (Huy«n Vû Ðäo#{_INFOAIM153,157,112,})",

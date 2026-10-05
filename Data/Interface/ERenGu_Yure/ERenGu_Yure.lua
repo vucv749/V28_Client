@@ -256,7 +256,7 @@ function ERenGu_Yure_CloseFunc()
 	return 
 end
 function ERenGu_Yure_Client1_Goto_Clicked()
-	AutoRuntoTargetExWithName(137, 183, 1, "Ngß¶i n±i tiªng Ngæ")
+	AutoRuntoTargetExWithName(137, 183, 1, "Vån Nhân Ngæ")
 	PushDebugMessage("#{ERYR_240701_34}")
 	ERenGu_Yure_CloseFunc()
 end
@@ -562,7 +562,7 @@ function ERenGu_Yure_Client2_CluePage_Goto_Clicked()
 			Set_XSCRIPT_Parameter(0,g_CurQuestPhrase)
 			Set_XSCRIPT_ParamCount(1)
 		Send_XSCRIPT()
-	AutoRuntoTargetExWithName(137, 183, 1, "Ngß¶i n±i tiªng Ngæ")
+	AutoRuntoTargetExWithName(137, 183, 1, "Vån Nhân Ngæ")
 	local GotoBtnState = g_CloseCase_Component.GotoBtn.State
 	if GotoBtnState == 1 then
 		g_CloseCase_Component.AnimateComponent:Play(true)
@@ -575,7 +575,7 @@ function ERenGu_Yure_Client3_Goto_Clicked()
 		ERenGu_Yure_CloseFunc()
 	else
 		if g_CurQuestPhrase == 3 then
-			AutoRuntoTargetExWithName(149, 268, 1, "Thi cu°n cuµn")
+			AutoRuntoTargetExWithName(149, 268, 1, "Thi HÕo Nhiên")
 		else
 			AutoRunToTargetEx(168,109,30)
 			PushDebugMessage("#{ERYR_240701_328}")

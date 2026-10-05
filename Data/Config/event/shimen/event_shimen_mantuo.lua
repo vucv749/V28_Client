@@ -58,7 +58,7 @@ x893259_g_FormatList = {
 								"Hãy ði tìm #R%s#W, ngß¶i ðó s¨ dçn các hÕ ðªn n½i ð£t #G%s#W cüa b±n phái.#r  #GGþi ý:#W#r  Vß½ng Ði®p Quyên ðang · MÕn Ðà S½n Trang#{_INFOAIM30,197,592,Vß½ng Ði®p Quyên}.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
 								"Hãy giúp ta b¡t mµt con #G%p#W v« ðây.#B#r  #GGþi ý:#W#r  #GU Thäo · MÕn Ðà S½n Trang#{_INFOAIM143,159,592,U Thäo}#W có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
 								"Hãy ði kh¡p MÕn Ðà S½n Trang xem thØ, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
-								"Hãy mang ðªn cho #R%s#W mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GGþi ý:#W#r  Nghiêm Ma Ma ðang · MÕn Ðà S½n Trang#{_INFOAIM228,196,592,Nghiêm mø mø}.#r  Li­u Phù Phong ðang · MÕn Ðà S½n Trang#{_INFOAIM125,195,592,Li­u Phù Phong}.#r  Quan S½n Nguy®t ðang · MÕn Ðà S½n Trang#{_INFOAIM210,158,592,Quan S½n Nguy®t}.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
+								"Hãy mang ðªn cho #R%s#W mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GGþi ý:#W#r  Nghiêm Ma Ma ðang · MÕn Ðà S½n Trang#{_INFOAIM228,196,592,Nghiêm Ma Ma}.#r  Li­u Phù Phong ðang · MÕn Ðà S½n Trang#{_INFOAIM125,195,592,Li­u Phù Phong}.#r  Quan S½n Nguy®t ðang · MÕn Ðà S½n Trang#{_INFOAIM210,158,592,Quan S½n Nguy®t}.#{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{MTSZSMRW_20220621_26}#r#{MTSZSMRW_20220621_21}",
 								}
 
@@ -78,7 +78,7 @@ x893259_g_StrList = {
 						"Hß½ng li®u",
 						"QuÏnh Ng÷c d¥u tr½n",
 						"C¥m Mµc",
-						"Nghiêm mø mø",
+						"Nghiêm Ma Ma",
 						"Li­u Phù Phong",
 						"Quan S½n Nguy®t",
 						"Sài Miêu Hoang Dã",

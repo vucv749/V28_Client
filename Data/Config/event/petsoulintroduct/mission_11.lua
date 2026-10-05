@@ -6,7 +6,7 @@ x893050_g_ScriptId = 893050
 x893050_g_Position_X=89
 x893050_g_Position_Z=139
 x893050_g_SceneID=1
-x893050_g_AccomplishNPC_Name="Vân th§t sâu"
+x893050_g_AccomplishNPC_Name="Vân Thâm Thâm"
 
 --Ti«n Trí nhi®m vø
 x893050_g_PreMissionId = 2069

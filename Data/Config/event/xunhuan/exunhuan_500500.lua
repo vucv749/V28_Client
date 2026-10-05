@@ -34,7 +34,7 @@ x500500_g_MissionRound = 3						--?????????,????????? MD_WABAO_HUAN
 
 
 --nhi®m vø vån bän miêu tä
-x500500_g_MissionName="T¥m bäo"
+x500500_g_MissionName="T¥m Bäo"
 x500500_g_MissionInfo="#{M_700_TEXT1}"  --????
 x500500_g_MissionTarget="Tìm ðßþc bäo tàng giao cho Hà Ch¤p Trung"		--????
 x500500_g_ContinueInfo="Các hÕ ðã tìm th¤y kho báu chßa? Nh¤p vào máy dò trong ðÕo cø nhi®m vø là có th¬ tìm ra v¸ trí kho báu"		--??????npc??

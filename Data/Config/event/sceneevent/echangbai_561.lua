@@ -26,7 +26,7 @@ x212110_g_IsMissionOkFail = 0		--????0?
 --nhi®m vø vån bän miêu tä
 x212110_g_MissionName="Tr¯n tìm"
 x212110_g_MissionInfo="#{Lua_changbai_001}"
-x212110_g_MissionTarget="  Hoàn Nhan Ngµt Thu§t · #GTrß¶ng BÕch S½n Hoàn Nhan Bµ #W#{_INFOAIM118,107,22,Hoàn Nhan Ngµt thu§t} yêu c¥u ngß½i tìm #RHoàn Nhan Niêm Mµt Khát #W#{_INFOAIM147,120,22,Hoàn Nhan Niêm Mµt Khát}, #RHoàn Nhan Cát Ly B¤t #W#{_INFOAIM166,94,22,Hoàn Nhan Cát Ly B¤t}, #RHoàn Nhan Ngoa Lý Ðóa #W#{_INFOAIM178,113,22,Hoàn Nhan Ngoa Lý Ðóa}. "
+x212110_g_MissionTarget="  Hoàn Nhan Ngµt Thu§t · #GTrß¶ng BÕch S½n Hoàn Nhan Bµ #W#{_INFOAIM118,107,22,Hoàn Nhan Ngµt Tru§t} yêu c¥u ngß½i tìm #RHoàn Nhan Niêm Mµt Khát #W#{_INFOAIM147,120,22,Hoàn Nhan Niêm Mµt Hát}, #RHoàn Nhan Cát Ly B¤t #W#{_INFOAIM166,94,22,Hoàn Nhan Oát Ly B¤t}, #RHoàn Nhan Ngoa Lý Ðóa #W#{_INFOAIM178,113,22,Hoàn Nhan Ngoa Lý Ðóa}. "
 x212110_g_ContinueInfo="  Ngß½i tìm th¤y các ca ca cüa ta r°i sao?"
 x212110_g_MissionComplete="  Ngß½i quä là lþi hÕi, tìm th¤y h÷ nhanh ðªn v§y. Ta luôn không tìm ra, l¨ nào ta là 1 ðÑa trë ng¯c?"
 

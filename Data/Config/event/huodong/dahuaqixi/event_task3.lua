@@ -26,7 +26,7 @@ x999413_g_MissionInfo="#{DHYR_240515_67}"
 x999413_g_MissionTarget="#{DHYR_240515_71}"
 x999413_g_MissionContinue="#{DHYR_240515_69}"
 x999413_g_MissionComplete ="#{DHYR_240515_70}"
-x999413_g_Custom = { {id = "Thu th§p Bäo HÕp mänh nhö", num = 3} }
+x999413_g_Custom = { {id = "Thu th§p Mänh Bäo HÕp", num = 3} }
 
 --nhi®m vø c¤p b§c
 x999413_g_MissionLevel = 30

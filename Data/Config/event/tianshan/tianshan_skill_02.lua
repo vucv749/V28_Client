@@ -13,10 +13,10 @@ x228903_g_PreMissionId = 946
 x228903_g_Position_X = 262
 x228903_g_Position_Z = 46
 x228903_g_SceneID = 18
-x228903_g_AccomplishNPC_Name = "Chüng Thª Hoành"
+x228903_g_AccomplishNPC_Name = "Chüng Thª Hành"
 
 --møc tiêu NPC
-x228903_g_Name = "Chüng Thª Hoành"
+x228903_g_Name = "Chüng Thª Hành"
 
 --nhi®m vø c¤p b§c
 x228903_g_MissionLevel = 30
@@ -33,7 +33,7 @@ x228903_g_IsMissionOkFail			=0	--0 ??????
 x228903_g_DemandKill				= { { id = 540, num = 1 }, { id = 541, num = 4 } }		--???1?
 x228903_g_Param_QinNumber			=1	--1 ?????????
 x228903_g_Param_LubaNumber			=2	--2 ????????????
-x228903_g_MonsterList				= { [x228903_g_Param_QinNumber] = { "T¥n Bá Quang", 1 }, [x228903_g_Param_LubaNumber] = { "T¥n gia trÕi lµ bá", 4 } }
+x228903_g_MonsterList				= { [x228903_g_Param_QinNumber] = { "T¥n Bá Quang", 1 }, [x228903_g_Param_LubaNumber] = { "T¥n Gia TrÕi Lµ Bá", 4 } }
 x228903_g_Param_sceneid				=3	--3?:??????????
 x228903_g_Param_teamid				=4	--4?:???????????
 
@@ -42,7 +42,7 @@ x228903_g_Param_teamid				=4	--4?:???????????
 --nhi®m vø vån bän miêu tä
 x228903_g_MissionName = "Li­u Ám Hoa Minh-L§p tÑc thø lý"
 x228903_g_MissionInfo = "#{TIANSHAN_SKILL_03}"													--????
-x228903_g_MissionTarget = "    #RChüng Thª Hoành#W#{_INFOAIM263,46,18,Chüng Thª Hoành} · #GNhÕn Môn Quan#W yêu c¥u các hÕ vào Phü Thái Thú NhÕn Môn Quan tiêu di®t T¥n Bá Quang và b¯n tên Lµ Bá cüa T¥n Gia TrÕi."		--????
+x228903_g_MissionTarget = "    #RChüng Thª Hoành#W#{_INFOAIM263,46,18,Chüng Thª Hành} · #GNhÕn Môn Quan#W yêu c¥u các hÕ vào Phü Thái Thú NhÕn Môn Quan tiêu di®t T¥n Bá Quang và b¯n tên Lµ Bá cüa T¥n Gia TrÕi."		--????
 x228903_g_ContinueInfo = "#{TIANSHAN_SKILL_04}"								--??????npc??
 x228903_g_MissionComplete = "#{TIANSHAN_SKILL_05}"							--????npc????
 

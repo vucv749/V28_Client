@@ -25,9 +25,9 @@ x999436_g_IsMissionOkFail = 0
 -- nhi®m vø c¥n giªt quái v§t(giªt quái nhi®m vø), idKiªn MonsterAttrExTable. Txt
 -- x999436_g_DemandKill 					= {id=779, num=8}
 -- Tñ ð¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ði¬n, phân bi®t ð¯i Ñng missionparamÐích Ð® 1V¸ H§u Diên
-x999436_g_Custom 							= {{ id = "H¡c Sam tay ð¤m", num = 10}} 
+x999436_g_Custom 							= {{ id = "H¡c Sam Ðä Thü", num = 10}} 
 -- giªt quái s¯ lßþng
--- x999436_g_nMonsterKill = {{id = "H¡c Sam tay ð¤m", num = 10}} --ð® nh¤t v¸ lßþng biªn ð±i
+-- x999436_g_nMonsterKill = {{id = "H¡c Sam Ðä Thü", num = 10}} --ð® nh¤t v¸ lßþng biªn ð±i
 x999436_g_ContinueInfo = ""
 
 -- x999436_g_MoneyJZBonus 					= 0

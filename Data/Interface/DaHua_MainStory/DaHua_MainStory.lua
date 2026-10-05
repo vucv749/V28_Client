@@ -33,11 +33,11 @@ local g_DaHua_MainStory_StepInfo = {
 		mission={
 		 [1]={name="#{DHGS_240521_34}",misionid=2321,sceneId=0,x=159,z=109,npcname="B° Ð« Lão T±"}, 
 		 [2]={name="#{DHGS_240521_35}",misionid=2322,sceneId=0,x=159,z=109,npcname="B° Ð« Lão T±"}, 
-		 [3]={name="#{DHGS_240521_36}",misionid=2323,sceneId=701,x=107,z=103,npcname="Chí tôn Bäo"}, 
-		 [4]={name="#{DHGS_240521_37}",misionid=2324,sceneId=701,x=107,z=103,npcname="Chí tôn Bäo"}, 
-		 [5]={name="#{DHGS_240521_38}",misionid=2325,sceneId=701,x=107,z=103,npcname="Chí tôn Bäo"}, 
+		 [3]={name="#{DHGS_240521_36}",misionid=2323,sceneId=701,x=107,z=103,npcname="Chí Tôn Bäo"}, 
+		 [4]={name="#{DHGS_240521_37}",misionid=2324,sceneId=701,x=107,z=103,npcname="Chí Tôn Bäo"}, 
+		 [5]={name="#{DHGS_240521_38}",misionid=2325,sceneId=701,x=107,z=103,npcname="Chí Tôn Bäo"}, 
 		 [6]={name="#{DHGS_240521_39}",misionid=2326,sceneId=702,x=109,z=184,npcname="TØ Hà"},
-		 [7]={name="#{DHGS_240521_40}",misionid=2327,sceneId=702,x=109,z=186,npcname="Chí tôn Bäo"},
+		 [7]={name="#{DHGS_240521_40}",misionid=2327,sceneId=702,x=109,z=186,npcname="Chí Tôn Bäo"},
 		},
  },
 }

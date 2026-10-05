@@ -21,7 +21,7 @@ x998776_g_MissionTarget = "#{JJFY_240407_142}"
 -- nhi®m vø tham s¯ 0Hào Ti«m quy t¡c chï có th¬ dùng làm d¤u hi®u nhi®m vø hay không hoàn thành, Hµi tñ ðµng änh hß·ng hµ khách Ðoan nhi®m vø Li®t Bi¬u hay không bi¬u hi®n Dî hoàn thành
 x998776_g_IsMissionOkFail = 0
 x998776_g_DemandTrueKill = {{
-    name = "Kim änh Th¥n",
+    name = "Kim Änh Th§n",
     dataId = 52376,
     num = 10
 }}

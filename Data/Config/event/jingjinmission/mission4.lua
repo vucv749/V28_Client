@@ -49,7 +49,7 @@ x998358_g_AccomplishInfo = {
 				[1] = { npcname = "Thôi Løc Hoa", npcposx = 98, npcposz = 51, npcscene = 15, namestr = "#{XLRW_210725_389}", strlink = "#{XLRW_210773_591}", AnswerStr = "#{WDJJ_230614_718}"},
 				[2] = { npcname = "Dß½ng TÑ Nß½ng", npcposx = 86, npcposz = 142, npcscene = 15, namestr = "#{XLRW_210725_390}", strlink = "#{XLRW_210773_592}", AnswerStr = "#{WDJJ_230614_719}"},---
 				[3] = { npcname = "MÕnh Thanh Thanh", npcposx = 96, npcposz = 73, npcscene = 15, namestr = "#{XLRW_210725_392}", strlink = "#{XLRW_210773_594}", AnswerStr = "#{WDJJ_230614_720}"},
-				[4] = { npcname = "Mãnh Long", npcposx = 95, npcposz = 86, npcscene = 15, namestr = "#{XLRW_210725_393}", strlink = "#{XLRW_210773_595}", AnswerStr = "#{WDJJ_230614_721}"},
+				[4] = { npcname = "MÕnh Long", npcposx = 95, npcposz = 86, npcscene = 15, namestr = "#{XLRW_210725_393}", strlink = "#{XLRW_210773_595}", AnswerStr = "#{WDJJ_230614_721}"},
 				[5] = { npcname = "Tôn Nh¸ Nß½ng", npcposx = 105, npcposz = 57, npcscene = 15, namestr = "#{XLRW_210725_394}", strlink = "#{XLRW_210773_596}", AnswerStr = "#{WDJJ_230614_722}"},---
 				[6] = { npcname = "Lý Th§p Nh¸ Nß½ng", npcposx = 96, npcposz = 51, npcscene = 15, namestr = "#{XLRW_210725_395}", strlink = "#{XLRW_210773_597}", AnswerStr = "#{WDJJ_230614_723}"},
 				},
@@ -88,10 +88,10 @@ x998358_g_AccomplishInfo = {
 	[MP_MANTUO] = {
 				[1] = { npcname = "Ðào Lînh", npcposx = 62, npcposz = 191, npcscene = 1283, namestr = "#{XLRW_210725_768}", strlink = "#{XLRW_210725_769}", AnswerStr = "#{WDJJ_230614_736}"},
 				[2] = { npcname = "Vß½ng ThuÖ Phong", npcposx = 186, npcposz = 171, npcscene = 1283, namestr = "#{XLRW_210725_758}", strlink = "#{XLRW_210725_759}", AnswerStr = "#{WDJJ_230614_737}"},
-				[3] = { npcname = "Tuyªt tr¡ng", npcposx = 141, npcposz = 74, npcscene = 1283, namestr = "#{XLRW_210725_760}", strlink = "#{XLRW_210725_761}", AnswerStr = "#{WDJJ_230614_738}"},
+				[3] = { npcname = "BÕch Tuyªt", npcposx = 141, npcposz = 74, npcscene = 1283, namestr = "#{XLRW_210725_760}", strlink = "#{XLRW_210725_761}", AnswerStr = "#{WDJJ_230614_738}"},
 				[4] = { npcname = "Vß½ng Ngæ Yên", npcposx = 179, npcposz = 79, npcscene = 1283, namestr = "#{XLRW_210725_762}", strlink = "#{XLRW_210725_763}", AnswerStr = "#{WDJJ_230614_739}"},
 				[5] = { npcname = "Vß½ng Tinh Lãng", npcposx = 231, npcposz = 178, npcscene = 1283, namestr = "#{XLRW_210725_764}", strlink = "#{XLRW_210725_765}", AnswerStr = "#{WDJJ_230614_740}"},
-				[6] = { npcname = "Mùa xuân", npcposx = 138, npcposz = 73, npcscene = 1283, namestr = "#{XLRW_210725_766}", strlink = "#{XLRW_210725_767}", AnswerStr = "#{WDJJ_230614_741}"},
+				[6] = { npcname = "Dß½ng Xuân", npcposx = 138, npcposz = 73, npcscene = 1283, namestr = "#{XLRW_210725_766}", strlink = "#{XLRW_210725_767}", AnswerStr = "#{WDJJ_230614_741}"},
 				},
 }
 

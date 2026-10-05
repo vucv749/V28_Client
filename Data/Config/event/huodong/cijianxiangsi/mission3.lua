@@ -24,7 +24,7 @@ x998275_g_IfMissionElite = 0
 x998275_g_MissionName="#{CJXS_230330_90}"
 x998275_g_MissionTarget="#{CJXS_230330_95}"
 x998275_g_IsMissionOkFail=0
-x998275_g_Custom = {{id = "Dî ðánh bÕi Tô m÷i nhà Ðinh", num = 10}}
+x998275_g_Custom = {{id = "Dî ðánh bÕi Gia Ðinh Tô Gia", num = 10}}
 x998275_g_ContinueInfo = ""
 x998275_g_MissionComplete = "#{CJXS_230330_193}"
 

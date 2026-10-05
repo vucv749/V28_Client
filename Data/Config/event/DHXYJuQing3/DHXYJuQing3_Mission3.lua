@@ -20,7 +20,7 @@ x999191_g_NextScriptId = 999192
 x999191_g_Position_X=107
 x999191_g_Position_Z=103
 x999191_g_SceneID=1320
-x999191_g_AccomplishNPC_Name="Chí tôn Bäo"
+x999191_g_AccomplishNPC_Name="Chí Tôn Bäo"
 x999191_g_AccomplishNPC_Id=52627
 
 --nhi®m vø s¯ li®u

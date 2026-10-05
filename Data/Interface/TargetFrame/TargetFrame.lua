@@ -28,7 +28,7 @@ local strMenPaiName =
 	"VÕn Næ",
 	"VÕn Nam",
 	"NgÕc Th¥n",
-	"Dã thú",
+	"Dã Thú",
 	"Løc Lâm",
 	"Yêu ma",
 	"Rß½ng",

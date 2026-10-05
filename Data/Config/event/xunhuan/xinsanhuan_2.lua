@@ -10,7 +10,7 @@ x050221_g_activePointIndex = 10
 x050221_g_MissionId = 1257					--1256 ????--1257 ???--1258 ????
 
 -- nhi®m vø møc tiêu NPC
-x050221_g_Name = "Lßu My"
+x050221_g_Name = "Lßu Thuçn"
 
 --nhi®m vø phân loÕi
 x050221_g_MissionKind = 8

@@ -43,8 +43,8 @@ local g_HerosReturns_Horizons_JiangHu={
 		[1] = { Name="#{HLYH_220613_41}", Level="#{HLYH_220613_42}", Image="set:PetSoulEquip1 image:PetSoulEquip1_9", Desc="#{HLYH_220613_4}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Shouhun", TagImage="set:HerosReturns07 image:Tag_Function",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_9}", id=0, Bonus=3, xPos=89, zPos=139, sceneId=1, NpcName="Vân th§t sâu" },
-				[2]={ Name="#{HLYH_220613_10}", id=1, Bonus=5, xPos=89, zPos=139, sceneId=1, NpcName="Vân th§t sâu" },
+				[1]={ Name="#{HLYH_220613_9}", id=0, Bonus=3, xPos=89, zPos=139, sceneId=1, NpcName="Vân Thâm Thâm" },
+				[2]={ Name="#{HLYH_220613_10}", id=1, Bonus=5, xPos=89, zPos=139, sceneId=1, NpcName="Vân Thâm Thâm" },
 				} 
 		},
 		--ÇàÇðÊÔÁ¶
@@ -69,8 +69,8 @@ local g_HerosReturns_Horizons_JiangHu={
 		[1] = { Name="#{HLYH_220613_41}", Level="#{HLYH_220613_42}", Image="set:PetSoulEquip1 image:PetSoulEquip1_9", Desc="#{HLYH_220613_4}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Shouhun", TagImage="set:HerosReturns07 image:Tag_Function",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_9}", id=0, Bonus=3, xPos=89, zPos=139, sceneId=1, NpcName="Vân th§t sâu" },
-				[2]={ Name="#{HLYH_220613_10}", id=1, Bonus=5, xPos=89, zPos=139, sceneId=1, NpcName="Vân th§t sâu" },
+				[1]={ Name="#{HLYH_220613_9}", id=0, Bonus=3, xPos=89, zPos=139, sceneId=1, NpcName="Vân Thâm Thâm" },
+				[2]={ Name="#{HLYH_220613_10}", id=1, Bonus=5, xPos=89, zPos=139, sceneId=1, NpcName="Vân Thâm Thâm" },
 				} 
 		},
 		--ÇàÇðÊÔÁ¶
@@ -101,8 +101,8 @@ local g_HerosReturns_Horizons_JiangHu={
 		[5] = { Name="#{HLYH_220613_49}", Level="#{HLYH_220613_48}", Image="set:Huodong_12 image:Huodong_12_9", Desc="#{HLYH_220613_8}", 
 			TitleImage="set:HerosReturns07 image:Subtitle_Shuiyue", TagImage="set:HerosReturns07 image:Tag_Raid",
 			Task={ 
-				[1]={ Name="#{HLYH_220613_17}", id=8, Bonus=5, xPos=128, zPos=107, sceneId=1, NpcName="Th¦m dÕ vû" },
-				[2]={ Name="#{HLYH_220613_18}", id=9, Bonus=8, xPos=128, zPos=107, sceneId=1, NpcName="Th¦m dÕ vû" },
+				[1]={ Name="#{HLYH_220613_17}", id=8, Bonus=5, xPos=128, zPos=107, sceneId=1, NpcName="Th¦m DÕ Vû" },
+				[2]={ Name="#{HLYH_220613_18}", id=9, Bonus=8, xPos=128, zPos=107, sceneId=1, NpcName="Th¦m DÕ Vû" },
 				} 
 		},
 	},

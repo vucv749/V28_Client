@@ -6,13 +6,13 @@ x229003_g_ScriptId = 229003
 x229003_g_Position_X=95.9834
 x229003_g_Position_Z=86.7892
 x229003_g_SceneID=15
-x229003_g_AccomplishNPC_Name="Mãnh Long"
+x229003_g_AccomplishNPC_Name="MÕnh Long"
 
 --ði«u ki®n tiên quyªt nhi®m vø
 --g_MissionIdPre =
 
 --nhi®m vø møc tiêu Npc
-x229003_g_Name	= "Mãnh Long"
+x229003_g_Name	= "MÕnh Long"
 
 --nhi®m vø Hào
 x229003_g_MissionId = 1090
@@ -58,7 +58,7 @@ x229003_g_FormatList = {
 								"Hãy ði tìm #R%s#W, ngß¶i ðó s¨ ðßa các hÕ ði khiêu chiªn #G%s#W.#r  #GGþi ý:#W#r  Chß·ng môn MÕnh Thanh Thanh ðang · Nga Mi S½n#{_INFOAIM96,73,15,MÕnh Thanh Thanh}.#{SMXL_090819_emei}#r#{SMRW_090206_01}",
 								"Hãy giúp ta b¡t mµt con #G%p#W.#B#r  #GGþi ý:#W#r  Dß½ng TÑ Nß½ng#{_INFOAIM86,142,15,Dß½ng TÑ Nß½ng} · #GNga Mi S½n#W có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{SMXL_090819_emei}#r#{SMRW_090206_01}",
 								"Hãy ði xem xét kh¡p Nga Mi S½n, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#r  Có th¬ tìm th¤y #YTrang SÑc B¸ M¤t#W trên ngß¶i #RTi¬u Hoàng H¥u#W.#r  Có th¬ tìm th¤y #YTª Ph¦m B¸ M¤t#W trên ngß¶i #RTi¬u H¡c H¥u#W.#r  Có th¬ tìm th¤y #YChâu Báu B¸ M¤t#W trên ngß¶i #RTi¬u BÕch H¥u#W.#{SMXL_090819_emei}#r#{SMRW_090206_01}",
-								"Hãy ðßa ðªn cho #R%s#W mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GM©o:#W#r  Ðào Hoa Tiên ðang · Nga Mi S½n#{_INFOAIM156,99,15,Ðào hoa tiên}.#r  Ðào Di®p Tiên ðang · Nga Mi S½n#{_INFOAIM156,112,15,Ðào Di®p Tiên}.#r  Ðào Chi Tiên ðang · Nga Mi S½n#{_INFOAIM156,106,15,Ðào Chi Tiên}.#{SMXL_090819_emei}#r#{SMRW_090206_01}",
+								"Hãy ðßa ðªn cho #R%s#W mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GM©o:#W#r  Ðào Hoa Tiên ðang · Nga Mi S½n#{_INFOAIM156,99,15,Ðào Hoa Tiên}.#r  Ðào Di®p Tiên ðang · Nga Mi S½n#{_INFOAIM156,112,15,Ðào Di®p Tiên}.#r  Ðào Chi Tiên ðang · Nga Mi S½n#{_INFOAIM156,106,15,Ðào Chi Tiên}.#{SMXL_090819_emei}#r#{SMRW_090206_01}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{SMXL_090819_emei}#r#{SMRW_090206_01}",
 								}
 
@@ -77,7 +77,7 @@ x229003_g_StrList = {
 						"Trang sÑc b¸ m¤t",
 						"Tª ph¦m b¸ m¤t",
 						"Châu báu b¸ m¤t",
-						"Ðào hoa tiên",
+						"Ðào Hoa Tiên",
 						"Ðào Di®p Tiên",
 						"Ðào Chi Tiên",
 						"Sài Miêu Hoang Dã",

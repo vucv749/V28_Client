@@ -7,7 +7,7 @@ x998539_g_GameScriptId = 998535
 x998539_g_Position_X=153
 x998539_g_Position_Z=105
 x998539_g_SceneID=0
-x998539_g_AccomplishNPC_Name="Chï có"
+x998539_g_AccomplishNPC_Name="Phiên Phiên"
 
 --nhi®m vø Hào
 x998539_g_MissionId = 2247

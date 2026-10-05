@@ -1,7 +1,7 @@
 --MisDescBegin
 x892982_g_ScriptId  = 892982                --???
 x892982_g_KDZZID = 1001000175
-x892982_g_Name = "Ðän gà ðë"
+x892982_g_Name = "Ðän Ðän Kê"
 --nhi®m vø Hào
 x892982_g_MissionId = 2044   
 x892982_g_StartTime = 20220101      --  ??????

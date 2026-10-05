@@ -9,7 +9,7 @@ x893245_g_MissionName					= "#{QXDK_20220623_03}"
 x893245_g_Position_X					= 169
 x893245_g_Position_Z					= 107
 x893245_g_SceneID							= 0
-x893245_g_AccomplishNPC_Name	= "Hà sáng trong"
+x893245_g_AccomplishNPC_Name	= "Hà Ki¬u Ki¬u"
 
 --nhi®m vø loÕi hình(Träo bày ra Yêu, ð¯i Ñng Client/Config/MissionKind. Txt)
 x893245_g_MissionKind 				= 11

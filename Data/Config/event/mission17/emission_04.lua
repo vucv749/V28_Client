@@ -6,7 +6,7 @@ x891083_g_ScriptId = 891083
 x891083_g_Position_X=129  --??
 x891083_g_Position_Z=107 --??
 x891083_g_SceneID=1
-x891083_g_AccomplishNPC_Name="Th¦m dÕ vû"
+x891083_g_AccomplishNPC_Name="Th¦m DÕ Vû"
 
 --nhi®m vø Hào
 x891083_g_PreMissionId = 2002 --??
@@ -16,7 +16,7 @@ x891083_g_MissionId = 2003 --??
 x891083_g_mPosX = 129
 x891083_g_mPosZ = 107
 x891083_g_mSceneID = 1
-x891083_g_Name	="Th¦m dÕ vû"
+x891083_g_Name	="Th¦m DÕ Vû"
 
 --nhi®m vø phân loÕi
 x891083_g_MissionKind = 9

@@ -11,7 +11,7 @@ x212113_g_PreMissionId2 = 674
 x212113_g_PreMissionId3 = 675
 
 --møc tiêu NPC
-x212113_g_Name	="Nguy®t Lý"
+x212113_g_Name	="Nguy®t Quý"
 
 --nhi®m vø phân loÕi
 x212113_g_MissionKind = 44
@@ -27,7 +27,7 @@ x212113_g_MissionName="Ð¥u sö tµi ác"
 --nhi®m vø miêu tä
 x212113_g_MissionInfo="#{Mis_K_Meiling_1000183}"
 --nhi®m vø møc tiêu
-x212113_g_MissionTarget="    Nguy®t Lý · Mai Lînh #{_INFOAIM192,70,33,Nguy®t Lý} yêu c¥u ngß½i ðánh bÕi Nghiêm BÕch H±. C¦n th§n, chï c¥n Nguy®t Lý b¡t ð¥u cúng tª, #RNghiêm BÕch H±#W s¨ xu¤t hi®n ngay."		
+x212113_g_MissionTarget="    Nguy®t Quý · Mai Lînh #{_INFOAIM192,70,33,Nguy®t Quý} yêu c¥u ngß½i ðánh bÕi Nghiêm BÕch H±. C¦n th§n, chï c¥n Nguy®t Quý b¡t ð¥u cúng tª, #RNghiêm BÕch H±#W s¨ xu¤t hi®n ngay."		
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi
 x212113_g_ContinueInfo="  Ngß½i ðã ðánh bÕi Nghiêm BÕch H± chßa?"
 --ð® trình Th¶i Npc trong l¶i nói

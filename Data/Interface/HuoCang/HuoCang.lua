@@ -7,7 +7,7 @@ local g_HuoCangScene =
 	[1]={sceneid=3,	name="Tung S½n",		posx =167, posz =221,			type = 0, npcname = "Khang Gia Thñc",},
 	[2]={sceneid=4,	name="Thái H°",		posx =180, posz =116.8,		type = 0, npcname = "Tri®u ÐÕi Quang",},
 	[3]={sceneid=1,	name="Tô Châu",		posx =177, posz =150,			type = 0, npcname = "TÕ Vân Ðình",},
-	[4]={sceneid=5,	name="Kính K°",		posx =127.7, posz =150.6,	type = 0, npcname = "La tñ phø",},
+	[4]={sceneid=5,	name="Kính K°",		posx =127.7, posz =150.6,	type = 0, npcname = "La Cång Quý",},
 	[5]={sceneid=6,	name="Vô Lßþng S½n",	posx =133.3, posz =119.5,	type = 0, npcname = "Phß½ng T¡c Thái",},
 	[6]={sceneid=2, name="ÐÕi Lý",		posx =189, posz =135,			type = 0, npcname = "Dß½ng Th¥n Dß",},
 	[7]={sceneid=7,	name="Kiªm Các",		posx =137, posz =136.2,		type = 0, npcname = "BÕch Ngû Th¤t",},

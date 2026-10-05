@@ -15,7 +15,7 @@ x808095_g_MissionIdNext	= 1002
 --nhi®m vø møc tiêu ch², n½i trß¶ng cänh
 x808095_g_AcceptNPC_SceneID	=	1
 --nhi®m vø møc tiêu Npc
-x808095_g_Name 					= "Thánh hoä ðàn"
+x808095_g_Name 					= "Thánh Hoä Ðàn"
 --nhi®m vø phân loÕi
 x808095_g_MissionKind			= 13
 --nhi®m vø c¤p b§c

@@ -12,10 +12,10 @@ x200032_g_PreMissionId = 27
 x200032_g_Position_X=195
 x200032_g_Position_Z=41
 x200032_g_SceneID=19
-x200032_g_AccomplishNPC_Name="Gia Lu§t Dß Ð²"
+x200032_g_AccomplishNPC_Name="Gia Lu§t Dß Ð±"
 
 --møc tiêu NPC
-x200032_g_Name = "Gia Lu§t Dß Ð²"
+x200032_g_Name = "Gia Lu§t Dß Ð±"
 
 --hay không Th¸ tinh anh nhi®m vø
 x200032_g_IfMissionElite = 1

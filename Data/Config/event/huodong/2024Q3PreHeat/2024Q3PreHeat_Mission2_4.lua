@@ -27,12 +27,12 @@ x999438_g_IsMissionOkFail = 0
 -- nhi®m vø c¥n giªt quái v§t(giªt quái nhi®m vø), idKiªn MonsterAttrExTable. Txt
 -- x999438_g_DemandKill 					= {id=779, num=8}
 -- Tñ ð¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ði¬n, phân bi®t ð¯i Ñng missionparamÐích Ð® 1V¸ H§u Diên
-x999438_g_Custom 							= {{ id = "Tiêu di®t H¡c Sam tay ð¤m", num = 10},{ id = "Tß¾ng Thi cu°n cuµn ðem ra công lý", num = 1}} 
+x999438_g_Custom 							= {{ id = "Tiêu di®t H¡c Sam Ðä Thü", num = 10},{ id = "Tß¾ng Thi HÕo Nhiên ðem ra công lý", num = 1}} 
 
 -- giªt quái s¯ lßþng
-x999438_g_nMonsterKill                            			= {{ id = "Tiêu di®t H¡c Sam tay ð¤m", num = 10}}  --?????
+x999438_g_nMonsterKill                            			= {{ id = "Tiêu di®t H¡c Sam Ðä Thü", num = 10}}  --?????
 -- Sát BOSSs¯ lßþng
-x999438_g_nBOSSMonsterKill                        			= {{ id = "Tß¾ng Thi cu°n cuµn ðem ra công lý", num = 1}}  --?????
+x999438_g_nBOSSMonsterKill                        			= {{ id = "Tß¾ng Thi HÕo Nhiên ðem ra công lý", num = 1}}  --?????
 x999438_g_Custom = {}
 x999438_g_ContinueInfo = ""
 

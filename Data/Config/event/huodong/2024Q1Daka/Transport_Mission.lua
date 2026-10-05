@@ -9,7 +9,7 @@ x998665_g_ActId = 415
 x998665_g_Position_X=147
 x998665_g_Position_Z=98
 x998665_g_SceneID=0
-x998665_g_AccomplishNPC_Name="Hà Ki«n"
+x998665_g_AccomplishNPC_Name="Hà Càn"
 
 --nhi®m vø Hào
 x998665_g_MissionId = 2258

@@ -3,7 +3,7 @@
 x998698_g_ScriptId  = 998698                --???
 x998698_g_KDZZID = 1001000259
 
-x998698_g_AcceptNpcName = "Xuân nãi nãi, bà nµi"
+x998698_g_AcceptNpcName = "Xuân Nãi Nãi"
 --nhi®m vø Hào
 x998698_g_MissionId = 2303
 

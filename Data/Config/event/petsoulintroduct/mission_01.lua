@@ -6,7 +6,7 @@ x893040_g_ScriptId = 893040
 x893040_g_Position_X=89
 x893040_g_Position_Z=139
 x893040_g_SceneID=1
-x893040_g_AccomplishNPC_Name="Vân th§t sâu"
+x893040_g_AccomplishNPC_Name="Vân Thâm Thâm"
 
 --nhi®m vø Hào
 x893040_g_MissionId = 2060
@@ -24,7 +24,7 @@ x893040_g_IfMissionElite = 0
 x893040_g_MissionName="#{SHYD_20211227_25}"
 x893040_g_MissionTarget="#{SHYD_20211227_26}"
 x893040_g_IsMissionOkFail=0
-x893040_g_Custom = {{ id = "Dî bái phöng Vân Phiêu Phiêu", num = 1}, { id = "Dî bái phöng Vân th§t sâu", num = 1}}
+x893040_g_Custom = {{ id = "Dî bái phöng Vân Phiêu Phiêu", num = 1}, { id = "Dî bái phöng Vân Thâm Thâm", num = 1}}
 x893040_g_ContinueInfo = ""
 x893040_g_MissionComplete = "#{SHYD_20211227_29}"
 

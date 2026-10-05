@@ -30,7 +30,7 @@ function Frozen_AnswerEnter_OnEvent(event)
 		Frozen_AnswerEnter_Open()
 	elseif (event == "UI_COMMAND" and tonumber(arg0) == 88848202 )  then 
 		--×Ô¶¯Ñ°Â·
-		AutoRuntoTargetExWithName(215,199,728,"? Bào")
+		AutoRuntoTargetExWithName(215,199,728,"Bào Bào")
 	elseif event == "ADJEST_UI_POS" then
 		Frozen_AnswerEnter_On_ResetPos()
 	elseif event == "VIEW_RESOLUTION_CHANGED" then

@@ -52,8 +52,8 @@ local g_ShenFen_CaiLiaoZhuanHua_Quality =
 local g_ShenFen_CaiLiaoZhuanHua_Qual_Dest=
 {
 	[1] = {
-		[1] ="Lúa të",
-		[2] ="Cây hß½ng b°",
+		[1] ="Lúa Të",
+		[2] ="Hß½ng B°",
 		[3] ="Thanh Ð°ng",
 		[4] ="Hoa Chi",
 	},

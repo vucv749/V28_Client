@@ -56,7 +56,7 @@ function Reputation_OnLoad()
 							"S½n VÕn Næ Tª Tß",
 							"S½n Vi®n Nam Hµ Pháp",
 							"NgÕc Ngß Bang",
-							"Dã thú",
+							"Dã Thú",
 							"Løc Lâm",
 							"Yêu ma",
 							"Rß½ng",

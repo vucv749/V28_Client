@@ -14,7 +14,7 @@ local Frozen_PVPGoto_EnterNPCInfo =
 {
     scn = 0,
     pos = { 160, 112 },
-    name = "Vân lçm lçm",
+    name = "Vân Lçm Lçm",
 }
 -- tooltip
 local g_tooltip = { "#{DDBB_240912_174}", "#{DDBB_240912_175}", "#{DDBB_240912_176}" }

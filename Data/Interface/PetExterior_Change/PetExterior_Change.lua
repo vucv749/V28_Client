@@ -854,7 +854,7 @@ end
 --*************************************************
 function PetExterior_Change_Goto_Clicked()
 
-	AutoRuntoTargetExWithName(262, 131, 2, "Vân Loan Loan")
+	AutoRuntoTargetExWithName(262, 131, 2, "Vân Oän Oän")
 	
 end
 

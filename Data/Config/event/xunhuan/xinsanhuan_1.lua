@@ -38,7 +38,7 @@ x050220_g_IsFindGoods = 5																-- 5 ???:????????
 x050220_g_Param_sceneid = 6															-- 6???:???????6???????ID
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, Thung nhi®m vø tham s¯ Ðích Ð® 1V¸ b¡t ð¥u
-x050220_g_Custom	= { {id="Dî giªt chªt: #r Huy«n Lôi Pha Th± Phï",num=60},{id="  Ngßu Khúc",num=1},{id="  Ngßu C½",num=1},{id="  Vß½ng Diêm",num=1},{id="Dî tìm ðßþc: #r Hoàng Kim Chi Li®m",num=1} }
+x050220_g_Custom	= { {id="Dî giªt chªt: #r Huy«n Lôi Pha Th± Phï",num=60},{id="  Ngßu Khúc",num=1},{id="  Ngßu KÏ",num=1},{id="  Vß½ng Diêm",num=1},{id="Dî tìm ðßþc: #r Hoàng Kim Chi Li®m",num=1} }
 
 
 --MisDescEnd

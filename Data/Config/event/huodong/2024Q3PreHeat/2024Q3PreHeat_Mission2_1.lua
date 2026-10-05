@@ -25,7 +25,7 @@ x999435_g_IsMissionOkFail = 0
 -- nhi®m vø c¥n giªt quái v§t(giªt quái nhi®m vø), idKiªn MonsterAttrExTable. Txt
 -- x999435_g_DemandKill 					= {id=779, num=8}
 -- Tñ ð¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ði¬n, phân bi®t ð¯i Ñng missionparamÐích Ð® 1V¸ H§u Diên
-x999435_g_Custom 							= {{ id = "T¥m Thi cu°n cuµn höi rõ nguyên do", num = 1},{ id = "Tiêu di®t H¡c Sam tay ð¤m", num = 10}} 
+x999435_g_Custom 							= {{ id = "T¥m Thi HÕo Nhiên höi rõ nguyên do", num = 1},{ id = "Tiêu di®t H¡c Sam Ðä Thü", num = 10}} 
 --bái phöng hi®p khách
 -- x999435_g_TalkWithNPC = {{id = "T¥m Thi cu°n cuµn höi rõ nguyên do", num = 1}} --ð® nh¤t v¸ lßþng biªn ð±i
 -- giªt quái s¯ lßþng

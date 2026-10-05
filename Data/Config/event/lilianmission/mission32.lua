@@ -19,13 +19,13 @@ x893207_g_NextScirptId = 893208--?????
 x893207_g_NextMissionId = 2091--?????
 
 --tiªp nh§n chÑc vø Vø Npc
-x893207_g_AcceptNPC_Name="KÏ bà bà"--????npc??npc??
+x893207_g_AcceptNPC_Name="KÏ Bà Bà"--????npc??npc??
 
 --Giao nhi®m vø Npc
 x893207_g_Position_X=267--????NPC??
 x893207_g_Position_Z=210
 x893207_g_SceneID=2
-x893207_g_AccomplishNPC_Name="KÏ bà bà"
+x893207_g_AccomplishNPC_Name="KÏ Bà Bà"
 
 --nhi®m vø s¯ li®u
 x893207_g_MissionKind = 7

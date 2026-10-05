@@ -6,13 +6,13 @@ x892993_g_ScriptId = 892993
 x892993_g_Position_X=185  --??
 x892993_g_Position_Z=124 --??
 x892993_g_SceneID=2
-x892993_g_AccomplishNPC_Name="ÐoÕn Lång Phong"
+x892993_g_AccomplishNPC_Name="Ðoàn Lång Phong"
 
 --nhi®m vø Hào
 x892993_g_MissionId = 2180
 
 --møc tiêu NPC
-x892993_g_Name	="ÐoÕn Lång Phong"
+x892993_g_Name	="Ðoàn Lång Phong"
 
 --nhi®m vø phân loÕi
 x892993_g_MissionKind = 3

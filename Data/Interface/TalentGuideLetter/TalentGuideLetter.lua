@@ -15,12 +15,12 @@ local MP_MENPAI11 = 11--menpai11
 local g_NPC = {
 	[MP_SHAOLIN] = {sceneId=9, name={[1]="Huy«n Duy®t",[2]="Huy«n Li",}, pos = {[1] = {132, 142}, [2] = {73, 149}}},
 	[MP_MINGJIAO] = {sceneId=11, name={ [1]="MÕc Tß Quy",[2]="Lâm Di­m",}, pos = {[1] = {50, 119}, [2] = {131, 138}}},
-	[MP_GAIBANG] = {sceneId=10, name={[1]="Ð² Thi¬u Khang",[2]="Lµ lão ÐÕi",}, pos = {[1] = {129, 112}, [2] = {55, 135}}},
-	[MP_WUDANG] = {sceneId=12, name={[1]="Bích LÕc Tän Nhân", [2]="Trøc Lãng Tän Nhân"}, pos = {[1] = {49, 181}, [2] = {46, 130}}},
-	[MP_EMEI] = {sceneId=15, name={[1]="Làng xóm Hoa", [2]="Tô Qua"}, pos = {[1] = {157, 125}, [2] = {131, 100}}},
-	[MP_XINGSU] = {sceneId=16, name={[1]="Khao Lai TØ", [2]="Liên chu tØ"}, pos = {[1] = {64, 144}, [2] = {70, 111}}},
-	[MP_DALI] = {sceneId=13, name={[1]="B±n Hï", [2]="B±n Nhiên"}, pos = {[1] = {58, 110}, [2] = {38, 109}}},
-	[MP_TIANSHAN] = {sceneId=17, name={[1]="Ngô dày ð£c", [2]="Ngô Di¬u Di¬u"}, pos = {[1] = {47, 102}, [2] = {53, 118}}},
+	[MP_GAIBANG] = {sceneId=10, name={[1]="Ð² Thiªu Khang",[2]="Lµ Lão ÐÕi",}, pos = {[1] = {129, 112}, [2] = {55, 135}}},
+	[MP_WUDANG] = {sceneId=12, name={[1]="Bích LÕc Tán Nhân", [2]="Trøc Lãng Tán Nhân"}, pos = {[1] = {49, 181}, [2] = {46, 130}}},
+	[MP_EMEI] = {sceneId=15, name={[1]="Tø LÕc Hoa", [2]="Tô Qua"}, pos = {[1] = {157, 125}, [2] = {131, 100}}},
+	[MP_XINGSU] = {sceneId=16, name={[1]="Hao Lai TØ", [2]="Liên Chu TØ"}, pos = {[1] = {64, 144}, [2] = {70, 111}}},
+	[MP_DALI] = {sceneId=13, name={[1]="Bän Hï", [2]="Bän Nhiên"}, pos = {[1] = {58, 110}, [2] = {38, 109}}},
+	[MP_TIANSHAN] = {sceneId=17, name={[1]="Ngô Sâm Sâm", [2]="Ngô Mi¬u Mi¬u"}, pos = {[1] = {47, 102}, [2] = {53, 118}}},
 	[MP_XIAOYAO] = {sceneId=14, name={[1]="Ngäi Lß½ng Hà", [2]="T¥n Yên La"}, pos = {[1] = {110, 151}, [2] = {95, 127}}},
 	[MP_MANTUO] = {sceneId=592, name={[1]="Kê Linh Phong", [2]="Kê Phù Quang"}, pos = {[1] = {185, 142}, [2] = {183, 132}}}, --??2022
 	[MP_MENPAI11] = {sceneId=703, name={[1]="S½n Nhân Mµc", [2]="S½n Lão"}, pos = {[1] = {105, 31}, [2] = {201, 43}}}, --menpai11

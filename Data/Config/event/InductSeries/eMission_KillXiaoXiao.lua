@@ -30,7 +30,7 @@ x500607_g_IfMissionElite	= 0
 x500607_g_IsMissionOkFail	= 0		--??????0?
 
 --nhi®m vø vån bän miêu tä
-x500607_g_MissionName			= "ÐÕo Chích Giang h°"
+x500607_g_MissionName			= "ÐÕo Chích Giang H°"
 --nhi®m vø miêu tä
 x500607_g_MissionInfo			= "#{YD_20080421_57}"
 --nhi®m vø møc tiêu

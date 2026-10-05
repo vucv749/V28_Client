@@ -37,7 +37,7 @@ x229010_g_AccomplishCircumstance = 1
 x229010_g_StrForePart=4
 
 x229010_g_StrList = {
-						"Huy«n Tr×ng#{_INFOAIM61,61,9,Huy«n Trình}",
+						"Huy«n Tr×ng#{_INFOAIM61,61,9,Huy«n Tr×ng}",
 						"Tháp Lâm phø bän",
 						"B±n Tßþng#{_INFOAIM35,86,13,B±n Tßþng}",
 						"MÕnh Thanh Thanh#{_INFOAIM96,73,15,MÕnh Thanh Thanh}",

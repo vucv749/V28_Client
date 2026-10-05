@@ -28,7 +28,7 @@ x893044_g_IfMissionElite = 0
 x893044_g_MissionName="#{SHYD_20211227_224}"
 x893044_g_MissionTarget="#{SHYD_20211227_227}"
 x893044_g_IsMissionOkFail=0
-x893044_g_Custom = {{ id = "Dî hµi báo Vân th§t sâu", num = 1},{ id = "Dî giao phó Vân Phiêu Phiêu", num = 1}}
+x893044_g_Custom = {{ id = "Dî hµi báo Vân Thâm Thâm", num = 1},{ id = "Dî giao phó Vân Phiêu Phiêu", num = 1}}
 x893044_g_ContinueInfo = ""
 x893044_g_MissionComplete = "#{SHYD_20211227_469}"
 

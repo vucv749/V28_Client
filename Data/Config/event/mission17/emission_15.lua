@@ -26,7 +26,7 @@ x891094_g_Custom1 = {{id = "Hi¬u biªt th¥n bí nhân tin tÑc",num = 1}}
 x891094_g_Position_X=193
 x891094_g_Position_Z=144
 x891094_g_SceneID=1
-x891094_g_AccomplishNPC_Name="Xung Sß ÐÕo"
+x891094_g_AccomplishNPC_Name="Chüng Sß ÐÕo"
 --thß·ng cho
 x891094_g_MoneyJZBonus					=15000
 x891094_g_ExpBonus						=120000

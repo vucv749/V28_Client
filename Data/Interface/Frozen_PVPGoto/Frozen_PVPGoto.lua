@@ -10,7 +10,7 @@ local Frozen_PVPGoto_EnterNPCInfo =
 {
     scn = 728,
     pos = {146, 189},
-    name = "H•u Tr’i L≤i",
+    name = "H•u T·i L≤i",
 } -- end Frozen_PVPGoto_EnterNPCInfo
 
 

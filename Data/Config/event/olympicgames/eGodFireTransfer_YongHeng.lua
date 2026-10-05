@@ -6,7 +6,7 @@ x808105_g_ScriptId	= 808105
 x808105_g_Position_X=91.1844
 x808105_g_Position_Z=84.0730
 x808105_g_SceneID=1
-x808105_g_AccomplishNPC_Name="Thánh hoä ðàn"
+x808105_g_AccomplishNPC_Name="Thánh Hoä Ðàn"
 
 --nhi®m vø Hào
 x808105_g_MissionId			= 1011

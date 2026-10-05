@@ -37,7 +37,7 @@ x600034_g_MilitaryScript = 600030
 
 x600034_g_StrForePart=4
 
-x600034_g_StrList = {[0]="Lí",
+x600034_g_StrList = {[0]="Lý",
 										 [1]="Tri®u",
 										 [2]="Châu",
 										 [3]="Hàn",

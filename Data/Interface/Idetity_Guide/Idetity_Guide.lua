@@ -10,7 +10,7 @@ local g_NpcList =
 {
 	[1] = {posx=184,posz=214,sceneid=0,npcname="Ngäi Phß½ng",image="set:Idetity_Guide image:Title_L_LXL",pic="set:Idetity_Guide image:BK_S_LXL",--??NPC
 				 title="#{SFYD_231227_332}",desc="#{SFYD_231227_10}",skilldesc="#{SFYD_231227_17}",autotip="#{SFYD_231227_23}",},
-	[2] = {posx=201,posz=214,sceneid=0,npcname="Mµc lan",image="set:Idetity_Guide image:Title_L_XHZ",pic="set:Idetity_Guide image:BK_S_XHZ",--??NPC
+	[2] = {posx=201,posz=214,sceneid=0,npcname="Tân Di",image="set:Idetity_Guide image:Title_L_XHZ",pic="set:Idetity_Guide image:BK_S_XHZ",--??NPC
 				 title="#{SFYD_231227_333}",desc="#{SFYD_231227_11}",skilldesc="#{SFYD_231227_18}",autotip="#{SFYD_231227_24}",},
 	[3] = {posx=237,posz=214,sceneid=0,npcname="Th×a Änh",image="set:Idetity_Guide image:Title_L_ZQZ",pic="set:Idetity_Guide image:BK_S_ZQZ",--??NPC
 				 title="#{SFYD_231227_335}",desc="#{SFYD_231227_13}",skilldesc="#{SFYD_231227_20}",autotip="#{SFYD_231227_25}",},

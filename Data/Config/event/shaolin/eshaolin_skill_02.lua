@@ -6,7 +6,7 @@ x212141_g_ScriptId = 212141
 x212141_g_Position_X=262
 x212141_g_Position_Z=46
 x212141_g_SceneID=18
-x212141_g_AccomplishNPC_Name="Chüng Thª Hoành"
+x212141_g_AccomplishNPC_Name="Chüng Thª Hành"
 
 --nhi®m vø Hào
 x212141_g_MissionId = 964
@@ -26,7 +26,7 @@ x212141_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212141_g_MissionName="Kh¯n Thú ¿u Tú"
 x212141_g_MissionInfo="#{Mis_shaolin_964}"
-x212141_g_MissionTarget="#GNhÕn Môn Quan#W-#RChüng Thª Hoành#W#{_INFOAIM263,46,18,Chüng Thª Hoành} yêu c¥u các hÕ giªt 20 tên BÕi Binh T¥n Gia TrÕi trong vòng vây NhÕn Môn Quan."
+x212141_g_MissionTarget="#GNhÕn Môn Quan#W-#RChüng Thª Hoành#W#{_INFOAIM263,46,18,Chüng Thª Hành} yêu c¥u các hÕ giªt 20 tên BÕi Binh T¥n Gia TrÕi trong vòng vây NhÕn Môn Quan."
 x212141_g_MissionContinue="  Các hÕ ðã di®t hªt T¥n Gia TrÕi bÕi binh chßa?"
 x212141_g_MissionComplete="  Ngß½i ðã không làm b¨ m£t sß phø, $N quä nhiên danh b¤t hß truy«n!"
 

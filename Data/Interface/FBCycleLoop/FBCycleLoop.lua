@@ -91,7 +91,7 @@ function FBCycleLoop_Goto(nIndex)
 		--—„√≈¬€Œ‰
 		AutoRuntoTargetExWithName(59, 95, 0, "M’nh S§m")
 	else
-		AutoRuntoTargetExWithName(193, 144, 1, "Xung Sﬂ –’o")
+		AutoRuntoTargetExWithName(193, 144, 1, "Ch¸ng Sﬂ –’o")
 	end
 end
 

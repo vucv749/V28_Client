@@ -78,7 +78,7 @@ end
 --ÏìÓ¦£ºÍ¨¹ıserverÅĞ¶Ï£¬¿ÉÒÔÑ°Â· Ònpc
 function Peak_GuideLetter_GoToFindNpc()
 	
-	AutoRuntoTargetExWithName(219, 43, 2, "Huy«n Trí pháp sß") --??
+	AutoRuntoTargetExWithName(219, 43, 2, "Huy«n Trí Pháp Sß") --??
 	
 end
 

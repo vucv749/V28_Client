@@ -49,7 +49,7 @@ x998359_g_AccomplishInfo = {
 				[1] = { npcname = "Thôi Løc Hoa", npcposx = 98, npcposz = 51, npcscene = 15, namestr = "#{WDJJ_230614_419}", strlink = "#{WDJJ_230614_328}"},
 				[2] = { npcname = "Dß½ng TÑ Nß½ng", npcposx = 86, npcposz = 142, npcscene = 15, namestr = "#{WDJJ_230614_420}", strlink = "#{WDJJ_230614_329}"},---
 				[3] = { npcname = "MÕnh Thanh Thanh", npcposx = 96, npcposz = 73, npcscene = 15, namestr = "#{WDJJ_230614_421}", strlink = "#{WDJJ_230614_330}"},
-				[4] = { npcname = "Mãnh Long", npcposx = 95, npcposz = 86, npcscene = 15, namestr = "#{WDJJ_230614_422}", strlink = "#{WDJJ_230614_331}"},
+				[4] = { npcname = "MÕnh Long", npcposx = 95, npcposz = 86, npcscene = 15, namestr = "#{WDJJ_230614_422}", strlink = "#{WDJJ_230614_331}"},
 				[5] = { npcname = "Tôn Nh¸ Nß½ng", npcposx = 105, npcposz = 57, npcscene = 15, namestr = "#{WDJJ_230614_423}", strlink = "#{WDJJ_230614_332}"},---
 				[6] = { npcname = "Lý Th§p Nh¸ Nß½ng", npcposx = 96, npcposz = 51, npcscene = 15, namestr = "#{WDJJ_230614_424}", strlink = "#{WDJJ_230614_333}"},
 				},
@@ -88,10 +88,10 @@ x998359_g_AccomplishInfo = {
 	[MP_MANTUO] = {--ok
 				[1] = { npcname = "Ðào Lînh", npcposx = 62, npcposz = 191, npcscene = 1283, namestr = "#{WDJJ_230614_437}", strlink = "#{WDJJ_230614_346}"},
 				[2] = { npcname = "Vß½ng ThuÖ Phong", npcposx = 186, npcposz = 171, npcscene = 1283, namestr = "#{WDJJ_230614_438}", strlink = "#{WDJJ_230614_347}"},
-				[3] = { npcname = "Tuyªt tr¡ng", npcposx = 141, npcposz = 74, npcscene = 1283, namestr = "#{WDJJ_230614_439}", strlink = "#{WDJJ_230614_348}"},
+				[3] = { npcname = "BÕch Tuyªt", npcposx = 141, npcposz = 74, npcscene = 1283, namestr = "#{WDJJ_230614_439}", strlink = "#{WDJJ_230614_348}"},
 				[4] = { npcname = "Vß½ng Ngæ Yên", npcposx = 179, npcposz = 79, npcscene = 1283, namestr = "#{WDJJ_230614_440}", strlink = "#{WDJJ_230614_349}"},
 				[5] = { npcname = "Vß½ng Tinh Lãng", npcposx = 231, npcposz = 178, npcscene = 1283, namestr = "#{WDJJ_230614_441}", strlink = "#{WDJJ_230614_350}"},
-				[6] = { npcname = "Mùa xuân", npcposx = 138, npcposz = 73, npcscene = 1283, namestr = "#{WDJJ_230614_442}", strlink = "#{WDJJ_230614_351}"},
+				[6] = { npcname = "Dß½ng Xuân", npcposx = 138, npcposz = 73, npcscene = 1283, namestr = "#{WDJJ_230614_442}", strlink = "#{WDJJ_230614_351}"},
 				},
 }
 

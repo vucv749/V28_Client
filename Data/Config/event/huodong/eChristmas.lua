@@ -53,9 +53,9 @@ x808200_g_StrList						= {
 	"Giæ lÕi",
 	"Giæ lÕi",
 --Chú: Tá Quái TØ nhi®m vø không th¬ không Døng tên bän ghi chép ngß¶i ch½i mu¯n ðánh Ðích Quái, b·i vì nhi«u khác nhau IDÐích Quái ð¯i Ñng mµt cái tên, ngß¶i ch½i Tá ngß¶i nào Quân Khä
-	"M§t Thám Tiên Phong",	"Mµc Nhân Lâu La",	"Mµc Vß½ng Tri Thù",	"Thiên S½n Ti¬u Tuyªt Quái",	"Yêu D¸ Tâm Ma",	"Hü Th¬ ‘i LuÛ",	"Di®t Yêu ‘i LuÛ",
-	"Thanh KÏ Thám Mã", "Mµc Nhân Tinh Anh",	"ThuÖ Vß½ng Tri Thù",	"Thiên S½n ÐÕi Tuyªt Quái",	"Phá Sân Tâm Ma",	"Thñc Tâm ‘i LuÛ",	"Chu Tiên ‘i LuÛ",
-	"Lam KÏ Thám Mã",	"Mµc Nhân Võ Sî",	"Höa Vß½ng Tri Thù",	"Thiên S½n Tuyªt Quái Vß½ng",	"Sát Døc Tâm Ma",	"Hoá Phách ‘i LuÛ",	"Thí Th¥n ‘i LuÛ",
+	"M§t Thám Tiên Phong",	"Mµc Nhân Lâu La",	"Mµc Vß½ng Tri Thù",	"Thiên S½n Ti¬u Tuyªt Quái",	"Yêu D¸ Tâm Ma",	"Hü Th¬ Khôi L²i",	"Di®t Yêu Khôi L²i",
+	"Thanh KÏ Thám Mã", "Mµc Nhân Tinh Anh",	"ThuÖ Vß½ng Tri Thù",	"Thiên S½n ÐÕi Tuyªt Quái",	"Phá Sân Tâm Ma",	"Thñc Tâm Khôi L²i",	"Tru Tiên Khôi L²i",
+	"Lam KÏ Thám Mã",	"Mµc Nhân Võ Sî",	"Höa Vß½ng Tri Thù",	"Thiên S½n Tuyªt Quái Vß½ng",	"Sát Døc Tâm Ma",	"Hoá Phách Khôi L²i",	"Thí Th¥n Khôi L²i",
 	"Quang Minh Ði®n",	"ThÕch Cß½ng",		"Quang Minh Ði®n#{_INFOAIM95,160,11,ThÕch Cß½ng}ThÕch Cß½ng",
 	"Thiªu Lâm Tñ",	"Huy«n ChÑng",		"Thiªu Lâm Tñ#{_INFOAIM99,145,9,Huy«n ChÑng}Huy«n ChÑng",
 	"Tinh Túc Häi",	"Thiên Toàn TØ",	"Tinh Tú Häi#{_INFOAIM99,142,16,Thiên Toàn TØ}Thiên Toàn TØ",

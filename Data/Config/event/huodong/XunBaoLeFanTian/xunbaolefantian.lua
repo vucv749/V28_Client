@@ -13,7 +13,7 @@ x890638_g_MissionName					= "#{XBLFT_131112_03}"
 x890638_g_Position_X					= 190
 x890638_g_Position_Z					= 128
 x890638_g_SceneID						= 1
-x890638_g_AccomplishNPC_Name			= "Ti¬u Phán"
+x890638_g_AccomplishNPC_Name			= "Trß Ti¬u Bàn"
 
 --nhi®m vø loÕi hình(Träo bày ra Yêu, ð¯i Ñng Client/Config/MissionKind. Txt)
 x890638_g_MissionKind 				= 12

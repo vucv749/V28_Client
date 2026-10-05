@@ -30,7 +30,7 @@ x212134_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212134_g_MissionName="Cái thª anh hùng"
 x212134_g_MissionInfo="#{Mis_Hero_end}"
-x212134_g_MissionTarget="TÕi Thành ÐÕi Lý tìm ðßþc Lí Công Bµ#{_INFOAIM160,128,2,Lí Công Bµ}."
+x212134_g_MissionTarget="TÕi Thành ÐÕi Lý tìm ðßþc Lý Công Bµ#{_INFOAIM160,128,2,Lý Công Bµ}."
 x212134_g_MissionComplete="  A, ngß¶i thanh niên, các hÕ quä nhiên không phø kÏ v÷ng cua ta. Các hÕ ðã sØ dùng lòng dûng cäm và thông minh tài trí cüa mình träi qua biªt bao ch£n ðß¶ng, quen biªt bao nhiêu ngß¶i, tr× hÕi vô s¯ là yêu quái. Danh hi®u anh hùng cái thª ta t£ng cho ngß¶i cûng không tiªc chút nào!"
 
 x212134_g_MoneyBonus=500000

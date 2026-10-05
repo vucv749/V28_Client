@@ -8,13 +8,13 @@ x890145_g_KDZZID = 1006000563
 x890145_g_KDZZSubID = 3
 
 --tiªp nh§n chÑc vø Vø Npc
-x890145_g_AcceptNPC_Name="Th¥n bí næ tØ"--????npc??npc??
+x890145_g_AcceptNPC_Name="Th¥n Bí Næ TØ"--????npc??npc??
 
 --Giao nhi®m vø Npc
 x890145_g_Position_X=220--????NPC??
 x890145_g_Position_Z=91
 x890145_g_SceneID=1298
-x890145_g_AccomplishNPC_Name="Th¥n bí næ tØ"
+x890145_g_AccomplishNPC_Name="Th¥n Bí Næ TØ"
 
 --nhi®m vø s¯ li®u
 x890145_g_MissionKind = 9

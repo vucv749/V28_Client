@@ -6,13 +6,13 @@ x891129_g_ScriptId = 891129
 x891129_g_Position_X = 187
 x891129_g_Position_Z = 175
 x891129_g_SceneID = 1
-x891129_g_AccomplishNPC_Name= "DßÞng Tàm ðÕi sß"
+x891129_g_AccomplishNPC_Name= "DßÞng Tàm ÐÕi Sß"
 
 --nhi®m vø Hào(Träo bày ra Yêu)
 x891129_g_MissionId = 2017
 
 --nhi®m vø møc tiêu Npc
-x891129_g_Name = "DßÞng Tàm ðÕi sß"
+x891129_g_Name = "DßÞng Tàm ÐÕi Sß"
 
 --nhi®m vø phân loÕi(Träo bày ra Yêu, ð¯i Ñng Client/Config/MissionKind. Txt)
 x891129_g_MissionKind = 15

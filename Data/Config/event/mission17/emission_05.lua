@@ -14,7 +14,7 @@ x891084_g_MissionId = 2004 --??
 
 --møc tiêu NPC
 x891084_g_mSceneID=1
-x891084_g_Name="Th¦m dÕ vû"
+x891084_g_Name="Th¦m DÕ Vû"
 
 --nhi®m vø phân loÕi
 x891084_g_MissionKind = 9
