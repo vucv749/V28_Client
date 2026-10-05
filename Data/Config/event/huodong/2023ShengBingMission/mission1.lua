@@ -24,7 +24,7 @@ x998388_g_IfMissionElite = 0
 x998388_g_MissionName="#{SBJQ_230627_41}"
 x998388_g_MissionTarget="#{SBJQ_230627_16}"
 x998388_g_IsMissionOkFail=0
-x998388_g_Custom = {{ id = "Ði trß¾c Tiêu Phong ch² Giäi tình hình cø th¬ và tï mï", num = 1}}
+x998388_g_Custom = {{ id = "Ðªn ch² Tiêu Phong tìm hi¬u chi tiªt", num = 1}}
 x998388_g_ContinueInfo = ""
 x998388_g_MissionComplete = "#{SBJQ_230627_49}"
 

@@ -65,6 +65,6 @@ x050061_g_FormatList = {
 
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1, 2V¸
-x050061_g_Custom	=  { {id="#YnHi®m vø trß¾c m£t Hoàn S±",num=8}}
+x050061_g_Custom	=  { {id="#YS¯ vòng nhi®m vø hi®n tÕi",num=8}}
 
 --MisDescEnd

@@ -27,7 +27,7 @@ x600021_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600021_g_MissionName = "Nhi®m vø thß½ng nghi®p"
 x600021_g_MissionInfo = ""												--????
-x600021_g_MissionTarget = "Thung%nn½i ðó ðoÕt lÕi, tr· v«%i. #r#{BHRW_091224_1}"		--????
+x600021_g_MissionTarget = "    Ðªn ch² %n giành lÕi %i.#r#{BHRW_091224_1}"		--????
 x600021_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"					--??????npc??
 x600021_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"							--???????npc??
 x600021_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."					--????npc????

@@ -82,7 +82,7 @@ local ATTR_COUNT = 32  -- ????,?ATTR_CONFIG????
 local function GetTargetGuidSafe()
     local guid = GetTargetPlayerGUID()
     if guid == nil then
-        PushDebugMessage("Nhçm còn không có lña ch÷n møc tiêu ngß¶i ch½i, Thïnh Tiên lña ch÷n ngß¶i ch½i hình cái ğ¥u!")
+        PushDebugMessage("Các hÕ chßa ch÷n ngß¶i ch½i møc tiêu, hãy ch÷n änh ğÕi di®n cüa ngß¶i ch½i trß¾c!")
         return 0
     end
     return guid

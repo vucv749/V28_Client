@@ -176,7 +176,7 @@ function Makefriends_Activity_Watch1_B2_SelectClicked()
 
 	if nGuid ~= -1 then
 		if (nGuid == Player:GetGUID()) then  
-			PushDebugMessage("#HkHông th¬ C¤p chính mình bi¬u ðÕt tâm ý.");--????
+			PushDebugMessage("#HKhông th¬ bày tö tâm ý v¾i chính mình.");--????
 			return;
 		end
 		
@@ -426,7 +426,7 @@ function Makefriends_Activity_Watch1_Expressing_Emotions(n,m)
 
 	if nGuid ~= -1 then
 		if (nGuid == Player:GetGUID()) then  
-			PushDebugMessage("#HkHông th¬ C¤p chính mình bi¬u ðÕt tâm ý.");--????
+			PushDebugMessage("#HKhông th¬ bày tö tâm ý v¾i chính mình.");--????
 			return;
 		end
 		

@@ -67,7 +67,7 @@ function SMSCode_Show( bBindPhone )
 		SMSCode_Edit:SetText("Trò ch½i tài khoän chßa chÑng thñc di ðµng");
 	elseif g_SMSCode_BindPhone == 1 then
 		SMSCode_Edit:SetProperty("MaxTextLength", "20")
-		SMSCode_Edit:SetText("Thïnh Ði¬m Kích thu hoÕch nghi®m chÑng Mã cái nút");
+		SMSCode_Edit:SetText("Hãy nh¤n nút L¤y mã xác nh§n");
 	end
 	SMSCode_Get:SetText("#{YZGN_230830_21}");	
 	SMSCode_Get:Enable();

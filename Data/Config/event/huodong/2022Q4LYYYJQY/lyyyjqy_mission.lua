@@ -25,7 +25,7 @@ x810125_g_MissionInfo			= ""
 x810125_g_MissionTarget		= "#{QRWH_221115_29}"
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x810125_g_Custom	= { {id="SØ døng Luyªn Ngæ Thái Tiên giä dÕng 6ThÑ Mai Quª Hoa Tùng",num=6} }
+x810125_g_Custom	= { {id="Dùng Luyªn Ngæ Thäi Tiên trang trí bøi hoa h°ng 6 l¥n",num=6} }
 
 
 --MisDescEnd

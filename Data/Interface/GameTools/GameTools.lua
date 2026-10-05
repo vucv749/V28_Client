@@ -697,7 +697,7 @@ function GameTools_SendSelectedItem()
 	end
 	local itemId = tonumber(itemIdText)
 	if itemId == nil or itemId <= 0 then
-		PushDebugMessage("V§t ph¦m IDkhông có hi®u quä")
+		PushDebugMessage("ID v§t ph¦m không hþp l®")
 		return
 	end
 	local countText = GameTools_ItemCountEdit:GetText()
@@ -733,7 +733,7 @@ function GameTools_RecallLastItem()
 	end
 	local itemId = tonumber(itemIdText)
 	if itemId == nil or itemId <= 0 then
-		PushDebugMessage("V§t ph¦m IDkhông có hi®u quä")
+		PushDebugMessage("ID v§t ph¦m không hþp l®")
 		return
 	end
 	local countText = GameTools_ItemCountEdit:GetText()

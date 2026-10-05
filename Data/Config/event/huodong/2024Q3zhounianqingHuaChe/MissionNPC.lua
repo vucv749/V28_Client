@@ -28,6 +28,6 @@ x999451_g_MissionUnComplete		= "#{LDHC_240704_34}"
 x999451_g_MissionTarget			= "#{LDHC_240704_34}"
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x999451_g_Custom	= {{id="Nh§n ðßþc 5ThÑ Nghênh Th¥n chúc phúc",num=5} }
+x999451_g_Custom	= {{id="Nh§n 5 l¥n Chúc Phúc Nghênh Th¥n",num=5} }
 
 --MisDescEnd

@@ -156,19 +156,19 @@ function GameTools7_OnEvent(event)
 		strName,strName2 = Pet:GetName(g_nSelect_Index);
 		GameTools7_PetNameEdix:SetText(strName);
 		--Æ·ÖÖ
-		GameTools7_XinXiTxt2:SetText("#YgI¯ng: #G"..strName2);
+		GameTools7_XinXiTxt2:SetText("#YGi¯ng loài:#G"..strName2);
 		
 		-- äÊÞGUIDÏÔÊ¾
 		local petGUID_H,petGUID_L,sex = Pet:GetID(g_nSelect_Index);
 		
-		GameTools7_XinXiTxt3:SetText("#YGUIDð¸a v¸ cao: #G"..petGUID_H);
-		GameTools7_XinXiTxt4:SetText("#YGUIDÐê V¸: #G"..petGUID_L);
+		GameTools7_XinXiTxt3:SetText("#YGUID ph¥n cao:#G"..petGUID_H);
+		GameTools7_XinXiTxt4:SetText("#YGUID ph¥n th¤p:#G"..petGUID_L);
 		if(sex == 1) then
 			strName = "Gi¯ng ðñc";
 		else
 			strName = "Gi¯ng cái";
 		end
-		GameTools7_XinXiTxt1:SetText("#YTRân thú tính Bi®t: #G"..strName);
+		GameTools7_XinXiTxt1:SetText("#YGi¾i tính Trân Thú:#G"..strName);
 		--ÉÏ´Î·±Ö³µÈ¼¶
 		local ProcreateLevel = Get_XParam_INT(2)
 		GameTools7_LastProcreateEdix:SetText(ProcreateLevel);

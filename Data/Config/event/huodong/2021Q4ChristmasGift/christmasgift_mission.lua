@@ -30,6 +30,6 @@ x888774_g_MissionComplete	= "#{SDXY_211103_51}"
 
 
 -- nhi®m vø hoàn thành tình hu¯ng, nµi dung ðµng thái näy sinh cái m¾i, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x888774_g_Custom	= { {id="SØ døng ngày sinh Kh±ng TØ Hoa Linh giä dÕng 6ThÑ Thánh Ðän Thø",num=6} }
+x888774_g_Custom	= { {id="Dùng Chuông Hoa Giáng Sinh trang trí Cây Thông Giáng Sinh 6 l¥n",num=6} }
 
 --MisDescEnd

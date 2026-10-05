@@ -999,7 +999,7 @@ function Update_Synthesize_Shenfen_Item(Item_index)
 		if not SpecialItemAcceptID[Item_ID] then 
 			local Item_ID = PlayerPackage : GetItemTableIndex(index)
 			local szName = LifeAbility:GetPrescr_Material(Item_ID)
-			PushDebugMessage("#B"..szName.."#WkHông th¬ dùng không sai ph¯i phß½ng#W.")
+			PushDebugMessage("#B"..szName.."#WKhông th¬ dùng cho công thÑc này#W.")
 			return
 		end
 

@@ -37,7 +37,7 @@ x210248_g_StrForePart 				= 4
 x210248_g_FormatList = {"%s#W · ĞÕi Lı nh¶ các hÕ ğªn g¥n %s giªt #G10#W %s.#r#GChú ı: HoÕt ğµng này m²i ngày chï ğßşc tham gia mµt l¥n, nªu hüy nhi®m vø thì hôm nay s¨ không th¬ tham gia nhi®m vø Lao Ğµng Là Vinh Quang næa.",}
 
 x210248_g_StrList = {
-	"#RTÔn Bát Gia#W#{_INFOAIM173,146,2,Tôn Bát Gia}",
+	"#RTôn Bát Gia#W#{_INFOAIM173,146,2,Tôn Bát Gia}",
 	--1-->14
 	"NhÕn Nam",
 	"Long Tuy«n",

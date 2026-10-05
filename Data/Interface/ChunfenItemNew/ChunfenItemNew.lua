@@ -72,7 +72,7 @@ function ChunfenItemNew_OnLoad()
 		[3] = {itemid = 30503133, count = 2, name = "Thiên Tôi Th¥n Ng÷c"},
 		[4] = {itemid = 38002519, count = 1, name = "CØu vî H°n Ng÷c"},
 		[5] = {itemid = 30501361, count = 2, name = "Công Lñc Ðan"},
-		[6] = {itemid = 10124627, count = 1, name = "Thanh Dß½ng S½n S¡c(30Thiên)"},
+		[6] = {itemid = 10124627, count = 1, name = "Thanh Dß½ng S½n S¡c (30 ngày)"},
 		[7] = {itemid = 20502003, count = 1, name = "Bí Ngân C¤p 3"},
 		[8] = {itemid = 20501003, count = 1, name = "Miên B¯ C¤p 3"},
 	}

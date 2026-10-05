@@ -252,7 +252,7 @@ function SelfPeak_Update()
 	if ntimes <= 0 and bHaveExtra == 0 then --	#G?????????????,???????????
 		SelfPeak_LevelUpNum_Text:Hide()
 		SelfPeak_LevelUpNum_Text:SetText("")
-		SelfPeak_LevelEXP_Text:SetText("#GB‘n Chu Võ Cänh Khä tång lên c¤p b§c Dî ÐÕt hÕn mÑc cao nh¤t, không th¬ tiªp tøc nh§n ðßþc Võ Cänh kinh nghi®m.")
+		SelfPeak_LevelEXP_Text:SetText("#GS¯ c¤p Võ Cänh có th¬ tång trong tu¥n này ðã ðÕt gi¾i hÕn, không th¬ tiªp tøc nh§n kinh nghi®m Võ Cänh.")
 	else 
 		SelfPeak_LevelUpNum_Text:Show()
 		SelfPeak_LevelUpNum_Text:SetText(levelupNumStr)
@@ -328,7 +328,7 @@ function SelfPeak_Update()
 			local qnd = "#cfff263ti«m nång Ði¬m".." +"..QNDValue
 			SelfPeak_NextLevelAttr:SetText(qnd)
 		else
-			SelfPeak_NextLevelAttr:SetText("#Gc„p b§c Dî ÐÕt hÕn mÑc cao nh¤t")
+			SelfPeak_NextLevelAttr:SetText("#GC¤p ðã ðÕt gi¾i hÕn")
 		end
 	end
 

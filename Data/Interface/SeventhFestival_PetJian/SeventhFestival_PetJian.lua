@@ -137,7 +137,7 @@ function SeventhFestival_PetJian_Onshow()
 	else
 		strNeedLevelColor ="#c00FF00";
 	end
-	local strNeedLevel = strNeedLevelColor.."C¤p 65 C§p ðã ngoài#WKHä mang theo" --tostring( nTakeLevel ).."C¤p#W Mang theo";
+	local strNeedLevel = strNeedLevelColor.."C¤p 65 tr· lên#W có th¬ mang theo" --tostring( nTakeLevel ).."C¤p#W Mang theo";
 	SeventhFestival_PetJian_NeedLevel:SetText( strNeedLevel );
 	-----------------------------------------------------
 	--get AttackTrait (ÔÝÈ±)

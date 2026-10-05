@@ -31,7 +31,7 @@ x600009_g_MissionRound = 40
 --nhi®m vø vån bän miêu tä
 x600009_g_MissionName = "Nhi®m vø phát tri¬n"
 x600009_g_MissionInfo = ""													--????
-x600009_g_MissionTarget = "Hµ t¯ng %n Ðáo %s%s g¥n ðây. #r#{BHRW_091224_1}"	--????
+x600009_g_MissionTarget = "    Hµ t¯ng %n ðªn g¥n %s%s.#r#{BHRW_091224_1}"	--????
 x600009_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
 x600009_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
 x600009_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."						--????npc????

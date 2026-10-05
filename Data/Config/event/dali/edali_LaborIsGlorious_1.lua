@@ -35,8 +35,8 @@ x210247_g_StrForePart 				= 4
 --x210247_g_FormatList 					= {"#{WYHD_090410_28}%s#{WYHD_090410_29}",}
 x210247_g_FormatList 					= {"%s#W · ÐÕi Lý nh¶ các hÕ giúp A Châu b¡t mµt con %s.#rGþi ý:#r%s#W · thành LÕc Dß½ng có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, các hÕ có th¬ b¡t Trân Thú ta c¥n trên Huy«n Vû Ðäo.#r#GChú ý: HoÕt ðµng này m²i ngày chï ðßþc tham gia mµt l¥n, nªu hüy nhi®m vø thì hôm nay s¨ không th¬ tham gia nhi®m vø Lao Ðµng Là Vinh Quang næa.",}
 x210247_g_StrList 						= {
- "#RTÔn Bát Gia#W#{_INFOAIM173,146,2,Tôn Bát Gia}",
- "#RVÂn Hàm Nhi#W#{_INFOAIM182,155,0,Vân Hàm Nhi}",
+ "#RTôn Bát Gia#W#{_INFOAIM173,146,2,Tôn Bát Gia}",
+ "#RVân Hàm Nhi#W#{_INFOAIM182,155,0,Vân Hàm Nhi}",
  ----------------------------------------------
  "Cán Hùng Trß·ng Thành (Huy«n Võ Ðäo#{_INFOAIM115,122,112,})",
  "Lang Trß·ng Thành (Huy«n Võ Ðäo#{_INFOAIM200,162,112,})",

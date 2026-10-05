@@ -59,7 +59,7 @@ x229006_g_FormatList = {
 								"Hãy ði tìm #R%s#W, ngß¶i ðó s¨ ðßa các hÕ ði khiêu chiªn #G%s#W.#r  #GGþi ý:#W#r  TÖ tÖ Cúc Kiªm ðang · Linh ThÑu Cung#{_INFOAIM101,44,17,Cúc Kiªm}.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
 								"Hãy giúp ta b¡t mµt con #G%p#W.#B#r  #GGþi ý:#W#r  #GÔ Lão ÐÕi · Linh ThÑu Cung#{_INFOAIM90,120,17,Ô Lão ÐÕi} có th¬ ðßa các hÕ ðªn Huy«n Vû Ðäo, t× Huy«n Vû Ðäo có mµt con ðß¶ng nhö dçn t¾i Thánh Thú S½n. Các hÕ có th¬ b¡t Trân Thú ta c¥n · Huy«n Vû Ðäo ho£c Thánh Thú S½n.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
 								"Hãy ði xem xét kh¡p Thiên S½n, tìm giúp ta 5 #G%s#W.#r  #GGþi ý:#W#r  Các hÕ có th¬ tìm th¤y các ði¬m chï dçn màu vàng trên bän ð° nhö · góc trên bên phäi màn hình.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
-								"Thïnh C¤p#R%s#Wðßa ði mµt cái#G%i#WBa, Sñ Thành lúc sau, ta s¨ cho ngß½i báo thù! #r #GTi¬u nêu lên: #W#r ThÕch T¦u ngay tÕi Linh ThÑu Cung#{_INFOAIM123,67,17,ThÕch T¦u}. #r Lô Vû Ðình tÖ tÖ ngay tÕi Linh ThÑu Cung#{_INFOAIM45,69,17,Lô Vû Ðình}. #r Nh§m Phi H°ng tÖ tÖ ngay tÕi Linh ThÑu Cung#{_INFOAIM39,71,17,Nh§m Phi H°ng}. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
+								"Hãy ðßa ðªn cho #R%s#W mµt #G%i#W, xong vi®c ta s¨ trä công cho các hÕ!#r  #GM©o:#W#r  ThÕch T¦u ðang · Linh ThÑu Cung#{_INFOAIM123,67,17,ThÕch T¦u}.#r  Lô Vû Ðình tÖ tÖ ðang · Linh ThÑu Cung#{_INFOAIM45,69,17,Lô Vû Ðình}.#r  Nh§m Phi H°ng tÖ tÖ ðang · Linh ThÑu Cung#{_INFOAIM39,71,17,Nh§m Phi H°ng}.#{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
 								"KhÑ giªt chªt#G%s%s#WCá#G%n#W. #{SMXL_090819_tianshan}#r#{SMRW_090206_01}",
 								}
 

@@ -14,6 +14,6 @@ x890361_g_MissionTarget           = "#{CLCW_240328_27}"
 --d¤u hi®u thành công Th¸ Ná Hào V¸ n½i này d¤u hi®u chính là 0Hào V¸
 x890361_g_IsMissionOkFail         = 0
 -- nhi®m vø hoàn thành tình hu¯ng, chiªm døng nhi®m vø tham s¯ Ðích Ð® 1V¸
-x890361_g_Custom                  = { { id = "Thu th§p ít nh¤t 10Ði¬m Linh Khí", num = 1 } }
+x890361_g_Custom                  = { { id = "Thu th§p ít nh¤t 10 ði¬m linh khí", num = 1 } }
 
 --MisDescEnd

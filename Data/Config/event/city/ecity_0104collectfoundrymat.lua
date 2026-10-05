@@ -27,7 +27,7 @@ x600006_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600006_g_MissionName = "Nhi®m vø công trình"
 x600006_g_MissionInfo = ""													--????
-x600006_g_MissionTarget = "Thung%nðánh r¾t%sCá%i. #r#{BHRW_091224_1}"			--????
+x600006_g_MissionTarget = "    Ðánh %n r½i ra %s %i.#r#{BHRW_091224_1}"			--????
 x600006_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"						--??????npc??
 x600006_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"								--???????npc??
 x600006_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."						--????npc????

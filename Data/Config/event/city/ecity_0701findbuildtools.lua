@@ -47,10 +47,10 @@ x600036_g_StrForePart = 2
 --dùng ð¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ðích s¯ li®u
 x600036_g_FormatList = {
 	"",
-	"Ði trß¾c%1nmßþn%2i. #r#{BHRW_091224_1}",					-- 1
+	"    Ðªn ch² %1n mßþn %2i.#r#{BHRW_091224_1}",					-- 1
 	"Tß¾ng%2iträ lÕi C¤p bang hµi ÐÕi t±ng quän. #r#{BHRW_091224_1}",			-- 2
-	"Ði trß¾c%1nmßþn%2i. #r#{BHRW_091224_1}",					-- 3
-	"Ði trß¾c%1nmßþn%2i. #r#{BHRW_091224_1}",					-- 4
+	"    Ðªn ch² %1n mßþn %2i.#r#{BHRW_091224_1}",					-- 3
+	"    Ðªn ch² %1n mßþn %2i.#r#{BHRW_091224_1}",					-- 4
 	"%3nðoÕt ði r°i%2i, c¥n ngß½i ði ðoÕt lÕi. #r#{BHRW_091224_1}",		-- 5
 	"Tß¾ng%2iträ lÕi C¤p bang hµi ÐÕi t±ng quän. #r#{BHRW_091224_1}",			-- 6
 }

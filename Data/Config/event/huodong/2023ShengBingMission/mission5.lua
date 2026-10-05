@@ -26,7 +26,7 @@ x998392_g_IfMissionElite = 0
 x998392_g_MissionName="#{SBJQ_230627_46}"
 x998392_g_MissionTarget="#{SBJQ_230627_31}"
 x998392_g_IsMissionOkFail=0
-x998392_g_Custom = {{ id = "Ði trß¾c Thiªu Lâm Tñ Tiêu Vi­n S½n XØ", num = 1}}
+x998392_g_Custom = {{ id = "Ðªn ch² Tiêu Vi­n S½n · Thiªu Lâm Tñ", num = 1}}
 x998392_g_ContinueInfo = ""
 x998392_g_MissionComplete = "#{SBJQ_230627_133}"
 

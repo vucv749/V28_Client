@@ -40,7 +40,7 @@ x600038_g_StrForePart			= 2
 --dùng ð¬ bäo t°n tñ phù Xuyªn cách thÑc Hoá Ðích s¯ li®u
 x600038_g_FormatList			= {
 	"",
-	"M§t Tín Viªt: Trình Ngô Tµc thü lînh Khäi, thuµc hÕ ðoÕt ðßþc%2ich¡c ch¡n, Ðãn b¤t hÕnh g£p ðßþc%1nS· T§p, b¤t ð¡c dî Phong Kh¦n Xa H°, Thïnh T¯c Ðái các huynh ð® Lai trþ giúp thuµc hÕ. #r#{BHRW_091224_1}",	--1 ????
+	"    M§t thß viªt: Kính trình thü lînh tµc ta, thuµc hÕ ðã ðoÕt ðßþc mµt ít %2i, nhßng không may b¸ %1n t§p kích, tình thª nguy c¤p ðành phäi rút lui, xin mau dçn các huynh ð® ðªn tiªp vi®n thuµc hÕ.#r#{BHRW_091224_1}",	--1 ????
 	"%3nðoÕt ði r°i%2i, c¥n ngß½i ði ðoÕt lÕi. #r#{BHRW_091224_1}",																		--2 ??????
 	"Tß¾ng%2iträ lÕi C¤p bang hµi ÐÕi t±ng quän. #r#{BHRW_091224_1}"																				--3 ??
 }

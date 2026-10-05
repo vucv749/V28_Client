@@ -26,7 +26,7 @@ x892984_g_MissionName="#{CJDK_20211203_03}"
 x892984_g_MissionTarget="#{CJDK_20211203_08}"
 x892984_g_IsMissionOkFail=0
 x892984_g_SuccCount=1
-x892984_g_Custom = {{ id = "Hoàn thành 6ThÑ Vû Sß ðµng tác", num = 6}} --??
+x892984_g_Custom = {{ id = "Hoàn thành 6 l¥n ðµng tác múa lân", num = 6}} --??
 x892984_g_ContinueInfo = ""
 x892984_g_MissionComplete = "#{CJDK_20211203_10}"
 

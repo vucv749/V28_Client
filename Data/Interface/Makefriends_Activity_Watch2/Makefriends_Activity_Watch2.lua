@@ -314,7 +314,7 @@ function Makefriends_Activity_Watch2_Expressing_Emotions(index)
 				
 				if nGuid == tempGuid then
 					if (nGuid == Player:GetGUID()) then  
-						PushDebugMessage("#HkHông th¬ C¤p chính mình bi¬u ðÕt tâm ý.");--????
+						PushDebugMessage("#HKhông th¬ bày tö tâm ý v¾i chính mình.");--????
 						return;
 					end
 					

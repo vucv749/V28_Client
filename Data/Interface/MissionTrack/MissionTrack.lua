@@ -241,7 +241,7 @@ function MissionTrack_UpdateHaveGetMission(nSelectMissionID)
 									strOKFail = "Thành công";
 								elseif(Mission_Variable == 3) then
 									if IsNGRunning() == 1 then
-										strOKFail = "#Gt¹ ðµng"
+										strOKFail = "#GTñ ðµng"
 									else
 										strOKFail = "#{_INFONGSTRm· ra}"
 									end
@@ -349,13 +349,13 @@ function MissionTrack_AddMissionTrackInfo(nMissionIndex, nMissionTrackType, nFin
 			elseif nIndex == 890638 then  --Q4?? ?????
 				strTemp = "   ".."#{XBLFT_131112_99}";
 			elseif nIndex == 600047 or nIndex == 600048 or nIndex == 600049 then		--???? for:TT 64489
-				strTemp = string.format("#WðI tìm#R%s",	strFinishNPC);
+				strTemp = string.format("   #WÐi tìm #R%s",	strFinishNPC);
 			elseif nIndex == 998289 then
 				strTemp = "#{FQZC_230331_287}"
 			elseif nIndex == 998317 then
 				strTemp = "#{FQZC_230331_292}"
 			elseif MissionTrack_CheckScriptId_CanAutoRun(nIndex) >= 1 then
-				strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#{_INFONGAIM%d,%d,%d,%s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
+				strTemp = string.format("   #WÐªn #G%s#W tìm #R%s#{_INFONGAIM%d,%d,%d,%s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			else
 				strTemp = string.format("   #WÐªn #G%s#W tìm #R%s#{_INFOAIM%d,%d,%d,%s}", strFinishSceneName, strFinishNPC, nFinishX, nFinishY, nFinishSceneID, strFinishNPC);
 			end
@@ -959,7 +959,7 @@ function MissionTrack_JingJinMision( nMissionIndex )
 	local NPCname,LPname ,Npcscene = MissionTrack_GetItem_JingJinMission( nIndex1,nIndex2 )
 
 	if NPCname ~= "" and LPname ~= "" then
-		local strTemp = string.format("#WKHÑ#G%s#WTräo#R%s#W", Npcscene, NPCname);
+		local strTemp = string.format("#WÐªn #G%s#W tìm #R%s#W", Npcscene, NPCname);
 
 		return strTemp
 	end

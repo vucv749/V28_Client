@@ -51,7 +51,7 @@ end
 function GameTools6_ItemSearch_Show()
 	this:Show()
 	GameTools6_ItemSearch_Cancel_Clicked()
-	GameTools6_ItemSearch_List:AddItem("#WTHïnh Tiên ðßa vào#GðÕo cø tên#WHo£c#GID#Wtiªn hành tìm tòi", 0);
+	GameTools6_ItemSearch_List:AddItem("#WHãy nh§p #Gtên ðÕo cø#W ho£c #GID#W ð¬ tìm kiªm", 0);
 	
 	--Ä¬ÈÏÑ¡ÖÐËÑË÷ÎïÆ·
 	GameTools6_ItemSearch_SelectPet:SetCheck(0)
@@ -79,7 +79,7 @@ function GameTools6_ItemSearch_OK_Clicked()
 	GameTools6_ItemSearch_Act:SetActionItem(-1);
 	
 	--µÚÒ»ÐÐ·ÅÌáÊ¾
-	local str2 = string.format("#WDÎ tìm tòi[#G%s#W], Thïnh lña ch÷n kªt quä Dî tñ ðµng bö thêm vào:",str1);
+	local str2 = string.format("#WÐã tìm [#G%s#W], hãy ch÷n kªt quä ð¬ tñ ðµng ði«n:",str1);
 	GameTools6_ItemSearch_List:ClearListBox();
 	GameTools6_ItemSearch_List:AddItem(str2, 0);
 	
@@ -104,7 +104,7 @@ function GameTools6_ItemSearch_OK_Clicked()
                 g_PetSearch_All = op:read("*a");
                 op:close();
             end
-			PushDebugMessage("L¥n ð¥u tiên Gia Täi Trân Thú TXTs¯ li®u thành công")
+			PushDebugMessage("Täi dæ li®u TXT Trân Thú l¥n ð¥u thành công")
         end
         all = g_PetSearch_All
     else
@@ -115,7 +115,7 @@ function GameTools6_ItemSearch_OK_Clicked()
                 g_ItemSearch_All = op:read("*a");
                 op:close();
             end
-			PushDebugMessage("L¥n ð¥u tiên Gia Täi v§t ph¦m TXTs¯ li®u thành công")
+			PushDebugMessage("Täi dæ li®u TXT v§t ph¦m l¥n ð¥u thành công")
         end
         all = g_ItemSearch_All
     end

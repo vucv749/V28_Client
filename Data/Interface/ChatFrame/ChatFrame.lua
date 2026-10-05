@@ -523,7 +523,7 @@ function ChatFrame_OnEvent(event)
 		local selfZoneWorldID = DataPool:GetSelfZoneWorldID()
 
 		if (g_CurSecretFlag == "1") then
-			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-63#GNHçm th§t là t¯t Hæu#W:"..tostring(arg1) );
+			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-63#GHäo hæu cüa các hÕ#W:"..tostring(arg1) );
 		elseif (g_CurSecretFlag == "2") then
 			Chat_ChatSpeaker_StarWindow:SetText( "#e010101#-60#cff0000Kë thù cüa các hÕ#W:"..tostring(arg1) );
 		elseif	(g_CurSecretFlag == "3") then

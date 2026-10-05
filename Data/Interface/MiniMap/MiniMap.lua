@@ -505,7 +505,7 @@ function Minimap_UpdatePKMode()
 	local strPKMode = ""
 	if( tonumber( nPKMode ) == 0 ) then
 		--MiniMap_PK_Mode:SetToolTip( "Hòa bình" );
-		strPKMode = "Hòa Bình\nNgß¶i ch½i chï ðßþc công kích bän thân, không ðßþc chü ðµng công kích ngß¶i ch½i khác."
+		strPKMode = "Hòa bình\n— chª ðµ này chï có th¬ phän kích ngß¶i ch½i t¤n công mình, không th¬ chü ðµng t¤n công ngß¶i ch½i khác."
 	elseif( tonumber( nPKMode ) == 1 ) then
 		--MiniMap_PK_Mode:SetToolTip( "PK_FREE_FOR_ALL" );
 		strPKMode = "H²n chiªn cá nhân"

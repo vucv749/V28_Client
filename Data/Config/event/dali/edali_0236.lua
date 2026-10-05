@@ -41,7 +41,7 @@ x210236_g_DemandItem={{id=20309004,num=1},{id=20309008,num=1}}		--??????
 x210236_g_MissionName="Ngñ TÑ Tinh Phß·ng Y"
 x210236_g_MissionInfo="#{event_dali_0049}"  --????
 x210236_g_MissionTarget="Tìm Nh¤t Ph¦m Liên TØ và Nh¤t Ph¦m H°ng Táo, sau ðó v« #GNgû Hoa Ðàn thành ÐÕi Lý#W tìm #RLý Công Bµ#W#{_INFOAIM160,128,2,Lý Công Bµ}, mµt trong TÑ ÐÕi Thi®n Nhân."    --????
-x210236_g_ContinueInfo="  Các hÕ ðã tìm ðßþc Nh¤t Ph¦m Liên TØ và Nh¤t Ph¦m H°ng Táo r°i sao?"		--??????npc??
+x210236_g_ContinueInfo="  Các hÕ ðã tìm ðßþc Nh¤t Ph¦m Liên TØ và Nh¤t Ph¦m H°ng r°i sao?"		--??????npc??
 x210236_g_MissionComplete="  Ngß¶i trë tu±i, làm t¯t l¡m."					--????npc????
 
 --nhi®m vø thß·ng cho
