@@ -39,8 +39,8 @@ x210217_g_DemandKill ={{id=906,num=8}}		--???1?
 x210217_g_MissionName="Giªt càng nhi«u quái v§t"
 x210217_g_MissionInfo="#{event_dali_0025}"
 x210217_g_MissionTarget="#{event_dali_0026}"
-x210217_g_ContinueInfo="  Các hÕ ðã tiêu di®t 8 #RS´n Thù#W chßa?"
-x210217_g_MissionComplete="  Làm r¤t t¯t, bây gi¶ #RS´n Thù#W cüa #GVô Lßþng S½n#W cûng không dám tùy ti®n t§p kích các huynh ð® Tào Bang"
+x210217_g_ContinueInfo="  Các hÕ ðã di®t 8 con #RS½n Thù#W chßa?"
+x210217_g_MissionComplete="  Làm t¯t l¡m, gi¶ · #GVô Lßþng S½n#W, #RS½n Thù#W không dám tùy ti®n t¤n công huynh ð® Tào Bang næa r°i."
 x210217_g_SignPost = {x = 160, z = 156, tip = "Tri®u Thiên Sß"}
 --nhi®m vø thß·ng cho
 x210217_g_MoneyBonus=20

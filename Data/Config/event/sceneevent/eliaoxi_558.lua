@@ -26,7 +26,7 @@ x212112_g_DemandItem={{id=40002071,num=1}}		--???1?
 --nhi®m vø vån bän miêu tä
 x212112_g_MissionName="Thß Nhà Cüa Dûng Sî"
 x212112_g_MissionInfo="#{Mis_S_Liaoxi_1010091}"
-x212112_g_MissionTarget="  Hãy mang #YDng sî gia thß#W trao cho #RLı Lão Thái Thái#W · #G Nam Vñc #W#{_INFOAIM214,243,34,Lı Lão Thái Thái}."
+x212112_g_MissionTarget="  Ğem #YThß Nhà Cüa Dûng Sî#W ğªn #GNam Vñc#W giao cho #RLı Lão Thái Thái#W#{_INFOAIM214,243,34,Lı Lão Thái Thái}."
 x212112_g_ContinueInfo="  Các hÕ tìm ta có vi®c gì?"
 x212112_g_MissionComplete="  Con trai ta tuy ğã chªt, nhßng nó không làm m¤t m£t t± phø nó"
 

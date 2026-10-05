@@ -26,7 +26,7 @@ x212108_g_IsMissionOkFail = 0		--????0?
 --nhi®m vø vån bän miêu tä
 x212108_g_MissionName="Xây dñng lÕi trang trÕi"
 x212108_g_MissionInfo="#{Lua_liaoxi_002}"
-x212108_g_MissionTarget="  Tìm th¤y 10 viên Hàn thiªt khoáng thÕch, 10 viên Kim khoáng thÕch và 10 ð°ng vàng, hãy trao chúng cho #RGIa Lu§t Kim #W · #GLiêu Tây Quäng Vinh Tr¤n #W#{_INFOAIM170,206,21,Gia Lu§t Kim}."
+x212108_g_MissionTarget="  Tìm 10 kh¯i Hàn Thiªt Khoáng ThÕch, 10 kh¯i Kim Khoáng ThÕch cùng 10 Vàng, ðem ðªn #GQuäng Ninh Tr¤n, Liêu Tây#W giao cho #RGia Lu§t Kim#W#{_INFOAIM170,206,21,Gia Lu§t Kim}."
 x212108_g_ContinueInfo="  Các hÕ ðã tìm ðü nguyên li®u chßa?"
 x212108_g_MissionComplete="  Ða tÕ ngß½i ðã giúp ðÞ, ðþi khi trÕi chån nuôi ðßþc xây dñng lÕi, nh¤t ð¸nh ta s¨ ðãi ngß½i món sæa dê tß½i nh¤t và món th¸t nß¾ng th½m ngon nh¤t"
 

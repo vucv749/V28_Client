@@ -30,7 +30,7 @@ x228902_g_IfMissionElite = 0
 --nhi®m vø Danh
 x228902_g_MissionName = "Li­u Ám Hoa Minh-Tñ l§p môn hµ"
 x228902_g_MissionInfo = "#{TIANSHAN_SKILL_01}"
-x228902_g_MissionTarget = "    TÕi #GtHành ÐÕi Lý Tu Vån Ðài#W tìm #RVß½ng Thi«u #W#{_INFOAIM217,255,2,Vß½ng Thi«u}."
+x228902_g_MissionTarget = "    Ðªn #GÐÕi Lý Tu Vån Ðài #Wtìm #RVß½ng Thi«u #W #{_INFOAIM217,255,2,Vß½ng Thi«u}."
 x228902_g_MissionContinue = "    "
 x228902_g_MissionComplete = "#{TIANSHAN_SKILL_02}"
 

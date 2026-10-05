@@ -24,7 +24,7 @@ x890154_g_IfMissionElite = 0
 x890154_g_MissionName="#{ZXJQ_221225_10}"
 x890154_g_MissionTarget="#{ZXJQ_221225_13}"
 x890154_g_IsMissionOkFail=0
-x890154_g_Custom = {{ id = "Ði trß¾c BÕch Khê H° M£c Tri S¥u XØ nói chuy®n", num = 1}}
+x890154_g_Custom = {{ id = "Ðªn ch² M£c Tri S¥u · BÕch Khê H° ð¬ bàn kÛ", num = 1}}
 x890154_g_ContinueInfo = ""
 x890154_g_MissionComplete = ""
 

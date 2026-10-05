@@ -31,7 +31,7 @@ x890160_g_IfMissionElite = 0
 x890160_g_MissionName="#{ZXJQ_221225_154}"
 x890160_g_MissionTarget="#{ZXJQ_221225_160}"
 x890160_g_IsMissionOkFail=0
-x890160_g_Custom = {{ id = "Ði trß¾c Lång Ba Ðµng T¥m Tô Tinh Hà", num = 1}}
+x890160_g_Custom = {{ id = "Ðªn Lång Ba Ðµng tìm Tô Tinh Hà", num = 1}}
 x890160_g_ContinueInfo = ""
 x890160_g_MissionComplete = ""
 

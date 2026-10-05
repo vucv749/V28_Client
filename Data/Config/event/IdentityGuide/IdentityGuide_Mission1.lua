@@ -23,7 +23,7 @@ x998655_g_MissionName="#{SFYD_231227_28}"--???
 x998655_g_MissionTarget="#{SFYD_231227_281}"--????(?????????????)
 
 --Tñ ð¸nh nghîa hoàn thành tình hu¯ng, nµi dung không th¬ sØ døng tñ ði¬n, phân bi®t ð¯i Ñng missionparamÐích Ð® 1V¸ H§u Diên
-x998655_g_Custom = {{id="TÕi giang h° Minh Hµi Trung TrÕch Nh¤t ði trß¾c",num=1}}
+x998655_g_Custom = {{id="Ch÷n mµt Giang H° Minh Hµi ð¬ ðªn",num=1}}
 
 --Npc khoäng cách
 x998655_g_NpcDist = 5

@@ -44,7 +44,7 @@ x210202_g_MissionName="Cái bánh bao thÑ nh¤t"
 x210202_g_MissionInfo_1="  #R"
 x210202_g_MissionInfo_2="#{event_dali_0004}"
 x210202_g_MissionTarget="#{xinshou_002}"
-x210202_g_MissionContinue="Các hÕ ðã làm #YbÁnh bao#W xong chßa?"
+x210202_g_MissionContinue="Các hÕ ðã làm #Ybánh bao#W xong chßa?"
 x210202_g_MissionComplete="  Chà, xem ra tài nång n¤u nß¾ng cüa các hÕ không chï · mÑc bình thß¶ng"
 x210202_g_MoneyBonus=1
 x210202_g_SignPost = {x = 110, z = 159, tip = "Ð² TØ Ð¢ng"}

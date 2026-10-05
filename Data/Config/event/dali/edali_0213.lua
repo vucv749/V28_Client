@@ -37,8 +37,8 @@ x210213_g_DemandKill ={{id=719,num=8}}		--???1?
 x210213_g_MissionName="L¥n ð¥u di®t quái v§t"
 x210213_g_MissionInfo="#{event_dali_0018}"
 x210213_g_MissionTarget="#{event_dali_0019}"
-x210213_g_ContinueInfo="Các hÕ ðã tiêu di®t 8 #RTHøc ÐÕo BÕch Viên#W chßa?"
-x210213_g_MissionComplete="  Làm r¤t t¯t, bây gi¶ #RTHøc ÐÕo BÕch Viên#W · #GÐ°i ThÕch Than#W cûng không dám tùy ti®n t§p kích bá tánh r°i"
+x210213_g_ContinueInfo="Các hÕ ðã ðánh bÕi 8 con #RThøc ÐÕo BÕch Viên#W chßa?"
+x210213_g_MissionComplete="  Làm t¯t l¡m, gi¶ · #GÐôi ThÕch Than#W, #RThøc ÐÕo BÕch Viên#W không dám tùy ti®n t¤n công bách tính næa r°i."
 x210213_g_SignPost = {x = 160, z = 156, tip = "Tri®u Thiên Sß"}
 --nhi®m vø thß·ng cho
 x210213_g_MoneyBonus=200

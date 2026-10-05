@@ -41,7 +41,7 @@ x210201_g_IsMissionOkFail = 0		--????0?
 x210201_g_MissionName="L¥n ð¥u giao hàng"
 x210201_g_MissionInfo="#{event_dali_0003}"
 x210201_g_MissionTarget="Mang #Y1 Rß½ng Døng Cø Bªp#W ðªn #GTây ÐÕi Nhai phía tây thành ÐÕi Lý, #YTØu Ðiªm#W giao cho ông chü #RÐ² TØ Ð¢ng#W#{_INFOAIM110,159,2,Ð² TØ Ð¢ng}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân, s¨ giúp các hÕ tìm ðßþc NPC này)#l"
-x210201_g_MissionComplete="  Các hÕ th§t hi¬u ðúng c½n nguy c¤p cüa ta, ta ðang c¥n g¤p #YcHiªc rß½ng døng cø n¤u nß¾ng#W này!"
+x210201_g_MissionComplete="  Các hÕ th§t hi¬u ðúng c½n nguy c¤p cüa ta, ta ðang c¥n g¤p #Ychiªc rß½ng døng cø n¤u nß¾ng#W này!"
 x210201_g_MoneyBonus=1
 x210201_g_SignPost = {x = 110, z = 159, tip = "Ð² TØ Ð¢ng"}
 

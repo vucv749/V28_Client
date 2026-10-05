@@ -80,7 +80,7 @@ x805026_g_MissionInfo_1="  #R"
 
 x805026_g_MissionInfo_2="#{city0_levelup_0001}"
 
-x805026_g_MissionTarget="C¤p bang hµi ÐÕi t±ng quän 5Cá Kim T®"
+x805026_g_MissionTarget="Cho ðÕi t±ng quän bang hµi 5 Vàng"
 
 x805026_g_MissionContinue="Các hÕ ðã có 5 Vàng chßa?"
 

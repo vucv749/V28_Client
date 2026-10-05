@@ -22,7 +22,7 @@ x212102_g_MissionName="ThØ thách lòng thành"
 --nhi®m vø miêu tä
 x212102_g_MissionInfo="#{Lua_yanbei_0001}"
 --nhi®m vø møc tiêu
-x212102_g_MissionTarget="  L² Bình · NhÕn B¡c #{_INFOAIM271,49,19,L² Bình} yêu c¤u các hÕ chiªn th¡ng Ti¬u Phán. C¦n th§n ð¤y, chï c¥n L² Bình ra l®nh mµt câu, #RTI¬u Phán#W s¨ xu¤t hi®n ngay."	
+x212102_g_MissionTarget="  L² Bình · NhÕn B¡c #{_INFOAIM271,49,19,L² Bình} yêu c¤u các hÕ chiªn th¡ng Ti¬u Phán. C¦n th§n ð¤y, chï c¥n L² Bình ra l®nh mµt câu, #RTi¬u Phán#W s¨ xu¤t hi®n ngay."	
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi
 x212102_g_ContinueInfo="  Ngß½i ðã ðánh bÕi Ti¬u Phán chßa?"
 --ð® trình Th¶i Npc trong l¶i nói

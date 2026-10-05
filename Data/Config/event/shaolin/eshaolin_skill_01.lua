@@ -26,7 +26,7 @@ x212140_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212140_g_MissionName="Di®t ThØ Tri«u Thñc-Chuy®n cû Thiªu Lâm"
 x212140_g_MissionInfo="#{Mis_shaolin_961}"
-x212140_g_MissionTarget="TÕi #GtHành ÐÕi Lý Tu Vån Ðài#W tìm #RVß½ng Thi«u #W#{_INFOAIM217,255,2,Vß½ng Thi«u}."
+x212140_g_MissionTarget="Ðªn #GÐÕi Lý Tu Vån Ðài #Wtìm #RVß½ng Thi«u #W #{_INFOAIM217,255,2,Vß½ng Thi«u}."
 x212140_g_MissionComplete="  Các hÕ là ð® tØ Thiªu Lâm ß, phß½ng trßþng cüa các hÕ Huy«n T× ðÕi sß vçn khöa chÑ?"
 
 x212140_g_MoneyBonus=1000

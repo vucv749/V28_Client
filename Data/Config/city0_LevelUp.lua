@@ -80,7 +80,7 @@ x805020_g_MissionInfo_1="  #R"
 
 x805020_g_MissionInfo_2="#{city0_levelup_0001}"
 
-x805020_g_MissionTarget="C¤p bang hµi ÐÕi t±ng quän 5Cá Kim T®"
+x805020_g_MissionTarget="Cho ðÕi t±ng quän bang hµi 5 Vàng"
 
 x805020_g_MissionContinue="Các hÕ ðã có 5 Vàng chßa?"
 

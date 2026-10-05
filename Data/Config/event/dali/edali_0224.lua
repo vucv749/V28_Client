@@ -36,8 +36,8 @@ x210224_g_IsMissionOkFail = 0		--????0?
 x210224_g_MissionName="Ði xem b¯ cáo"
 x210224_g_MissionInfo="#{event_dali_0034}"
 x210224_g_MissionTarget="Ð÷c #RBäng B¯ Cáo#W#{_INFOAIM148,40,2,-1} · #Gtrß¾c c±ng hoàng cung ÐÕi Lý#W, sau ðó v« #GNgû Hoa Ðàn thành ÐÕi Lý#W tìm #RTri®u Thiên Sß#W#{_INFOAIM160,157,2,Tri®u Thiên Sß}.#b#G(Nh¤p chuµt trái vào t÷a ðµ có gÕch chân ð¬ tìm ðªn NPC này)#l"
-x210224_g_ContinueInfo="  Ngß½i ðã xem #YbÄng cáo th¸#W chßa?"
-x210224_g_MissionComplete="  Ngß½i ðã xem #YbÄng cáo th¸ #Wchßa? Lû ngß¶i x¤u nhß v§y, nh¤t ð¸nh phäi tr×ng tr¸ nghiêm kh¡c"
+x210224_g_ContinueInfo="  Ngß½i ðã xem #Ybäng cáo th¸#W chßa?"
+x210224_g_MissionComplete="  Ngß½i ðã xem #Ybäng cáo th¸ #Wchßa? Lû ngß¶i x¤u nhß v§y, nh¤t ð¸nh phäi tr×ng tr¸ nghiêm kh¡c"
 x210224_g_SignPost = {x = 148, z = 40, tip = "Bäng cáo th¸"}
 --nhi®m vø thß·ng cho
 x210224_g_MoneyBonus=100

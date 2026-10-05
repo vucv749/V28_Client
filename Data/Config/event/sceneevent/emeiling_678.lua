@@ -27,7 +27,7 @@ x212113_g_MissionName="Ð¥u sö tµi ác"
 --nhi®m vø miêu tä
 x212113_g_MissionInfo="#{Mis_K_Meiling_1000183}"
 --nhi®m vø møc tiêu
-x212113_g_MissionTarget="    Nguy®t Lý · Mai Lînh #{_INFOAIM192,70,33,Nguy®t Lý} yêu c¥u ngß½i ðánh bÕi Nghiêm BÕch H±. C¦n th§n, chï c¥n Nguy®t Lý b¡t ð¥u cúng tª, #RNGhiêm BÕch H±#W s¨ xu¤t hi®n ngay."		
+x212113_g_MissionTarget="    Nguy®t Lý · Mai Lînh #{_INFOAIM192,70,33,Nguy®t Lý} yêu c¥u ngß½i ðánh bÕi Nghiêm BÕch H±. C¦n th§n, chï c¥n Nguy®t Lý b¡t ð¥u cúng tª, #RNghiêm BÕch H±#W s¨ xu¤t hi®n ngay."		
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi
 x212113_g_ContinueInfo="  Ngß½i ðã ðánh bÕi Nghiêm BÕch H± chßa?"
 --ð® trình Th¶i Npc trong l¶i nói

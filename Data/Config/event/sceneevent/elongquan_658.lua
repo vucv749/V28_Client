@@ -22,7 +22,7 @@ x212109_g_MissionName="Tr§n ðánh cu¯i cùng"
 --nhi®m vø miêu tä
 x212109_g_MissionInfo="#{Lua_Longquan_0001}"
 --nhi®m vø møc tiêu
-x212109_g_MissionTarget="#GLOng Tuy«n ÐoÕn Ki«u#WÐích#RA Thanh#W#{_INFOAIM51, 115, 31, A Thanh}yêu c¥u ngß½i giªt TØ#RThông Thiên#W. #RThông Thiên#W#{_INFOAIM48, 51, 31, -1}thß¶ng xuyên TÕi#GQuy Vân Ðình#Wg¥n ðây xu¤t hi®n."		
+x212109_g_MissionTarget="TÕi #GLong Tuy«n ÐoÕn Ki«u#W, #RA Thanh#W#{_INFOAIM51,115,31,A Thanh} yêu c¥u các hÕ giªt #RThông Thiên#W. #RThông Thiên#W#{_INFOAIM48,51,31,-1} thß¶ng xu¤t hi®n g¥n #GQuy Vân Ðình#W."		
 --chßa xong Thành nhi®m vø Ðích Npc ð¯i thoÕi
 x212109_g_ContinueInfo="  Ngß½i ðã ðánh bÕi Thông Thiên chßa?"
 --ð® trình Th¶i Npc trong l¶i nói

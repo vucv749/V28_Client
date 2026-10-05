@@ -23,7 +23,7 @@ x212114_g_IfMissionElite = 0
 --nhi®m vø Danh
 x212114_g_MissionName="Vªt Ðö ThÑ 2"
 x212114_g_MissionInfo="#{Mis_S_Nanhai_1010193}"
-x212114_g_MissionTarget="  Mang #YHUyªt y#W t£ng cho #RDi®p Lßu Phàm#W · #GNam Vñc Kiªm Phái #W#{_INFOAIM115,58,34,Di®p Lßu Phàm}."
+x212114_g_MissionTarget="  Ðem #YHuyªt Y#W ðªn #GNam Vñc Kiªm Phái#W giao cho #RDi®p Lßu Phàm#W#{_INFOAIM115,58,34,Di®p Lßu Phàm}."
 x212114_g_MissionContinue="  Các hÕ tìm ta có vi®c gì?"
 x212114_g_MissionComplete="  T¤m... T¤m huyªt y này dß¶ng nhß là y trang cüa Nam Chiêu BÕch Miêu Nhân"
 

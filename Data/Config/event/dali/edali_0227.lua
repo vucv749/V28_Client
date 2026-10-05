@@ -36,7 +36,7 @@ x210227_g_IsMissionOkFail = 0		--????0?
 x210227_g_MissionName="T£ng b¯ y"
 x210227_g_MissionInfo="#{event_dali_0038}"
 x210227_g_MissionTarget="#{event_dali_0039}"
-x210227_g_ContinueInfo="  [Các hÕ ğã ğem #Yb y#W cho #Rti¬u kh¤t cái#W chßa?]"
+x210227_g_ContinueInfo="   [Các hÕ ğã ğem #Yb¯ y#W cho #Rti¬u kh¤t cái#W chßa?]"
 x210227_g_MissionComplete="  [Chà, xem ra con ngß¶i trë tu±i các hÕ th§t không ğ½n giän. ]"
 x210227_g_SignPost = {x = 199, z = 256, tip = "Ti¬u Kh¤t Cái"}
 x210227_g_Custom	= { {id="Ğßa b¯ y cho ti¬u kh¤t cái",num=1} }

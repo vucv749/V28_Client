@@ -34,9 +34,9 @@ x210226_g_IsMissionOkFail = 0		--????0?
 
 --nhi®m vø vån bän miêu tä
 x210226_g_MissionName="T£ng bánh bao"
-x210226_g_MissionInfo="  [Té ra các hÕ vì cáo th¸ này mà ðªn. Ta không m¤t th¶i gian v¾i các hÕ. Bên kia có tên #RtI¬u kh¤t cái#W ðói s¡p chªt. Các hÕ hãy ði tìm #Ybánh bao#W cho h¡n. ]"
+x210226_g_MissionInfo="   [Té ra các hÕ vì cáo th¸ này mà ðªn. Ta không m¤t th¶i gian v¾i các hÕ. Bên kia có tên #Rti¬u kh¤t cái#W ðói s¡p chªt. Các hÕ hãy ði tìm #Ybánh bao#W cho h¡n. ]"
 x210226_g_MissionTarget="#{event_dali_0037}"
-x210226_g_ContinueInfo="  [Các hÕ ðã ðßa #YbÁnh bao#W cho #Rti¬u kh¤t cái#W chßa?]"
+x210226_g_ContinueInfo="   [Các hÕ ðã ðßa #Ybánh bao#W cho #Rti¬u kh¤t cái#W chßa?]"
 x210226_g_MissionComplete="  [Chà, xem ra con ngß¶i trë tu±i các hÕ vçn là tài nång có th¬ ðào tÕo.]"
 x210226_g_SignPost = {x = 199, z = 256, tip = "Ti¬u Kh¤t Cái"}
 x210226_g_Custom	= { {id="Ðßa bánh bao cho ti¬u kh¤t cái!",num=1} }
