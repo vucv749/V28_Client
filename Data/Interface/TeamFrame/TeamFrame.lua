@@ -281,7 +281,7 @@ function Team_Frame_OnEvent(event)
 		HideUIModelDisable();
 		-- µÃµ½´ò¿ªµÄ¶Ô»°¿òµÄÏÔÊ¾ÀàÐÍ.
 		local iShow = tonumber(arg0);
-		AxTrace( 0,0, "LoÕi ðµi m·???"..tostring(g_iTeamInfoType).."   "..tostring( iShow ));
+		AxTrace( 0,0, "LoÕi m· ðµi ==="..tostring(g_iTeamInfoType).."   "..tostring( iShow ));
 		if(-1 == iShow) then
 
 			Team_Close();

@@ -55,7 +55,7 @@ function GameTools6_OnLoad()
 	
 	--==========ËûÈË ¿ªÊ¼==========
 	GameTools6_TarTab[1] = {"Không có hi®u quä","Không có hi®u quä","Không có hi®u quä","Xem xét møc tiêu Ğích vai di­n Ğích tài phú","Xem xét tài phú"};
-	GameTools6_TarTab[2] = {"Hæu hi®u Ğích#Gv?t ph¦m ID","Cho vay Ğích#Gs lßşng","Không có hi®u quä","C¤p møc tiêu vai di­n duy nh¤t cho vay P2Cá P1","Cho vay v§t ph¦m"};
+	GameTools6_TarTab[2] = {"#GID v§t ph¦m hşp l®","#GS¯ lßşng phát","Không hşp l®","Phát cho nhân v§t møc tiêu mµt l¥n P2 cái P1","Phát v§t ph¦m"};
 	GameTools6_TarTab[3] = {"Cho vay s¯ lßşng","Không có hi®u quä","Không có hi®u quä","C¤p møc tiêu vai di­n Phát P1Kim T®","Phát Kim T®"};
 	GameTools6_TarTab[4] = {"Cho vay s¯ lßşng","Không có hi®u quä","Không có hi®u quä","C¤p møc tiêu vai di­n Phát P1Giao TØ","Phát Giao TØ"};
 	GameTools6_TarTab[5] = {"Cho vay s¯ lßşng","Không có hi®u quä","Không có hi®u quä","C¤p møc tiêu vai di­n Phát P1nguyên bäo","Phát nguyên bäo"};
@@ -73,7 +73,7 @@ function GameTools6_OnLoad()
 	--==========ËûÈË ½áÊø==========
 	
 	--==========×Ô¼º ¿ªÊ¼==========
-	GameTools6_SelfTab[1] = {"Hæu hi®u Ğích#Gv?t ph¦m ID","Lînh Ğích#Gs lßşng","Không có hi®u quä","Duy nh¤t lînh P2Cá P1","Lînh v§t ph¦m"};
+	GameTools6_SelfTab[1] = {"#GID v§t ph¦m hşp l®","#GS¯ lßşng nh§n","Không hşp l®","Nh§n mµt l¥n P2 cái P1","Nh§n v§t ph¦m"};
 	GameTools6_SelfTab[2] = {"Tay nãi Ho£c trang b¸ Cách V¸#G[0-59]","Không có hi®u quä","Không có hi®u quä","Tu¥n tra P1v¸ trí Thßşng Ğích tñ phù tin tÑc","Tra v§t ph¦m tñ phù tin tÑc"};
 	GameTools6_SelfTab[3] = {"Lúc ğ¥u Cách V¸#G[0-89]","Kªt thúc Cách V¸#G[0-89]","Không có hi®u quä","RØa sÕch tay nãi P1-P2Cách V¸ Thßşng Ğích v§t ph¦m","Thanh tay nãi"};
 	GameTools6_SelfTab[4] = {"Lînh s¯ lßşng","Không có hi®u quä","Không có hi®u quä","Lînh Kim T® S± =P1","Lãnh Kim T®"};

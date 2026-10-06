@@ -722,7 +722,7 @@ function DianCang_UpdateTotalAttrTooltip()
 	end
 	
 	if not hasAttr then
-		tooltipText = "Dî kích hoÕt Ği¬n Tàng gia tång T±ng thuµc tính: #r#WT?m Vô Dî kích hoÕt thuµc tính"
+		tooltipText = "T±ng thuµc tính tång t× Ği¬n Tàng ğã kích hoÕt:#r#WHi®n chßa có thuµc tính nào ğßşc kích hoÕt"
 	end
 	
 	-- ¸üĞÂĞü¸¡ÌáÊ¾

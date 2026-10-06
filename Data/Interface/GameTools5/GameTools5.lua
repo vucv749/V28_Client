@@ -53,7 +53,7 @@ function GameTools5_LuaFnGetBagEquipType(nPos)
         [16] = "Y Phøc",
         [17] = "Ám Khí",
         [18] = "Long Vån",
-        [21] = "Hào Hi®p ?N",
+        [21] = "Hào Hi®p „n",
     }
     local Str = EquipNames[EquipPoint] or "Không biªt"
     return EquipPoint, Str
