@@ -43,7 +43,7 @@ x231001_g_MoneyBonus=5000
 x231001_g_IsMissionOkFail	= 0	--0?:????????(0???;1??)
 x231001_g_MissionRound		= 5	--Define MD_BAIMASI_HUAN from ScriptGlobal.lua
 --x231001_g_DemandKill		= { {id=700,num=108} }
-x231001_g_Custom					= { {id="Ðã di®t: #r#r Kì TØ",num=108} }
+x231001_g_Custom					= { {id="Ðã giªt:#rQuân c¶",num=108} }
 x231001_g_Param_killcount	=	1	--1?:????????
 x231001_g_Param_sceneid		= 2	--2?:??????????
 x231001_g_Param_teamid		= 3	--3?:???????????

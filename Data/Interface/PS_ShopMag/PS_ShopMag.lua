@@ -264,7 +264,7 @@ function PS_ShopMag_UpdateFrame()
 	
 	--µêÖ÷  --¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:GetShopInfo("self","ownername");
-	PS_ShopMag_Shopkeeper_Name:SetChatString("#GChü ti®m: #{_INFOUSR".. szName .. "}");
+	PS_ShopMag_Shopkeeper_Name:SetChatString("#YChü ti®m:#{_INFOUSR".. szName .. "}");
 	
 	--µêÖ÷ID
 	local szID = PlayerShop:GetShopInfo("self","ownerid");

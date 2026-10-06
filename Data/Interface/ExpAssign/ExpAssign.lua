@@ -103,7 +103,7 @@ function ExpAssign_Update()
 				end
 			end
 		end
-		str0	= "EXP lßu giæ: "..tostring( gExp ).."#rÐi¬m PK: "..tostring( gGBValue )
+		str0	= "EXP lßu giæ: "..tostring( gExp )..", ði¬m thi®n ác cüa các hÕ là "..tostring( gGBValue )
 		str1	= "Thi®n ác c¥n: 0"
 
 	--°ïÅÉ¹±Ï×¶È¶Ò»»

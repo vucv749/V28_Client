@@ -145,7 +145,7 @@ function PS_Transfer_UpdateFrame()
 	
 	--µêÖ÷	--¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:GetShopInfo("other","ownername");
-	PS_Transfer_Master:SetChatString("#GChü ti®m: #{_INFOUSR".. szName .. "}");
+	PS_Transfer_Master:SetChatString("#YChü ti®m:#{_INFOUSR".. szName .. "}");
 
 	--µêÆÌID
 	local shopIndex = PlayerShop:GetShopInfo("other", "shopindex")

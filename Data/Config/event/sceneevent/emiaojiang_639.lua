@@ -29,7 +29,7 @@ x212115_g_IsMissionOkFail = 0		--????0?
 x212115_g_MissionName="Dûng cäm xông vào Hàn Ng÷c Tháp"
 x212115_g_MissionInfo="#{Mis_H_Miaojiang_1050003}"
 x212115_g_MissionTarget="  Hµ t¯ng linh h°n cüa A Vû#{_INFOAIM182,264,29,A Vû} ðªn chân Hàn Ng÷c Tháp, tìm ngß¶i canh giæ Hàn Ng÷c Tháp là A Hµi Nam#{_INFOAIM92,266,29,A Hµi Nam}."
-x212115_g_MissionComplete="  Không sao, ma lñc cüa Hàn Ng÷c Tháp vînh vi­n không nhß các ngß½i tß·ng. Hãy ði ði, lû phàm nhân. Các ngß½i không th¬ vào ðßþc Hàn Ng÷c Tháp. #r#r´, kë phàm nhân kia, vào b¢ng cách nào thª? Mau ra ngay"
+x212115_g_MissionComplete="  Vô ích thôi, ma lñc cüa Hàn Ng÷c Tháp vßþt xa sÑc tß·ng tßþng cüa các ngß½i. R¶i khöi ðây ði, hÞi phàm nhân. Các ngß½i cån bän không th¬ vào ðßþc Hàn Ng÷c Tháp.#r  A, cô bé kia, sao lÕi vào ðßþc trong ðó? Mau ra ðây!"
 
 --thß·ng cho
 x212115_g_MoneyBonus=16000

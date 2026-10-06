@@ -322,14 +322,14 @@ function UpdateShopInfo()
 	
 	-- µêÖ÷Ãû×Ö --¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:EnumShopInfo("ownername",g_nShopIndex[g_Selectindex]);
-	PS_ShopList_ShopOwner:SetChatString("#GChü ti®m: #{_INFOUSR".. szName .. "}");
+	PS_ShopList_ShopOwner:SetChatString("#YChü ti®m:#{_INFOUSR".. szName .. "}");
 	
 	-- µêÆÌID
 	local shopIndex = PlayerShop:EnumShopInfo("shopindex", g_nShopIndex[g_Selectindex])
 	if (tonumber(shopIndex) <= 0) then
-		PS_ShopList_DPID:SetText("#GID ti®m:")
+		PS_ShopList_DPID:SetText("#YID cØa hàng:")
 	else
-		PS_ShopList_DPID:SetText("#GID ti®m:" .. shopIndex)
+		PS_ShopList_DPID:SetText("#YID cØa hàng:" .. shopIndex)
 	end
 
 	-- µêÖ÷ID

@@ -132,7 +132,7 @@ function RecycleShop_UpdateDLG(idx)
 
 	--µêÖ÷	--¸ÄÎª³¬Á´½Ó by wangdw
 	local szName = PlayerShop:GetRecycleShopOwnerName(idx);
-	RecycleShop_Master_Text:SetChatString("#GChü ti®m: #{_INFOUSR".. szName .."}");
+	RecycleShop_Master_Text:SetChatString("#YChü ti®m:#{_INFOUSR".. szName .."}");
 	
 	--µêÖ÷ID
 	local szID = PlayerShop:GetRecycleShopOwnerID(idx);

@@ -28,7 +28,7 @@ x600028_g_IsMissionOkFail = 0							-- ??????
 --nhi®m vø vån bän miêu tä
 x600028_g_MissionName = "Nhi®m vø kÛ thu§t"
 x600028_g_MissionInfo = "Thïnh giúp ta tìm mµt#G"
-x600028_g_MissionTarget = "Thïnh giúp ta tìm mµt#G%I#W. #r#{BHRW_091224_1}"
+x600028_g_MissionTarget = "Hãy giúp ta tìm mµt #G%i#W.#r#{BHRW_091224_1}"
 x600028_g_ContinueInfo = "    Nhi®m vø cüa các hÕ vçn chßa hoàn thành à?"	
 x600028_g_SubmitInfo = "    Sñ tình tiªn tri¬n nhß thª nào r°i?"	
 x600028_g_MissionComplete = "Làm ðßþc không t°i, r¤t t¯t r¤t t¯t."

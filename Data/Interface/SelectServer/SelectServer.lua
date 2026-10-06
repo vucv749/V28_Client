@@ -12,7 +12,7 @@ local CriticalSpeed3 =1000
 
 local CriticalSpeed =200;
 local CurPage = 0
-local NetSpeed ={"#e010101T痗 鸬: #c4CFA4CT痶","#e010101T痗 鸬: #c4CFA4CB r祅","#e010101T痗 鸬: Ch遖 bi猼", "#e010101T痗 鸬 m課g: #cff0000T ngh╪" }
+local NetSpeed ={"#e010101T痗 鸬: #c4CFA4CT痶","#e010101T痗 鸬 m課g: #cff0000B","#e010101T痗 鸬: Ch遖 bi猼", "#e010101T痗 鸬 m課g: #cff0000T ngh╪" }
 local PageSize = 24
 
 -- 区域按钮的个数
