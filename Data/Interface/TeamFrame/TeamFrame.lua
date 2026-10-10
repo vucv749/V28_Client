@@ -1370,7 +1370,7 @@ function TeamFrame_OpenInvite()
 	Team_Button_Frame5:SetText("Ð°ng ý");
 	Team_Button_Frame6:SetText("T× ch¯i");
 	Team_Button_Frame7:SetText("CØ Báo");
-	Team_Button_Frame7:SetToolTip("Ði¬m Kích H§u Hµi Tß¾ng m¶i Giä tñ ðµng CØ Báo Tính ðem gia nh§p che ch¡n Li®t Bi¬u, che ch¡n H§u Tß¾ng không th¬ thu ðßþc ðªn t× Cai ngß¶i ch½i Ðích ðàm ðÕo tin tÑc Hoà t± ðµi m¶i.");
+	Team_Button_Frame7:SetToolTip("B¤m vào s¨ tñ ðµng t¯ cáo ngß¶i m¶i và thêm h÷ vào danh sách ch£n. Sau khi ch£n, các hÕ s¨ không nh§n ðßþc tin nh¡n trò chuy®n và l¶i m¶i t± ðµi t× ngß¶i ch½i này.");
 	Team_Name:SetText("#gFF0FA0M¶i nhóm");
 
 	-- µÃµ½ÑûÇë¶ÓÎéµÄ¸öÊý.
@@ -2536,12 +2536,12 @@ function TeamFrame_OpenRaidApplyList()
 	Team_Button_Frame1:SetText("Ðoàn ðµi tin tÑc");
 	Team_Button_Frame2:SetText("Thßþng mµt t¶");
 	Team_Button_Frame3:SetText("Tiªp theo Di®p");
-	Team_Button_Frame4:SetText("Thanh Không Li®t Bi¬u");
+	Team_Button_Frame4:SetText("Xoá hªt");
 	Team_Button_Frame5:SetText("Ð°ng ý xin");
 	Team_Button_Frame6:SetText("Cñ tuy®t xin");
 	Team_Button_Frame7:SetText("Che ch¡n ngß¶i ch½i");
 	Team_Button_Frame7:SetToolTip("Che ch¡n Cai ngß¶i ch½i");
-	Team_Name:SetText("#gFF0FA0xin Li®t Bi¬u");
+	Team_Name:SetText("#gFF0FA0Danh sách xin vào ðµi");
 
 
 	-- µÃµ½ÉêÇëÈËµÄ¸öÊý.
