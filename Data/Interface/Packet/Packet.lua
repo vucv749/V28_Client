@@ -104,8 +104,8 @@ function Packet_OnLoad()
 		
 	PACKAGE_TAB_TEXT = {
 		[0] = "ÐÕo cø",
-		"Ng.li®u",
-		"Nhi®m Vø",
+		"Nguyên li®u",
+		"Nhi®m vø",
 	};
 	
 	PACKAGE_TAB = {
