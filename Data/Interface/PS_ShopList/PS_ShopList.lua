@@ -68,7 +68,7 @@ function PS_ShopList_UpdateFrame()
 	
 	--商业指数
 	local szTemp = PlayerShop:GetCommercialFactor();
-	PS_ShopList_Commerce:SetText("衖琺 th呓ng nghi畃; " .. szTemp);
+	PS_ShopList_Commerce:SetText("Th呓ng nghi畃: " .. szTemp);
 	
 	PS_ShopList_ShopList:RemoveAllItem();
 	
@@ -148,7 +148,7 @@ function PS_ShopList_Search_UpdateFrame()
 
 	--商业指数
 	local szTemp = PlayerShop:GetCommercialFactor();
-	PS_ShopList_Commerce:SetText("衖琺 th呓ng nghi畃: " .. szTemp);
+	PS_ShopList_Commerce:SetText("Th呓ng nghi畃: " .. szTemp);
 	ListCtr:RemoveAllItem();
 	
 	local nNum = PlayerShop:GetShopNum("search");
@@ -327,9 +327,9 @@ function UpdateShopInfo()
 	-- 店铺ID
 	local shopIndex = PlayerShop:EnumShopInfo("shopindex", g_nShopIndex[g_Selectindex])
 	if (tonumber(shopIndex) <= 0) then
-		PS_ShopList_DPID:SetText("#YID c豠 h鄋g:")
+		PS_ShopList_DPID:SetText("#YID c豠 ti甿: ")
 	else
-		PS_ShopList_DPID:SetText("#YID c豠 h鄋g:" .. shopIndex)
+		PS_ShopList_DPID:SetText("#YID c豠 ti甿: " .. shopIndex)
 	end
 
 	-- 店主ID

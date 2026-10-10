@@ -155,9 +155,9 @@ function PS_Shop_UpdateFrame()
 	--µÍ∆ÃID
 	local shopIndex = PlayerShop:GetShopInfo("other", "shopindex")
 	if (tonumber(shopIndex) <= 0) then
-		PS_Shop_DPID_Text:SetText("ID cÿa tiÆm:")
+		PS_Shop_DPID_Text:SetText("ID cÿa tiÆm: ")
 	else
-		PS_Shop_DPID_Text:SetText("ID cÿa tiÆm:" .. shopIndex)
+		PS_Shop_DPID_Text:SetText("ID cÿa tiÆm: " .. shopIndex)
 	end
 	
 	--µÍ√˚

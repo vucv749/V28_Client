@@ -268,7 +268,7 @@ function PS_ShopMag_UpdateFrame()
 	
 	--µêÖ÷ID
 	local szID = PlayerShop:GetShopInfo("self","ownerid");
-	PS_ShopMag_Shopkeeper_ID:SetText("ID chü ti®m:  ".. szID);
+	PS_ShopMag_Shopkeeper_ID:SetText("ID chü ti®m: ".. szID);
 	
 	--µêÃû
 	local szShopName = PlayerShop:GetShopInfo("self","shopname");
@@ -289,7 +289,7 @@ function PS_ShopMag_UpdateFrame()
 	
 	--ÉÌÒµÖ¸Êý
 	local szCommercialFactor = PlayerShop:GetCommercialFactor();
-	PS_ShopMag_CommerceExponential:SetText("Ði¬m thß½ng nghi®p: " .. szCommercialFactor);
+	PS_ShopMag_CommerceExponential:SetText("Thß½ng nghi®p: " .. szCommercialFactor);
 	
 	--À©½¨ºÍËõ¼õ
 	PS_ShopMag_Curtail:Enable();
@@ -337,9 +337,9 @@ function PS_ShopMag_UpdateFrame()
 	--µêÆÌID
 	local shopIndex = PlayerShop:GetShopInfo("self","shopindex")
 	if (tonumber(shopIndex) <= 0) then
-		PS_ShopMag_DPID:SetText("ID cØa ti®m:")
+		PS_ShopMag_DPID:SetText("ID cØa ti®m: ")
 	else
-		PS_ShopMag_DPID:SetText("ID cØa ti®m:" .. shopIndex)
+		PS_ShopMag_DPID:SetText("ID cØa ti®m: " .. shopIndex)
 	end
 
 	--ÌáÊ¾ â¸ö¹ñÌ¨µ±Ç°µÄ×´Ì¬ÊÇOpen»¹ÊÇClose
@@ -349,11 +349,11 @@ function PS_ShopMag_UpdateFrame()
 	if (g_bCurStallOpen == 2)  then 
 		PS_ShopMag_Open:SetText("Ðóng cØa");
 		PS_ShopMag_DownStall:Enable();
-		PS_ShopMag_Stall_State:SetText("TrÕng thái qu¥y hàng: #GKhai trß½ng");
+		PS_ShopMag_Stall_State:SetText("Qu¥y: #GKhai trß½ng");
 	else
 		PS_ShopMag_Open:SetText("Khai trß½ng");
 		PS_ShopMag_DownStall:Disable();
-		PS_ShopMag_Stall_State:SetText("TrÕng thái qu¥y hàng: #RÐóng cØa");
+		PS_ShopMag_Stall_State:SetText("Qu¥y: #RÐóng cØa");
 	end
 	
 	-- ÏÔÊ¾ÏÖÔÚµÄÑ¡ÖÐµÄÎïÆ·»ò ßÊÇ äÊÞµÄ¼Û¸ñ
@@ -431,7 +431,7 @@ function PS_ShopMag_ShowHide_Windows()
 	
 		
 	if( g_SaleOuting == 1) then --??????
-		PS_ShopMag_DisposeOf:SetText("Trä lÕi");
+		PS_ShopMag_DisposeOf:SetText("Mua lÕi");
 		--ÖÃ»Ò²»ÄÜÊ¹ÓÃµÄ¹¦ÄÜ						
 		PS_ShopMag_SortAmend:Hide();		-- ????
 		PS_ShopMag_Open:Hide();         -- ??

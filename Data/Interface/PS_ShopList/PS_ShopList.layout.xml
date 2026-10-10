@@ -26,8 +26,8 @@
             <Property Name="AbsolutePosition" Value="x:6.000000 y:36.000000" />
             <Property Name="UnifiedSize" Value="{{1.000000,-12.000000},{1.000000,-55.000000}" />
             <Window Type="TLBB_SimpleText" Name="PS_ShopList_Commerce">
-                <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}" />
-                <Property Name="AbsoluteSize" Value="w:120.000000 h:20.000000" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,130.000000},{0.000000,0.000000}}" />
+                <Property Name="AbsoluteSize" Value="w:144.000000 h:20.000000" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="Text" Value="#{INTERFACE_XML_598}" />
@@ -48,8 +48,8 @@
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
 			<Window Type="TLBB_ButtonPageUp" Name="PS_ShopList_Check_Item" >
-                <Property Name="AbsolutePosition" Value="x:78.000000 y:38.000000" />
-			    <Property Name="AbsoluteSize" Value="w:80.000000 h:27.000000" />
+                <Property Name="AbsolutePosition" Value="x:82.000000 y:38.000000" />
+			    <Property Name="AbsoluteSize" Value="w:124.000000 h:27.000000" />
 				<Property Name="CheckMode" Value="1" />
 				<Property Name="Text" Value="#{INTERFACE_PS_TAB_1}" />
 				<Event Name="MouseLButtonDown" Function="PS_ShopList_ChangeTabIndex(1);" />
@@ -104,8 +104,8 @@
                 <Property Name="TextColor" Value="FFFFF263" />
             </Window>
           <Window Type="TLBB_SimpleText" Name="PS_ShopList_ShopOwnerID">
-                <Property Name="UnifiedPosition" Value="{{0.020000,143.000000},{1.000000,-116.000000}" />
-                <Property Name="UnifiedSize" Value="{{0.98000000,-150.000000},{0.000000,18.000000}" />
+                <Property Name="UnifiedPosition" Value="{{0.000000,128.000000},{1.000000,-116.000000}}" />
+                <Property Name="UnifiedSize" Value="{{0.000000,144.000000},{0.000000,18.000000}}" />
                 <Property Name="HorzFormatting" Value="LeftAligned" />
                 <Property Name="VertFormatting" Value="VertCentred" />
                 <Property Name="Text" Value="ID:" />
@@ -113,7 +113,7 @@
             </Window>
           <Window Type="TLBB_SimpleText" Name="PS_ShopList_DPID">
             <Property Name="UnifiedPosition" Value="{{0.020000,0.000000},{1.000000,-116.000000}" />
-            <Property Name="UnifiedSize" Value="{{0.000000,85.000000},{0.000000,18.000000}" />
+            <Property Name="UnifiedSize" Value="{{0.000000,120.000000},{0.000000,18.000000}}" />
             <Property Name="HorzFormatting" Value="LeftAligned" />
             <Property Name="VertFormatting" Value="VertCentred" />
             <Property Name="Text" Value="ID:" />
@@ -131,30 +131,30 @@
                 <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{1.000000,-20.000000}" />
                 <Property Name="UnifiedSize" Value="{{1.000000,0.000000},{0.000000,20.000000}" />
                 <Window Type="TLBB_ButtonCommon" Name="PS_ShopList_Button_Refuse">
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-40.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,230.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}" />
                     <Property Name="Text" Value="#{INTERFACE_XML_426}" />
                     <Event Name="Clicked" Function="PS_ShopListRefuse_Clicked();" />
                 </Window>
                 <Window Type="TLBB_ButtonCommon" Name="PS_ShopList_Button_Accept">
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-80.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,186.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,44.000000},{0.000000,20.000000}}" />
                     <Property Name="Text" Value="#{INTERFACE_XML_300}" />
                     <Event Name="Clicked" Function='PS_ShopListAccept_Clicked(&quot;buy&quot;);' />
                 </Window>
                 <Window Type="TLBB_ButtonCommon" Name="PS_ShopList_Button_Manage">
-                    <Property Name="UnifiedPosition" Value="{{1.000000,-120.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.000000,40.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,136.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,50.000000},{0.000000,20.000000}}" />
                     <Property Name="Text" Value="#{INTERFACE_XML_306}" />
                     <Event Name="Clicked" Function='PS_ShopListAccept_Clicked(&quot;manage&quot;);' />
                 </Window>
                 <Window Type="TLBB_Frame_Lace5" Name="PS_ShopList_Blank">
-                    <Property Name="UnifiedPosition" Value="{{0.000000,80.000000},{1.000000,-20.000000}" />
-                    <Property Name="UnifiedSize" Value="{{1.000000,-200.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,84.000000},{1.000000,-20.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,52.000000},{0.000000,20.000000}}" />
                 </Window>
                 <Window Type="TLBB_ButtonCommon" Name="PS_ShopList_Button_Remove">
-                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}" />
-                    <Property Name="UnifiedSize" Value="{{0.000000,80.000000},{0.000000,20.000000}" />
+                    <Property Name="UnifiedPosition" Value="{{0.000000,0.000000},{0.000000,0.000000}}" />
+                    <Property Name="UnifiedSize" Value="{{0.000000,84.000000},{0.000000,20.000000}}" />
                     <Property Name="Text" Value="#{INTERFACE_XML_353}" />
                     <Event Name="Clicked" Function="PS_ShopList_Favor_Clicked();" />
                 </Window>
