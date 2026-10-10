@@ -1063,7 +1063,12 @@ function MiniMap_FenxianClicked()
 	local curSceneID = GetSceneID();
 	-- 242 = Lac Duong ban tuyet (_clientres trong SceneInfo.ini), 71/72 = Dai Ly 2/3
 	if curSceneID ~= 0 and curSceneID ~= 1 and curSceneID ~= 2 and curSceneID ~= 71 and curSceneID ~= 72 and curSceneID ~= 242 then
-		PushDebugMessage( "VÕn Nång Truy«n T¯ng chï dùng ðßþc trong thành chính (LÕc Dß½ng, Tô Châu, ÐÕi Lý)!" )
+		-- ngoai thanh chinh: hoi server, GM thi server mo giao dien (UI_COMMAND 99000101)
+		Clear_XSCRIPT()
+			Set_XSCRIPT_Function_Name("RequestOpen");
+			Set_XSCRIPT_ScriptID(990001);
+			Set_XSCRIPT_ParamCount(0);
+		Send_XSCRIPT()
 		return
 	end
 	PushEvent("OPEN_CHUANSONG_SYSTEM");

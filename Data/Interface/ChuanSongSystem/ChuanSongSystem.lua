@@ -23,7 +23,7 @@ function ChuanSongSystem_PreLoad()
 end
 
 function ChuanSongSystem_OnEvent(event)
-	if event == "OPEN_CHUANSONG_SYSTEM"  then
+	if event == "OPEN_CHUANSONG_SYSTEM" or (event == "UI_COMMAND" and tonumber(arg0) == 99000101) then
 		
 		-- local xx = Get_XParam_INT(0);
 		-- ObjCaredID = DataPool : GetNPCIDByServerID(xx);
