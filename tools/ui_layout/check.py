@@ -68,6 +68,8 @@ def render(path, png, scale=1.5):
         if txt and w is not frame:
             if w.typ.startswith('Button') or 'Centred' in w.props.get('HorzFormatting', ''):
                 tx = (w.x + w.w / 2) * scale - f2.getlength(txt) / 2
+            elif 'RightAligned' in w.props.get('HorzFormatting', ''):
+                tx = (w.x + w.w) * scale - f2.getlength(txt) - 2
             else:
                 tx = (w.x + (4 if w.typ in LABEL_TYPES else 0)) * scale
             d.text((tx, (w.y + 2) * scale), txt, font=f2, fill=(255, 240, 120))
