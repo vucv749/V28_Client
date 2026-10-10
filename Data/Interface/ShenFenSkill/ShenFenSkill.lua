@@ -333,7 +333,7 @@ function ShenFenSkill_SetTabColor()
 							};
 
 	local TAB_TEXT = {
-		[0] = "S½ C¤p",
+		[0] = "Thß¶ng",
 		"Môn phái",
 		"Cuµc s¯ng",
 		"Minh Hµi",

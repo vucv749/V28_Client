@@ -261,7 +261,7 @@ function ActionSkill_Update_Cliecked(nIndex, Actiontype)
 	 	strName2= Player:GetXinfaInfo(nXinfaId,"level");
 	 	Current_Xinfa_Level = strName2;
 
-		ActionSkill_Name : SetText( strName .."\n" .. "Tâm pháp: " .. strName2);
+		ActionSkill_Name : SetText( strName .."\n" .. "C¤p tâm pháp: " .. strName2);
 		ActionSkill_Name : SetProperty("TextColours","tl:FFEFEFEF tr:FFEFEFEF bl:FFEFEFEF br:FFEFEFEF");
 		ActionSkill_Name : SetProperty("VertFormatting","VertCentred")
 		ActionSkill_XinfaTarget : Enable();
@@ -529,7 +529,7 @@ function ActionSkill_SetTabColor()
 							};
 
 	local TAB_TEXT = {
-		[0] = "S½ C¤p",
+		[0] = "Thß¶ng",
 		"Môn phái",
 		"Cuµc s¯ng",
 		"Minh Hµi",
