@@ -74,7 +74,7 @@ g_SeventhFestivalTopList_Qingrenjie_Bonus =
 	[1] = {neednum = 2400, itemid = 10125769, count = 1, name = "Tân trang phøc m¯t: Tiên Læ kÏ duyên(vînh cØu, thu hoÕch Bäng Ð¸nh)", LimitMD = -1, LimitNum = -1, IsShowButton = 1},
 	[2] = {neednum = 1500, itemid = 30310140, count = 1, name = "Siêu c¤p Trân Thú Lung: Tân Trân Thú", LimitMD = 766, LimitNum = 3, IsShowButton = 1},
 	[3] = {neednum = 2400, itemid = 38003215, count = 1, name = "Kim Cô B±ng", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
-	[4] = {neednum = 1500, itemid = 38003216, count = 1, name = "TØ Thanh bäo kiªm", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
+	[4] = {neednum = 1500, itemid = 38003216, count = 1, name = "TØ Thanh Bäo Kiªm", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
 	[5] = {neednum = 1200, itemid = 38003214, count = 1, name = "Kính chiªu yêu", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
 	[6] = {neednum = 600, itemid = 10125802, count = 1, name = "DÕ C¦m Thiên Lan", LimitMD = -1, LimitNum = -1, IsShowButton = 0},
 	[7] = {neednum = 600, itemid = 10125818, count = 1, name = "Du Lam Nguy®t S¡c", LimitMD = -1, LimitNum = -1, IsShowButton = 0},

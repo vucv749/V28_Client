@@ -117,10 +117,10 @@ local g_ValentineRoseTopList_Qingrenjie_Bonus =
 {
 	[1] = {neednum = 1314, itemid = 39920078, count = 1, name = "L°ng Trân Thú: Th¤t Xäo Ly Miêu"},
 	[2] = {neednum = 521, itemid = 39920062, count = 1, name = "TrÑng Trân Thú: Th¤t Xäo Ly Miêu"},
-	[3] = {neednum = 300, itemid = 39920063, count = 1, name = "MÑt S½n Trà"},
-	[4] = {neednum = 300, itemid = 39920064, count = 1, name = "Chong Chóng L¾n"},
+	[3] = {neednum = 300, itemid = 39920063, count = 1, name = "S½n Tra Bång Ðß¶ng H° Lô"},
+	[4] = {neednum = 300, itemid = 39920064, count = 1, name = "ÐÕi Phong Xa"},
 	[5] = {neednum = 120, itemid = 39920065, count = 1, name = "MÕn Thiên Hoa Vû"},
-	[6] = {neednum = 120, itemid = 39920083, count = 1, name = "MÕn Thiên Hoa Vû?-Tâm Tß½ng „n"},
+	[6] = {neednum = 120, itemid = 39920083, count = 1, name = "Mãn Thiên Hoa Vû-Tâm Tß½ng „n"},
 }
 
 local g_ValentineRoseTopList_Chiqingyu_Bonus =
