@@ -154,7 +154,7 @@ function Makefriends_Activity_Watch_Hide_Event()
 	Makefriends_Activity_Watch_Info5:SetText("")
 	Makefriends_Activity_Watch_Info6:SetText("")
 	Makefriends_Activity_Watch_Info:SetText("")
-	Makefriends_Activity_Watch_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+	Makefriends_Activity_Watch_B1:SetText("Thêm bÕn")
 	Makefriends_Activity_Watch_B2:SetText("Bi¬u ðÕt tâm ý")
 	Makefriends_Activity_Watch_FakeObject : SetFakeObject("");
 end
@@ -253,7 +253,7 @@ function Makefriends_Activity_Watch_Btn_SelectEvery(n,m)
 		Makefriends_Activity_Watch_Info6:SetText(szProvince)
 		local szLuckWord = ScriptGlobal_Format("#{JYHD_230331_73}", szLuckWord)
 		Makefriends_Activity_Watch_Info:SetText(szLuckWord)
-		Makefriends_Activity_Watch_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+		Makefriends_Activity_Watch_B1:SetText("Thêm bÕn")
 		Makefriends_Activity_Watch_B2:SetText("Bi¬u ðÕt tâm ý")
 		Makefriends_Activity_Watch_FakeObject : SetFakeObject("");
 		Makefriends_Activity_Watch_FakeObject : SetFakeObject("MakefriendActivity_Watch");
@@ -272,7 +272,7 @@ function Makefriends_Activity_Watch_Btn_SelectEvery(n,m)
 		Makefriends_Activity_Watch_Info5:SetText("")
 		Makefriends_Activity_Watch_Info6:SetText("")
 		Makefriends_Activity_Watch_Info:SetText("")
-		Makefriends_Activity_Watch_B1:SetText("Tång thêm các\\u0020hÕ t¯t")
+		Makefriends_Activity_Watch_B1:SetText("Thêm bÕn")
 		Makefriends_Activity_Watch_B2:SetText("Bi¬u ðÕt tâm ý")
 		Makefriends_Activity_Watch_FakeObject : SetFakeObject("");
 	end
