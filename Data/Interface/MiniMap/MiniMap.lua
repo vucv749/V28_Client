@@ -1061,8 +1061,9 @@ function MiniMap_FenxianClicked()
 	
 	-- PushDebugMessage("ChÑc nång d¸ch chuy¬n nhanh hi®n chßa m·")
 	local curSceneID = GetSceneID();
-	if curSceneID > 2 then
-		PushDebugMessage( "VÕn nång truy«n t¯ng chï có th¬ TÕi Chü bên trong thành sØ døng!" )
+	-- 242 = Lac Duong ban tuyet (_clientres trong SceneInfo.ini), 71/72 = Dai Ly 2/3
+	if curSceneID ~= 0 and curSceneID ~= 1 and curSceneID ~= 2 and curSceneID ~= 71 and curSceneID ~= 72 and curSceneID ~= 242 then
+		PushDebugMessage( "VÕn Nång Truy«n T¯ng chï dùng ðßþc trong thành chính (LÕc Dß½ng, Tô Châu, ÐÕi Lý)!" )
 		return
 	end
 	PushEvent("OPEN_CHUANSONG_SYSTEM");
