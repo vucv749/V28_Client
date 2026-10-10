@@ -368,11 +368,11 @@ function GameTools6_SetCheck(Par)
 		GameTools6_SelectBox:ResetList();
 		for i,j in tab1 do
 			if i < 10 then
-				GameTools6_SelectBox:AddTextItem("["..i.."] ?"..j[5].."?",i);
+				GameTools6_SelectBox:AddTextItem("["..i.."] "..j[5],i);
 			elseif i < 100 then
-				GameTools6_SelectBox:AddTextItem("["..i.."] ?"..j[5].."?",i);
+				GameTools6_SelectBox:AddTextItem("["..i.."] "..j[5],i);
 			else
-				GameTools6_SelectBox:AddTextItem("["..i.."] ?"..j[5].."?",i);
+				GameTools6_SelectBox:AddTextItem("["..i.."] "..j[5],i);
 			end
 		end
 	else
@@ -444,7 +444,7 @@ function GameTools6_SelectBox_Clicked()
 		return
 	end
 	GameTools6_SelectProjectIdx = int1;
-	GameTools6_SelectProjectInfo = "#WÐi møc tiêu: #G["..GameTools6_CurName.."]#WtIªn hành\\n#B?"..tab1[5].."#B?\\n";
+	GameTools6_SelectProjectInfo = "#WÐ¯i v¾i møc tiêu: #G["..GameTools6_CurName.."]#W, thñc hi®n:\\n#B"..tab1[5].."\\n";
 	for i,j in GameTools6_EditBoxTab do
 		j:SetProperty("DefaultEditBox","False");
 		GameTools6_SelectProjectInfo = GameTools6_SelectProjectInfo.."#cfff263P"..i

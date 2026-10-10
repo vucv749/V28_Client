@@ -7,8 +7,8 @@ local g_max = 0
 local StarId = -1
 local KongShuId = -1
 
-local StarNameList = {"0?","1?","2?","3?","4?","5?","6?","7?","8?","9?"}
-local KongShuNameList = {"0Kh±ng","1Kh±ng","2Kh±ng","3Kh±ng","4Kh±ng"}--,"5Kh±ng","6Kh±ng"
+local StarNameList = {"0 sao","1 sao","2 sao","3 sao","4 sao","5 sao","6 sao","7 sao","8 sao","9 sao"}
+local KongShuNameList = {"0 l²","1 l²","2 l²","3 l²","4 l²"}--,"5 l²","6 l²"
 
 local g_Equip_ID = -1 --????ID
 local g_posBag = -1 --????
@@ -79,15 +79,15 @@ function GameTools5_OnEvent(event)
 			GameTools5_Item:SetActionItem(g_Equip_ID)
 			--ÏÔÊ¾µÀ¾ßÃû×Ö
 			local ItemName = LifeAbility:GetPrescr_Material(theAction:GetDefineID())
-			GameTools5_Name:SetText("#c0066fftên: #G"..ItemName)
+			GameTools5_Name:SetText("#c0066ffTên: #G"..ItemName)
 			--Ð¯´øµÈ¼¶
 			local nItemLevel = LifeAbility:Get_Equip_Level(g_posBag);
-			GameTools5_Level:SetText("#c0066ffc¤p b§c: #G"..nItemLevel)
+			GameTools5_Level:SetText("#c0066ffC¤p: #G"..nItemLevel)
 			--×°±¸µã
 			local EqType1,EqType2 = GameTools5_LuaFnGetBagEquipType(g_posBag)
-			GameTools5_EqType:SetText("#c0066ffloÕi hình: #G"..EqType2)
+			GameTools5_EqType:SetText("#c0066ffLoÕi: #G"..EqType2)
 			--Type
-			GameTools5_EqType2:SetText("#c0066fftrang b¸ Ði¬m: #G"..EqType1)
+			GameTools5_EqType2:SetText("#c0066ffV¸ trí trang b¸: #G"..EqType1)
 			
 			--Ë¢ÐÂµñÎÆÐÅÏ¢
 			GameTools5_reDWinfo(g_posBag)
@@ -118,7 +118,7 @@ function GameTools5_OnEvent(event)
 				ui.edix:SetText(gemId)
 			else
 				ui.btn:SetActionItem(-1)
-				ui.txt:SetText("Kh±ng V¸ Vô bäo thÕch")
+				ui.txt:SetText("L² chßa khäm Bäo ThÕch")
 				ui.edix:SetText("")
 			end
 		end
@@ -154,7 +154,7 @@ function GameTools5_OnEvent(event)
 			GameTools5_DWSumEdix1:SetText(dwneed)
 		else
 			GameTools5_DWSumEdix1:SetText(0)
-			GameTools5_DWSum:SetText("#GVÔ/Vô")
+			GameTools5_DWSum:SetText("#G-/-")
 		end
 		
 		--×°±¸ID
@@ -190,11 +190,11 @@ function GameTools5_OnEvent(event)
 		end -- ????
 		
 		--ÊÇ·ñ¹óÖØ
-		local Goods = "#cFF0000quý tr÷ng"
+		local Goods = "#cFF0000Quý giá"
 		if Get_XParam_INT(1) == 0 then
-			Goods = "#GPHi quý tr÷ng"
+			Goods = "#GKhông quý giá"
 		end
-		GameTools5_Goods:SetText("#c0066ffph¦m ch¤t:"..Goods)
+		GameTools5_Goods:SetText("#c0066ffPh¦m ch¤t: "..Goods)
 			
 		--ÄÍ¾Ã¶È
 		local nDurValue,nDurMaxValue = PlayerPackage:GetEquipDurValue(g_posBag)
@@ -234,9 +234,9 @@ function GameTools5_OnEvent(event)
 		end
 
 		if g_Conut <= 16 then
-			GameTools5_YiXuanTXT:SetText("#GðÃ ch÷n TrÕch" .. g_Conut .. "Xung thuµc tính")
+			GameTools5_YiXuanTXT:SetText("#GÐã ch÷n " .. g_Conut .. " loÕi thuµc tính")
 		else
-			GameTools5_YiXuanTXT:SetText("#cFF0000ðã ch÷n TrÕch" .. g_Conut .. "Xung thuµc tính")
+			GameTools5_YiXuanTXT:SetText("#cFF0000Ðã ch÷n " .. g_Conut .. " loÕi thuµc tính")
 		end
 		
 		local apt1 = PlayerPackage:GetAptitude(g_posBag, 0)
@@ -282,7 +282,7 @@ function GameTools5_OnEvent(event)
 				ui.edix:SetText(gemId)
 			else
 				ui.btn:SetActionItem(-1)
-				ui.txt:SetText("Kh±ng V¸ Vô bäo thÕch")
+				ui.txt:SetText("L² chßa khäm Bäo ThÕch")
 				ui.edix:SetText("")
 			end
 		end
@@ -320,10 +320,10 @@ end
 -- Ë¢ÐÂµñÎÆÐÅÏ¢
 function GameTools5_reDWinfo(g_posBag)
 	local dwId,dwlevel = LifeAbility:GetEquitDiaowenID(g_posBag)
-	local DWname = "Vô Ðiêu Vån"
-	local str = "Vô Gia Thành"
+	local DWname = "Không có Ðiêu Vån"
+	local str = "Không có cµng thêm"
 	if tonumber(dwId) == -2 then
-		dwId = "Ðiêu Vån IDVi Không"
+		dwId = "Không có ID"
 	else
 		DWname = LuaFnGetItemName( dwId )
 		local msg1,msg2 = LifeAbility:GetEquipDiaowen_AttrName(g_posBag)
@@ -331,7 +331,7 @@ function GameTools5_reDWinfo(g_posBag)
 		str = ScriptGlobal_Format("#{DWSJ_141202_59}",msg1,attrnum) --????
 	end
 	GameTools5_DWinfoEdix1:SetText(dwId)--??ID
-	GameTools5_DWinfoTxt1:SetText("#G"..DWname.."#rC¤p B§c:"..dwlevel) --????
+	GameTools5_DWinfoTxt1:SetText("#G"..DWname.."#rC¤p: "..dwlevel) --????
 	GameTools5_DWattrTxt1:SetText(str)
 end
 
@@ -359,9 +359,9 @@ function GameTools5_Clicked()
 		end
 	end
 	if g_Conut <= 16 then
-		GameTools5_YiXuanTXT:SetText("#GðÃ ch÷n TrÕch"..g_Conut.."Xung thuµc tính");
+		GameTools5_YiXuanTXT:SetText("#GÐã ch÷n "..g_Conut.." loÕi thuµc tính");
 	else
-		GameTools5_YiXuanTXT:SetText("#cFF0000ðã ch÷n TrÕch"..g_Conut.."Xung thuµc tính");
+		GameTools5_YiXuanTXT:SetText("#cFF0000Ðã ch÷n "..g_Conut.." loÕi thuµc tính");
 	end
 end
 
@@ -690,7 +690,7 @@ function GameTools5_QuXiao_Clicked()
 	for i = 1,41 do
 		g_AttrSecond[i]:SetCheck(0)
 	end
-	GameTools5_YiXuanTXT:SetText("#GðÃ ch÷n TrÕch 0Xung thuµc tính");
+	GameTools5_YiXuanTXT:SetText("#GÐã ch÷n 0 loÕi thuµc tính");
 	PushDebugMessage("Dî hüy bö t¤t cä lña ch÷n")
 end
 
